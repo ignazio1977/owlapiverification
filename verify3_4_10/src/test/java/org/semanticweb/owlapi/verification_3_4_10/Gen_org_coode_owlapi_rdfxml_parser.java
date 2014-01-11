@@ -13,7 +13,7 @@ import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.UnloadableImportException;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation", "unchecked", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_rdfxml_parser {
     @Test
@@ -135,15 +135,11 @@ public class Gen_org_coode_owlapi_rdfxml_parser {
                 .getConsumer();
     }
 
-    
-
     public void verifyAbstractTripleHandler() throws Exception {
         AbstractTripleHandler testSubject0 = new AbstractTripleHandler(_OWLRDFConsumer);
         org.coode.owlapi.rdfxml.parser.OWLRDFConsumer result0 = testSubject0
                 .getConsumer();
     }
-
-    
 
     public void verifyInterfaceAnonymousNodeChecker() throws Exception {
         AnonymousNodeChecker testSubject0 = mock(AnonymousNodeChecker.class);
@@ -191,8 +187,6 @@ public class Gen_org_coode_owlapi_rdfxml_parser {
         org.semanticweb.owlapi.model.OWLClassExpression result3 = testSubject0
                 .translate(_IRI);
     }
-
-    
 
     public void verifyInterfaceClassExpressionTranslator() throws Exception {
         ClassExpressionTranslator testSubject0 = mock(ClassExpressionTranslator.class);
@@ -551,14 +545,10 @@ public class Gen_org_coode_owlapi_rdfxml_parser {
         org.semanticweb.owlapi.model.OWLIndividual result3 = testSubject0.translate(_IRI);
     }
 
-    
-
     public void verifyInterfaceIRIProvider() throws Exception {
         IRIProvider testSubject0 = mock(IRIProvider.class);
         org.semanticweb.owlapi.model.IRI result0 = testSubject0.getIRI(_String);
     }
-
-    
 
     public void verifyInterfaceListItemTranslator() throws Exception {
         ListItemTranslator testSubject0 = mock(ListItemTranslator.class);
@@ -893,8 +883,6 @@ public class Gen_org_coode_owlapi_rdfxml_parser {
                 .getConsumer();
     }
 
-    
-
     public void verifyOptimisedListTranslator() throws Exception {
         OptimisedListTranslator testSubject0 = new OptimisedListTranslator(
                 _OWLRDFConsumer, mock(ListItemTranslator.class)) {};
@@ -1228,8 +1216,6 @@ public class Gen_org_coode_owlapi_rdfxml_parser {
         org.semanticweb.owlapi.model.SWRLAtom result3 = testSubject0
                 .translate(_OWLLiteral);
     }
-
-    
 
     public void verifySWRLRuleTranslator() throws Exception {
         SWRLRuleTranslator testSubject0 = new SWRLRuleTranslator(_OWLRDFConsumer);
@@ -1911,8 +1897,6 @@ public class Gen_org_coode_owlapi_rdfxml_parser {
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result8 = testSubject0.getSuppressed();
     }
-
-    
 
     public void verifyInterfaceTriplePatternMatcher() throws Exception {
         TriplePatternMatcher testSubject0 = mock(TriplePatternMatcher.class);

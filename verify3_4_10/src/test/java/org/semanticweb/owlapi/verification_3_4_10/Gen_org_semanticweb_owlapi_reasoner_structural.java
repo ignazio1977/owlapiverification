@@ -8,7 +8,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasoner;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_reasoner_structural {
     @Test

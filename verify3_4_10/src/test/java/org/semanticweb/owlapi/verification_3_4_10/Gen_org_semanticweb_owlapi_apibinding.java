@@ -8,11 +8,9 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.apibinding.OWLFunctionalSyntaxFactory;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_apibinding {
-    
-
     public void verifyOWLFunctionalSyntaxFactory() throws Exception {
         OWLFunctionalSyntaxFactory testSubject0 = new OWLFunctionalSyntaxFactory();
         org.semanticweb.owlapi.model.OWLImportsDeclaration result0 = OWLFunctionalSyntaxFactory

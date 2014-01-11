@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_functionalrenderer {
     @Test

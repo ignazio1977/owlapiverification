@@ -36,7 +36,7 @@ import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyChange;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "unchecked", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_metrics {
     @Test

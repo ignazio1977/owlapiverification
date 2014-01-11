@@ -9,7 +9,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import uk.ac.manchester.cs.owlapi.modularity.ModuleType;
 import uk.ac.manchester.cs.owlapi.modularity.SyntacticLocalityModuleExtractor;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owlapi_modularity {
     @Test

@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.IRI;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_xml {
     @Test

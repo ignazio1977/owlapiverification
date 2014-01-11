@@ -17,7 +17,7 @@ import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClassExpression;
 import org.semanticweb.owlapi.model.OWLException;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_debugging {
     @Test

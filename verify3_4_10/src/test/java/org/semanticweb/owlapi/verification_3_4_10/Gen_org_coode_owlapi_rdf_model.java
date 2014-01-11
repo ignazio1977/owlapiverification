@@ -15,7 +15,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLLiteral;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_rdf_model {
     @Test

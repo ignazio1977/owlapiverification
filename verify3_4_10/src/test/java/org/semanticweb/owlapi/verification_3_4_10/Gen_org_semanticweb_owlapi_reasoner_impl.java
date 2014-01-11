@@ -32,7 +32,7 @@ import org.semanticweb.owlapi.reasoner.impl.OWLObjectPropertyNodeSet;
 import org.semanticweb.owlapi.reasoner.impl.OWLReasonerBase;
 import org.semanticweb.owlapi.reasoner.impl.SatisfiabilityReducer;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_reasoner_impl {
     @Test
@@ -145,8 +145,6 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
         testSubject0.addSameEntities(_Set);
         testSubject0.addDifferentEntities(_Set);
     }
-
-    
 
     public void verifyNodeFactory() throws Exception {
         NodeFactory testSubject0 = new NodeFactory();
@@ -279,6 +277,7 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
                 .isAssignableFrom(OWLDataPropertyNodeSet.class));
     }
 
+    @SuppressWarnings("unchecked")
     public void verifyOWLDataPropertyNodeSet() throws Exception {
         OWLDataPropertyNodeSet testSubject0 = new OWLDataPropertyNodeSet(_Set15);
         OWLDataPropertyNodeSet testSubject1 = new OWLDataPropertyNodeSet(_Node16);
@@ -332,6 +331,7 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
                 .isAssignableFrom(OWLDatatypeNodeSet.class));
     }
 
+    @SuppressWarnings("unchecked")
     public void verifyOWLDatatypeNodeSet() throws Exception {
         OWLDatatypeNodeSet testSubject0 = new OWLDatatypeNodeSet(_Set19);
         OWLDatatypeNodeSet testSubject1 = new OWLDatatypeNodeSet(_Node20);
@@ -387,6 +387,7 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
                 .isAssignableFrom(OWLNamedIndividualNodeSet.class));
     }
 
+    @SuppressWarnings("unchecked")
     public void verifyOWLNamedIndividualNodeSet() throws Exception {
         OWLNamedIndividualNodeSet testSubject0 = new OWLNamedIndividualNodeSet(_Set21);
         OWLNamedIndividualNodeSet testSubject1 = new OWLNamedIndividualNodeSet(_Node22);
@@ -449,6 +450,7 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
                 .isAssignableFrom(OWLObjectPropertyNodeSet.class));
     }
 
+    @SuppressWarnings("unchecked")
     public void verifyOWLObjectPropertyNodeSet() throws Exception {
         OWLObjectPropertyNodeSet testSubject0 = new OWLObjectPropertyNodeSet(_Set23);
         OWLObjectPropertyNodeSet testSubject1 = new OWLObjectPropertyNodeSet(_Node24);

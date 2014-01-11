@@ -20,11 +20,9 @@ import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.RendererListener;
 import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.RenderingDirector;
 import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.SectionMap;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
-    
-
     public void verifyAbstractRenderer() throws Exception {
         AbstractRenderer testSubject0 = new AbstractRenderer(_Writer, _ShortFormProvider);
         testSubject0.flush();
@@ -381,8 +379,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
         testSubject0.render(_OWLOntology, _OutputStream);
     }
 
-    
-
     public void verifyRendererEvent() throws Exception {
         RendererEvent testSubject0 = new RendererEvent(_ManchesterOWLSyntaxFrameRenderer,
                 _OWLObject);
@@ -392,8 +388,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
         org.semanticweb.owlapi.model.OWLObject result1 = testSubject0.getFrameSubject();
         testSubject0.writeComment(_String);
     }
-
-    
 
     public void verifyInterfaceRendererListener() throws Exception {
         RendererListener testSubject0 = mock(RendererListener.class);
@@ -407,15 +401,11 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
         testSubject0.sectionItemFinished(_String, _RendererEvent);
     }
 
-    
-
     public void verifyInterfaceRenderingDirector() throws Exception {
         RenderingDirector testSubject0 = mock(RenderingDirector.class);
         boolean result0 = testSubject0.renderEmptyFrameSection(_ManchesterOWLSyntax,
                 _OWLOntology_array);
     }
-
-    
 
     public void verifySectionMap() throws Exception {
         SectionMap testSubject0 = new SectionMap();

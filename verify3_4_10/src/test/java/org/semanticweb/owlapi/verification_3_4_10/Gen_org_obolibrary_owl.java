@@ -8,7 +8,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.obolibrary.owl.LabelFunctionalFormat;
 import org.obolibrary.owl.LabelFunctionalSyntaxOntologyStorer;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_owl {
     @Test

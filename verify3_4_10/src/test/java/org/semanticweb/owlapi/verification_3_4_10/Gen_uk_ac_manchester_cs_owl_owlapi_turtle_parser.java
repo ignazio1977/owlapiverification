@@ -22,7 +22,7 @@ import uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParserConstants;
 import uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParserException;
 import uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParserTokenManager;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
     @Test
@@ -271,8 +271,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    
-
     public void verifyInterfaceTripleHandler() throws Exception {
         TripleHandler testSubject0 = mock(TripleHandler.class);
         testSubject0.handlePrefixDirective(_String, _String);
@@ -380,8 +378,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
         org.semanticweb.owlapi.model.IRI result24 = testSubject0.parseIRI();
         testSubject0.parseObject(_IRI, _IRI);
     }
-
-    
 
     public void verifyInterfaceTurtleParserConstants() throws Exception {
         TurtleParserConstants testSubject0 = mock(TurtleParserConstants.class);

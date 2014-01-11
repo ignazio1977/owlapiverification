@@ -19,7 +19,7 @@ import de.uulm.ecs.ai.owlapi.krssparser.ParseException;
 import de.uulm.ecs.ai.owlapi.krssparser.Token;
 import de.uulm.ecs.ai.owlapi.krssparser.TokenMgrError;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_de_uulm_ecs_ai_owlapi_krssparser {
     @Test

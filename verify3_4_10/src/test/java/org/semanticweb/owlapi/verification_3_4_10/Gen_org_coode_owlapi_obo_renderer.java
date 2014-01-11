@@ -15,11 +15,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_obo_renderer {
-    
-
     public void verifyInterfaceOBOExceptionHandler() throws Exception {
         OBOExceptionHandler testSubject0 = mock(OBOExceptionHandler.class);
         testSubject0.addException(_OBOStorageException);
@@ -62,8 +60,6 @@ public class Gen_org_coode_owlapi_obo_renderer {
         testSubject0.setOWLOntologyManager(_OWLOntologyManager);
         testSubject0.render(_OWLOntology, _OutputStream);
     }
-
-    
 
     public void verifyOBORelationship() throws Exception {
         OBORelationship testSubject0 = new OBORelationship(_OWLObjectProperty,
@@ -160,8 +156,6 @@ public class Gen_org_coode_owlapi_obo_renderer {
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
     }
-
-    
 
     public void verifyOBOTagValuePairList() throws Exception {
         OBOTagValuePairList testSubject0 = new OBOTagValuePairList(_List37);

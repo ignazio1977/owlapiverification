@@ -21,7 +21,7 @@ import com.clarkparsia.owlapi.explanation.SingleExplanationGenerator;
 import com.clarkparsia.owlapi.explanation.SingleExplanationGeneratorImpl;
 import com.clarkparsia.owlapi.explanation.TransactionAwareSingleExpGen;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation {
     @Test

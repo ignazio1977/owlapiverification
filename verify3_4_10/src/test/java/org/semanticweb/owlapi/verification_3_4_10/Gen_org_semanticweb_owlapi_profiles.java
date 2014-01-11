@@ -74,7 +74,7 @@ import org.semanticweb.owlapi.profiles.UseOfUndeclaredDatatype;
 import org.semanticweb.owlapi.profiles.UseOfUndeclaredObjectProperty;
 import org.semanticweb.owlapi.profiles.UseOfUnknownDatatype;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_profiles {
     @Test
@@ -374,14 +374,10 @@ public class Gen_org_semanticweb_owlapi_profiles {
                 .checkOntology(_OWLOntology);
     }
 
-    
-
     public void verifyInterfaceOWL2DLProfileViolation() throws Exception {
         OWL2DLProfileViolation testSubject0 = mock(OWL2DLProfileViolation.class);
         testSubject0.accept(_OWL2DLProfileViolationVisitor);
     }
-
-    
 
     public void verifyInterfaceOWL2DLProfileViolationVisitor() throws Exception {
         OWL2DLProfileViolationVisitor testSubject0 = mock(OWL2DLProfileViolationVisitor.class);
@@ -430,14 +426,10 @@ public class Gen_org_semanticweb_owlapi_profiles {
                 .checkOntology(_OWLOntology);
     }
 
-    
-
     public void verifyInterfaceOWL2ELProfileViolation() throws Exception {
         OWL2ELProfileViolation testSubject0 = mock(OWL2ELProfileViolation.class);
         testSubject0.accept(_OWL2ELProfileViolationVisitor);
     }
-
-    
 
     public void verifyInterfaceOWL2ELProfileViolationVisitor() throws Exception {
         OWL2ELProfileViolationVisitor testSubject0 = mock(OWL2ELProfileViolationVisitor.class);
@@ -489,14 +481,10 @@ public class Gen_org_semanticweb_owlapi_profiles {
         org.semanticweb.owlapi.profiles.OWLProfile result4 = testSubject0.getProfile();
     }
 
-    
-
     public void verifyInterfaceOWL2ProfileViolation() throws Exception {
         OWL2ProfileViolation testSubject0 = mock(OWL2ProfileViolation.class);
         testSubject0.accept(_OWL2ProfileViolationVisitor);
     }
-
-    
 
     public void verifyInterfaceOWL2ProfileViolationVisitor() throws Exception {
         OWL2ProfileViolationVisitor testSubject0 = mock(OWL2ProfileViolationVisitor.class);
@@ -530,14 +518,10 @@ public class Gen_org_semanticweb_owlapi_profiles {
                 .checkOntology(_OWLOntology);
     }
 
-    
-
     public void verifyInterfaceOWL2QLProfileViolation() throws Exception {
         OWL2QLProfileViolation testSubject0 = mock(OWL2QLProfileViolation.class);
         testSubject0.accept(_OWL2QLProfileViolationVisitor);
     }
-
-    
 
     public void verifyInterfaceOWL2QLProfileViolationVisitor() throws Exception {
         OWL2QLProfileViolationVisitor testSubject0 = mock(OWL2QLProfileViolationVisitor.class);
@@ -572,14 +556,10 @@ public class Gen_org_semanticweb_owlapi_profiles {
                 .checkOntology(_OWLOntology);
     }
 
-    
-
     public void verifyInterfaceOWL2RLProfileViolation() throws Exception {
         OWL2RLProfileViolation testSubject0 = mock(OWL2RLProfileViolation.class);
         testSubject0.accept(_OWL2RLProfileViolationVisitor);
     }
-
-    
 
     public void verifyInterfaceOWL2RLProfileViolationVisitor() throws Exception {
         OWL2RLProfileViolationVisitor testSubject0 = mock(OWL2RLProfileViolationVisitor.class);
@@ -595,8 +575,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
         testSubject0.visit(_UseOfNonSubClassExpression);
     }
 
-    
-
     public void verifyInterfaceOWLProfile() throws Exception {
         OWLProfile testSubject0 = mock(OWLProfile.class);
         java.lang.String result0 = testSubject0.getName();
@@ -605,8 +583,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
                 .checkOntology(_OWLOntology);
     }
 
-    
-
     public void verifyOWLProfileReport() throws Exception {
         OWLProfileReport testSubject0 = new OWLProfileReport(_OWLProfile, _Set);
         boolean result0 = testSubject0.isInProfile();
@@ -614,8 +590,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
                 .getViolations();
         org.semanticweb.owlapi.profiles.OWLProfile result2 = testSubject0.getProfile();
     }
-
-    
 
     public void verifyOWLProfileViolation() throws Exception {
         OWLProfileViolation testSubject0 = new OWLProfileViolation(_OWLOntology,

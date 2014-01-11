@@ -9,13 +9,14 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.OWLAxiom;
 
 import uk.ac.manchester.cs.owl.explanation.ordering.AlphaExplanationOrderer;
+import uk.ac.manchester.cs.owl.explanation.ordering.DefaultExplanationOrderer;
 import uk.ac.manchester.cs.owl.explanation.ordering.EntailedAxiomTree;
 import uk.ac.manchester.cs.owl.explanation.ordering.ExplanationOrderer;
 import uk.ac.manchester.cs.owl.explanation.ordering.ExplanationOrdererImpl;
 import uk.ac.manchester.cs.owl.explanation.ordering.ExplanationTree;
 import uk.ac.manchester.cs.owl.explanation.ordering.NullExplanationOrderer;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
     @Test
@@ -29,6 +30,10 @@ public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
                 _OWLObjectRenderer);
         uk.ac.manchester.cs.owl.explanation.ordering.ExplanationTree result0 = testSubject0
                 .getOrderedExplanation(_OWLAxiom, _Set);
+    }
+
+    public void verifyDefaultExplanationRenderer() {
+        DefaultExplanationOrderer orderer = new DefaultExplanationOrderer();
     }
 
     @Test
@@ -67,8 +72,6 @@ public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
                 .getChildren();
         boolean result14 = testSubject0.isRoot();
     }
-
-    
 
     public void verifyInterfaceExplanationOrderer() throws Exception {
         ExplanationOrderer testSubject0 = mock(ExplanationOrderer.class);

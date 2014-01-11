@@ -22,6 +22,8 @@ public class TestCreator {
         TreeSet<String> mocks = new TreeSet<String>();
         LinkedHashSet<String> mockNames = new LinkedHashSet<String>();
 
+        public Container() {}
+
         String getMockName(Class<?> class1, Type gen) {
             String mockName = "_" + class1.getSimpleName();
             mockName = mockName.replace("[]", "_array");
@@ -201,7 +203,6 @@ public class TestCreator {
         return out;
     }
 
-    @SuppressWarnings("resource")
     private static void visit(File root, File current, Map<String, Container> outMap)
             throws ClassNotFoundException, FileNotFoundException {
         if (current == null) {
@@ -308,7 +309,7 @@ public class TestCreator {
         }
     }
 
-    private static String genName(Type m) {
+    static String genName(Type m) {
         String s = m.toString();
         s = s.replace("class ", "").replace("interface ", "");
         if (s.startsWith("[L")) {

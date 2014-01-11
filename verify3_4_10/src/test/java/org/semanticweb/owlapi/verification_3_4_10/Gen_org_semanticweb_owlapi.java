@@ -24,7 +24,7 @@ import org.semanticweb.owlapi.ShortForm2AnnotationGenerator;
 import org.semanticweb.owlapi.SplitSubClassAxioms;
 import org.semanticweb.owlapi.model.OWLOntologyChange;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi {
     @Test
@@ -167,8 +167,6 @@ public class Gen_org_semanticweb_owlapi {
         java.util.List<org.semanticweb.owlapi.model.OWLOntologyChange> result0 = testSubject0
                 .getChanges();
     }
-
-    
 
     public void verifyInterfaceOWLCompositeOntologyChange() throws Exception {
         OWLCompositeOntologyChange testSubject0 = mock(OWLCompositeOntologyChange.class);

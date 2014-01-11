@@ -10,11 +10,9 @@ import org.semanticweb.owlapi.rdf.syntax.RDFConsumer;
 import org.semanticweb.owlapi.rdf.syntax.RDFParser;
 import org.semanticweb.owlapi.rdf.syntax.RDFParserException;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_rdf_syntax {
-    
-
     public void verifyInterfaceRDFConsumer() throws Exception {
         RDFConsumer testSubject0 = mock(RDFConsumer.class);
         testSubject0.startModel(_String);

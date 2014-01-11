@@ -11,7 +11,7 @@ import com.clarkparsia.owlapi.explanation.io.ConciseExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.io.ExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.io.SilentExplanationRenderer;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation_io {
     @Test

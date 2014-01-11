@@ -24,7 +24,7 @@ import org.semanticweb.owlapi.model.OWLObject;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyChange;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "serial", "unchecked" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_change {
     @Test
@@ -178,8 +178,6 @@ public class Gen_org_semanticweb_owlapi_change {
         org.semanticweb.owlapi.model.OWLOntologyChange result1 = testSubject0
                 .createOntologyChange(_OWLOntology);
     }
-
-    
 
     public void verifyInterfaceOWLOntologyChangeDataVisitor() throws Exception {
         OWLOntologyChangeDataVisitor<OWLObject, Exception> testSubject0 = mock(OWLOntologyChangeDataVisitor.class);

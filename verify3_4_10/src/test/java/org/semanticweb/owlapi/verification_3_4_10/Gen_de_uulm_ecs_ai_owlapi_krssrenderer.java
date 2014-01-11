@@ -18,7 +18,7 @@ import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSSyntaxOntologyStorer;
 import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSSyntaxRenderer;
 import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSVocabulary;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     @Test

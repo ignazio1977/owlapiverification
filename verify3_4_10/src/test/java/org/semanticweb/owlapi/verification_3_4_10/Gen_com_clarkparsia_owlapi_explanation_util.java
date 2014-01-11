@@ -12,7 +12,7 @@ import com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor;
 import com.clarkparsia.owlapi.explanation.util.OntologyUtils;
 import com.clarkparsia.owlapi.explanation.util.SilentExplanationProgressMonitor;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation_util {
     @Test

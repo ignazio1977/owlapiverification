@@ -15,7 +15,7 @@ import uk.ac.manchester.cs.owlapi.dlsyntax.parser.ParseException;
 import uk.ac.manchester.cs.owlapi.dlsyntax.parser.Token;
 import uk.ac.manchester.cs.owlapi.dlsyntax.parser.TokenMgrError;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owlapi_dlsyntax_parser {
     @Test
@@ -103,8 +103,6 @@ public class Gen_uk_ac_manchester_cs_owlapi_dlsyntax_parser {
         org.semanticweb.owlapi.model.OWLAxiom result36 = testSubject0.parseAxiom();
         testSubject0.setDefaultNamespace(_String);
     }
-
-    
 
     public void verifyInterfaceDLSyntaxParserConstants() throws Exception {
         DLSyntaxParserConstants testSubject0 = mock(DLSyntaxParserConstants.class);

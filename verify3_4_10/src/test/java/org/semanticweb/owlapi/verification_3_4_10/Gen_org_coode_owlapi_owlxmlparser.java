@@ -20,7 +20,7 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLPropertyExpression;
 import org.semanticweb.owlapi.model.UnloadableImportException;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation", "unchecked", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_owlxmlparser {
     @Test
@@ -2945,8 +2945,6 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
-    
-
     public void verifyInterfaceOWLElementHandler() throws Exception {
         OWLElementHandler<OWLObject> testSubject0 = mock(OWLElementHandler.class);
         testSubject0.startElement(_String);
@@ -2974,8 +2972,6 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChars(_char_array, _int, _int);
         testSubject0.endElement();
     }
-
-    
 
     public void verifyInterfaceOWLElementHandlerFactory() throws Exception {
         OWLElementHandlerFactory testSubject0 = mock(OWLElementHandlerFactory.class);

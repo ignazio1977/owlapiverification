@@ -15,7 +15,7 @@ import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyFormat;
 import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyStorer;
 import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyStorerBase;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "serial" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owlapi_dlsyntax {
     @Test

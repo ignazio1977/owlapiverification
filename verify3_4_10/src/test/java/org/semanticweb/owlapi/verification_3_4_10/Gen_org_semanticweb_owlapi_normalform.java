@@ -10,7 +10,7 @@ import org.semanticweb.owlapi.normalform.NegationalNormalFormConverter;
 import org.semanticweb.owlapi.normalform.NormalFormRewriter;
 import org.semanticweb.owlapi.normalform.OWLObjectComplementOfExtractor;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_normalform {
     @Test
@@ -26,8 +26,6 @@ public class Gen_org_semanticweb_owlapi_normalform {
         org.semanticweb.owlapi.model.OWLClassExpression result1 = testSubject0
                 .convertToNormalForm(_OWLClassExpression);
     }
-
-    
 
     public void verifyInterfaceNormalFormRewriter() throws Exception {
         NormalFormRewriter testSubject0 = mock(NormalFormRewriter.class);

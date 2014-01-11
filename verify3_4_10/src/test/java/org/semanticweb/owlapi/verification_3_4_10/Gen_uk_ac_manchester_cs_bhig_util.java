@@ -11,7 +11,7 @@ import uk.ac.manchester.cs.bhig.util.MutableTree;
 import uk.ac.manchester.cs.bhig.util.NodeRenderer;
 import uk.ac.manchester.cs.bhig.util.Tree;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation", "unchecked", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_bhig_util {
     @Test

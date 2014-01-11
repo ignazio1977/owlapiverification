@@ -66,7 +66,7 @@ import org.semanticweb.owlapi.model.OWLOntologyFormat;
 import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration;
 import org.semanticweb.owlapi.model.UnloadableImportException;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_io {
     @Test
@@ -260,8 +260,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.OutputStream result5 = testSubject0.getOutputStream();
     }
 
-    
-
     public void verifyIOProperties() throws Exception {
         IOProperties testSubject0 = IOProperties.getInstance();
         boolean result1 = testSubject0.isConnectionAcceptHTTPCompression();
@@ -341,8 +339,6 @@ public class Gen_org_semanticweb_owlapi_io {
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
-    
-
     public void verifyInterfaceOWLObjectRenderer() throws Exception {
         OWLObjectRenderer testSubject0 = mock(OWLObjectRenderer.class);
         java.lang.String result0 = testSubject0.render(_OWLObject);
@@ -373,8 +369,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
     }
 
-    
-
     public void verifyInterfaceOWLOntologyDocumentSource() throws Exception {
         OWLOntologyDocumentSource testSubject0 = mock(OWLOntologyDocumentSource.class);
         java.io.InputStream result0 = testSubject0.getInputStream();
@@ -383,8 +377,6 @@ public class Gen_org_semanticweb_owlapi_io {
         boolean result3 = testSubject0.isInputStreamAvailable();
         org.semanticweb.owlapi.model.IRI result4 = testSubject0.getDocumentIRI();
     }
-
-    
 
     public void verifyInterfaceOWLOntologyDocumentTarget() throws Exception {
         OWLOntologyDocumentTarget testSubject0 = mock(OWLOntologyDocumentTarget.class);
@@ -424,8 +416,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    
-
     public void verifyInterfaceOWLOntologyLoaderMetaData() throws Exception {
         OWLOntologyLoaderMetaData testSubject0 = mock(OWLOntologyLoaderMetaData.class);
     }
@@ -453,8 +443,6 @@ public class Gen_org_semanticweb_owlapi_io {
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
     }
-
-    
 
     public void verifyInterfaceOWLParser() throws Exception {
         OWLParser testSubject0 = mock(OWLParser.class);
@@ -499,15 +487,11 @@ public class Gen_org_semanticweb_owlapi_io {
         java.lang.Throwable[] result8 = testSubject0.getSuppressed();
     }
 
-    
-
     public void verifyInterfaceOWLParserFactory() throws Exception {
         OWLParserFactory testSubject0 = mock(OWLParserFactory.class);
         org.semanticweb.owlapi.io.OWLParser result0 = testSubject0
                 .createParser(_OWLOntologyManager);
     }
-
-    
 
     public void verifyOWLParserFactoryRegistry() throws Exception {
         OWLParserFactoryRegistry testSubject0 = OWLParserFactoryRegistry.getInstance();
@@ -593,8 +577,6 @@ public class Gen_org_semanticweb_owlapi_io {
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result9 = testSubject0.getSuppressed();
     }
-
-    
 
     public void verifyInterfaceOWLRenderer() throws Exception {
         OWLRenderer testSubject0 = mock(OWLRenderer.class);
@@ -693,8 +675,6 @@ public class Gen_org_semanticweb_owlapi_io {
         boolean result1 = testSubject0.isLiteral();
     }
 
-    
-
     public void verifyRDFNode() throws Exception {
         RDFNode testSubject0 = new RDFNode() {
             @Override
@@ -785,8 +765,6 @@ public class Gen_org_semanticweb_owlapi_io {
         boolean result1 = testSubject0.isLiteral();
         boolean result2 = testSubject0.isAnonymous();
     }
-
-    
 
     public void verifyRDFResourceParseError() throws Exception {
         RDFResourceParseError testSubject0 = new RDFResourceParseError(_OWLEntity,
@@ -954,8 +932,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.OutputStream result5 = testSubject0.getOutputStream();
     }
 
-    
-
     public void verifyToStringRenderer() throws Exception {
         ToStringRenderer testSubject0 = ToStringRenderer.getInstance();
         testSubject0.setShortFormProvider(_ShortFormProvider);
@@ -1007,8 +983,6 @@ public class Gen_org_semanticweb_owlapi_io {
         boolean result4 = testSubject0.isDocumentIRIAvailable();
         java.io.OutputStream result5 = testSubject0.getOutputStream();
     }
-
-    
 
     public void verifyXMLUtils() throws Exception {
         XMLUtils testSubject0 = new XMLUtils();

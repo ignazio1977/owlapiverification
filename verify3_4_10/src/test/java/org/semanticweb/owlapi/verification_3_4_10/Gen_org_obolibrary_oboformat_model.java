@@ -14,11 +14,9 @@ import org.obolibrary.oboformat.model.OBODoc;
 import org.obolibrary.oboformat.model.QualifierValue;
 import org.obolibrary.oboformat.model.Xref;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_oboformat_model {
-    
-
     public void verifyClause() throws Exception {
         Clause testSubject0 = new Clause();
         Clause testSubject1 = new Clause(_OboFormatTag, _String);
@@ -66,8 +64,6 @@ public class Gen_org_obolibrary_oboformat_model {
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
     }
-
-    
 
     public void verifyFrame() throws Exception {
         Frame testSubject0 = new Frame();
@@ -150,8 +146,6 @@ public class Gen_org_obolibrary_oboformat_model {
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    
-
     public void verifyOBODoc() throws Exception {
         OBODoc testSubject0 = new OBODoc();
         testSubject0.check();
@@ -186,8 +180,6 @@ public class Gen_org_obolibrary_oboformat_model {
         org.obolibrary.oboformat.model.Frame result11 = testSubject0.getHeaderFrame();
     }
 
-    
-
     public void verifyQualifierValue() throws Exception {
         QualifierValue testSubject0 = new QualifierValue(_String, _String);
         java.lang.Object result0 = testSubject0.getValue();
@@ -195,8 +187,6 @@ public class Gen_org_obolibrary_oboformat_model {
         java.lang.String result1 = testSubject0.getQualifier();
         testSubject0.setQualifier(_String);
     }
-
-    
 
     public void verifyXref() throws Exception {
         Xref testSubject0 = new Xref(_String);

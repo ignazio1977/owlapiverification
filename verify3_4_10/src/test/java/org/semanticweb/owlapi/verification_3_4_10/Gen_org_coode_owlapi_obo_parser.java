@@ -58,7 +58,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_obo_parser {
     @Test
@@ -284,8 +284,6 @@ public class Gen_org_coode_owlapi_obo_parser {
         testSubject0.applyChange(_OWLOntologyChange);
     }
 
-    
-
     public void verifyIDSpaceManager() throws Exception {
         IDSpaceManager testSubject0 = new IDSpaceManager();
         IDSpaceManager testSubject1 = new IDSpaceManager(_IDSpaceManager);
@@ -479,8 +477,6 @@ public class Gen_org_coode_owlapi_obo_parser {
         java.lang.String result6 = testSubject0.GetImage();
     }
 
-    
-
     public void verifyModifiers() throws Exception {
         Modifiers testSubject0 = new Modifiers();
         org.coode.owlapi.obo.parser.Modifiers result0 = Modifiers.parseModifiers(_String);
@@ -563,8 +559,6 @@ public class Gen_org_coode_owlapi_obo_parser {
                 .getOWLOntologyManager();
     }
 
-    
-
     public void verifyOBOFrame() throws Exception {
         OBOFrame testSubject0 = new OBOFrame(_List);
         OBOFrame testSubject1 = new OBOFrame(_String, _List);
@@ -574,8 +568,6 @@ public class Gen_org_coode_owlapi_obo_parser {
         boolean result2 = testSubject0.isHeaderFrame();
         boolean result3 = testSubject0.isTypeDefFrame();
     }
-
-    
 
     public void verifyOBOIdTranslator() throws Exception {
         OBOIdTranslator testSubject0 = new OBOIdTranslator();
@@ -649,8 +641,6 @@ public class Gen_org_coode_owlapi_obo_parser {
         testSubject0.TagValuePair();
     }
 
-    
-
     public void verifyInterfaceOBOParserConstants() throws Exception {
         OBOParserConstants testSubject0 = mock(OBOParserConstants.class);
     }
@@ -692,8 +682,6 @@ public class Gen_org_coode_owlapi_obo_parser {
         org.semanticweb.owlapi.io.OWLParser result0 = testSubject0
                 .createParser(_OWLOntologyManager);
     }
-
-    
 
     public void verifyInterfaceOBOParserHandler() throws Exception {
         OBOParserHandler testSubject0 = mock(OBOParserHandler.class);
@@ -748,8 +736,6 @@ public class Gen_org_coode_owlapi_obo_parser {
         OBOPrefix testSubject2 = OBOPrefix.OBO_IN_OWL;
         java.lang.String result0 = testSubject0.getPrefix();
     }
-
-    
 
     public void verifyOBOTagValuePair() throws Exception {
         OBOTagValuePair testSubject0 = new OBOTagValuePair(_String, _String, _String,
@@ -1112,8 +1098,6 @@ public class Gen_org_coode_owlapi_obo_parser {
                 .getOWLOntologyManager();
         testSubject0.applyChange(_OWLOntologyChange);
     }
-
-    
 
     public void verifyInterfaceTagValueHandler() throws Exception {
         TagValueHandler testSubject0 = mock(TagValueHandler.class);

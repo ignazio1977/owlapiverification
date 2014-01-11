@@ -14,7 +14,7 @@ import org.semanticweb.owlapi.expression.ParserException;
 import org.semanticweb.owlapi.expression.ShortFormEntityChecker;
 import org.semanticweb.owlapi.model.OWLObject;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "unchecked" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_expression {
     @Test
@@ -28,8 +28,6 @@ public class Gen_org_semanticweb_owlapi_expression {
         OWLObject result0 = testSubject0.parse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
     }
-
-    
 
     public void verifyInterfaceOWLEntityChecker() throws Exception {
         OWLEntityChecker testSubject0 = mock(OWLEntityChecker.class);
@@ -46,15 +44,11 @@ public class Gen_org_semanticweb_owlapi_expression {
                 .getOWLIndividual(_String);
     }
 
-    
-
     public void verifyInterfaceOWLExpressionParser() throws Exception {
         OWLExpressionParser<OWLObject> testSubject0 = mock(OWLExpressionParser.class);
         OWLObject result0 = testSubject0.parse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
     }
-
-    
 
     public void verifyInterfaceOWLOntologyChecker() throws Exception {
         OWLOntologyChecker testSubject0 = mock(OWLOntologyChecker.class);

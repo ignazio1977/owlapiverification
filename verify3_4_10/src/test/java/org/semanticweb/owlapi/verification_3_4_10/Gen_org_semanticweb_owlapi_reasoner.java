@@ -33,7 +33,7 @@ import org.semanticweb.owlapi.reasoner.TimeOutException;
 import org.semanticweb.owlapi.reasoner.TimedConsoleProgressMonitor;
 import org.semanticweb.owlapi.reasoner.UnsupportedEntailmentTypeException;
 
-@SuppressWarnings({ "javadoc", "unused", "serial", "deprecation", "unchecked", "rawtypes" })
+@SuppressWarnings({ "javadoc", "unused", "unchecked" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_reasoner {
     @Test
@@ -307,8 +307,6 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         testSubject0.reasonerTaskBusy();
     }
 
-    
-
     public void verifyInterfaceOWLReasoner() throws Exception {
         OWLReasoner testSubject0 = mock(OWLReasoner.class);
         testSubject0.interrupt();
@@ -401,8 +399,6 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         testSubject0.dispose();
     }
 
-    
-
     public void verifyInterfaceOWLReasonerConfiguration() throws Exception {
         OWLReasonerConfiguration testSubject0 = mock(OWLReasonerConfiguration.class);
         org.semanticweb.owlapi.reasoner.ReasonerProgressMonitor result0 = testSubject0
@@ -413,8 +409,6 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         org.semanticweb.owlapi.reasoner.IndividualNodeSetPolicy result3 = testSubject0
                 .getIndividualNodeSetPolicy();
     }
-
-    
 
     public void verifyInterfaceOWLReasonerFactory() throws Exception {
         OWLReasonerFactory testSubject0 = mock(OWLReasonerFactory.class);
@@ -509,8 +503,6 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
     }
-
-    
 
     public void verifyInterfaceReasonerProgressMonitor() throws Exception {
         ReasonerProgressMonitor testSubject0 = mock(ReasonerProgressMonitor.class);
