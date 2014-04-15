@@ -188,10 +188,6 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         Object result5 = testSubject0.getExpression();
     }
 
-    @Test
-    public void enforceInterfacesUndeclaredEntityViolation() {
-    }
-
     public void verifyInterfaceUndeclaredEntityViolation() {
         UndeclaredEntityViolation testSubject0 = mock(UndeclaredEntityViolation.class);
         OWLOntology result0 = testSubject0.getOntology();

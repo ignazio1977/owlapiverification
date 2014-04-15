@@ -3,9 +3,6 @@ package org.semanticweb.owlapi.verification_4_0_0;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
-import java.util.Collections;
-import java.util.Set;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
@@ -50,10 +47,6 @@ public class Gen_com_clarkparsia_owlapi_explanation {
         java.util.Set<java.util.Set<OWLAxiom>> result3 = testSubject0.getExplanations(_OWLClassExpression, _int);
         java.util.Set<java.util.Set<OWLAxiom>> result4 = testSubject0.getExplanations(_OWLAxiom);
         java.util.Set<java.util.Set<OWLAxiom>> result5 = testSubject0.getExplanations(_OWLClassExpression);
-    }
-
-    @Test
-    public void enforceInterfacesExplanationGenerator() {
     }
 
     public void verifyInterfaceExplanationGenerator() {
@@ -102,17 +95,9 @@ public class Gen_com_clarkparsia_owlapi_explanation {
         testSubject0.dispose();
     }
 
-    @Test
-    public void enforceInterfacesSatisfiabilityConverter() {
-    }
-
     public void verifySatisfiabilityConverter() {
         SatisfiabilityConverter testSubject0 = new SatisfiabilityConverter(_OWLDataFactory);
         OWLClassExpression result0 = testSubject0.convert(_OWLAxiom);
-    }
-
-    @Test
-    public void enforceInterfacesSingleExplanationGenerator() {
     }
 
     public void verifyInterfaceSingleExplanationGenerator() {
@@ -131,16 +116,7 @@ public class Gen_com_clarkparsia_owlapi_explanation {
     }
 
     public void verifySingleExplanationGeneratorImpl() {
-        SingleExplanationGeneratorImpl testSubject0 = new SingleExplanationGeneratorImpl(_OWLOntology, _OWLReasonerFactory, _OWLReasoner) {
-            @Override
-            public void dispose() {
-            }
-
-            @Override
-            public Set<OWLAxiom> getExplanation(OWLClassExpression unsatClass) {
-                return Collections.emptySet();
-            }
-        };
+        SingleExplanationGeneratorImpl testSubject0 = mock(SingleExplanationGeneratorImpl.class);
         OWLOntology result0 = testSubject0.getOntology();
         OWLOntologyManager result1 = testSubject0.getOntologyManager();
         org.semanticweb.owlapi.reasoner.OWLReasoner result2 = testSubject0.getReasoner();

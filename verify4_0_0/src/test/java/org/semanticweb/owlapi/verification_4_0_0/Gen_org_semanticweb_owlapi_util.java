@@ -46,10 +46,6 @@ public class Gen_org_semanticweb_owlapi_util {
         testSubject0.dispose();
     }
 
-    @Test
-    public void enforceInterfacesAnonymousNodeChecker() {
-    }
-
     public void verifyInterfaceAnonymousNodeChecker() {
         AnonymousNodeChecker testSubject0 = mock(AnonymousNodeChecker.class);
         boolean result0 = testSubject0.isAnonymousNode(_IRI);
@@ -195,10 +191,6 @@ public class Gen_org_semanticweb_owlapi_util {
         java.util.Set<java.lang.String> result2 = testSubject0.getShortForms();
         java.lang.String result3 = testSubject0.getShortForm(_OWLEntity);
         testSubject0.dispose();
-    }
-
-    @Test
-    public void enforceInterfacesCollectionFactory() {
     }
 
     public void verifyCollectionFactory() {
@@ -450,10 +442,6 @@ public class Gen_org_semanticweb_owlapi_util {
         testSubject0.visit(_OWLHasKeyAxiom);
     }
 
-    @Test
-    public void enforceInterfacesEscapeUtils() {
-    }
-
     public void verifyEscapeUtils() {
         EscapeUtils testSubject0 = new EscapeUtils();
         java.lang.String result0 = EscapeUtils.escapeString(_String);
@@ -698,17 +686,9 @@ public class Gen_org_semanticweb_owlapi_util {
         java.util.Map<OWLOntology, java.util.Set<OWLEntity>> result0 = testSubject0.getObjects();
     }
 
-    @Test
-    public void enforceInterfacesImportsStructureObjectSorter() {
-    }
-
     public void verifyImportsStructureObjectSorter() {
         ImportsStructureObjectSorter<OWLObject> testSubject0 = new ImportsStructureObjectSorter<OWLObject>(_OWLOntology, _ObjectSelector);
         java.util.Map<OWLOntology, java.util.Set<OWLObject>> result0 = testSubject0.getObjects();
-    }
-
-    @Test
-    public void enforceInterfacesInferredAxiomGenerator() {
     }
 
     public void verifyInterfaceInferredAxiomGenerator() {
@@ -860,10 +840,6 @@ public class Gen_org_semanticweb_owlapi_util {
         Set<OWLObjectPropertyCharacteristicAxiom> result1 = testSubject0.createAxioms(_OWLDataFactory, _OWLReasoner);
     }
 
-    @Test
-    public void enforceInterfacesInferredOntologyGenerator() {
-    }
-
     public void verifyInferredOntologyGenerator() {
         InferredOntologyGenerator testSubject0 = new InferredOntologyGenerator(_OWLReasoner, _List123);
         InferredOntologyGenerator testSubject1 = new InferredOntologyGenerator(_OWLReasoner);
@@ -915,10 +891,6 @@ public class Gen_org_semanticweb_owlapi_util {
         InferredSubObjectPropertyAxiomGenerator testSubject0 = new InferredSubObjectPropertyAxiomGenerator();
         java.lang.String result0 = testSubject0.getLabel();
         Set<OWLSubObjectPropertyOfAxiom> result1 = testSubject0.createAxioms(_OWLDataFactory, _OWLReasoner);
-    }
-
-    @Test
-    public void enforceInterfacesIRIShortFormProvider() {
     }
 
     public void verifyInterfaceIRIShortFormProvider() {
@@ -1103,10 +1075,6 @@ public class Gen_org_semanticweb_owlapi_util {
         java.lang.Integer result167 = testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
     }
 
-    @Test
-    public void enforceInterfacesMonitorable() {
-    }
-
     public void verifyInterfaceMonitorable() throws InterruptedException {
         Monitorable testSubject0 = mock(Monitorable.class);
         testSubject0.interrupt();
@@ -1114,46 +1082,11 @@ public class Gen_org_semanticweb_owlapi_util {
         boolean result0 = testSubject0.canInterrupt();
     }
 
-    @Test
-    public void enforceInterfacesMultiMap() {
-        assertTrue(java.io.Serializable.class.isAssignableFrom(MultiMap.class));
-    }
-
-    public void verifyMultiMap() {
-        MultiMap<Object, Object> testSubject0 = new MultiMap<Object, Object>(_boolean, _boolean);
-        MultiMap<Object, Object> testSubject1 = new MultiMap<Object, Object>(_boolean);
-        MultiMap<Object, Object> testSubject2 = new MultiMap<Object, Object>();
-        boolean result0 = testSubject0.remove(_Object126, _Object127);
-        boolean result1 = testSubject0.remove(_Object126);
-        java.util.Collection<Object> result2 = testSubject0.get(_Object126);
-        boolean result3 = testSubject0.put(_Object126, _Object127);
-        testSubject0.clear();
-        boolean result4 = testSubject0.contains(_Object126, _Object127);
-        int result5 = testSubject0.size();
-        testSubject0.putAll(_MultiMap);
-        testSubject0.putAll(_Object126, _Collection129);
-        java.util.Set<Object> result6 = testSubject0.keySet();
-        boolean result7 = testSubject0.containsValue(_Object127);
-        boolean result8 = testSubject0.containsKey(_Object126);
-        java.util.Set<Object> result9 = testSubject0.getAllValues();
-        boolean result10 = testSubject0.isValueSetsEqual();
-        boolean result11 = testSubject0.isUsingSets();
-        testSubject0.setEntry(_Object126, _Collection129);
-    }
-
-    @Test
-    public void enforceInterfacesNamedConjunctChecker() {
-    }
-
     public void verifyNamedConjunctChecker() {
         NamedConjunctChecker testSubject0 = new NamedConjunctChecker();
         boolean result0 = testSubject0.isNamedConjunct(_OWLClass, _OWLClassExpression);
         boolean result1 = testSubject0.hasNamedConjunct(_OWLClassExpression);
         java.util.Set<OWLClass> result2 = testSubject0.getNamedConjuncts(_OWLClassExpression);
-    }
-
-    @Test
-    public void enforceInterfacesNamespaceUtil() {
     }
 
     public void verifyNamespaceUtil() {
@@ -1332,17 +1265,9 @@ public class Gen_org_semanticweb_owlapi_util {
         boolean result0 = testSubject0.isCancelled();
     }
 
-    @Test
-    public void enforceInterfacesObjectPropertySimplifier() {
-    }
-
     public void verifyObjectPropertySimplifier() {
         ObjectPropertySimplifier testSubject0 = new ObjectPropertySimplifier(_OWLDataFactory);
         OWLObjectPropertyExpression result0 = testSubject0.getSimplified(_OWLObjectPropertyExpression);
-    }
-
-    @Test
-    public void enforceInterfacesOntologyAxiomPair() {
     }
 
     public void verifyOntologyAxiomPair() {
@@ -1362,10 +1287,6 @@ public class Gen_org_semanticweb_owlapi_util {
         java.lang.String result1 = testSubject0.getShortForm(_OWLOntology);
     }
 
-    @Test
-    public void enforceInterfacesOWLAPIPreconditions() {
-    }
-
     public void verifyOWLAPIPreconditions() {
         OWLAPIPreconditions testSubject0 = new OWLAPIPreconditions();
         OWLAPIPreconditions.checkNotNegative(_long, _String);
@@ -1373,10 +1294,6 @@ public class Gen_org_semanticweb_owlapi_util {
         java.lang.Object result0 = OWLAPIPreconditions.checkNotNull(_Object, _String);
         java.lang.Object result1 = OWLAPIPreconditions.checkNotNull(_Object);
         java.lang.Object result2 = OWLAPIPreconditions.checkNotNull(_Optional, _String);
-    }
-
-    @Test
-    public void enforceInterfacesOWLAxiomFilter() {
     }
 
     public void verifyInterfaceOWLAxiomFilter() {
@@ -1984,19 +1901,11 @@ public class Gen_org_semanticweb_owlapi_util {
         java.util.List<RemoveAxiom> result0 = testSubject0.getChanges();
     }
 
-    @Test
-    public void enforceInterfacesOWLEntityRenamer() {
-    }
-
     public void verifyOWLEntityRenamer() {
         OWLEntityRenamer testSubject0 = new OWLEntityRenamer(_OWLOntologyManager, _Set61);
         java.util.List<OWLOntologyChange<?>> result0 = testSubject0.changeIRI(_Map140);
         java.util.List<OWLOntologyChange<?>> result1 = testSubject0.changeIRI(_OWLEntity, _IRI);
         java.util.List<OWLOntologyChange<?>> result2 = testSubject0.changeIRI(_IRI, _IRI);
-    }
-
-    @Test
-    public void enforceInterfacesOWLEntitySetProvider() {
     }
 
     public void verifyInterfaceOWLEntitySetProvider() {
@@ -2015,17 +1924,9 @@ public class Gen_org_semanticweb_owlapi_util {
         IRI result0 = testSubject0.getConvertedIRI(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLEntityURIConverter() {
-    }
-
     public void verifyOWLEntityURIConverter() {
         OWLEntityURIConverter testSubject0 = new OWLEntityURIConverter(_OWLOntologyManager, _Set61, _OWLEntityURIConverterStrategy);
         java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
-    }
-
-    @Test
-    public void enforceInterfacesOWLEntityURIConverterStrategy() {
     }
 
     public void verifyInterfaceOWLEntityURIConverterStrategy() {
@@ -2264,10 +2165,6 @@ public class Gen_org_semanticweb_owlapi_util {
         testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
         testSubject0.visit(_OWLObjectPropertyRangeAxiom);
         testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-    }
-
-    @Test
-    public void enforceInterfacesOWLObjectPropertyManager() {
     }
 
     public void verifyOWLObjectPropertyManager() {
@@ -2569,10 +2466,6 @@ public class Gen_org_semanticweb_owlapi_util {
         OWLObject result83 = testSubject0.visit(_OWLObjectPropertyDomainAxiom);
     }
 
-    @Test
-    public void enforceInterfacesOWLObjectWalker() {
-    }
-
     public void verifyOWLObjectWalker() {
         OWLObjectWalker<OWLOntology> testSubject0 = new OWLObjectWalker<OWLOntology>(_Set61);
         OWLObjectWalker<OWLOntology> testSubject1 = new OWLObjectWalker<OWLOntology>(_Set61, _boolean);
@@ -2705,10 +2598,6 @@ public class Gen_org_semanticweb_owlapi_util {
     public void verifyOWLOntologyImportsClosureSetProvider() {
         OWLOntologyImportsClosureSetProvider testSubject0 = new OWLOntologyImportsClosureSetProvider(_OWLOntologyManager, _OWLOntology);
         java.util.Set<OWLOntology> result0 = testSubject0.getOntologies();
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyIRIChanger() {
     }
 
     public void verifyOWLOntologyIRIChanger() {
@@ -2983,10 +2872,6 @@ public class Gen_org_semanticweb_owlapi_util {
         org.semanticweb.owlapi.util.PriorityCollection<OWLObject> result2 = testSubject0.getByMIMEType(_String);
     }
 
-    @Test
-    public void enforceInterfacesProgressMonitor() {
-    }
-
     public void verifyInterfaceProgressMonitor() {
         ProgressMonitor testSubject0 = mock(ProgressMonitor.class);
         testSubject0.setSize(_long);
@@ -3034,17 +2919,9 @@ public class Gen_org_semanticweb_owlapi_util {
         java.util.Set<OWLEntity> result0 = testSubject0.getEntities();
     }
 
-    @Test
-    public void enforceInterfacesRootClassChecker() {
-    }
-
     public void verifyInterfaceRootClassChecker() {
         RootClassChecker testSubject0 = mock(RootClassChecker.class);
         boolean result0 = testSubject0.isRootClass(_OWLClass);
-    }
-
-    @Test
-    public void enforceInterfacesShortFormProvider() {
     }
 
     public void verifyInterfaceShortFormProvider() {
@@ -3210,10 +3087,6 @@ public class Gen_org_semanticweb_owlapi_util {
         int result0 = testSubject0.compare(_String, _String);
     }
 
-    @Test
-    public void enforceInterfacesStructuralTransformation() {
-    }
-
     public void verifyStructuralTransformation() {
         StructuralTransformation testSubject0 = new StructuralTransformation(_OWLDataFactory);
         java.util.Set<OWLAxiom> result0 = testSubject0.getTransformedAxioms(_Set154);
@@ -3333,17 +3206,9 @@ public class Gen_org_semanticweb_owlapi_util {
         testSubject0.visit(_SWRLDataPropertyAtom);
     }
 
-    @Test
-    public void enforceInterfacesSWRLVariableShortFormProvider() {
-    }
-
     public void verifyInterfaceSWRLVariableShortFormProvider() {
         SWRLVariableShortFormProvider testSubject0 = mock(SWRLVariableShortFormProvider.class);
         java.lang.String result0 = testSubject0.getShortForm(_SWRLVariable);
-    }
-
-    @Test
-    public void enforceInterfacesVersion() {
     }
 
     public void verifyVersion() {
@@ -3354,13 +3219,8 @@ public class Gen_org_semanticweb_owlapi_util {
         int result3 = testSubject0.getBuild();
     }
 
-    @Test
-    public void enforceInterfacesVersionInfo() {
-    }
-
     public void verifyVersionInfo() {
-        VersionInfo testSubject0 = new VersionInfo() {
-        };
+        VersionInfo testSubject0 = mock(VersionInfo.class);
         org.semanticweb.owlapi.util.VersionInfo result0 = VersionInfo.getVersionInfo();
         java.lang.String result1 = testSubject0.getVersion();
         java.lang.String result2 = testSubject0.getGeneratedByMessage();
@@ -3536,7 +3396,6 @@ public class Gen_org_semanticweb_owlapi_util {
     private org.semanticweb.owlapi.util.IRIShortFormProvider _IRIShortFormProvider;
     private org.semanticweb.owlapi.util.ImportsStructureObjectSorter.ObjectSelector<OWLObject> _ObjectSelector;
     private org.semanticweb.owlapi.util.InferredAxiomGenerator<?> _InferredAxiomGenerator;
-    private org.semanticweb.owlapi.util.MultiMap<Object, Object> _MultiMap;
     private org.semanticweb.owlapi.util.OWLAxiomFilter _OWLAxiomFilter;
     private org.semanticweb.owlapi.util.OWLEntityURIConverterStrategy _OWLEntityURIConverterStrategy;
     private org.semanticweb.owlapi.util.OWLObjectWalker<OWLObject> _OWLObjectWalker;

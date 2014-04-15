@@ -227,17 +227,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.lang.String result7 = testSubject0.getShortForm();
     }
 
-    @Test
-    public void enforceInterfacesHasAddAxioms() {
-    }
-
     public void verifyInterfaceHasAddAxioms() {
         HasAddAxioms testSubject0 = mock(HasAddAxioms.class);
         java.util.List<OWLOntologyChange<?>> result0 = testSubject0.addAxioms(_OWLOntology, _Set12);
-    }
-
-    @Test
-    public void enforceInterfacesHasAnnotations() {
     }
 
     public void verifyInterfaceHasAnnotations() {
@@ -245,17 +237,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
     }
 
-    @Test
-    public void enforceInterfacesHasAnonymousIndividuals() {
-    }
-
     public void verifyInterfaceHasAnonymousIndividuals() {
         HasAnonymousIndividuals testSubject0 = mock(HasAnonymousIndividuals.class);
         java.util.Set<OWLAnonymousIndividual> result0 = testSubject0.getAnonymousIndividuals();
-    }
-
-    @Test
-    public void enforceInterfacesHasApplyChanges() {
     }
 
     public void verifyInterfaceHasApplyChanges() {
@@ -263,17 +247,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.List<OWLOntologyChange<?>> result0 = testSubject0.applyChanges(_List);
     }
 
-    @Test
-    public void enforceInterfacesHasAxioms() {
-    }
-
     public void verifyInterfaceHasAxioms() {
         HasAxioms testSubject0 = mock(HasAxioms.class);
         java.util.Set<OWLAxiom> result0 = testSubject0.getAxioms();
-    }
-
-    @Test
-    public void enforceInterfacesHasAxiomsByType() {
     }
 
     public void verifyInterfaceHasAxiomsByType() {
@@ -281,17 +257,9 @@ public class Gen_org_semanticweb_owlapi_model {
         Set<OWLAnnotationAssertionAxiom> result0 = testSubject0.getAxioms(_AxiomType);
     }
 
-    @Test
-    public void enforceInterfacesHasCardinality() {
-    }
-
     public void verifyInterfaceHasCardinality() {
         HasCardinality testSubject0 = mock(HasCardinality.class);
         int result0 = testSubject0.getCardinality();
-    }
-
-    @Test
-    public void enforceInterfacesHasClassesInSignature() {
     }
 
     public void verifyInterfaceHasClassesInSignature() {
@@ -299,17 +267,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLClass> result0 = testSubject0.getClassesInSignature();
     }
 
-    @Test
-    public void enforceInterfacesHasContainsAxiom() {
-    }
-
     public void verifyInterfaceHasContainsAxiom() {
         HasContainsAxiom testSubject0 = mock(HasContainsAxiom.class);
         boolean result0 = testSubject0.containsAxiom(_OWLAxiom);
-    }
-
-    @Test
-    public void enforceInterfacesHasContainsEntityInSignature() {
     }
 
     public void verifyInterfaceHasContainsEntityInSignature() {
@@ -317,17 +277,9 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result0 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesHasContainsOntology() {
-    }
-
     public void verifyInterfaceHasContainsOntology() {
         HasContainsOntology testSubject0 = mock(HasContainsOntology.class);
         boolean result0 = testSubject0.contains(_OWLOntologyID);
-    }
-
-    @Test
-    public void enforceInterfacesHasDataFactory() {
     }
 
     public void verifyInterfaceHasDataFactory() {
@@ -335,17 +287,9 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLDataFactory result0 = testSubject0.getOWLDataFactory();
     }
 
-    @Test
-    public void enforceInterfacesHasDataPropertiesInSignature() {
-    }
-
     public void verifyInterfaceHasDataPropertiesInSignature() {
         HasDataPropertiesInSignature testSubject0 = mock(HasDataPropertiesInSignature.class);
         java.util.Set<OWLDataProperty> result0 = testSubject0.getDataPropertiesInSignature();
-    }
-
-    @Test
-    public void enforceInterfacesHasDatatypesInSignature() {
     }
 
     public void verifyInterfaceHasDatatypesInSignature() {
@@ -353,17 +297,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLDatatype> result0 = testSubject0.getDatatypesInSignature();
     }
 
-    @Test
-    public void enforceInterfacesHasDirectImports() {
-    }
-
     public void verifyInterfaceHasDirectImports() {
         HasDirectImports testSubject0 = mock(HasDirectImports.class);
         java.util.Set<OWLOntology> result0 = testSubject0.getDirectImports();
-    }
-
-    @Test
-    public void enforceInterfacesHasDomain() {
     }
 
     public void verifyInterfaceHasDomain() {
@@ -371,17 +307,9 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLObject result0 = testSubject0.getDomain();
     }
 
-    @Test
-    public void enforceInterfacesHasFiller() {
-    }
-
     public void verifyInterfaceHasFiller() {
         HasFiller<OWLObject> testSubject0 = mock(HasFiller.class);
         OWLObject result0 = testSubject0.getFiller();
-    }
-
-    @Test
-    public void enforceInterfacesHasGetEntitiesInSignature() {
     }
 
     public void verifyInterfaceHasGetEntitiesInSignature() {
@@ -389,17 +317,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLEntity> result0 = testSubject0.getEntitiesInSignature(_IRI);
     }
 
-    @Test
-    public void enforceInterfacesHasGetOntologies() {
-    }
-
     public void verifyInterfaceHasGetOntologies() {
         HasGetOntologies testSubject0 = mock(HasGetOntologies.class);
         java.util.Set<OWLOntology> result0 = testSubject0.getOntologies();
-    }
-
-    @Test
-    public void enforceInterfacesHasGetOntologyById() {
     }
 
     public void verifyInterfaceHasGetOntologyById() {
@@ -407,17 +327,9 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLOntology result0 = testSubject0.getOntology(_OWLOntologyID);
     }
 
-    @Test
-    public void enforceInterfacesHasImportsClosure() {
-    }
-
     public void verifyInterfaceHasImportsClosure() {
         HasImportsClosure testSubject0 = mock(HasImportsClosure.class);
         java.util.Set<OWLOntology> result0 = testSubject0.getImportsClosure();
-    }
-
-    @Test
-    public void enforceInterfacesHasIndividualsInSignature() {
     }
 
     public void verifyInterfaceHasIndividualsInSignature() {
@@ -425,17 +337,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLNamedIndividual> result0 = testSubject0.getIndividualsInSignature();
     }
 
-    @Test
-    public void enforceInterfacesHasIRI() {
-    }
-
     public void verifyInterfaceHasIRI() {
         HasIRI testSubject0 = mock(HasIRI.class);
         IRI result0 = testSubject0.getIRI();
-    }
-
-    @Test
-    public void enforceInterfacesHasLang() {
     }
 
     public void verifyInterfaceHasLang() {
@@ -443,17 +347,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.lang.String result0 = testSubject0.getLang();
     }
 
-    @Test
-    public void enforceInterfacesHasLogicalAxioms() {
-    }
-
     public void verifyInterfaceHasLogicalAxioms() {
         HasLogicalAxioms testSubject0 = mock(HasLogicalAxioms.class);
         java.util.Set<OWLLogicalAxiom> result0 = testSubject0.getLogicalAxioms();
-    }
-
-    @Test
-    public void enforceInterfacesHasObject() {
     }
 
     public void verifyInterfaceHasObject() {
@@ -461,17 +357,9 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLObject result0 = testSubject0.getObject();
     }
 
-    @Test
-    public void enforceInterfacesHasObjectPropertiesInSignature() {
-    }
-
     public void verifyInterfaceHasObjectPropertiesInSignature() {
         HasObjectPropertiesInSignature testSubject0 = mock(HasObjectPropertiesInSignature.class);
         java.util.Set<OWLObjectProperty> result0 = testSubject0.getObjectPropertiesInSignature();
-    }
-
-    @Test
-    public void enforceInterfacesHasOntologyID() {
     }
 
     public void verifyInterfaceHasOntologyID() {
@@ -479,17 +367,9 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLOntologyID result0 = testSubject0.getOntologyID();
     }
 
-    @Test
-    public void enforceInterfacesHasPrefixedName() {
-    }
-
     public void verifyInterfaceHasPrefixedName() {
         HasPrefixedName testSubject0 = mock(HasPrefixedName.class);
         java.lang.String result0 = testSubject0.getPrefixedName();
-    }
-
-    @Test
-    public void enforceInterfacesHasProperty() {
     }
 
     public void verifyInterfaceHasProperty() {
@@ -497,17 +377,9 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLObjectProperty result0 = testSubject0.getProperty();
     }
 
-    @Test
-    public void enforceInterfacesHasRange() {
-    }
-
     public void verifyInterfaceHasRange() {
         HasRange<OWLClass> testSubject0 = mock(HasRange.class);
         OWLClass result0 = testSubject0.getRange();
-    }
-
-    @Test
-    public void enforceInterfacesHasRemoveAxioms() {
     }
 
     public void verifyInterfaceHasRemoveAxioms() {
@@ -515,26 +387,14 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.List<OWLOntologyChange<?>> result0 = testSubject0.removeAxioms(_OWLOntology, _Set12);
     }
 
-    @Test
-    public void enforceInterfacesHasShortForm() {
-    }
-
     public void verifyInterfaceHasShortForm() {
         HasShortForm testSubject0 = mock(HasShortForm.class);
         java.lang.String result0 = testSubject0.getShortForm();
     }
 
-    @Test
-    public void enforceInterfacesHasSignature() {
-    }
-
     public void verifyInterfaceHasSignature() {
         HasSignature testSubject0 = mock(HasSignature.class);
         java.util.Set<OWLEntity> result0 = testSubject0.getSignature();
-    }
-
-    @Test
-    public void enforceInterfacesHasSubject() {
     }
 
     public void verifyInterfaceHasSubject() {
@@ -564,17 +424,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesImpendingOWLOntologyChangeBroadcastStrategy() {
-    }
-
     public void verifyInterfaceImpendingOWLOntologyChangeBroadcastStrategy() {
         ImpendingOWLOntologyChangeBroadcastStrategy testSubject0 = mock(ImpendingOWLOntologyChangeBroadcastStrategy.class);
         testSubject0.broadcastChanges(_ImpendingOWLOntologyChangeListener, _List);
-    }
-
-    @Test
-    public void enforceInterfacesImpendingOWLOntologyChangeListener() {
     }
 
     public void verifyInterfaceImpendingOWLOntologyChangeListener() {
@@ -655,19 +507,11 @@ public class Gen_org_semanticweb_owlapi_model {
         IRI result35 = IRI.generateDocumentIRI();
     }
 
-    @Test
-    public void enforceInterfacesMIMETypeAware() {
-    }
-
     public void verifyInterfaceMIMETypeAware() {
         MIMETypeAware testSubject0 = mock(MIMETypeAware.class);
         java.lang.String result0 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result1 = testSubject0.getMIMETypes();
         boolean result2 = testSubject0.handlesMimeType(_String);
-    }
-
-    @Test
-    public void enforceInterfacesMissingImportEvent() {
     }
 
     public void verifyMissingImportEvent() {
@@ -684,10 +528,6 @@ public class Gen_org_semanticweb_owlapi_model {
     public void verifyEnumMissingImportHandlingStrategy() {
         MissingImportHandlingStrategy testSubject0 = MissingImportHandlingStrategy.SILENT;
         MissingImportHandlingStrategy testSubject1 = MissingImportHandlingStrategy.THROW_EXCEPTION;
-    }
-
-    @Test
-    public void enforceInterfacesMissingImportListener() {
     }
 
     public void verifyInterfaceMissingImportListener() {
@@ -833,20 +673,12 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result25 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLAnnotationAxiomVisitor() {
-    }
-
     public void verifyInterfaceOWLAnnotationAxiomVisitor() {
         OWLAnnotationAxiomVisitor testSubject0 = mock(OWLAnnotationAxiomVisitor.class);
         testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
         testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
         testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
         testSubject0.visit(_OWLAnnotationAssertionAxiom);
-    }
-
-    @Test
-    public void enforceInterfacesOWLAnnotationAxiomVisitorEx() {
     }
 
     public void verifyInterfaceOWLAnnotationAxiomVisitorEx() {
@@ -1015,10 +847,6 @@ public class Gen_org_semanticweb_owlapi_model {
         IRI result30 = testSubject0.getDomain();
     }
 
-    @Test
-    public void enforceInterfacesOWLAnnotationPropertyProvider() {
-    }
-
     public void verifyInterfaceOWLAnnotationPropertyProvider() {
         OWLAnnotationPropertyProvider testSubject0 = mock(OWLAnnotationPropertyProvider.class);
         OWLAnnotationProperty result0 = testSubject0.getOWLAnnotationProperty(_IRI);
@@ -1094,18 +922,10 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result13 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLAnnotationSubjectVisitor() {
-    }
-
     public void verifyInterfaceOWLAnnotationSubjectVisitor() {
         OWLAnnotationSubjectVisitor testSubject0 = mock(OWLAnnotationSubjectVisitor.class);
         testSubject0.visit(_IRI);
         testSubject0.visit(_OWLAnonymousIndividual);
-    }
-
-    @Test
-    public void enforceInterfacesOWLAnnotationSubjectVisitorEx() {
     }
 
     public void verifyInterfaceOWLAnnotationSubjectVisitorEx() {
@@ -1140,19 +960,11 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result13 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLAnnotationValueVisitor() {
-    }
-
     public void verifyInterfaceOWLAnnotationValueVisitor() {
         OWLAnnotationValueVisitor testSubject0 = mock(OWLAnnotationValueVisitor.class);
         testSubject0.visit(_IRI);
         testSubject0.visit(_OWLAnonymousIndividual);
         testSubject0.visit(_OWLLiteral);
-    }
-
-    @Test
-    public void enforceInterfacesOWLAnnotationValueVisitorEx() {
     }
 
     public void verifyInterfaceOWLAnnotationValueVisitorEx() {
@@ -1365,40 +1177,36 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLAxiomCollection() {
         OWLAxiomCollection testSubject0 = mock(OWLAxiomCollection.class);
-        java.util.Set<OWLClassAxiom> result0 = testSubject0.getAxioms(_OWLClass, _boolean);
-        java.util.Set<OWLDatatypeDefinitionAxiom> result1 = testSubject0.getAxioms(_OWLDatatype, _boolean);
-        Set<OWLAnnotationAssertionAxiom> result2 = testSubject0.getAxioms(_AxiomType, _boolean);
+        java.util.Set<OWLClassAxiom> result0 = testSubject0.getAxioms(_OWLClass, _imports);
+        java.util.Set<OWLDatatypeDefinitionAxiom> result1 = testSubject0.getAxioms(_OWLDatatype, _imports);
+        Set<OWLAnnotationAssertionAxiom> result2 = testSubject0.getAxioms(_AxiomType, _imports);
         Set<OWLAnnotationAssertionAxiom> result3 = testSubject0.getAxioms(_AxiomType);
-        java.util.Set<OWLAnnotationAxiom> result4 = testSubject0.getAxioms(_OWLAnnotationProperty, _boolean);
-        java.util.Set<OWLIndividualAxiom> result5 = testSubject0.getAxioms(_OWLIndividual, _boolean);
-        java.util.Set<OWLDataPropertyAxiom> result6 = testSubject0.getAxioms(_OWLDataProperty, _boolean);
-        java.util.Set<OWLObjectPropertyAxiom> result7 = testSubject0.getAxioms(_OWLObjectPropertyExpression, _boolean);
-        java.util.Set<OWLAxiom> result8 = testSubject0.getAxioms(_boolean);
+        java.util.Set<OWLAnnotationAxiom> result4 = testSubject0.getAxioms(_OWLAnnotationProperty, _imports);
+        java.util.Set<OWLIndividualAxiom> result5 = testSubject0.getAxioms(_OWLIndividual, _imports);
+        java.util.Set<OWLDataPropertyAxiom> result6 = testSubject0.getAxioms(_OWLDataProperty, _imports);
+        java.util.Set<OWLObjectPropertyAxiom> result7 = testSubject0.getAxioms(_OWLObjectPropertyExpression, _imports);
+        java.util.Set<OWLAxiom> result8 = testSubject0.getAxioms(_imports);
         java.util.Set<OWLAxiom> result9 = testSubject0.getAxioms();
-        boolean result10 = testSubject0.containsAxiom(_OWLAxiom, _boolean, _boolean);
+        boolean result10 = testSubject0.containsAxiom(_OWLAxiom, _imports, _ignore);
         boolean result11 = testSubject0.containsAxiom(_OWLAxiom);
-        int result12 = testSubject0.getAxiomCount(_boolean);
+        int result12 = testSubject0.getAxiomCount(_imports);
         int result13 = testSubject0.getAxiomCount();
         int result14 = testSubject0.getAxiomCount(_AxiomType);
-        int result15 = testSubject0.getAxiomCount(_AxiomType, _boolean);
-        java.util.Set<OWLLogicalAxiom> result16 = testSubject0.getLogicalAxioms(_boolean);
+        int result15 = testSubject0.getAxiomCount(_AxiomType, _imports);
+        java.util.Set<OWLLogicalAxiom> result16 = testSubject0.getLogicalAxioms(_imports);
         java.util.Set<OWLLogicalAxiom> result17 = testSubject0.getLogicalAxioms();
         int result18 = testSubject0.getLogicalAxiomCount();
-        int result19 = testSubject0.getLogicalAxiomCount(_boolean);
-        java.util.Set<OWLAxiom> result20 = testSubject0.getAxiomsIgnoreAnnotations(_OWLAxiom, _boolean);
-        java.util.Set<OWLAxiom> result21 = testSubject0.getReferencingAxioms(_OWLPrimitive, _boolean);
-    }
-
-    @Test
-    public void enforceInterfacesOWLAxiomIndex() {
+        int result19 = testSubject0.getLogicalAxiomCount(_imports);
+        java.util.Set<OWLAxiom> result20 = testSubject0.getAxiomsIgnoreAnnotations(_OWLAxiom, _imports);
+        java.util.Set<OWLAxiom> result21 = testSubject0.getReferencingAxioms(_OWLPrimitive, _imports);
     }
 
     public void verifyInterfaceOWLAxiomIndex() {
         OWLAxiomIndex testSubject0 = mock(OWLAxiomIndex.class);
-        boolean result0 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _boolean);
-        java.util.Set<OWLAxiom> result1 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _boolean, _boolean);
-        java.util.Set<OWLAxiom> result2 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _boolean, _boolean);
-        java.util.Collection<OWLAxiom> result3 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _boolean);
+        boolean result0 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _imports);
+        java.util.Set<OWLAxiom> result1 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _imports, _ignore);
+        java.util.Set<OWLAxiom> result2 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _imports, _ignore);
+        java.util.Collection<OWLAxiom> result3 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _imports);
         java.util.Set<OWLSubAnnotationPropertyOfAxiom> result4 = testSubject0.getSubAnnotationPropertyOfAxioms(_OWLAnnotationProperty);
         java.util.Set<OWLAnnotationPropertyDomainAxiom> result5 = testSubject0.getAnnotationPropertyDomainAxioms(_OWLAnnotationProperty);
         java.util.Set<OWLAnnotationPropertyRangeAxiom> result6 = testSubject0.getAnnotationPropertyRangeAxioms(_OWLAnnotationProperty);
@@ -1798,10 +1606,6 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result25 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLClassExpressionVisitor() {
-    }
-
     public void verifyInterfaceOWLClassExpressionVisitor() {
         OWLClassExpressionVisitor testSubject0 = mock(OWLClassExpressionVisitor.class);
         testSubject0.visit(_OWLDataAllValuesFrom);
@@ -1822,10 +1626,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.visit(_OWLObjectMinCardinality);
         testSubject0.visit(_OWLObjectHasValue);
         testSubject0.visit(_OWLObjectAllValuesFrom);
-    }
-
-    @Test
-    public void enforceInterfacesOWLClassExpressionVisitorEx() {
     }
 
     public void verifyInterfaceOWLClassExpressionVisitorEx() {
@@ -2792,10 +2592,6 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result18 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLDataRangeVisitor() {
-    }
-
     public void verifyInterfaceOWLDataRangeVisitor() {
         OWLDataRangeVisitor testSubject0 = mock(OWLDataRangeVisitor.class);
         testSubject0.visit(_OWLDatatypeRestriction);
@@ -2804,10 +2600,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.visit(_OWLDataComplementOf);
         testSubject0.visit(_OWLDataOneOf);
         testSubject0.visit(_OWLDatatype);
-    }
-
-    @Test
-    public void enforceInterfacesOWLDataRangeVisitorEx() {
     }
 
     public void verifyInterfaceOWLDataRangeVisitorEx() {
@@ -3094,10 +2886,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.visit(_OWLDataComplementOf);
         testSubject0.visit(_OWLDataOneOf);
         testSubject0.visit(_OWLDatatype);
-    }
-
-    @Test
-    public void enforceInterfacesOWLDataVisitorEx() {
     }
 
     public void verifyInterfaceOWLDataVisitorEx() {
@@ -3413,10 +3201,6 @@ public class Gen_org_semanticweb_owlapi_model {
         IRI result30 = testSubject0.getIRI();
     }
 
-    @Test
-    public void enforceInterfacesOWLEntityByTypeProvider() {
-    }
-
     public void verifyInterfaceOWLEntityByTypeProvider() {
         OWLEntityByTypeProvider testSubject0 = mock(OWLEntityByTypeProvider.class);
         OWLClass result0 = testSubject0.getOWLEntity(_EntityType159, _IRI);
@@ -3442,10 +3226,6 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLAnnotationProperty result5 = testSubject0.getOWLAnnotationProperty(_IRI);
     }
 
-    @Test
-    public void enforceInterfacesOWLEntityVisitor() {
-    }
-
     public void verifyInterfaceOWLEntityVisitor() {
         OWLEntityVisitor testSubject0 = mock(OWLEntityVisitor.class);
         testSubject0.visit(_OWLAnnotationProperty);
@@ -3454,10 +3234,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.visit(_OWLDataProperty);
         testSubject0.visit(_OWLObjectProperty);
         testSubject0.visit(_OWLClass);
-    }
-
-    @Test
-    public void enforceInterfacesOWLEntityVisitorEx() {
     }
 
     public void verifyInterfaceOWLEntityVisitorEx() {
@@ -3905,18 +3681,10 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result25 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLIndividualVisitor() {
-    }
-
     public void verifyInterfaceOWLIndividualVisitor() {
         OWLIndividualVisitor testSubject0 = mock(OWLIndividualVisitor.class);
         testSubject0.visit(_OWLNamedIndividual);
         testSubject0.visit(_OWLAnonymousIndividual);
-    }
-
-    @Test
-    public void enforceInterfacesOWLIndividualVisitorEx() {
     }
 
     public void verifyInterfaceOWLIndividualVisitorEx() {
@@ -4138,10 +3906,6 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result25 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLLogicalAxiomVisitor() {
-    }
-
     public void verifyInterfaceOWLLogicalAxiomVisitor() {
         OWLLogicalAxiomVisitor testSubject0 = mock(OWLLogicalAxiomVisitor.class);
         testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
@@ -4177,10 +3941,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.visit(_OWLDifferentIndividualsAxiom);
         testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
         testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-    }
-
-    @Test
-    public void enforceInterfacesOWLLogicalAxiomVisitorEx() {
     }
 
     public void verifyInterfaceOWLLogicalAxiomVisitorEx() {
@@ -4275,7 +4035,7 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result2 = testSubject0.isEmpty();
         java.util.Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
         java.util.Set<OWLEntity> result4 = testSubject0.getSignature();
-        java.util.Set<OWLEntity> result5 = testSubject0.getSignature(_boolean);
+        java.util.Set<OWLEntity> result5 = testSubject0.getSignature(_imports);
         testSubject0.accept(_OWLNamedObjectVisitor);
         OWLOntologyID result6 = testSubject0.getOntologyID();
         OWLOntologyManager result7 = testSubject0.getOWLOntologyManager();
@@ -4285,11 +4045,11 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLOntology> result11 = testSubject0.getImports();
         java.util.Set<OWLOntology> result12 = testSubject0.getImportsClosure();
         java.util.Set<OWLImportsDeclaration> result13 = testSubject0.getImportsDeclarations();
-        java.util.Set<OWLAxiom> result14 = testSubject0.getTBoxAxioms(_boolean);
-        java.util.Set<OWLAxiom> result15 = testSubject0.getABoxAxioms(_boolean);
-        java.util.Set<OWLAxiom> result16 = testSubject0.getRBoxAxioms(_boolean);
+        java.util.Set<OWLAxiom> result14 = testSubject0.getTBoxAxioms(_imports);
+        java.util.Set<OWLAxiom> result15 = testSubject0.getABoxAxioms(_imports);
+        java.util.Set<OWLAxiom> result16 = testSubject0.getRBoxAxioms(_imports);
         java.util.Set<OWLClassAxiom> result17 = testSubject0.getGeneralClassAxioms();
-        boolean result18 = testSubject0.isDeclared(_OWLEntity, _boolean);
+        boolean result18 = testSubject0.isDeclared(_OWLEntity, _imports);
         boolean result19 = testSubject0.isDeclared(_OWLEntity);
         OWLObject result20 = testSubject0.accept(_OWLObjectVisitorEx);
         testSubject0.accept(_OWLObjectVisitor);
@@ -4309,54 +4069,54 @@ public class Gen_org_semanticweb_owlapi_model {
         Set<OWLAnnotationAssertionAxiom> result34 = testSubject0.getAxioms(_AxiomType);
         boolean result35 = testSubject0.containsAxiom(_OWLAxiom);
         java.util.Set<OWLEntity> result36 = testSubject0.getEntitiesInSignature(_IRI);
-        java.util.Set<OWLClassAxiom> result37 = testSubject0.getAxioms(_OWLClass, _boolean);
-        java.util.Set<OWLDatatypeDefinitionAxiom> result38 = testSubject0.getAxioms(_OWLDatatype, _boolean);
-        Set<OWLAnnotationAssertionAxiom> result39 = testSubject0.getAxioms(_AxiomType, _boolean);
+        java.util.Set<OWLClassAxiom> result37 = testSubject0.getAxioms(_OWLClass, _imports);
+        java.util.Set<OWLDatatypeDefinitionAxiom> result38 = testSubject0.getAxioms(_OWLDatatype, _imports);
+        Set<OWLAnnotationAssertionAxiom> result39 = testSubject0.getAxioms(_AxiomType, _imports);
         Set<OWLAnnotationAssertionAxiom> result40 = testSubject0.getAxioms(_AxiomType);
-        java.util.Set<OWLAnnotationAxiom> result41 = testSubject0.getAxioms(_OWLAnnotationProperty, _boolean);
-        java.util.Set<OWLIndividualAxiom> result42 = testSubject0.getAxioms(_OWLIndividual, _boolean);
-        java.util.Set<OWLDataPropertyAxiom> result43 = testSubject0.getAxioms(_OWLDataProperty, _boolean);
-        java.util.Set<OWLObjectPropertyAxiom> result44 = testSubject0.getAxioms(_OWLObjectPropertyExpression, _boolean);
-        java.util.Set<OWLAxiom> result45 = testSubject0.getAxioms(_boolean);
+        java.util.Set<OWLAnnotationAxiom> result41 = testSubject0.getAxioms(_OWLAnnotationProperty, _imports);
+        java.util.Set<OWLIndividualAxiom> result42 = testSubject0.getAxioms(_OWLIndividual, _imports);
+        java.util.Set<OWLDataPropertyAxiom> result43 = testSubject0.getAxioms(_OWLDataProperty, _imports);
+        java.util.Set<OWLObjectPropertyAxiom> result44 = testSubject0.getAxioms(_OWLObjectPropertyExpression, _imports);
+        java.util.Set<OWLAxiom> result45 = testSubject0.getAxioms(_imports);
         java.util.Set<OWLAxiom> result46 = testSubject0.getAxioms();
-        boolean result47 = testSubject0.containsAxiom(_OWLAxiom, _boolean, _boolean);
+        boolean result47 = testSubject0.containsAxiom(_OWLAxiom, _imports, _ignore);
         boolean result48 = testSubject0.containsAxiom(_OWLAxiom);
-        int result49 = testSubject0.getAxiomCount(_boolean);
+        int result49 = testSubject0.getAxiomCount(_imports);
         int result50 = testSubject0.getAxiomCount();
         int result51 = testSubject0.getAxiomCount(_AxiomType);
-        int result52 = testSubject0.getAxiomCount(_AxiomType, _boolean);
-        java.util.Set<OWLLogicalAxiom> result53 = testSubject0.getLogicalAxioms(_boolean);
+        int result52 = testSubject0.getAxiomCount(_AxiomType, _imports);
+        java.util.Set<OWLLogicalAxiom> result53 = testSubject0.getLogicalAxioms(_imports);
         java.util.Set<OWLLogicalAxiom> result54 = testSubject0.getLogicalAxioms();
         int result55 = testSubject0.getLogicalAxiomCount();
-        int result56 = testSubject0.getLogicalAxiomCount(_boolean);
-        java.util.Set<OWLAxiom> result57 = testSubject0.getAxiomsIgnoreAnnotations(_OWLAxiom, _boolean);
-        java.util.Set<OWLAxiom> result58 = testSubject0.getReferencingAxioms(_OWLPrimitive, _boolean);
-        java.util.Set<OWLClass> result59 = testSubject0.getClassesInSignature(_boolean);
-        java.util.Set<OWLDataProperty> result60 = testSubject0.getDataPropertiesInSignature(_boolean);
-        java.util.Set<OWLObjectProperty> result61 = testSubject0.getObjectPropertiesInSignature(_boolean);
-        java.util.Set<OWLNamedIndividual> result62 = testSubject0.getIndividualsInSignature(_boolean);
-        java.util.Set<OWLDatatype> result63 = testSubject0.getDatatypesInSignature(_boolean);
-        boolean result64 = testSubject0.containsEntityInSignature(_IRI, _boolean);
-        boolean result65 = testSubject0.containsEntityInSignature(_OWLEntity, _boolean);
-        java.util.Set<OWLEntity> result66 = testSubject0.getEntitiesInSignature(_IRI, _boolean);
-        boolean result67 = testSubject0.containsReference(_OWLEntity, _boolean);
-        java.util.Set<OWLAnonymousIndividual> result68 = testSubject0.getReferencedAnonymousIndividuals(_boolean);
-        java.util.Set<OWLAnnotationProperty> result69 = testSubject0.getAnnotationPropertiesInSignature(_boolean);
-        boolean result70 = testSubject0.containsClassInSignature(_IRI, _boolean);
-        boolean result71 = testSubject0.containsObjectPropertyInSignature(_IRI, _boolean);
-        boolean result72 = testSubject0.containsDataPropertyInSignature(_IRI, _boolean);
-        boolean result73 = testSubject0.containsAnnotationPropertyInSignature(_IRI, _boolean);
-        boolean result74 = testSubject0.containsIndividualInSignature(_IRI, _boolean);
-        boolean result75 = testSubject0.containsDatatypeInSignature(_IRI, _boolean);
+        int result56 = testSubject0.getLogicalAxiomCount(_imports);
+        java.util.Set<OWLAxiom> result57 = testSubject0.getAxiomsIgnoreAnnotations(_OWLAxiom, _imports);
+        java.util.Set<OWLAxiom> result58 = testSubject0.getReferencingAxioms(_OWLPrimitive, _imports);
+        java.util.Set<OWLClass> result59 = testSubject0.getClassesInSignature(_imports);
+        java.util.Set<OWLDataProperty> result60 = testSubject0.getDataPropertiesInSignature(_imports);
+        java.util.Set<OWLObjectProperty> result61 = testSubject0.getObjectPropertiesInSignature(_imports);
+        java.util.Set<OWLNamedIndividual> result62 = testSubject0.getIndividualsInSignature(_imports);
+        java.util.Set<OWLDatatype> result63 = testSubject0.getDatatypesInSignature(_imports);
+        boolean result64 = testSubject0.containsEntityInSignature(_IRI, _imports);
+        boolean result65 = testSubject0.containsEntityInSignature(_OWLEntity, _imports);
+        java.util.Set<OWLEntity> result66 = testSubject0.getEntitiesInSignature(_IRI, _imports);
+        boolean result67 = testSubject0.containsReference(_OWLEntity, _imports);
+        java.util.Set<OWLAnonymousIndividual> result68 = testSubject0.getReferencedAnonymousIndividuals(_imports);
+        java.util.Set<OWLAnnotationProperty> result69 = testSubject0.getAnnotationPropertiesInSignature(_imports);
+        boolean result70 = testSubject0.containsClassInSignature(_IRI, _imports);
+        boolean result71 = testSubject0.containsObjectPropertyInSignature(_IRI, _imports);
+        boolean result72 = testSubject0.containsDataPropertyInSignature(_IRI, _imports);
+        boolean result73 = testSubject0.containsAnnotationPropertyInSignature(_IRI, _imports);
+        boolean result74 = testSubject0.containsIndividualInSignature(_IRI, _imports);
+        boolean result75 = testSubject0.containsDatatypeInSignature(_IRI, _imports);
         java.util.Set<OWLClass> result76 = testSubject0.getClassesInSignature();
         java.util.Set<OWLObjectProperty> result77 = testSubject0.getObjectPropertiesInSignature();
         java.util.Set<OWLDataProperty> result78 = testSubject0.getDataPropertiesInSignature();
         java.util.Set<OWLDatatype> result79 = testSubject0.getDatatypesInSignature();
         java.util.Set<OWLNamedIndividual> result80 = testSubject0.getIndividualsInSignature();
-        boolean result81 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _boolean);
-        java.util.Set<OWLAxiom> result82 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _boolean, _boolean);
-        java.util.Set<OWLAxiom> result83 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _boolean, _boolean);
-        java.util.Collection<OWLAxiom> result84 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _boolean);
+        boolean result81 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _imports);
+        java.util.Set<OWLAxiom> result82 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _imports, _ignore);
+        java.util.Set<OWLAxiom> result83 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _imports, _ignore);
+        java.util.Collection<OWLAxiom> result84 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _imports);
         java.util.Set<OWLSubAnnotationPropertyOfAxiom> result85 = testSubject0.getSubAnnotationPropertyOfAxioms(_OWLAnnotationProperty);
         java.util.Set<OWLAnnotationPropertyDomainAxiom> result86 = testSubject0.getAnnotationPropertyDomainAxioms(_OWLAnnotationProperty);
         java.util.Set<OWLAnnotationPropertyRangeAxiom> result87 = testSubject0.getAnnotationPropertyRangeAxioms(_OWLAnnotationProperty);
@@ -4487,10 +4247,6 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result13 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLNamedObjectVisitor() {
-    }
-
     public void verifyInterfaceOWLNamedObjectVisitor() {
         OWLNamedObjectVisitor testSubject0 = mock(OWLNamedObjectVisitor.class);
         testSubject0.visit(_OWLNamedIndividual);
@@ -4500,10 +4256,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.visit(_OWLDataProperty);
         testSubject0.visit(_OWLObjectProperty);
         testSubject0.visit(_OWLClass);
-    }
-
-    @Test
-    public void enforceInterfacesOWLNamedObjectVisitorEx() {
     }
 
     public void verifyInterfaceOWLNamedObjectVisitorEx() {
@@ -6047,7 +5799,7 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result0 = testSubject0.isEmpty();
         java.util.Set<OWLAnnotation> result1 = testSubject0.getAnnotations();
         java.util.Set<OWLEntity> result2 = testSubject0.getSignature();
-        java.util.Set<OWLEntity> result3 = testSubject0.getSignature(_boolean);
+        java.util.Set<OWLEntity> result3 = testSubject0.getSignature(_imports);
         testSubject0.accept(_OWLNamedObjectVisitor);
         OWLOntologyID result4 = testSubject0.getOntologyID();
         OWLOntologyManager result5 = testSubject0.getOWLOntologyManager();
@@ -6057,11 +5809,11 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLOntology> result9 = testSubject0.getImports();
         java.util.Set<OWLOntology> result10 = testSubject0.getImportsClosure();
         java.util.Set<OWLImportsDeclaration> result11 = testSubject0.getImportsDeclarations();
-        java.util.Set<OWLAxiom> result12 = testSubject0.getTBoxAxioms(_boolean);
-        java.util.Set<OWLAxiom> result13 = testSubject0.getABoxAxioms(_boolean);
-        java.util.Set<OWLAxiom> result14 = testSubject0.getRBoxAxioms(_boolean);
+        java.util.Set<OWLAxiom> result12 = testSubject0.getTBoxAxioms(_imports);
+        java.util.Set<OWLAxiom> result13 = testSubject0.getABoxAxioms(_imports);
+        java.util.Set<OWLAxiom> result14 = testSubject0.getRBoxAxioms(_imports);
         java.util.Set<OWLClassAxiom> result15 = testSubject0.getGeneralClassAxioms();
-        boolean result16 = testSubject0.isDeclared(_OWLEntity, _boolean);
+        boolean result16 = testSubject0.isDeclared(_OWLEntity, _imports);
         boolean result17 = testSubject0.isDeclared(_OWLEntity);
         OWLObject result18 = testSubject0.accept(_OWLObjectVisitorEx);
         testSubject0.accept(_OWLObjectVisitor);
@@ -6081,54 +5833,54 @@ public class Gen_org_semanticweb_owlapi_model {
         Set<OWLAnnotationAssertionAxiom> result32 = testSubject0.getAxioms(_AxiomType);
         boolean result33 = testSubject0.containsAxiom(_OWLAxiom);
         java.util.Set<OWLEntity> result34 = testSubject0.getEntitiesInSignature(_IRI);
-        java.util.Set<OWLClassAxiom> result35 = testSubject0.getAxioms(_OWLClass, _boolean);
-        java.util.Set<OWLDatatypeDefinitionAxiom> result36 = testSubject0.getAxioms(_OWLDatatype, _boolean);
-        Set<OWLAnnotationAssertionAxiom> result37 = testSubject0.getAxioms(_AxiomType, _boolean);
+        java.util.Set<OWLClassAxiom> result35 = testSubject0.getAxioms(_OWLClass, _imports);
+        java.util.Set<OWLDatatypeDefinitionAxiom> result36 = testSubject0.getAxioms(_OWLDatatype, _imports);
+        Set<OWLAnnotationAssertionAxiom> result37 = testSubject0.getAxioms(_AxiomType, _imports);
         Set<OWLAnnotationAssertionAxiom> result38 = testSubject0.getAxioms(_AxiomType);
-        java.util.Set<OWLAnnotationAxiom> result39 = testSubject0.getAxioms(_OWLAnnotationProperty, _boolean);
-        java.util.Set<OWLIndividualAxiom> result40 = testSubject0.getAxioms(_OWLIndividual, _boolean);
-        java.util.Set<OWLDataPropertyAxiom> result41 = testSubject0.getAxioms(_OWLDataProperty, _boolean);
-        java.util.Set<OWLObjectPropertyAxiom> result42 = testSubject0.getAxioms(_OWLObjectPropertyExpression, _boolean);
-        java.util.Set<OWLAxiom> result43 = testSubject0.getAxioms(_boolean);
+        java.util.Set<OWLAnnotationAxiom> result39 = testSubject0.getAxioms(_OWLAnnotationProperty, _imports);
+        java.util.Set<OWLIndividualAxiom> result40 = testSubject0.getAxioms(_OWLIndividual, _imports);
+        java.util.Set<OWLDataPropertyAxiom> result41 = testSubject0.getAxioms(_OWLDataProperty, _imports);
+        java.util.Set<OWLObjectPropertyAxiom> result42 = testSubject0.getAxioms(_OWLObjectPropertyExpression, _imports);
+        java.util.Set<OWLAxiom> result43 = testSubject0.getAxioms(_imports);
         java.util.Set<OWLAxiom> result44 = testSubject0.getAxioms();
-        boolean result45 = testSubject0.containsAxiom(_OWLAxiom, _boolean, _boolean);
+        boolean result45 = testSubject0.containsAxiom(_OWLAxiom, _imports, _ignore);
         boolean result46 = testSubject0.containsAxiom(_OWLAxiom);
-        int result47 = testSubject0.getAxiomCount(_boolean);
+        int result47 = testSubject0.getAxiomCount(_imports);
         int result48 = testSubject0.getAxiomCount();
         int result49 = testSubject0.getAxiomCount(_AxiomType);
-        int result50 = testSubject0.getAxiomCount(_AxiomType, _boolean);
-        java.util.Set<OWLLogicalAxiom> result51 = testSubject0.getLogicalAxioms(_boolean);
+        int result50 = testSubject0.getAxiomCount(_AxiomType, _imports);
+        java.util.Set<OWLLogicalAxiom> result51 = testSubject0.getLogicalAxioms(_imports);
         java.util.Set<OWLLogicalAxiom> result52 = testSubject0.getLogicalAxioms();
         int result53 = testSubject0.getLogicalAxiomCount();
-        int result54 = testSubject0.getLogicalAxiomCount(_boolean);
-        java.util.Set<OWLAxiom> result55 = testSubject0.getAxiomsIgnoreAnnotations(_OWLAxiom, _boolean);
-        java.util.Set<OWLAxiom> result56 = testSubject0.getReferencingAxioms(_OWLPrimitive, _boolean);
-        java.util.Set<OWLClass> result57 = testSubject0.getClassesInSignature(_boolean);
-        java.util.Set<OWLDataProperty> result58 = testSubject0.getDataPropertiesInSignature(_boolean);
-        java.util.Set<OWLObjectProperty> result59 = testSubject0.getObjectPropertiesInSignature(_boolean);
-        java.util.Set<OWLNamedIndividual> result60 = testSubject0.getIndividualsInSignature(_boolean);
-        java.util.Set<OWLDatatype> result61 = testSubject0.getDatatypesInSignature(_boolean);
-        boolean result62 = testSubject0.containsEntityInSignature(_IRI, _boolean);
-        boolean result63 = testSubject0.containsEntityInSignature(_OWLEntity, _boolean);
-        java.util.Set<OWLEntity> result64 = testSubject0.getEntitiesInSignature(_IRI, _boolean);
-        boolean result65 = testSubject0.containsReference(_OWLEntity, _boolean);
-        java.util.Set<OWLAnonymousIndividual> result66 = testSubject0.getReferencedAnonymousIndividuals(_boolean);
-        java.util.Set<OWLAnnotationProperty> result67 = testSubject0.getAnnotationPropertiesInSignature(_boolean);
-        boolean result68 = testSubject0.containsClassInSignature(_IRI, _boolean);
-        boolean result69 = testSubject0.containsObjectPropertyInSignature(_IRI, _boolean);
-        boolean result70 = testSubject0.containsDataPropertyInSignature(_IRI, _boolean);
-        boolean result71 = testSubject0.containsAnnotationPropertyInSignature(_IRI, _boolean);
-        boolean result72 = testSubject0.containsIndividualInSignature(_IRI, _boolean);
-        boolean result73 = testSubject0.containsDatatypeInSignature(_IRI, _boolean);
+        int result54 = testSubject0.getLogicalAxiomCount(_imports);
+        java.util.Set<OWLAxiom> result55 = testSubject0.getAxiomsIgnoreAnnotations(_OWLAxiom, _imports);
+        java.util.Set<OWLAxiom> result56 = testSubject0.getReferencingAxioms(_OWLPrimitive, _imports);
+        java.util.Set<OWLClass> result57 = testSubject0.getClassesInSignature(_imports);
+        java.util.Set<OWLDataProperty> result58 = testSubject0.getDataPropertiesInSignature(_imports);
+        java.util.Set<OWLObjectProperty> result59 = testSubject0.getObjectPropertiesInSignature(_imports);
+        java.util.Set<OWLNamedIndividual> result60 = testSubject0.getIndividualsInSignature(_imports);
+        java.util.Set<OWLDatatype> result61 = testSubject0.getDatatypesInSignature(_imports);
+        boolean result62 = testSubject0.containsEntityInSignature(_IRI, _imports);
+        boolean result63 = testSubject0.containsEntityInSignature(_OWLEntity, _imports);
+        java.util.Set<OWLEntity> result64 = testSubject0.getEntitiesInSignature(_IRI, _imports);
+        boolean result65 = testSubject0.containsReference(_OWLEntity, _imports);
+        java.util.Set<OWLAnonymousIndividual> result66 = testSubject0.getReferencedAnonymousIndividuals(_imports);
+        java.util.Set<OWLAnnotationProperty> result67 = testSubject0.getAnnotationPropertiesInSignature(_imports);
+        boolean result68 = testSubject0.containsClassInSignature(_IRI, _imports);
+        boolean result69 = testSubject0.containsObjectPropertyInSignature(_IRI, _imports);
+        boolean result70 = testSubject0.containsDataPropertyInSignature(_IRI, _imports);
+        boolean result71 = testSubject0.containsAnnotationPropertyInSignature(_IRI, _imports);
+        boolean result72 = testSubject0.containsIndividualInSignature(_IRI, _imports);
+        boolean result73 = testSubject0.containsDatatypeInSignature(_IRI, _imports);
         java.util.Set<OWLClass> result74 = testSubject0.getClassesInSignature();
         java.util.Set<OWLObjectProperty> result75 = testSubject0.getObjectPropertiesInSignature();
         java.util.Set<OWLDataProperty> result76 = testSubject0.getDataPropertiesInSignature();
         java.util.Set<OWLDatatype> result77 = testSubject0.getDatatypesInSignature();
         java.util.Set<OWLNamedIndividual> result78 = testSubject0.getIndividualsInSignature();
-        boolean result79 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _boolean);
-        java.util.Set<OWLAxiom> result80 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _boolean, _boolean);
-        java.util.Set<OWLAxiom> result81 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _boolean, _boolean);
-        java.util.Collection<OWLAxiom> result82 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _boolean);
+        boolean result79 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _imports);
+        java.util.Set<OWLAxiom> result80 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _imports, _ignore);
+        java.util.Set<OWLAxiom> result81 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _imports, _ignore);
+        java.util.Collection<OWLAxiom> result82 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _imports);
         java.util.Set<OWLSubAnnotationPropertyOfAxiom> result83 = testSubject0.getSubAnnotationPropertyOfAxioms(_OWLAnnotationProperty);
         java.util.Set<OWLAnnotationPropertyDomainAxiom> result84 = testSubject0.getAnnotationPropertyDomainAxioms(_OWLAnnotationProperty);
         java.util.Set<OWLAnnotationPropertyRangeAxiom> result85 = testSubject0.getAnnotationPropertyRangeAxioms(_OWLAnnotationProperty);
@@ -6260,17 +6012,9 @@ public class Gen_org_semanticweb_owlapi_model {
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesOWLOntologyChangeListener() {
-    }
-
     public void verifyInterfaceOWLOntologyChangeListener() throws OWLException {
         OWLOntologyChangeListener testSubject0 = mock(OWLOntologyChangeListener.class);
         testSubject0.ontologiesChanged(_List);
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyChangeProgressListener() {
     }
 
     public void verifyInterfaceOWLOntologyChangeProgressListener() {
@@ -6278,10 +6022,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.end();
         testSubject0.begin(_int);
         testSubject0.appliedChange(_OWLOntologyChange);
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyChangesVetoedListener() {
     }
 
     public void verifyInterfaceOWLOntologyChangesVetoedListener() {
@@ -6313,10 +6053,6 @@ public class Gen_org_semanticweb_owlapi_model {
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesOWLOntologyChangeVisitor() {
-    }
-
     public void verifyInterfaceOWLOntologyChangeVisitor() {
         OWLOntologyChangeVisitor testSubject0 = mock(OWLOntologyChangeVisitor.class);
         testSubject0.visit(_AddImport);
@@ -6326,10 +6062,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.visit(_SetOntologyID);
         testSubject0.visit(_RemoveAxiom);
         testSubject0.visit(_AddAxiom);
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyChangeVisitorEx() {
     }
 
     public void verifyInterfaceOWLOntologyChangeVisitorEx() {
@@ -6476,10 +6208,6 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result6 = testSubject0.isAnonymous();
     }
 
-    @Test
-    public void enforceInterfacesOWLOntologyIRIMapper() {
-    }
-
     public void verifyInterfaceOWLOntologyIRIMapper() {
         OWLOntologyIRIMapper testSubject0 = mock(OWLOntologyIRIMapper.class);
         IRI result0 = testSubject0.getDocumentIRI(_IRI);
@@ -6506,10 +6234,6 @@ public class Gen_org_semanticweb_owlapi_model {
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesOWLOntologyLoaderConfiguration() {
-    }
-
     public void verifyOWLOntologyLoaderConfiguration() {
         OWLOntologyLoaderConfiguration testSubject0 = new OWLOntologyLoaderConfiguration();
         boolean result0 = testSubject0.isStrict();
@@ -6532,10 +6256,8 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result17 = testSubject0.isAcceptingHTTPCompression();
         int result18 = testSubject0.getConnectionTimeout();
         boolean result19 = testSubject0.isFollowRedirects();
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyLoaderListener() {
+        boolean result20 = testSubject0.isTreatDublinCoreAsBuiltIn();
+        OWLOntologyLoaderConfiguration result21 = testSubject0.setTreatDublinCoreAsBuiltIn(_boolean);
     }
 
     public void verifyInterfaceOWLOntologyLoaderListener() {
@@ -6628,20 +6350,6 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLOntology> result38 = testSubject0.getDirectImports(_OWLOntology);
         java.util.Set<OWLOntology> result39 = testSubject0.getImports(_OWLOntology);
         java.util.Set<OWLOntology> result40 = testSubject0.getImportsClosure(_OWLOntology);
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyManagerProperties() {
-        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLOntologyManagerProperties.class));
-    }
-
-    public void verifyOWLOntologyManagerProperties() {
-        OWLOntologyManagerProperties testSubject0 = new OWLOntologyManagerProperties();
-        testSubject0.restoreDefaults();
-        boolean result0 = testSubject0.isTreatDublinCoreVocabularyAsBuiltInVocabulary();
-        testSubject0.setTreatDublinCoreVocabularyAsBuiltInVocabulary(_boolean);
-        testSubject0.setLoadAnnotationAxioms(_boolean);
-        boolean result1 = testSubject0.isLoadAnnotationAxioms();
     }
 
     @Test
@@ -6767,10 +6475,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.setStackTrace(_StackTraceElement_array);
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
-    }
-
-    @Test
-    public void enforceInterfacesOWLPairwiseVisitor() {
     }
 
     public void verifyInterfaceOWLPairwiseVisitor() {
@@ -7062,20 +6766,12 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result20 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLPropertyExpressionVisitor() {
-    }
-
     public void verifyInterfaceOWLPropertyExpressionVisitor() {
         OWLPropertyExpressionVisitor testSubject0 = mock(OWLPropertyExpressionVisitor.class);
         testSubject0.visit(_OWLAnnotationProperty);
         testSubject0.visit(_OWLDataProperty);
         testSubject0.visit(_OWLObjectInverseOf);
         testSubject0.visit(_OWLObjectProperty);
-    }
-
-    @Test
-    public void enforceInterfacesOWLPropertyExpressionVisitorEx() {
     }
 
     public void verifyInterfaceOWLPropertyExpressionVisitorEx() {
@@ -7445,23 +7141,23 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLSignature() {
         OWLSignature testSubject0 = mock(OWLSignature.class);
-        java.util.Set<OWLClass> result0 = testSubject0.getClassesInSignature(_boolean);
-        java.util.Set<OWLDataProperty> result1 = testSubject0.getDataPropertiesInSignature(_boolean);
-        java.util.Set<OWLObjectProperty> result2 = testSubject0.getObjectPropertiesInSignature(_boolean);
-        java.util.Set<OWLNamedIndividual> result3 = testSubject0.getIndividualsInSignature(_boolean);
-        java.util.Set<OWLDatatype> result4 = testSubject0.getDatatypesInSignature(_boolean);
-        boolean result5 = testSubject0.containsEntityInSignature(_IRI, _boolean);
-        boolean result6 = testSubject0.containsEntityInSignature(_OWLEntity, _boolean);
-        java.util.Set<OWLEntity> result7 = testSubject0.getEntitiesInSignature(_IRI, _boolean);
-        boolean result8 = testSubject0.containsReference(_OWLEntity, _boolean);
-        java.util.Set<OWLAnonymousIndividual> result9 = testSubject0.getReferencedAnonymousIndividuals(_boolean);
-        java.util.Set<OWLAnnotationProperty> result10 = testSubject0.getAnnotationPropertiesInSignature(_boolean);
-        boolean result11 = testSubject0.containsClassInSignature(_IRI, _boolean);
-        boolean result12 = testSubject0.containsObjectPropertyInSignature(_IRI, _boolean);
-        boolean result13 = testSubject0.containsDataPropertyInSignature(_IRI, _boolean);
-        boolean result14 = testSubject0.containsAnnotationPropertyInSignature(_IRI, _boolean);
-        boolean result15 = testSubject0.containsIndividualInSignature(_IRI, _boolean);
-        boolean result16 = testSubject0.containsDatatypeInSignature(_IRI, _boolean);
+        java.util.Set<OWLClass> result0 = testSubject0.getClassesInSignature(_imports);
+        java.util.Set<OWLDataProperty> result1 = testSubject0.getDataPropertiesInSignature(_imports);
+        java.util.Set<OWLObjectProperty> result2 = testSubject0.getObjectPropertiesInSignature(_imports);
+        java.util.Set<OWLNamedIndividual> result3 = testSubject0.getIndividualsInSignature(_imports);
+        java.util.Set<OWLDatatype> result4 = testSubject0.getDatatypesInSignature(_imports);
+        boolean result5 = testSubject0.containsEntityInSignature(_IRI, _imports);
+        boolean result6 = testSubject0.containsEntityInSignature(_OWLEntity, _imports);
+        java.util.Set<OWLEntity> result7 = testSubject0.getEntitiesInSignature(_IRI, _imports);
+        boolean result8 = testSubject0.containsReference(_OWLEntity, _imports);
+        java.util.Set<OWLAnonymousIndividual> result9 = testSubject0.getReferencedAnonymousIndividuals(_imports);
+        java.util.Set<OWLAnnotationProperty> result10 = testSubject0.getAnnotationPropertiesInSignature(_imports);
+        boolean result11 = testSubject0.containsClassInSignature(_IRI, _imports);
+        boolean result12 = testSubject0.containsObjectPropertyInSignature(_IRI, _imports);
+        boolean result13 = testSubject0.containsDataPropertyInSignature(_IRI, _imports);
+        boolean result14 = testSubject0.containsAnnotationPropertyInSignature(_IRI, _imports);
+        boolean result15 = testSubject0.containsIndividualInSignature(_IRI, _imports);
+        boolean result16 = testSubject0.containsDatatypeInSignature(_IRI, _imports);
         java.util.Set<OWLEntity> result17 = testSubject0.getEntitiesInSignature(_IRI);
         java.util.Set<OWLClass> result18 = testSubject0.getClassesInSignature();
         java.util.Set<OWLObjectProperty> result19 = testSubject0.getObjectPropertiesInSignature();
@@ -7552,17 +7248,9 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result29 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesOWLSubClassOfAxiomSetShortCut() {
-    }
-
     public void verifyInterfaceOWLSubClassOfAxiomSetShortCut() {
         OWLSubClassOfAxiomSetShortCut testSubject0 = mock(OWLSubClassOfAxiomSetShortCut.class);
         java.util.Set<OWLSubClassOfAxiom> result0 = testSubject0.asOWLSubClassOfAxioms();
-    }
-
-    @Test
-    public void enforceInterfacesOWLSubClassOfAxiomShortCut() {
     }
 
     public void verifyInterfaceOWLSubClassOfAxiomShortCut() {
@@ -8155,10 +7843,6 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result13 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesSWRLDataFactory() {
-    }
-
     public void verifyInterfaceSWRLDataFactory() {
         SWRLDataFactory testSubject0 = mock(SWRLDataFactory.class);
         SWRLRule result0 = testSubject0.getSWRLRule(_Set155, _Set155);
@@ -8396,10 +8080,6 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result19 = testSubject0.containsEntityInSignature(_OWLEntity);
     }
 
-    @Test
-    public void enforceInterfacesSWRLObjectVisitor() {
-    }
-
     public void verifyInterfaceSWRLObjectVisitor() {
         SWRLObjectVisitor testSubject0 = mock(SWRLObjectVisitor.class);
         testSubject0.visit(_SWRLBuiltInAtom);
@@ -8415,10 +8095,6 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.visit(_SWRLDataPropertyAtom);
     }
 
-    @Test
-    public void enforceInterfacesSWRLObjectVisitorEx() {
-    }
-
     public void verifyInterfaceSWRLObjectVisitorEx() {
         SWRLObjectVisitorEx<OWLObject> testSubject0 = mock(SWRLObjectVisitorEx.class);
         OWLObject result0 = testSubject0.visit(_SWRLBuiltInAtom);
@@ -8432,10 +8108,6 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLObject result8 = testSubject0.visit(_SWRLDataRangeAtom);
         OWLObject result9 = testSubject0.visit(_SWRLObjectPropertyAtom);
         OWLObject result10 = testSubject0.visit(_SWRLDataPropertyAtom);
-    }
-
-    @Test
-    public void enforceInterfacesSWRLPredicate() {
     }
 
     public void verifyInterfaceSWRLPredicate() {
@@ -8620,6 +8292,8 @@ public class Gen_org_semanticweb_owlapi_model {
 
     private OWLObject _Object213;
     private boolean _boolean;
+    private Imports _imports;
+    private Search _ignore;
     private double _double;
     private float _float;
     private int _int;

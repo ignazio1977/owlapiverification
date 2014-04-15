@@ -1,6 +1,5 @@
 package org.semanticweb.owlapi.verification_4_0_0;
 
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.apibinding.OWLFunctionalSyntaxFactory;
@@ -10,10 +9,6 @@ import org.semanticweb.owlapi.model.*;
 @SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_apibinding {
-    @Test
-    public void enforceInterfacesOWLFunctionalSyntaxFactory() {
-    }
-
     public void verifyOWLFunctionalSyntaxFactory() throws OWLOntologyCreationException {
         OWLFunctionalSyntaxFactory testSubject0 = new OWLFunctionalSyntaxFactory();
         OWLLiteral result0 = OWLFunctionalSyntaxFactory.PlainLiteral(_String);
@@ -149,10 +144,6 @@ public class Gen_org_semanticweb_owlapi_apibinding {
         OWLDataIntersectionOf result129 = OWLFunctionalSyntaxFactory.DataIntersectionOf(_OWLDataRange_array);
         IRI result130 = OWLFunctionalSyntaxFactory.IRI(_String);
         IRI result131 = OWLFunctionalSyntaxFactory.IRI(_String, _String);
-    }
-
-    @Test
-    public void enforceInterfacesOWLManager() {
     }
 
     public void verifyOWLManager() {

@@ -38,10 +38,6 @@ public class Gen_org_obolibrary_oboformat_parser {
         java.lang.Throwable[] result8 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesOBOFormatConstants() {
-    }
-
     public void verifyOBOFormatConstants() {
         OBOFormatConstants testSubject0 = new OBOFormatConstants();
         org.obolibrary.oboformat.parser.OBOFormatConstants.OboFormatTag result0 = OBOFormatConstants.getTag(_String);
@@ -99,10 +95,6 @@ public class Gen_org_obolibrary_oboformat_parser {
         java.lang.Throwable[] result8 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesOBOFormatParser() {
-    }
-
     public void verifyOBOFormatParser() throws OBOFormatParserException, IOException {
         OBOFormatParser testSubject0 = new OBOFormatParser();
         org.obolibrary.oboformat.model.OBODoc result0 = testSubject0.parse(_String);
@@ -149,10 +141,6 @@ public class Gen_org_obolibrary_oboformat_parser {
         testSubject0.setStackTrace(_StackTraceElement_array);
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result10 = testSubject0.getSuppressed();
-    }
-
-    @Test
-    public void enforceInterfacesXrefExpander() {
     }
 
     public void verifyXrefExpander() {

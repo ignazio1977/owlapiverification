@@ -220,10 +220,6 @@ public class Gen_org_semanticweb_owlapi_latex_renderer {
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesLatexWriter() {
-    }
-
     public void verifyLatexWriter() {
         LatexWriter testSubject0 = new LatexWriter(_Writer);
         testSubject0.write(_Object);

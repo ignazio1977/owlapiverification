@@ -2,7 +2,6 @@ package org.semanticweb.owlapi.verification_4_0_0;
 
 import java.io.IOException;
 
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.obolibrary.oboformat.writer.OBOFormatWriter;
@@ -10,10 +9,6 @@ import org.obolibrary.oboformat.writer.OBOFormatWriter;
 @SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_oboformat_writer {
-    @Test
-    public void enforceInterfacesOBOFormatWriter() {
-    }
-
     public void verifyOBOFormatWriter() throws IOException {
         OBOFormatWriter testSubject0 = new OBOFormatWriter();
         testSubject0.write(_OBODoc, _String);

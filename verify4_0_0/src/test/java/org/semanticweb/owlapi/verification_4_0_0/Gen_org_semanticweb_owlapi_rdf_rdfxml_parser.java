@@ -15,25 +15,9 @@ import org.xml.sax.SAXException;
 @SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
-    @Test
-    public void enforceInterfacesDeprecatedVocabulary() {
-    }
-
-    @Test
-    public void enforceInterfacesIRIProvider() {
-    }
-
     public void verifyInterfaceIRIProvider() {
         IRIProvider testSubject0 = mock(IRIProvider.class);
         IRI result0 = testSubject0.getIRI(_String);
-    }
-
-    @Test
-    public void enforceInterfacesLiteralTripleHandler() {
-    }
-
-    @Test
-    public void enforceInterfacesLiteralTripleIterator() {
     }
 
     @Test
@@ -44,10 +28,6 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
     public void verifyEnumMode() {
         Mode testSubject0 = Mode.STRICT;
         Mode testSubject1 = Mode.LAX;
-    }
-
-    @Test
-    public void enforceInterfacesOptimisedListTranslator() {
     }
 
     @Test
@@ -140,16 +120,8 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
         java.lang.Throwable[] result8 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesRDFConstants() {
-    }
-
     public void verifyInterfaceRDFConstants() {
         RDFConstants testSubject0 = mock(RDFConstants.class);
-    }
-
-    @Test
-    public void enforceInterfacesRDFConsumer() {
     }
 
     public void verifyInterfaceRDFConsumer() {
@@ -239,18 +211,6 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
         OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
         java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();
-    }
-
-    @Test
-    public void enforceInterfacesResourceTripleHandler() {
-    }
-
-    @Test
-    public void enforceInterfacesResourceTripleIterator() {
-    }
-
-    @Test
-    public void enforceInterfacesState() {
     }
 
     public void verifyInterfaceState() throws SAXException {

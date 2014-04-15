@@ -166,28 +166,16 @@ public class Gen_org_obolibrary_macro {
         OWLAxiom result129 = testSubject0.visit(_OWLDifferentIndividualsAxiom);
     }
 
-    @Test
-    public void enforceInterfacesMacroExpansionGCIVisitor() {
-    }
-
     public void verifyMacroExpansionGCIVisitor() {
         MacroExpansionGCIVisitor testSubject0 = new MacroExpansionGCIVisitor(_OWLOntology, _OWLOntologyManager);
         OWLOntology result0 = testSubject0.createGCIOntology();
         testSubject0.dispose();
     }
 
-    @Test
-    public void enforceInterfacesMacroExpansionVisitor() {
-    }
-
     public void verifyMacroExpansionVisitor() {
         MacroExpansionVisitor testSubject0 = new MacroExpansionVisitor(_OWLOntology);
         OWLOntology result0 = testSubject0.expandAll();
         testSubject0.dispose();
-    }
-
-    @Test
-    public void enforceInterfacesManchesterSyntaxTool() {
     }
 
     public void verifyManchesterSyntaxTool() {

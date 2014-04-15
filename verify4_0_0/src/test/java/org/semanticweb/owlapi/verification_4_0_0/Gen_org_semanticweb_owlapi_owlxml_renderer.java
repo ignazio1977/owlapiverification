@@ -154,10 +154,6 @@ public class Gen_org_semanticweb_owlapi_owlxml_renderer {
         testSubject0.render(_OWLOntology, _OutputStream);
     }
 
-    @Test
-    public void enforceInterfacesOWLXMLWriter() {
-    }
-
     public void verifyOWLXMLWriter() throws IOException, OWLRendererException {
         OWLXMLWriter testSubject0 = new OWLXMLWriter(_Writer, _OWLOntology);
         testSubject0.writePrefix(_String, _String);

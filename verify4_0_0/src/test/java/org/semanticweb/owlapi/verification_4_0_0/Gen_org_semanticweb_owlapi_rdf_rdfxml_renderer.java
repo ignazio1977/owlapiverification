@@ -105,10 +105,6 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_renderer {
         testSubject0.render();
     }
 
-    @Test
-    public void enforceInterfacesRDFXMLWriter() {
-    }
-
     public void verifyRDFXMLWriter() throws IOException {
         RDFXMLWriter testSubject0 = mock(RDFXMLWriter.class);
         testSubject0.writeComment(_String);
@@ -127,10 +123,6 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_renderer {
         testSubject0.endDocument();
     }
 
-    @Test
-    public void enforceInterfacesXMLWriter() {
-    }
-
     public void verifyInterfaceXMLWriter() throws IllegalElementNameException, IOException {
         XMLWriter testSubject0 = mock(XMLWriter.class);
         testSubject0.writeComment(_String);
@@ -145,10 +137,6 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_renderer {
         testSubject0.startDocument(_IRI);
         testSubject0.endDocument();
         testSubject0.setEncoding(_String);
-    }
-
-    @Test
-    public void enforceInterfacesXMLWriterFactory() {
     }
 
     public void verifyXMLWriterFactory() {
@@ -179,10 +167,6 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_renderer {
         testSubject0.setEncoding(_String);
     }
 
-    @Test
-    public void enforceInterfacesXMLWriterNamespaceManager() {
-    }
-
     public void verifyXMLWriterNamespaceManager() {
         XMLWriterNamespaceManager testSubject0 = new XMLWriterNamespaceManager(_String);
         java.lang.String result0 = testSubject0.getDefaultNamespace();
@@ -197,10 +181,6 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_renderer {
         java.lang.Iterable<java.lang.String> result5 = testSubject0.getPrefixes();
         java.lang.String result6 = testSubject0.getQName(_String);
         java.lang.String result7 = testSubject0.getQName(_IRI);
-    }
-
-    @Test
-    public void enforceInterfacesXMLWriterPreferences() {
     }
 
     public void verifyXMLWriterPreferences() {

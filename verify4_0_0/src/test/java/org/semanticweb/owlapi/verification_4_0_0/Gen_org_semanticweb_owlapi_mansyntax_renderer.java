@@ -13,10 +13,6 @@ import org.semanticweb.owlapi.model.*;
 @SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
-    @Test
-    public void enforceInterfacesAbstractRenderer() {
-    }
-
     public void verifyAbstractRenderer() {
         AbstractRenderer testSubject0 = mock(AbstractRenderer.class);
     }
@@ -348,20 +344,12 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
         java.lang.Throwable[] result20 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesRendererEvent() {
-    }
-
     public void verifyRendererEvent() {
         RendererEvent testSubject0 = new RendererEvent(_ManchesterOWLSyntaxFrameRenderer, _OWLObject);
         testSubject0.writeComment(_String);
         org.semanticweb.owlapi.mansyntax.renderer.ManchesterOWLSyntaxFrameRenderer result0 = testSubject0.getFrameRenderer();
         testSubject0.writeCommentOnNewLine(_String);
         OWLObject result1 = testSubject0.getFrameSubject();
-    }
-
-    @Test
-    public void enforceInterfacesRendererListener() {
     }
 
     public void verifyInterfaceRendererListener() {
@@ -374,10 +362,6 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
         testSubject0.sectionRenderingFinished(_String, _RendererEvent);
         testSubject0.sectionItemPrepared(_String, _RendererEvent);
         testSubject0.sectionItemFinished(_String, _RendererEvent);
-    }
-
-    @Test
-    public void enforceInterfacesRenderingDirector() {
     }
 
     public void verifyInterfaceRenderingDirector() {

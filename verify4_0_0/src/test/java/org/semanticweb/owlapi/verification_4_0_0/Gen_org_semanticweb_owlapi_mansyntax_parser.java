@@ -191,10 +191,6 @@ public class Gen_org_semanticweb_owlapi_mansyntax_parser {
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
     }
 
-    @Test
-    public void enforceInterfacesManchesterOWLSyntaxOntologyHeader() {
-    }
-
     public void verifyManchesterOWLSyntaxOntologyHeader() {
         ManchesterOWLSyntaxOntologyHeader testSubject0 = new ManchesterOWLSyntaxOntologyHeader(_IRI, _IRI, _Set, _Set9);
         java.util.Collection<OWLAnnotation> result0 = testSubject0.getAnnotations();
@@ -239,10 +235,6 @@ public class Gen_org_semanticweb_owlapi_mansyntax_parser {
         testSubject0.setStackTrace(_StackTraceElement_array);
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result8 = testSubject0.getSuppressed();
-    }
-
-    @Test
-    public void enforceInterfacesManchesterOWLSyntaxTokenizer() {
     }
 
     public void verifyManchesterOWLSyntaxTokenizer() {

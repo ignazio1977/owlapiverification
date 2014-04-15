@@ -326,10 +326,6 @@ public class Gen_org_semanticweb_owlapi_metrics {
         testSubject0.dispose();
     }
 
-    @Test
-    public void enforceInterfacesOWLMetric() {
-    }
-
     public void verifyInterfaceOWLMetric() {
         OWLMetric<Integer> testSubject0 = mock(OWLMetric.class);
         java.lang.String result0 = testSubject0.getName();
@@ -340,10 +336,6 @@ public class Gen_org_semanticweb_owlapi_metrics {
         boolean result4 = testSubject0.isImportsClosureUsed();
         testSubject0.setImportsClosureUsed(_boolean);
         testSubject0.dispose();
-    }
-
-    @Test
-    public void enforceInterfacesOWLMetricManager() {
     }
 
     public void verifyOWLMetricManager() {

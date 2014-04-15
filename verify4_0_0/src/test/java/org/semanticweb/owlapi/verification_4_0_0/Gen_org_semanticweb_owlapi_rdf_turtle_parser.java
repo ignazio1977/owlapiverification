@@ -81,10 +81,6 @@ public class Gen_org_semanticweb_owlapi_rdf_turtle_parser {
         OWLEntity result13 = testSubject0.generateAndLogParseError(_EntityType, _IRI);
     }
 
-    @Test
-    public void enforceInterfacesTripleHandler() {
-    }
-
     public void verifyInterfaceTripleHandler() {
         TripleHandler testSubject0 = mock(TripleHandler.class);
         testSubject0.handleTriple(_IRI, _IRI, _IRI);

@@ -25,10 +25,6 @@ public class Gen_org_semanticweb_owlapi_normalform {
         OWLClassExpression result1 = testSubject0.convertToNormalForm(_OWLClassExpression);
     }
 
-    @Test
-    public void enforceInterfacesNormalFormRewriter() {
-    }
-
     public void verifyInterfaceNormalFormRewriter() {
         NormalFormRewriter testSubject0 = mock(NormalFormRewriter.class);
         boolean result0 = testSubject0.isInNormalForm(_OWLClassExpression);

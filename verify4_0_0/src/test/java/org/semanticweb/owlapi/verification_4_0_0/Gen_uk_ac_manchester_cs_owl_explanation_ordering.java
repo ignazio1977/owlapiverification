@@ -52,10 +52,6 @@ public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
         uk.ac.manchester.cs.owl.explanation.ordering.Tree<OWLAxiom> result12 = testSubject0.getRoot();
     }
 
-    @Test
-    public void enforceInterfacesExplanationOrderer() {
-    }
-
     public void verifyInterfaceExplanationOrderer() {
         ExplanationOrderer testSubject0 = mock(ExplanationOrderer.class);
         uk.ac.manchester.cs.owl.explanation.ordering.ExplanationTree result0 = testSubject0.getOrderedExplanation(_OWLAxiom, _Set);
@@ -126,10 +122,6 @@ public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
         uk.ac.manchester.cs.owl.explanation.ordering.Tree<OWLAxiom> result11 = testSubject0.getRoot();
     }
 
-    @Test
-    public void enforceInterfacesNodeRenderer() {
-    }
-
     public void verifyInterfaceNodeRenderer() {
         NodeRenderer<OWLAxiom> testSubject0 = mock(NodeRenderer.class);
         java.lang.String result0 = testSubject0.render(_Tree);
@@ -143,10 +135,6 @@ public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
     public void verifyNullExplanationOrderer() {
         NullExplanationOrderer testSubject0 = new NullExplanationOrderer();
         uk.ac.manchester.cs.owl.explanation.ordering.ExplanationTree result0 = testSubject0.getOrderedExplanation(_OWLAxiom, _Set);
-    }
-
-    @Test
-    public void enforceInterfacesTree() {
     }
 
     public void verifyInterfaceTree() {

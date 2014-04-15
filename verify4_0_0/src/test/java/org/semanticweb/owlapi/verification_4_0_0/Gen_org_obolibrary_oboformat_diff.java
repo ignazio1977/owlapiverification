@@ -1,6 +1,5 @@
 package org.semanticweb.owlapi.verification_4_0_0;
 
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.obolibrary.oboformat.diff.Diff;
@@ -9,10 +8,6 @@ import org.obolibrary.oboformat.diff.OBODocDiffer;
 @SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_oboformat_diff {
-    @Test
-    public void enforceInterfacesDiff() {
-    }
-
     public void verifyDiff() {
         Diff testSubject0 = new Diff(_String, _String, _Frame, _int);
         Diff testSubject1 = new Diff(_String, _String, _Frame, _Frame, _Clause, _int);
@@ -26,10 +21,6 @@ public class Gen_org_obolibrary_oboformat_diff {
         org.obolibrary.oboformat.model.Clause result4 = testSubject0.getClause2();
         testSubject0.setClause2(_Clause);
         testSubject0.setType(_String);
-    }
-
-    @Test
-    public void enforceInterfacesOBODocDiffer() {
     }
 
     public void verifyOBODocDiffer() throws Exception {

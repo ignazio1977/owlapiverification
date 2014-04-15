@@ -203,10 +203,6 @@ public class Gen_org_semanticweb_owlapi_change {
         OWLOntologyChange<OWLAnnotation> result5 = testSubject0.createOntologyChange(_OWLOntology);
     }
 
-    @Test
-    public void enforceInterfacesOWLCompositeOntologyChange() {
-    }
-
     public void verifyInterfaceOWLCompositeOntologyChange() {
         OWLCompositeOntologyChange testSubject0 = mock(OWLCompositeOntologyChange.class);
         java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
@@ -224,10 +220,6 @@ public class Gen_org_semanticweb_owlapi_change {
         OWLOntologyChange<OWLObject> result1 = testSubject0.createOntologyChange(_OWLOntology);
         java.lang.Object result2 = testSubject0.getItem();
         java.util.Set<OWLEntity> result3 = testSubject0.getSignature();
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyChangeDataVisitor() {
     }
 
     public void verifyInterfaceOWLOntologyChangeDataVisitor() throws Exception {

@@ -32,10 +32,6 @@ public class Gen_org_semanticweb_owlapi_rio_utils {
         int result0 = testSubject0.compare(_Value, _Value);
     }
 
-    @Test
-    public void enforceInterfacesRioUtils() {
-    }
-
     public void verifyRioUtils() {
         RioUtils testSubject0 = new RioUtils();
         org.openrdf.model.Statement result0 = RioUtils.tripleAsStatement(_RDFTriple);

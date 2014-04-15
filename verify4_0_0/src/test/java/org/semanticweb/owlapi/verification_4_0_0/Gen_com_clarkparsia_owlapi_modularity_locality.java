@@ -29,10 +29,6 @@ public class Gen_com_clarkparsia_owlapi_modularity_locality {
         LocalityClass testSubject2 = LocalityClass.TOP_TOP;
     }
 
-    @Test
-    public void enforceInterfacesLocalityEvaluator() {
-    }
-
     public void verifyInterfaceLocalityEvaluator() {
         LocalityEvaluator testSubject0 = mock(LocalityEvaluator.class);
         boolean result0 = testSubject0.isLocal(_OWLAxiom, _Set);

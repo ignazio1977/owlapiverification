@@ -121,19 +121,11 @@ public class Gen_org_semanticweb_owlapi_profiles {
         IRI result2 = testSubject0.getIRI();
     }
 
-    @Test
-    public void enforceInterfacesOWLProfileReport() {
-    }
-
     public void verifyOWLProfileReport() {
         OWLProfileReport testSubject0 = new OWLProfileReport(_OWLProfile, _Set);
         boolean result0 = testSubject0.isInProfile();
         java.util.List<org.semanticweb.owlapi.profiles.OWLProfileViolation<?>> result1 = testSubject0.getViolations();
         org.semanticweb.owlapi.profiles.OWLProfile result2 = testSubject0.getProfile();
-    }
-
-    @Test
-    public void enforceInterfacesOWLProfileViolation() {
     }
 
     public void verifyOWLProfileViolation() {
@@ -145,10 +137,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
         OWLAxiom result3 = testSubject0.getAxiom();
         OWLOntology result4 = testSubject0.getOntology();
         OWLOntologyID result5 = testSubject0.getOntologyID();
-    }
-
-    @Test
-    public void enforceInterfacesOWLProfileViolationVisitor() {
     }
 
     public void verifyInterfaceOWLProfileViolationVisitor() {
@@ -254,10 +242,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
         testSubject0.visit(_UseOfReservedVocabularyForClassIRI);
         testSubject0.visit(_UseOfReservedVocabularyForDataPropertyIRI);
         testSubject0.visit(_UseOfReservedVocabularyForIndividualIRI);
-    }
-
-    @Test
-    public void enforceInterfacesOWLProfileViolationVisitorEx() {
     }
 
     public void verifyInterfaceOWLProfileViolationVisitorEx() {

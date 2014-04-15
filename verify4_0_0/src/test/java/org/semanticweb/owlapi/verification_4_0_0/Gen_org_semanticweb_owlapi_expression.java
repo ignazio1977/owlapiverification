@@ -23,10 +23,6 @@ public class Gen_org_semanticweb_owlapi_expression {
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
     }
 
-    @Test
-    public void enforceInterfacesOWLEntityChecker() {
-    }
-
     public void verifyInterfaceOWLEntityChecker() {
         OWLEntityChecker testSubject0 = mock(OWLEntityChecker.class);
         OWLClass result0 = testSubject0.getOWLClass(_String);
@@ -37,18 +33,10 @@ public class Gen_org_semanticweb_owlapi_expression {
         OWLNamedIndividual result5 = testSubject0.getOWLIndividual(_String);
     }
 
-    @Test
-    public void enforceInterfacesOWLExpressionParser() {
-    }
-
     public void verifyInterfaceOWLExpressionParser() {
         OWLExpressionParser<OWLObject> testSubject0 = mock(OWLExpressionParser.class);
         OWLObject result0 = testSubject0.parse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyChecker() {
     }
 
     public void verifyInterfaceOWLOntologyChecker() {

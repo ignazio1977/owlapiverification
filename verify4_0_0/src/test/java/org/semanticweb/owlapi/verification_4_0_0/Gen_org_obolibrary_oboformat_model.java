@@ -10,10 +10,6 @@ import org.obolibrary.oboformat.model.*;
 @SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_oboformat_model {
-    @Test
-    public void enforceInterfacesClause() {
-    }
-
     public void verifyClause() {
         @SuppressWarnings("deprecation")
         Clause testSubject0 = new Clause();
@@ -131,10 +127,6 @@ public class Gen_org_obolibrary_oboformat_model {
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesOBODoc() {
-    }
-
     public void verifyOBODoc() throws FrameStructureException, FrameMergeException {
         OBODoc testSubject0 = new OBODoc();
         testSubject0.check();
@@ -161,20 +153,12 @@ public class Gen_org_obolibrary_oboformat_model {
         testSubject0.addDefaultOntologyHeader(_String);
     }
 
-    @Test
-    public void enforceInterfacesQualifierValue() {
-    }
-
     public void verifyQualifierValue() {
         QualifierValue testSubject0 = new QualifierValue(_String, _String);
         java.lang.Object result0 = testSubject0.getValue();
         testSubject0.setValue(_Object);
         java.lang.String result1 = testSubject0.getQualifier();
         testSubject0.setQualifier(_String);
-    }
-
-    @Test
-    public void enforceInterfacesXref() {
     }
 
     public void verifyXref() {

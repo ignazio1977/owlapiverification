@@ -262,10 +262,6 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         testSubject0.reasonerTaskBusy();
     }
 
-    @Test
-    public void enforceInterfacesOWLReasoner() {
-    }
-
     public void verifyInterfaceOWLReasoner() {
         OWLReasoner testSubject0 = mock(OWLReasoner.class);
         testSubject0.interrupt();
@@ -320,20 +316,12 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         org.semanticweb.owlapi.reasoner.IndividualNodeSetPolicy result45 = testSubject0.getIndividualNodeSetPolicy();
     }
 
-    @Test
-    public void enforceInterfacesOWLReasonerConfiguration() {
-    }
-
     public void verifyInterfaceOWLReasonerConfiguration() {
         OWLReasonerConfiguration testSubject0 = mock(OWLReasonerConfiguration.class);
         org.semanticweb.owlapi.reasoner.ReasonerProgressMonitor result0 = testSubject0.getProgressMonitor();
         long result1 = testSubject0.getTimeOut();
         org.semanticweb.owlapi.reasoner.FreshEntityPolicy result2 = testSubject0.getFreshEntityPolicy();
         org.semanticweb.owlapi.reasoner.IndividualNodeSetPolicy result3 = testSubject0.getIndividualNodeSetPolicy();
-    }
-
-    @Test
-    public void enforceInterfacesOWLReasonerFactory() {
     }
 
     public void verifyInterfaceOWLReasonerFactory() {
@@ -414,10 +402,6 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         testSubject0.setStackTrace(_StackTraceElement_array);
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
-    }
-
-    @Test
-    public void enforceInterfacesReasonerProgressMonitor() {
     }
 
     public void verifyInterfaceReasonerProgressMonitor() {
@@ -503,9 +487,6 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         testSubject0.setStackTrace(_StackTraceElement_array);
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
-    }
-
-    private static class E {
     }
 
     private boolean _boolean;

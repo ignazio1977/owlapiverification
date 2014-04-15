@@ -2,7 +2,6 @@ package org.semanticweb.owlapi.verification_4_0_0;
 
 import java.io.IOException;
 
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.obolibrary.obo2owl.*;
@@ -15,10 +14,6 @@ import org.semanticweb.owlapi.model.*;
 @SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_obo2owl {
-    @Test
-    public void enforceInterfacesIdTranslator() {
-    }
-
     public void verifyIdTranslator() {
         IdTranslator testSubject0 = new IdTranslator();
         java.lang.String result0 = testSubject0.translateIRI(_IRI);
@@ -27,18 +22,10 @@ public class Gen_org_obolibrary_obo2owl {
         java.lang.String result3 = testSubject0.expandPrefix(_String);
     }
 
-    @Test
-    public void enforceInterfacesObo2OWLConstants() {
-    }
-
     public void verifyObo2OWLConstants() {
         Obo2OWLConstants testSubject0 = new Obo2OWLConstants();
         java.lang.String result0 = Obo2OWLConstants.format(_Date);
         org.obolibrary.obo2owl.Obo2OWLConstants.Obo2OWLVocabulary result1 = Obo2OWLConstants.getVocabularyObj(_String);
-    }
-
-    @Test
-    public void enforceInterfacesOboInOwlCardinalityTools() {
     }
 
     public void verifyOboInOwlCardinalityTools() throws AnnotationCardinalityException {
@@ -46,10 +33,6 @@ public class Gen_org_obolibrary_obo2owl {
         OboInOwlCardinalityTools.checkAnnotationCardinality(_OWLOntology, _AnnotationCardinalityReporter);
         OboInOwlCardinalityTools.checkAnnotationCardinality(_OWLOntology);
         OboInOwlCardinalityTools.checkAnnotationCardinality(_OWLOntology, _AnnotationCardinalityReporter, _AnnotationCardinalityConfictHandler);
-    }
-
-    @Test
-    public void enforceInterfacesOWLAPIObo2Owl() {
     }
 
     public void verifyOWLAPIObo2Owl() throws OWLOntologyCreationException, OBOFormatParserException, OWLOntologyStorageException, IOException {
@@ -70,10 +53,6 @@ public class Gen_org_obolibrary_obo2owl {
         OWLOntology result8 = testSubject0.convert(_OBODoc);
         OWLOntology result9 = testSubject0.convert(_String);
         IRI result10 = OWLAPIObo2Owl.trTagToIRI(_String);
-    }
-
-    @Test
-    public void enforceInterfacesOWLAPIOwl2Obo() {
     }
 
     public void verifyOWLAPIOwl2Obo() throws UntranslatableAxiomException {
@@ -99,10 +78,6 @@ public class Gen_org_obolibrary_obo2owl {
         java.lang.String result13 = OWLAPIOwl2Obo.owlObjectToTag(_OWLObject);
         java.lang.String result14 = testSubject0.getIdentifier(_OWLObject);
         java.lang.String result15 = OWLAPIOwl2Obo.getIdentifier(_IRI);
-    }
-
-    @Test
-    public void enforceInterfacesOwlStringTools() {
     }
 
     public void verifyOwlStringTools() throws OwlStringException {

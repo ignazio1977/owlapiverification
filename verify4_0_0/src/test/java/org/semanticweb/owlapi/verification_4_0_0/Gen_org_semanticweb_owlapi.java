@@ -24,10 +24,6 @@ public class Gen_org_semanticweb_owlapi {
         testSubject0.configure(_Binder);
     }
 
-    @Test
-    public void enforceInterfacesBOMSafeJavaCharStream() {
-    }
-
     public void verifyBOMSafeJavaCharStream() throws IOException {
         BOMSafeJavaCharStream testSubject0 = new BOMSafeJavaCharStream(_InputStream, _String, _int, _int);
         BOMSafeJavaCharStream testSubject1 = new BOMSafeJavaCharStream(_Reader, _int, _int);

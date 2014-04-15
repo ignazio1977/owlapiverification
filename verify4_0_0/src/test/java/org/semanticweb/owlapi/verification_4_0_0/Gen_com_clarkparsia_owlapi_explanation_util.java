@@ -28,19 +28,11 @@ public class Gen_com_clarkparsia_owlapi_explanation_util {
         testSubject0.ontologiesChanged(_List);
     }
 
-    @Test
-    public void enforceInterfacesExplanationProgressMonitor() {
-    }
-
     public void verifyInterfaceExplanationProgressMonitor() {
         ExplanationProgressMonitor testSubject0 = mock(ExplanationProgressMonitor.class);
         testSubject0.foundAllExplanations();
         testSubject0.foundExplanation(_Set);
         boolean result0 = testSubject0.isCancelled();
-    }
-
-    @Test
-    public void enforceInterfacesOntologyUtils() {
     }
 
     public void verifyOntologyUtils() {

@@ -172,10 +172,6 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result6 = testSubject0.buildObject();
     }
 
-    @Test
-    public void enforceInterfacesBuilder() {
-    }
-
     public void verifyInterfaceBuilder() {
         Builder<OWLObject> testSubject0 = mock(Builder.class);
         List<OWLOntologyChange<?>> result0 = testSubject0.applyChanges(_OWLOntology);

@@ -58,10 +58,6 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
         boolean result7 = testSubject0.isSingleton();
     }
 
-    @Test
-    public void enforceInterfacesNodeFactory() {
-    }
-
     public void verifyNodeFactory() {
         NodeFactory testSubject0 = new NodeFactory();
         org.semanticweb.owlapi.reasoner.impl.DefaultNode<OWLClass> result0 = NodeFactory.getOWLClassNode(_Set5);

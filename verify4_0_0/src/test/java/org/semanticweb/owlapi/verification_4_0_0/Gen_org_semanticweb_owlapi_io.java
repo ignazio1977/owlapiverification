@@ -186,10 +186,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesOWLObjectRenderer() {
-    }
-
     public void verifyInterfaceOWLObjectRenderer() {
         OWLObjectRenderer testSubject0 = mock(OWLObjectRenderer.class);
         testSubject0.setShortFormProvider(_ShortFormProvider);
@@ -215,10 +211,6 @@ public class Gen_org_semanticweb_owlapi_io {
         testSubject0.setStackTrace(_StackTraceElement_array);
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyDocumentSource() {
     }
 
     public void verifyInterfaceOWLOntologyDocumentSource() {
@@ -250,10 +242,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result6 = testSubject0.getReader();
         boolean result7 = testSubject0.isInputStreamAvailable();
         IRI result8 = testSubject0.getDocumentIRI();
-    }
-
-    @Test
-    public void enforceInterfacesOWLOntologyDocumentTarget() {
     }
 
     public void verifyInterfaceOWLOntologyDocumentTarget() throws IOException {
@@ -290,10 +278,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.lang.Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    @Test
-    public void enforceInterfacesOWLOntologyLoaderMetaData() {
-    }
-
     public void verifyInterfaceOWLOntologyLoaderMetaData() {
         OWLOntologyLoaderMetaData testSubject0 = mock(OWLOntologyLoaderMetaData.class);
     }
@@ -318,10 +302,6 @@ public class Gen_org_semanticweb_owlapi_io {
         testSubject0.setStackTrace(_StackTraceElement_array);
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
-    }
-
-    @Test
-    public void enforceInterfacesOWLParser() {
     }
 
     public void verifyInterfaceOWLParser() throws OWLParserException, OWLOntologyChangeException, UnloadableImportException, IOException {
@@ -394,10 +374,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.util.List<java.lang.String> result4 = testSubject0.getMIMETypes();
         boolean result5 = testSubject0.handlesMimeType(_String);
         java.util.Set<OWLOntologyFormatFactory> result6 = testSubject0.getSupportedFormats();
-    }
-
-    @Test
-    public void enforceInterfacesOWLRenderer() {
     }
 
     public void verifyInterfaceOWLRenderer() throws OWLException {
@@ -550,10 +526,6 @@ public class Gen_org_semanticweb_owlapi_io {
         int result5 = testSubject0.compareTo(_RDFNode);
     }
 
-    @Test
-    public void enforceInterfacesRDFResourceParseError() {
-    }
-
     public void verifyRDFResourceParseError() {
         RDFResourceParseError testSubject0 = new RDFResourceParseError(_OWLEntity, _RDFNode, _Set);
         OWLEntity result0 = testSubject0.getParserGeneratedErrorEntity();
@@ -699,10 +671,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.OutputStream result5 = testSubject0.getOutputStream();
     }
 
-    @Test
-    public void enforceInterfacesToStringRenderer() {
-    }
-
     public void verifyToStringRenderer() {
         ToStringRenderer testSubject0 = ToStringRenderer.getInstance();
         testSubject0.setShortFormProvider(_ShortFormProvider);
@@ -746,10 +714,6 @@ public class Gen_org_semanticweb_owlapi_io {
         boolean result3 = testSubject0.isDocumentIRIAvailable();
         IRI result4 = testSubject0.getDocumentIRI();
         java.io.OutputStream result5 = testSubject0.getOutputStream();
-    }
-
-    @Test
-    public void enforceInterfacesXMLUtils() {
     }
 
     public void verifyXMLUtils() {
