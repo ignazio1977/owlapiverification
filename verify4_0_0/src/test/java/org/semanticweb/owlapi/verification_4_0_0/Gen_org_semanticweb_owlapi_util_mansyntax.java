@@ -2,13 +2,10 @@ package org.semanticweb.owlapi.verification_4_0_0;
 
 import static org.mockito.Mockito.mock;
 
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
 
 @SuppressWarnings({ "javadoc", "unused" })
-@RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_util_mansyntax {
     public void verifyInterfaceManchesterOWLSyntaxParser() {
         ManchesterOWLSyntaxParser testSubject0 = mock(ManchesterOWLSyntaxParser.class);

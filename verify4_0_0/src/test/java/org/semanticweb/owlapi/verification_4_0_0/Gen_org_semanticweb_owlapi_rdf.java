@@ -4,12 +4,9 @@ import static org.mockito.Mockito.mock;
 
 import java.io.IOException;
 
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.rdf.RDFRendererBase;
 
 @SuppressWarnings({ "javadoc" })
-@RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_rdf {
     public void verifyRDFRendererBase() throws IOException {
         RDFRendererBase testSubject0 = mock(RDFRendererBase.class);

@@ -2,8 +2,6 @@ package org.semanticweb.owlapi.verification_4_0_0;
 
 import java.io.IOException;
 
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 import org.obolibrary.obo2owl.*;
 import org.obolibrary.obo2owl.OWLAPIOwl2Obo.UntranslatableAxiomException;
 import org.obolibrary.obo2owl.OboInOwlCardinalityTools.AnnotationCardinalityException;
@@ -12,7 +10,6 @@ import org.obolibrary.oboformat.parser.OBOFormatParserException;
 import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "unused" })
-@RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_obo2owl {
     public void verifyIdTranslator() {
         IdTranslator testSubject0 = new IdTranslator();

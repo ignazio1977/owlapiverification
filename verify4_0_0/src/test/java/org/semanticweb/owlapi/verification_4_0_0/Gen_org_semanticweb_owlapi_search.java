@@ -2,14 +2,11 @@ package org.semanticweb.owlapi.verification_4_0_0;
 
 import static org.mockito.Mockito.mock;
 
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.search.Filters;
 import org.semanticweb.owlapi.search.Searcher;
 
 @SuppressWarnings({ "javadoc", "unused" })
-@RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_search {
     public void verifyFilters() {
         Filters testSubject0 = new Filters();

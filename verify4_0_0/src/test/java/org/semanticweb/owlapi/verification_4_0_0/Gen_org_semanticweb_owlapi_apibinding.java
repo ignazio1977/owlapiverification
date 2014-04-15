@@ -1,13 +1,10 @@
 package org.semanticweb.owlapi.verification_4_0_0;
 
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.apibinding.OWLFunctionalSyntaxFactory;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "unused" })
-@RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_apibinding {
     public void verifyOWLFunctionalSyntaxFactory() throws OWLOntologyCreationException {
         OWLFunctionalSyntaxFactory testSubject0 = new OWLFunctionalSyntaxFactory();
