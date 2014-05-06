@@ -3,7 +3,7 @@ package org.semanticweb.owlapi.verification_4_0_0;
 import org.obolibrary.oboformat.diff.Diff;
 import org.obolibrary.oboformat.diff.OBODocDiffer;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 public class Gen_org_obolibrary_oboformat_diff {
     public void verifyDiff() {
         Diff testSubject0 = new Diff(_String, _String, _Frame, _int);

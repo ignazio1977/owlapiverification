@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import org.semanticweb.owlapi.rdf.RDFRendererBase;
 
-@SuppressWarnings({ "javadoc" })
+@SuppressWarnings({ "javadoc", "null" })
 public class Gen_org_semanticweb_owlapi_rdf {
     public void verifyRDFRendererBase() throws IOException {
         RDFRendererBase testSubject0 = mock(RDFRendererBase.class);

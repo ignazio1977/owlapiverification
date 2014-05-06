@@ -11,7 +11,9 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.io.*;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "resource", "unused" })
+import com.google.common.collect.Multimap;
+
+@SuppressWarnings({ "javadoc", "resource", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_io {
     @Test
@@ -27,7 +29,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result2 = testSubject0.getSupportedFormatClasses();
         java.util.Set<OWLOntologyFormatFactory> result3 = testSubject0.getSupportedFormats();
         OWLOntologyFormat result4 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result5 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
     }
 
     @Test
@@ -85,7 +86,6 @@ public class Gen_org_semanticweb_owlapi_io {
         GZipFileDocumentSource testSubject0 = new GZipFileDocumentSource(_File);
         GZipFileDocumentSource testSubject1 = new GZipFileDocumentSource(_File, _IRI, _OWLOntologyFormat, _String);
         java.io.InputStream result0 = testSubject0.getInputStream();
-        IRI result1 = GZipFileDocumentSource.getNextDocumentIRI();
         boolean result2 = testSubject0.isReaderAvailable();
         java.io.Reader result3 = testSubject0.getReader();
         boolean result4 = testSubject0.isInputStreamAvailable();
@@ -120,7 +120,6 @@ public class Gen_org_semanticweb_owlapi_io {
         GZipStreamDocumentSource testSubject0 = new GZipStreamDocumentSource(_InputStream, _IRI, _OWLOntologyFormat, _String);
         GZipStreamDocumentSource testSubject1 = new GZipStreamDocumentSource(_InputStream);
         java.io.InputStream result0 = testSubject0.getInputStream();
-        IRI result1 = GZipStreamDocumentSource.getNextDocumentIRI();
         boolean result2 = testSubject0.isReaderAvailable();
         java.io.Reader result3 = testSubject0.getReader();
         boolean result4 = testSubject0.isInputStreamAvailable();
@@ -242,6 +241,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result6 = testSubject0.getReader();
         boolean result7 = testSubject0.isInputStreamAvailable();
         IRI result8 = testSubject0.getDocumentIRI();
+        IRI next = OWLOntologyDocumentSourceBase.getNextDocumentIRI("test");
     }
 
     public void verifyInterfaceOWLOntologyDocumentTarget() throws IOException {
@@ -309,7 +309,6 @@ public class Gen_org_semanticweb_owlapi_io {
         java.lang.String result0 = testSubject0.getName();
         OWLOntologyFormat result1 = testSubject0.parse(_IRI, _OWLOntology);
         OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result3 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
         java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();
     }
@@ -477,7 +476,7 @@ public class Gen_org_semanticweb_owlapi_io {
     }
 
     public void verifyRDFParserMetaData() {
-        RDFParserMetaData testSubject0 = new RDFParserMetaData(_RDFOntologyHeaderStatus, _int, _Set);
+        RDFParserMetaData testSubject0 = new RDFParserMetaData(_RDFOntologyHeaderStatus, _int, _Set, _multimap);
         int result0 = testSubject0.getTripleCount();
         org.semanticweb.owlapi.io.RDFOntologyHeaderStatus result1 = testSubject0.getHeaderState();
         java.util.Set<org.semanticweb.owlapi.io.RDFTriple> result2 = testSubject0.getUnparsedTriples();
@@ -630,7 +629,6 @@ public class Gen_org_semanticweb_owlapi_io {
         StringDocumentSource testSubject1 = new StringDocumentSource(_String);
         StringDocumentSource testSubject2 = new StringDocumentSource(_StringDocumentTarget);
         java.io.InputStream result0 = testSubject0.getInputStream();
-        IRI result1 = StringDocumentSource.getNextDocumentIRI();
         boolean result2 = testSubject0.isReaderAvailable();
         java.io.Reader result3 = testSubject0.getReader();
         boolean result4 = testSubject0.isInputStreamAvailable();
@@ -717,7 +715,6 @@ public class Gen_org_semanticweb_owlapi_io {
     }
 
     public void verifyXMLUtils() {
-        XMLUtils testSubject0 = new XMLUtils();
         boolean result0 = XMLUtils.isXMLNameStartCharacter(_int);
         boolean result1 = XMLUtils.isXMLNameChar(_int);
         boolean result2 = XMLUtils.isNCNameStartChar(_int);
@@ -763,6 +760,7 @@ public class Gen_org_semanticweb_owlapi_io {
     private java.lang.Throwable _Throwable;
     private java.util.Map<org.semanticweb.owlapi.io.OWLParser, org.semanticweb.owlapi.io.OWLParserException> _Map;
     private java.util.Set<org.semanticweb.owlapi.io.RDFTriple> _Set;
+    private Multimap<IRI, Class<?>> _multimap;
     private org.semanticweb.owlapi.io.OWLObjectRenderer _OWLObjectRenderer;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentSource _OWLOntologyDocumentSource;
     private org.semanticweb.owlapi.io.RDFNode _RDFNode;

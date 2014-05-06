@@ -11,7 +11,7 @@ import org.semanticweb.owlapi.krss1.parser.KRSSOWLParser;
 import org.semanticweb.owlapi.krss1.parser.NameResolverStrategy;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_krss1_parser {
     @Test
@@ -22,7 +22,6 @@ public class Gen_org_semanticweb_owlapi_krss1_parser {
     public void verifyKRSSOWLParser() throws OWLOntologyChangeException, UnloadableImportException, IOException {
         KRSSOWLParser testSubject0 = new KRSSOWLParser();
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
         OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();

@@ -11,8 +11,11 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.change.*;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.model.parameters.*;
 
-@SuppressWarnings({ "javadoc", "unchecked", "unused" })
+import com.google.common.base.Optional;
+
+@SuppressWarnings({ "javadoc", "unchecked", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_model {
     @Test
@@ -4031,7 +4034,7 @@ public class Gen_org_semanticweb_owlapi_model {
     public void verifyInterfaceOWLMutableOntology() {
         OWLMutableOntology testSubject0 = mock(OWLMutableOntology.class);
         java.util.List<OWLOntologyChange<?>> result0 = testSubject0.applyChanges(_List);
-        OWLOntologyChange<java.lang.Object> result1 = testSubject0.applyChange(_OWLOntologyChange170);
+        ChangeApplied result1 = testSubject0.applyChange(_OWLOntologyChange170);
         boolean result2 = testSubject0.isEmpty();
         java.util.Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
         java.util.Set<OWLEntity> result4 = testSubject0.getSignature();
@@ -6202,9 +6205,9 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLOntologyID testSubject2 = new OWLOntologyID();
         int result1 = testSubject0.compareTo(_OWLOntologyID);
         boolean result2 = testSubject0.isOWL2DLOntologyID();
-        IRI result3 = testSubject0.getOntologyIRI();
-        IRI result4 = testSubject0.getVersionIRI();
-        IRI result5 = testSubject0.getDefaultDocumentIRI();
+        Optional<IRI> result3 = testSubject0.getOntologyIRI();
+        Optional<IRI> result4 = testSubject0.getVersionIRI();
+        Optional<IRI> result5 = testSubject0.getDefaultDocumentIRI();
         boolean result6 = testSubject0.isAnonymous();
     }
 
@@ -6237,7 +6240,7 @@ public class Gen_org_semanticweb_owlapi_model {
     public void verifyOWLOntologyLoaderConfiguration() {
         OWLOntologyLoaderConfiguration testSubject0 = new OWLOntologyLoaderConfiguration();
         boolean result0 = testSubject0.isStrict();
-        OWLOntologyLoaderConfiguration.MissingOntologyHeaderStrategy result1 = testSubject0.getMissingOntologyHeaderStrategy();
+        MissingOntologyHeaderStrategy result1 = testSubject0.getMissingOntologyHeaderStrategy();
         OWLOntologyLoaderConfiguration result2 = testSubject0.setMissingOntologyHeaderStrategy(_MissingOntologyHeaderStrategy);
         OWLOntologyLoaderConfiguration result3 = testSubject0.setLoadAnnotationAxioms(_boolean);
         boolean result4 = testSubject0.isLoadAnnotationAxioms();
@@ -8466,7 +8469,7 @@ public class Gen_org_semanticweb_owlapi_model {
     private OWLOntologyFormat _OWLOntologyFormat;
     private OWLOntologyID _OWLOntologyID;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
-    private OWLOntologyLoaderConfiguration.MissingOntologyHeaderStrategy _MissingOntologyHeaderStrategy;
+    private MissingOntologyHeaderStrategy _MissingOntologyHeaderStrategy;
     private OWLOntologyLoaderListener _OWLOntologyLoaderListener;
     private OWLOntologyLoaderListener.LoadingFinishedEvent _LoadingFinishedEvent;
     private OWLOntologyLoaderListener.LoadingStartedEvent _LoadingStartedEvent;

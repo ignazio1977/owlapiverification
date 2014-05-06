@@ -9,7 +9,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.profiles.*;
 
-@SuppressWarnings({ "javadoc", "unchecked", "unused" })
+@SuppressWarnings({ "javadoc", "unchecked", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_profiles {
     @Test
@@ -367,7 +367,7 @@ public class Gen_org_semanticweb_owlapi_profiles {
         org.semanticweb.owlapi.model.IRI result1 = testSubject0.getIRI();
         org.semanticweb.owlapi.profiles.OWLProfile result2 = testSubject0.getOWLProfile();
         java.util.Collection<java.lang.String> result3 = testSubject0.supportingReasoners();
-        org.semanticweb.owlapi.reasoner.OWLReasonerFactory result4 = testSubject0.instantiateFactory(_String);
+        org.semanticweb.owlapi.reasoner.OWLReasonerFactory result4 = Profiles.instantiateFactory(_String);
         org.semanticweb.owlapi.profiles.Profiles result5 = Profiles.valueForIRI(_IRI);
         org.semanticweb.owlapi.profiles.OWLProfileReport result6 = testSubject0.checkOntology(_OWLOntology);
     }

@@ -12,7 +12,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.impl.*;
 
-@SuppressWarnings({ "javadoc", "unchecked", "unused" })
+@SuppressWarnings({ "javadoc", "unchecked", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_reasoner_impl {
     @Test
@@ -59,7 +59,6 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
     }
 
     public void verifyNodeFactory() {
-        NodeFactory testSubject0 = new NodeFactory();
         org.semanticweb.owlapi.reasoner.impl.DefaultNode<OWLClass> result0 = NodeFactory.getOWLClassNode(_Set5);
         org.semanticweb.owlapi.reasoner.impl.DefaultNode<OWLClass> result1 = NodeFactory.getOWLClassNode(_OWLClass);
         org.semanticweb.owlapi.reasoner.impl.DefaultNode<OWLClass> result2 = NodeFactory.getOWLClassNode();

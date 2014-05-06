@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.obolibrary.oboformat.parser.*;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_oboformat_parser {
     @Test
@@ -39,7 +39,6 @@ public class Gen_org_obolibrary_oboformat_parser {
     }
 
     public void verifyOBOFormatConstants() {
-        OBOFormatConstants testSubject0 = new OBOFormatConstants();
         org.obolibrary.oboformat.parser.OBOFormatConstants.OboFormatTag result0 = OBOFormatConstants.getTag(_String);
     }
 

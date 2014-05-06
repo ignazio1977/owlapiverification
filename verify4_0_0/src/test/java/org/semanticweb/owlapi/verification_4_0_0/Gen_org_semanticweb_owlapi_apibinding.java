@@ -4,10 +4,9 @@ import org.semanticweb.owlapi.apibinding.OWLFunctionalSyntaxFactory;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 public class Gen_org_semanticweb_owlapi_apibinding {
-    public void verifyOWLFunctionalSyntaxFactory() throws OWLOntologyCreationException {
-        OWLFunctionalSyntaxFactory testSubject0 = new OWLFunctionalSyntaxFactory();
+    public void verifyOWLFunctionalSyntaxFactory() {
         OWLLiteral result0 = OWLFunctionalSyntaxFactory.PlainLiteral(_String);
         OWLDatatype result1 = OWLFunctionalSyntaxFactory.PlainLiteral();
         OWLDeclarationAxiom result2 = OWLFunctionalSyntaxFactory.Declaration(_OWLEntity, _Set);
@@ -144,7 +143,6 @@ public class Gen_org_semanticweb_owlapi_apibinding {
     }
 
     public void verifyOWLManager() {
-        OWLManager testSubject0 = new OWLManager();
         OWLDataFactory result0 = OWLManager.getOWLDataFactory();
         OWLOntologyManager result1 = OWLManager.createOWLOntologyManager();
     }

@@ -3,17 +3,11 @@ package org.semanticweb.owlapi.verification_4_0_0;
 import static org.mockito.Mockito.mock;
 
 import org.semanticweb.owlapi.model.*;
-import org.semanticweb.owlapi.search.Filters;
 import org.semanticweb.owlapi.search.Searcher;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 public class Gen_org_semanticweb_owlapi_search {
-    public void verifyFilters() {
-        Filters testSubject0 = new Filters();
-    }
-
     public void verifySearcher() {
-        Searcher testSubject0 = new Searcher();
         java.util.Set<OWLAnnotation> result0 = Searcher.annotations(_OWLAxiom, _OWLAnnotationProperty);
         java.util.Collection<OWLAnnotation> result1 = Searcher.annotations(_Collection);
         java.util.Collection<OWLAnnotation> result2 = Searcher.annotations(_Collection, _OWLAnnotationProperty);

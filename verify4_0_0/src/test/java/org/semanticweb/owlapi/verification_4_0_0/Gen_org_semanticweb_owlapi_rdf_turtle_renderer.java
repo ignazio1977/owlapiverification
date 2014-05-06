@@ -14,7 +14,7 @@ import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.rdf.turtle.renderer.TurtleOntologyStorer;
 import org.semanticweb.owlapi.rdf.turtle.renderer.TurtleRenderer;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_rdf_turtle_renderer {
     @Test

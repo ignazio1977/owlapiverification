@@ -5,7 +5,7 @@ import static org.mockito.Mockito.mock;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.modularity.OntologySegmenter;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 public class Gen_org_semanticweb_owlapi_modularity {
     public void verifyInterfaceOntologySegmenter() throws OWLOntologyCreationException {
         OntologySegmenter testSubject0 = mock(OntologySegmenter.class);

@@ -11,7 +11,7 @@ import org.semanticweb.owlapi.dlsyntax.parser.DLSyntaxOWLParser;
 import org.semanticweb.owlapi.model.OWLOntologyChangeException;
 import org.semanticweb.owlapi.model.UnloadableImportException;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_dlsyntax_parser {
     @Test
@@ -22,7 +22,6 @@ public class Gen_org_semanticweb_owlapi_dlsyntax_parser {
     public void verifyDLSyntaxOWLParser() throws OWLOntologyChangeException, UnloadableImportException, IOException {
         DLSyntaxOWLParser testSubject0 = new DLSyntaxOWLParser();
         java.lang.String result0 = testSubject0.getName();
-        org.semanticweb.owlapi.model.OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         org.semanticweb.owlapi.model.OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
         org.semanticweb.owlapi.model.OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
         java.util.Set<java.lang.Class<org.semanticweb.owlapi.model.OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();

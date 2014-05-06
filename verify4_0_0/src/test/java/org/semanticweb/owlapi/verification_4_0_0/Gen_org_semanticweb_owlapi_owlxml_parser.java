@@ -11,7 +11,7 @@ import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.owlxml.parser.*;
 import org.xml.sax.SAXException;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_owlxml_parser {
     @Test
@@ -22,7 +22,6 @@ public class Gen_org_semanticweb_owlapi_owlxml_parser {
     public void verifyOWLXMLParser() throws OWLOntologyChangeException, UnloadableImportException, IOException {
         OWLXMLParser testSubject0 = new OWLXMLParser();
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
         OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();

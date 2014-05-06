@@ -15,7 +15,7 @@ import com.clarkparsia.owlapi.explanation.io.ConciseExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.io.ExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.io.SilentExplanationRenderer;
 
-@SuppressWarnings({ "javadoc" })
+@SuppressWarnings({ "javadoc", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation_io {
     @Test
@@ -23,7 +23,7 @@ public class Gen_com_clarkparsia_owlapi_explanation_io {
         assertTrue(com.clarkparsia.owlapi.explanation.io.ExplanationRenderer.class.isAssignableFrom(ConciseExplanationRenderer.class));
     }
 
-    public void verifyConciseExplanationRenderer() throws OWLException, IOException {
+    public void verifyConciseExplanationRenderer() {
         ConciseExplanationRenderer testSubject0 = new ConciseExplanationRenderer();
         testSubject0.render(_OWLAxiom, _Set);
         testSubject0.startRendering(_Writer);
@@ -42,7 +42,7 @@ public class Gen_com_clarkparsia_owlapi_explanation_io {
         assertTrue(com.clarkparsia.owlapi.explanation.io.ExplanationRenderer.class.isAssignableFrom(SilentExplanationRenderer.class));
     }
 
-    public void verifySilentExplanationRenderer() throws OWLException, IOException {
+    public void verifySilentExplanationRenderer() {
         SilentExplanationRenderer testSubject0 = new SilentExplanationRenderer();
         testSubject0.render(_OWLAxiom, _Set);
         testSubject0.startRendering(_Writer);

@@ -14,7 +14,7 @@ import org.semanticweb.owlapi.oboformat.OBOFormatRenderer;
 import org.semanticweb.owlapi.oboformat.OBOFormatStorer;
 import org.semanticweb.owlapi.oboformat.OWLAPIOBOModule;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_oboformat {
     @Test
@@ -27,7 +27,6 @@ public class Gen_org_semanticweb_owlapi_oboformat {
         OBOFormatOWLAPIParser testSubject0 = new OBOFormatOWLAPIParser();
         java.lang.String result0 = testSubject0.getName();
         OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
         java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();

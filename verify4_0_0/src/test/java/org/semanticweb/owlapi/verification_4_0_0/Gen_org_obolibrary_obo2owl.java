@@ -9,7 +9,7 @@ import org.obolibrary.obo2owl.OwlStringTools.OwlStringException;
 import org.obolibrary.oboformat.parser.OBOFormatParserException;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 public class Gen_org_obolibrary_obo2owl {
     public void verifyIdTranslator() {
         IdTranslator testSubject0 = new IdTranslator();
@@ -20,13 +20,11 @@ public class Gen_org_obolibrary_obo2owl {
     }
 
     public void verifyObo2OWLConstants() {
-        Obo2OWLConstants testSubject0 = new Obo2OWLConstants();
         java.lang.String result0 = Obo2OWLConstants.format(_Date);
         org.obolibrary.obo2owl.Obo2OWLConstants.Obo2OWLVocabulary result1 = Obo2OWLConstants.getVocabularyObj(_String);
     }
 
     public void verifyOboInOwlCardinalityTools() throws AnnotationCardinalityException {
-        OboInOwlCardinalityTools testSubject0 = new OboInOwlCardinalityTools();
         OboInOwlCardinalityTools.checkAnnotationCardinality(_OWLOntology, _AnnotationCardinalityReporter);
         OboInOwlCardinalityTools.checkAnnotationCardinality(_OWLOntology);
         OboInOwlCardinalityTools.checkAnnotationCardinality(_OWLOntology, _AnnotationCardinalityReporter, _AnnotationCardinalityConfictHandler);
@@ -78,7 +76,6 @@ public class Gen_org_obolibrary_obo2owl {
     }
 
     public void verifyOwlStringTools() throws OwlStringException {
-        OwlStringTools testSubject0 = new OwlStringTools();
         java.lang.String result0 = OwlStringTools.translate(_Set, _OWLOntologyManager);
         java.util.Set<OWLAxiom> result1 = OwlStringTools.translate(_String, _OWLOntologyManager);
     }

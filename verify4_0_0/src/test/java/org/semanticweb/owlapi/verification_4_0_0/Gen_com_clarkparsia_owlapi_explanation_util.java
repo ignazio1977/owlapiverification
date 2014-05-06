@@ -13,7 +13,7 @@ import com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor;
 import com.clarkparsia.owlapi.explanation.util.OntologyUtils;
 import com.clarkparsia.owlapi.explanation.util.SilentExplanationProgressMonitor;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation_util {
     @Test
@@ -21,7 +21,7 @@ public class Gen_com_clarkparsia_owlapi_explanation_util {
         assertTrue(OWLOntologyChangeListener.class.isAssignableFrom(DefinitionTracker.class));
     }
 
-    public void verifyDefinitionTracker() throws OWLException {
+    public void verifyDefinitionTracker() {
         DefinitionTracker testSubject0 = new DefinitionTracker(_OWLOntology);
         boolean result0 = testSubject0.isDefined(_OWLClassExpression);
         boolean result1 = testSubject0.isDefined(_OWLEntity);
@@ -36,7 +36,6 @@ public class Gen_com_clarkparsia_owlapi_explanation_util {
     }
 
     public void verifyOntologyUtils() {
-        OntologyUtils testSubject0 = new OntologyUtils();
         OntologyUtils.addAxiom(_OWLAxiom, _Set6, _OWLOntologyManager);
         java.util.Set<OWLOntology> result0 = OntologyUtils.removeAxiom(_OWLAxiom, _Set6, _OWLOntologyManager);
         boolean result1 = OntologyUtils.containsUnreferencedEntity(_OWLOntology, _OWLClassExpression);

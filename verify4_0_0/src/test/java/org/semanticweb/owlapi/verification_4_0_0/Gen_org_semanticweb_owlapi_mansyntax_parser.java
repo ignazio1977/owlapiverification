@@ -10,7 +10,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.mansyntax.parser.*;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_mansyntax_parser {
     @Test
@@ -207,7 +207,6 @@ public class Gen_org_semanticweb_owlapi_mansyntax_parser {
         ManchesterOWLSyntaxOntologyParser testSubject0 = new ManchesterOWLSyntaxOntologyParser();
         java.lang.String result0 = testSubject0.getName();
         OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
         java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();

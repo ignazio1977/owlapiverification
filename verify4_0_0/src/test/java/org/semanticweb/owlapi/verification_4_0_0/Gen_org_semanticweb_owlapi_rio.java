@@ -14,7 +14,7 @@ import org.semanticweb.owlapi.io.OWLParserException;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.rio.*;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_rio {
     @Test
@@ -131,7 +131,6 @@ public class Gen_org_semanticweb_owlapi_rio {
         boolean result8 = testSubject0.isFormatKnown();
         java.lang.String result9 = testSubject0.getMIMEType();
         boolean result10 = testSubject0.isMIMETypeKnown();
-        testSubject0.setNamespaces(_RepositoryResult);
         testSubject0.setNamespaces(_Set);
         testSubject0.setNamespaces(_Map);
     }
@@ -299,7 +298,6 @@ public class Gen_org_semanticweb_owlapi_rio {
         java.lang.String result1 = testSubject0.getName();
         OWLOntologyFormat result2 = testSubject0.parse(_IRI, _OWLOntology);
         OWLOntologyFormat result3 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result4 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result5 = testSubject0.getSupportedFormatClasses();
         java.util.Set<OWLOntologyFormatFactory> result6 = testSubject0.getSupportedFormats();
     }
@@ -313,7 +311,6 @@ public class Gen_org_semanticweb_owlapi_rio {
     public void verifyRioParserImpl() throws OWLParserException, OWLOntologyChangeException, UnloadableImportException, IOException {
         RioParserImpl testSubject0 = new RioParserImpl(_RioRDFOntologyFormatFactory);
         OWLOntologyFormat result0 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         org.semanticweb.owlapi.formats.RioRDFOntologyFormat result2 = testSubject0.getParserFormat();
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result3 = testSubject0.getSupportedFormatClasses();
         java.util.Set<OWLOntologyFormatFactory> result4 = testSubject0.getSupportedFormats();

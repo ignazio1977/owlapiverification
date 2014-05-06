@@ -5,7 +5,7 @@ import static org.mockito.Mockito.mock;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 public class Gen_org_semanticweb_owlapi_util_mansyntax {
     public void verifyInterfaceManchesterOWLSyntaxParser() {
         ManchesterOWLSyntaxParser testSubject0 = mock(ManchesterOWLSyntaxParser.class);

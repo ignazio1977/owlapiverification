@@ -14,7 +14,7 @@ import org.semanticweb.owlapi.rdf.turtle.parser.OWLRDFConsumerAdapter;
 import org.semanticweb.owlapi.rdf.turtle.parser.TripleHandler;
 import org.semanticweb.owlapi.rdf.turtle.parser.TurtleOntologyParser;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_rdf_turtle_parser {
     @Test
@@ -101,7 +101,6 @@ public class Gen_org_semanticweb_owlapi_rdf_turtle_parser {
     public void verifyTurtleOntologyParser() throws UnloadableImportException, IOException {
         TurtleOntologyParser testSubject0 = new TurtleOntologyParser();
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
         OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();

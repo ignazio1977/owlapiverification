@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.obolibrary.oboformat.writer.OBOFormatWriter;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 public class Gen_org_obolibrary_oboformat_writer {
     public void verifyOBOFormatWriter() throws IOException {
         OBOFormatWriter testSubject0 = new OBOFormatWriter();

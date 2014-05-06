@@ -9,10 +9,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.model.parameters.ChangeApplied;
+import org.semanticweb.owlapi.model.parameters.Imports;
+import org.semanticweb.owlapi.model.parameters.Search;
 
 import uk.ac.manchester.cs.owl.owlapi.*;
 
-@SuppressWarnings({ "javadoc", "unused", "unchecked" })
+@SuppressWarnings({ "javadoc", "unchecked", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owl_owlapi {
     @Test
@@ -172,16 +175,12 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         assertTrue(uk.ac.manchester.cs.owl.owlapi.AbstractInMemOWLOntologyFactory.class.isAssignableFrom(EmptyInMemOWLOntologyFactory.class));
     }
 
-    public void verifyEmptyInMemOWLOntologyFactory() throws OWLOntologyCreationException {
+    public void verifyEmptyInMemOWLOntologyFactory() {
         EmptyInMemOWLOntologyFactory testSubject0 = new EmptyInMemOWLOntologyFactory(_OWLOntologyBuilder);
         OWLOntology result0 = testSubject0.createOWLOntology(_OWLOntologyManager, _OWLOntologyID, _IRI, _OWLOntologyCreationHandler);
         OWLOntology result1 = testSubject0.loadOWLOntology(_OWLOntologyManager, _OWLOntologyDocumentSource, _OWLOntologyCreationHandler, _OWLOntologyLoaderConfiguration);
         boolean result2 = testSubject0.canLoad(_OWLOntologyDocumentSource);
         boolean result3 = testSubject0.canCreateFromDocumentIRI(_IRI);
-    }
-
-    public void verifyInitVisitorFactory() {
-        InitVisitorFactory testSubject0 = new InitVisitorFactory();
     }
 
     @Test
@@ -4702,7 +4701,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     public void verifyOWLOntologyImpl() {
         OWLOntologyImpl testSubject0 = new OWLOntologyImpl(_OWLOntologyManager, _OWLOntologyID);
         java.util.List<OWLOntologyChange<?>> result0 = testSubject0.applyChanges(_List188);
-        OWLOntologyChange<java.lang.Object> result1 = testSubject0.applyChange(_OWLOntologyChange);
+        ChangeApplied result1 = testSubject0.applyChange(_OWLOntologyChange);
         boolean result2 = testSubject0.isEmpty();
         boolean result3 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _import);
         java.util.Set<OWLAnnotation> result4 = testSubject0.getAnnotations();

@@ -9,7 +9,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.debugging.*;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_debugging {
     @Test
@@ -20,10 +20,10 @@ public class Gen_org_semanticweb_owlapi_debugging {
     public void verifyAbstractOWLDebugger() throws OWLException {
         AbstractOWLDebugger testSubject0 = mock(AbstractOWLDebugger.class);
         OWLOntology result0 = testSubject0.getOWLOntology();
-        java.util.Set<java.util.Set<OWLAxiom>> result1 = testSubject0.getAllSOSForIncosistentClass(_OWLClassExpression);
+        java.util.Set<java.util.Set<OWLAxiom>> result1 = testSubject0.getAllSOSForInconsistentClass(_OWLClassExpression);
         testSubject0.constructHittingSetTree(_Set, _Set2, _Set2, _Set);
         testSubject0.dispose();
-        java.util.Set<OWLAxiom> result2 = testSubject0.getSOSForIncosistentClass(_OWLClassExpression);
+        java.util.Set<OWLAxiom> result2 = testSubject0.getSOSForInconsistentClass(_OWLClassExpression);
     }
 
     @Test
@@ -34,9 +34,9 @@ public class Gen_org_semanticweb_owlapi_debugging {
     public void verifyBlackBoxOWLDebugger() throws OWLException {
         BlackBoxOWLDebugger testSubject0 = new BlackBoxOWLDebugger(_OWLOntologyManager, _OWLOntology, _OWLReasonerFactory);
         testSubject0.dispose();
-        java.util.Set<OWLAxiom> result0 = testSubject0.getSOSForIncosistentClass(_OWLClassExpression);
+        java.util.Set<OWLAxiom> result0 = testSubject0.getSOSForInconsistentClass(_OWLClassExpression);
         OWLOntology result1 = testSubject0.getOWLOntology();
-        java.util.Set<java.util.Set<OWLAxiom>> result2 = testSubject0.getAllSOSForIncosistentClass(_OWLClassExpression);
+        java.util.Set<java.util.Set<OWLAxiom>> result2 = testSubject0.getAllSOSForInconsistentClass(_OWLClassExpression);
         testSubject0.constructHittingSetTree(_Set, _Set2, _Set2, _Set);
     }
 
@@ -92,15 +92,15 @@ public class Gen_org_semanticweb_owlapi_debugging {
     public void verifyJustificationMap() {
         JustificationMap testSubject0 = new JustificationMap(_OWLClassExpression, _Set);
         java.util.Set<OWLAxiom> result0 = testSubject0.getRootAxioms();
-        java.util.Set<OWLAxiom> result1 = testSubject0.getChildAxioms(_OWLAxiom);
+        java.util.Collection<OWLAxiom> result1 = testSubject0.getChildAxioms(_OWLAxiom);
     }
 
     public void verifyInterfaceOWLDebugger() throws OWLException {
         OWLDebugger testSubject0 = mock(OWLDebugger.class);
         testSubject0.dispose();
         OWLOntology result0 = testSubject0.getOWLOntology();
-        java.util.Set<java.util.Set<OWLAxiom>> result1 = testSubject0.getAllSOSForIncosistentClass(_OWLClassExpression);
-        java.util.Set<OWLAxiom> result2 = testSubject0.getSOSForIncosistentClass(_OWLClassExpression);
+        java.util.Set<java.util.Set<OWLAxiom>> result1 = testSubject0.getAllSOSForInconsistentClass(_OWLClassExpression);
+        java.util.Set<OWLAxiom> result2 = testSubject0.getSOSForInconsistentClass(_OWLClassExpression);
     }
 
     private java.util.Set<java.util.Set<OWLAxiom>> _Set2;

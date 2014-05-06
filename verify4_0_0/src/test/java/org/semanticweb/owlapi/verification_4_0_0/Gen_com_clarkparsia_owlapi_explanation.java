@@ -10,7 +10,7 @@ import org.semanticweb.owlapi.model.*;
 
 import com.clarkparsia.owlapi.explanation.*;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation {
     @Test

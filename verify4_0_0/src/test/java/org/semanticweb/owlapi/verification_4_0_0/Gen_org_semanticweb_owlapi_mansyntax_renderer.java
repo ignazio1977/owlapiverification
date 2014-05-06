@@ -10,7 +10,7 @@ import org.semanticweb.owlapi.io.OWLRendererException;
 import org.semanticweb.owlapi.mansyntax.renderer.*;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
     public void verifyAbstractRenderer() {
@@ -288,9 +288,9 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
         ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject0 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(_DefaultPrefixManager);
         ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject1 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(_OWLOntologyFormat);
         ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject2 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(_OWLOntology);
-        PrefixManager result0 = testSubject0.getPrefixManager();
         java.lang.String result1 = testSubject0.getShortForm(_OWLEntity);
         java.lang.String result2 = testSubject0.getShortForm(_IRI);
+        java.util.Map<String, String> result3 = testSubject0.getPrefixName2PrefixMap();
         testSubject0.dispose();
     }
 

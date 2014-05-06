@@ -12,7 +12,7 @@ import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.rdf.rdfxml.parser.*;
 import org.xml.sax.SAXException;
 
-@SuppressWarnings({ "javadoc", "unused" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
     public void verifyInterfaceIRIProvider() {
@@ -206,7 +206,6 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
     public void verifyRDFXMLParser() throws OWLOntologyChangeException, UnloadableImportException, IOException {
         RDFXMLParser testSubject0 = new RDFXMLParser();
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
         OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
         OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
         java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
@@ -262,14 +261,6 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
         testSubject0.setStackTrace(_StackTraceElement_array);
         testSubject0.addSuppressed(_Throwable);
         java.lang.Throwable[] result7 = testSubject0.getSuppressed();
-    }
-
-    public void verifyTranslators() {
-        Translators testSubject0 = new Translators();
-    }
-
-    public void verifyTripleHandlers() {
-        TripleHandlers testSubject0 = new TripleHandlers();
     }
 
     public void verifyTripleLogger() {

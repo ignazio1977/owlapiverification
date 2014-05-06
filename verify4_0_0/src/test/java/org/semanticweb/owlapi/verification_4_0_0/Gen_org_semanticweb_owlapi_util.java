@@ -14,7 +14,7 @@ import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.*;
 import org.xml.sax.SAXException;
 
-@SuppressWarnings({ "javadoc", "unchecked", "unused" })
+@SuppressWarnings({ "javadoc", "unchecked", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_util {
     @Test
@@ -194,7 +194,6 @@ public class Gen_org_semanticweb_owlapi_util {
     }
 
     public void verifyCollectionFactory() {
-        CollectionFactory testSubject0 = new CollectionFactory();
         java.util.Map<Object, Object> result0 = CollectionFactory.createMap();
         java.util.Set<java.lang.Object> result1 = CollectionFactory.getCopyOnRequestSetFromImmutableCollection(_Collection);
         java.util.Set<java.lang.Object> result2 = CollectionFactory.createSet(_Collection);
@@ -231,12 +230,8 @@ public class Gen_org_semanticweb_owlapi_util {
     }
 
     public void verifyDefaultPrefixManager() {
-        DefaultPrefixManager testSubject0 = new DefaultPrefixManager(_String, _Comparator);
-        DefaultPrefixManager testSubject1 = new DefaultPrefixManager(_String);
-        DefaultPrefixManager testSubject2 = new DefaultPrefixManager(_PrefixManager);
-        DefaultPrefixManager testSubject3 = new DefaultPrefixManager(_Comparator);
+        DefaultPrefixManager testSubject0 = new DefaultPrefixManager(_PrefixManager, _Comparator, _String);
         DefaultPrefixManager testSubject4 = new DefaultPrefixManager();
-        DefaultPrefixManager testSubject5 = new DefaultPrefixManager(_PrefixManager, _Comparator);
         testSubject0.clear();
         IRI result0 = testSubject0.getIRI(_String);
         java.lang.String result1 = testSubject0.getShortForm(_OWLEntity);
@@ -443,7 +438,6 @@ public class Gen_org_semanticweb_owlapi_util {
     }
 
     public void verifyEscapeUtils() {
-        EscapeUtils testSubject0 = new EscapeUtils();
         java.lang.String result0 = EscapeUtils.escapeString(_String);
         java.lang.String result1 = EscapeUtils.unescapeString(_String);
     }
@@ -1288,7 +1282,6 @@ public class Gen_org_semanticweb_owlapi_util {
     }
 
     public void verifyOWLAPIPreconditions() {
-        OWLAPIPreconditions testSubject0 = new OWLAPIPreconditions();
         OWLAPIPreconditions.checkNotNegative(_long, _String);
         OWLAPIPreconditions.checkNotNegative(_long);
         java.lang.Object result0 = OWLAPIPreconditions.checkNotNull(_Object, _String);

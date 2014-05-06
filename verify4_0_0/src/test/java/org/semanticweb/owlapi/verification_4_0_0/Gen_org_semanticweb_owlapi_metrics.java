@@ -9,7 +9,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.metrics.*;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "unused", "unchecked" })
+@SuppressWarnings({ "javadoc", "unused", "unchecked", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_metrics {
     @Test
@@ -95,7 +95,6 @@ public class Gen_org_semanticweb_owlapi_metrics {
     }
 
     public void verifyAxiomTypeCountMetricFactory() {
-        AxiomTypeCountMetricFactory testSubject0 = new AxiomTypeCountMetricFactory();
         java.util.Set<org.semanticweb.owlapi.metrics.OWLMetric<?>> result0 = AxiomTypeCountMetricFactory.createMetrics(_OWLOntology);
     }
 
