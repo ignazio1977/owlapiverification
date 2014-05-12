@@ -39,7 +39,6 @@ public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
         testSubject0.addChild(_MutableTree);
         OWLAxiom result3 = testSubject0.getUserObject();
         testSubject0.removeChild(_MutableTree);
-        java.lang.Object result4 = testSubject0.getEdge(_Tree);
         testSubject0.sortChildren(_Comparator);
         java.util.List<uk.ac.manchester.cs.owl.explanation.ordering.Tree<OWLAxiom>> result5 = testSubject0.getChildren();
         int result6 = testSubject0.getChildCount();
@@ -82,7 +81,6 @@ public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
         testSubject0.addChild(_MutableTree);
         OWLAxiom result3 = testSubject0.getUserObject();
         testSubject0.removeChild(_MutableTree);
-        java.lang.Object result4 = testSubject0.getEdge(_Tree);
         testSubject0.sortChildren(_Comparator);
         java.util.List<uk.ac.manchester.cs.owl.explanation.ordering.Tree<OWLAxiom>> result5 = testSubject0.getChildren();
         int result6 = testSubject0.getChildCount();
@@ -109,7 +107,6 @@ public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
         testSubject0.addChild(_MutableTree);
         OWLAxiom result2 = testSubject0.getUserObject();
         testSubject0.removeChild(_MutableTree);
-        java.lang.Object result3 = testSubject0.getEdge(_Tree);
         testSubject0.sortChildren(_Comparator);
         java.util.List<uk.ac.manchester.cs.owl.explanation.ordering.Tree<OWLAxiom>> result4 = testSubject0.getChildren();
         int result5 = testSubject0.getChildCount();
@@ -144,7 +141,6 @@ public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
         testSubject0.dump(_PrintWriter, _int);
         testSubject0.dump(_PrintWriter);
         OWLAxiom result2 = testSubject0.getUserObject();
-        java.lang.Object result3 = testSubject0.getEdge(_Tree);
         testSubject0.sortChildren(_Comparator);
         java.util.List<uk.ac.manchester.cs.owl.explanation.ordering.Tree<OWLAxiom>> result4 = testSubject0.getChildren();
         int result5 = testSubject0.getChildCount();

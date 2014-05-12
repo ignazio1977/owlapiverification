@@ -16,12 +16,12 @@ import org.semanticweb.owlapitools.builders.*;
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapitools_builders {
     @Test
-    public void enforceInterfacesBaseAnnotationtPropertyBuilder() {
-        assertTrue(BaseBuilder.class.isAssignableFrom(BaseAnnotationtPropertyBuilder.class));
+    public void enforceInterfacesBaseAnnotationPropertyBuilder() {
+        assertTrue(BaseBuilder.class.isAssignableFrom(BaseAnnotationPropertyBuilder.class));
     }
 
-    public void verifyBaseAnnotationtPropertyBuilder() {
-        BaseAnnotationtPropertyBuilder<OWLObject, BuilderAnnotation> testSubject0 = mock(BaseAnnotationtPropertyBuilder.class);
+    public void verifyBaseAnnotationPropertyBuilder() {
+        BaseAnnotationPropertyBuilder<OWLObject, BuilderAnnotation> testSubject0 = mock(BaseAnnotationPropertyBuilder.class);
         BuilderAnnotation result0 = testSubject0.withProperty(_OWLAnnotationProperty);
         List<OWLOntologyChange<?>> result1 = testSubject0.applyChanges(_OWLOntology);
         BuilderAnnotation result2 = testSubject0.withAnnotation(_OWLAnnotation);
@@ -180,7 +180,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
 
     @Test
     public void enforceInterfacesBuilderAnnotation() {
-        assertTrue(BaseAnnotationtPropertyBuilder.class.isAssignableFrom(BuilderAnnotation.class));
+        assertTrue(BaseAnnotationPropertyBuilder.class.isAssignableFrom(BuilderAnnotation.class));
     }
 
     public void verifyBuilderAnnotation() {
@@ -198,7 +198,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
 
     @Test
     public void enforceInterfacesBuilderAnnotationAssertion() {
-        assertTrue(BaseAnnotationtPropertyBuilder.class.isAssignableFrom(BuilderAnnotationAssertion.class));
+        assertTrue(BaseAnnotationPropertyBuilder.class.isAssignableFrom(BuilderAnnotationAssertion.class));
     }
 
     public void verifyBuilderAnnotationAssertion() {
@@ -236,7 +236,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
 
     @Test
     public void enforceInterfacesBuilderAnnotationPropertyDomain() {
-        assertTrue(BaseAnnotationtPropertyBuilder.class.isAssignableFrom(BuilderAnnotationPropertyDomain.class));
+        assertTrue(BaseAnnotationPropertyBuilder.class.isAssignableFrom(BuilderAnnotationPropertyDomain.class));
     }
 
     public void verifyBuilderAnnotationPropertyDomain() {
@@ -254,7 +254,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
 
     @Test
     public void enforceInterfacesBuilderAnnotationPropertyRange() {
-        assertTrue(BaseAnnotationtPropertyBuilder.class.isAssignableFrom(BuilderAnnotationPropertyRange.class));
+        assertTrue(BaseAnnotationPropertyBuilder.class.isAssignableFrom(BuilderAnnotationPropertyRange.class));
     }
 
     public void verifyBuilderAnnotationPropertyRange() {

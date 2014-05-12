@@ -264,12 +264,13 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
     }
 
     public void verifyTripleLogger() {
-        TripleLogger testSubject0 = new TripleLogger(_PrefixManager);
+        TripleLogger testSubject0 = new TripleLogger();
         int result0 = testSubject0.count();
+        testSubject0.setPrefixManager(_PrefixManager);
         testSubject0.justLog(_Object, _Object, _Object);
         testSubject0.justLog(_Object, _Object, _Object, _Object, _Object);
         testSubject0.logNumberOfTriples();
-        testSubject0.logOntologyID(_OWLOntologyID);
+        TripleLogger.logOntologyID(_OWLOntologyID);
         testSubject0.logTriple(_Object, _Object, _Object, _Object, _Object);
         testSubject0.logTriple(_Object, _Object, _Object);
     }

@@ -289,7 +289,7 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
         ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject1 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(_OWLOntologyFormat);
         ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject2 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(_OWLOntology);
         java.lang.String result1 = testSubject0.getShortForm(_OWLEntity);
-        java.lang.String result2 = testSubject0.getShortForm(_IRI);
+        java.lang.String result2 = ManchesterOWLSyntaxPrefixNameShortFormProvider.getShortForm(_IRI);
         java.util.Map<String, String> result3 = testSubject0.getPrefixName2PrefixMap();
         testSubject0.dispose();
     }

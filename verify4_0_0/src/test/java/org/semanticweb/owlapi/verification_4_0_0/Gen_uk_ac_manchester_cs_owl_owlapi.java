@@ -191,7 +191,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     public void verifyInternals() {
         Internals testSubject0 = new Internals();
         boolean result0 = testSubject0.isEmpty();
-        boolean result1 = testSubject0.contains(_MapPointer, _Object, _OWLAxiom);
+        boolean result1 = Internals.contains(_MapPointer, _Object, _OWLAxiom);
         boolean result2 = testSubject0.contains(_OWLAxiomSearchFilter, _Object);
         java.lang.Iterable<OWLImportsDeclaration> result3 = testSubject0.getImportsDeclarations(_boolean);
         java.util.Set<OWLClassAxiom> result4 = testSubject0.getGeneralClassAxioms();

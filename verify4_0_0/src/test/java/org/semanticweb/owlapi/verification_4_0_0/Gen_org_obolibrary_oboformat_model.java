@@ -147,8 +147,8 @@ public class Gen_org_obolibrary_oboformat_model {
         testSubject0.addTermFrame(_Frame);
         testSubject0.addTypedefFrame(_Frame);
         testSubject0.addInstanceFrame(_Frame);
-        java.lang.String result10 = testSubject0.getIDSpace(_String);
-        boolean result11 = testSubject0.isTreatXrefsAsEquivalent(_String);
+        java.lang.String result10 = OBODoc.getIDSpace(_String);
+        boolean result11 = OBODoc.isTreatXrefsAsEquivalent(_String);
         testSubject0.mergeContents(_OBODoc);
         testSubject0.addDefaultOntologyHeader(_String);
     }

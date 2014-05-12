@@ -12,15 +12,15 @@ public class Gen_org_obolibrary_oboformat_writer {
         testSubject0.write(_OBODoc, _BufferedWriter);
         testSubject0.write(_BufferedReader, _BufferedWriter);
         testSubject0.write(_OBODoc, _BufferedWriter, _NameProvider);
-        testSubject0.write(_Clause, _BufferedWriter, _NameProvider);
+        OBOFormatWriter.write(_Clause, _BufferedWriter, _NameProvider);
         testSubject0.write(_Frame, _BufferedWriter, _NameProvider);
         testSubject0.write(_URL, _BufferedWriter);
         testSubject0.write(_String, _BufferedWriter);
         boolean result0 = testSubject0.isCheckStructure();
         testSubject0.setCheckStructure(_boolean);
-        testSubject0.writePropertyValue(_Clause, _BufferedWriter);
-        testSubject0.writeDef(_Clause, _BufferedWriter);
-        testSubject0.writeSynonym(_Clause, _BufferedWriter);
+        OBOFormatWriter.writePropertyValue(_Clause, _BufferedWriter);
+        OBOFormatWriter.writeDef(_Clause, _BufferedWriter);
+        OBOFormatWriter.writeSynonym(_Clause, _BufferedWriter);
         OBOFormatWriter.sortTermClauses(_List);
         testSubject0.writeHeader(_Frame, _BufferedWriter, _NameProvider);
     }

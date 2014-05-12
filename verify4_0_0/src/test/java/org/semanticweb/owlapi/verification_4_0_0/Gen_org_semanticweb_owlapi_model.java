@@ -4,6 +4,7 @@ import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Set;
 
 import org.junit.Test;
@@ -118,7 +119,7 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result4 = testSubject0.isNonSyntacticOWL2Axiom();
         java.util.Set<OWLAxiom> result5 = AxiomType.getAxiomsWithoutTypes(_Set, _AxiomType_array);
         java.util.Set<OWLAxiom> result6 = AxiomType.getAxiomsOfTypes(_Set, _AxiomType_array);
-        boolean result7 = testSubject0.isAxiomType(_String);
+        boolean result7 = AxiomType.isAxiomType(_String);
         AxiomType<?> result8 = AxiomType.getAxiomType(_String);
     }
 
@@ -7562,6 +7563,7 @@ public class Gen_org_semanticweb_owlapi_model {
         java.lang.String result5 = testSubject0.getPrefix(_String);
         java.lang.String result6 = testSubject0.getPrefixIRI(_IRI);
         testSubject0.copyPrefixesFrom(_PrefixManager);
+        testSubject0.copyPrefixesFrom(new HashMap<String, String>());
         testSubject0.unregisterNamespace(_String);
     }
 

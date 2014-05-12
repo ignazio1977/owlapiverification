@@ -23,7 +23,7 @@ public class Gen_org_obolibrary_oboformat_diff {
     public void verifyOBODocDiffer() throws Exception {
         OBODocDiffer testSubject0 = new OBODocDiffer();
         OBODocDiffer.main(_String_array);
-        java.util.List<org.obolibrary.oboformat.diff.Diff> result0 = testSubject0.getDiffs(_OBODoc, _OBODoc);
+        java.util.List<org.obolibrary.oboformat.diff.Diff> result0 = OBODocDiffer.getDiffs(_OBODoc, _OBODoc);
     }
 
     private int _int;

@@ -414,11 +414,11 @@ public class Gen_org_semanticweb_owlapi_formats {
 
     @Test
     public void enforceInterfacesBinaryRdfOntologyFormat() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormat.class.isAssignableFrom(BinaryRdfOntologyFormat.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormat.class.isAssignableFrom(BinaryRDFOntologyFormat.class));
     }
 
     public void verifyBinaryRdfOntologyFormat() {
-        BinaryRdfOntologyFormat testSubject0 = new BinaryRdfOntologyFormat();
+        BinaryRDFOntologyFormat testSubject0 = new BinaryRDFOntologyFormat();
         java.lang.String result0 = testSubject0.getKey();
         org.openrdf.rio.RDFFormat result1 = testSubject0.getRioFormat();
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
@@ -450,12 +450,12 @@ public class Gen_org_semanticweb_owlapi_formats {
 
     @Test
     public void enforceInterfacesBinaryRdfOntologyFormatFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.AbstractRioRDFOntologyFormatFactory.class.isAssignableFrom(BinaryRdfOntologyFormatFactory.class));
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory.class.isAssignableFrom(BinaryRdfOntologyFormatFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.AbstractRioRDFOntologyFormatFactory.class.isAssignableFrom(BinaryRDFOntologyFormatFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory.class.isAssignableFrom(BinaryRDFOntologyFormatFactory.class));
     }
 
     public void verifyBinaryRdfOntologyFormatFactory() {
-        BinaryRdfOntologyFormatFactory testSubject0 = new BinaryRdfOntologyFormatFactory();
+        BinaryRDFOntologyFormatFactory testSubject0 = new BinaryRDFOntologyFormatFactory();
         boolean result0 = testSubject0.isTextual();
         org.semanticweb.owlapi.formats.RioRDFOntologyFormat result1 = testSubject0.createFormat();
         OWLOntologyFormat result2 = testSubject0.createFormat();
@@ -638,11 +638,11 @@ public class Gen_org_semanticweb_owlapi_formats {
 
     @Test
     public void enforceInterfacesRdfJsonOntologyFormat() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormat.class.isAssignableFrom(RdfJsonOntologyFormat.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormat.class.isAssignableFrom(RDFJsonOntologyFormat.class));
     }
 
     public void verifyRdfJsonOntologyFormat() {
-        RdfJsonOntologyFormat testSubject0 = new RdfJsonOntologyFormat();
+        RDFJsonOntologyFormat testSubject0 = new RDFJsonOntologyFormat();
         java.lang.String result0 = testSubject0.getKey();
         org.openrdf.rio.RDFFormat result1 = testSubject0.getRioFormat();
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
@@ -674,12 +674,12 @@ public class Gen_org_semanticweb_owlapi_formats {
 
     @Test
     public void enforceInterfacesRdfJsonOntologyFormatFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.AbstractRioRDFOntologyFormatFactory.class.isAssignableFrom(RdfJsonOntologyFormatFactory.class));
-        assertTrue(OWLOntologyFormatFactory.class.isAssignableFrom(RdfJsonOntologyFormatFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.AbstractRioRDFOntologyFormatFactory.class.isAssignableFrom(RDFJsonOntologyFormatFactory.class));
+        assertTrue(OWLOntologyFormatFactory.class.isAssignableFrom(RDFJsonOntologyFormatFactory.class));
     }
 
     public void verifyRdfJsonOntologyFormatFactory() {
-        RdfJsonOntologyFormatFactory testSubject0 = new RdfJsonOntologyFormatFactory();
+        RDFJsonOntologyFormatFactory testSubject0 = new RDFJsonOntologyFormatFactory();
         org.semanticweb.owlapi.formats.RioRDFOntologyFormat result0 = testSubject0.createFormat();
         OWLOntologyFormat result1 = testSubject0.createFormat();
         java.lang.String result2 = testSubject0.getKey();
@@ -694,12 +694,12 @@ public class Gen_org_semanticweb_owlapi_formats {
 
     @Test
     public void enforceInterfacesRDFXMLOntologyFormatFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.AbstractRioRDFOntologyFormatFactory.class.isAssignableFrom(RDFXMLOntologyFormatFactory.class));
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory.class.isAssignableFrom(RDFXMLOntologyFormatFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.AbstractRioRDFOntologyFormatFactory.class.isAssignableFrom(RioRDFXMLOntologyFormatFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory.class.isAssignableFrom(RioRDFXMLOntologyFormatFactory.class));
     }
 
     public void verifyRDFXMLOntologyFormatFactory() {
-        RDFXMLOntologyFormatFactory testSubject0 = new RDFXMLOntologyFormatFactory();
+        RioRDFXMLOntologyFormatFactory testSubject0 = new RioRDFXMLOntologyFormatFactory();
         org.semanticweb.owlapi.formats.RioRDFOntologyFormat result0 = testSubject0.createFormat();
         OWLOntologyFormat result1 = testSubject0.createFormat();
         org.semanticweb.owlapi.formats.RioRDFXMLOntologyFormat result2 = testSubject0.createFormat();
@@ -785,7 +785,7 @@ public class Gen_org_semanticweb_owlapi_formats {
     }
 
     public void verifyRioRDFXMLOntologyFormat() {
-        RioRDFXMLOntologyFormat testSubject0 = new RioRDFXMLOntologyFormat(_RDFFormat);
+        RioRDFXMLOntologyFormat testSubject0 = new RioRDFXMLOntologyFormat();
         java.lang.String result0 = testSubject0.getKey();
         org.openrdf.rio.RDFFormat result1 = testSubject0.getRioFormat();
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
@@ -965,12 +965,12 @@ public class Gen_org_semanticweb_owlapi_formats {
 
     @Test
     public void enforceInterfacesTurtleOntologyFormatFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.AbstractRioRDFOntologyFormatFactory.class.isAssignableFrom(TurtleOntologyFormatFactory.class));
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory.class.isAssignableFrom(TurtleOntologyFormatFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.AbstractRioRDFOntologyFormatFactory.class.isAssignableFrom(RioTurtleOntologyFormatFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory.class.isAssignableFrom(RioTurtleOntologyFormatFactory.class));
     }
 
     public void verifyTurtleOntologyFormatFactory() {
-        TurtleOntologyFormatFactory testSubject0 = new TurtleOntologyFormatFactory();
+        RioTurtleOntologyFormatFactory testSubject0 = new RioTurtleOntologyFormatFactory();
         org.semanticweb.owlapi.formats.RioRDFOntologyFormat result0 = testSubject0.createFormat();
         OWLOntologyFormat result1 = testSubject0.createFormat();
         java.lang.String result2 = testSubject0.getKey();

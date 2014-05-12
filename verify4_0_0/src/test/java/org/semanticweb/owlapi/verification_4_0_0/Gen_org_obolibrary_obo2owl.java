@@ -13,9 +13,9 @@ import org.semanticweb.owlapi.model.*;
 public class Gen_org_obolibrary_obo2owl {
     public void verifyIdTranslator() {
         IdTranslator testSubject0 = new IdTranslator();
-        java.lang.String result0 = testSubject0.translateIRI(_IRI);
+        java.lang.String result0 = IdTranslator.translateIRI(_IRI);
         java.lang.String result1 = testSubject0.translateIdToIRIString(_String);
-        boolean result2 = testSubject0.isURI(_String);
+        boolean result2 = IdTranslator.isURI(_String);
         java.lang.String result3 = testSubject0.expandPrefix(_String);
     }
 

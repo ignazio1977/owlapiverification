@@ -40,7 +40,7 @@ public class Gen_org_semanticweb_owlapi_oboformat {
     public void verifyOBOFormatRenderer() throws OWLOntologyStorageException {
         OBOFormatRenderer testSubject0 = new OBOFormatRenderer();
         testSubject0.render(_OWLOntology, _OutputStream);
-        testSubject0.render(_OWLOntology, _Writer);
+        OBOFormatRenderer.render(_OWLOntology, _Writer);
     }
 
     @Test

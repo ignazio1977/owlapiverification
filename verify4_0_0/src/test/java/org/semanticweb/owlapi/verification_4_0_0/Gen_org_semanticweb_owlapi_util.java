@@ -207,7 +207,6 @@ public class Gen_org_semanticweb_owlapi_util {
         java.util.Set<java.lang.Object> result9 = CollectionFactory.createSyncSet();
         java.util.concurrent.ConcurrentHashMap<Object, Object> result10 = CollectionFactory.createSyncMap();
         java.util.Set<java.lang.Object> result11 = CollectionFactory.getCopyOnRequestSet(_Collection);
-        java.util.Set<java.lang.Object> result12 = CollectionFactory.getThreadSafeCopyOnRequestSet(_Set64);
         java.util.Set<java.lang.Object> result13 = CollectionFactory.getCopyOnRequestSetFromMutableCollection(_Collection);
     }
 

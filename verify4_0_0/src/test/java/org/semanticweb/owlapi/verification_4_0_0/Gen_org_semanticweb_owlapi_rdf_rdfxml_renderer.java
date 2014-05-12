@@ -140,9 +140,7 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_renderer {
     }
 
     public void verifyXMLWriterFactory() {
-        XMLWriterFactory testSubject0 = mock(XMLWriterFactory.class);
-        org.semanticweb.owlapi.rdf.rdfxml.renderer.XMLWriterFactory result0 = XMLWriterFactory.getInstance();
-        org.semanticweb.owlapi.rdf.rdfxml.renderer.XMLWriter result1 = testSubject0.createXMLWriter(_Writer, _XMLWriterNamespaceManager, _String);
+        org.semanticweb.owlapi.rdf.rdfxml.renderer.XMLWriter result1 = XMLWriterFactory.createXMLWriter(_Writer, _XMLWriterNamespaceManager, _String);
     }
 
     @Test

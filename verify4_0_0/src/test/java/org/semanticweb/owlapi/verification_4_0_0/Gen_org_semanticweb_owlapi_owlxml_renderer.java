@@ -149,7 +149,7 @@ public class Gen_org_semanticweb_owlapi_owlxml_renderer {
 
     public void verifyOWLXMLRenderer() throws OWLRendererException {
         OWLXMLRenderer testSubject0 = new OWLXMLRenderer();
-        testSubject0.render(_OWLOntology, _Writer, _OWLOntologyFormat);
+        OWLXMLRenderer.render(_OWLOntology, _Writer, _OWLOntologyFormat);
         testSubject0.render(_OWLOntology, _Writer);
         testSubject0.render(_OWLOntology, _OutputStream);
     }

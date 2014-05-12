@@ -52,7 +52,7 @@ public class Gen_com_clarkparsia_owlapi_modularity_locality {
     public void verifySyntacticLocalityEvaluator() {
         SyntacticLocalityEvaluator testSubject0 = new SyntacticLocalityEvaluator(_LocalityClass);
         boolean result0 = testSubject0.isLocal(_OWLAxiom, _Set);
-        java.util.Set<com.clarkparsia.owlapi.modularity.locality.LocalityClass> result1 = testSubject0.supportedLocalityClasses();
+        java.util.Set<com.clarkparsia.owlapi.modularity.locality.LocalityClass> result1 = SyntacticLocalityEvaluator.supportedLocalityClasses();
     }
 
     private com.clarkparsia.owlapi.modularity.locality.LocalityClass _LocalityClass;
