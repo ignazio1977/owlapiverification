@@ -3,6 +3,8 @@ package org.semanticweb.owlapi.verification_4_0_0;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
+import java.io.Serializable;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
@@ -984,7 +986,7 @@ public class Gen_org_semanticweb_owlapi_formats {
     }
 
     private boolean _boolean;
-    private java.lang.Object _Object;
+    private Serializable _Object;
     private java.lang.String _String;
     private org.openrdf.rio.RDFFormat _RDFFormat;
     private org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData _OWLOntologyLoaderMetaData;

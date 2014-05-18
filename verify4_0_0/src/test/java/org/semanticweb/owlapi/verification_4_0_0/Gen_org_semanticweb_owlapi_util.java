@@ -35,9 +35,7 @@ public class Gen_org_semanticweb_owlapi_util {
     }
 
     public void verifyAnnotationValueShortFormProvider() {
-        AnnotationValueShortFormProvider testSubject0 = new AnnotationValueShortFormProvider(_OWLOntologySetProvider, _ShortFormProvider, _IRIShortFormProvider, _List, _Map,
-                _OWLAnnotationValueVisitorEx);
-        AnnotationValueShortFormProvider testSubject1 = new AnnotationValueShortFormProvider(_OWLOntologySetProvider, _ShortFormProvider, _IRIShortFormProvider, _List, _Map);
+        AnnotationValueShortFormProvider testSubject0 = new AnnotationValueShortFormProvider(_OWLOntologySetProvider, _ShortFormProvider, _IRIShortFormProvider, _List, _Map);
         AnnotationValueShortFormProvider testSubject2 = new AnnotationValueShortFormProvider(_List, _Map, _OWLOntologySetProvider, _ShortFormProvider);
         AnnotationValueShortFormProvider testSubject3 = new AnnotationValueShortFormProvider(_List, _Map, _OWLOntologySetProvider);
         java.util.List<OWLAnnotationProperty> result0 = testSubject0.getAnnotationProperties();
@@ -1359,8 +1357,7 @@ public class Gen_org_semanticweb_owlapi_util {
     }
 
     public void verifyOWLAxiomVisitorExAdapter() {
-        OWLAxiomVisitorExAdapter<OWLObject> testSubject0 = new OWLAxiomVisitorExAdapter<OWLObject>();
-        OWLAxiomVisitorExAdapter<OWLObject> testSubject1 = new OWLAxiomVisitorExAdapter<OWLObject>(_Object134);
+        OWLAxiomVisitorExAdapter<OWLObject> testSubject0 = new OWLAxiomVisitorExAdapter<OWLObject>(_Object134);
         OWLObject result0 = testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
         OWLObject result1 = testSubject0.visit(_OWLClassAssertionAxiom);
         OWLObject result2 = testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
@@ -1612,8 +1609,7 @@ public class Gen_org_semanticweb_owlapi_util {
     }
 
     public void verifyOWLClassExpressionVisitorExAdapter() {
-        OWLClassExpressionVisitorExAdapter<OWLObject> testSubject0 = new OWLClassExpressionVisitorExAdapter<OWLObject>();
-        OWLClassExpressionVisitorExAdapter<OWLObject> testSubject1 = new OWLClassExpressionVisitorExAdapter<OWLObject>(_Object134);
+        OWLClassExpressionVisitorExAdapter<OWLObject> testSubject0 = new OWLClassExpressionVisitorExAdapter<OWLObject>(_Object134);
         OWLObject result0 = testSubject0.visit(_OWLObjectOneOf);
         OWLObject result1 = testSubject0.visit(_OWLDataSomeValuesFrom);
         OWLObject result2 = testSubject0.visit(_OWLDataAllValuesFrom);
@@ -1958,7 +1954,6 @@ public class Gen_org_semanticweb_owlapi_util {
 
     public void verifyOWLEntityVisitorExAdapter() {
         OWLEntityVisitorExAdapter<OWLObject> testSubject0 = new OWLEntityVisitorExAdapter<OWLObject>(_Object134);
-        OWLEntityVisitorExAdapter<OWLObject> testSubject1 = new OWLEntityVisitorExAdapter<OWLObject>();
         OWLObject result0 = testSubject0.visit(_OWLObjectProperty);
         OWLObject result1 = testSubject0.visit(_OWLDataProperty);
         OWLObject result2 = testSubject0.visit(_OWLNamedIndividual);
@@ -2371,7 +2366,6 @@ public class Gen_org_semanticweb_owlapi_util {
 
     public void verifyOWLObjectVisitorExAdapter() {
         OWLObjectVisitorExAdapter<OWLObject> testSubject0 = new OWLObjectVisitorExAdapter<OWLObject>(_Object134);
-        OWLObjectVisitorExAdapter<OWLObject> testSubject1 = new OWLObjectVisitorExAdapter<OWLObject>();
         OWLObject result0 = testSubject0.visit(_OWLDataOneOf);
         OWLObject result1 = testSubject0.visit(_OWLDataIntersectionOf);
         OWLObject result2 = testSubject0.visit(_OWLDatatype);
@@ -2554,8 +2548,7 @@ public class Gen_org_semanticweb_owlapi_util {
     }
 
     public void verifyOWLOntologyChangeVisitorExAdapter() {
-        OWLOntologyChangeVisitorExAdapter<OWLObject> testSubject0 = new OWLOntologyChangeVisitorExAdapter<OWLObject>();
-        OWLOntologyChangeVisitorExAdapter<OWLObject> testSubject1 = new OWLOntologyChangeVisitorExAdapter<OWLObject>(_Object134);
+        OWLOntologyChangeVisitorExAdapter<OWLObject> testSubject0 = new OWLOntologyChangeVisitorExAdapter<OWLObject>(_Object134);
         OWLObject result0 = testSubject0.visit(_RemoveImport);
         OWLObject result1 = testSubject0.visit(_AddImport);
         OWLObject result2 = testSubject0.visit(_AddOntologyAnnotation);
@@ -3256,7 +3249,7 @@ public class Gen_org_semanticweb_owlapi_util {
     private java.lang.String _String;
     private java.util.Collection<Object> _Collection129;
     private java.util.Collection<java.lang.Object> _Collection;
-    private java.util.Comparator<java.lang.String> _Comparator;
+    private StringComparator _Comparator;
     private java.util.List<? extends OWLOntologyChange<?>> _List111;
     private java.util.List<OWLAnnotationProperty> _List;
     private java.util.List<OWLPropertyExpression> _List151;

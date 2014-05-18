@@ -181,7 +181,6 @@ public class Gen_org_obolibrary_macro {
     public void verifyManchesterSyntaxTool() {
         ManchesterSyntaxTool testSubject0 = new ManchesterSyntaxTool(_OWLOntology, _Collection);
         ManchesterSyntaxTool testSubject1 = new ManchesterSyntaxTool(_OWLOntology);
-        ManchesterSyntaxTool testSubject2 = new ManchesterSyntaxTool(_OWLOntology, _Collection, _boolean);
         java.lang.String result0 = testSubject0.getId(_OWLEntity);
         java.lang.String result1 = testSubject0.getId(_IRI);
         java.util.Set<org.semanticweb.owlapi.util.OntologyAxiomPair> result2 = testSubject0.parseManchesterExpressionFrames(_String);

@@ -18,8 +18,8 @@ public class Gen_org_semanticweb_owlapi_reasoner {
     }
 
     public void verifyAxiomNotInProfileException() {
-        AxiomNotInProfileException testSubject0 = new AxiomNotInProfileException(_OWLAxiom, _OWLProfile);
-        org.semanticweb.owlapi.profiles.OWLProfile result0 = testSubject0.getProfile();
+        AxiomNotInProfileException testSubject0 = new AxiomNotInProfileException(_OWLAxiom, IRI.create("iri"));
+        IRI result0 = testSubject0.getProfile();
         OWLAxiom result1 = testSubject0.getAxiom();
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
@@ -51,7 +51,7 @@ public class Gen_org_semanticweb_owlapi_reasoner {
     }
 
     public void verifyClassExpressionNotInProfileException() {
-        ClassExpressionNotInProfileException testSubject0 = new ClassExpressionNotInProfileException(_OWLClassExpression, _Object);
+        ClassExpressionNotInProfileException testSubject0 = new ClassExpressionNotInProfileException(_OWLClassExpression, IRI.create("iri"));
         java.lang.Object result0 = testSubject0.getProfile();
         OWLClassExpression result1 = testSubject0.getClassExpression();
         testSubject0.printStackTrace();
@@ -147,7 +147,7 @@ public class Gen_org_semanticweb_owlapi_reasoner {
     }
 
     public void verifyImportsClosureNotInProfileException() {
-        ImportsClosureNotInProfileException testSubject0 = new ImportsClosureNotInProfileException(_Object);
+        ImportsClosureNotInProfileException testSubject0 = new ImportsClosureNotInProfileException(IRI.create("iri"));
         java.lang.Object result0 = testSubject0.getProfile();
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);

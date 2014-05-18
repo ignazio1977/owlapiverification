@@ -11,7 +11,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.io.*;
 import org.semanticweb.owlapi.model.*;
 
-import com.google.common.collect.Multimap;
+import com.google.common.collect.ArrayListMultimap;
 
 @SuppressWarnings({ "javadoc", "resource", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
@@ -760,7 +760,7 @@ public class Gen_org_semanticweb_owlapi_io {
     private java.lang.Throwable _Throwable;
     private java.util.Map<org.semanticweb.owlapi.io.OWLParser, org.semanticweb.owlapi.io.OWLParserException> _Map;
     private java.util.Set<org.semanticweb.owlapi.io.RDFTriple> _Set;
-    private Multimap<IRI, Class<?>> _multimap;
+    private ArrayListMultimap<IRI, Class<?>> _multimap;
     private org.semanticweb.owlapi.io.OWLObjectRenderer _OWLObjectRenderer;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentSource _OWLOntologyDocumentSource;
     private org.semanticweb.owlapi.io.RDFNode _RDFNode;
