@@ -412,7 +412,7 @@ public class Gen_org_semanticweb_owlapi_model {
     }
 
     public void verifyImmutableOWLOntologyChangeException() {
-        ImmutableOWLOntologyChangeException testSubject0 = new ImmutableOWLOntologyChangeException(_OWLOntologyChange);
+        ImmutableOWLOntologyChangeException testSubject0 = new ImmutableOWLOntologyChangeException(_OWLOntologyChangeData, "");
         OWLOntologyChangeData<?> result0 = testSubject0.getChange();
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
