@@ -5,12 +5,12 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.obolibrary.obo2owl.IdTranslator;
 import org.semanticweb.owlapi.model.*;
-@SuppressWarnings({ "javadoc" })
+
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 @Ignore
 public class Gen_obo_obolibrary_idrules {
-
-    public void verifyIdTranslator()  {
+    public void verifyIdTranslator() {
         IdTranslator testSubject0 = new IdTranslator();
         String result0 = testSubject0.translateIRI(_IRI);
         String result1 = testSubject0.translateIdToIRIString(_String);

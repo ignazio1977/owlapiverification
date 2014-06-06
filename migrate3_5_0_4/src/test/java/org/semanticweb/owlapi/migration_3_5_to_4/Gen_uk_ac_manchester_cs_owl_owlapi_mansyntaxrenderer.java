@@ -3,73 +3,50 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
+import java.util.Collections;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.AbstractRenderer;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxFrameRenderer;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxOWLObjectRendererImpl;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxObjectRenderer;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxOntologyStorer;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxOntologyStorerException;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxPrefixNameShortFormProvider;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxRenderer;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.RendererEvent;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.RendererListener;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.RenderingDirector;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.SectionMap;
+import org.semanticweb.owlapi.io.OWLRendererException;
+import org.semanticweb.owlapi.mansyntax.parser.*;
+import org.semanticweb.owlapi.mansyntax.renderer.*;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "deprecation" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
+@Migration({ "Package change: from uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer to org.semanticweb.owlapi.mansyntax.renderer",
+        "method visibility: AbstractRenderer<init> : protected", "method visibility: AbstractRenderer::flush() : protected",
+        "method visibility: AbstractRenderer::setUseTabbing() : protected", "method visibility: AbstractRenderer::setUseWrapping() : protected",
+        "method visibility: AbstractRenderer::isUseWrapping() : protected", "method visibility: AbstractRenderer::isUseTabbing() : protected",
+        "method visibility: AbstractRenderer<init> : protected", "class visibility: SectionMap : private",
+        "method arguments: ManchesterOWLSyntaxFrameRenderer<init> : dropped manager, dropped variants",
+        "method arguments: ManchesterOWLSyntaxOntologyStorer::storeOntology() : dropped manager from all variants",
+        "method arguments: ManchesterOWLSyntaxPrefixNameShortFormProvider<init> : dropped manager",
+        "method removed: ManchesterOWLSyntaxPrefixNameShortFormProvider::getPrefixManager() : use methods to access prefixes directly",
+        "method arguments: ManchesterOWLSyntaxRenderer<init> : dropped manager",
+        "method removed: ManchesterOWLSyntaxRenderer::setOWLOntologyManager(OWLOntologyManager) : use OWLOntology manager",
+        "method arguments: ManchesterOWLSyntaxFrameRenderer::writeSection() : SectionMap to Collection",
+        "method removed: ManchesterOWLSyntaxFrameRenderer::getOntologies() : SectionMap to Collection" })
 public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
-
-    public void verifyAbstractRenderer()  {
-        AbstractRenderer testSubject0 = new AbstractRenderer(_Writer,
-                _ShortFormProvider);
-        testSubject0.flush();
-        testSubject0.setUseTabbing(_boolean);
-        testSubject0.setUseWrapping(_boolean);
-        boolean result0 = testSubject0.isUseWrapping();
-        boolean result1 = testSubject0.isUseTabbing();
-    }
-
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxFrameRenderer()
-             {
-        assertTrue(uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxObjectRenderer.class
-                .isAssignableFrom(ManchesterOWLSyntaxFrameRenderer.class));
-        assertTrue(OWLEntityVisitor.class
-                .isAssignableFrom(ManchesterOWLSyntaxFrameRenderer.class));
+    public void enforceInterfacesManchesterOWLSyntaxFrameRenderer() {
+        assertTrue(ManchesterOWLSyntaxObjectRenderer.class.isAssignableFrom(ManchesterOWLSyntaxFrameRenderer.class));
+        assertTrue(OWLEntityVisitor.class.isAssignableFrom(ManchesterOWLSyntaxFrameRenderer.class));
     }
 
-    public void verifyManchesterOWLSyntaxFrameRenderer()  {
-        ManchesterOWLSyntaxFrameRenderer testSubject0 = new ManchesterOWLSyntaxFrameRenderer(
-                _Set, _Writer, _ShortFormProvider);
-        ManchesterOWLSyntaxFrameRenderer testSubject1 = new ManchesterOWLSyntaxFrameRenderer(
-                _Set, _OWLOntology, _Writer, _ShortFormProvider);
-        ManchesterOWLSyntaxFrameRenderer testSubject2 = new ManchesterOWLSyntaxFrameRenderer(
-                _OWLOntologyManager, _Set, _OWLOntology, _Writer,
-                _ShortFormProvider);
-        ManchesterOWLSyntaxFrameRenderer testSubject3 = new ManchesterOWLSyntaxFrameRenderer(
-                _OWLOntology, _Writer, _ShortFormProvider);
-        ManchesterOWLSyntaxFrameRenderer testSubject4 = new ManchesterOWLSyntaxFrameRenderer(
-                _OWLOntologyManager, _OWLOntology, _Writer, _ShortFormProvider);
-        java.util.Set<OWLAxiom> result0 = testSubject0
-                .write(_OWLDataProperty);
-        java.util.Set<OWLAxiom> result1 = testSubject0
-                .write(_OWLIndividual);
-        java.util.Set<OWLAxiom> result2 = testSubject0
-                .write(_OWLObjectPropertyExpression);
-        java.util.Set<OWLAxiom> result3 = testSubject0
-                .write(_OWLClass);
-        java.util.Set<OWLAxiom> result4 = testSubject0
-                .write(_OWLDatatype);
-        java.util.Set<OWLAxiom> result5 = testSubject0
-                .write(_SWRLRule);
-        java.util.Set<OWLAxiom> result6 = testSubject0
-                .write(_OWLAnnotationProperty);
+    public void verifyManchesterOWLSyntaxFrameRenderer() throws OWLRendererException {
+        ManchesterOWLSyntaxFrameRenderer testSubject0 = new ManchesterOWLSyntaxFrameRenderer(_Set, _Writer, _ShortFormProvider);
+        ManchesterOWLSyntaxFrameRenderer testSubject1 = new ManchesterOWLSyntaxFrameRenderer(_OWLOntology, _Writer, _ShortFormProvider);
+        ManchesterOWLSyntaxFrameRenderer testSubject2 = new ManchesterOWLSyntaxFrameRenderer(_Set, _Writer, _ShortFormProvider);
+        java.util.Set<OWLAxiom> result0 = testSubject0.write(_OWLDataProperty);
+        java.util.Set<OWLAxiom> result1 = testSubject0.write(_OWLIndividual);
+        java.util.Set<OWLAxiom> result2 = testSubject0.write(_OWLObjectPropertyExpression);
+        java.util.Set<OWLAxiom> result3 = testSubject0.write(_OWLClass);
+        java.util.Set<OWLAxiom> result4 = testSubject0.write(_OWLDatatype);
+        java.util.Set<OWLAxiom> result5 = testSubject0.write(_SWRLRule);
+        java.util.Set<OWLAxiom> result6 = testSubject0.write(_OWLAnnotationProperty);
         testSubject0.setRenderingDirector(_RenderingDirector);
         testSubject0.addRendererListener(_RendererListener);
         testSubject0.removeRendererListener(_RendererListener);
@@ -80,22 +57,16 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
         testSubject0.writeOntology();
         testSubject0.writePrefixMap();
         testSubject0.writeOntologyHeader(_OWLOntology);
-        testSubject0.writeSection(_ManchesterOWLSyntax, _SectionMap, _String,
-                _boolean, _OWLOntology_array);
+        testSubject0.writeSection(_ManchesterOWLSyntax, Collections.emptyList(), _String, _boolean, _OWLOntology_array);
         testSubject0.writeSection(_ManchesterOWLSyntax);
-        testSubject0.writeSection(_ManchesterOWLSyntax, _Collection, _String,
-                _boolean, _OWLOntology_array);
+        testSubject0.writeSection(_ManchesterOWLSyntax, _Collection, _String, _boolean, _OWLOntology_array);
         testSubject0.writeFullURI(_String);
         boolean result7 = testSubject0.isFiltered(_AxiomType);
         boolean result8 = testSubject0.isDisplayed(_OWLAxiom);
-        java.util.Set<OWLAxiom> result9 = testSubject0
-                .writeFrame(_OWLEntity);
+        java.util.Set<OWLAxiom> result9 = testSubject0.writeFrame(_OWLEntity);
         testSubject0.writeComment(_String, _boolean);
         testSubject0.writeComment(_String, _String, _boolean);
-        java.util.Set<OWLOntology> result10 = testSubject0
-                .getOntologies();
-        java.util.Set<OWLAnnotationAssertionAxiom> result11 = testSubject0
-                .writeAnnotations(_OWLAnnotationSubject);
+        java.util.Set<OWLAnnotationAssertionAxiom> result11 = testSubject0.writeAnnotations(_OWLAnnotationSubject);
         testSubject0.visit(_OWLDeclarationAxiom);
         testSubject0.visit(_OWLDisjointUnionAxiom);
         testSubject0.visit(_OWLAnnotationAssertionAxiom);
@@ -180,25 +151,16 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
         testSubject0.visit(_OWLDataOneOf);
         testSubject0.visit(_OWLDataComplementOf);
         testSubject0.visit(_OWLAnnotation);
-        testSubject0.flush();
-        testSubject0.setUseTabbing(_boolean);
-        testSubject0.setUseWrapping(_boolean);
-        boolean result12 = testSubject0.isUseWrapping();
-        boolean result13 = testSubject0.isUseTabbing();
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxObjectRenderer()
-             {
-        assertTrue(uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.AbstractRenderer.class
-                .isAssignableFrom(ManchesterOWLSyntaxObjectRenderer.class));
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(ManchesterOWLSyntaxObjectRenderer.class));
+    public void enforceInterfacesManchesterOWLSyntaxObjectRenderer() {
+        assertTrue(AbstractRenderer.class.isAssignableFrom(ManchesterOWLSyntaxObjectRenderer.class));
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(ManchesterOWLSyntaxObjectRenderer.class));
     }
 
-    public void verifyManchesterOWLSyntaxObjectRenderer()  {
-        ManchesterOWLSyntaxObjectRenderer testSubject0 = new ManchesterOWLSyntaxObjectRenderer(
-                _Writer, _ShortFormProvider);
+    public void verifyManchesterOWLSyntaxObjectRenderer() {
+        ManchesterOWLSyntaxObjectRenderer testSubject0 = new ManchesterOWLSyntaxObjectRenderer(_Writer, _ShortFormProvider);
         testSubject0.visit(_OWLDeclarationAxiom);
         testSubject0.visit(_OWLDisjointUnionAxiom);
         testSubject0.visit(_OWLAnnotationAssertionAxiom);
@@ -283,47 +245,31 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
         testSubject0.visit(_OWLDataOneOf);
         testSubject0.visit(_OWLDataComplementOf);
         testSubject0.visit(_OWLAnnotation);
-        testSubject0.flush();
-        testSubject0.setUseTabbing(_boolean);
-        testSubject0.setUseWrapping(_boolean);
-        boolean result0 = testSubject0.isUseWrapping();
-        boolean result1 = testSubject0.isUseTabbing();
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxOntologyStorer()
-             {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(ManchesterOWLSyntaxOntologyStorer.class));
+    public void enforceInterfacesManchesterOWLSyntaxOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(ManchesterOWLSyntaxOntologyStorer.class));
     }
 
-    public void verifyManchesterOWLSyntaxOntologyStorer()  {
+    public void verifyManchesterOWLSyntaxOntologyStorer() throws OWLOntologyStorageException {
         ManchesterOWLSyntaxOntologyStorer testSubject0 = new ManchesterOWLSyntaxOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxOntologyStorerException()
-             {
-        assertTrue(OWLOntologyStorageException.class
-                .isAssignableFrom(ManchesterOWLSyntaxOntologyStorerException.class));
+    public void enforceInterfacesManchesterOWLSyntaxOntologyStorerException() {
+        assertTrue(OWLOntologyStorageException.class.isAssignableFrom(ManchesterOWLSyntaxOntologyStorerException.class));
     }
 
-    public void verifyManchesterOWLSyntaxOntologyStorerException()
-             {
-        ManchesterOWLSyntaxOntologyStorerException testSubject0 = new ManchesterOWLSyntaxOntologyStorerException(
-                _String);
-        ManchesterOWLSyntaxOntologyStorerException testSubject1 = new ManchesterOWLSyntaxOntologyStorerException(
-                _String, _Throwable);
-        ManchesterOWLSyntaxOntologyStorerException testSubject2 = new ManchesterOWLSyntaxOntologyStorerException(
-                _Throwable);
+    public void verifyManchesterOWLSyntaxOntologyStorerException() {
+        ManchesterOWLSyntaxOntologyStorerException testSubject0 = new ManchesterOWLSyntaxOntologyStorerException(_String);
+        ManchesterOWLSyntaxOntologyStorerException testSubject1 = new ManchesterOWLSyntaxOntologyStorerException(_String, _Throwable);
+        ManchesterOWLSyntaxOntologyStorerException testSubject2 = new ManchesterOWLSyntaxOntologyStorerException(_Throwable);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -339,69 +285,51 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxOWLObjectRendererImpl()
-             {
-        assertTrue(org.semanticweb.owlapi.io.OWLObjectRenderer.class
-                .isAssignableFrom(ManchesterOWLSyntaxOWLObjectRendererImpl.class));
+    public void enforceInterfacesManchesterOWLSyntaxOWLObjectRendererImpl() {
+        assertTrue(org.semanticweb.owlapi.io.OWLObjectRenderer.class.isAssignableFrom(ManchesterOWLSyntaxOWLObjectRendererImpl.class));
     }
 
-    public void verifyManchesterOWLSyntaxOWLObjectRendererImpl()
-             {
+    public void verifyManchesterOWLSyntaxOWLObjectRendererImpl() {
         ManchesterOWLSyntaxOWLObjectRendererImpl testSubject0 = new ManchesterOWLSyntaxOWLObjectRendererImpl();
         String result0 = testSubject0.render(_OWLObject);
         testSubject0.setShortFormProvider(_ShortFormProvider);
     }
 
     @Test
-    public void
-            enforceInterfacesManchesterOWLSyntaxPrefixNameShortFormProvider()
-                     {
-        assertTrue(org.semanticweb.owlapi.util.ShortFormProvider.class
-                .isAssignableFrom(ManchesterOWLSyntaxPrefixNameShortFormProvider.class));
+    public void enforceInterfacesManchesterOWLSyntaxPrefixNameShortFormProvider() {
+        assertTrue(org.semanticweb.owlapi.util.ShortFormProvider.class.isAssignableFrom(ManchesterOWLSyntaxPrefixNameShortFormProvider.class));
     }
 
-    public void verifyManchesterOWLSyntaxPrefixNameShortFormProvider()
-             {
-        ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject0 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(
-                _DefaultPrefixManager);
-        ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject1 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(
-                _OWLOntologyFormat);
-        ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject2 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(
-                _OWLOntologyManager, _OWLOntology);
+    public void verifyManchesterOWLSyntaxPrefixNameShortFormProvider() {
+        ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject0 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(_DefaultPrefixManager);
+        ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject1 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(_OWLOntologyFormat);
+        ManchesterOWLSyntaxPrefixNameShortFormProvider testSubject2 = new ManchesterOWLSyntaxPrefixNameShortFormProvider(_OWLOntology);
         String result0 = testSubject0.getShortForm(_IRI);
         String result1 = testSubject0.getShortForm(_OWLEntity);
-        PrefixManager result2 = testSubject0
-                .getPrefixManager();
         testSubject0.dispose();
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(ManchesterOWLSyntaxRenderer.class));
+    public void enforceInterfacesManchesterOWLSyntaxRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(ManchesterOWLSyntaxRenderer.class));
     }
 
-    public void verifyManchesterOWLSyntaxRenderer()  {
-        ManchesterOWLSyntaxRenderer testSubject0 = new ManchesterOWLSyntaxRenderer(
-                _OWLOntologyManager);
+    public void verifyManchesterOWLSyntaxRenderer() throws OWLRendererException {
+        ManchesterOWLSyntaxRenderer testSubject0 = new ManchesterOWLSyntaxRenderer();
         ManchesterOWLSyntaxRenderer testSubject1 = new ManchesterOWLSyntaxRenderer();
         testSubject0.render(_OWLOntology, _Writer);
-        testSubject0.setOWLOntologyManager(_OWLOntologyManager);
         testSubject0.render(_OWLOntology, _OutputStream);
     }
 
-    public void verifyRendererEvent()  {
-        RendererEvent testSubject0 = new RendererEvent(
-                _ManchesterOWLSyntaxFrameRenderer, _OWLObject);
-        uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxFrameRenderer result0 = testSubject0
-                .getFrameRenderer();
+    public void verifyRendererEvent() {
+        RendererEvent testSubject0 = new RendererEvent(_ManchesterOWLSyntaxFrameRenderer, _OWLObject);
+        ManchesterOWLSyntaxFrameRenderer result0 = testSubject0.getFrameRenderer();
         testSubject0.writeCommentOnNewLine(_String);
-        OWLObject result1 = testSubject0
-                .getFrameSubject();
+        OWLObject result1 = testSubject0.getFrameSubject();
         testSubject0.writeComment(_String);
     }
 
-    public void verifyInterfaceRendererListener()  {
+    public void verifyInterfaceRendererListener() {
         RendererListener testSubject0 = mock(RendererListener.class);
         testSubject0.frameRenderingPrepared(_String, _RendererEvent);
         testSubject0.frameRenderingStarted(_String, _RendererEvent);
@@ -413,20 +341,9 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
         testSubject0.sectionItemFinished(_String, _RendererEvent);
     }
 
-    public void verifyInterfaceRenderingDirector()  {
+    public void verifyInterfaceRenderingDirector() {
         RenderingDirector testSubject0 = mock(RenderingDirector.class);
-        boolean result0 = testSubject0.renderEmptyFrameSection(
-                _ManchesterOWLSyntax, _OWLOntology_array);
-    }
-
-    public void verifySectionMap()  {
-        SectionMap testSubject0 = new SectionMap();
-        testSubject0.add(_Object, _OWLAxiom);
-        testSubject0.remove(_Object);
-        boolean result0 = testSubject0.isEmpty();
-        java.util.Collection<Object> result1 = testSubject0.getSectionObjects();
-        java.util.Set<java.util.Set<OWLAnnotation>> result2 = testSubject0
-                .getAnnotationsForSectionObject(_Object);
+        boolean result0 = testSubject0.renderEmptyFrameSection(_ManchesterOWLSyntax, _OWLOntology_array);
     }
 
     private boolean _boolean;
@@ -434,13 +351,12 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
     private java.io.PrintStream _PrintStream;
     private java.io.PrintWriter _PrintWriter;
     private java.io.Writer _Writer;
-    private Object _Object;
     private StackTraceElement[] _StackTraceElement_array;
     private String _String;
     private Throwable _Throwable;
     private java.util.Collection<?> _Collection;
     private java.util.Set<OWLOntology> _Set;
-    private org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntax _ManchesterOWLSyntax;
+    private ManchesterOWLSyntax _ManchesterOWLSyntax;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentTarget _OWLOntologyDocumentTarget;
     private AxiomType<?> _AxiomType;
     private IRI _IRI;
@@ -514,7 +430,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
     private OWLObjectUnionOf _OWLObjectUnionOf;
     private OWLOntology _OWLOntology;
     private OWLOntologyFormat _OWLOntologyFormat;
-    private OWLOntologyManager _OWLOntologyManager;
     private OWLOntology[] _OWLOntology_array;
     private OWLReflexiveObjectPropertyAxiom _OWLReflexiveObjectPropertyAxiom;
     private OWLSameIndividualAxiom _OWLSameIndividualAxiom;
@@ -539,9 +454,8 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_mansyntaxrenderer {
     private org.semanticweb.owlapi.util.DefaultPrefixManager _DefaultPrefixManager;
     private org.semanticweb.owlapi.util.OWLAxiomFilter _OWLAxiomFilter;
     private org.semanticweb.owlapi.util.ShortFormProvider _ShortFormProvider;
-    private uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxFrameRenderer _ManchesterOWLSyntaxFrameRenderer;
-    private uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.RendererEvent _RendererEvent;
-    private uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.RendererListener _RendererListener;
-    private uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.RenderingDirector _RenderingDirector;
-    private uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.SectionMap _SectionMap;
+    private ManchesterOWLSyntaxFrameRenderer _ManchesterOWLSyntaxFrameRenderer;
+    private RendererEvent _RendererEvent;
+    private RendererListener _RendererListener;
+    private RenderingDirector _RenderingDirector;
 }

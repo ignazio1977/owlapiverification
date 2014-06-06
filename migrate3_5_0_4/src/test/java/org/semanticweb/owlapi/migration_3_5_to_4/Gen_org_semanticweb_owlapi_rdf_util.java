@@ -2,18 +2,19 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
-import static org.semanticweb.owlapi.rdf.util.RDFConstants.*;
+import static org.semanticweb.owlapi.rdf.rdfxml.parser.RDFConstants.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.semanticweb.owlapi.rdf.util.RDFConstants;
+import org.semanticweb.owlapi.rdf.rdfxml.parser.*;
 
-@SuppressWarnings({ "javadoc" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
+@Migration({ "Package change: from org.semanticweb.owlapi.rdf.util to org.semanticweb.owlapi.rdf.rdfxml.parser" })
 public class Gen_org_semanticweb_owlapi_rdf_util {
     @Test
-    public void verifyInterfaceRDFConstants()  {
+    public void verifyInterfaceRDFConstants() {
         RDFConstants testSubject0 = mock(RDFConstants.class);
         assertEquals(XMLNS, "http://www.w3.org/XML/1998/namespace");
         assertEquals(XMLLANG, "xml:lang");

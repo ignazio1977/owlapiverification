@@ -3,6 +3,7 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
+import java.util.Collection;
 import java.util.Set;
 
 import org.junit.Test;
@@ -13,78 +14,43 @@ import org.semanticweb.owlapi.debugging.BlackBoxOWLDebugger;
 import org.semanticweb.owlapi.debugging.DebuggerClassExpressionGenerator;
 import org.semanticweb.owlapi.debugging.JustificationMap;
 import org.semanticweb.owlapi.debugging.OWLDebugger;
-import OWLAxiom;
-import OWLClassExpression;
-import OWLException;
+import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_debugging {
     @Test
-    public void enforceInterfacesAbstractOWLDebugger()  {
-        assertTrue(org.semanticweb.owlapi.debugging.OWLDebugger.class
-                .isAssignableFrom(AbstractOWLDebugger.class));
+    public void enforceInterfacesAbstractOWLDebugger() {
+        assertTrue(org.semanticweb.owlapi.debugging.OWLDebugger.class.isAssignableFrom(AbstractOWLDebugger.class));
     }
 
-    public void verifyAbstractOWLDebugger()  {
-        AbstractOWLDebugger testSubject0 = new AbstractOWLDebugger(_OWLOntologyManager,
-                _OWLOntology) {
-            @Override
-            public Set<OWLAxiom> getSOSForIncosistentClass(OWLClassExpression cls)
-                    throws OWLException {
-                return null;
-            }
-
-            @Override
-            public void dispose() {}
-
-            @Override
-            protected OWLClassExpression getCurrentClass() throws OWLException {
-                return null;
-            }
-        };
+    public void verifyAbstractOWLDebugger() throws OWLException {
+        AbstractOWLDebugger testSubject0 = mock(AbstractOWLDebugger.class);
         OWLOntology result0 = testSubject0.getOWLOntology();
-        java.util.Set<java.util.Set<OWLAxiom>> result1 = testSubject0
-                .getAllSOSForIncosistentClass(_OWLClassExpression);
         testSubject0.constructHittingSetTree(_Set, _Set2, _Set2, _Set);
-        OWLOntologyManager result2 = testSubject0
-                .getOWLOntologyManager();
-        java.util.Set<OWLAxiom> result3 = testSubject0
-                .getSOSForIncosistentClass(_OWLClassExpression);
         testSubject0.dispose();
     }
 
     @Test
-    public void enforceInterfacesBlackBoxOWLDebugger()  {
-        assertTrue(org.semanticweb.owlapi.debugging.AbstractOWLDebugger.class
-                .isAssignableFrom(BlackBoxOWLDebugger.class));
+    public void enforceInterfacesBlackBoxOWLDebugger() {
+        assertTrue(org.semanticweb.owlapi.debugging.AbstractOWLDebugger.class.isAssignableFrom(BlackBoxOWLDebugger.class));
     }
 
-    public void verifyBlackBoxOWLDebugger()  {
-        BlackBoxOWLDebugger testSubject0 = new BlackBoxOWLDebugger(_OWLOntologyManager,
-                _OWLOntology, _OWLReasonerFactory);
-        java.util.Set<OWLAxiom> result0 = testSubject0
-                .getSOSForIncosistentClass(_OWLClassExpression);
+    public void verifyBlackBoxOWLDebugger() throws OWLException {
+        BlackBoxOWLDebugger testSubject0 = new BlackBoxOWLDebugger(_OWLOntologyManager, _OWLOntology, _OWLReasonerFactory);
         testSubject0.dispose();
         OWLOntology result1 = testSubject0.getOWLOntology();
-        java.util.Set<java.util.Set<OWLAxiom>> result2 = testSubject0
-                .getAllSOSForIncosistentClass(_OWLClassExpression);
         testSubject0.constructHittingSetTree(_Set, _Set2, _Set2, _Set);
-        OWLOntologyManager result3 = testSubject0
-                .getOWLOntologyManager();
     }
 
     @Test
-    public void enforceInterfacesDebuggerClassExpressionGenerator()  {
-        assertTrue(OWLAxiomVisitor.class
-                .isAssignableFrom(DebuggerClassExpressionGenerator.class));
+    public void enforceInterfacesDebuggerClassExpressionGenerator() {
+        assertTrue(OWLAxiomVisitor.class.isAssignableFrom(DebuggerClassExpressionGenerator.class));
     }
 
-    public void verifyDebuggerClassExpressionGenerator()  {
-        DebuggerClassExpressionGenerator testSubject0 = new DebuggerClassExpressionGenerator(
-                _OWLDataFactory);
-        OWLClassExpression result0 = testSubject0
-                .getDebuggerClassExpression();
+    public void verifyDebuggerClassExpressionGenerator() {
+        DebuggerClassExpressionGenerator testSubject0 = new DebuggerClassExpressionGenerator(_OWLDataFactory);
+        OWLClassExpression result0 = testSubject0.getDebuggerClassExpression();
         testSubject0.visit(_OWLDataPropertyAssertionAxiom);
         testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
         testSubject0.visit(_OWLEquivalentClassesAxiom);
@@ -126,21 +92,15 @@ public class Gen_org_semanticweb_owlapi_debugging {
         testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
     }
 
-    public void verifyJustificationMap()  {
+    public void verifyJustificationMap() {
         JustificationMap testSubject0 = new JustificationMap(_OWLClassExpression, _Set);
-        java.util.Set<OWLAxiom> result0 = testSubject0
-                .getRootAxioms();
-        java.util.Set<OWLAxiom> result1 = testSubject0
-                .getChildAxioms(_OWLAxiom);
+        java.util.Set<OWLAxiom> result0 = testSubject0.getRootAxioms();
+        Collection<OWLAxiom> result1 = testSubject0.getChildAxioms(_OWLAxiom);
     }
 
-    public void verifyInterfaceOWLDebugger()  {
+    public void verifyInterfaceOWLDebugger() throws OWLException {
         OWLDebugger testSubject0 = mock(OWLDebugger.class);
         OWLOntology result0 = testSubject0.getOWLOntology();
-        java.util.Set<java.util.Set<OWLAxiom>> result1 = testSubject0
-                .getAllSOSForIncosistentClass(_OWLClassExpression);
-        java.util.Set<OWLAxiom> result2 = testSubject0
-                .getSOSForIncosistentClass(_OWLClassExpression);
         testSubject0.dispose();
     }
 

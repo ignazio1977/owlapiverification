@@ -1,21 +1,16 @@
 package org.semanticweb.owlapi.migration_3_5_to_4;
 
-import org.coode.string.EscapeUtils;
-import org.junit.Ignore;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.semanticweb.owlapi.util.EscapeUtils;
 
-@SuppressWarnings({ "javadoc", "deprecation" })
+@SuppressWarnings({ "javadoc" })
 @RunWith(MockitoJUnitRunner.class)
-@Ignore
+@Migration({ "Package change: org.coode.string to org.semanticweb.owlapi.util", })
 public class Gen_org_coode_string {
-
-    public void verifyEscapeUtils()  {
-        EscapeUtils testSubject0 = new EscapeUtils();
-        String result0 = EscapeUtils.escapeString(_String);
-        String result1 = EscapeUtils.unescapeString(_String);
-        String result2 = EscapeUtils.escapeXML(_String);
+    @Test
+    public void verifyEscapeUtils() {
+        EscapeUtils.escapeString("test");
     }
-
-    private String _String;
 }

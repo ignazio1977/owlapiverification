@@ -12,13 +12,12 @@ import com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor;
 import com.clarkparsia.owlapi.explanation.util.OntologyUtils;
 import com.clarkparsia.owlapi.explanation.util.SilentExplanationProgressMonitor;
 
-@SuppressWarnings({ "javadoc" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation_util {
     @Test
     public void enforceInterfacesDefinitionTracker() {
-        assertTrue(OWLOntologyChangeListener.class
-                .isAssignableFrom(DefinitionTracker.class));
+        assertTrue(OWLOntologyChangeListener.class.isAssignableFrom(DefinitionTracker.class));
     }
 
     public void verifyDefinitionTracker() {
@@ -36,18 +35,14 @@ public class Gen_com_clarkparsia_owlapi_explanation_util {
     }
 
     public void verifyOntologyUtils() {
-        OntologyUtils testSubject0 = new OntologyUtils();
-        boolean result0 = OntologyUtils.containsUnreferencedEntity(_OWLOntology,
-                _OWLClassExpression);
+        boolean result0 = OntologyUtils.containsUnreferencedEntity(_OWLOntology, _OWLClassExpression);
         OntologyUtils.addAxiom(_OWLAxiom, _Set6, _OWLOntologyManager);
-        java.util.Set<OWLOntology> result1 = OntologyUtils
-                .removeAxiom(_OWLAxiom, _Set6, _OWLOntologyManager);
+        java.util.Set<OWLOntology> result1 = OntologyUtils.removeAxiom(_OWLAxiom, _Set6, _OWLOntologyManager);
     }
 
     @Test
     public void enforceInterfacesSilentExplanationProgressMonitor() {
-        assertTrue(com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor.class
-                .isAssignableFrom(SilentExplanationProgressMonitor.class));
+        assertTrue(com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor.class.isAssignableFrom(SilentExplanationProgressMonitor.class));
     }
 
     public void verifySilentExplanationProgressMonitor() {
@@ -57,7 +52,7 @@ public class Gen_com_clarkparsia_owlapi_explanation_util {
         testSubject0.foundExplanation(_Set);
     }
 
-    private java.util.List<? extends OWLOntologyChange> _List;
+    private java.util.List<? extends OWLOntologyChange<?>> _List;
     private java.util.Set<OWLAxiom> _Set;
     private java.util.Set<OWLOntology> _Set6;
     private OWLAxiom _OWLAxiom;

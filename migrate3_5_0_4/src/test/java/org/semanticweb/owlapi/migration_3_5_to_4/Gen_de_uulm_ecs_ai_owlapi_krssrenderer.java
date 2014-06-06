@@ -6,298 +6,90 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2OWLObjectRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2OWLSyntaxOntologyStorer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2OWLSyntaxRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2ObjectRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2SyntaxOntologyStorer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2SyntaxRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2Vocabulary;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSObjectRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSSyntaxOntologyStorer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSSyntaxRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSVocabulary;
+import org.semanticweb.owlapi.io.OWLRendererException;
+import org.semanticweb.owlapi.krss2.renderer.*;
 
-@SuppressWarnings({ "javadoc", "deprecation" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
+@Migration({ "Package change: from de.uulm.ecs.ai.owlapi.krssrenderer to org.semanticweb.owlapi.krss2.renderer", "method change: KRSS2ObjectRenderer<init>: dropped manager",
+        "method visibility: KRSS2ObjectRenderer::write(): protected", "method visibility: KRSS2OWLObjectRenderer::write(): protected",
+        "method change: KRSS2OWLSyntaxRenderer<init>: dropped manager", "method deleted: KRSS2OWLSyntaxRenderer::setOWLOntologyManager()",
+        "method change: KRSS2SyntaxRenderer<init>: dropped manager", "method deleted: KRSS2SyntaxRenderer::setOWLOntologyManager()",
+        "method change: KRSSObjectRenderer<init>: dropped manager", "method change: KRSSSyntaxRenderer<init>: dropped manager", })
 public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
-
     @Test
-    public void enforceInterfacesKRSS2ObjectRenderer()  {
-        assertTrue(de.uulm.ecs.ai.owlapi.krssrenderer.KRSSObjectRenderer.class
-                .isAssignableFrom(KRSS2ObjectRenderer.class));
+    public void enforceInterfacesKRSS2ObjectRenderer() {
+        assertTrue(KRSSObjectRenderer.class.isAssignableFrom(KRSS2ObjectRenderer.class));
     }
 
-    public void verifyKRSS2ObjectRenderer()  {
-        KRSS2ObjectRenderer testSubject0 = new KRSS2ObjectRenderer(
-                _OWLOntologyManager, _OWLOntology, _Writer);
-        KRSS2ObjectRenderer testSubject1 = new KRSS2ObjectRenderer(
-                _OWLOntology, _Writer);
+    public void verifyKRSS2ObjectRenderer() {
+        KRSS2ObjectRenderer testSubject0 = new KRSS2ObjectRenderer(_OWLOntology, _Writer);
         testSubject0.setIgnoreDeclarations(_boolean);
-        testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        testSubject0.visit(_OWLEquivalentClassesAxiom);
-        testSubject0.visit(_OWLObjectOneOf);
-        testSubject0.visit(_OWLObjectProperty);
-        testSubject0.visit(_OWLObjectInverseOf);
-        testSubject0.visit(_OWLDisjointUnionAxiom);
-        testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        testSubject0.visit(_OWLClass);
-        testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        testSubject0.visit(_OWLImportsDeclaration);
-        testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        testSubject0.visit(_OWLOntology);
-        testSubject0.visit(_OWLSubClassOfAxiom);
-        testSubject0.visit(_OWLDisjointClassesAxiom);
-        testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        testSubject0.visit(_OWLDeclarationAxiom);
-        testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        testSubject0.write(_OWLClassExpression);
-        testSubject0.write(_OWLIndividual);
-        testSubject0.write(_OWLPropertyExpression);
-        testSubject0.write(_OWLDataRange);
-        testSubject0.visit(_OWLObjectHasSelf);
-        testSubject0.visit(_OWLDataSomeValuesFrom);
-        testSubject0.visit(_OWLObjectMaxCardinality);
-        testSubject0.visit(_OWLObjectExactCardinality);
-        testSubject0.visit(_OWLObjectMinCardinality);
-        testSubject0.visit(_OWLDataMaxCardinality);
-        testSubject0.visit(_OWLDataExactCardinality);
-        testSubject0.visit(_OWLDataMinCardinality);
-        testSubject0.visit(_OWLDataHasValue);
-        testSubject0.visit(_OWLDataAllValuesFrom);
-        testSubject0.visit(_OWLObjectIntersectionOf);
-        testSubject0.visit(_SWRLDifferentIndividualsAtom);
-        testSubject0.visit(_SWRLSameIndividualAtom);
-        testSubject0.visit(_SWRLLiteralArgument);
-        testSubject0.visit(_SWRLIndividualArgument);
-        testSubject0.visit(_OWLObjectHasValue);
-        testSubject0.visit(_OWLObjectAllValuesFrom);
-        testSubject0.visit(_OWLObjectSomeValuesFrom);
-        testSubject0.visit(_OWLObjectComplementOf);
-        testSubject0.visit(_OWLObjectUnionOf);
-        testSubject0.visit(_OWLDataIntersectionOf);
-        testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        testSubject0.visit(_OWLHasKeyAxiom);
-        testSubject0.visit(_OWLAnnotation);
-        testSubject0.visit(_IRI);
-        testSubject0.visit(_OWLAnonymousIndividual);
-        testSubject0.visit(_OWLAnnotationProperty);
-        testSubject0.visit(_OWLDataUnionOf);
-        testSubject0.visit(_OWLLiteral);
-        testSubject0.visit(_OWLDatatypeRestriction);
-        testSubject0.visit(_OWLDataOneOf);
-        testSubject0.visit(_OWLDataComplementOf);
-        testSubject0.visit(_OWLDatatype);
-        testSubject0.visit(_OWLNamedIndividual);
-        testSubject0.visit(_OWLDataProperty);
-        testSubject0.visit(_OWLFacetRestriction);
-        testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        testSubject0.visit(_SWRLClassAtom);
-        testSubject0.visit(_SWRLRule);
-        testSubject0.visit(_OWLSameIndividualAxiom);
-        testSubject0.visit(_SWRLVariable);
-        testSubject0.visit(_SWRLBuiltInAtom);
-        testSubject0.visit(_SWRLDataPropertyAtom);
-        testSubject0.visit(_SWRLObjectPropertyAtom);
-        testSubject0.visit(_SWRLDataRangeAtom);
-        testSubject0.visit(_OWLClassAssertionAxiom);
     }
 
     @Test
-    public void enforceInterfacesKRSS2OWLObjectRenderer()  {
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(KRSS2OWLObjectRenderer.class));
+    public void enforceInterfacesKRSS2OWLObjectRenderer() {
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(KRSS2OWLObjectRenderer.class));
     }
 
-    public void verifyKRSS2OWLObjectRenderer()  {
-        KRSS2OWLObjectRenderer testSubject0 = new KRSS2OWLObjectRenderer(
-                _OWLOntology, _Writer);
-        testSubject0.write(_OWLIndividual);
-        testSubject0.write(_OWLClassExpression);
-        testSubject0.write(_OWLPropertyExpression);
-        testSubject0.write(_OWLDataRange);
-        testSubject0.visit(_OWLObjectOneOf);
-        testSubject0.visit(_OWLObjectHasSelf);
-        testSubject0.visit(_OWLObjectMaxCardinality);
-        testSubject0.visit(_OWLObjectExactCardinality);
-        testSubject0.visit(_OWLObjectMinCardinality);
-        testSubject0.visit(_OWLObjectHasValue);
-        testSubject0.visit(_OWLDataExactCardinality);
-        testSubject0.visit(_OWLDataMinCardinality);
-        testSubject0.visit(_OWLDataHasValue);
-        testSubject0.visit(_OWLDataAllValuesFrom);
-        testSubject0.visit(_OWLDataSomeValuesFrom);
-        testSubject0.visit(_OWLClass);
-        testSubject0.visit(_SWRLDifferentIndividualsAtom);
-        testSubject0.visit(_SWRLSameIndividualAtom);
-        testSubject0.visit(_SWRLLiteralArgument);
-        testSubject0.visit(_SWRLIndividualArgument);
-        testSubject0.visit(_SWRLVariable);
-        testSubject0.visit(_OWLObjectAllValuesFrom);
-        testSubject0.visit(_OWLObjectSomeValuesFrom);
-        testSubject0.visit(_OWLObjectComplementOf);
-        testSubject0.visit(_OWLObjectUnionOf);
-        testSubject0.visit(_OWLObjectIntersectionOf);
-        testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        testSubject0.visit(_OWLAnnotationProperty);
-        testSubject0.visit(_OWLDataUnionOf);
-        testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        testSubject0.visit(_OWLDataIntersectionOf);
-        testSubject0.visit(_OWLHasKeyAxiom);
-        testSubject0.visit(_OWLAnnotation);
-        testSubject0.visit(_IRI);
-        testSubject0.visit(_OWLAnonymousIndividual);
-        testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        testSubject0.visit(_OWLDatatypeRestriction);
-        testSubject0.visit(_OWLDataOneOf);
-        testSubject0.visit(_OWLDataComplementOf);
-        testSubject0.visit(_OWLDatatype);
-        testSubject0.visit(_OWLDataMaxCardinality);
-        testSubject0.visit(_OWLNamedIndividual);
-        testSubject0.visit(_OWLDataProperty);
-        testSubject0.visit(_OWLObjectInverseOf);
-        testSubject0.visit(_OWLObjectProperty);
-        testSubject0.visit(_OWLFacetRestriction);
-        testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        testSubject0.visit(_OWLDeclarationAxiom);
-        testSubject0.visit(_OWLDisjointUnionAxiom);
-        testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLSubClassOfAxiom);
-        testSubject0.visit(_OWLOntology);
-        testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        testSubject0.visit(_OWLImportsDeclaration);
-        testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        testSubject0.visit(_OWLDisjointClassesAxiom);
-        testSubject0.visit(_SWRLRule);
-        testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        testSubject0.visit(_OWLSameIndividualAxiom);
-        testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        testSubject0.visit(_SWRLBuiltInAtom);
-        testSubject0.visit(_SWRLDataPropertyAtom);
-        testSubject0.visit(_SWRLObjectPropertyAtom);
-        testSubject0.visit(_SWRLDataRangeAtom);
-        testSubject0.visit(_SWRLClassAtom);
-        testSubject0.visit(_OWLClassAssertionAxiom);
-        testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLEquivalentClassesAxiom);
-        testSubject0.visit(_OWLLiteral);
+    public void verifyKRSS2OWLObjectRenderer() {
+        KRSS2OWLObjectRenderer testSubject0 = new KRSS2OWLObjectRenderer(_OWLOntology, _Writer);
     }
 
     @Test
-    public void enforceInterfacesKRSS2OWLSyntaxOntologyStorer()
-             {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(KRSS2OWLSyntaxOntologyStorer.class));
+    public void enforceInterfacesKRSS2OWLSyntaxOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(KRSS2OWLSyntaxOntologyStorer.class));
     }
 
-    public void verifyKRSS2OWLSyntaxOntologyStorer()  {
+    public void verifyKRSS2OWLSyntaxOntologyStorer() throws OWLOntologyStorageException {
         KRSS2OWLSyntaxOntologyStorer testSubject0 = new KRSS2OWLSyntaxOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesKRSS2OWLSyntaxRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(KRSS2OWLSyntaxRenderer.class));
+    public void enforceInterfacesKRSS2OWLSyntaxRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(KRSS2OWLSyntaxRenderer.class));
     }
 
-    public void verifyKRSS2OWLSyntaxRenderer()  {
-        KRSS2OWLSyntaxRenderer testSubject0 = new KRSS2OWLSyntaxRenderer(
-                _OWLOntologyManager);
+    public void verifyKRSS2OWLSyntaxRenderer() throws OWLRendererException {
+        KRSS2OWLSyntaxRenderer testSubject0 = new KRSS2OWLSyntaxRenderer();
         KRSS2OWLSyntaxRenderer testSubject1 = new KRSS2OWLSyntaxRenderer();
         testSubject0.render(_OWLOntology, _Writer);
-        testSubject0.setOWLOntologyManager(_OWLOntologyManager);
         testSubject0.render(_OWLOntology, _OutputStream);
     }
 
     @Test
-    public void enforceInterfacesKRSS2SyntaxOntologyStorer()  {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(KRSS2SyntaxOntologyStorer.class));
+    public void enforceInterfacesKRSS2SyntaxOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(KRSS2SyntaxOntologyStorer.class));
     }
 
-    public void verifyKRSS2SyntaxOntologyStorer()  {
+    public void verifyKRSS2SyntaxOntologyStorer() throws OWLOntologyStorageException {
         KRSS2SyntaxOntologyStorer testSubject0 = new KRSS2SyntaxOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesKRSS2SyntaxRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(KRSS2SyntaxRenderer.class));
+    public void enforceInterfacesKRSS2SyntaxRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(KRSS2SyntaxRenderer.class));
     }
 
-    public void verifyKRSS2SyntaxRenderer()  {
-        KRSS2SyntaxRenderer testSubject0 = new KRSS2SyntaxRenderer(
-                _OWLOntologyManager);
+    public void verifyKRSS2SyntaxRenderer() throws OWLRendererException {
+        KRSS2SyntaxRenderer testSubject0 = new KRSS2SyntaxRenderer();
         KRSS2SyntaxRenderer testSubject1 = new KRSS2SyntaxRenderer();
         testSubject0.render(_OWLOntology, _Writer);
-        testSubject0.setOWLOntologyManager(_OWLOntologyManager);
         testSubject0.render(_OWLOntology, _OutputStream);
     }
 
     @Test
-    public void enforceInterfacesKRSS2Vocabulary()  {
+    public void enforceInterfacesKRSS2Vocabulary() {
         assertTrue(Enum.class.isAssignableFrom(KRSS2Vocabulary.class));
     }
 
-    public void verifyEnumKRSS2Vocabulary()  {
+    public void verifyEnumKRSS2Vocabulary() {
         KRSS2Vocabulary testSubject0 = KRSS2Vocabulary.ALL;
         KRSS2Vocabulary testSubject1 = KRSS2Vocabulary.AND;
         KRSS2Vocabulary testSubject2 = KRSS2Vocabulary.AT_LEAST;
@@ -343,146 +135,45 @@ public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     }
 
     @Test
-    public void enforceInterfacesKRSSObjectRenderer()  {
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(KRSSObjectRenderer.class));
+    public void enforceInterfacesKRSSObjectRenderer() {
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(KRSSObjectRenderer.class));
     }
 
-    public void verifyKRSSObjectRenderer()  {
-        KRSSObjectRenderer testSubject0 = new KRSSObjectRenderer(
-                _OWLOntologyManager, _OWLOntology, _Writer);
-        KRSSObjectRenderer testSubject1 = new KRSSObjectRenderer(_OWLOntology,
-                _Writer);
-        testSubject0.write(_OWLClassExpression);
-        testSubject0.write(_OWLIndividual);
-        testSubject0.write(_OWLPropertyExpression);
-        testSubject0.write(_OWLDataRange);
-        testSubject0.visit(_OWLObjectOneOf);
-        testSubject0.visit(_OWLObjectHasSelf);
-        testSubject0.visit(_OWLDataSomeValuesFrom);
-        testSubject0.visit(_OWLObjectMaxCardinality);
-        testSubject0.visit(_OWLObjectExactCardinality);
-        testSubject0.visit(_OWLObjectMinCardinality);
-        testSubject0.visit(_OWLDataMaxCardinality);
-        testSubject0.visit(_OWLDataExactCardinality);
-        testSubject0.visit(_OWLDataMinCardinality);
-        testSubject0.visit(_OWLDataHasValue);
-        testSubject0.visit(_OWLDataAllValuesFrom);
-        testSubject0.visit(_OWLObjectIntersectionOf);
-        testSubject0.visit(_OWLClass);
-        testSubject0.visit(_SWRLDifferentIndividualsAtom);
-        testSubject0.visit(_SWRLSameIndividualAtom);
-        testSubject0.visit(_SWRLLiteralArgument);
-        testSubject0.visit(_SWRLIndividualArgument);
-        testSubject0.visit(_OWLObjectHasValue);
-        testSubject0.visit(_OWLObjectAllValuesFrom);
-        testSubject0.visit(_OWLObjectSomeValuesFrom);
-        testSubject0.visit(_OWLObjectComplementOf);
-        testSubject0.visit(_OWLObjectUnionOf);
-        testSubject0.visit(_OWLDataIntersectionOf);
-        testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        testSubject0.visit(_OWLHasKeyAxiom);
-        testSubject0.visit(_OWLAnnotation);
-        testSubject0.visit(_IRI);
-        testSubject0.visit(_OWLAnonymousIndividual);
-        testSubject0.visit(_OWLAnnotationProperty);
-        testSubject0.visit(_OWLDataUnionOf);
-        testSubject0.visit(_OWLLiteral);
-        testSubject0.visit(_OWLDatatypeRestriction);
-        testSubject0.visit(_OWLDataOneOf);
-        testSubject0.visit(_OWLDataComplementOf);
-        testSubject0.visit(_OWLDatatype);
-        testSubject0.visit(_OWLNamedIndividual);
-        testSubject0.visit(_OWLDataProperty);
-        testSubject0.visit(_OWLObjectInverseOf);
-        testSubject0.visit(_OWLObjectProperty);
-        testSubject0.visit(_OWLFacetRestriction);
-        testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        testSubject0.visit(_OWLDeclarationAxiom);
-        testSubject0.visit(_OWLDisjointUnionAxiom);
-        testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLSubClassOfAxiom);
-        testSubject0.visit(_OWLOntology);
-        testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        testSubject0.visit(_OWLImportsDeclaration);
-        testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        testSubject0.visit(_OWLDisjointClassesAxiom);
-        testSubject0.visit(_SWRLClassAtom);
-        testSubject0.visit(_SWRLRule);
-        testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        testSubject0.visit(_OWLSameIndividualAxiom);
-        testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_SWRLVariable);
-        testSubject0.visit(_SWRLBuiltInAtom);
-        testSubject0.visit(_SWRLDataPropertyAtom);
-        testSubject0.visit(_SWRLObjectPropertyAtom);
-        testSubject0.visit(_SWRLDataRangeAtom);
-        testSubject0.visit(_OWLClassAssertionAxiom);
-        testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLEquivalentClassesAxiom);
+    public void verifyKRSSObjectRenderer() {
+        KRSSObjectRenderer testSubject0 = new KRSSObjectRenderer(_OWLOntology, _Writer);
+        KRSSObjectRenderer testSubject1 = new KRSSObjectRenderer(_OWLOntology, _Writer);
     }
 
     @Test
-    public void enforceInterfacesKRSSSyntaxOntologyStorer()  {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(KRSSSyntaxOntologyStorer.class));
+    public void enforceInterfacesKRSSSyntaxOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(KRSSSyntaxOntologyStorer.class));
     }
 
-    public void verifyKRSSSyntaxOntologyStorer()  {
+    public void verifyKRSSSyntaxOntologyStorer() throws OWLOntologyStorageException {
         KRSSSyntaxOntologyStorer testSubject0 = new KRSSSyntaxOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesKRSSSyntaxRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(KRSSSyntaxRenderer.class));
+    public void enforceInterfacesKRSSSyntaxRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(KRSSSyntaxRenderer.class));
     }
 
-    public void verifyKRSSSyntaxRenderer()  {
-        KRSSSyntaxRenderer testSubject0 = new KRSSSyntaxRenderer(
-                _OWLOntologyManager);
+    public void verifyKRSSSyntaxRenderer() throws OWLRendererException {
+        KRSSSyntaxRenderer testSubject0 = new KRSSSyntaxRenderer();
         KRSSSyntaxRenderer testSubject1 = new KRSSSyntaxRenderer();
         testSubject0.render(_OWLOntology, _Writer);
-        testSubject0.setOWLOntologyManager(_OWLOntologyManager);
         testSubject0.render(_OWLOntology, _OutputStream);
     }
 
     @Test
-    public void enforceInterfacesKRSSVocabulary()  {
+    public void enforceInterfacesKRSSVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(KRSSVocabulary.class));
     }
 
-    public void verifyEnumKRSSVocabulary()  {
+    public void verifyEnumKRSSVocabulary() {
         KRSSVocabulary testSubject0 = KRSSVocabulary.ALL;
         KRSSVocabulary testSubject1 = KRSSVocabulary.AND;
         KRSSVocabulary testSubject2 = KRSSVocabulary.AT_LEAST;
@@ -517,94 +208,6 @@ public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     private java.io.Writer _Writer;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentTarget _OWLOntologyDocumentTarget;
     private IRI _IRI;
-    private OWLAnnotation _OWLAnnotation;
-    private OWLAnnotationAssertionAxiom _OWLAnnotationAssertionAxiom;
-    private OWLAnnotationProperty _OWLAnnotationProperty;
-    private OWLAnnotationPropertyDomainAxiom _OWLAnnotationPropertyDomainAxiom;
-    private OWLAnnotationPropertyRangeAxiom _OWLAnnotationPropertyRangeAxiom;
-    private OWLAnonymousIndividual _OWLAnonymousIndividual;
-    private OWLAsymmetricObjectPropertyAxiom _OWLAsymmetricObjectPropertyAxiom;
-    private OWLClass _OWLClass;
-    private OWLClassAssertionAxiom _OWLClassAssertionAxiom;
-    private OWLClassExpression _OWLClassExpression;
-    private OWLDataAllValuesFrom _OWLDataAllValuesFrom;
-    private OWLDataComplementOf _OWLDataComplementOf;
-    private OWLDataExactCardinality _OWLDataExactCardinality;
-    private OWLDataHasValue _OWLDataHasValue;
-    private OWLDataIntersectionOf _OWLDataIntersectionOf;
-    private OWLDataMaxCardinality _OWLDataMaxCardinality;
-    private OWLDataMinCardinality _OWLDataMinCardinality;
-    private OWLDataOneOf _OWLDataOneOf;
-    private OWLDataProperty _OWLDataProperty;
-    private OWLDataPropertyAssertionAxiom _OWLDataPropertyAssertionAxiom;
-    private OWLDataPropertyDomainAxiom _OWLDataPropertyDomainAxiom;
-    private OWLDataPropertyRangeAxiom _OWLDataPropertyRangeAxiom;
-    private OWLDataRange _OWLDataRange;
-    private OWLDataSomeValuesFrom _OWLDataSomeValuesFrom;
-    private OWLDataUnionOf _OWLDataUnionOf;
-    private OWLDatatype _OWLDatatype;
-    private OWLDatatypeDefinitionAxiom _OWLDatatypeDefinitionAxiom;
-    private OWLDatatypeRestriction _OWLDatatypeRestriction;
-    private OWLDeclarationAxiom _OWLDeclarationAxiom;
-    private OWLDifferentIndividualsAxiom _OWLDifferentIndividualsAxiom;
-    private OWLDisjointClassesAxiom _OWLDisjointClassesAxiom;
-    private OWLDisjointDataPropertiesAxiom _OWLDisjointDataPropertiesAxiom;
-    private OWLDisjointObjectPropertiesAxiom _OWLDisjointObjectPropertiesAxiom;
-    private OWLDisjointUnionAxiom _OWLDisjointUnionAxiom;
-    private OWLEquivalentClassesAxiom _OWLEquivalentClassesAxiom;
-    private OWLEquivalentDataPropertiesAxiom _OWLEquivalentDataPropertiesAxiom;
-    private OWLEquivalentObjectPropertiesAxiom _OWLEquivalentObjectPropertiesAxiom;
-    private OWLFacetRestriction _OWLFacetRestriction;
-    private OWLFunctionalDataPropertyAxiom _OWLFunctionalDataPropertyAxiom;
-    private OWLFunctionalObjectPropertyAxiom _OWLFunctionalObjectPropertyAxiom;
-    private OWLHasKeyAxiom _OWLHasKeyAxiom;
-    private OWLImportsDeclaration _OWLImportsDeclaration;
-    private OWLIndividual _OWLIndividual;
-    private OWLInverseFunctionalObjectPropertyAxiom _OWLInverseFunctionalObjectPropertyAxiom;
-    private OWLInverseObjectPropertiesAxiom _OWLInverseObjectPropertiesAxiom;
-    private OWLIrreflexiveObjectPropertyAxiom _OWLIrreflexiveObjectPropertyAxiom;
-    private OWLLiteral _OWLLiteral;
-    private OWLNamedIndividual _OWLNamedIndividual;
-    private OWLNegativeDataPropertyAssertionAxiom _OWLNegativeDataPropertyAssertionAxiom;
-    private OWLNegativeObjectPropertyAssertionAxiom _OWLNegativeObjectPropertyAssertionAxiom;
-    private OWLObjectAllValuesFrom _OWLObjectAllValuesFrom;
-    private OWLObjectComplementOf _OWLObjectComplementOf;
-    private OWLObjectExactCardinality _OWLObjectExactCardinality;
-    private OWLObjectHasSelf _OWLObjectHasSelf;
-    private OWLObjectHasValue _OWLObjectHasValue;
-    private OWLObjectIntersectionOf _OWLObjectIntersectionOf;
-    private OWLObjectInverseOf _OWLObjectInverseOf;
-    private OWLObjectMaxCardinality _OWLObjectMaxCardinality;
-    private OWLObjectMinCardinality _OWLObjectMinCardinality;
-    private OWLObjectOneOf _OWLObjectOneOf;
-    private OWLObjectProperty _OWLObjectProperty;
-    private OWLObjectPropertyAssertionAxiom _OWLObjectPropertyAssertionAxiom;
-    private OWLObjectPropertyDomainAxiom _OWLObjectPropertyDomainAxiom;
-    private OWLObjectPropertyRangeAxiom _OWLObjectPropertyRangeAxiom;
-    private OWLObjectSomeValuesFrom _OWLObjectSomeValuesFrom;
-    private OWLObjectUnionOf _OWLObjectUnionOf;
     private OWLOntology _OWLOntology;
     private OWLOntologyFormat _OWLOntologyFormat;
-    private OWLOntologyManager _OWLOntologyManager;
-    private OWLPropertyExpression<?, ?> _OWLPropertyExpression;
-    private OWLReflexiveObjectPropertyAxiom _OWLReflexiveObjectPropertyAxiom;
-    private OWLSameIndividualAxiom _OWLSameIndividualAxiom;
-    private OWLSubAnnotationPropertyOfAxiom _OWLSubAnnotationPropertyOfAxiom;
-    private OWLSubClassOfAxiom _OWLSubClassOfAxiom;
-    private OWLSubDataPropertyOfAxiom _OWLSubDataPropertyOfAxiom;
-    private OWLSubObjectPropertyOfAxiom _OWLSubObjectPropertyOfAxiom;
-    private OWLSubPropertyChainOfAxiom _OWLSubPropertyChainOfAxiom;
-    private OWLSymmetricObjectPropertyAxiom _OWLSymmetricObjectPropertyAxiom;
-    private OWLTransitiveObjectPropertyAxiom _OWLTransitiveObjectPropertyAxiom;
-    private SWRLBuiltInAtom _SWRLBuiltInAtom;
-    private SWRLClassAtom _SWRLClassAtom;
-    private SWRLDataPropertyAtom _SWRLDataPropertyAtom;
-    private SWRLDataRangeAtom _SWRLDataRangeAtom;
-    private SWRLDifferentIndividualsAtom _SWRLDifferentIndividualsAtom;
-    private SWRLIndividualArgument _SWRLIndividualArgument;
-    private SWRLLiteralArgument _SWRLLiteralArgument;
-    private SWRLObjectPropertyAtom _SWRLObjectPropertyAtom;
-    private SWRLRule _SWRLRule;
-    private SWRLSameIndividualAtom _SWRLSameIndividualAtom;
-    private SWRLVariable _SWRLVariable;
 }

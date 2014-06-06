@@ -3,21 +3,23 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
+import java.io.IOException;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
+
 import com.clarkparsia.owlapi.explanation.io.ConciseExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.io.ExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.io.SilentExplanationRenderer;
 
-@SuppressWarnings({ "javadoc" })
+@SuppressWarnings({ "javadoc", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation_io {
     @Test
     public void enforceInterfacesConciseExplanationRenderer() {
-        assertTrue(com.clarkparsia.owlapi.explanation.io.ExplanationRenderer.class
-                .isAssignableFrom(ConciseExplanationRenderer.class));
+        assertTrue(com.clarkparsia.owlapi.explanation.io.ExplanationRenderer.class.isAssignableFrom(ConciseExplanationRenderer.class));
     }
 
     public void verifyConciseExplanationRenderer() {
@@ -27,7 +29,7 @@ public class Gen_com_clarkparsia_owlapi_explanation_io {
         testSubject0.render(_OWLAxiom, _Set);
     }
 
-    public void verifyInterfaceExplanationRenderer() {
+    public void verifyInterfaceExplanationRenderer() throws OWLException, IOException {
         ExplanationRenderer testSubject0 = mock(ExplanationRenderer.class);
         testSubject0.startRendering(_Writer);
         testSubject0.endRendering();
@@ -36,8 +38,7 @@ public class Gen_com_clarkparsia_owlapi_explanation_io {
 
     @Test
     public void enforceInterfacesSilentExplanationRenderer() {
-        assertTrue(com.clarkparsia.owlapi.explanation.io.ExplanationRenderer.class
-                .isAssignableFrom(SilentExplanationRenderer.class));
+        assertTrue(com.clarkparsia.owlapi.explanation.io.ExplanationRenderer.class.isAssignableFrom(SilentExplanationRenderer.class));
     }
 
     public void verifySilentExplanationRenderer() {

@@ -1,21 +1,20 @@
 package org.semanticweb.owlapi.migration_3_5_to_4;
 
+import java.io.IOException;
+
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.semanticweb.owlapi.BOMSafeJavaCharStream;
 
-import uk.ac.manchester.cs.BOMSafeJavaCharStream;
-
-@SuppressWarnings({ "javadoc" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 @Ignore
+@Migration("Package change: from uk.ac.manchester.cs.BOMSafeJavaCharStream to org.semanticweb.owlapi.BOMSafeJavaCharStream")
 public class Gen_uk_ac_manchester_cs {
-
-    public void verifyBOMSafeJavaCharStream()  {
-        BOMSafeJavaCharStream testSubject0 = new BOMSafeJavaCharStream(
-                _InputStream, _String, _int, _int);
-        BOMSafeJavaCharStream testSubject1 = new BOMSafeJavaCharStream(_Reader,
-                _int, _int);
+    public void verifyBOMSafeJavaCharStream() throws IOException {
+        BOMSafeJavaCharStream testSubject0 = new BOMSafeJavaCharStream(_InputStream, _String, _int, _int);
+        BOMSafeJavaCharStream testSubject1 = new BOMSafeJavaCharStream(_Reader, _int, _int);
         char result0 = testSubject0.readChar();
         testSubject0.backup(_int);
         char result1 = testSubject0.BeginToken();

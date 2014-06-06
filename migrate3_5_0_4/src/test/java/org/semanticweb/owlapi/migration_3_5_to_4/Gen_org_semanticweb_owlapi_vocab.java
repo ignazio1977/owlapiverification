@@ -12,34 +12,42 @@ import org.semanticweb.owlapi.vocab.OWL2Datatype;
 import org.semanticweb.owlapi.vocab.OWLFacet;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 import org.semanticweb.owlapi.vocab.OWLXMLVocabulary;
-import org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat;
+import org.semanticweb.owlapi.formats.PrefixOWLOntologyFormat;
 import org.semanticweb.owlapi.vocab.SKOSVocabulary;
 import org.semanticweb.owlapi.vocab.SWRLBuiltInsVocabulary;
 import org.semanticweb.owlapi.vocab.SWRLVocabulary;
 import org.semanticweb.owlapi.vocab.XSDVocabulary;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "deprecation" })
+@SuppressWarnings({ "javadoc", "deprecation", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
+@Migration({ "Package change: org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat to org.semanticweb.owlapi.formats.PrefixOWLOntologyFormat",
+        "method deleted: DublinCoreVocabulary::getURI()", "method deleted: OWL2Datatype::getURI()", "method deleted: OWLRDFVocabulary::getURI()",
+        "method deleted: OWLXMLVocabulary::getURI()", "method deleted: SWRLVocabulary::getURI()", "method deleted: SKOSVocabulary::getURI()",
+        "method changed: PrefixOWLOntologyFormat::clearPrefixes() : clear()", "method changed: OWL2Datatype::getShortName() : getShortForm()",
+        "method changed: OWLRDFVocabulary::getShortName() : getShortForm()", "method changed: OWLXMLVocabulary::getShortName() : getShortForm()",
+        "method changed: SWRLVocabulary::getShortName() : getShortForm()", "method changed: SKOSVocabulary::getShortName() : getShortForm()",
+        "method changed: OWLFacet::getShortName() : getShortForm()", "method changed: DublinCoreVocabulary::getQName() : getPrefixedName()",
+        "method changed: SWRLBuiltInsVocabulary::getShortName() : getShortForm()", "method changed: SWRLBuiltInsVocabulary::getArity() : getMinArity(), getMaxArity()",
+        "method changed: SWRLBuiltInsVocabulary::getShortName() : getShortForm()", })
 public class Gen_org_semanticweb_owlapi_vocab {
-
     @Test
-    public void enforceInterfacesBuiltInVocabulary()  {
+    public void enforceInterfacesBuiltInVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(BuiltInVocabulary.class));
     }
 
-    public void verifyEnumBuiltInVocabulary()  {
+    public void verifyEnumBuiltInVocabulary() {
         BuiltInVocabulary testSubject0 = BuiltInVocabulary.DUBLIN_CORE;
         BuiltInVocabulary testSubject1 = BuiltInVocabulary.SKOS;
         BuiltInVocabulary testSubject2 = BuiltInVocabulary.SWRL;
     }
 
     @Test
-    public void enforceInterfacesDublinCoreVocabulary()  {
+    public void enforceInterfacesDublinCoreVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(DublinCoreVocabulary.class));
     }
 
-    public void verifyEnumDublinCoreVocabulary()  {
+    public void verifyEnumDublinCoreVocabulary() {
         DublinCoreVocabulary testSubject0 = DublinCoreVocabulary.CONTRIBUTOR;
         DublinCoreVocabulary testSubject1 = DublinCoreVocabulary.COVERAGE;
         DublinCoreVocabulary testSubject2 = DublinCoreVocabulary.CREATOR;
@@ -55,18 +63,17 @@ public class Gen_org_semanticweb_owlapi_vocab {
         DublinCoreVocabulary testSubject12 = DublinCoreVocabulary.SUBJECT;
         DublinCoreVocabulary testSubject13 = DublinCoreVocabulary.TITLE;
         DublinCoreVocabulary testSubject14 = DublinCoreVocabulary.TYPE;
-        String result0 = testSubject0.getShortName();
+        String result0 = testSubject0.getShortForm();
         IRI result1 = testSubject0.getIRI();
-        java.net.URI result2 = testSubject0.getURI();
-        String result3 = testSubject0.getQName();
+        String result3 = testSubject0.getPrefixedName();
     }
 
     @Test
-    public void enforceInterfacesNamespaces()  {
+    public void enforceInterfacesNamespaces() {
         assertTrue(Enum.class.isAssignableFrom(Namespaces.class));
     }
 
-    public void verifyEnumNamespaces()  {
+    public void verifyEnumNamespaces() {
         Namespaces testSubject0 = Namespaces.OWL2;
         Namespaces testSubject1 = Namespaces.OWL11XML;
         Namespaces testSubject2 = Namespaces.OWL11;
@@ -126,11 +133,11 @@ public class Gen_org_semanticweb_owlapi_vocab {
     }
 
     @Test
-    public void enforceInterfacesOWL2Datatype()  {
+    public void enforceInterfacesOWL2Datatype() {
         assertTrue(Enum.class.isAssignableFrom(OWL2Datatype.class));
     }
 
-    public void verifyEnumOWL2Datatype()  {
+    public void verifyEnumOWL2Datatype() {
         OWL2Datatype testSubject0 = OWL2Datatype.RDF_XML_LITERAL;
         OWL2Datatype testSubject1 = OWL2Datatype.RDFS_LITERAL;
         OWL2Datatype testSubject2 = OWL2Datatype.RDF_PLAIN_LITERAL;
@@ -168,29 +175,23 @@ public class Gen_org_semanticweb_owlapi_vocab {
         boolean result0 = testSubject0.isFinite();
         boolean result1 = testSubject0.isNumeric();
         boolean result2 = OWL2Datatype.isBuiltIn(_IRI);
-        String result3 = testSubject0.getShortName();
-        org.semanticweb.owlapi.vocab.OWL2Datatype result4 = OWL2Datatype
-                .getDatatype(_IRI);
-        OWLDatatype result5 = testSubject0
-                .getDatatype(_OWLDataFactory);
-        java.util.Set<IRI> result6 = OWL2Datatype
-                .getDatatypeIRIs();
+        String result3 = testSubject0.getShortForm();
+        org.semanticweb.owlapi.vocab.OWL2Datatype result4 = OWL2Datatype.getDatatype(_IRI);
+        OWLDatatype result5 = testSubject0.getDatatype(_OWLDataFactory);
+        java.util.Set<IRI> result6 = OWL2Datatype.getDatatypeIRIs();
         java.util.regex.Pattern result7 = testSubject0.getPattern();
-        org.semanticweb.owlapi.vocab.OWL2Datatype.Category result8 = testSubject0
-                .getCategory();
-        java.util.Collection<org.semanticweb.owlapi.vocab.OWLFacet> result9 = testSubject0
-                .getFacets();
+        org.semanticweb.owlapi.vocab.OWL2Datatype.Category result8 = testSubject0.getCategory();
+        java.util.Collection<org.semanticweb.owlapi.vocab.OWLFacet> result9 = testSubject0.getFacets();
         boolean result10 = testSubject0.isInLexicalSpace(_String);
         IRI result11 = testSubject0.getIRI();
-        java.net.URI result12 = testSubject0.getURI();
     }
 
     @Test
-    public void enforceInterfacesOWLFacet()  {
+    public void enforceInterfacesOWLFacet() {
         assertTrue(Enum.class.isAssignableFrom(OWLFacet.class));
     }
 
-    public void verifyEnumOWLFacet()  {
+    public void verifyEnumOWLFacet() {
         OWLFacet testSubject0 = OWLFacet.LENGTH;
         OWLFacet testSubject1 = OWLFacet.MIN_LENGTH;
         OWLFacet testSubject2 = OWLFacet.MAX_LENGTH;
@@ -202,25 +203,22 @@ public class Gen_org_semanticweb_owlapi_vocab {
         OWLFacet testSubject8 = OWLFacet.TOTAL_DIGITS;
         OWLFacet testSubject9 = OWLFacet.FRACTION_DIGITS;
         OWLFacet testSubject10 = OWLFacet.LANG_RANGE;
-        String result0 = testSubject0.getShortName();
+        String result0 = testSubject0.getShortForm();
         java.util.Set<String> result1 = OWLFacet.getFacets();
         org.semanticweb.owlapi.vocab.OWLFacet result2 = OWLFacet.getFacet(_IRI);
         String result3 = testSubject0.getSymbolicForm();
-        java.util.Set<IRI> result4 = OWLFacet
-                .getFacetIRIs();
-        org.semanticweb.owlapi.vocab.OWLFacet result5 = OWLFacet
-                .getFacetByShortName(_String);
-        org.semanticweb.owlapi.vocab.OWLFacet result6 = OWLFacet
-                .getFacetBySymbolicName(_String);
+        java.util.Set<IRI> result4 = OWLFacet.getFacetIRIs();
+        org.semanticweb.owlapi.vocab.OWLFacet result5 = OWLFacet.getFacetByShortName(_String);
+        org.semanticweb.owlapi.vocab.OWLFacet result6 = OWLFacet.getFacetBySymbolicName(_String);
         IRI result7 = testSubject0.getIRI();
     }
 
     @Test
-    public void enforceInterfacesOWLRDFVocabulary()  {
+    public void enforceInterfacesOWLRDFVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(OWLRDFVocabulary.class));
     }
 
-    public void verifyEnumOWLRDFVocabulary()  {
+    public void verifyEnumOWLRDFVocabulary() {
         OWLRDFVocabulary testSubject0 = OWLRDFVocabulary.OWL_THING;
         OWLRDFVocabulary testSubject1 = OWLRDFVocabulary.OWL_NOTHING;
         OWLRDFVocabulary testSubject2 = OWLRDFVocabulary.OWL_CLASS;
@@ -347,19 +345,17 @@ public class Gen_org_semanticweb_owlapi_vocab {
         OWLRDFVocabulary testSubject123 = OWLRDFVocabulary.OWL_ASSERTION_PROPERTY;
         OWLRDFVocabulary testSubject124 = OWLRDFVocabulary.OWL_TARGET_INDIVIDUAL;
         OWLRDFVocabulary testSubject125 = OWLRDFVocabulary.OWL_TARGET_VALUE;
-        org.semanticweb.owlapi.vocab.Namespaces result0 = testSubject0
-                .getNamespace();
-        String result1 = testSubject0.getShortName();
+        org.semanticweb.owlapi.vocab.Namespaces result0 = testSubject0.getNamespace();
+        String result1 = testSubject0.getShortForm();
         IRI result2 = testSubject0.getIRI();
-        java.net.URI result3 = testSubject0.getURI();
     }
 
     @Test
-    public void enforceInterfacesOWLXMLVocabulary()  {
+    public void enforceInterfacesOWLXMLVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(OWLXMLVocabulary.class));
     }
 
-    public void verifyEnumOWLXMLVocabulary()  {
+    public void verifyEnumOWLXMLVocabulary() {
         OWLXMLVocabulary testSubject0 = OWLXMLVocabulary.CLASS;
         OWLXMLVocabulary testSubject1 = OWLXMLVocabulary.DATA_PROPERTY;
         OWLXMLVocabulary testSubject2 = OWLXMLVocabulary.OBJECT_PROPERTY;
@@ -461,30 +457,25 @@ public class Gen_org_semanticweb_owlapi_vocab {
         OWLXMLVocabulary testSubject98 = OWLXMLVocabulary.DIFFERENT_INDIVIDUALS_ATOM;
         OWLXMLVocabulary testSubject99 = OWLXMLVocabulary.VARIABLE;
         OWLXMLVocabulary testSubject100 = OWLXMLVocabulary.DESCRIPTION_GRAPH_RULE;
-        String result0 = testSubject0.getShortName();
+        String result0 = testSubject0.getShortForm();
         IRI result1 = testSubject0.getIRI();
-        java.net.URI result2 = testSubject0.getURI();
     }
 
     @Test
-    public void enforceInterfacesPrefixOWLOntologyFormat()  {
-        assertTrue(OWLOntologyFormat.class
-                .isAssignableFrom(PrefixOWLOntologyFormat.class));
-        assertTrue(PrefixManager.class
-                .isAssignableFrom(PrefixOWLOntologyFormat.class));
+    public void enforceInterfacesPrefixOWLOntologyFormat() {
+        assertTrue(OWLOntologyFormat.class.isAssignableFrom(PrefixOWLOntologyFormat.class));
+        assertTrue(PrefixManager.class.isAssignableFrom(PrefixOWLOntologyFormat.class));
     }
 
-    public void verifyPrefixOWLOntologyFormat()  {
+    public void verifyPrefixOWLOntologyFormat() {
         PrefixOWLOntologyFormat testSubject0 = new PrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat testSubject1 = new PrefixOWLOntologyFormat(
-                _DefaultPrefixManager);
+        PrefixOWLOntologyFormat testSubject1 = new PrefixOWLOntologyFormat(_DefaultPrefixManager);
         testSubject0.setPrefixManager(_DefaultPrefixManager);
         testSubject0.setPrefix(_String, _String);
-        testSubject0.clearPrefixes();
+        testSubject0.clear();
         testSubject0.copyPrefixesFrom(_PrefixOWLOntologyFormat);
         testSubject0.copyPrefixesFrom(_PrefixManager);
-        java.util.Map<String, String> result0 = testSubject0
-                .getPrefixName2PrefixMap();
+        java.util.Map<String, String> result0 = testSubject0.getPrefixName2PrefixMap();
         java.util.Set<String> result1 = testSubject0.getPrefixNames();
         String result2 = testSubject0.getPrefix(_String);
         testSubject0.setDefaultPrefix(_String);
@@ -492,22 +483,18 @@ public class Gen_org_semanticweb_owlapi_vocab {
         String result4 = testSubject0.getDefaultPrefix();
         String result5 = testSubject0.getPrefixIRI(_IRI);
         IRI result6 = testSubject0.getIRI(_String);
-        testSubject0.setParameter(_Object, _Object);
-        Object result7 = testSubject0.getParameter(_Object, _Object);
         boolean result8 = testSubject0.isPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result9 = testSubject0
-                .asPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result10 = testSubject0
-                .getOntologyLoaderMetaData();
+        PrefixOWLOntologyFormat result9 = testSubject0.asPrefixOWLOntologyFormat();
+        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result10 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
     @Test
-    public void enforceInterfacesSKOSVocabulary()  {
+    public void enforceInterfacesSKOSVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(SKOSVocabulary.class));
     }
 
-    public void verifyEnumSKOSVocabulary()  {
+    public void verifyEnumSKOSVocabulary() {
         SKOSVocabulary testSubject0 = SKOSVocabulary.BROADMATCH;
         SKOSVocabulary testSubject1 = SKOSVocabulary.BROADER;
         SKOSVocabulary testSubject2 = SKOSVocabulary.BROADERTRANSITIVE;
@@ -545,29 +532,22 @@ public class Gen_org_semanticweb_owlapi_vocab {
         SKOSVocabulary testSubject34 = SKOSVocabulary.COLLECTABLEPROPERTY;
         SKOSVocabulary testSubject35 = SKOSVocabulary.RESOURCE;
         SKOSVocabulary testSubject36 = SKOSVocabulary.COMMENT;
-        java.util.Set<OWLClass> result0 = SKOSVocabulary
-                .getClasses(_OWLDataFactory);
-        java.util.Set<OWLObjectProperty> result1 = SKOSVocabulary
-                .getObjectProperties(_OWLDataFactory);
-        java.util.Set<OWLDataProperty> result2 = SKOSVocabulary
-                .getDataProperties(_OWLDataFactory);
+        java.util.Set<OWLClass> result0 = SKOSVocabulary.getClasses(_OWLDataFactory);
+        java.util.Set<OWLObjectProperty> result1 = SKOSVocabulary.getObjectProperties(_OWLDataFactory);
+        java.util.Set<OWLDataProperty> result2 = SKOSVocabulary.getDataProperties(_OWLDataFactory);
         IRI result3 = testSubject0.getIRI();
-        java.net.URI result4 = testSubject0.getURI();
-        EntityType<?> result5 = testSubject0
-                .getEntityType();
-        java.util.Set<OWLAnnotationProperty> result6 = SKOSVocabulary
-                .getAnnotationProperties(_OWLDataFactory);
+        EntityType<?> result5 = testSubject0.getEntityType();
+        java.util.Set<OWLAnnotationProperty> result6 = SKOSVocabulary.getAnnotationProperties(_OWLDataFactory);
         String result7 = testSubject0.getLocalName();
     }
 
     @Test
-    public void enforceInterfacesSWRLBuiltInsVocabulary()  {
+    public void enforceInterfacesSWRLBuiltInsVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(SWRLBuiltInsVocabulary.class));
-        assertTrue(SWRLPredicate.class
-                .isAssignableFrom(SWRLBuiltInsVocabulary.class));
+        assertTrue(SWRLPredicate.class.isAssignableFrom(SWRLBuiltInsVocabulary.class));
     }
 
-    public void verifyEnumSWRLBuiltInsVocabulary()  {
+    public void verifyEnumSWRLBuiltInsVocabulary() {
         SWRLBuiltInsVocabulary testSubject0 = SWRLBuiltInsVocabulary.EQUAL;
         SWRLBuiltInsVocabulary testSubject1 = SWRLBuiltInsVocabulary.NOT_EQUAL;
         SWRLBuiltInsVocabulary testSubject2 = SWRLBuiltInsVocabulary.LESS_THAN;
@@ -639,22 +619,17 @@ public class Gen_org_semanticweb_owlapi_vocab {
         SWRLBuiltInsVocabulary testSubject68 = SWRLBuiltInsVocabulary.ANY_URI;
         int result0 = testSubject0.getMinArity();
         int result1 = testSubject0.getMaxArity();
-        int result2 = testSubject0.getArity();
-        org.semanticweb.owlapi.vocab.SWRLBuiltInsVocabulary result3 = SWRLBuiltInsVocabulary
-                .getBuiltIn(_URI);
-        org.semanticweb.owlapi.vocab.SWRLBuiltInsVocabulary result4 = SWRLBuiltInsVocabulary
-                .getBuiltIn(_IRI);
-        String result5 = testSubject0.getShortName();
+        org.semanticweb.owlapi.vocab.SWRLBuiltInsVocabulary result4 = SWRLBuiltInsVocabulary.getBuiltIn(_IRI);
+        String result5 = testSubject0.getShortForm();
         IRI result6 = testSubject0.getIRI();
-        java.net.URI result7 = testSubject0.getURI();
     }
 
     @Test
-    public void enforceInterfacesSWRLVocabulary()  {
+    public void enforceInterfacesSWRLVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(SWRLVocabulary.class));
     }
 
-    public void verifyEnumSWRLVocabulary()  {
+    public void verifyEnumSWRLVocabulary() {
         SWRLVocabulary testSubject0 = SWRLVocabulary.IMP;
         SWRLVocabulary testSubject1 = SWRLVocabulary.INDIVIDUAL_PROPERTY_ATOM;
         SWRLVocabulary testSubject2 = SWRLVocabulary.DATAVALUED_PROPERTY_ATOM;
@@ -675,17 +650,16 @@ public class Gen_org_semanticweb_owlapi_vocab {
         SWRLVocabulary testSubject17 = SWRLVocabulary.ARGUMENTS;
         SWRLVocabulary testSubject18 = SWRLVocabulary.ARGUMENT_1;
         SWRLVocabulary testSubject19 = SWRLVocabulary.ARGUMENT_2;
-        String result0 = testSubject0.getShortName();
+        String result0 = testSubject0.getShortForm();
         IRI result1 = testSubject0.getIRI();
-        java.net.URI result2 = testSubject0.getURI();
     }
 
     @Test
-    public void enforceInterfacesXSDVocabulary()  {
+    public void enforceInterfacesXSDVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(XSDVocabulary.class));
     }
 
-    public void verifyEnumXSDVocabulary()  {
+    public void verifyEnumXSDVocabulary() {
         XSDVocabulary testSubject0 = XSDVocabulary.ANY_TYPE;
         XSDVocabulary testSubject1 = XSDVocabulary.ANY_SIMPLE_TYPE;
         XSDVocabulary testSubject2 = XSDVocabulary.STRING;
@@ -732,19 +706,16 @@ public class Gen_org_semanticweb_owlapi_vocab {
         XSDVocabulary testSubject43 = XSDVocabulary.G_MONTH;
         XSDVocabulary testSubject44 = XSDVocabulary.UNSIGNED_SHORT;
         XSDVocabulary testSubject45 = XSDVocabulary.UNSIGNED_BYTE;
-        String result0 = testSubject0.getShortName();
-        org.semanticweb.owlapi.vocab.XSDVocabulary result1 = XSDVocabulary
-                .parseShortName(_String);
+        String result0 = testSubject0.getShortForm();
+        org.semanticweb.owlapi.vocab.XSDVocabulary result1 = XSDVocabulary.parseShortName(_String);
         IRI result2 = testSubject0.getIRI();
     }
 
-    private Object _Object;
     private String _String;
-    private java.net.URI _URI;
     private org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData _OWLOntologyLoaderMetaData;
     private IRI _IRI;
     private OWLDataFactory _OWLDataFactory;
     private PrefixManager _PrefixManager;
     private org.semanticweb.owlapi.util.DefaultPrefixManager _DefaultPrefixManager;
-    private org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat _PrefixOWLOntologyFormat;
+    private PrefixOWLOntologyFormat _PrefixOWLOntologyFormat;
 }

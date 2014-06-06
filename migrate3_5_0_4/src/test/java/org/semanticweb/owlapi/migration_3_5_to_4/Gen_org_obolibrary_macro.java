@@ -13,36 +13,28 @@ import org.obolibrary.macro.MacroExpansionGCIVisitor;
 import org.obolibrary.macro.MacroExpansionVisitor;
 import org.obolibrary.macro.ManchesterSyntaxTool;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.util.OntologyAxiomPair;
 
-@SuppressWarnings({ "javadoc" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
+@Migration({ "method change: AbstractMacroExpansionVisitor<init> : dropped logger", "method change: ManchesterSyntaxTool<init> : dropped boolean", })
 public class Gen_org_obolibrary_macro {
-
     @Test
-    public void enforceInterfacesAbstractMacroExpansionVisitor()
-             {
-        assertTrue(OWLClassExpressionVisitorEx.class
-                .isAssignableFrom(AbstractMacroExpansionVisitor.class));
-        assertTrue(OWLDataVisitorEx.class
-                .isAssignableFrom(AbstractMacroExpansionVisitor.class));
-        assertTrue(OWLAxiomVisitorEx.class
-                .isAssignableFrom(AbstractMacroExpansionVisitor.class));
+    public void enforceInterfacesAbstractMacroExpansionVisitor() {
+        assertTrue(OWLClassExpressionVisitorEx.class.isAssignableFrom(AbstractMacroExpansionVisitor.class));
+        assertTrue(OWLDataVisitorEx.class.isAssignableFrom(AbstractMacroExpansionVisitor.class));
+        assertTrue(OWLAxiomVisitorEx.class.isAssignableFrom(AbstractMacroExpansionVisitor.class));
     }
 
-    public void verifyAbstractMacroExpansionVisitor()  {
-        AbstractMacroExpansionVisitor testSubject0 = new AbstractMacroExpansionVisitor(
-                _OWLOntology, mock(Logger.class)) {
-
+    public void verifyAbstractMacroExpansionVisitor() {
+        AbstractMacroExpansionVisitor testSubject0 = new AbstractMacroExpansionVisitor(_OWLOntology) {
             @Override
-            protected OWLClassExpression expandOWLObjSomeVal(
-                    OWLClassExpression filler, OWLObjectPropertyExpression p) {
+            protected OWLClassExpression expandOWLObjSomeVal(OWLClassExpression filler, OWLObjectPropertyExpression p) {
                 return null;
             }
 
             @Override
-            protected OWLClassExpression expandOWLObjHasVal(
-                    OWLObjectHasValue desc, OWLIndividual filler,
-                    OWLObjectPropertyExpression p) {
+            protected OWLClassExpression expandOWLObjHasVal(OWLObjectHasValue desc, OWLIndividual filler, OWLObjectPropertyExpression p) {
                 return null;
             }
         };
@@ -55,15 +47,12 @@ public class Gen_org_obolibrary_macro {
         Object result6 = testSubject0.visit(_OWLDeclarationAxiom);
         Object result7 = testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
         Object result8 = testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        Object result9 = testSubject0
-                .visit(_OWLNegativeObjectPropertyAssertionAxiom);
+        Object result9 = testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
         Object result10 = testSubject0.visit(_OWLFacetRestriction);
         Object result11 = testSubject0.visit(_OWLDatatypeRestriction);
         Object result12 = testSubject0.visit(_OWLHasKeyAxiom);
-        Object result13 = testSubject0
-                .visit(_OWLNegativeDataPropertyAssertionAxiom);
-        Object result14 = testSubject0
-                .visit(_OWLEquivalentObjectPropertiesAxiom);
+        Object result13 = testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
+        Object result14 = testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
         Object result15 = testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
         Object result16 = testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
         Object result17 = testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
@@ -79,11 +68,9 @@ public class Gen_org_obolibrary_macro {
         Object result27 = testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
         Object result28 = testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
         Object result29 = testSubject0.visit(_OWLSameIndividualAxiom);
-        Object result30 = testSubject0
-                .visit(_OWLInverseFunctionalObjectPropertyAxiom);
+        Object result30 = testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
         Object result31 = testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        Object result32 = testSubject0
-                .visit(_OWLIrreflexiveObjectPropertyAxiom);
+        Object result32 = testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
         Object result33 = testSubject0.visit(_OWLDataHasValue);
         Object result34 = testSubject0.visit(_OWLDataAllValuesFrom);
         Object result35 = testSubject0.visit(_OWLDataSomeValuesFrom);
@@ -116,171 +103,96 @@ public class Gen_org_obolibrary_macro {
         Object result62 = testSubject0.visit(_OWLObjectPropertyRangeAxiom);
         Object result63 = testSubject0.visit(_OWLObjectPropertyDomainAxiom);
         Object result64 = testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        OWLAxiom result65 = testSubject0
-                .visit(_OWLDataPropertyDomainAxiom);
-        OWLAxiom result66 = testSubject0
-                .visit(_OWLObjectPropertyDomainAxiom);
-        OWLAxiom result67 = testSubject0
-                .visit(_OWLObjectPropertyRangeAxiom);
-        OWLAxiom result68 = testSubject0
-                .visit(_OWLDisjointUnionAxiom);
-        OWLAxiom result69 = testSubject0
-                .visit(_OWLDataPropertyRangeAxiom);
-        OWLDataRange result70 = testSubject0
-                .visit(_OWLDataIntersectionOf);
-        OWLDataRange result71 = testSubject0
-                .visit(_OWLDataUnionOf);
-        OWLAxiom result72 = testSubject0
-                .visit(_OWLSubClassOfAxiom);
-        OWLAxiom result73 = testSubject0
-                .visit(_OWLDisjointClassesAxiom);
-        OWLClassExpression result74 = testSubject0
-                .visit(_OWLObjectOneOf);
-        OWLDataRange result75 = testSubject0
-                .visit(_OWLDatatype);
-        OWLDataRange result76 = testSubject0
-                .visit(_OWLDataComplementOf);
-        OWLAxiom result77 = testSubject0
-                .visit(_OWLHasKeyAxiom);
-        OWLAxiom result78 = testSubject0
-                .visit(_OWLClassAssertionAxiom);
-        OWLAxiom result79 = testSubject0
-                .visit(_OWLEquivalentClassesAxiom);
-        OWLClassExpression result80 = testSubject0
-                .visit(_OWLClass);
-        OWLClassExpression result81 = testSubject0
-                .visit(_OWLObjectHasSelf);
-        OWLClassExpression result82 = testSubject0
-                .visit(_OWLObjectHasValue);
-        OWLClassExpression result83 = testSubject0
-                .visit(_OWLObjectAllValuesFrom);
-        OWLClassExpression result84 = testSubject0
-                .visit(_OWLObjectMinCardinality);
-        OWLClassExpression result85 = testSubject0
-                .visit(_OWLObjectExactCardinality);
-        OWLClassExpression result86 = testSubject0
-                .visit(_OWLObjectIntersectionOf);
-        OWLClassExpression result87 = testSubject0
-                .visit(_OWLObjectUnionOf);
-        OWLClassExpression result88 = testSubject0
-                .visit(_OWLObjectComplementOf);
-        OWLClassExpression result89 = testSubject0
-                .visit(_OWLObjectSomeValuesFrom);
-        OWLClassExpression result90 = testSubject0
-                .visit(_OWLDataExactCardinality);
-        OWLClassExpression result91 = testSubject0
-                .visit(_OWLDataMaxCardinality);
-        OWLClassExpression result92 = testSubject0
-                .visit(_OWLDataMinCardinality);
-        OWLDataRange result93 = testSubject0
-                .visit(_OWLDataOneOf);
-        OWLClassExpression result94 = testSubject0
-                .visit(_OWLObjectMaxCardinality);
-        OWLClassExpression result95 = testSubject0
-                .visit(_OWLDataSomeValuesFrom);
-        OWLClassExpression result96 = testSubject0
-                .visit(_OWLDataAllValuesFrom);
-        OWLClassExpression result97 = testSubject0
-                .visit(_OWLDataHasValue);
-        OWLAxiom result98 = testSubject0
-                .visit(_OWLIrreflexiveObjectPropertyAxiom);
-        OWLAxiom result99 = testSubject0
-                .visit(_OWLSubDataPropertyOfAxiom);
-        OWLAxiom result100 = testSubject0
-                .visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        OWLAxiom result101 = testSubject0
-                .visit(_OWLSameIndividualAxiom);
-        OWLAxiom result102 = testSubject0
-                .visit(_OWLFunctionalDataPropertyAxiom);
-        OWLAxiom result103 = testSubject0
-                .visit(_OWLEquivalentDataPropertiesAxiom);
-        OWLAxiom result104 = testSubject0
-                .visit(_OWLDataPropertyAssertionAxiom);
-        OWLAxiom result105 = testSubject0
-                .visit(_OWLTransitiveObjectPropertyAxiom);
-        OWLAxiom result106 = testSubject0
-                .visit(_OWLAnnotationPropertyRangeAxiom);
-        OWLAxiom result107 = testSubject0
-                .visit(_OWLSubAnnotationPropertyOfAxiom);
-        OWLAxiom result108 = testSubject0
-                .visit(_OWLDatatypeDefinitionAxiom);
-        OWLDataRange result109 = testSubject0
-                .visit(_OWLLiteral);
-        OWLAxiom result110 = testSubject0
-                .visit(_OWLSubPropertyChainOfAxiom);
-        OWLAxiom result111 = testSubject0
-                .visit(_OWLInverseObjectPropertiesAxiom);
-        OWLAxiom result112 = testSubject0
-                .visit(_SWRLRule);
-        OWLAxiom result113 = testSubject0
-                .visit(_OWLAnnotationPropertyDomainAxiom);
-        OWLAxiom result114 = testSubject0
-                .visit(_OWLReflexiveObjectPropertyAxiom);
-        OWLAxiom result115 = testSubject0
-                .visit(_OWLEquivalentObjectPropertiesAxiom);
-        OWLAxiom result116 = testSubject0
-                .visit(_OWLNegativeDataPropertyAssertionAxiom);
-        OWLAxiom result117 = testSubject0
-                .visit(_OWLDifferentIndividualsAxiom);
-        OWLDataRange result118 = testSubject0
-                .visit(_OWLDatatypeRestriction);
-        OWLDataRange result119 = testSubject0
-                .visit(_OWLFacetRestriction);
-        OWLAxiom result120 = testSubject0
-                .visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        OWLAxiom result121 = testSubject0
-                .visit(_OWLAsymmetricObjectPropertyAxiom);
-        OWLAxiom result122 = testSubject0
-                .visit(_OWLSubObjectPropertyOfAxiom);
-        OWLAxiom result123 = testSubject0
-                .visit(_OWLDeclarationAxiom);
-        OWLAxiom result124 = testSubject0
-                .visit(_OWLAnnotationAssertionAxiom);
-        OWLAxiom result125 = testSubject0
-                .visit(_OWLSymmetricObjectPropertyAxiom);
-        OWLAxiom result126 = testSubject0
-                .visit(_OWLDisjointDataPropertiesAxiom);
-        OWLAxiom result127 = testSubject0
-                .visit(_OWLDisjointObjectPropertiesAxiom);
-        OWLAxiom result128 = testSubject0
-                .visit(_OWLObjectPropertyAssertionAxiom);
-        OWLAxiom result129 = testSubject0
-                .visit(_OWLFunctionalObjectPropertyAxiom);
+        OWLAxiom result65 = testSubject0.visit(_OWLDataPropertyDomainAxiom);
+        OWLAxiom result66 = testSubject0.visit(_OWLObjectPropertyDomainAxiom);
+        OWLAxiom result67 = testSubject0.visit(_OWLObjectPropertyRangeAxiom);
+        OWLAxiom result68 = testSubject0.visit(_OWLDisjointUnionAxiom);
+        OWLAxiom result69 = testSubject0.visit(_OWLDataPropertyRangeAxiom);
+        OWLDataRange result70 = testSubject0.visit(_OWLDataIntersectionOf);
+        OWLDataRange result71 = testSubject0.visit(_OWLDataUnionOf);
+        OWLAxiom result72 = testSubject0.visit(_OWLSubClassOfAxiom);
+        OWLAxiom result73 = testSubject0.visit(_OWLDisjointClassesAxiom);
+        OWLClassExpression result74 = testSubject0.visit(_OWLObjectOneOf);
+        OWLDataRange result75 = testSubject0.visit(_OWLDatatype);
+        OWLDataRange result76 = testSubject0.visit(_OWLDataComplementOf);
+        OWLAxiom result77 = testSubject0.visit(_OWLHasKeyAxiom);
+        OWLAxiom result78 = testSubject0.visit(_OWLClassAssertionAxiom);
+        OWLAxiom result79 = testSubject0.visit(_OWLEquivalentClassesAxiom);
+        OWLClassExpression result80 = testSubject0.visit(_OWLClass);
+        OWLClassExpression result81 = testSubject0.visit(_OWLObjectHasSelf);
+        OWLClassExpression result82 = testSubject0.visit(_OWLObjectHasValue);
+        OWLClassExpression result83 = testSubject0.visit(_OWLObjectAllValuesFrom);
+        OWLClassExpression result84 = testSubject0.visit(_OWLObjectMinCardinality);
+        OWLClassExpression result85 = testSubject0.visit(_OWLObjectExactCardinality);
+        OWLClassExpression result86 = testSubject0.visit(_OWLObjectIntersectionOf);
+        OWLClassExpression result87 = testSubject0.visit(_OWLObjectUnionOf);
+        OWLClassExpression result88 = testSubject0.visit(_OWLObjectComplementOf);
+        OWLClassExpression result89 = testSubject0.visit(_OWLObjectSomeValuesFrom);
+        OWLClassExpression result90 = testSubject0.visit(_OWLDataExactCardinality);
+        OWLClassExpression result91 = testSubject0.visit(_OWLDataMaxCardinality);
+        OWLClassExpression result92 = testSubject0.visit(_OWLDataMinCardinality);
+        OWLDataRange result93 = testSubject0.visit(_OWLDataOneOf);
+        OWLClassExpression result94 = testSubject0.visit(_OWLObjectMaxCardinality);
+        OWLClassExpression result95 = testSubject0.visit(_OWLDataSomeValuesFrom);
+        OWLClassExpression result96 = testSubject0.visit(_OWLDataAllValuesFrom);
+        OWLClassExpression result97 = testSubject0.visit(_OWLDataHasValue);
+        OWLAxiom result98 = testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
+        OWLAxiom result99 = testSubject0.visit(_OWLSubDataPropertyOfAxiom);
+        OWLAxiom result100 = testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
+        OWLAxiom result101 = testSubject0.visit(_OWLSameIndividualAxiom);
+        OWLAxiom result102 = testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
+        OWLAxiom result103 = testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
+        OWLAxiom result104 = testSubject0.visit(_OWLDataPropertyAssertionAxiom);
+        OWLAxiom result105 = testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
+        OWLAxiom result106 = testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
+        OWLAxiom result107 = testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
+        OWLAxiom result108 = testSubject0.visit(_OWLDatatypeDefinitionAxiom);
+        OWLDataRange result109 = testSubject0.visit(_OWLLiteral);
+        OWLAxiom result110 = testSubject0.visit(_OWLSubPropertyChainOfAxiom);
+        OWLAxiom result111 = testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
+        OWLAxiom result112 = testSubject0.visit(_SWRLRule);
+        OWLAxiom result113 = testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
+        OWLAxiom result114 = testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
+        OWLAxiom result115 = testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
+        OWLAxiom result116 = testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
+        OWLAxiom result117 = testSubject0.visit(_OWLDifferentIndividualsAxiom);
+        OWLDataRange result118 = testSubject0.visit(_OWLDatatypeRestriction);
+        OWLDataRange result119 = testSubject0.visit(_OWLFacetRestriction);
+        OWLAxiom result120 = testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
+        OWLAxiom result121 = testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
+        OWLAxiom result122 = testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
+        OWLAxiom result123 = testSubject0.visit(_OWLDeclarationAxiom);
+        OWLAxiom result124 = testSubject0.visit(_OWLAnnotationAssertionAxiom);
+        OWLAxiom result125 = testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
+        OWLAxiom result126 = testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
+        OWLAxiom result127 = testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
+        OWLAxiom result128 = testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
+        OWLAxiom result129 = testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
     }
 
-    public void verifyMacroExpansionGCIVisitor()  {
-        MacroExpansionGCIVisitor testSubject0 = new MacroExpansionGCIVisitor(
-                _OWLOntology, _OWLOntologyManager);
-        OWLOntology result0 = testSubject0
-                .createGCIOntology();
+    public void verifyMacroExpansionGCIVisitor() {
+        MacroExpansionGCIVisitor testSubject0 = new MacroExpansionGCIVisitor(_OWLOntology, _OWLOntologyManager);
+        OWLOntology result0 = testSubject0.createGCIOntology();
         testSubject0.dispose();
     }
 
-    public void verifyMacroExpansionVisitor()  {
-        MacroExpansionVisitor testSubject0 = new MacroExpansionVisitor(
-                _OWLOntology);
-        OWLOntology result0 = testSubject0
-                .expandAll();
+    public void verifyMacroExpansionVisitor() {
+        MacroExpansionVisitor testSubject0 = new MacroExpansionVisitor(_OWLOntology);
+        OWLOntology result0 = testSubject0.expandAll();
         testSubject0.dispose();
     }
 
-    public void verifyManchesterSyntaxTool()  {
-        ManchesterSyntaxTool testSubject0 = new ManchesterSyntaxTool(
-                _OWLOntology, _Collection);
-        ManchesterSyntaxTool testSubject1 = new ManchesterSyntaxTool(
-                _OWLOntology);
-        ManchesterSyntaxTool testSubject2 = new ManchesterSyntaxTool(
-                _OWLOntology, _Collection, _boolean);
+    public void verifyManchesterSyntaxTool() {
+        ManchesterSyntaxTool testSubject0 = new ManchesterSyntaxTool(_OWLOntology, _Collection);
+        ManchesterSyntaxTool testSubject1 = new ManchesterSyntaxTool(_OWLOntology);
+        ManchesterSyntaxTool testSubject2 = new ManchesterSyntaxTool(_OWLOntology, _Collection);
         String result0 = testSubject0.getId(_OWLEntity);
         String result1 = testSubject0.getId(_IRI);
-        java.util.Set<org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair> result2 = testSubject0
-                .parseManchesterExpressionFrames(_String);
-        OWLClassExpression result3 = testSubject0
-                .parseManchesterExpression(_String);
+        java.util.Set<OntologyAxiomPair> result2 = testSubject0.parseManchesterExpressionFrames(_String);
+        OWLClassExpression result3 = testSubject0.parseManchesterExpression(_String);
         testSubject0.dispose();
     }
 
-    private boolean _boolean;
     private String _String;
     private java.util.Collection<OWLOntology> _Collection;
     private IRI _IRI;

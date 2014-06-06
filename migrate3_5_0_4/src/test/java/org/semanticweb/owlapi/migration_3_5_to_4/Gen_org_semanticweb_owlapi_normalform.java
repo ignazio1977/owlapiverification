@@ -9,42 +9,37 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.normalform.NegationalNormalFormConverter;
 import org.semanticweb.owlapi.normalform.NormalFormRewriter;
 import org.semanticweb.owlapi.normalform.OWLObjectComplementOfExtractor;
+import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_normalform {
     @Test
-    public void enforceInterfacesNegationalNormalFormConverter()  {
-        assertTrue(org.semanticweb.owlapi.normalform.NormalFormRewriter.class
-                .isAssignableFrom(NegationalNormalFormConverter.class));
+    public void enforceInterfacesNegationalNormalFormConverter() {
+        assertTrue(org.semanticweb.owlapi.normalform.NormalFormRewriter.class.isAssignableFrom(NegationalNormalFormConverter.class));
     }
 
-    public void verifyNegationalNormalFormConverter()  {
-        NegationalNormalFormConverter testSubject0 = new NegationalNormalFormConverter(
-                _OWLDataFactory);
+    public void verifyNegationalNormalFormConverter() {
+        NegationalNormalFormConverter testSubject0 = new NegationalNormalFormConverter(_OWLDataFactory);
         boolean result0 = testSubject0.isInNormalForm(_OWLClassExpression);
-        OWLClassExpression result1 = testSubject0
-                .convertToNormalForm(_OWLClassExpression);
+        OWLClassExpression result1 = testSubject0.convertToNormalForm(_OWLClassExpression);
     }
 
-    public void verifyInterfaceNormalFormRewriter()  {
+    public void verifyInterfaceNormalFormRewriter() {
         NormalFormRewriter testSubject0 = mock(NormalFormRewriter.class);
         boolean result0 = testSubject0.isInNormalForm(_OWLClassExpression);
-        OWLClassExpression result1 = testSubject0
-                .convertToNormalForm(_OWLClassExpression);
+        OWLClassExpression result1 = testSubject0.convertToNormalForm(_OWLClassExpression);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectComplementOfExtractor()  {
-        assertTrue(OWLClassExpressionVisitor.class
-                .isAssignableFrom(OWLObjectComplementOfExtractor.class));
+    public void enforceInterfacesOWLObjectComplementOfExtractor() {
+        assertTrue(OWLClassExpressionVisitor.class.isAssignableFrom(OWLObjectComplementOfExtractor.class));
     }
 
-    public void verifyOWLObjectComplementOfExtractor()  {
+    public void verifyOWLObjectComplementOfExtractor() {
         OWLObjectComplementOfExtractor testSubject0 = new OWLObjectComplementOfExtractor();
         testSubject0.reset();
-        java.util.Set<OWLClassExpression> result0 = testSubject0
-                .getComplementedClassExpressions(_OWLClassExpression);
+        java.util.Set<OWLClassExpression> result0 = testSubject0.getComplementedClassExpressions(_OWLClassExpression);
         testSubject0.visit(_OWLObjectMaxCardinality);
         testSubject0.visit(_OWLObjectMinCardinality);
         testSubject0.visit(_OWLObjectOneOf);

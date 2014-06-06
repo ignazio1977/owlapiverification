@@ -3,33 +3,31 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
-import org.coode.owlapi.rdf.rdfxml.RDFXMLNamespaceManager;
-import org.coode.owlapi.rdf.rdfxml.RDFXMLOntologyStorer;
-import org.coode.owlapi.rdf.rdfxml.RDFXMLRenderer;
-import org.coode.owlapi.rdf.rdfxml.RDFXMLWriter;
-import org.coode.xml.XMLWriter;
+import java.io.IOException;
+
+import org.semanticweb.owlapi.rdf.RDFRendererBase;
+import org.semanticweb.owlapi.rdf.rdfxml.renderer.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.semanticweb.owlapi.io.RDFResource;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "deprecation" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
+@Migration({ "Package change: from org.coode.owlapi.rdf.rdfxml to org.semanticweb.owlapi.rdf.rdfxml.renderer", "method change: RDFXMLNamespaceManager<init> : dropped manager",
+        "method change: RDFXMLNamespaceManager::getPrefixes() : return type is Iterable", "method change: RDFXMLNamespaceManager::getNamespaces() : return type is Iterable",
+        "method deleted: RDFXMLNamespaceManager::getPrefixNamespaceMap()", "method change: RDFXMLRenderer<init> : dropped manager",
+        "method deleted: RDFXMLRenderer::getOntology()", "method deleted: RDFXMLRenderer::getGraph()", })
 public class Gen_org_coode_owlapi_rdf_rdfxml {
-
     @Test
-    public void enforceInterfacesRDFXMLNamespaceManager()  {
-        assertTrue(org.coode.xml.OWLOntologyXMLNamespaceManager.class
-                .isAssignableFrom(RDFXMLNamespaceManager.class));
+    public void enforceInterfacesRDFXMLNamespaceManager() {
+        assertTrue(OWLOntologyXMLNamespaceManager.class.isAssignableFrom(RDFXMLNamespaceManager.class));
     }
 
-    public void verifyRDFXMLNamespaceManager()  {
-        RDFXMLNamespaceManager testSubject0 = new RDFXMLNamespaceManager(
-                _OWLOntologyManager, _OWLOntology);
-        RDFXMLNamespaceManager testSubject1 = new RDFXMLNamespaceManager(
-                _OWLOntology, _OWLOntologyFormat);
-        java.util.Set<OWLEntity> result0 = testSubject0
-                .getEntitiesWithInvalidQNames();
+    public void verifyRDFXMLNamespaceManager() {
+        RDFXMLNamespaceManager testSubject0 = new RDFXMLNamespaceManager(_OWLOntology, _OWLOntologyFormat);
+        java.util.Set<OWLEntity> result0 = testSubject0.getEntitiesWithInvalidQNames();
         String result1 = testSubject0.getQName(_String);
         testSubject0.setPrefix(_String, _String);
         String result2 = testSubject0.getDefaultPrefix();
@@ -39,56 +37,39 @@ public class Gen_org_coode_owlapi_rdf_rdfxml {
         String result4 = testSubject0.getNamespaceForPrefix(_String);
         testSubject0.createPrefixForNamespace(_String);
         String result5 = testSubject0.getDefaultNamespace();
-        java.util.Set<String> result6 = testSubject0.getPrefixes();
-        java.util.Set<String> result7 = testSubject0.getNamespaces();
-        java.util.Map<String, String> result8 = testSubject0
-                .getPrefixNamespaceMap();
+        Iterable<String> result6 = testSubject0.getPrefixes();
+        Iterable<String> result7 = testSubject0.getNamespaces();
     }
 
     @Test
-    public void enforceInterfacesRDFXMLOntologyStorer()  {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(RDFXMLOntologyStorer.class));
+    public void enforceInterfacesRDFXMLOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(RDFXMLOntologyStorer.class));
     }
 
-    public void verifyRDFXMLOntologyStorer()  {
+    public void verifyRDFXMLOntologyStorer() throws OWLOntologyStorageException {
         RDFXMLOntologyStorer testSubject0 = new RDFXMLOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesRDFXMLRenderer()  {
-        assertTrue(org.coode.owlapi.rdf.renderer.RDFRendererBase.class
-                .isAssignableFrom(RDFXMLRenderer.class));
+    public void enforceInterfacesRDFXMLRenderer() {
+        assertTrue(RDFRendererBase.class.isAssignableFrom(RDFXMLRenderer.class));
     }
 
-    public void verifyRDFXMLRenderer()  {
-        RDFXMLRenderer testSubject0 = new RDFXMLRenderer(_OWLOntology, _Writer,
-                _OWLOntologyFormat);
-        RDFXMLRenderer testSubject1 = new RDFXMLRenderer(_OWLOntologyManager,
-                _OWLOntology, _Writer, _OWLOntologyFormat);
+    public void verifyRDFXMLRenderer() throws IOException {
+        RDFXMLRenderer testSubject0 = new RDFXMLRenderer(_OWLOntology, _Writer, _OWLOntologyFormat);
         RDFXMLRenderer testSubject2 = new RDFXMLRenderer(_OWLOntology, _Writer);
-        RDFXMLRenderer testSubject3 = new RDFXMLRenderer(_OWLOntologyManager,
-                _OWLOntology, _Writer);
         testSubject0.render(_RDFResourceNode);
-        java.util.Set<OWLEntity> result0 = testSubject0
-                .getUnserialisableEntities();
+        java.util.Set<OWLEntity> result0 = testSubject0.getUnserialisableEntities();
         testSubject0.render();
-        OWLOntology result1 = testSubject0
-                .getOntology();
-        org.coode.owlapi.rdf.model.RDFGraph result2 = testSubject0.getGraph();
         testSubject0.renderAnonRoots();
     }
 
-    public void verifyRDFXMLWriter()  {
-        RDFXMLWriter testSubject0 = new RDFXMLWriter(mock(XMLWriter.class)) {};
+    public void verifyRDFXMLWriter() throws IOException {
+        RDFXMLWriter testSubject0 = new RDFXMLWriter(mock(XMLWriter.class)) {
+        };
         testSubject0.writeStartElement(_IRI);
         testSubject0.writeTextContent(_String);
         testSubject0.writeEndElement();
@@ -106,11 +87,10 @@ public class Gen_org_coode_owlapi_rdf_rdfxml {
 
     private java.io.Writer _Writer;
     private String _String;
-    private org.coode.owlapi.rdf.model.RDFResourceNode _RDFResourceNode;
+    private RDFResource _RDFResourceNode;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentTarget _OWLOntologyDocumentTarget;
     private IRI _IRI;
     private OWLObject _OWLObject;
     private OWLOntology _OWLOntology;
     private OWLOntologyFormat _OWLOntologyFormat;
-    private OWLOntologyManager _OWLOntologyManager;
 }
