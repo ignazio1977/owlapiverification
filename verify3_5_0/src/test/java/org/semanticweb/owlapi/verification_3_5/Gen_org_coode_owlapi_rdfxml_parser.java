@@ -7,11 +7,7 @@ import org.coode.owlapi.rdfxml.parser.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import IRI;
-import OWLClassExpression;
-import OWLLiteral;
-import OWLObject;
-import UnloadableImportException;
+import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation", "unchecked", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)

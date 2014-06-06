@@ -26,17 +26,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.expression.OWLEntityChecker;
 import org.semanticweb.owlapi.expression.OWLOntologyChecker;
 import org.semanticweb.owlapi.expression.ParserException;
-import IRI;
-import OWLAxiom;
-import OWLClassAxiom;
-import OWLClassExpression;
-import OWLDataRange;
-import OWLDatatype;
-import OWLLiteral;
-import OWLObjectPropertyExpression;
-import OWLOntology;
-import OWLPropertyExpression;
-import UnloadableImportException;
+import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)

@@ -10,15 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.io.OWLParserException;
-import IRI;
-import OWLAxiom;
-import OWLClassExpression;
-import OWLDataPropertyExpression;
-import OWLLiteral;
-import OWLObject;
-import OWLObjectPropertyExpression;
-import OWLPropertyExpression;
-import UnloadableImportException;
+import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation", "unchecked", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)

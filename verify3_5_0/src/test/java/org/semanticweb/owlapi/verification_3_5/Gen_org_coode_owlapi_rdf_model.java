@@ -12,8 +12,7 @@ import org.coode.owlapi.rdf.model.RDFTriple;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import IRI;
-import OWLLiteral;
+import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)
