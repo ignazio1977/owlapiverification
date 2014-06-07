@@ -586,49 +586,14 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
 
     public void verifySatisfiabilityReducer() throws Exception {
         SatisfiabilityReducer testSubject0 = new SatisfiabilityReducer(_OWLDataFactory);
-        java.lang.Object result0 = testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        java.lang.Object result1 = testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        java.lang.Object result2 = testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        java.lang.Object result3 = testSubject0.visit(_OWLSubDataPropertyOfAxiom);
         java.lang.Object result4 = testSubject0
                 .visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        java.lang.Object result5 = testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        java.lang.Object result6 = testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        java.lang.Object result7 = testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        java.lang.Object result8 = testSubject0.visit(_OWLClassAssertionAxiom);
-        java.lang.Object result9 = testSubject0.visit(_OWLEquivalentClassesAxiom);
-        java.lang.Object result10 = testSubject0.visit(_SWRLRule);
-        java.lang.Object result11 = testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        java.lang.Object result12 = testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        java.lang.Object result13 = testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        java.lang.Object result14 = testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        java.lang.Object result15 = testSubject0.visit(_OWLSameIndividualAxiom);
-        java.lang.Object result16 = testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        java.lang.Object result17 = testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        java.lang.Object result18 = testSubject0.visit(_OWLHasKeyAxiom);
-        java.lang.Object result19 = testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        java.lang.Object result20 = testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        java.lang.Object result21 = testSubject0.visit(_OWLObjectPropertyDomainAxiom);
         java.lang.Object result22 = testSubject0
                 .visit(_OWLEquivalentObjectPropertiesAxiom);
         java.lang.Object result23 = testSubject0
                 .visit(_OWLNegativeDataPropertyAssertionAxiom);
-        java.lang.Object result24 = testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        java.lang.Object result25 = testSubject0.visit(_OWLSubClassOfAxiom);
         java.lang.Object result26 = testSubject0
                 .visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        java.lang.Object result27 = testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        java.lang.Object result28 = testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        java.lang.Object result29 = testSubject0.visit(_OWLDisjointClassesAxiom);
-        java.lang.Object result30 = testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        java.lang.Object result31 = testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        java.lang.Object result32 = testSubject0.visit(_OWLDisjointUnionAxiom);
-        java.lang.Object result33 = testSubject0.visit(_OWLDeclarationAxiom);
-        java.lang.Object result34 = testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        java.lang.Object result35 = testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        java.lang.Object result36 = testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        java.lang.Object result37 = testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        java.lang.Object result38 = testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
         org.semanticweb.owlapi.model.OWLClassExpression result39 = testSubject0
                 .visit(_OWLFunctionalObjectPropertyAxiom);
         org.semanticweb.owlapi.model.OWLClassExpression result40 = testSubject0

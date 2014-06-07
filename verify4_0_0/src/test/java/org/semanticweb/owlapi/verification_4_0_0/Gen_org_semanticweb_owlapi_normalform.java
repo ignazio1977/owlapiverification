@@ -39,25 +39,7 @@ public class Gen_org_semanticweb_owlapi_normalform {
     public void verifyOWLObjectComplementOfExtractor() {
         OWLObjectComplementOfExtractor testSubject0 = new OWLObjectComplementOfExtractor();
         testSubject0.reset();
-        testSubject0.visit(_OWLObjectIntersectionOf);
-        testSubject0.visit(_OWLObjectMaxCardinality);
-        testSubject0.visit(_OWLObjectMinCardinality);
-        testSubject0.visit(_OWLObjectSomeValuesFrom);
-        testSubject0.visit(_OWLObjectUnionOf);
-        testSubject0.visit(_OWLObjectAllValuesFrom);
-        testSubject0.visit(_OWLObjectComplementOf);
-        testSubject0.visit(_OWLObjectExactCardinality);
         java.util.Set<OWLClassExpression> result0 = testSubject0.getComplementedClassExpressions(_OWLClassExpression);
-        testSubject0.visit(_OWLObjectHasSelf);
-        testSubject0.visit(_OWLObjectOneOf);
-        testSubject0.visit(_OWLDataSomeValuesFrom);
-        testSubject0.visit(_OWLDataMaxCardinality);
-        testSubject0.visit(_OWLDataExactCardinality);
-        testSubject0.visit(_OWLDataMinCardinality);
-        testSubject0.visit(_OWLDataHasValue);
-        testSubject0.visit(_OWLDataAllValuesFrom);
-        testSubject0.visit(_OWLClass);
-        testSubject0.visit(_OWLObjectHasValue);
     }
 
     private OWLClass _OWLClass;

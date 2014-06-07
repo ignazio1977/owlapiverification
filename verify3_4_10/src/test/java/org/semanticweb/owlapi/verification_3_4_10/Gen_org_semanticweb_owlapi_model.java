@@ -639,20 +639,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLAnnotationAxiomVisitor() throws Exception {
         OWLAnnotationAxiomVisitor testSubject0 = mock(OWLAnnotationAxiomVisitor.class);
-        testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        testSubject0.visit(_OWLAnnotationAssertionAxiom);
     }
 
     
 
     public void verifyInterfaceOWLAnnotationAxiomVisitorEx() throws Exception {
         OWLAnnotationAxiomVisitorEx<OWLObject> testSubject0 = mock(OWLAnnotationAxiomVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        OWLObject result1 = testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        OWLObject result2 = testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        OWLObject result3 = testSubject0.visit(_OWLAnnotationAssertionAxiom);
     }
 
     @Test
@@ -696,14 +688,6 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLAnnotationObjectVisitor() throws Exception {
         OWLAnnotationObjectVisitor testSubject0 = mock(OWLAnnotationObjectVisitor.class);
-        testSubject0.visit(_OWLAnnotation);
-        testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        testSubject0.visit(_IRI);
-        testSubject0.visit(_OWLAnonymousIndividual);
-        testSubject0.visit(_OWLLiteral);
     }
 
     @Test
@@ -716,14 +700,6 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLAnnotationObjectVisitorEx() throws Exception {
         OWLAnnotationObjectVisitorEx<OWLObject> testSubject0 = mock(OWLAnnotationObjectVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLAnnotation);
-        OWLObject result1 = testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        OWLObject result2 = testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        OWLObject result3 = testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        OWLObject result4 = testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        OWLObject result5 = testSubject0.visit(_IRI);
-        OWLObject result6 = testSubject0.visit(_OWLAnonymousIndividual);
-        OWLObject result7 = testSubject0.visit(_OWLLiteral);
     }
 
     @Test
@@ -953,16 +929,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLAnnotationSubjectVisitor() throws Exception {
         OWLAnnotationSubjectVisitor testSubject0 = mock(OWLAnnotationSubjectVisitor.class);
-        testSubject0.visit(_IRI);
-        testSubject0.visit(_OWLAnonymousIndividual);
     }
 
     
 
     public void verifyInterfaceOWLAnnotationSubjectVisitorEx() throws Exception {
         OWLAnnotationSubjectVisitorEx<OWLObject> testSubject0 = mock(OWLAnnotationSubjectVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_IRI);
-        OWLObject result1 = testSubject0.visit(_OWLAnonymousIndividual);
     }
 
     @Test
@@ -1002,18 +974,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLAnnotationValueVisitor() throws Exception {
         OWLAnnotationValueVisitor testSubject0 = mock(OWLAnnotationValueVisitor.class);
-        testSubject0.visit(_IRI);
-        testSubject0.visit(_OWLAnonymousIndividual);
-        testSubject0.visit(_OWLLiteral);
     }
 
     
 
     public void verifyInterfaceOWLAnnotationValueVisitorEx() throws Exception {
         OWLAnnotationValueVisitorEx<OWLObject> testSubject0 = mock(OWLAnnotationValueVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_IRI);
-        OWLObject result1 = testSubject0.visit(_OWLAnonymousIndividual);
-        OWLObject result2 = testSubject0.visit(_OWLLiteral);
     }
 
     @Test
@@ -1296,45 +1262,6 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLAxiomVisitor() throws Exception {
         OWLAxiomVisitor testSubject0 = mock(OWLAxiomVisitor.class);
-        testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        testSubject0.visit(_OWLClassAssertionAxiom);
-        testSubject0.visit(_OWLEquivalentClassesAxiom);
-        testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDisjointUnionAxiom);
-        testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        testSubject0.visit(_OWLHasKeyAxiom);
-        testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        testSubject0.visit(_SWRLRule);
-        testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSameIndividualAxiom);
-        testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDisjointClassesAxiom);
-        testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        testSubject0.visit(_OWLDeclarationAxiom);
-        testSubject0.visit(_OWLSubClassOfAxiom);
-        testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        testSubject0.visit(_OWLAnnotationAssertionAxiom);
     }
 
     @Test
@@ -1345,45 +1272,6 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLAxiomVisitorEx() throws Exception {
         OWLAxiomVisitorEx<OWLObject> testSubject0 = mock(OWLAxiomVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        OWLObject result1 = testSubject0.visit(_OWLClassAssertionAxiom);
-        OWLObject result2 = testSubject0.visit(_OWLEquivalentClassesAxiom);
-        OWLObject result3 = testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        OWLObject result4 = testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        OWLObject result5 = testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        OWLObject result6 = testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        OWLObject result7 = testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        OWLObject result8 = testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        OWLObject result9 = testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        OWLObject result10 = testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        OWLObject result11 = testSubject0.visit(_OWLHasKeyAxiom);
-        OWLObject result12 = testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        OWLObject result13 = testSubject0.visit(_SWRLRule);
-        OWLObject result14 = testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        OWLObject result15 = testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        OWLObject result16 = testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        OWLObject result17 = testSubject0.visit(_OWLSameIndividualAxiom);
-        OWLObject result18 = testSubject0.visit(_OWLDisjointClassesAxiom);
-        OWLObject result19 = testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        OWLObject result20 = testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        OWLObject result21 = testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        OWLObject result22 = testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        OWLObject result23 = testSubject0.visit(_OWLSubClassOfAxiom);
-        OWLObject result24 = testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        OWLObject result25 = testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        OWLObject result26 = testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        OWLObject result27 = testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        OWLObject result28 = testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        OWLObject result29 = testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        OWLObject result30 = testSubject0.visit(_OWLDisjointUnionAxiom);
-        OWLObject result31 = testSubject0.visit(_OWLDeclarationAxiom);
-        OWLObject result32 = testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        OWLObject result33 = testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        OWLObject result34 = testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        OWLObject result35 = testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        OWLObject result36 = testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        OWLObject result37 = testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        OWLObject result38 = testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
     }
 
     @Test
@@ -1769,48 +1657,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLClassExpressionVisitor() throws Exception {
         OWLClassExpressionVisitor testSubject0 = mock(OWLClassExpressionVisitor.class);
-        testSubject0.visit(_OWLDataAllValuesFrom);
-        testSubject0.visit(_OWLDataSomeValuesFrom);
-        testSubject0.visit(_OWLObjectOneOf);
-        testSubject0.visit(_OWLObjectHasSelf);
-        testSubject0.visit(_OWLObjectMaxCardinality);
-        testSubject0.visit(_OWLDataMaxCardinality);
-        testSubject0.visit(_OWLDataExactCardinality);
-        testSubject0.visit(_OWLDataMinCardinality);
-        testSubject0.visit(_OWLDataHasValue);
-        testSubject0.visit(_OWLObjectSomeValuesFrom);
-        testSubject0.visit(_OWLObjectComplementOf);
-        testSubject0.visit(_OWLObjectUnionOf);
-        testSubject0.visit(_OWLObjectIntersectionOf);
-        testSubject0.visit(_OWLClass);
-        testSubject0.visit(_OWLObjectExactCardinality);
-        testSubject0.visit(_OWLObjectMinCardinality);
-        testSubject0.visit(_OWLObjectHasValue);
-        testSubject0.visit(_OWLObjectAllValuesFrom);
     }
 
     
 
     public void verifyInterfaceOWLClassExpressionVisitorEx() throws Exception {
         OWLClassExpressionVisitorEx<OWLObject> testSubject0 = mock(OWLClassExpressionVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLDataAllValuesFrom);
-        OWLObject result1 = testSubject0.visit(_OWLDataSomeValuesFrom);
-        OWLObject result2 = testSubject0.visit(_OWLObjectOneOf);
-        OWLObject result3 = testSubject0.visit(_OWLObjectHasSelf);
-        OWLObject result4 = testSubject0.visit(_OWLObjectMaxCardinality);
-        OWLObject result5 = testSubject0.visit(_OWLDataMaxCardinality);
-        OWLObject result6 = testSubject0.visit(_OWLDataExactCardinality);
-        OWLObject result7 = testSubject0.visit(_OWLDataMinCardinality);
-        OWLObject result8 = testSubject0.visit(_OWLDataHasValue);
-        OWLObject result9 = testSubject0.visit(_OWLObjectSomeValuesFrom);
-        OWLObject result10 = testSubject0.visit(_OWLObjectComplementOf);
-        OWLObject result11 = testSubject0.visit(_OWLObjectUnionOf);
-        OWLObject result12 = testSubject0.visit(_OWLObjectIntersectionOf);
-        OWLObject result13 = testSubject0.visit(_OWLClass);
-        OWLObject result14 = testSubject0.visit(_OWLObjectExactCardinality);
-        OWLObject result15 = testSubject0.visit(_OWLObjectMinCardinality);
-        OWLObject result16 = testSubject0.visit(_OWLObjectHasValue);
-        OWLObject result17 = testSubject0.visit(_OWLObjectAllValuesFrom);
     }
 
     @Test
@@ -3267,24 +3119,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLDataRangeVisitor() throws Exception {
         OWLDataRangeVisitor testSubject0 = mock(OWLDataRangeVisitor.class);
-        testSubject0.visit(_OWLDatatypeRestriction);
-        testSubject0.visit(_OWLDataUnionOf);
-        testSubject0.visit(_OWLDataIntersectionOf);
-        testSubject0.visit(_OWLDataComplementOf);
-        testSubject0.visit(_OWLDataOneOf);
-        testSubject0.visit(_OWLDatatype);
     }
 
     
 
     public void verifyInterfaceOWLDataRangeVisitorEx() throws Exception {
         OWLDataRangeVisitorEx<OWLObject> testSubject0 = mock(OWLDataRangeVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLDatatypeRestriction);
-        OWLObject result1 = testSubject0.visit(_OWLDataUnionOf);
-        OWLObject result2 = testSubject0.visit(_OWLDataIntersectionOf);
-        OWLObject result3 = testSubject0.visit(_OWLDataComplementOf);
-        OWLObject result4 = testSubject0.visit(_OWLDataOneOf);
-        OWLObject result5 = testSubject0.visit(_OWLDatatype);
     }
 
     @Test
@@ -3573,28 +3413,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLDataVisitor() throws Exception {
         OWLDataVisitor testSubject0 = mock(OWLDataVisitor.class);
-        testSubject0.visit(_OWLLiteral);
-        testSubject0.visit(_OWLFacetRestriction);
-        testSubject0.visit(_OWLDatatypeRestriction);
-        testSubject0.visit(_OWLDataUnionOf);
-        testSubject0.visit(_OWLDataIntersectionOf);
-        testSubject0.visit(_OWLDataComplementOf);
-        testSubject0.visit(_OWLDataOneOf);
-        testSubject0.visit(_OWLDatatype);
     }
 
     
 
     public void verifyInterfaceOWLDataVisitorEx() throws Exception {
         OWLDataVisitorEx<OWLObject> testSubject0 = mock(OWLDataVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLDataUnionOf);
-        OWLObject result1 = testSubject0.visit(_OWLDatatypeRestriction);
-        OWLObject result2 = testSubject0.visit(_OWLLiteral);
-        OWLObject result3 = testSubject0.visit(_OWLFacetRestriction);
-        OWLObject result4 = testSubject0.visit(_OWLDatatype);
-        OWLObject result5 = testSubject0.visit(_OWLDataComplementOf);
-        OWLObject result6 = testSubject0.visit(_OWLDataOneOf);
-        OWLObject result7 = testSubject0.visit(_OWLDataIntersectionOf);
     }
 
     @Test
@@ -4013,24 +3837,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLEntityVisitor() throws Exception {
         OWLEntityVisitor testSubject0 = mock(OWLEntityVisitor.class);
-        testSubject0.visit(_OWLAnnotationProperty);
-        testSubject0.visit(_OWLDatatype);
-        testSubject0.visit(_OWLNamedIndividual);
-        testSubject0.visit(_OWLDataProperty);
-        testSubject0.visit(_OWLObjectProperty);
-        testSubject0.visit(_OWLClass);
     }
 
     
 
     public void verifyInterfaceOWLEntityVisitorEx() throws Exception {
         OWLEntityVisitorEx<OWLObject> testSubject0 = mock(OWLEntityVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLAnnotationProperty);
-        OWLObject result1 = testSubject0.visit(_OWLDatatype);
-        OWLObject result2 = testSubject0.visit(_OWLNamedIndividual);
-        OWLObject result3 = testSubject0.visit(_OWLDataProperty);
-        OWLObject result4 = testSubject0.visit(_OWLObjectProperty);
-        OWLObject result5 = testSubject0.visit(_OWLClass);
     }
 
     @Test
@@ -4637,16 +4449,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLIndividualVisitor() throws Exception {
         OWLIndividualVisitor testSubject0 = mock(OWLIndividualVisitor.class);
-        testSubject0.visit(_OWLNamedIndividual);
-        testSubject0.visit(_OWLAnonymousIndividual);
     }
 
     
 
     public void verifyInterfaceOWLIndividualVisitorEx() throws Exception {
         OWLIndividualVisitorEx<OWLObject> testSubject0 = mock(OWLIndividualVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLNamedIndividual);
-        OWLObject result1 = testSubject0.visit(_OWLAnonymousIndividual);
     }
 
     @Test
@@ -4932,78 +4740,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLLogicalAxiomVisitor() throws Exception {
         OWLLogicalAxiomVisitor testSubject0 = mock(OWLLogicalAxiomVisitor.class);
-        testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        testSubject0.visit(_OWLClassAssertionAxiom);
-        testSubject0.visit(_OWLEquivalentClassesAxiom);
-        testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDisjointUnionAxiom);
-        testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        testSubject0.visit(_OWLHasKeyAxiom);
-        testSubject0.visit(_SWRLRule);
-        testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSameIndividualAxiom);
-        testSubject0.visit(_OWLDisjointClassesAxiom);
-        testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        testSubject0.visit(_OWLSubClassOfAxiom);
-        testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
     }
 
     
 
     public void verifyInterfaceOWLLogicalAxiomVisitorEx() throws Exception {
         OWLLogicalAxiomVisitorEx<OWLObject> testSubject0 = mock(OWLLogicalAxiomVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        OWLObject result1 = testSubject0.visit(_OWLClassAssertionAxiom);
-        OWLObject result2 = testSubject0.visit(_OWLEquivalentClassesAxiom);
-        OWLObject result3 = testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        OWLObject result4 = testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        OWLObject result5 = testSubject0.visit(_OWLDisjointUnionAxiom);
-        OWLObject result6 = testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        OWLObject result7 = testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        OWLObject result8 = testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        OWLObject result9 = testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        OWLObject result10 = testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        OWLObject result11 = testSubject0.visit(_OWLHasKeyAxiom);
-        OWLObject result12 = testSubject0.visit(_SWRLRule);
-        OWLObject result13 = testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        OWLObject result14 = testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        OWLObject result15 = testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        OWLObject result16 = testSubject0.visit(_OWLSameIndividualAxiom);
-        OWLObject result17 = testSubject0.visit(_OWLDisjointClassesAxiom);
-        OWLObject result18 = testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        OWLObject result19 = testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        OWLObject result20 = testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        OWLObject result21 = testSubject0.visit(_OWLSubClassOfAxiom);
-        OWLObject result22 = testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        OWLObject result23 = testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        OWLObject result24 = testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        OWLObject result25 = testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        OWLObject result26 = testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        OWLObject result27 = testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        OWLObject result28 = testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        OWLObject result29 = testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        OWLObject result30 = testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        OWLObject result31 = testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        OWLObject result32 = testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
     }
 
     @Test
@@ -5433,26 +5175,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLNamedObjectVisitor() throws Exception {
         OWLNamedObjectVisitor testSubject0 = mock(OWLNamedObjectVisitor.class);
-        testSubject0.visit(_OWLNamedIndividual);
-        testSubject0.visit(_OWLOntology);
-        testSubject0.visit(_OWLDatatype);
-        testSubject0.visit(_OWLAnnotationProperty);
-        testSubject0.visit(_OWLDataProperty);
-        testSubject0.visit(_OWLObjectProperty);
-        testSubject0.visit(_OWLClass);
     }
 
     
 
     public void verifyInterfaceOWLNamedObjectVisitorEx() throws Exception {
         OWLNamedObjectVisitorEx<OWLObject> testSubject0 = mock(OWLNamedObjectVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLNamedIndividual);
-        OWLObject result1 = testSubject0.visit(_OWLOntology);
-        OWLObject result2 = testSubject0.visit(_OWLDatatype);
-        OWLObject result3 = testSubject0.visit(_OWLAnnotationProperty);
-        OWLObject result4 = testSubject0.visit(_OWLDataProperty);
-        OWLObject result5 = testSubject0.visit(_OWLObjectProperty);
-        OWLObject result6 = testSubject0.visit(_OWLClass);
     }
 
     @Test
@@ -7195,98 +6923,6 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLObjectVisitor() throws Exception {
         OWLObjectVisitor testSubject0 = mock(OWLObjectVisitor.class);
-        testSubject0.visit(_OWLOntology);
-        testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        testSubject0.visit(_OWLClassAssertionAxiom);
-        testSubject0.visit(_OWLEquivalentClassesAxiom);
-        testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDisjointUnionAxiom);
-        testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        testSubject0.visit(_OWLHasKeyAxiom);
-        testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        testSubject0.visit(_SWRLRule);
-        testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSameIndividualAxiom);
-        testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDisjointClassesAxiom);
-        testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        testSubject0.visit(_OWLDeclarationAxiom);
-        testSubject0.visit(_OWLSubClassOfAxiom);
-        testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        testSubject0.visit(_OWLDataAllValuesFrom);
-        testSubject0.visit(_OWLDataSomeValuesFrom);
-        testSubject0.visit(_OWLObjectOneOf);
-        testSubject0.visit(_OWLObjectHasSelf);
-        testSubject0.visit(_OWLObjectMaxCardinality);
-        testSubject0.visit(_OWLDataMaxCardinality);
-        testSubject0.visit(_OWLDataExactCardinality);
-        testSubject0.visit(_OWLDataMinCardinality);
-        testSubject0.visit(_OWLDataHasValue);
-        testSubject0.visit(_OWLObjectSomeValuesFrom);
-        testSubject0.visit(_OWLObjectComplementOf);
-        testSubject0.visit(_OWLObjectUnionOf);
-        testSubject0.visit(_OWLObjectIntersectionOf);
-        testSubject0.visit(_OWLClass);
-        testSubject0.visit(_OWLObjectExactCardinality);
-        testSubject0.visit(_OWLObjectMinCardinality);
-        testSubject0.visit(_OWLObjectHasValue);
-        testSubject0.visit(_OWLObjectAllValuesFrom);
-        testSubject0.visit(_OWLLiteral);
-        testSubject0.visit(_OWLFacetRestriction);
-        testSubject0.visit(_OWLDatatypeRestriction);
-        testSubject0.visit(_OWLDataUnionOf);
-        testSubject0.visit(_OWLDataIntersectionOf);
-        testSubject0.visit(_OWLDataComplementOf);
-        testSubject0.visit(_OWLDataOneOf);
-        testSubject0.visit(_OWLDatatype);
-        testSubject0.visit(_OWLObjectProperty);
-        testSubject0.visit(_OWLObjectInverseOf);
-        testSubject0.visit(_OWLDataProperty);
-        testSubject0.visit(_OWLAnnotationProperty);
-        testSubject0.visit(_OWLDatatype);
-        testSubject0.visit(_OWLNamedIndividual);
-        testSubject0.visit(_OWLDataProperty);
-        testSubject0.visit(_OWLObjectProperty);
-        testSubject0.visit(_OWLClass);
-        testSubject0.visit(_OWLNamedIndividual);
-        testSubject0.visit(_OWLAnonymousIndividual);
-        testSubject0.visit(_IRI);
-        testSubject0.visit(_OWLAnonymousIndividual);
-        testSubject0.visit(_OWLLiteral);
-        testSubject0.visit(_OWLAnnotation);
-        testSubject0.visit(_SWRLBuiltInAtom);
-        testSubject0.visit(_SWRLVariable);
-        testSubject0.visit(_SWRLIndividualArgument);
-        testSubject0.visit(_SWRLLiteralArgument);
-        testSubject0.visit(_SWRLSameIndividualAtom);
-        testSubject0.visit(_SWRLDifferentIndividualsAtom);
-        testSubject0.visit(_SWRLRule);
-        testSubject0.visit(_SWRLClassAtom);
-        testSubject0.visit(_SWRLDataRangeAtom);
-        testSubject0.visit(_SWRLObjectPropertyAtom);
-        testSubject0.visit(_SWRLDataPropertyAtom);
     }
 
     @Test
@@ -7313,105 +6949,6 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLObjectVisitorEx() throws Exception {
         OWLObjectVisitorEx<OWLObject> testSubject0 = mock(OWLObjectVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        OWLObject result1 = testSubject0.visit(_OWLClassAssertionAxiom);
-        OWLObject result2 = testSubject0.visit(_OWLEquivalentClassesAxiom);
-        OWLObject result3 = testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        OWLObject result4 = testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        OWLObject result5 = testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        OWLObject result6 = testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        OWLObject result7 = testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        OWLObject result8 = testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        OWLObject result9 = testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        OWLObject result10 = testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        OWLObject result11 = testSubject0.visit(_OWLHasKeyAxiom);
-        OWLObject result12 = testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        OWLObject result13 = testSubject0.visit(_SWRLRule);
-        OWLObject result14 = testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        OWLObject result15 = testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        OWLObject result16 = testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        OWLObject result17 = testSubject0.visit(_OWLSameIndividualAxiom);
-        OWLObject result18 = testSubject0.visit(_OWLDisjointClassesAxiom);
-        OWLObject result19 = testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        OWLObject result20 = testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        OWLObject result21 = testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        OWLObject result22 = testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        OWLObject result23 = testSubject0.visit(_OWLSubClassOfAxiom);
-        OWLObject result24 = testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        OWLObject result25 = testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        OWLObject result26 = testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        OWLObject result27 = testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        OWLObject result28 = testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        OWLObject result29 = testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        OWLObject result30 = testSubject0.visit(_OWLDisjointUnionAxiom);
-        OWLObject result31 = testSubject0.visit(_OWLDeclarationAxiom);
-        OWLObject result32 = testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        OWLObject result33 = testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        OWLObject result34 = testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        OWLObject result35 = testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        OWLObject result36 = testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        OWLObject result37 = testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        OWLObject result38 = testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        OWLObject result39 = testSubject0.visit(_OWLDataAllValuesFrom);
-        OWLObject result40 = testSubject0.visit(_OWLDataSomeValuesFrom);
-        OWLObject result41 = testSubject0.visit(_OWLObjectOneOf);
-        OWLObject result42 = testSubject0.visit(_OWLObjectHasSelf);
-        OWLObject result43 = testSubject0.visit(_OWLObjectMaxCardinality);
-        OWLObject result44 = testSubject0.visit(_OWLDataMaxCardinality);
-        OWLObject result45 = testSubject0.visit(_OWLDataExactCardinality);
-        OWLObject result46 = testSubject0.visit(_OWLDataMinCardinality);
-        OWLObject result47 = testSubject0.visit(_OWLDataHasValue);
-        OWLObject result48 = testSubject0.visit(_OWLObjectSomeValuesFrom);
-        OWLObject result49 = testSubject0.visit(_OWLObjectComplementOf);
-        OWLObject result50 = testSubject0.visit(_OWLObjectUnionOf);
-        OWLObject result51 = testSubject0.visit(_OWLObjectIntersectionOf);
-        OWLObject result52 = testSubject0.visit(_OWLClass);
-        OWLObject result53 = testSubject0.visit(_OWLObjectExactCardinality);
-        OWLObject result54 = testSubject0.visit(_OWLObjectMinCardinality);
-        OWLObject result55 = testSubject0.visit(_OWLObjectHasValue);
-        OWLObject result56 = testSubject0.visit(_OWLObjectAllValuesFrom);
-        OWLObject result57 = testSubject0.visit(_OWLDataUnionOf);
-        OWLObject result58 = testSubject0.visit(_OWLDatatypeRestriction);
-        OWLObject result59 = testSubject0.visit(_OWLLiteral);
-        OWLObject result60 = testSubject0.visit(_OWLFacetRestriction);
-        OWLObject result61 = testSubject0.visit(_OWLDatatype);
-        OWLObject result62 = testSubject0.visit(_OWLDataComplementOf);
-        OWLObject result63 = testSubject0.visit(_OWLDataOneOf);
-        OWLObject result64 = testSubject0.visit(_OWLDataIntersectionOf);
-        OWLObject result65 = testSubject0.visit(_OWLObjectProperty);
-        OWLObject result66 = testSubject0.visit(_OWLObjectInverseOf);
-        OWLObject result67 = testSubject0.visit(_OWLDataProperty);
-        OWLObject result68 = testSubject0.visit(_OWLAnnotationProperty);
-        OWLObject result69 = testSubject0.visit(_OWLDatatype);
-        OWLObject result70 = testSubject0.visit(_OWLNamedIndividual);
-        OWLObject result71 = testSubject0.visit(_OWLDataProperty);
-        OWLObject result72 = testSubject0.visit(_OWLObjectProperty);
-        OWLObject result73 = testSubject0.visit(_OWLClass);
-        OWLObject result74 = testSubject0.visit(_OWLAnnotation);
-        OWLObject result75 = testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        OWLObject result76 = testSubject0.visit(_IRI);
-        OWLObject result77 = testSubject0.visit(_OWLAnonymousIndividual);
-        OWLObject result78 = testSubject0.visit(_OWLLiteral);
-        OWLObject result79 = testSubject0.visit(_SWRLBuiltInAtom);
-        OWLObject result80 = testSubject0.visit(_SWRLVariable);
-        OWLObject result81 = testSubject0.visit(_SWRLIndividualArgument);
-        OWLObject result82 = testSubject0.visit(_SWRLLiteralArgument);
-        OWLObject result83 = testSubject0.visit(_SWRLSameIndividualAtom);
-        OWLObject result84 = testSubject0.visit(_SWRLDifferentIndividualsAtom);
-        OWLObject result85 = testSubject0.visit(_SWRLRule);
-        OWLObject result86 = testSubject0.visit(_SWRLClassAtom);
-        OWLObject result87 = testSubject0.visit(_SWRLDataRangeAtom);
-        OWLObject result88 = testSubject0.visit(_SWRLObjectPropertyAtom);
-        OWLObject result89 = testSubject0.visit(_SWRLDataPropertyAtom);
-        OWLObject result90 = testSubject0.visit(_OWLNamedIndividual);
-        OWLObject result91 = testSubject0.visit(_OWLOntology);
-        OWLObject result92 = testSubject0.visit(_OWLDatatype);
-        OWLObject result93 = testSubject0.visit(_OWLAnnotationProperty);
-        OWLObject result94 = testSubject0.visit(_OWLDataProperty);
-        OWLObject result95 = testSubject0.visit(_OWLObjectProperty);
-        OWLObject result96 = testSubject0.visit(_OWLClass);
-        OWLObject result97 = testSubject0.visit(_OWLNamedIndividual);
-        OWLObject result98 = testSubject0.visit(_OWLAnonymousIndividual);
     }
 
     @Test
@@ -7811,26 +7348,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLOntologyChangeVisitor() throws Exception {
         OWLOntologyChangeVisitor testSubject0 = mock(OWLOntologyChangeVisitor.class);
-        testSubject0.visit(_AddImport);
-        testSubject0.visit(_RemoveImport);
-        testSubject0.visit(_AddOntologyAnnotation);
-        testSubject0.visit(_RemoveOntologyAnnotation);
-        testSubject0.visit(_SetOntologyID);
-        testSubject0.visit(_RemoveAxiom);
-        testSubject0.visit(_AddAxiom);
     }
 
     
 
     public void verifyInterfaceOWLOntologyChangeVisitorEx() throws Exception {
         OWLOntologyChangeVisitorEx<OWLObject> testSubject0 = mock(OWLOntologyChangeVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_AddImport);
-        OWLObject result1 = testSubject0.visit(_RemoveImport);
-        OWLObject result2 = testSubject0.visit(_AddOntologyAnnotation);
-        OWLObject result3 = testSubject0.visit(_RemoveOntologyAnnotation);
-        OWLObject result4 = testSubject0.visit(_SetOntologyID);
-        OWLObject result5 = testSubject0.visit(_RemoveAxiom);
-        OWLObject result6 = testSubject0.visit(_AddAxiom);
     }
 
     @Test
@@ -8683,18 +8206,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLPropertyExpressionVisitor() throws Exception {
         OWLPropertyExpressionVisitor testSubject0 = mock(OWLPropertyExpressionVisitor.class);
-        testSubject0.visit(_OWLObjectProperty);
-        testSubject0.visit(_OWLObjectInverseOf);
-        testSubject0.visit(_OWLDataProperty);
     }
 
     
 
     public void verifyInterfaceOWLPropertyExpressionVisitorEx() throws Exception {
         OWLPropertyExpressionVisitorEx<OWLObject> testSubject0 = mock(OWLPropertyExpressionVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_OWLObjectProperty);
-        OWLObject result1 = testSubject0.visit(_OWLObjectInverseOf);
-        OWLObject result2 = testSubject0.visit(_OWLDataProperty);
     }
 
     @Test
@@ -10333,34 +9850,12 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceSWRLObjectVisitor() throws Exception {
         SWRLObjectVisitor testSubject0 = mock(SWRLObjectVisitor.class);
-        testSubject0.visit(_SWRLBuiltInAtom);
-        testSubject0.visit(_SWRLVariable);
-        testSubject0.visit(_SWRLIndividualArgument);
-        testSubject0.visit(_SWRLLiteralArgument);
-        testSubject0.visit(_SWRLSameIndividualAtom);
-        testSubject0.visit(_SWRLDifferentIndividualsAtom);
-        testSubject0.visit(_SWRLRule);
-        testSubject0.visit(_SWRLClassAtom);
-        testSubject0.visit(_SWRLDataRangeAtom);
-        testSubject0.visit(_SWRLObjectPropertyAtom);
-        testSubject0.visit(_SWRLDataPropertyAtom);
     }
 
     
 
     public void verifyInterfaceSWRLObjectVisitorEx() throws Exception {
         SWRLObjectVisitorEx<OWLObject> testSubject0 = mock(SWRLObjectVisitorEx.class);
-        OWLObject result0 = testSubject0.visit(_SWRLBuiltInAtom);
-        OWLObject result1 = testSubject0.visit(_SWRLVariable);
-        OWLObject result2 = testSubject0.visit(_SWRLIndividualArgument);
-        OWLObject result3 = testSubject0.visit(_SWRLLiteralArgument);
-        OWLObject result4 = testSubject0.visit(_SWRLSameIndividualAtom);
-        OWLObject result5 = testSubject0.visit(_SWRLDifferentIndividualsAtom);
-        OWLObject result6 = testSubject0.visit(_SWRLRule);
-        OWLObject result7 = testSubject0.visit(_SWRLClassAtom);
-        OWLObject result8 = testSubject0.visit(_SWRLDataRangeAtom);
-        OWLObject result9 = testSubject0.visit(_SWRLObjectPropertyAtom);
-        OWLObject result10 = testSubject0.visit(_SWRLDataPropertyAtom);
     }
 
     

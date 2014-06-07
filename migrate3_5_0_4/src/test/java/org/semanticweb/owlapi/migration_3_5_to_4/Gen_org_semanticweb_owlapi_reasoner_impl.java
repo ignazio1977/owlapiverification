@@ -10,10 +10,9 @@ import java.util.Set;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.reasoner.Node;
 import org.semanticweb.owlapi.reasoner.impl.*;
-import org.semanticweb.owlapi.reasoner.*;
 
 @SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
@@ -470,84 +469,6 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
 
     public void verifySatisfiabilityReducer() {
         SatisfiabilityReducer testSubject0 = new SatisfiabilityReducer(_OWLDataFactory);
-        Object result0 = testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        Object result1 = testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        Object result2 = testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        Object result3 = testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        Object result4 = testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        Object result5 = testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        Object result6 = testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        Object result7 = testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        Object result8 = testSubject0.visit(_OWLClassAssertionAxiom);
-        Object result9 = testSubject0.visit(_OWLEquivalentClassesAxiom);
-        Object result10 = testSubject0.visit(_SWRLRule);
-        Object result11 = testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        Object result12 = testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        Object result13 = testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        Object result14 = testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        Object result15 = testSubject0.visit(_OWLSameIndividualAxiom);
-        Object result16 = testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        Object result17 = testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        Object result18 = testSubject0.visit(_OWLHasKeyAxiom);
-        Object result19 = testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        Object result20 = testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        Object result21 = testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        Object result22 = testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        Object result23 = testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        Object result24 = testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        Object result25 = testSubject0.visit(_OWLSubClassOfAxiom);
-        Object result26 = testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        Object result27 = testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        Object result28 = testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        Object result29 = testSubject0.visit(_OWLDisjointClassesAxiom);
-        Object result30 = testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        Object result31 = testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        Object result32 = testSubject0.visit(_OWLDisjointUnionAxiom);
-        Object result33 = testSubject0.visit(_OWLDeclarationAxiom);
-        Object result34 = testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        Object result35 = testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        Object result36 = testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        Object result37 = testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        Object result38 = testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        OWLClassExpression result39 = testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        OWLClassExpression result40 = testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
-        OWLClassExpression result41 = testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        OWLClassExpression result42 = testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        OWLClassExpression result43 = testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        OWLClassExpression result44 = testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        OWLClassExpression result45 = testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        OWLClassExpression result46 = testSubject0.visit(_OWLDeclarationAxiom);
-        OWLClassExpression result47 = testSubject0.visit(_OWLDisjointUnionAxiom);
-        OWLClassExpression result48 = testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        OWLClassExpression result49 = testSubject0.visit(_OWLDisjointClassesAxiom);
-        OWLClassExpression result50 = testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        OWLClassExpression result51 = testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        OWLClassExpression result52 = testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        OWLClassExpression result53 = testSubject0.visit(_OWLSubClassOfAxiom);
-        OWLClassExpression result54 = testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        OWLClassExpression result55 = testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        OWLClassExpression result56 = testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        OWLClassExpression result57 = testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        OWLClassExpression result58 = testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        OWLClassExpression result59 = testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        OWLClassExpression result60 = testSubject0.visit(_OWLHasKeyAxiom);
-        OWLClassExpression result61 = testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        OWLClassExpression result62 = testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        OWLClassExpression result63 = testSubject0.visit(_OWLSameIndividualAxiom);
-        OWLClassExpression result64 = testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        OWLClassExpression result65 = testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        OWLClassExpression result66 = testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        OWLClassExpression result67 = testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        OWLClassExpression result68 = testSubject0.visit(_SWRLRule);
-        OWLClassExpression result69 = testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        OWLClassExpression result70 = testSubject0.visit(_OWLEquivalentClassesAxiom);
-        OWLClassExpression result71 = testSubject0.visit(_OWLClassAssertionAxiom);
-        OWLClassExpression result72 = testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        OWLClassExpression result73 = testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        OWLClassExpression result74 = testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        OWLClassExpression result75 = testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        OWLClassExpression result76 = testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        OWLClassExpression result77 = testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
     }
 
     private static class E {

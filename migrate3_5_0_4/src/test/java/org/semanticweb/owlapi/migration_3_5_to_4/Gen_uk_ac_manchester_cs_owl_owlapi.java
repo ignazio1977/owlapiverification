@@ -193,7 +193,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
 
     public void verifyInterfaceCollectionContainerVisitor() {
         CollectionContainerVisitor<Object> testSubject0 = mock(CollectionContainerVisitor.class);
-        testSubject0.visit(_CollectionContainer);
         testSubject0.visitItem(_Object103);
     }
 

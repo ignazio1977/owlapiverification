@@ -66,45 +66,6 @@ public class Gen_org_semanticweb_owlapi_debugging {
     public void verifyDebuggerClassExpressionGenerator() {
         DebuggerClassExpressionGenerator testSubject0 = new DebuggerClassExpressionGenerator(_OWLDataFactory);
         OWLClassExpression result0 = testSubject0.getDebuggerClassExpression();
-        testSubject0.visit(_OWLDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLEquivalentClassesAxiom);
-        testSubject0.visit(_OWLIrreflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubDataPropertyOfAxiom);
-        testSubject0.visit(_OWLSymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLDataPropertyRangeAxiom);
-        testSubject0.visit(_OWLFunctionalDataPropertyAxiom);
-        testSubject0.visit(_OWLEquivalentDataPropertiesAxiom);
-        testSubject0.visit(_OWLClassAssertionAxiom);
-        testSubject0.visit(_OWLHasKeyAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyDomainAxiom);
-        testSubject0.visit(_OWLAnnotationPropertyRangeAxiom);
-        testSubject0.visit(_OWLSubAnnotationPropertyOfAxiom);
-        testSubject0.visit(_OWLDatatypeDefinitionAxiom);
-        testSubject0.visit(_OWLInverseFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSameIndividualAxiom);
-        testSubject0.visit(_OWLSubPropertyChainOfAxiom);
-        testSubject0.visit(_OWLInverseObjectPropertiesAxiom);
-        testSubject0.visit(_SWRLRule);
-        testSubject0.visit(_OWLDataPropertyDomainAxiom);
-        testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        testSubject0.visit(_OWLEquivalentObjectPropertiesAxiom);
-        testSubject0.visit(_OWLNegativeDataPropertyAssertionAxiom);
-        testSubject0.visit(_OWLSubClassOfAxiom);
-        testSubject0.visit(_OWLNegativeObjectPropertyAssertionAxiom);
-        testSubject0.visit(_OWLAsymmetricObjectPropertyAxiom);
-        testSubject0.visit(_OWLReflexiveObjectPropertyAxiom);
-        testSubject0.visit(_OWLDisjointClassesAxiom);
-        testSubject0.visit(_OWLFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
-        testSubject0.visit(_OWLDisjointUnionAxiom);
-        testSubject0.visit(_OWLDeclarationAxiom);
-        testSubject0.visit(_OWLAnnotationAssertionAxiom);
-        testSubject0.visit(_OWLDifferentIndividualsAxiom);
-        testSubject0.visit(_OWLDisjointDataPropertiesAxiom);
-        testSubject0.visit(_OWLDisjointObjectPropertiesAxiom);
-        testSubject0.visit(_OWLObjectPropertyRangeAxiom);
-        testSubject0.visit(_OWLObjectPropertyAssertionAxiom);
     }
 
     public void verifyJustificationMap() {

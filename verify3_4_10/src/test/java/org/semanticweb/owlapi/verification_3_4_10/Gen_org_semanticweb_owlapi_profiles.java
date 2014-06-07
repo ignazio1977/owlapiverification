@@ -381,35 +381,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
 
     public void verifyInterfaceOWL2DLProfileViolationVisitor() throws Exception {
         OWL2DLProfileViolationVisitor testSubject0 = mock(OWL2DLProfileViolationVisitor.class);
-        testSubject0.visit(_UseOfReservedVocabularyForVersionIRI);
-        testSubject0.visit(_UseOfTopDataPropertyAsSubPropertyInSubPropertyAxiom);
-        testSubject0.visit(_UseOfUndeclaredAnnotationProperty);
-        testSubject0.visit(_UseOfUndeclaredClass);
-        testSubject0.visit(_UseOfReservedVocabularyForDataPropertyIRI);
-        testSubject0.visit(_UseOfReservedVocabularyForIndividualIRI);
-        testSubject0.visit(_UseOfReservedVocabularyForObjectPropertyIRI);
-        testSubject0.visit(_UseOfReservedVocabularyForOntologyIRI);
-        testSubject0.visit(_InsufficientPropertyExpressions);
-        testSubject0.visit(_InsufficientIndividuals);
-        testSubject0.visit(_InsufficientOperands);
-        testSubject0.visit(_EmptyOneOfAxiom);
-        testSubject0.visit(_UseOfUndeclaredObjectProperty);
-        testSubject0.visit(_UseOfUndeclaredDatatype);
-        testSubject0.visit(_UseOfUndeclaredDataProperty);
-        testSubject0.visit(_DatatypeIRIAlsoUsedAsClassIRI);
-        testSubject0.visit(_UseOfNonSimplePropertyInAsymmetricObjectPropertyAxiom);
-        testSubject0.visit(_UseOfNonSimplePropertyInCardinalityRestriction);
-        testSubject0.visit(_UseOfNonSimplePropertyInDisjointPropertiesAxiom);
-        testSubject0.visit(_UseOfBuiltInDatatypeInDatatypeDefinition);
-        testSubject0.visit(_CycleInDatatypeDefinition);
-        testSubject0.visit(_IllegalPunning);
-        testSubject0.visit(_UseOfNonSimplePropertyInObjectHasSelf);
-        testSubject0.visit(_UseOfPropertyInChainCausesCycle);
-        testSubject0.visit(_UseOfReservedVocabularyForAnnotationPropertyIRI);
-        testSubject0.visit(_UseOfReservedVocabularyForClassIRI);
-        testSubject0.visit(_UseOfNonSimplePropertyInIrreflexivePropertyAxiom);
-        testSubject0.visit(_UseOfNonSimplePropertyInInverseFunctionalObjectPropertyAxiom);
-        testSubject0.visit(_UseOfNonSimplePropertyInFunctionalPropertyAxiom);
     }
 
     @Test
@@ -433,19 +404,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
 
     public void verifyInterfaceOWL2ELProfileViolationVisitor() throws Exception {
         OWL2ELProfileViolationVisitor testSubject0 = mock(OWL2ELProfileViolationVisitor.class);
-        testSubject0.visit(_InsufficientPropertyExpressions);
-        testSubject0.visit(_UseOfObjectOneOfWithMultipleIndividuals);
-        testSubject0.visit(_UseOfObjectPropertyInverse);
-        testSubject0.visit(_IllegalPunning);
-        testSubject0.visit(_InsufficientIndividuals);
-        testSubject0.visit(_InsufficientOperands);
-        testSubject0.visit(_EmptyOneOfAxiom);
-        testSubject0.visit(_LastPropertyInChainNotInImposedRange);
-        testSubject0.visit(_UseOfAnonymousIndividual);
-        testSubject0.visit(_UseOfDataOneOfWithMultipleLiterals);
-        testSubject0.visit(_UseOfIllegalAxiom);
-        testSubject0.visit(_UseOfIllegalClassExpression);
-        testSubject0.visit(_UseOfIllegalDataRange);
     }
 
     @Test
@@ -488,19 +446,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
 
     public void verifyInterfaceOWL2ProfileViolationVisitor() throws Exception {
         OWL2ProfileViolationVisitor testSubject0 = mock(OWL2ProfileViolationVisitor.class);
-        testSubject0.visit(_InsufficientPropertyExpressions);
-        testSubject0.visit(_UseOfUnknownDatatype);
-        testSubject0.visit(_UseOfUndeclaredDatatype);
-        testSubject0.visit(_UseOfDefinedDatatypeInDatatypeRestriction);
-        testSubject0.visit(_InsufficientIndividuals);
-        testSubject0.visit(_InsufficientOperands);
-        testSubject0.visit(_EmptyOneOfAxiom);
-        testSubject0.visit(_UseOfNonAbsoluteIRI);
-        testSubject0.visit(_UseOfIllegalFacetRestriction);
-        testSubject0.visit(_LexicalNotInLexicalSpace);
-        testSubject0.visit(_OntologyIRINotAbsolute);
-        testSubject0.visit(_IllegalPunning);
-        testSubject0.visit(_OntologyVersionIRINotAbsolute);
     }
 
     @Test
@@ -525,18 +470,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
 
     public void verifyInterfaceOWL2QLProfileViolationVisitor() throws Exception {
         OWL2QLProfileViolationVisitor testSubject0 = mock(OWL2QLProfileViolationVisitor.class);
-        testSubject0.visit(_UseOfNonSubClassExpression);
-        testSubject0.visit(_UseOfNonSuperClassExpression);
-        testSubject0.visit(_InsufficientPropertyExpressions);
-        testSubject0.visit(_InsufficientIndividuals);
-        testSubject0.visit(_InsufficientOperands);
-        testSubject0.visit(_EmptyOneOfAxiom);
-        testSubject0.visit(_UseOfAnonymousIndividual);
-        testSubject0.visit(_UseOfDataOneOfWithMultipleLiterals);
-        testSubject0.visit(_UseOfIllegalAxiom);
-        testSubject0.visit(_UseOfIllegalDataRange);
-        testSubject0.visit(_IllegalPunning);
-        testSubject0.visit(_UseOfNonAtomicClassExpression);
     }
 
     @Test
@@ -563,16 +496,6 @@ public class Gen_org_semanticweb_owlapi_profiles {
 
     public void verifyInterfaceOWL2RLProfileViolationVisitor() throws Exception {
         OWL2RLProfileViolationVisitor testSubject0 = mock(OWL2RLProfileViolationVisitor.class);
-        testSubject0.visit(_UseOfNonSuperClassExpression);
-        testSubject0.visit(_InsufficientPropertyExpressions);
-        testSubject0.visit(_InsufficientIndividuals);
-        testSubject0.visit(_InsufficientOperands);
-        testSubject0.visit(_EmptyOneOfAxiom);
-        testSubject0.visit(_UseOfIllegalAxiom);
-        testSubject0.visit(_UseOfIllegalDataRange);
-        testSubject0.visit(_IllegalPunning);
-        testSubject0.visit(_UseOfNonEquivalentClassExpression);
-        testSubject0.visit(_UseOfNonSubClassExpression);
     }
 
     public void verifyInterfaceOWLProfile() throws Exception {

@@ -89,24 +89,6 @@ public class Gen_org_coode_owlapi_obo_renderer {
         testSubject0.setClass(_OWLClass);
         java.util.Set<org.coode.owlapi.obo.renderer.OBORelationship> result0 = testSubject0
                 .getOBORelationships();
-        testSubject0.visit(_OWLObjectMinCardinality);
-        testSubject0.visit(_OWLObjectSomeValuesFrom);
-        testSubject0.visit(_OWLObjectMaxCardinality);
-        testSubject0.visit(_OWLObjectExactCardinality);
-        testSubject0.visit(_OWLDataSomeValuesFrom);
-        testSubject0.visit(_OWLObjectOneOf);
-        testSubject0.visit(_OWLDataAllValuesFrom);
-        testSubject0.visit(_OWLObjectHasSelf);
-        testSubject0.visit(_OWLDataMaxCardinality);
-        testSubject0.visit(_OWLDataExactCardinality);
-        testSubject0.visit(_OWLDataMinCardinality);
-        testSubject0.visit(_OWLDataHasValue);
-        testSubject0.visit(_OWLObjectComplementOf);
-        testSubject0.visit(_OWLObjectUnionOf);
-        testSubject0.visit(_OWLObjectIntersectionOf);
-        testSubject0.visit(_OWLClass);
-        testSubject0.visit(_OWLObjectHasValue);
-        testSubject0.visit(_OWLObjectAllValuesFrom);
     }
 
     @Test
@@ -166,7 +148,6 @@ public class Gen_org_coode_owlapi_obo_renderer {
         testSubject0.addPair(_IRI, _String);
         testSubject0.addPair(_OBOVocabulary, _String);
         testSubject0.setPair(_OBOVocabulary, _String);
-        testSubject0.visit(_OWLAnnotation);
     }
 
     private int _int;

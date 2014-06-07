@@ -3,24 +3,10 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
-import java.util.Set;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.semanticweb.owlapi.change.AddAxiomData;
-import org.semanticweb.owlapi.change.AddImportData;
-import org.semanticweb.owlapi.change.AddOntologyAnnotationData;
-import org.semanticweb.owlapi.change.AxiomChangeData;
-import org.semanticweb.owlapi.change.ImportChangeData;
-import org.semanticweb.owlapi.change.OWLOntologyChangeData;
-import org.semanticweb.owlapi.change.OWLOntologyChangeDataVisitor;
-import org.semanticweb.owlapi.change.OWLOntologyChangeRecord;
-import org.semanticweb.owlapi.change.OntologyAnnotationChangeData;
-import org.semanticweb.owlapi.change.RemoveAxiomData;
-import org.semanticweb.owlapi.change.RemoveImportData;
-import org.semanticweb.owlapi.change.RemoveOntologyAnnotationData;
-import org.semanticweb.owlapi.change.SetOntologyIDData;
+import org.semanticweb.owlapi.change.*;
 import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "null", "unchecked", "unused" })
@@ -88,13 +74,6 @@ public class Gen_org_semanticweb_owlapi_change {
 
     public void verifyInterfaceOWLOntologyChangeDataVisitor() throws Exception {
         OWLOntologyChangeDataVisitor<OWLObject, Exception> testSubject0 = mock(OWLOntologyChangeDataVisitor.class);
-        OWLObject result0 = testSubject0.visit(_RemoveOntologyAnnotationData);
-        OWLObject result1 = testSubject0.visit(_SetOntologyIDData);
-        OWLObject result2 = testSubject0.visit(_AddImportData);
-        OWLObject result3 = testSubject0.visit(_RemoveImportData);
-        OWLObject result4 = testSubject0.visit(_AddOntologyAnnotationData);
-        OWLObject result5 = testSubject0.visit(_RemoveAxiomData);
-        OWLObject result6 = testSubject0.visit(_AddAxiomData);
     }
 
     @Test

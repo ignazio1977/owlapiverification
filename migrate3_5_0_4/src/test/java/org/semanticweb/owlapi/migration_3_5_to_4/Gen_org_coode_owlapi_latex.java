@@ -3,14 +3,14 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.formats.LatexAxiomsListOntologyFormat;
 import org.semanticweb.owlapi.formats.LatexOntologyFormat;
 import org.semanticweb.owlapi.formats.PrefixOWLOntologyFormat;
 import org.semanticweb.owlapi.io.OWLRendererException;
 import org.semanticweb.owlapi.latex.renderer.*;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "null", "unused" })
@@ -38,26 +38,6 @@ public class Gen_org_coode_owlapi_latex {
 
     public void verifyLatexBracketChecker() {
         LatexBracketChecker testSubject0 = mock(LatexBracketChecker.class);
-        testSubject0.visit(_OWLDataExactCardinality);
-        testSubject0.visit(_OWLObjectOneOf);
-        testSubject0.visit(_OWLDataMaxCardinality);
-        testSubject0.visit(_OWLClass);
-        testSubject0.visit(_OWLObjectUnionOf);
-        testSubject0.visit(_OWLObjectHasSelf);
-        testSubject0.visit(_OWLObjectMinCardinality);
-        testSubject0.visit(_OWLObjectMaxCardinality);
-        testSubject0.visit(_OWLObjectExactCardinality);
-        testSubject0.visit(_OWLDataMinCardinality);
-        testSubject0.visit(_OWLDataHasValue);
-        testSubject0.visit(_OWLDataSomeValuesFrom);
-        testSubject0.visit(_OWLDataCardinalityRestriction);
-        testSubject0.visit(_OWLDataAllValuesFrom);
-        testSubject0.visit(_OWLObjectIntersectionOf);
-        testSubject0.visit(_OWLObjectComplementOf);
-        testSubject0.visit(_OWLObjectHasValue);
-        testSubject0.visit(_OWLObjectSomeValuesFrom);
-        testSubject0.visit(_OWLObjectCardinalityRestriction);
-        testSubject0.visit(_OWLObjectAllValuesFrom);
         boolean result0 = LatexBracketChecker.requiresBracket(_OWLClassExpression);
     }
 

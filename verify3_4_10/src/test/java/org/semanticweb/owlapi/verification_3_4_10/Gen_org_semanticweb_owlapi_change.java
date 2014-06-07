@@ -170,13 +170,6 @@ public class Gen_org_semanticweb_owlapi_change {
 
     public void verifyInterfaceOWLOntologyChangeDataVisitor() throws Exception {
         OWLOntologyChangeDataVisitor<OWLObject, Exception> testSubject0 = mock(OWLOntologyChangeDataVisitor.class);
-        OWLObject result0 = testSubject0.visit(_RemoveOntologyAnnotationData);
-        OWLObject result1 = testSubject0.visit(_SetOntologyIDData);
-        OWLObject result2 = testSubject0.visit(_AddImportData);
-        OWLObject result3 = testSubject0.visit(_RemoveImportData);
-        OWLObject result4 = testSubject0.visit(_AddOntologyAnnotationData);
-        OWLObject result5 = testSubject0.visit(_RemoveAxiomData);
-        OWLObject result6 = testSubject0.visit(_AddAxiomData);
     }
 
     @Test
