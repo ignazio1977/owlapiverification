@@ -5807,6 +5807,7 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.accept(_OWLNamedObjectVisitor);
         OWLOntologyID result4 = testSubject0.getOntologyID();
         OWLOntologyManager result5 = testSubject0.getOWLOntologyManager();
+        testSubject0.setOWLOntologyManager(_OWLOntologyManager);
         boolean result6 = testSubject0.isAnonymous();
         java.util.Set<IRI> result7 = testSubject0.getDirectImportsDocuments();
         java.util.Set<OWLOntology> result8 = testSubject0.getDirectImports();
@@ -6286,6 +6287,7 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result0 = testSubject0.contains(_OWLOntology);
         boolean result1 = testSubject0.contains(_IRI);
         boolean result2 = testSubject0.contains(_OWLOntologyID);
+        OWLOntology o = testSubject0.copyOntology(_OWLOntology, OntologyCopy.DEEP);
         OWLDataFactory result3 = testSubject0.getOWLDataFactory();
         java.util.Set<OWLOntology> result4 = testSubject0.getOntologies();
         java.util.Set<OWLOntology> result5 = testSubject0.getOntologies(_OWLAxiom);
