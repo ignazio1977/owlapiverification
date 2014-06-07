@@ -3,17 +3,17 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.semanticweb.owlapi.io.OWLOntologyDocumentSource;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.model.parameters.ChangeApplied;
 import org.semanticweb.owlapi.model.parameters.Imports;
 import org.semanticweb.owlapi.model.parameters.Search;
-import org.semanticweb.owlapi.search.Searcher;
 import org.semanticweb.owlapi.util.OWLAxiomSearchFilter;
 
 import uk.ac.manchester.cs.owl.owlapi.*;
@@ -213,7 +213,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     public void verifyInterfaceInternals() {
         Internals testSubject0 = mock(Internals.class);
         boolean result2 = testSubject0.isEmpty();
-        boolean result4 = testSubject0.contains(_Pointer, _Object, _OWLAxiom);
+        boolean result4 = Internals.contains(_Pointer, _Object, _OWLAxiom);
         MapPointer<AxiomType<?>, OWLAxiom> result43 = testSubject0.getAxiomsByType();
         testSubject0.addGeneralClassAxioms(_OWLClassAxiom);
         boolean result44 = testSubject0.addImportsDeclaration(_OWLImportsDeclaration);
@@ -3189,8 +3189,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     }
 
     public void verifyOWLLiteralImplNoCompression() {
-        OWLLiteralImplNoCompression testSubject0 = new OWLLiteralImplNoCompression(_byte_array, _String, _OWLDatatype);
-        OWLLiteralImplNoCompression testSubject1 = new OWLLiteralImplNoCompression(_String, _String, _OWLDatatype);
+        OWLLiteralImplNoCompression testSubject0 = new OWLLiteralImplNoCompression(_String, _String, _OWLDatatype);
         boolean result0 = testSubject0.parseBoolean();
         float result1 = testSubject0.parseFloat();
         double result2 = testSubject0.parseDouble();
