@@ -1,4 +1,4 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -13,7 +13,7 @@ import org.semanticweb.owlapi.rdf.util.RDFConstants;
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_rdf_util {
     @Test
-    public void verifyInterfaceRDFConstants()  {
+    public void verifyInterfaceRDFConstants() {
         RDFConstants testSubject0 = mock(RDFConstants.class);
         assertEquals(XMLNS, "http://www.w3.org/XML/1998/namespace");
         assertEquals(XMLLANG, "xml:lang");

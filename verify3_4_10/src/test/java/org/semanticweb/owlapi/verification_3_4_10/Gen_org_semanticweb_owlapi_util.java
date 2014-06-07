@@ -3472,7 +3472,6 @@ public class Gen_org_semanticweb_owlapi_util {
 
     public void verifySWRLVariableExtractor() throws Exception {
         SWRLVariableExtractor testSubject0 = new SWRLVariableExtractor();
-        testSubject0.reset();
         java.util.Set<org.semanticweb.owlapi.model.SWRLVariable> result0 = testSubject0
                 .getVariables();
         testSubject0.visit(_SWRLIndividualArgument);

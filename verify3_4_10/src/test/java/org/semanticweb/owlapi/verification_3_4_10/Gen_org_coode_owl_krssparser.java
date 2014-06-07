@@ -3,7 +3,6 @@ package org.semanticweb.owlapi.verification_3_4_10;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
-import org.coode.owl.krssparser.JavaCharStream;
 import org.coode.owl.krssparser.KRSSOWLParser;
 import org.coode.owl.krssparser.KRSSOWLParserException;
 import org.coode.owl.krssparser.KRSSOWLParserFactory;
@@ -22,27 +21,6 @@ import org.mockito.runners.MockitoJUnitRunner;
 @SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owl_krssparser {
-    @Test
-    public void enforceInterfacesJavaCharStream() throws Exception {
-        assertTrue(uk.ac.manchester.cs.BOMSafeJavaCharStream.class
-                .isAssignableFrom(JavaCharStream.class));
-    }
-
-    public void verifyJavaCharStream() throws Exception {
-        JavaCharStream testSubject0 = new JavaCharStream(_Reader, _int, _int);
-        JavaCharStream testSubject1 = new JavaCharStream(_InputStream, _String, _int,
-                _int);
-        char result0 = testSubject0.readChar();
-        testSubject0.backup(_int);
-        char result1 = testSubject0.BeginToken();
-        int result2 = testSubject0.getEndColumn();
-        int result3 = testSubject0.getEndLine();
-        int result4 = testSubject0.getBeginColumn();
-        int result5 = testSubject0.getBeginLine();
-        testSubject0.ReInit(_InputStream, _String, _int, _int);
-        testSubject0.ReInit(_Reader, _int, _int);
-        java.lang.String result6 = testSubject0.GetImage();
-    }
 
     @Test
     public void enforceInterfacesKRSSOntologyFormat() throws Exception {
@@ -188,18 +166,6 @@ public class Gen_org_coode_owl_krssparser {
                 .isAssignableFrom(KRSSParserTokenManager.class));
     }
 
-    public void verifyKRSSParserTokenManager() throws Exception {
-        KRSSParserTokenManager testSubject0 = new KRSSParserTokenManager(
-                _BOMSafeJavaCharStream);
-        KRSSParserTokenManager testSubject1 = new KRSSParserTokenManager(
-                _BOMSafeJavaCharStream, _int);
-        testSubject0.ReInit(_BOMSafeJavaCharStream, _int);
-        testSubject0.ReInit(_BOMSafeJavaCharStream);
-        org.coode.owl.krssparser.Token result0 = testSubject0.getNextToken();
-        testSubject0.setDebugStream(_PrintStream);
-        testSubject0.SwitchTo(_int);
-    }
-
     @Test
     public void enforceInterfacesNameResolverStrategy() throws Exception {
         assertTrue(java.lang.Enum.class.isAssignableFrom(NameResolverStrategy.class));
@@ -298,5 +264,4 @@ public class Gen_org_coode_owl_krssparser {
     private org.semanticweb.owlapi.model.OWLOntology _OWLOntology;
     private org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
     private org.semanticweb.owlapi.model.OWLOntologyManager _OWLOntologyManager;
-    private uk.ac.manchester.cs.BOMSafeJavaCharStream _BOMSafeJavaCharStream;
 }

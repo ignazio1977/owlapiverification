@@ -1,30 +1,23 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import OWLOntologyFormat;
+import org.semanticweb.owlapi.model.*;
 
-import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntax;
-import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxHTMLOntologyFormat;
-import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxHTMLOntologyStorer;
-import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxObjectRenderer;
-import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyFormat;
-import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyStorer;
-import uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyStorerBase;
+import uk.ac.manchester.cs.owlapi.dlsyntax.*;
 
 @SuppressWarnings({ "javadoc", "serial" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owlapi_dlsyntax {
-
     @Test
-    public void enforceInterfacesDLSyntax()  {
+    public void enforceInterfacesDLSyntax() {
         assertTrue(Enum.class.isAssignableFrom(DLSyntax.class));
     }
 
-    public void verifyEnumDLSyntax()  {
+    public void verifyEnumDLSyntax() {
         DLSyntax testSubject0 = DLSyntax.SUBCLASS;
         DLSyntax testSubject1 = DLSyntax.EQUIVALENT_TO;
         DLSyntax testSubject2 = DLSyntax.NOT;
@@ -49,50 +42,41 @@ public class Gen_uk_ac_manchester_cs_owlapi_dlsyntax {
     }
 
     @Test
-    public void enforceInterfacesDLSyntaxHTMLOntologyFormat()  {
-        assertTrue(OWLOntologyFormat.class
-                .isAssignableFrom(DLSyntaxHTMLOntologyFormat.class));
+    public void enforceInterfacesDLSyntaxHTMLOntologyFormat() {
+        assertTrue(OWLOntologyFormat.class.isAssignableFrom(DLSyntaxHTMLOntologyFormat.class));
     }
 
-    public void verifyDLSyntaxHTMLOntologyFormat()  {
+    public void verifyDLSyntaxHTMLOntologyFormat() {
         DLSyntaxHTMLOntologyFormat testSubject0 = new DLSyntaxHTMLOntologyFormat();
         testSubject0.setParameter(_Object, _Object);
         Object result0 = testSubject0.getParameter(_Object, _Object);
         boolean result1 = testSubject0.isPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result2 = testSubject0
-                .asPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0
-                .getOntologyLoaderMetaData();
+        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
+        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
     @Test
-    public void enforceInterfacesDLSyntaxHTMLOntologyStorer()  {
-        assertTrue(uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyStorerBase.class
-                .isAssignableFrom(DLSyntaxHTMLOntologyStorer.class));
+    public void enforceInterfacesDLSyntaxHTMLOntologyStorer() {
+        assertTrue(uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyStorerBase.class.isAssignableFrom(DLSyntaxHTMLOntologyStorer.class));
     }
 
-    public void verifyDLSyntaxHTMLOntologyStorer()  {
+    public void verifyDLSyntaxHTMLOntologyStorer() throws OWLOntologyStorageException {
         DLSyntaxHTMLOntologyStorer testSubject0 = new DLSyntaxHTMLOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesDLSyntaxObjectRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.OWLObjectRenderer.class
-                .isAssignableFrom(DLSyntaxObjectRenderer.class));
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(DLSyntaxObjectRenderer.class));
+    public void enforceInterfacesDLSyntaxObjectRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.OWLObjectRenderer.class.isAssignableFrom(DLSyntaxObjectRenderer.class));
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(DLSyntaxObjectRenderer.class));
     }
 
-    public void verifyDLSyntaxObjectRenderer()  {
+    public void verifyDLSyntaxObjectRenderer() {
         DLSyntaxObjectRenderer testSubject0 = new DLSyntaxObjectRenderer();
         String result0 = testSubject0.render(_OWLObject);
         testSubject0.setShortFormProvider(_ShortFormProvider);
@@ -185,61 +169,49 @@ public class Gen_uk_ac_manchester_cs_owlapi_dlsyntax {
     }
 
     @Test
-    public void enforceInterfacesDLSyntaxOntologyFormat()  {
-        assertTrue(OWLOntologyFormat.class
-                .isAssignableFrom(DLSyntaxOntologyFormat.class));
+    public void enforceInterfacesDLSyntaxOntologyFormat() {
+        assertTrue(OWLOntologyFormat.class.isAssignableFrom(DLSyntaxOntologyFormat.class));
     }
 
-    public void verifyDLSyntaxOntologyFormat()  {
+    public void verifyDLSyntaxOntologyFormat() {
         DLSyntaxOntologyFormat testSubject0 = new DLSyntaxOntologyFormat();
         testSubject0.setParameter(_Object, _Object);
         Object result0 = testSubject0.getParameter(_Object, _Object);
         boolean result1 = testSubject0.isPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result2 = testSubject0
-                .asPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0
-                .getOntologyLoaderMetaData();
+        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
+        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
     @Test
-    public void enforceInterfacesDLSyntaxOntologyStorer()  {
-        assertTrue(uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyStorerBase.class
-                .isAssignableFrom(DLSyntaxOntologyStorer.class));
+    public void enforceInterfacesDLSyntaxOntologyStorer() {
+        assertTrue(uk.ac.manchester.cs.owlapi.dlsyntax.DLSyntaxOntologyStorerBase.class.isAssignableFrom(DLSyntaxOntologyStorer.class));
     }
 
-    public void verifyDLSyntaxOntologyStorer()  {
+    public void verifyDLSyntaxOntologyStorer() throws OWLOntologyStorageException {
         DLSyntaxOntologyStorer testSubject0 = new DLSyntaxOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesDLSyntaxOntologyStorerBase()  {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(DLSyntaxOntologyStorerBase.class));
+    public void enforceInterfacesDLSyntaxOntologyStorerBase() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(DLSyntaxOntologyStorerBase.class));
     }
 
-    public void verifyDLSyntaxOntologyStorerBase()  {
+    public void verifyDLSyntaxOntologyStorerBase() throws OWLOntologyStorageException {
         DLSyntaxOntologyStorerBase testSubject0 = new DLSyntaxOntologyStorerBase() {
-
             @Override
             public boolean canStoreOntology(OWLOntologyFormat ontologyFormat) {
                 return false;
             }
         };
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
     }

@@ -1,52 +1,39 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
-import org.coode.owlapi.latex.LatexAxiomsListOntologyFormat;
-import org.coode.owlapi.latex.LatexBracketChecker;
-import org.coode.owlapi.latex.LatexOWLObjectRenderer;
-import org.coode.owlapi.latex.LatexObjectVisitor;
-import org.coode.owlapi.latex.LatexOntologyFormat;
-import org.coode.owlapi.latex.LatexOntologyStorer;
-import org.coode.owlapi.latex.LatexRenderer;
-import org.coode.owlapi.latex.LatexRendererException;
-import org.coode.owlapi.latex.LatexRendererIOException;
-import org.coode.owlapi.latex.LatexWriter;
+import org.coode.owlapi.latex.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.semanticweb.owlapi.io.OWLRendererException;
+import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_latex {
-
     @Test
-    public void enforceInterfacesLatexAxiomsListOntologyFormat()
-             {
-        assertTrue(OWLOntologyFormat.class
-                .isAssignableFrom(LatexAxiomsListOntologyFormat.class));
+    public void enforceInterfacesLatexAxiomsListOntologyFormat() {
+        assertTrue(OWLOntologyFormat.class.isAssignableFrom(LatexAxiomsListOntologyFormat.class));
     }
 
-    public void verifyLatexAxiomsListOntologyFormat()  {
+    public void verifyLatexAxiomsListOntologyFormat() {
         LatexAxiomsListOntologyFormat testSubject0 = new LatexAxiomsListOntologyFormat();
         testSubject0.setParameter(_Object, _Object);
         Object result0 = testSubject0.getParameter(_Object, _Object);
         boolean result1 = testSubject0.isPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result2 = testSubject0
-                .asPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0
-                .getOntologyLoaderMetaData();
+        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
+        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
     @Test
-    public void enforceInterfacesLatexBracketChecker()  {
-        assertTrue(OWLClassExpressionVisitor.class
-                .isAssignableFrom(LatexBracketChecker.class));
+    public void enforceInterfacesLatexBracketChecker() {
+        assertTrue(OWLClassExpressionVisitor.class.isAssignableFrom(LatexBracketChecker.class));
     }
 
-    public void verifyLatexBracketChecker()  {
+    public void verifyLatexBracketChecker() {
         LatexBracketChecker testSubject0 = mock(LatexBracketChecker.class);
         testSubject0.visit(_OWLDataExactCardinality);
         testSubject0.visit(_OWLObjectOneOf);
@@ -68,19 +55,16 @@ public class Gen_org_coode_owlapi_latex {
         testSubject0.visit(_OWLObjectSomeValuesFrom);
         testSubject0.visit(_OWLObjectCardinalityRestriction);
         testSubject0.visit(_OWLObjectAllValuesFrom);
-        boolean result0 = LatexBracketChecker
-                .requiresBracket(_OWLClassExpression);
+        boolean result0 = LatexBracketChecker.requiresBracket(_OWLClassExpression);
     }
 
     @Test
-    public void enforceInterfacesLatexObjectVisitor()  {
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(LatexObjectVisitor.class));
+    public void enforceInterfacesLatexObjectVisitor() {
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(LatexObjectVisitor.class));
     }
 
-    public void verifyLatexObjectVisitor()  {
-        LatexObjectVisitor testSubject0 = new LatexObjectVisitor(_LatexWriter,
-                _OWLDataFactory);
+    public void verifyLatexObjectVisitor() {
+        LatexObjectVisitor testSubject0 = new LatexObjectVisitor(_LatexWriter, _OWLDataFactory);
         testSubject0.setShortFormProvider(_ShortFormProvider);
         testSubject0.setSubject(_OWLObject);
         boolean result0 = testSubject0.isPrettyPrint();
@@ -174,61 +158,51 @@ public class Gen_org_coode_owlapi_latex {
     }
 
     @Test
-    public void enforceInterfacesLatexOntologyFormat()  {
-        assertTrue(OWLOntologyFormat.class
-                .isAssignableFrom(LatexOntologyFormat.class));
+    public void enforceInterfacesLatexOntologyFormat() {
+        assertTrue(OWLOntologyFormat.class.isAssignableFrom(LatexOntologyFormat.class));
     }
 
-    public void verifyLatexOntologyFormat()  {
+    public void verifyLatexOntologyFormat() {
         LatexOntologyFormat testSubject0 = new LatexOntologyFormat();
         testSubject0.setParameter(_Object, _Object);
         Object result0 = testSubject0.getParameter(_Object, _Object);
         boolean result1 = testSubject0.isPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result2 = testSubject0
-                .asPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0
-                .getOntologyLoaderMetaData();
+        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
+        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
     @Test
-    public void enforceInterfacesLatexOntologyStorer()  {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(LatexOntologyStorer.class));
+    public void enforceInterfacesLatexOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(LatexOntologyStorer.class));
     }
 
-    public void verifyLatexOntologyStorer()  {
+    public void verifyLatexOntologyStorer() throws OWLOntologyStorageException {
         LatexOntologyStorer testSubject0 = new LatexOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesLatexOWLObjectRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.OWLObjectRenderer.class
-                .isAssignableFrom(LatexOWLObjectRenderer.class));
+    public void enforceInterfacesLatexOWLObjectRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.OWLObjectRenderer.class.isAssignableFrom(LatexOWLObjectRenderer.class));
     }
 
-    public void verifyLatexOWLObjectRenderer()  {
-        LatexOWLObjectRenderer testSubject0 = new LatexOWLObjectRenderer(
-                _OWLDataFactory);
+    public void verifyLatexOWLObjectRenderer() {
+        LatexOWLObjectRenderer testSubject0 = new LatexOWLObjectRenderer(_OWLDataFactory);
         String result0 = testSubject0.render(_OWLObject);
         testSubject0.setShortFormProvider(_ShortFormProvider);
     }
 
     @Test
-    public void enforceInterfacesLatexRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(LatexRenderer.class));
+    public void enforceInterfacesLatexRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(LatexRenderer.class));
     }
 
-    public void verifyLatexRenderer()  {
+    public void verifyLatexRenderer() throws OWLRendererException {
         LatexRenderer testSubject0 = new LatexRenderer(_OWLOntologyManager);
         LatexRenderer testSubject1 = new LatexRenderer();
         testSubject0.render(_OWLOntology, _Writer);
@@ -237,18 +211,14 @@ public class Gen_org_coode_owlapi_latex {
     }
 
     @Test
-    public void enforceInterfacesLatexRendererException()  {
-        assertTrue(org.semanticweb.owlapi.io.OWLRendererException.class
-                .isAssignableFrom(LatexRendererException.class));
+    public void enforceInterfacesLatexRendererException() {
+        assertTrue(org.semanticweb.owlapi.io.OWLRendererException.class.isAssignableFrom(LatexRendererException.class));
     }
 
-    public void verifyLatexRendererException()  {
-        LatexRendererException testSubject0 = new LatexRendererException(
-                _Throwable);
-        LatexRendererException testSubject1 = new LatexRendererException(
-                _String);
-        LatexRendererException testSubject2 = new LatexRendererException(
-                _String, _Throwable);
+    public void verifyLatexRendererException() {
+        LatexRendererException testSubject0 = new LatexRendererException(_Throwable);
+        LatexRendererException testSubject1 = new LatexRendererException(_String);
+        LatexRendererException testSubject2 = new LatexRendererException(_String, _Throwable);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -264,14 +234,12 @@ public class Gen_org_coode_owlapi_latex {
     }
 
     @Test
-    public void enforceInterfacesLatexRendererIOException()  {
-        assertTrue(org.coode.owlapi.latex.LatexRendererException.class
-                .isAssignableFrom(LatexRendererIOException.class));
+    public void enforceInterfacesLatexRendererIOException() {
+        assertTrue(org.coode.owlapi.latex.LatexRendererException.class.isAssignableFrom(LatexRendererIOException.class));
     }
 
-    public void verifyLatexRendererIOException()  {
-        LatexRendererIOException testSubject0 = new LatexRendererIOException(
-                _IOException);
+    public void verifyLatexRendererIOException() {
+        LatexRendererIOException testSubject0 = new LatexRendererIOException(_IOException);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -286,7 +254,7 @@ public class Gen_org_coode_owlapi_latex {
         Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    public void verifyLatexWriter()  {
+    public void verifyLatexWriter() {
         LatexWriter testSubject0 = new LatexWriter(_Writer);
         testSubject0.write(_Object);
         testSubject0.flush();

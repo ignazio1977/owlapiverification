@@ -1,8 +1,9 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
+import java.io.IOException;
 import java.util.Set;
 
 import org.coode.owlapi.owlxmlparser.*;
@@ -11,27 +12,23 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.io.OWLParserException;
 import org.semanticweb.owlapi.model.*;
+import org.xml.sax.SAXException;
 
 @SuppressWarnings({ "javadoc", "deprecation", "unchecked", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_owlxmlparser {
-
     @Test
-    public void enforceInterfacesAbbreviatedIRIElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractIRIElementHandler.class
-                .isAssignableFrom(AbbreviatedIRIElementHandler.class));
+    public void enforceInterfacesAbbreviatedIRIElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractIRIElementHandler.class.isAssignableFrom(AbbreviatedIRIElementHandler.class));
     }
 
-    public void verifyAbbreviatedIRIElementHandler()  {
-        AbbreviatedIRIElementHandler testSubject0 = new AbbreviatedIRIElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyAbbreviatedIRIElementHandler() throws OWLParserException, UnloadableImportException {
+        AbbreviatedIRIElementHandler testSubject0 = new AbbreviatedIRIElementHandler(_OWLXMLParserHandler);
         boolean result0 = testSubject0.isTextContentPossible();
         Object result1 = testSubject0.getOWLObject();
         IRI result2 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -50,36 +47,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractClassExpressionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(AbstractClassExpressionElementHandler.class));
+    public void enforceInterfacesAbstractClassExpressionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(AbstractClassExpressionElementHandler.class));
     }
 
-    public void verifyAbstractClassExpressionElementHandler()  {
-        AbstractClassExpressionElementHandler testSubject0 = new AbstractClassExpressionElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractClassExpressionElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractClassExpressionElementHandler testSubject0 = new AbstractClassExpressionElementHandler(_OWLXMLParserHandler) {
             @Override
-            protected void endClassExpressionElement()
-                    throws OWLXMLParserException {}
+            protected void endClassExpressionElement() throws OWLXMLParserException {
+            }
         };
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -99,27 +88,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractClassExpressionFillerRestriction()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractObjectRestrictionElementHandler.class
-                .isAssignableFrom(AbstractClassExpressionFillerRestriction.class));
+    public void enforceInterfacesAbstractClassExpressionFillerRestriction() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractObjectRestrictionElementHandler.class.isAssignableFrom(AbstractClassExpressionFillerRestriction.class));
     }
 
-    public void verifyAbstractClassExpressionFillerRestriction()
-             {
-        AbstractClassExpressionFillerRestriction testSubject0 = new AbstractClassExpressionFillerRestriction(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractClassExpressionFillerRestriction() throws OWLParserException, UnloadableImportException {
+        AbstractClassExpressionFillerRestriction testSubject0 = new AbstractClassExpressionFillerRestriction(_OWLXMLParserHandler) {
             @Override
             protected OWLClassExpression createRestriction() {
                 return null;
@@ -127,12 +109,10 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         };
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -150,29 +130,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesAbstractClassExpressionOperandAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOperandAxiomElementHandler.class
-                .isAssignableFrom(AbstractClassExpressionOperandAxiomElementHandler.class));
+    public void enforceInterfacesAbstractClassExpressionOperandAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOperandAxiomElementHandler.class.isAssignableFrom(AbstractClassExpressionOperandAxiomElementHandler.class));
     }
 
-    public void verifyAbstractClassExpressionOperandAxiomElementHandler()
-             {
-        AbstractClassExpressionOperandAxiomElementHandler testSubject0 = new AbstractClassExpressionOperandAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractClassExpressionOperandAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractClassExpressionOperandAxiomElementHandler testSubject0 = new AbstractClassExpressionOperandAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLAxiom createAxiom() throws OWLXMLParserException {
                 return null;
@@ -180,16 +151,13 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         };
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -206,28 +174,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesAbstractDataCardinalityRestrictionElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRangeFillerRestrictionElementHandler.class
-                .isAssignableFrom(AbstractDataCardinalityRestrictionElementHandler.class));
+    public void enforceInterfacesAbstractDataCardinalityRestrictionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRangeFillerRestrictionElementHandler.class.isAssignableFrom(AbstractDataCardinalityRestrictionElementHandler.class));
     }
 
-    public void verifyAbstractDataCardinalityRestrictionElementHandler()
-             {
-        AbstractDataCardinalityRestrictionElementHandler testSubject0 = new AbstractDataCardinalityRestrictionElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractDataCardinalityRestrictionElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractDataCardinalityRestrictionElementHandler testSubject0 = new AbstractDataCardinalityRestrictionElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLClassExpression createRestriction() {
                 return null;
@@ -237,12 +197,10 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.attribute(_String, _String);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -259,27 +217,19 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesAbstractDataRangeFillerRestrictionElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRestrictionElementHandler.class
-                .isAssignableFrom(AbstractDataRangeFillerRestrictionElementHandler.class));
+    public void enforceInterfacesAbstractDataRangeFillerRestrictionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRestrictionElementHandler.class.isAssignableFrom(AbstractDataRangeFillerRestrictionElementHandler.class));
     }
 
-    public void verifyAbstractDataRangeFillerRestrictionElementHandler()
-             {
-        AbstractDataRangeFillerRestrictionElementHandler testSubject0 = new AbstractDataRangeFillerRestrictionElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractDataRangeFillerRestrictionElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractDataRangeFillerRestrictionElementHandler testSubject0 = new AbstractDataRangeFillerRestrictionElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLClassExpression createRestriction() {
                 return null;
@@ -287,12 +237,10 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         };
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -310,38 +258,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractDataRestrictionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractRestrictionElementHandler.class
-                .isAssignableFrom(AbstractDataRestrictionElementHandler.class));
+    public void enforceInterfacesAbstractDataRestrictionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractRestrictionElementHandler.class.isAssignableFrom(AbstractDataRestrictionElementHandler.class));
     }
 
-    public void verifyAbstractDataRestrictionElementHandler()  {
-        AbstractDataRestrictionElementHandler testSubject0 = new AbstractDataRestrictionElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractDataRestrictionElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractDataRestrictionElementHandler testSubject0 = new AbstractDataRestrictionElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLClassExpression createRestriction() {
                 return null;
             }
         };
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -360,58 +300,46 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractElementHandlerFactory()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.OWLElementHandlerFactory.class
-                .isAssignableFrom(AbstractElementHandlerFactory.class));
+    public void enforceInterfacesAbstractElementHandlerFactory() {
+        assertTrue(org.coode.owlapi.owlxmlparser.OWLElementHandlerFactory.class.isAssignableFrom(AbstractElementHandlerFactory.class));
     }
 
-    public void verifyAbstractElementHandlerFactory()  {
-        AbstractElementHandlerFactory testSubject0 = new AbstractElementHandlerFactory(
-                _OWLXMLVocabulary) {
-
+    public void verifyAbstractElementHandlerFactory() {
+        AbstractElementHandlerFactory testSubject0 = new AbstractElementHandlerFactory(_OWLXMLVocabulary) {
             @Override
-            public OWLElementHandler<?> createHandler(
-                    OWLXMLParserHandler handler) {
+            public OWLElementHandler<?> createHandler(OWLXMLParserHandler handler) {
                 return null;
             }
         };
         String result0 = testSubject0.getElementName();
-        org.coode.owlapi.owlxmlparser.OWLElementHandler<?> result1 = testSubject0
-                .createHandler(_OWLXMLParserHandler);
+        org.coode.owlapi.owlxmlparser.OWLElementHandler<?> result1 = testSubject0.createHandler(_OWLXMLParserHandler);
     }
 
     @Test
-    public void enforceInterfacesAbstractIRIElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(AbstractIRIElementHandler.class));
+    public void enforceInterfacesAbstractIRIElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(AbstractIRIElementHandler.class));
     }
 
-    public void verifyAbstractIRIElementHandler()  {
-        AbstractIRIElementHandler testSubject0 = new AbstractIRIElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractIRIElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractIRIElementHandler testSubject0 = new AbstractIRIElementHandler(_OWLXMLParserHandler) {
             @Override
-            public void endElement() throws OWLParserException,
-                    UnloadableImportException {}
+            public void endElement() throws OWLParserException, UnloadableImportException {
+            }
 
             @Override
             public IRI getOWLObject() throws OWLXMLParserException {
                 return null;
             }
         };
-        OWLOntologyLoaderConfiguration result0 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result0 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result1 = testSubject0.isTextContentPossible();
         String result2 = testSubject0.getText();
@@ -431,10 +359,8 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result3 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result4 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result3 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result4 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
@@ -443,31 +369,22 @@ public class Gen_org_coode_owlapi_owlxmlparser {
     }
 
     @Test
-    public void
-            enforceInterfacesAbstractNaryBooleanClassExpressionElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class
-                .isAssignableFrom(AbstractNaryBooleanClassExpressionElementHandler.class));
+    public void enforceInterfacesAbstractNaryBooleanClassExpressionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class.isAssignableFrom(AbstractNaryBooleanClassExpressionElementHandler.class));
     }
 
-    public void verifyAbstractNaryBooleanClassExpressionElementHandler()
-             {
-        AbstractNaryBooleanClassExpressionElementHandler testSubject0 = new AbstractNaryBooleanClassExpressionElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractNaryBooleanClassExpressionElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractNaryBooleanClassExpressionElementHandler testSubject0 = new AbstractNaryBooleanClassExpressionElementHandler(_OWLXMLParserHandler) {
             @Override
-            protected OWLClassExpression createClassExpression(
-                    Set<OWLClassExpression> expressions) {
+            protected OWLClassExpression createClassExpression(Set<OWLClassExpression> expressions) {
                 return null;
             }
         };
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -486,39 +403,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractObjectRestrictionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractRestrictionElementHandler.class
-                .isAssignableFrom(AbstractObjectRestrictionElementHandler.class));
+    public void enforceInterfacesAbstractObjectRestrictionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractRestrictionElementHandler.class.isAssignableFrom(AbstractObjectRestrictionElementHandler.class));
     }
 
-    public void verifyAbstractObjectRestrictionElementHandler()
-             {
-        AbstractObjectRestrictionElementHandler testSubject0 = new AbstractObjectRestrictionElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractObjectRestrictionElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractObjectRestrictionElementHandler testSubject0 = new AbstractObjectRestrictionElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLClassExpression createRestriction() {
                 return null;
             }
         };
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -537,42 +445,33 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractOperandAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(AbstractOperandAxiomElementHandler.class));
+    public void enforceInterfacesAbstractOperandAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(AbstractOperandAxiomElementHandler.class));
     }
 
-    public void verifyAbstractOperandAxiomElementHandler()  {
-        AbstractOperandAxiomElementHandler testSubject0 = new AbstractOperandAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOperandAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOperandAxiomElementHandler testSubject0 = new AbstractOperandAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLAxiom createAxiom() throws OWLXMLParserException {
                 return null;
             }
         };
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -590,27 +489,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractOWLAssertionAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(AbstractOWLAssertionAxiomElementHandler.class));
+    public void enforceInterfacesAbstractOWLAssertionAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(AbstractOWLAssertionAxiomElementHandler.class));
     }
 
-    public void verifyAbstractOWLAssertionAxiomElementHandler()
-             {
-        AbstractOWLAssertionAxiomElementHandler testSubject0 = new AbstractOWLAssertionAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLAssertionAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLAssertionAxiomElementHandler testSubject0 = new AbstractOWLAssertionAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLAxiom createAxiom() throws OWLXMLParserException {
                 return null;
@@ -619,21 +511,17 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.setProperty(_OWLDataPropertyExpression);
         OWLPropertyExpression result0 = testSubject0.getProperty();
         OWLObject result1 = testSubject0.getObject();
-        OWLIndividual result2 = testSubject0
-                .getSubject();
+        OWLIndividual result2 = testSubject0.getSubject();
         testSubject0.setSubject(_OWLIndividual);
         testSubject0.setObject(_OWLObject);
-        java.util.Set<OWLAnnotation> result3 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result4 = testSubject0.getOWLObject();
-        OWLAxiom result5 = testSubject0
-                .getOWLObject();
+        OWLAxiom result5 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result6 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result6 = testSubject0.getConfiguration();
         boolean result7 = testSubject0.isTextContentPossible();
         String result8 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -651,42 +539,33 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result9 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result10 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result9 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result10 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractOWLAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(AbstractOWLAxiomElementHandler.class));
+    public void enforceInterfacesAbstractOWLAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(AbstractOWLAxiomElementHandler.class));
     }
 
-    public void verifyAbstractOWLAxiomElementHandler()  {
-        AbstractOWLAxiomElementHandler testSubject0 = new AbstractOWLAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLAxiomElementHandler testSubject0 = new AbstractOWLAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLAxiom createAxiom() throws OWLXMLParserException {
                 return null;
             }
         };
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -704,29 +583,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesAbstractOWLDataPropertyAssertionAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAssertionAxiomElementHandler.class
-                .isAssignableFrom(AbstractOWLDataPropertyAssertionAxiomElementHandler.class));
+    public void enforceInterfacesAbstractOWLDataPropertyAssertionAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAssertionAxiomElementHandler.class.isAssignableFrom(AbstractOWLDataPropertyAssertionAxiomElementHandler.class));
     }
 
-    public void verifyAbstractOWLDataPropertyAssertionAxiomElementHandler()
-             {
-        AbstractOWLDataPropertyAssertionAxiomElementHandler testSubject0 = new AbstractOWLDataPropertyAssertionAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLDataPropertyAssertionAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLDataPropertyAssertionAxiomElementHandler testSubject0 = new AbstractOWLDataPropertyAssertionAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLAxiom createAxiom() throws OWLXMLParserException {
                 return null;
@@ -739,21 +609,17 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.setProperty(_OWLDataPropertyExpression);
         OWLDataPropertyExpression result0 = testSubject0.getProperty();
         OWLObject result1 = testSubject0.getObject();
-        OWLIndividual result2 = testSubject0
-                .getSubject();
+        OWLIndividual result2 = testSubject0.getSubject();
         testSubject0.setSubject(_OWLIndividual);
         testSubject0.setObject(_OWLLiteral);
-        java.util.Set<OWLAnnotation> result3 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result4 = testSubject0.getOWLObject();
-        OWLAxiom result5 = testSubject0
-                .getOWLObject();
+        OWLAxiom result5 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result6 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result6 = testSubject0.getConfiguration();
         boolean result7 = testSubject0.isTextContentPossible();
         String result8 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -767,29 +633,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        IRI result9 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result10 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result9 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result10 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesAbstractOWLDataPropertyOperandAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOperandAxiomElementHandler.class
-                .isAssignableFrom(AbstractOWLDataPropertyOperandAxiomElementHandler.class));
+    public void enforceInterfacesAbstractOWLDataPropertyOperandAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOperandAxiomElementHandler.class.isAssignableFrom(AbstractOWLDataPropertyOperandAxiomElementHandler.class));
     }
 
-    public void verifyAbstractOWLDataPropertyOperandAxiomElementHandler()
-             {
-        AbstractOWLDataPropertyOperandAxiomElementHandler testSubject0 = new AbstractOWLDataPropertyOperandAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLDataPropertyOperandAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLDataPropertyOperandAxiomElementHandler testSubject0 = new AbstractOWLDataPropertyOperandAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLAxiom createAxiom() throws OWLXMLParserException {
                 return null;
@@ -797,16 +654,13 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         };
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -823,35 +677,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractOWLDataRangeHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(AbstractOWLDataRangeHandler.class));
+    public void enforceInterfacesAbstractOWLDataRangeHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(AbstractOWLDataRangeHandler.class));
     }
 
-    public void verifyAbstractOWLDataRangeHandler()  {
-        AbstractOWLDataRangeHandler testSubject0 = new AbstractOWLDataRangeHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLDataRangeHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLDataRangeHandler testSubject0 = new AbstractOWLDataRangeHandler(_OWLXMLParserHandler) {
             @Override
-            protected void endDataRangeElement() throws OWLXMLParserException {}
+            protected void endDataRangeElement() throws OWLXMLParserException {
+            }
         };
         Object result0 = testSubject0.getOWLObject();
-        OWLDataRange result1 = testSubject0
-                .getOWLObject();
+        OWLDataRange result1 = testSubject0.getOWLObject();
         testSubject0.setDataRange(_OWLDataRange);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -871,36 +719,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractOWLElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.OWLElementHandler.class
-                .isAssignableFrom(AbstractOWLElementHandler.class));
+    public void enforceInterfacesAbstractOWLElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.OWLElementHandler.class.isAssignableFrom(AbstractOWLElementHandler.class));
     }
 
-    public void verifyAbstractOWLElementHandler()  {
-        AbstractOWLElementHandler<OWLObject> testSubject0 = new AbstractOWLElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLElementHandler<OWLObject> testSubject0 = new AbstractOWLElementHandler(_OWLXMLParserHandler) {
             @Override
-            public void endElement() throws OWLParserException,
-                    UnloadableImportException {}
+            public void endElement() throws OWLParserException, UnloadableImportException {
+            }
 
             @Override
             public Object getOWLObject() throws OWLXMLParserException {
                 return null;
             }
         };
-        OWLOntologyLoaderConfiguration result0 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result0 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result1 = testSubject0.isTextContentPossible();
         String result2 = testSubject0.getText();
@@ -920,10 +762,8 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result3 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result4 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result3 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result4 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
@@ -932,18 +772,12 @@ public class Gen_org_coode_owlapi_owlxmlparser {
     }
 
     @Test
-    public void
-            enforceInterfacesAbstractOWLIndividualOperandAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOperandAxiomElementHandler.class
-                .isAssignableFrom(AbstractOWLIndividualOperandAxiomElementHandler.class));
+    public void enforceInterfacesAbstractOWLIndividualOperandAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOperandAxiomElementHandler.class.isAssignableFrom(AbstractOWLIndividualOperandAxiomElementHandler.class));
     }
 
-    public void verifyAbstractOWLIndividualOperandAxiomElementHandler()
-             {
-        AbstractOWLIndividualOperandAxiomElementHandler testSubject0 = new AbstractOWLIndividualOperandAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLIndividualOperandAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLIndividualOperandAxiomElementHandler testSubject0 = new AbstractOWLIndividualOperandAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLAxiom createAxiom() throws OWLXMLParserException {
                 return null;
@@ -952,16 +786,13 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -977,27 +808,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractOWLObjectCardinalityElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionFillerRestriction.class
-                .isAssignableFrom(AbstractOWLObjectCardinalityElementHandler.class));
+    public void enforceInterfacesAbstractOWLObjectCardinalityElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionFillerRestriction.class.isAssignableFrom(AbstractOWLObjectCardinalityElementHandler.class));
     }
 
-    public void verifyAbstractOWLObjectCardinalityElementHandler()
-             {
-        AbstractOWLObjectCardinalityElementHandler testSubject0 = new AbstractOWLObjectCardinalityElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLObjectCardinalityElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLObjectCardinalityElementHandler testSubject0 = new AbstractOWLObjectCardinalityElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLClassExpression createCardinalityRestriction() {
                 return null;
@@ -1007,12 +831,10 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.attribute(_String, _String);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1029,28 +851,19 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesAbstractOWLObjectPropertyAssertionAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAssertionAxiomElementHandler.class
-                .isAssignableFrom(AbstractOWLObjectPropertyAssertionAxiomElementHandler.class));
+    public void enforceInterfacesAbstractOWLObjectPropertyAssertionAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAssertionAxiomElementHandler.class.isAssignableFrom(AbstractOWLObjectPropertyAssertionAxiomElementHandler.class));
     }
 
-    public void verifyAbstractOWLObjectPropertyAssertionAxiomElementHandler()
-             {
-        AbstractOWLObjectPropertyAssertionAxiomElementHandler testSubject0 = new AbstractOWLObjectPropertyAssertionAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLObjectPropertyAssertionAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLObjectPropertyAssertionAxiomElementHandler testSubject0 = new AbstractOWLObjectPropertyAssertionAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLAxiom createAxiom() throws OWLXMLParserException {
                 return null;
@@ -1062,21 +875,17 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.setProperty(_OWLObjectPropertyExpression);
         OWLObjectPropertyExpression result0 = testSubject0.getProperty();
         OWLObject result1 = testSubject0.getObject();
-        OWLIndividual result2 = testSubject0
-                .getSubject();
+        OWLIndividual result2 = testSubject0.getSubject();
         testSubject0.setSubject(_OWLIndividual);
         testSubject0.setObject(_OWLIndividual);
-        java.util.Set<OWLAnnotation> result3 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result4 = testSubject0.getOWLObject();
-        OWLAxiom result5 = testSubject0
-                .getOWLObject();
+        OWLAxiom result5 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result6 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result6 = testSubject0.getConfiguration();
         boolean result7 = testSubject0.isTextContentPossible();
         String result8 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1091,49 +900,36 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result9 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result10 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result9 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result10 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesAbstractOWLObjectPropertyCharacteristicAxiomElementHandler()
-                     {
+    public void enforceInterfacesAbstractOWLObjectPropertyCharacteristicAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLPropertyCharacteristicAxiomElementHandler.class
                 .isAssignableFrom(AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class));
     }
 
-    public void
-            verifyAbstractOWLObjectPropertyCharacteristicAxiomElementHandler()
-                     {
-        AbstractOWLObjectPropertyCharacteristicAxiomElementHandler testSubject0 = new AbstractOWLObjectPropertyCharacteristicAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLObjectPropertyCharacteristicAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLObjectPropertyCharacteristicAxiomElementHandler testSubject0 = new AbstractOWLObjectPropertyCharacteristicAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
-            protected OWLAxiom createPropertyCharacteristicAxiom()
-                    throws OWLXMLParserException {
+            protected OWLAxiom createPropertyCharacteristicAxiom() throws OWLXMLParserException {
                 return null;
             }
         };
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1150,37 +946,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractOWLObjectPropertyElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(AbstractOWLObjectPropertyElementHandler.class));
+    public void enforceInterfacesAbstractOWLObjectPropertyElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(AbstractOWLObjectPropertyElementHandler.class));
     }
 
-    public void verifyAbstractOWLObjectPropertyElementHandler()
-             {
-        AbstractOWLObjectPropertyElementHandler testSubject0 = new AbstractOWLObjectPropertyElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLObjectPropertyElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLObjectPropertyElementHandler testSubject0 = new AbstractOWLObjectPropertyElementHandler(_OWLXMLParserHandler) {
             @Override
-            protected void endObjectPropertyElement()
-                    throws OWLXMLParserException {}
+            protected void endObjectPropertyElement() throws OWLXMLParserException {
+            }
         };
         Object result0 = testSubject0.getOWLObject();
-        OWLObjectPropertyExpression result1 = testSubject0
-                .getOWLObject();
+        OWLObjectPropertyExpression result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -1200,29 +987,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesAbstractOWLObjectPropertyOperandAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOperandAxiomElementHandler.class
-                .isAssignableFrom(AbstractOWLObjectPropertyOperandAxiomElementHandler.class));
+    public void enforceInterfacesAbstractOWLObjectPropertyOperandAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOperandAxiomElementHandler.class.isAssignableFrom(AbstractOWLObjectPropertyOperandAxiomElementHandler.class));
     }
 
-    public void verifyAbstractOWLObjectPropertyOperandAxiomElementHandler()
-             {
-        AbstractOWLObjectPropertyOperandAxiomElementHandler testSubject0 = new AbstractOWLObjectPropertyOperandAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLObjectPropertyOperandAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLObjectPropertyOperandAxiomElementHandler testSubject0 = new AbstractOWLObjectPropertyOperandAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLAxiom createAxiom() throws OWLXMLParserException {
                 return null;
@@ -1230,16 +1008,13 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         };
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1256,47 +1031,34 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesAbstractOWLPropertyCharacteristicAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(AbstractOWLPropertyCharacteristicAxiomElementHandler.class));
+    public void enforceInterfacesAbstractOWLPropertyCharacteristicAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(AbstractOWLPropertyCharacteristicAxiomElementHandler.class));
     }
 
-    public void verifyAbstractOWLPropertyCharacteristicAxiomElementHandler()
-             {
-        AbstractOWLPropertyCharacteristicAxiomElementHandler testSubject0 = new AbstractOWLPropertyCharacteristicAxiomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractOWLPropertyCharacteristicAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractOWLPropertyCharacteristicAxiomElementHandler testSubject0 = new AbstractOWLPropertyCharacteristicAxiomElementHandler(_OWLXMLParserHandler) {
             @Override
-            protected OWLAxiom createPropertyCharacteristicAxiom()
-                    throws OWLXMLParserException {
+            protected OWLAxiom createPropertyCharacteristicAxiom() throws OWLXMLParserException {
                 return null;
             }
         };
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1314,37 +1076,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesAbstractRestrictionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class
-                .isAssignableFrom(AbstractRestrictionElementHandler.class));
+    public void enforceInterfacesAbstractRestrictionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class.isAssignableFrom(AbstractRestrictionElementHandler.class));
     }
 
-    public void verifyAbstractRestrictionElementHandler()  {
-        AbstractRestrictionElementHandler testSubject0 = new AbstractRestrictionElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifyAbstractRestrictionElementHandler() throws OWLParserException, UnloadableImportException {
+        AbstractRestrictionElementHandler testSubject0 = new AbstractRestrictionElementHandler(_OWLXMLParserHandler) {
             @Override
             protected OWLClassExpression createRestriction() {
                 return null;
             }
         };
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -1364,30 +1118,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesIRIElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractIRIElementHandler.class
-                .isAssignableFrom(IRIElementHandler.class));
+    public void enforceInterfacesIRIElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractIRIElementHandler.class.isAssignableFrom(IRIElementHandler.class));
     }
 
-    public void verifyIRIElementHandler()  {
-        IRIElementHandler testSubject0 = new IRIElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyIRIElementHandler() throws OWLParserException, UnloadableImportException {
+        IRIElementHandler testSubject0 = new IRIElementHandler(_OWLXMLParserHandler);
         boolean result0 = testSubject0.isTextContentPossible();
         Object result1 = testSubject0.getOWLObject();
         IRI result2 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1406,40 +1155,32 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesLegacyEntityAnnotationElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(LegacyEntityAnnotationElementHandler.class));
+    public void enforceInterfacesLegacyEntityAnnotationElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(LegacyEntityAnnotationElementHandler.class));
     }
 
-    public void verifyLegacyEntityAnnotationElementHandler()  {
-        LegacyEntityAnnotationElementHandler testSubject0 = new LegacyEntityAnnotationElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyLegacyEntityAnnotationElementHandler() throws OWLParserException, UnloadableImportException {
+        LegacyEntityAnnotationElementHandler testSubject0 = new LegacyEntityAnnotationElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1453,40 +1194,32 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLAnnotationAssertionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLAnnotationAssertionElementHandler.class));
+    public void enforceInterfacesOWLAnnotationAssertionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLAnnotationAssertionElementHandler.class));
     }
 
-    public void verifyOWLAnnotationAssertionElementHandler()  {
-        OWLAnnotationAssertionElementHandler testSubject0 = new OWLAnnotationAssertionElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLAnnotationAssertionElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLAnnotationAssertionElementHandler testSubject0 = new OWLAnnotationAssertionElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractIRIElementHandler);
         testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1500,28 +1233,23 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLAnnotationElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLAnnotationElementHandler.class));
+    public void enforceInterfacesOWLAnnotationElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLAnnotationElementHandler.class));
     }
 
-    public void verifyOWLAnnotationElementHandler()  {
-        OWLAnnotationElementHandler testSubject0 = new OWLAnnotationElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLAnnotationElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLAnnotationElementHandler testSubject0 = new OWLAnnotationElementHandler(_OWLXMLParserHandler);
         testSubject0.startElement(_String);
         boolean result0 = testSubject0.isTextContentPossible();
-        OWLAnnotation result1 = testSubject0
-                .getOWLObject();
+        OWLAnnotation result1 = testSubject0.getOWLObject();
         Object result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractIRIElementHandler);
@@ -1530,8 +1258,7 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
         testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
@@ -1544,38 +1271,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLAnnotationPropertyDomainElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLAnnotationPropertyDomainElementHandler.class));
+    public void enforceInterfacesOWLAnnotationPropertyDomainElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLAnnotationPropertyDomainElementHandler.class));
     }
 
-    public void verifyOWLAnnotationPropertyDomainElementHandler()
-             {
-        OWLAnnotationPropertyDomainElementHandler testSubject0 = new OWLAnnotationPropertyDomainElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLAnnotationPropertyDomainElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLAnnotationPropertyDomainElementHandler testSubject0 = new OWLAnnotationPropertyDomainElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractIRIElementHandler);
         testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1591,32 +1309,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLAnnotationPropertyElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLAnnotationPropertyElementHandler.class));
+    public void enforceInterfacesOWLAnnotationPropertyElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLAnnotationPropertyElementHandler.class));
     }
 
-    public void verifyOWLAnnotationPropertyElementHandler()  {
-        OWLAnnotationPropertyElementHandler testSubject0 = new OWLAnnotationPropertyElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLAnnotationPropertyElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLAnnotationPropertyElementHandler testSubject0 = new OWLAnnotationPropertyElementHandler(_OWLXMLParserHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLAnnotationProperty result1 = testSubject0
-                .getOWLObject();
+        OWLAnnotationProperty result1 = testSubject0.getOWLObject();
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -1636,38 +1347,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLAnnotationPropertyRangeElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLAnnotationPropertyRangeElementHandler.class));
+    public void enforceInterfacesOWLAnnotationPropertyRangeElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLAnnotationPropertyRangeElementHandler.class));
     }
 
-    public void verifyOWLAnnotationPropertyRangeElementHandler()
-             {
-        OWLAnnotationPropertyRangeElementHandler testSubject0 = new OWLAnnotationPropertyRangeElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLAnnotationPropertyRangeElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLAnnotationPropertyRangeElementHandler testSubject0 = new OWLAnnotationPropertyRangeElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractIRIElementHandler);
         testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1683,32 +1385,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLAnonymousIndividualElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLAnonymousIndividualElementHandler.class));
+    public void enforceInterfacesOWLAnonymousIndividualElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLAnonymousIndividualElementHandler.class));
     }
 
-    public void verifyOWLAnonymousIndividualElementHandler()  {
-        OWLAnonymousIndividualElementHandler testSubject0 = new OWLAnonymousIndividualElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLAnonymousIndividualElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLAnonymousIndividualElementHandler testSubject0 = new OWLAnonymousIndividualElementHandler(_OWLXMLParserHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLAnonymousIndividual result1 = testSubject0
-                .getOWLObject();
+        OWLAnonymousIndividual result1 = testSubject0.getOWLObject();
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -1728,39 +1423,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLAsymmetricObjectPropertyAxiomElementHandler()
-                     {
+    public void enforceInterfacesOWLAsymmetricObjectPropertyAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class
                 .isAssignableFrom(OWLAsymmetricObjectPropertyAxiomElementHandler.class));
     }
 
-    public void verifyOWLAsymmetricObjectPropertyAxiomElementHandler()
-             {
-        OWLAsymmetricObjectPropertyAxiomElementHandler testSubject0 = new OWLAsymmetricObjectPropertyAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLAsymmetricObjectPropertyAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLAsymmetricObjectPropertyAxiomElementHandler testSubject0 = new OWLAsymmetricObjectPropertyAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1777,39 +1463,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLAsymmetricObjectPropertyElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class
-                .isAssignableFrom(OWLAsymmetricObjectPropertyElementHandler.class));
+    public void enforceInterfacesOWLAsymmetricObjectPropertyElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class.isAssignableFrom(OWLAsymmetricObjectPropertyElementHandler.class));
     }
 
-    public void verifyOWLAsymmetricObjectPropertyElementHandler()
-             {
-        OWLAsymmetricObjectPropertyElementHandler testSubject0 = new OWLAsymmetricObjectPropertyElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLAsymmetricObjectPropertyElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLAsymmetricObjectPropertyElementHandler testSubject0 = new OWLAsymmetricObjectPropertyElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1826,39 +1503,31 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLClassAssertionAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLClassAssertionAxiomElementHandler.class));
+    public void enforceInterfacesOWLClassAssertionAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLClassAssertionAxiomElementHandler.class));
     }
 
-    public void verifyOWLClassAssertionAxiomElementHandler()  {
-        OWLClassAssertionAxiomElementHandler testSubject0 = new OWLClassAssertionAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLClassAssertionAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLClassAssertionAxiomElementHandler testSubject0 = new OWLClassAssertionAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -1873,32 +1542,26 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLClassElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class
-                .isAssignableFrom(OWLClassElementHandler.class));
+    public void enforceInterfacesOWLClassElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class.isAssignableFrom(OWLClassElementHandler.class));
     }
 
-    public void verifyOWLClassElementHandler()  {
-        OWLClassElementHandler testSubject0 = new OWLClassElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLClassElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLClassElementHandler testSubject0 = new OWLClassElementHandler(_OWLXMLParserHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.endClassExpressionElement();
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -1918,32 +1581,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataAllValuesFromElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRangeFillerRestrictionElementHandler.class
-                .isAssignableFrom(OWLDataAllValuesFromElementHandler.class));
+    public void enforceInterfacesOWLDataAllValuesFromElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRangeFillerRestrictionElementHandler.class.isAssignableFrom(OWLDataAllValuesFromElementHandler.class));
     }
 
-    public void verifyOWLDataAllValuesFromElementHandler()  {
-        OWLDataAllValuesFromElementHandler testSubject0 = new OWLDataAllValuesFromElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataAllValuesFromElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataAllValuesFromElementHandler testSubject0 = new OWLDataAllValuesFromElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -1961,33 +1617,26 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataComplementOfElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class
-                .isAssignableFrom(OWLDataComplementOfElementHandler.class));
+    public void enforceInterfacesOWLDataComplementOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class.isAssignableFrom(OWLDataComplementOfElementHandler.class));
     }
 
-    public void verifyOWLDataComplementOfElementHandler()  {
-        OWLDataComplementOfElementHandler testSubject0 = new OWLDataComplementOfElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataComplementOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataComplementOfElementHandler testSubject0 = new OWLDataComplementOfElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLDataRange result1 = testSubject0
-                .getOWLObject();
+        OWLDataRange result1 = testSubject0.getOWLObject();
         testSubject0.setDataRange(_OWLDataRange);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2006,35 +1655,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataExactCardinalityElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataCardinalityRestrictionElementHandler.class
-                .isAssignableFrom(OWLDataExactCardinalityElementHandler.class));
+    public void enforceInterfacesOWLDataExactCardinalityElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataCardinalityRestrictionElementHandler.class.isAssignableFrom(OWLDataExactCardinalityElementHandler.class));
     }
 
-    public void verifyOWLDataExactCardinalityElementHandler()  {
-        OWLDataExactCardinalityElementHandler testSubject0 = new OWLDataExactCardinalityElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataExactCardinalityElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataExactCardinalityElementHandler testSubject0 = new OWLDataExactCardinalityElementHandler(_OWLXMLParserHandler);
         testSubject0.startElement(_String);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2051,32 +1693,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataHasValueElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRestrictionElementHandler.class
-                .isAssignableFrom(OWLDataHasValueElementHandler.class));
+    public void enforceInterfacesOWLDataHasValueElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRestrictionElementHandler.class.isAssignableFrom(OWLDataHasValueElementHandler.class));
     }
 
-    public void verifyOWLDataHasValueElementHandler()  {
-        OWLDataHasValueElementHandler testSubject0 = new OWLDataHasValueElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataHasValueElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataHasValueElementHandler testSubject0 = new OWLDataHasValueElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2094,33 +1729,26 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataIntersectionOfElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class
-                .isAssignableFrom(OWLDataIntersectionOfElementHandler.class));
+    public void enforceInterfacesOWLDataIntersectionOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class.isAssignableFrom(OWLDataIntersectionOfElementHandler.class));
     }
 
-    public void verifyOWLDataIntersectionOfElementHandler()  {
-        OWLDataIntersectionOfElementHandler testSubject0 = new OWLDataIntersectionOfElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataIntersectionOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataIntersectionOfElementHandler testSubject0 = new OWLDataIntersectionOfElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLDataRange result1 = testSubject0
-                .getOWLObject();
+        OWLDataRange result1 = testSubject0.getOWLObject();
         testSubject0.setDataRange(_OWLDataRange);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2139,35 +1767,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataMaxCardinalityElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataCardinalityRestrictionElementHandler.class
-                .isAssignableFrom(OWLDataMaxCardinalityElementHandler.class));
+    public void enforceInterfacesOWLDataMaxCardinalityElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataCardinalityRestrictionElementHandler.class.isAssignableFrom(OWLDataMaxCardinalityElementHandler.class));
     }
 
-    public void verifyOWLDataMaxCardinalityElementHandler()  {
-        OWLDataMaxCardinalityElementHandler testSubject0 = new OWLDataMaxCardinalityElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataMaxCardinalityElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataMaxCardinalityElementHandler testSubject0 = new OWLDataMaxCardinalityElementHandler(_OWLXMLParserHandler);
         testSubject0.startElement(_String);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2184,34 +1805,27 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataMinCardinalityElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataCardinalityRestrictionElementHandler.class
-                .isAssignableFrom(OWLDataMinCardinalityElementHandler.class));
+    public void enforceInterfacesOWLDataMinCardinalityElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataCardinalityRestrictionElementHandler.class.isAssignableFrom(OWLDataMinCardinalityElementHandler.class));
     }
 
-    public void verifyOWLDataMinCardinalityElementHandler()  {
-        OWLDataMinCardinalityElementHandler testSubject0 = new OWLDataMinCardinalityElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataMinCardinalityElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataMinCardinalityElementHandler testSubject0 = new OWLDataMinCardinalityElementHandler(_OWLXMLParserHandler);
         testSubject0.startElement(_String);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2228,31 +1842,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataOneOfElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class
-                .isAssignableFrom(OWLDataOneOfElementHandler.class));
+    public void enforceInterfacesOWLDataOneOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class.isAssignableFrom(OWLDataOneOfElementHandler.class));
     }
 
-    public void verifyOWLDataOneOfElementHandler()  {
-        OWLDataOneOfElementHandler testSubject0 = new OWLDataOneOfElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataOneOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataOneOfElementHandler testSubject0 = new OWLDataOneOfElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLDataRange result1 = testSubject0
-                .getOWLObject();
+        OWLDataRange result1 = testSubject0.getOWLObject();
         testSubject0.setDataRange(_OWLDataRange);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2271,26 +1879,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataPropertyAssertionAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataPropertyAssertionAxiomElementHandler.class
-                .isAssignableFrom(OWLDataPropertyAssertionAxiomElementHandler.class));
+    public void enforceInterfacesOWLDataPropertyAssertionAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataPropertyAssertionAxiomElementHandler.class.isAssignableFrom(OWLDataPropertyAssertionAxiomElementHandler.class));
     }
 
-    public void verifyOWLDataPropertyAssertionAxiomElementHandler()
-             {
-        OWLDataPropertyAssertionAxiomElementHandler testSubject0 = new OWLDataPropertyAssertionAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataPropertyAssertionAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataPropertyAssertionAxiomElementHandler testSubject0 = new OWLDataPropertyAssertionAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
@@ -2298,21 +1900,17 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.setProperty(_OWLDataPropertyExpression);
         OWLDataPropertyExpression result0 = testSubject0.getProperty();
         OWLObject result1 = testSubject0.getObject();
-        OWLIndividual result2 = testSubject0
-                .getSubject();
+        OWLIndividual result2 = testSubject0.getSubject();
         testSubject0.setSubject(_OWLIndividual);
         testSubject0.setObject(_OWLLiteral);
-        java.util.Set<OWLAnnotation> result3 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result4 = testSubject0.getOWLObject();
-        OWLAxiom result5 = testSubject0
-                .getOWLObject();
+        OWLAxiom result5 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result6 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result6 = testSubject0.getConfiguration();
         boolean result7 = testSubject0.isTextContentPossible();
         String result8 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2326,39 +1924,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        IRI result9 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result10 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result9 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result10 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataPropertyDomainAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLDataPropertyDomainAxiomElementHandler.class));
+    public void enforceInterfacesOWLDataPropertyDomainAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLDataPropertyDomainAxiomElementHandler.class));
     }
 
-    public void verifyOWLDataPropertyDomainAxiomElementHandler()
-             {
-        OWLDataPropertyDomainAxiomElementHandler testSubject0 = new OWLDataPropertyDomainAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataPropertyDomainAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataPropertyDomainAxiomElementHandler testSubject0 = new OWLDataPropertyDomainAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2374,32 +1963,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataPropertyElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLDataPropertyElementHandler.class));
+    public void enforceInterfacesOWLDataPropertyElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLDataPropertyElementHandler.class));
     }
 
-    public void verifyOWLDataPropertyElementHandler()  {
-        OWLDataPropertyElementHandler testSubject0 = new OWLDataPropertyElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataPropertyElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataPropertyElementHandler testSubject0 = new OWLDataPropertyElementHandler(_OWLXMLParserHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLDataPropertyExpression result1 = testSubject0
-                .getOWLObject();
+        OWLDataPropertyExpression result1 = testSubject0.getOWLObject();
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2419,38 +2001,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataPropertyRangeAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLDataPropertyRangeAxiomElementHandler.class));
+    public void enforceInterfacesOWLDataPropertyRangeAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLDataPropertyRangeAxiomElementHandler.class));
     }
 
-    public void verifyOWLDataPropertyRangeAxiomElementHandler()
-             {
-        OWLDataPropertyRangeAxiomElementHandler testSubject0 = new OWLDataPropertyRangeAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataPropertyRangeAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataPropertyRangeAxiomElementHandler testSubject0 = new OWLDataPropertyRangeAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2466,35 +2039,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataRestrictionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class
-                .isAssignableFrom(OWLDataRestrictionElementHandler.class));
+    public void enforceInterfacesOWLDataRestrictionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class.isAssignableFrom(OWLDataRestrictionElementHandler.class));
     }
 
-    public void verifyOWLDataRestrictionElementHandler()  {
-        OWLDataRestrictionElementHandler testSubject0 = new OWLDataRestrictionElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataRestrictionElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataRestrictionElementHandler testSubject0 = new OWLDataRestrictionElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.attribute(_String, _String);
         Object result0 = testSubject0.getOWLObject();
-        OWLDataRange result1 = testSubject0
-                .getOWLObject();
+        OWLDataRange result1 = testSubject0.getOWLObject();
         testSubject0.setDataRange(_OWLDataRange);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2512,32 +2078,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataSomeValuesFromElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRangeFillerRestrictionElementHandler.class
-                .isAssignableFrom(OWLDataSomeValuesFromElementHandler.class));
+    public void enforceInterfacesOWLDataSomeValuesFromElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractDataRangeFillerRestrictionElementHandler.class.isAssignableFrom(OWLDataSomeValuesFromElementHandler.class));
     }
 
-    public void verifyOWLDataSomeValuesFromElementHandler()  {
-        OWLDataSomeValuesFromElementHandler testSubject0 = new OWLDataSomeValuesFromElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataSomeValuesFromElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataSomeValuesFromElementHandler testSubject0 = new OWLDataSomeValuesFromElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2555,37 +2114,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDatatypeDefinitionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLDatatypeDefinitionElementHandler.class));
+    public void enforceInterfacesOWLDatatypeDefinitionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLDatatypeDefinitionElementHandler.class));
     }
 
-    public void verifyOWLDatatypeDefinitionElementHandler()  {
-        OWLDatatypeDefinitionElementHandler testSubject0 = new OWLDatatypeDefinitionElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDatatypeDefinitionElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDatatypeDefinitionElementHandler testSubject0 = new OWLDatatypeDefinitionElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2602,32 +2153,26 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDatatypeElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class
-                .isAssignableFrom(OWLDatatypeElementHandler.class));
+    public void enforceInterfacesOWLDatatypeElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class.isAssignableFrom(OWLDatatypeElementHandler.class));
     }
 
-    public void verifyOWLDatatypeElementHandler()  {
-        OWLDatatypeElementHandler testSubject0 = new OWLDatatypeElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDatatypeElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDatatypeElementHandler testSubject0 = new OWLDatatypeElementHandler(_OWLXMLParserHandler);
         testSubject0.attribute(_String, _String);
         Object result0 = testSubject0.getOWLObject();
-        OWLDataRange result1 = testSubject0
-                .getOWLObject();
+        OWLDataRange result1 = testSubject0.getOWLObject();
         testSubject0.setDataRange(_OWLDataRange);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2647,33 +2192,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDatatypeFacetRestrictionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLDatatypeFacetRestrictionElementHandler.class));
+    public void enforceInterfacesOWLDatatypeFacetRestrictionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLDatatypeFacetRestrictionElementHandler.class));
     }
 
-    public void verifyOWLDatatypeFacetRestrictionElementHandler()
-             {
-        OWLDatatypeFacetRestrictionElementHandler testSubject0 = new OWLDatatypeFacetRestrictionElementHandler(
-                _OWLXMLParserHandler);
-        OWLFacetRestriction result0 = testSubject0
-                .getOWLObject();
+    public void verifyOWLDatatypeFacetRestrictionElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDatatypeFacetRestrictionElementHandler testSubject0 = new OWLDatatypeFacetRestrictionElementHandler(_OWLXMLParserHandler);
+        OWLFacetRestriction result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2692,33 +2229,26 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDatatypeRestrictionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class
-                .isAssignableFrom(OWLDatatypeRestrictionElementHandler.class));
+    public void enforceInterfacesOWLDatatypeRestrictionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class.isAssignableFrom(OWLDatatypeRestrictionElementHandler.class));
     }
 
-    public void verifyOWLDatatypeRestrictionElementHandler()  {
-        OWLDatatypeRestrictionElementHandler testSubject0 = new OWLDatatypeRestrictionElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDatatypeRestrictionElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDatatypeRestrictionElementHandler testSubject0 = new OWLDatatypeRestrictionElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLDataRange result1 = testSubject0
-                .getOWLObject();
+        OWLDataRange result1 = testSubject0.getOWLObject();
         testSubject0.setDataRange(_OWLDataRange);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2736,33 +2266,26 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDataUnionOfElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class
-                .isAssignableFrom(OWLDataUnionOfElementHandler.class));
+    public void enforceInterfacesOWLDataUnionOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataRangeHandler.class.isAssignableFrom(OWLDataUnionOfElementHandler.class));
     }
 
-    public void verifyOWLDataUnionOfElementHandler()  {
-        OWLDataUnionOfElementHandler testSubject0 = new OWLDataUnionOfElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDataUnionOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDataUnionOfElementHandler testSubject0 = new OWLDataUnionOfElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLDataRange result1 = testSubject0
-                .getOWLObject();
+        OWLDataRange result1 = testSubject0.getOWLObject();
         testSubject0.setDataRange(_OWLDataRange);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -2781,27 +2304,21 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDeclarationAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLDeclarationAxiomElementHandler.class));
+    public void enforceInterfacesOWLDeclarationAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLDeclarationAxiomElementHandler.class));
     }
 
-    public void verifyOWLDeclarationAxiomElementHandler()  {
-        OWLDeclarationAxiomElementHandler testSubject0 = new OWLDeclarationAxiomElementHandler(
-                _OWLXMLParserHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getEntityAnnotations();
+    public void verifyOWLDeclarationAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDeclarationAxiomElementHandler testSubject0 = new OWLDeclarationAxiomElementHandler(_OWLXMLParserHandler);
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getEntityAnnotations();
         testSubject0.startElement(_String);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
@@ -2810,15 +2327,12 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result1 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result1 = testSubject0.getAnnotations();
         Object result2 = testSubject0.getOWLObject();
-        OWLAxiom result3 = testSubject0
-                .getOWLObject();
+        OWLAxiom result3 = testSubject0.getOWLObject();
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result4 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result4 = testSubject0.getConfiguration();
         boolean result5 = testSubject0.isTextContentPossible();
         String result6 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2830,39 +2344,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
         testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
-        IRI result7 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result8 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result7 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result8 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDifferentIndividualsAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLIndividualOperandAxiomElementHandler.class
-                .isAssignableFrom(OWLDifferentIndividualsAxiomElementHandler.class));
+    public void enforceInterfacesOWLDifferentIndividualsAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLIndividualOperandAxiomElementHandler.class.isAssignableFrom(OWLDifferentIndividualsAxiomElementHandler.class));
     }
 
-    public void verifyOWLDifferentIndividualsAxiomElementHandler()
-             {
-        OWLDifferentIndividualsAxiomElementHandler testSubject0 = new OWLDifferentIndividualsAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDifferentIndividualsAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDifferentIndividualsAxiomElementHandler testSubject0 = new OWLDifferentIndividualsAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2878,37 +2383,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDisjointClassesAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionOperandAxiomElementHandler.class
-                .isAssignableFrom(OWLDisjointClassesAxiomElementHandler.class));
+    public void enforceInterfacesOWLDisjointClassesAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionOperandAxiomElementHandler.class.isAssignableFrom(OWLDisjointClassesAxiomElementHandler.class));
     }
 
-    public void verifyOWLDisjointClassesAxiomElementHandler()  {
-        OWLDisjointClassesAxiomElementHandler testSubject0 = new OWLDisjointClassesAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDisjointClassesAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDisjointClassesAxiomElementHandler testSubject0 = new OWLDisjointClassesAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2925,38 +2422,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDisjointDataPropertiesAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataPropertyOperandAxiomElementHandler.class
-                .isAssignableFrom(OWLDisjointDataPropertiesAxiomElementHandler.class));
+    public void enforceInterfacesOWLDisjointDataPropertiesAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataPropertyOperandAxiomElementHandler.class.isAssignableFrom(OWLDisjointDataPropertiesAxiomElementHandler.class));
     }
 
-    public void verifyOWLDisjointDataPropertiesAxiomElementHandler()
-             {
-        OWLDisjointDataPropertiesAxiomElementHandler testSubject0 = new OWLDisjointDataPropertiesAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDisjointDataPropertiesAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDisjointDataPropertiesAxiomElementHandler testSubject0 = new OWLDisjointDataPropertiesAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -2973,39 +2461,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLDisjointObjectPropertiesAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyOperandAxiomElementHandler.class
-                .isAssignableFrom(OWLDisjointObjectPropertiesAxiomElementHandler.class));
+    public void enforceInterfacesOWLDisjointObjectPropertiesAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyOperandAxiomElementHandler.class.isAssignableFrom(OWLDisjointObjectPropertiesAxiomElementHandler.class));
     }
 
-    public void verifyOWLDisjointObjectPropertiesAxiomElementHandler()
-             {
-        OWLDisjointObjectPropertiesAxiomElementHandler testSubject0 = new OWLDisjointObjectPropertiesAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDisjointObjectPropertiesAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDisjointObjectPropertiesAxiomElementHandler testSubject0 = new OWLDisjointObjectPropertiesAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3022,37 +2500,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLDisjointUnionElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLDisjointUnionElementHandler.class));
+    public void enforceInterfacesOWLDisjointUnionElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLDisjointUnionElementHandler.class));
     }
 
-    public void verifyOWLDisjointUnionElementHandler()  {
-        OWLDisjointUnionElementHandler testSubject0 = new OWLDisjointUnionElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLDisjointUnionElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLDisjointUnionElementHandler testSubject0 = new OWLDisjointUnionElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3069,16 +2539,14 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
-    public void verifyInterfaceOWLElementHandler()  {
+    public void verifyInterfaceOWLElementHandler() throws OWLParserException, UnloadableImportException {
         OWLElementHandler<OWLObject> testSubject0 = mock(OWLElementHandler.class);
         testSubject0.startElement(_String);
         boolean result0 = testSubject0.isTextContentPossible();
@@ -3106,36 +2574,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.endElement();
     }
 
-    public void verifyInterfaceOWLElementHandlerFactory()  {
+    public void verifyInterfaceOWLElementHandlerFactory() {
         OWLElementHandlerFactory testSubject0 = mock(OWLElementHandlerFactory.class);
         String result0 = testSubject0.getElementName();
-        org.coode.owlapi.owlxmlparser.OWLElementHandler<?> result1 = testSubject0
-                .createHandler(_OWLXMLParserHandler);
+        org.coode.owlapi.owlxmlparser.OWLElementHandler<?> result1 = testSubject0.createHandler(_OWLXMLParserHandler);
     }
 
     @Test
-    public void enforceInterfacesOWLEquivalentClassesAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionOperandAxiomElementHandler.class
-                .isAssignableFrom(OWLEquivalentClassesAxiomElementHandler.class));
+    public void enforceInterfacesOWLEquivalentClassesAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionOperandAxiomElementHandler.class.isAssignableFrom(OWLEquivalentClassesAxiomElementHandler.class));
     }
 
-    public void verifyOWLEquivalentClassesAxiomElementHandler()
-             {
-        OWLEquivalentClassesAxiomElementHandler testSubject0 = new OWLEquivalentClassesAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLEquivalentClassesAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLEquivalentClassesAxiomElementHandler testSubject0 = new OWLEquivalentClassesAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3152,39 +2612,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLEquivalentDataPropertiesAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataPropertyOperandAxiomElementHandler.class
-                .isAssignableFrom(OWLEquivalentDataPropertiesAxiomElementHandler.class));
+    public void enforceInterfacesOWLEquivalentDataPropertiesAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataPropertyOperandAxiomElementHandler.class.isAssignableFrom(OWLEquivalentDataPropertiesAxiomElementHandler.class));
     }
 
-    public void verifyOWLEquivalentDataPropertiesAxiomElementHandler()
-             {
-        OWLEquivalentDataPropertiesAxiomElementHandler testSubject0 = new OWLEquivalentDataPropertiesAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLEquivalentDataPropertiesAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLEquivalentDataPropertiesAxiomElementHandler testSubject0 = new OWLEquivalentDataPropertiesAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3201,39 +2651,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLEquivalentObjectPropertiesAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyOperandAxiomElementHandler.class
-                .isAssignableFrom(OWLEquivalentObjectPropertiesAxiomElementHandler.class));
+    public void enforceInterfacesOWLEquivalentObjectPropertiesAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyOperandAxiomElementHandler.class.isAssignableFrom(OWLEquivalentObjectPropertiesAxiomElementHandler.class));
     }
 
-    public void verifyOWLEquivalentObjectPropertiesAxiomElementHandler()
-             {
-        OWLEquivalentObjectPropertiesAxiomElementHandler testSubject0 = new OWLEquivalentObjectPropertiesAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLEquivalentObjectPropertiesAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLEquivalentObjectPropertiesAxiomElementHandler testSubject0 = new OWLEquivalentObjectPropertiesAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3250,39 +2690,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLFunctionalDataPropertyAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLPropertyCharacteristicAxiomElementHandler.class
-                .isAssignableFrom(OWLFunctionalDataPropertyAxiomElementHandler.class));
+    public void enforceInterfacesOWLFunctionalDataPropertyAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLPropertyCharacteristicAxiomElementHandler.class.isAssignableFrom(OWLFunctionalDataPropertyAxiomElementHandler.class));
     }
 
-    public void verifyOWLFunctionalDataPropertyAxiomElementHandler()
-             {
-        OWLFunctionalDataPropertyAxiomElementHandler testSubject0 = new OWLFunctionalDataPropertyAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLFunctionalDataPropertyAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLFunctionalDataPropertyAxiomElementHandler testSubject0 = new OWLFunctionalDataPropertyAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.setProperty(_OWLDataPropertyExpression);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3299,40 +2730,31 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLFunctionalObjectPropertyAxiomElementHandler()
-                     {
+    public void enforceInterfacesOWLFunctionalObjectPropertyAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class
                 .isAssignableFrom(OWLFunctionalObjectPropertyAxiomElementHandler.class));
     }
 
-    public void verifyOWLFunctionalObjectPropertyAxiomElementHandler()
-             {
-        OWLFunctionalObjectPropertyAxiomElementHandler testSubject0 = new OWLFunctionalObjectPropertyAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLFunctionalObjectPropertyAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLFunctionalObjectPropertyAxiomElementHandler testSubject0 = new OWLFunctionalObjectPropertyAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3349,38 +2771,31 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLHasKeyElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLHasKeyElementHandler.class));
+    public void enforceInterfacesOWLHasKeyElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLHasKeyElementHandler.class));
     }
 
-    public void verifyOWLHasKeyElementHandler()  {
-        OWLHasKeyElementHandler testSubject0 = new OWLHasKeyElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLHasKeyElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLHasKeyElementHandler testSubject0 = new OWLHasKeyElementHandler(_OWLXMLParserHandler);
         testSubject0.startElement(_String);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3395,31 +2810,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLImportsHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLImportsHandler.class));
+    public void enforceInterfacesOWLImportsHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLImportsHandler.class));
     }
 
-    public void verifyOWLImportsHandler()  {
-        OWLImportsHandler testSubject0 = new OWLImportsHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLImportsHandler() throws OWLParserException, UnloadableImportException {
+        OWLImportsHandler testSubject0 = new OWLImportsHandler(_OWLXMLParserHandler);
         boolean result0 = testSubject0.isTextContentPossible();
         Object result1 = testSubject0.getOWLObject();
-        OWLOntology result2 = testSubject0
-                .getOWLObject();
+        OWLOntology result2 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3438,31 +2847,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLIndividualElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLIndividualElementHandler.class));
+    public void enforceInterfacesOWLIndividualElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLIndividualElementHandler.class));
     }
 
-    public void verifyOWLIndividualElementHandler()  {
-        OWLIndividualElementHandler testSubject0 = new OWLIndividualElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLIndividualElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLIndividualElementHandler testSubject0 = new OWLIndividualElementHandler(_OWLXMLParserHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLNamedIndividual result1 = testSubject0
-                .getOWLObject();
+        OWLNamedIndividual result1 = testSubject0.getOWLObject();
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -3482,40 +2885,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesOWLInverseFunctionalObjectPropertyAxiomElementHandler()
-                     {
+    public void enforceInterfacesOWLInverseFunctionalObjectPropertyAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class
                 .isAssignableFrom(OWLInverseFunctionalObjectPropertyAxiomElementHandler.class));
     }
 
-    public void verifyOWLInverseFunctionalObjectPropertyAxiomElementHandler()
-             {
-        OWLInverseFunctionalObjectPropertyAxiomElementHandler testSubject0 = new OWLInverseFunctionalObjectPropertyAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLInverseFunctionalObjectPropertyAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLInverseFunctionalObjectPropertyAxiomElementHandler testSubject0 = new OWLInverseFunctionalObjectPropertyAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3532,39 +2925,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLInverseObjectPropertiesAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyOperandAxiomElementHandler.class
-                .isAssignableFrom(OWLInverseObjectPropertiesAxiomElementHandler.class));
+    public void enforceInterfacesOWLInverseObjectPropertiesAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyOperandAxiomElementHandler.class.isAssignableFrom(OWLInverseObjectPropertiesAxiomElementHandler.class));
     }
 
-    public void verifyOWLInverseObjectPropertiesAxiomElementHandler()
-             {
-        OWLInverseObjectPropertiesAxiomElementHandler testSubject0 = new OWLInverseObjectPropertiesAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLInverseObjectPropertiesAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLInverseObjectPropertiesAxiomElementHandler testSubject0 = new OWLInverseObjectPropertiesAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3581,32 +2964,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLInverseObjectPropertyElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyElementHandler.class
-                .isAssignableFrom(OWLInverseObjectPropertyElementHandler.class));
+    public void enforceInterfacesOWLInverseObjectPropertyElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyElementHandler.class.isAssignableFrom(OWLInverseObjectPropertyElementHandler.class));
     }
 
-    public void verifyOWLInverseObjectPropertyElementHandler()  {
-        OWLInverseObjectPropertyElementHandler testSubject0 = new OWLInverseObjectPropertyElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLInverseObjectPropertyElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLInverseObjectPropertyElementHandler testSubject0 = new OWLInverseObjectPropertyElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         Object result0 = testSubject0.getOWLObject();
-        OWLObjectPropertyExpression result1 = testSubject0
-                .getOWLObject();
+        OWLObjectPropertyExpression result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -3625,40 +3001,31 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLIrreflexiveObjectPropertyAxiomElementHandler()
-                     {
+    public void enforceInterfacesOWLIrreflexiveObjectPropertyAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class
                 .isAssignableFrom(OWLIrreflexiveObjectPropertyAxiomElementHandler.class));
     }
 
-    public void verifyOWLIrreflexiveObjectPropertyAxiomElementHandler()
-             {
-        OWLIrreflexiveObjectPropertyAxiomElementHandler testSubject0 = new OWLIrreflexiveObjectPropertyAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLIrreflexiveObjectPropertyAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLIrreflexiveObjectPropertyAxiomElementHandler testSubject0 = new OWLIrreflexiveObjectPropertyAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3675,33 +3042,27 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLLiteralElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLLiteralElementHandler.class));
+    public void enforceInterfacesOWLLiteralElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLLiteralElementHandler.class));
     }
 
-    public void verifyOWLLiteralElementHandler()  {
-        OWLLiteralElementHandler testSubject0 = new OWLLiteralElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLLiteralElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLLiteralElementHandler testSubject0 = new OWLLiteralElementHandler(_OWLXMLParserHandler);
         testSubject0.startElement(_String);
         boolean result0 = testSubject0.isTextContentPossible();
-        OWLLiteral result1 = testSubject0
-                .getOWLObject();
+        OWLLiteral result1 = testSubject0.getOWLObject();
         Object result2 = testSubject0.getOWLObject();
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
         testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
@@ -3719,27 +3080,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesOWLNegativeDataPropertyAssertionAxiomElementHandler()
-                     {
+    public void enforceInterfacesOWLNegativeDataPropertyAssertionAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLDataPropertyAssertionAxiomElementHandler.class
                 .isAssignableFrom(OWLNegativeDataPropertyAssertionAxiomElementHandler.class));
     }
 
-    public void verifyOWLNegativeDataPropertyAssertionAxiomElementHandler()
-             {
-        OWLNegativeDataPropertyAssertionAxiomElementHandler testSubject0 = new OWLNegativeDataPropertyAssertionAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLNegativeDataPropertyAssertionAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLNegativeDataPropertyAssertionAxiomElementHandler testSubject0 = new OWLNegativeDataPropertyAssertionAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
@@ -3747,21 +3101,17 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.setProperty(_OWLDataPropertyExpression);
         OWLDataPropertyExpression result0 = testSubject0.getProperty();
         OWLObject result1 = testSubject0.getObject();
-        OWLIndividual result2 = testSubject0
-                .getSubject();
+        OWLIndividual result2 = testSubject0.getSubject();
         testSubject0.setSubject(_OWLIndividual);
         testSubject0.setObject(_OWLLiteral);
-        java.util.Set<OWLAnnotation> result3 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result4 = testSubject0.getOWLObject();
-        OWLAxiom result5 = testSubject0
-                .getOWLObject();
+        OWLAxiom result5 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result6 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result6 = testSubject0.getConfiguration();
         boolean result7 = testSubject0.isTextContentPossible();
         String result8 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3775,49 +3125,38 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        IRI result9 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result10 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result9 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result10 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public
-            void
-            enforceInterfacesOWLNegativeObjectPropertyAssertionAxiomElementHandler()
-                     {
+    public void enforceInterfacesOWLNegativeObjectPropertyAssertionAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyAssertionAxiomElementHandler.class
                 .isAssignableFrom(OWLNegativeObjectPropertyAssertionAxiomElementHandler.class));
     }
 
-    public void verifyOWLNegativeObjectPropertyAssertionAxiomElementHandler()
-             {
-        OWLNegativeObjectPropertyAssertionAxiomElementHandler testSubject0 = new OWLNegativeObjectPropertyAssertionAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLNegativeObjectPropertyAssertionAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLNegativeObjectPropertyAssertionAxiomElementHandler testSubject0 = new OWLNegativeObjectPropertyAssertionAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
         testSubject0.setProperty(_OWLObjectPropertyExpression);
         OWLObjectPropertyExpression result0 = testSubject0.getProperty();
         OWLObject result1 = testSubject0.getObject();
-        OWLIndividual result2 = testSubject0
-                .getSubject();
+        OWLIndividual result2 = testSubject0.getSubject();
         testSubject0.setSubject(_OWLIndividual);
         testSubject0.setObject(_OWLIndividual);
-        java.util.Set<OWLAnnotation> result3 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result4 = testSubject0.getOWLObject();
-        OWLAxiom result5 = testSubject0
-                .getOWLObject();
+        OWLAxiom result5 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result6 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result6 = testSubject0.getConfiguration();
         boolean result7 = testSubject0.isTextContentPossible();
         String result8 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -3832,33 +3171,26 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result9 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result10 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result9 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result10 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectAllValuesFromElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionFillerRestriction.class
-                .isAssignableFrom(OWLObjectAllValuesFromElementHandler.class));
+    public void enforceInterfacesOWLObjectAllValuesFromElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionFillerRestriction.class.isAssignableFrom(OWLObjectAllValuesFromElementHandler.class));
     }
 
-    public void verifyOWLObjectAllValuesFromElementHandler()  {
-        OWLObjectAllValuesFromElementHandler testSubject0 = new OWLObjectAllValuesFromElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLObjectAllValuesFromElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectAllValuesFromElementHandler testSubject0 = new OWLObjectAllValuesFromElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -3876,209 +3208,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectComplementOfElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class
-                .isAssignableFrom(OWLObjectComplementOfElementHandler.class));
+    public void enforceInterfacesOWLObjectComplementOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class.isAssignableFrom(OWLObjectComplementOfElementHandler.class));
     }
 
-    public void verifyOWLObjectComplementOfElementHandler()  {
-        OWLObjectComplementOfElementHandler testSubject0 = new OWLObjectComplementOfElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLObjectComplementOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectComplementOfElementHandler testSubject0 = new OWLObjectComplementOfElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
-        testSubject0.startElement(_String);
-        boolean result3 = testSubject0.isTextContentPossible();
-        String result4 = testSubject0.getText();
-        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
-        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
-        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
-        testSubject0.handleChild(_OWLAnnotationElementHandler);
-        testSubject0.handleChild(_SWRLAtomListElementHandler);
-        testSubject0.handleChild(_SWRLAtomElementHandler);
-        testSubject0.handleChild(_SWRLVariableElementHandler);
-        testSubject0.handleChild(_AbstractIRIElementHandler);
-        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
-        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
-        testSubject0.handleChild(_OWLLiteralElementHandler);
-        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
-        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
-        testSubject0.setParentHandler(_OWLElementHandler);
-        testSubject0.attribute(_String, _String);
-        testSubject0.handleChars(_char_array, _int, _int);
-    }
-
-    @Test
-    public void enforceInterfacesOWLObjectExactCardinalityElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectCardinalityElementHandler.class
-                .isAssignableFrom(OWLObjectExactCardinalityElementHandler.class));
-    }
-
-    public void verifyOWLObjectExactCardinalityElementHandler()
-             {
-        OWLObjectExactCardinalityElementHandler testSubject0 = new OWLObjectExactCardinalityElementHandler(
-                _OWLXMLParserHandler);
-        testSubject0.startElement(_String);
-        testSubject0.attribute(_String, _String);
-        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
-        Object result1 = testSubject0.getOWLObject();
-        testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
-        boolean result3 = testSubject0.isTextContentPossible();
-        String result4 = testSubject0.getText();
-        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
-        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
-        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
-        testSubject0.handleChild(_OWLAnnotationElementHandler);
-        testSubject0.handleChild(_SWRLAtomListElementHandler);
-        testSubject0.handleChild(_SWRLAtomElementHandler);
-        testSubject0.handleChild(_SWRLVariableElementHandler);
-        testSubject0.handleChild(_AbstractIRIElementHandler);
-        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
-        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
-        testSubject0.handleChild(_OWLLiteralElementHandler);
-        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
-        testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
-        testSubject0.setParentHandler(_OWLElementHandler);
-        testSubject0.handleChars(_char_array, _int, _int);
-    }
-
-    @Test
-    public void enforceInterfacesOWLObjectExistsSelfElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class
-                .isAssignableFrom(OWLObjectExistsSelfElementHandler.class));
-    }
-
-    public void verifyOWLObjectExistsSelfElementHandler()  {
-        OWLObjectExistsSelfElementHandler testSubject0 = new OWLObjectExistsSelfElementHandler(
-                _OWLXMLParserHandler);
-        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
-        Object result1 = testSubject0.getOWLObject();
-        testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
-        testSubject0.startElement(_String);
-        boolean result3 = testSubject0.isTextContentPossible();
-        String result4 = testSubject0.getText();
-        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
-        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
-        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
-        testSubject0.handleChild(_OWLAnnotationElementHandler);
-        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        testSubject0.handleChild(_SWRLAtomListElementHandler);
-        testSubject0.handleChild(_SWRLAtomElementHandler);
-        testSubject0.handleChild(_SWRLVariableElementHandler);
-        testSubject0.handleChild(_AbstractIRIElementHandler);
-        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
-        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
-        testSubject0.handleChild(_OWLLiteralElementHandler);
-        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
-        testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
-        testSubject0.setParentHandler(_OWLElementHandler);
-        testSubject0.attribute(_String, _String);
-        testSubject0.handleChars(_char_array, _int, _int);
-    }
-
-    @Test
-    public void enforceInterfacesOWLObjectHasValueElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractObjectRestrictionElementHandler.class
-                .isAssignableFrom(OWLObjectHasValueElementHandler.class));
-    }
-
-    public void verifyOWLObjectHasValueElementHandler()  {
-        OWLObjectHasValueElementHandler testSubject0 = new OWLObjectHasValueElementHandler(
-                _OWLXMLParserHandler);
-        testSubject0.handleChild(_OWLIndividualElementHandler);
-        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
-        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
-        Object result1 = testSubject0.getOWLObject();
-        testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
-        testSubject0.startElement(_String);
-        boolean result3 = testSubject0.isTextContentPossible();
-        String result4 = testSubject0.getText();
-        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
-        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
-        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
-        testSubject0.handleChild(_OWLAnnotationElementHandler);
-        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        testSubject0.handleChild(_SWRLAtomListElementHandler);
-        testSubject0.handleChild(_SWRLAtomElementHandler);
-        testSubject0.handleChild(_SWRLVariableElementHandler);
-        testSubject0.handleChild(_AbstractIRIElementHandler);
-        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
-        testSubject0.handleChild(_OWLLiteralElementHandler);
-        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
-        testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
-        testSubject0.setParentHandler(_OWLElementHandler);
-        testSubject0.attribute(_String, _String);
-        testSubject0.handleChars(_char_array, _int, _int);
-    }
-
-    @Test
-    public void enforceInterfacesOWLObjectIntersectionOfElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractNaryBooleanClassExpressionElementHandler.class
-                .isAssignableFrom(OWLObjectIntersectionOfElementHandler.class));
-    }
-
-    public void verifyOWLObjectIntersectionOfElementHandler()  {
-        OWLObjectIntersectionOfElementHandler testSubject0 = new OWLObjectIntersectionOfElementHandler(
-                _OWLXMLParserHandler);
-        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
-        Object result1 = testSubject0.getOWLObject();
-        testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -4097,35 +3245,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectMaxCardinalityElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectCardinalityElementHandler.class
-                .isAssignableFrom(OWLObjectMaxCardinalityElementHandler.class));
+    public void enforceInterfacesOWLObjectExactCardinalityElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectCardinalityElementHandler.class.isAssignableFrom(OWLObjectExactCardinalityElementHandler.class));
     }
 
-    public void verifyOWLObjectMaxCardinalityElementHandler()  {
-        OWLObjectMaxCardinalityElementHandler testSubject0 = new OWLObjectMaxCardinalityElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLObjectExactCardinalityElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectExactCardinalityElementHandler testSubject0 = new OWLObjectExactCardinalityElementHandler(_OWLXMLParserHandler);
         testSubject0.startElement(_String);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4142,75 +3283,24 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectMinCardinalityElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectCardinalityElementHandler.class
-                .isAssignableFrom(OWLObjectMinCardinalityElementHandler.class));
+    public void enforceInterfacesOWLObjectExistsSelfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class.isAssignableFrom(OWLObjectExistsSelfElementHandler.class));
     }
 
-    public void verifyOWLObjectMinCardinalityElementHandler()  {
-        OWLObjectMinCardinalityElementHandler testSubject0 = new OWLObjectMinCardinalityElementHandler(
-                _OWLXMLParserHandler);
-        testSubject0.startElement(_String);
-        testSubject0.attribute(_String, _String);
-        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
+    public void verifyOWLObjectExistsSelfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectExistsSelfElementHandler testSubject0 = new OWLObjectExistsSelfElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
-        boolean result3 = testSubject0.isTextContentPossible();
-        String result4 = testSubject0.getText();
-        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
-        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
-        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
-        testSubject0.handleChild(_OWLAnnotationElementHandler);
-        testSubject0.handleChild(_SWRLAtomListElementHandler);
-        testSubject0.handleChild(_SWRLAtomElementHandler);
-        testSubject0.handleChild(_SWRLVariableElementHandler);
-        testSubject0.handleChild(_AbstractIRIElementHandler);
-        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
-        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
-        testSubject0.handleChild(_OWLLiteralElementHandler);
-        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
-        testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
-        testSubject0.setParentHandler(_OWLElementHandler);
-        testSubject0.handleChars(_char_array, _int, _int);
-    }
-
-    @Test
-    public void enforceInterfacesOWLObjectOneOfElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class
-                .isAssignableFrom(OWLObjectOneOfElementHandler.class));
-    }
-
-    public void verifyOWLObjectOneOfElementHandler()  {
-        OWLObjectOneOfElementHandler testSubject0 = new OWLObjectOneOfElementHandler(
-                _OWLXMLParserHandler);
-        testSubject0.handleChild(_OWLIndividualElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
-        Object result1 = testSubject0.getOWLObject();
-        testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -4227,50 +3317,224 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
-        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        testSubject0.handleChild(_OWLIndividualElementHandler);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLObjectPropertyAssertionAxiomElementHandler()
-                     {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyAssertionAxiomElementHandler.class
-                .isAssignableFrom(OWLObjectPropertyAssertionAxiomElementHandler.class));
+    public void enforceInterfacesOWLObjectHasValueElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractObjectRestrictionElementHandler.class.isAssignableFrom(OWLObjectHasValueElementHandler.class));
     }
 
-    public void verifyOWLObjectPropertyAssertionAxiomElementHandler()
-             {
-        OWLObjectPropertyAssertionAxiomElementHandler testSubject0 = new OWLObjectPropertyAssertionAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLObjectHasValueElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectHasValueElementHandler testSubject0 = new OWLObjectHasValueElementHandler(_OWLXMLParserHandler);
+        testSubject0.handleChild(_OWLIndividualElementHandler);
+        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
+        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
+        OWLClassExpression result0 = testSubject0.getOWLObject();
+        Object result1 = testSubject0.getOWLObject();
+        testSubject0.endElement();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
+        testSubject0.startElement(_String);
+        boolean result3 = testSubject0.isTextContentPossible();
+        String result4 = testSubject0.getText();
+        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
+        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
+        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
+        testSubject0.handleChild(_OWLAnnotationElementHandler);
+        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
+        testSubject0.handleChild(_SWRLAtomListElementHandler);
+        testSubject0.handleChild(_SWRLAtomElementHandler);
+        testSubject0.handleChild(_SWRLVariableElementHandler);
+        testSubject0.handleChild(_AbstractIRIElementHandler);
+        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
+        testSubject0.handleChild(_OWLLiteralElementHandler);
+        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
+        testSubject0.handleChild(_OWLDataPropertyElementHandler);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
+        testSubject0.setParentHandler(_OWLElementHandler);
+        testSubject0.attribute(_String, _String);
+        testSubject0.handleChars(_char_array, _int, _int);
+    }
+
+    @Test
+    public void enforceInterfacesOWLObjectIntersectionOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractNaryBooleanClassExpressionElementHandler.class.isAssignableFrom(OWLObjectIntersectionOfElementHandler.class));
+    }
+
+    public void verifyOWLObjectIntersectionOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectIntersectionOfElementHandler testSubject0 = new OWLObjectIntersectionOfElementHandler(_OWLXMLParserHandler);
+        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
+        OWLClassExpression result0 = testSubject0.getOWLObject();
+        Object result1 = testSubject0.getOWLObject();
+        testSubject0.endElement();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
+        testSubject0.startElement(_String);
+        boolean result3 = testSubject0.isTextContentPossible();
+        String result4 = testSubject0.getText();
+        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
+        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
+        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
+        testSubject0.handleChild(_OWLAnnotationElementHandler);
+        testSubject0.handleChild(_SWRLAtomListElementHandler);
+        testSubject0.handleChild(_SWRLAtomElementHandler);
+        testSubject0.handleChild(_SWRLVariableElementHandler);
+        testSubject0.handleChild(_AbstractIRIElementHandler);
+        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
+        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
+        testSubject0.handleChild(_OWLLiteralElementHandler);
+        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
+        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
+        testSubject0.handleChild(_OWLDataPropertyElementHandler);
+        testSubject0.handleChild(_OWLIndividualElementHandler);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
+        testSubject0.setParentHandler(_OWLElementHandler);
+        testSubject0.attribute(_String, _String);
+        testSubject0.handleChars(_char_array, _int, _int);
+    }
+
+    @Test
+    public void enforceInterfacesOWLObjectMaxCardinalityElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectCardinalityElementHandler.class.isAssignableFrom(OWLObjectMaxCardinalityElementHandler.class));
+    }
+
+    public void verifyOWLObjectMaxCardinalityElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectMaxCardinalityElementHandler testSubject0 = new OWLObjectMaxCardinalityElementHandler(_OWLXMLParserHandler);
+        testSubject0.startElement(_String);
+        testSubject0.attribute(_String, _String);
+        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
+        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
+        OWLClassExpression result0 = testSubject0.getOWLObject();
+        Object result1 = testSubject0.getOWLObject();
+        testSubject0.endElement();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
+        boolean result3 = testSubject0.isTextContentPossible();
+        String result4 = testSubject0.getText();
+        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
+        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
+        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
+        testSubject0.handleChild(_OWLAnnotationElementHandler);
+        testSubject0.handleChild(_SWRLAtomListElementHandler);
+        testSubject0.handleChild(_SWRLAtomElementHandler);
+        testSubject0.handleChild(_SWRLVariableElementHandler);
+        testSubject0.handleChild(_AbstractIRIElementHandler);
+        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
+        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
+        testSubject0.handleChild(_OWLLiteralElementHandler);
+        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
+        testSubject0.handleChild(_OWLDataPropertyElementHandler);
+        testSubject0.handleChild(_OWLIndividualElementHandler);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
+        testSubject0.setParentHandler(_OWLElementHandler);
+        testSubject0.handleChars(_char_array, _int, _int);
+    }
+
+    @Test
+    public void enforceInterfacesOWLObjectMinCardinalityElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectCardinalityElementHandler.class.isAssignableFrom(OWLObjectMinCardinalityElementHandler.class));
+    }
+
+    public void verifyOWLObjectMinCardinalityElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectMinCardinalityElementHandler testSubject0 = new OWLObjectMinCardinalityElementHandler(_OWLXMLParserHandler);
+        testSubject0.startElement(_String);
+        testSubject0.attribute(_String, _String);
+        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
+        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
+        OWLClassExpression result0 = testSubject0.getOWLObject();
+        Object result1 = testSubject0.getOWLObject();
+        testSubject0.endElement();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
+        boolean result3 = testSubject0.isTextContentPossible();
+        String result4 = testSubject0.getText();
+        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
+        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
+        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
+        testSubject0.handleChild(_OWLAnnotationElementHandler);
+        testSubject0.handleChild(_SWRLAtomListElementHandler);
+        testSubject0.handleChild(_SWRLAtomElementHandler);
+        testSubject0.handleChild(_SWRLVariableElementHandler);
+        testSubject0.handleChild(_AbstractIRIElementHandler);
+        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
+        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
+        testSubject0.handleChild(_OWLLiteralElementHandler);
+        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
+        testSubject0.handleChild(_OWLDataPropertyElementHandler);
+        testSubject0.handleChild(_OWLIndividualElementHandler);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
+        testSubject0.setParentHandler(_OWLElementHandler);
+        testSubject0.handleChars(_char_array, _int, _int);
+    }
+
+    @Test
+    public void enforceInterfacesOWLObjectOneOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionElementHandler.class.isAssignableFrom(OWLObjectOneOfElementHandler.class));
+    }
+
+    public void verifyOWLObjectOneOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectOneOfElementHandler testSubject0 = new OWLObjectOneOfElementHandler(_OWLXMLParserHandler);
+        testSubject0.handleChild(_OWLIndividualElementHandler);
+        OWLClassExpression result0 = testSubject0.getOWLObject();
+        Object result1 = testSubject0.getOWLObject();
+        testSubject0.endElement();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
+        testSubject0.startElement(_String);
+        boolean result3 = testSubject0.isTextContentPossible();
+        String result4 = testSubject0.getText();
+        testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
+        testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
+        testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
+        testSubject0.handleChild(_OWLAnnotationElementHandler);
+        testSubject0.handleChild(_AbstractClassExpressionElementHandler);
+        testSubject0.handleChild(_SWRLAtomListElementHandler);
+        testSubject0.handleChild(_SWRLAtomElementHandler);
+        testSubject0.handleChild(_SWRLVariableElementHandler);
+        testSubject0.handleChild(_AbstractIRIElementHandler);
+        testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
+        testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
+        testSubject0.handleChild(_OWLLiteralElementHandler);
+        testSubject0.handleChild(_AbstractOWLDataRangeHandler);
+        testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
+        testSubject0.handleChild(_OWLDataPropertyElementHandler);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
+        testSubject0.setParentHandler(_OWLElementHandler);
+        testSubject0.attribute(_String, _String);
+        testSubject0.handleChars(_char_array, _int, _int);
+    }
+
+    @Test
+    public void enforceInterfacesOWLObjectPropertyAssertionAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyAssertionAxiomElementHandler.class.isAssignableFrom(OWLObjectPropertyAssertionAxiomElementHandler.class));
+    }
+
+    public void verifyOWLObjectPropertyAssertionAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectPropertyAssertionAxiomElementHandler testSubject0 = new OWLObjectPropertyAssertionAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
         testSubject0.setProperty(_OWLObjectPropertyExpression);
         OWLObjectPropertyExpression result0 = testSubject0.getProperty();
         OWLObject result1 = testSubject0.getObject();
-        OWLIndividual result2 = testSubject0
-                .getSubject();
+        OWLIndividual result2 = testSubject0.getSubject();
         testSubject0.setSubject(_OWLIndividual);
         testSubject0.setObject(_OWLIndividual);
-        java.util.Set<OWLAnnotation> result3 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result4 = testSubject0.getOWLObject();
-        OWLAxiom result5 = testSubject0
-                .getOWLObject();
+        OWLAxiom result5 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result6 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result6 = testSubject0.getConfiguration();
         boolean result7 = testSubject0.isTextContentPossible();
         String result8 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4285,38 +3549,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result9 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result10 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result9 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result10 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectPropertyDomainElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLObjectPropertyDomainElementHandler.class));
+    public void enforceInterfacesOWLObjectPropertyDomainElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLObjectPropertyDomainElementHandler.class));
     }
 
-    public void verifyOWLObjectPropertyDomainElementHandler()  {
-        OWLObjectPropertyDomainElementHandler testSubject0 = new OWLObjectPropertyDomainElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLObjectPropertyDomainElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectPropertyDomainElementHandler testSubject0 = new OWLObjectPropertyDomainElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4332,32 +3588,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectPropertyElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyElementHandler.class
-                .isAssignableFrom(OWLObjectPropertyElementHandler.class));
+    public void enforceInterfacesOWLObjectPropertyElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyElementHandler.class.isAssignableFrom(OWLObjectPropertyElementHandler.class));
     }
 
-    public void verifyOWLObjectPropertyElementHandler()  {
-        OWLObjectPropertyElementHandler testSubject0 = new OWLObjectPropertyElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLObjectPropertyElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectPropertyElementHandler testSubject0 = new OWLObjectPropertyElementHandler(_OWLXMLParserHandler);
         testSubject0.attribute(_String, _String);
         Object result0 = testSubject0.getOWLObject();
-        OWLObjectPropertyExpression result1 = testSubject0
-                .getOWLObject();
+        OWLObjectPropertyExpression result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -4377,38 +3626,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectPropertyRangeAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLObjectPropertyRangeAxiomElementHandler.class));
+    public void enforceInterfacesOWLObjectPropertyRangeAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLObjectPropertyRangeAxiomElementHandler.class));
     }
 
-    public void verifyOWLObjectPropertyRangeAxiomElementHandler()
-             {
-        OWLObjectPropertyRangeAxiomElementHandler testSubject0 = new OWLObjectPropertyRangeAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLObjectPropertyRangeAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectPropertyRangeAxiomElementHandler testSubject0 = new OWLObjectPropertyRangeAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4424,33 +3664,26 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectSomeValuesFromElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionFillerRestriction.class
-                .isAssignableFrom(OWLObjectSomeValuesFromElementHandler.class));
+    public void enforceInterfacesOWLObjectSomeValuesFromElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractClassExpressionFillerRestriction.class.isAssignableFrom(OWLObjectSomeValuesFromElementHandler.class));
     }
 
-    public void verifyOWLObjectSomeValuesFromElementHandler()  {
-        OWLObjectSomeValuesFromElementHandler testSubject0 = new OWLObjectSomeValuesFromElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLObjectSomeValuesFromElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectSomeValuesFromElementHandler testSubject0 = new OWLObjectSomeValuesFromElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -4468,32 +3701,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLObjectUnionOfElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractNaryBooleanClassExpressionElementHandler.class
-                .isAssignableFrom(OWLObjectUnionOfElementHandler.class));
+    public void enforceInterfacesOWLObjectUnionOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractNaryBooleanClassExpressionElementHandler.class.isAssignableFrom(OWLObjectUnionOfElementHandler.class));
     }
 
-    public void verifyOWLObjectUnionOfElementHandler()  {
-        OWLObjectUnionOfElementHandler testSubject0 = new OWLObjectUnionOfElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLObjectUnionOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLObjectUnionOfElementHandler testSubject0 = new OWLObjectUnionOfElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -4512,28 +3738,23 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLOntologyHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLOntologyHandler.class));
+    public void enforceInterfacesOWLOntologyHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLOntologyHandler.class));
     }
 
-    public void verifyOWLOntologyHandler()  {
-        OWLOntologyHandler testSubject0 = new OWLOntologyHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLOntologyHandler() throws OWLParserException, UnloadableImportException {
+        OWLOntologyHandler testSubject0 = new OWLOntologyHandler(_OWLXMLParserHandler);
         testSubject0.startElement(_String);
         Object result0 = testSubject0.getOWLObject();
-        OWLOntology result1 = testSubject0
-                .getOWLObject();
+        OWLOntology result1 = testSubject0.getOWLObject();
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
@@ -4541,8 +3762,7 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4557,38 +3777,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLReflexiveObjectPropertyAxiomElementHandler()
-                     {
+    public void enforceInterfacesOWLReflexiveObjectPropertyAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class
                 .isAssignableFrom(OWLReflexiveObjectPropertyAxiomElementHandler.class));
     }
 
-    public void verifyOWLReflexiveObjectPropertyAxiomElementHandler()
-             {
-        OWLReflexiveObjectPropertyAxiomElementHandler testSubject0 = new OWLReflexiveObjectPropertyAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLReflexiveObjectPropertyAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLReflexiveObjectPropertyAxiomElementHandler testSubject0 = new OWLReflexiveObjectPropertyAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4605,38 +3816,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLSameIndividualsAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLIndividualOperandAxiomElementHandler.class
-                .isAssignableFrom(OWLSameIndividualsAxiomElementHandler.class));
+    public void enforceInterfacesOWLSameIndividualsAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLIndividualOperandAxiomElementHandler.class.isAssignableFrom(OWLSameIndividualsAxiomElementHandler.class));
     }
 
-    public void verifyOWLSameIndividualsAxiomElementHandler()  {
-        OWLSameIndividualsAxiomElementHandler testSubject0 = new OWLSameIndividualsAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLSameIndividualsAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLSameIndividualsAxiomElementHandler testSubject0 = new OWLSameIndividualsAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
         testSubject0.startElement(_String);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4652,38 +3855,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLSubAnnotationPropertyOfElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLSubAnnotationPropertyOfElementHandler.class));
+    public void enforceInterfacesOWLSubAnnotationPropertyOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLSubAnnotationPropertyOfElementHandler.class));
     }
 
-    public void verifyOWLSubAnnotationPropertyOfElementHandler()
-             {
-        OWLSubAnnotationPropertyOfElementHandler testSubject0 = new OWLSubAnnotationPropertyOfElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLSubAnnotationPropertyOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLSubAnnotationPropertyOfElementHandler testSubject0 = new OWLSubAnnotationPropertyOfElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLAnnotationPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4700,37 +3894,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLSubClassAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLSubClassAxiomElementHandler.class));
+    public void enforceInterfacesOWLSubClassAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLSubClassAxiomElementHandler.class));
     }
 
-    public void verifyOWLSubClassAxiomElementHandler()  {
-        OWLSubClassAxiomElementHandler testSubject0 = new OWLSubClassAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLSubClassAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLSubClassAxiomElementHandler testSubject0 = new OWLSubClassAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.startElement(_String);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4747,38 +3933,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLSubDataPropertyOfAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLSubDataPropertyOfAxiomElementHandler.class));
+    public void enforceInterfacesOWLSubDataPropertyOfAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLSubDataPropertyOfAxiomElementHandler.class));
     }
 
-    public void verifyOWLSubDataPropertyOfAxiomElementHandler()
-             {
-        OWLSubDataPropertyOfAxiomElementHandler testSubject0 = new OWLSubDataPropertyOfAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLSubDataPropertyOfAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLSubDataPropertyOfAxiomElementHandler testSubject0 = new OWLSubDataPropertyOfAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4795,33 +3972,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLSubObjectPropertyChainElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLSubObjectPropertyChainElementHandler.class));
+    public void enforceInterfacesOWLSubObjectPropertyChainElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLSubObjectPropertyChainElementHandler.class));
     }
 
-    public void verifyOWLSubObjectPropertyChainElementHandler()
-             {
-        OWLSubObjectPropertyChainElementHandler testSubject0 = new OWLSubObjectPropertyChainElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLSubObjectPropertyChainElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLSubObjectPropertyChainElementHandler testSubject0 = new OWLSubObjectPropertyChainElementHandler(_OWLXMLParserHandler);
         Object result0 = testSubject0.getOWLObject();
-        java.util.List<OWLObjectPropertyExpression> result1 = testSubject0
-                .getOWLObject();
+        java.util.List<OWLObjectPropertyExpression> result1 = testSubject0.getOWLObject();
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -4840,39 +4009,30 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLSubObjectPropertyOfAxiomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(OWLSubObjectPropertyOfAxiomElementHandler.class));
+    public void enforceInterfacesOWLSubObjectPropertyOfAxiomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(OWLSubObjectPropertyOfAxiomElementHandler.class));
     }
 
-    public void verifyOWLSubObjectPropertyOfAxiomElementHandler()
-             {
-        OWLSubObjectPropertyOfAxiomElementHandler testSubject0 = new OWLSubObjectPropertyOfAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLSubObjectPropertyOfAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLSubObjectPropertyOfAxiomElementHandler testSubject0 = new OWLSubObjectPropertyOfAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLDatatypeFacetRestrictionElementHandler);
@@ -4888,40 +4048,31 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLSymmetricObjectPropertyAxiomElementHandler()
-                     {
+    public void enforceInterfacesOWLSymmetricObjectPropertyAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class
                 .isAssignableFrom(OWLSymmetricObjectPropertyAxiomElementHandler.class));
     }
 
-    public void verifyOWLSymmetricObjectPropertyAxiomElementHandler()
-             {
-        OWLSymmetricObjectPropertyAxiomElementHandler testSubject0 = new OWLSymmetricObjectPropertyAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLSymmetricObjectPropertyAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLSymmetricObjectPropertyAxiomElementHandler testSubject0 = new OWLSymmetricObjectPropertyAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4938,40 +4089,31 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void
-            enforceInterfacesOWLTransitiveObjectPropertyAxiomElementHandler()
-                     {
+    public void enforceInterfacesOWLTransitiveObjectPropertyAxiomElementHandler() {
         assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLObjectPropertyCharacteristicAxiomElementHandler.class
                 .isAssignableFrom(OWLTransitiveObjectPropertyAxiomElementHandler.class));
     }
 
-    public void verifyOWLTransitiveObjectPropertyAxiomElementHandler()
-             {
-        OWLTransitiveObjectPropertyAxiomElementHandler testSubject0 = new OWLTransitiveObjectPropertyAxiomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifyOWLTransitiveObjectPropertyAxiomElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLTransitiveObjectPropertyAxiomElementHandler testSubject0 = new OWLTransitiveObjectPropertyAxiomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.setProperty(_OWLObject27);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -4988,31 +4130,25 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLUnionOfElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(OWLUnionOfElementHandler.class));
+    public void enforceInterfacesOWLUnionOfElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(OWLUnionOfElementHandler.class));
     }
 
-    public void verifyOWLUnionOfElementHandler()  {
-        OWLUnionOfElementHandler testSubject0 = new OWLUnionOfElementHandler(
-                _OWLXMLParserHandler);
-        OWLClassExpression result0 = testSubject0
-                .getOWLObject();
+    public void verifyOWLUnionOfElementHandler() throws OWLParserException, UnloadableImportException {
+        OWLUnionOfElementHandler testSubject0 = new OWLUnionOfElementHandler(_OWLXMLParserHandler);
+        OWLClassExpression result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5031,45 +4167,34 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesOWLXMLParser()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLParser.class
-                .isAssignableFrom(OWLXMLParser.class));
+    public void enforceInterfacesOWLXMLParser() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLParser.class.isAssignableFrom(OWLXMLParser.class));
     }
 
-    public void verifyOWLXMLParser()  {
+    public void verifyOWLXMLParser() throws OWLParserException, UnloadableImportException, IOException {
         OWLXMLParser testSubject0 = new OWLXMLParser();
-        OWLOntologyFormat result0 = testSubject0
-                .parse(_OWLOntologyDocumentSource, _OWLOntology);
-        OWLOntologyFormat result1 = testSubject0
-                .parse(_OWLOntologyDocumentSource, _OWLOntology,
-                        _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result2 = testSubject0
-                .parse(_IRI, _OWLOntology);
+        OWLOntologyFormat result0 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
+        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLOntologyFormat result2 = testSubject0.parse(_IRI, _OWLOntology);
         testSubject0.setOWLOntologyManager(_OWLOntologyManager);
-        OWLOntologyManager result3 = testSubject0
-                .getOWLOntologyManager();
+        OWLOntologyManager result3 = testSubject0.getOWLOntologyManager();
     }
 
     @Test
-    public void enforceInterfacesOWLXMLParserAttributeNotFoundException()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.OWLXMLParserException.class
-                .isAssignableFrom(OWLXMLParserAttributeNotFoundException.class));
+    public void enforceInterfacesOWLXMLParserAttributeNotFoundException() {
+        assertTrue(org.coode.owlapi.owlxmlparser.OWLXMLParserException.class.isAssignableFrom(OWLXMLParserAttributeNotFoundException.class));
     }
 
-    public void verifyOWLXMLParserAttributeNotFoundException()  {
-        OWLXMLParserAttributeNotFoundException testSubject0 = new OWLXMLParserAttributeNotFoundException(
-                _int, _int, _String);
+    public void verifyOWLXMLParserAttributeNotFoundException() {
+        OWLXMLParserAttributeNotFoundException testSubject0 = new OWLXMLParserAttributeNotFoundException(_int, _int, _String);
         String result0 = testSubject0.getMessage();
         int result1 = testSubject0.getLineNumber();
         int result2 = testSubject0.getColumnNumber();
@@ -5087,15 +4212,12 @@ public class Gen_org_coode_owlapi_owlxmlparser {
     }
 
     @Test
-    public void enforceInterfacesOWLXMLParserElementNotFoundException()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.OWLXMLParserException.class
-                .isAssignableFrom(OWLXMLParserElementNotFoundException.class));
+    public void enforceInterfacesOWLXMLParserElementNotFoundException() {
+        assertTrue(org.coode.owlapi.owlxmlparser.OWLXMLParserException.class.isAssignableFrom(OWLXMLParserElementNotFoundException.class));
     }
 
-    public void verifyOWLXMLParserElementNotFoundException()  {
-        OWLXMLParserElementNotFoundException testSubject0 = new OWLXMLParserElementNotFoundException(
-                _int, _int, _String);
+    public void verifyOWLXMLParserElementNotFoundException() {
+        OWLXMLParserElementNotFoundException testSubject0 = new OWLXMLParserElementNotFoundException(_int, _int, _String);
         String result0 = testSubject0.getMessage();
         int result1 = testSubject0.getLineNumber();
         int result2 = testSubject0.getColumnNumber();
@@ -5113,14 +4235,12 @@ public class Gen_org_coode_owlapi_owlxmlparser {
     }
 
     @Test
-    public void enforceInterfacesOWLXMLParserException()  {
-        assertTrue(org.semanticweb.owlapi.io.OWLParserException.class
-                .isAssignableFrom(OWLXMLParserException.class));
+    public void enforceInterfacesOWLXMLParserException() {
+        assertTrue(org.semanticweb.owlapi.io.OWLParserException.class.isAssignableFrom(OWLXMLParserException.class));
     }
 
-    public void verifyOWLXMLParserException()  {
-        OWLXMLParserException testSubject0 = new OWLXMLParserException(_String,
-                _int, _int);
+    public void verifyOWLXMLParserException() {
+        OWLXMLParserException testSubject0 = new OWLXMLParserException(_String, _int, _int);
         String result0 = testSubject0.getMessage();
         int result1 = testSubject0.getLineNumber();
         int result2 = testSubject0.getColumnNumber();
@@ -5138,66 +4258,45 @@ public class Gen_org_coode_owlapi_owlxmlparser {
     }
 
     @Test
-    public void
-            enforceInterfacesOWLXMLParserException2SAXExceptionTranslation()
-                     {}
-
-    @Test
-    public void enforceInterfacesOWLXMLParserFactory()  {
-        assertTrue(org.semanticweb.owlapi.io.OWLParserFactory.class
-                .isAssignableFrom(OWLXMLParserFactory.class));
+    public void enforceInterfacesOWLXMLParserException2SAXExceptionTranslation() {
     }
 
-    public void verifyOWLXMLParserFactory()  {
+    @Test
+    public void enforceInterfacesOWLXMLParserFactory() {
+        assertTrue(org.semanticweb.owlapi.io.OWLParserFactory.class.isAssignableFrom(OWLXMLParserFactory.class));
+    }
+
+    public void verifyOWLXMLParserFactory() {
         OWLXMLParserFactory testSubject0 = new OWLXMLParserFactory();
-        org.semanticweb.owlapi.io.OWLParser result0 = testSubject0
-                .createParser(_OWLOntologyManager);
+        org.semanticweb.owlapi.io.OWLParser result0 = testSubject0.createParser(_OWLOntologyManager);
     }
 
     @Test
-    public void enforceInterfacesOWLXMLParserHandler()  {
-        assertTrue(org.xml.sax.helpers.DefaultHandler.class
-                .isAssignableFrom(OWLXMLParserHandler.class));
+    public void enforceInterfacesOWLXMLParserHandler() {
+        assertTrue(org.xml.sax.helpers.DefaultHandler.class.isAssignableFrom(OWLXMLParserHandler.class));
     }
 
-    public void verifyOWLXMLParserHandler()  {
-        OWLXMLParserHandler testSubject0 = new OWLXMLParserHandler(
-                _OWLOntologyManager, _OWLOntology, _OWLElementHandler);
-        OWLXMLParserHandler testSubject1 = new OWLXMLParserHandler(
-                _OWLOntology, _OWLElementHandler);
-        OWLXMLParserHandler testSubject2 = new OWLXMLParserHandler(
-                _OWLOntology, _OWLElementHandler,
-                _OWLOntologyLoaderConfiguration);
-        OWLXMLParserHandler testSubject3 = new OWLXMLParserHandler(
-                _OWLOntologyManager, _OWLOntology, _OWLElementHandler,
-                _OWLOntologyLoaderConfiguration);
+    public void verifyOWLXMLParserHandler() throws IOException, SAXException {
+        OWLXMLParserHandler testSubject0 = new OWLXMLParserHandler(_OWLOntologyManager, _OWLOntology, _OWLElementHandler);
+        OWLXMLParserHandler testSubject1 = new OWLXMLParserHandler(_OWLOntology, _OWLElementHandler);
+        OWLXMLParserHandler testSubject2 = new OWLXMLParserHandler(_OWLOntology, _OWLElementHandler, _OWLOntologyLoaderConfiguration);
+        OWLXMLParserHandler testSubject3 = new OWLXMLParserHandler(_OWLOntologyManager, _OWLOntology, _OWLElementHandler, _OWLOntologyLoaderConfiguration);
         OWLXMLParserHandler testSubject4 = new OWLXMLParserHandler(_OWLOntology);
-        OWLXMLParserHandler testSubject5 = new OWLXMLParserHandler(
-                _OWLOntologyManager, _OWLOntology,
-                _OWLOntologyLoaderConfiguration);
-        OWLXMLParserHandler testSubject6 = new OWLXMLParserHandler(
-                _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLXMLParserHandler testSubject7 = new OWLXMLParserHandler(
-                _OWLOntologyManager, _OWLOntology);
+        OWLXMLParserHandler testSubject5 = new OWLXMLParserHandler(_OWLOntologyManager, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLXMLParserHandler testSubject6 = new OWLXMLParserHandler(_OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLXMLParserHandler testSubject7 = new OWLXMLParserHandler(_OWLOntologyManager, _OWLOntology);
         int result0 = testSubject0.getLineNumber();
         int result1 = testSubject0.getColumnNumber();
-        java.util.Map<String, String> result2 = testSubject0
-                .getPrefixName2PrefixMap();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
-        OWLOntology result4 = testSubject0
-                .getOntology();
-        OWLDataFactory result5 = testSubject0
-                .getDataFactory();
-        OWLOntologyManager result6 = testSubject0
-                .getOWLOntologyManager();
+        java.util.Map<String, String> result2 = testSubject0.getPrefixName2PrefixMap();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
+        OWLOntology result4 = testSubject0.getOntology();
+        OWLDataFactory result5 = testSubject0.getDataFactory();
+        OWLOntologyManager result6 = testSubject0.getOWLOntologyManager();
         IRI result7 = testSubject0.getIRI(_String);
         testSubject0.startElement(_String, _String, _String, _Attributes);
-        IRI result8 = testSubject0
-                .getAbbreviatedIRI(_String);
+        IRI result8 = testSubject0.getAbbreviatedIRI(_String);
         java.net.URI result9 = testSubject0.getBase();
-        org.xml.sax.InputSource result10 = testSubject0.resolveEntity(_String,
-                _String);
+        org.xml.sax.InputSource result10 = testSubject0.resolveEntity(_String, _String);
         testSubject0.setDocumentLocator(_Locator);
         testSubject0.startDocument();
         testSubject0.endDocument();
@@ -5216,25 +4315,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
     }
 
     @Test
-    public void enforceInterfacesSWRLAtomElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(SWRLAtomElementHandler.class));
+    public void enforceInterfacesSWRLAtomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(SWRLAtomElementHandler.class));
     }
 
-    public void verifySWRLAtomElementHandler()  {
-        SWRLAtomElementHandler testSubject0 = new SWRLAtomElementHandler(
-                _OWLXMLParserHandler) {
-
+    public void verifySWRLAtomElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLAtomElementHandler testSubject0 = new SWRLAtomElementHandler(_OWLXMLParserHandler) {
             @Override
-            public void endElement() throws OWLParserException,
-                    UnloadableImportException {}
+            public void endElement() throws OWLParserException, UnloadableImportException {
+            }
         };
         Object result0 = testSubject0.getOWLObject();
-        SWRLAtom result1 = testSubject0
-                .getOWLObject();
+        SWRLAtom result1 = testSubject0.getOWLObject();
         testSubject0.setAtom(_SWRLAtom);
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5254,10 +4348,8 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
@@ -5265,20 +4357,17 @@ public class Gen_org_coode_owlapi_owlxmlparser {
     }
 
     @Test
-    public void enforceInterfacesSWRLAtomListElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(SWRLAtomListElementHandler.class));
+    public void enforceInterfacesSWRLAtomListElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(SWRLAtomListElementHandler.class));
     }
 
-    public void verifySWRLAtomListElementHandler()  {
+    public void verifySWRLAtomListElementHandler() throws OWLParserException, UnloadableImportException {
         SWRLAtomListElementHandler testSubject0 = mock(SWRLAtomListElementHandler.class);
         Object result0 = testSubject0.getOWLObject();
-        java.util.List<SWRLAtom> result1 = testSubject0
-                .getOWLObject();
+        java.util.List<SWRLAtom> result1 = testSubject0.getOWLObject();
         testSubject0.handleChild(_SWRLAtomElementHandler);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5297,35 +4386,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesSWRLBuiltInAtomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class
-                .isAssignableFrom(SWRLBuiltInAtomElementHandler.class));
+    public void enforceInterfacesSWRLBuiltInAtomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class.isAssignableFrom(SWRLBuiltInAtomElementHandler.class));
     }
 
-    public void verifySWRLBuiltInAtomElementHandler()  {
-        SWRLBuiltInAtomElementHandler testSubject0 = new SWRLBuiltInAtomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifySWRLBuiltInAtomElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLBuiltInAtomElementHandler testSubject0 = new SWRLBuiltInAtomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_SWRLVariableElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
         Object result0 = testSubject0.getOWLObject();
-        SWRLAtom result1 = testSubject0
-                .getOWLObject();
+        SWRLAtom result1 = testSubject0.getOWLObject();
         testSubject0.setAtom(_SWRLAtom);
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5343,33 +4425,27 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesSWRLClassAtomElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class
-                .isAssignableFrom(SWRLClassAtomElementHandler.class));
+    public void enforceInterfacesSWRLClassAtomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class.isAssignableFrom(SWRLClassAtomElementHandler.class));
     }
 
-    public void verifySWRLClassAtomElementHandler()  {
-        SWRLClassAtomElementHandler testSubject0 = new SWRLClassAtomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifySWRLClassAtomElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLClassAtomElementHandler testSubject0 = new SWRLClassAtomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_AbstractClassExpressionElementHandler);
         testSubject0.handleChild(_SWRLVariableElementHandler);
         testSubject0.endElement();
         Object result0 = testSubject0.getOWLObject();
-        SWRLAtom result1 = testSubject0
-                .getOWLObject();
+        SWRLAtom result1 = testSubject0.getOWLObject();
         testSubject0.setAtom(_SWRLAtom);
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5386,25 +4462,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesSWRLDataPropertyAtomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class
-                .isAssignableFrom(SWRLDataPropertyAtomElementHandler.class));
+    public void enforceInterfacesSWRLDataPropertyAtomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class.isAssignableFrom(SWRLDataPropertyAtomElementHandler.class));
     }
 
-    public void verifySWRLDataPropertyAtomElementHandler()  {
-        SWRLDataPropertyAtomElementHandler testSubject0 = new SWRLDataPropertyAtomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifySWRLDataPropertyAtomElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLDataPropertyAtomElementHandler testSubject0 = new SWRLDataPropertyAtomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_OWLAnonymousIndividualElementHandler);
@@ -5412,11 +4483,9 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.endElement();
         Object result0 = testSubject0.getOWLObject();
-        SWRLAtom result1 = testSubject0
-                .getOWLObject();
+        SWRLAtom result1 = testSubject0.getOWLObject();
         testSubject0.setAtom(_SWRLAtom);
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5431,35 +4500,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLAxiomElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesSWRLDataRangeAtomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class
-                .isAssignableFrom(SWRLDataRangeAtomElementHandler.class));
+    public void enforceInterfacesSWRLDataRangeAtomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class.isAssignableFrom(SWRLDataRangeAtomElementHandler.class));
     }
 
-    public void verifySWRLDataRangeAtomElementHandler()  {
-        SWRLDataRangeAtomElementHandler testSubject0 = new SWRLDataRangeAtomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifySWRLDataRangeAtomElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLDataRangeAtomElementHandler testSubject0 = new SWRLDataRangeAtomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_SWRLVariableElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.endElement();
         Object result0 = testSubject0.getOWLObject();
-        SWRLAtom result1 = testSubject0
-                .getOWLObject();
+        SWRLAtom result1 = testSubject0.getOWLObject();
         testSubject0.setAtom(_SWRLAtom);
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5476,35 +4538,27 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesSWRLDifferentIndividualsAtomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class
-                .isAssignableFrom(SWRLDifferentIndividualsAtomElementHandler.class));
+    public void enforceInterfacesSWRLDifferentIndividualsAtomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class.isAssignableFrom(SWRLDifferentIndividualsAtomElementHandler.class));
     }
 
-    public void verifySWRLDifferentIndividualsAtomElementHandler()
-             {
-        SWRLDifferentIndividualsAtomElementHandler testSubject0 = new SWRLDifferentIndividualsAtomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifySWRLDifferentIndividualsAtomElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLDifferentIndividualsAtomElementHandler testSubject0 = new SWRLDifferentIndividualsAtomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_SWRLVariableElementHandler);
         testSubject0.endElement();
         Object result0 = testSubject0.getOWLObject();
-        SWRLAtom result1 = testSubject0
-                .getOWLObject();
+        SWRLAtom result1 = testSubject0.getOWLObject();
         testSubject0.setAtom(_SWRLAtom);
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5522,35 +4576,28 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesSWRLObjectPropertyAtomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class
-                .isAssignableFrom(SWRLObjectPropertyAtomElementHandler.class));
+    public void enforceInterfacesSWRLObjectPropertyAtomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class.isAssignableFrom(SWRLObjectPropertyAtomElementHandler.class));
     }
 
-    public void verifySWRLObjectPropertyAtomElementHandler()  {
-        SWRLObjectPropertyAtomElementHandler testSubject0 = new SWRLObjectPropertyAtomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifySWRLObjectPropertyAtomElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLObjectPropertyAtomElementHandler testSubject0 = new SWRLObjectPropertyAtomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_SWRLVariableElementHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.endElement();
         Object result0 = testSubject0.getOWLObject();
-        SWRLAtom result1 = testSubject0
-                .getOWLObject();
+        SWRLAtom result1 = testSubject0.getOWLObject();
         testSubject0.setAtom(_SWRLAtom);
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5567,36 +4614,29 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_OWLLiteralElementHandler);
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesSWRLRuleElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class
-                .isAssignableFrom(SWRLRuleElementHandler.class));
+    public void enforceInterfacesSWRLRuleElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLAxiomElementHandler.class.isAssignableFrom(SWRLRuleElementHandler.class));
     }
 
-    public void verifySWRLRuleElementHandler()  {
-        SWRLRuleElementHandler testSubject0 = new SWRLRuleElementHandler(
-                _OWLXMLParserHandler);
+    public void verifySWRLRuleElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLRuleElementHandler testSubject0 = new SWRLRuleElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_SWRLAtomListElementHandler);
-        java.util.Set<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
+        java.util.Set<OWLAnnotation> result0 = testSubject0.getAnnotations();
         testSubject0.startElement(_String);
         Object result1 = testSubject0.getOWLObject();
-        OWLAxiom result2 = testSubject0
-                .getOWLObject();
+        OWLAxiom result2 = testSubject0.getOWLObject();
         testSubject0.handleChild(_OWLAnnotationElementHandler);
         testSubject0.setAxiom(_OWLAxiom);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result3 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result3 = testSubject0.getConfiguration();
         boolean result4 = testSubject0.isTextContentPossible();
         String result5 = testSubject0.getText();
         testSubject0.handleChild(_OWLSubObjectPropertyChainElementHandler);
@@ -5613,34 +4653,27 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result6 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result7 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result6 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result7 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesSWRLSameIndividualAtomElementHandler()
-             {
-        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class
-                .isAssignableFrom(SWRLSameIndividualAtomElementHandler.class));
+    public void enforceInterfacesSWRLSameIndividualAtomElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.SWRLAtomElementHandler.class.isAssignableFrom(SWRLSameIndividualAtomElementHandler.class));
     }
 
-    public void verifySWRLSameIndividualAtomElementHandler()  {
-        SWRLSameIndividualAtomElementHandler testSubject0 = new SWRLSameIndividualAtomElementHandler(
-                _OWLXMLParserHandler);
+    public void verifySWRLSameIndividualAtomElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLSameIndividualAtomElementHandler testSubject0 = new SWRLSameIndividualAtomElementHandler(_OWLXMLParserHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
         testSubject0.handleChild(_SWRLVariableElementHandler);
         testSubject0.endElement();
         Object result0 = testSubject0.getOWLObject();
-        SWRLAtom result1 = testSubject0
-                .getOWLObject();
+        SWRLAtom result1 = testSubject0.getOWLObject();
         testSubject0.setAtom(_SWRLAtom);
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5658,31 +4691,26 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLDataRangeHandler);
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.attribute(_String, _String);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesSWRLVariableElementHandler()  {
-        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class
-                .isAssignableFrom(SWRLVariableElementHandler.class));
+    public void enforceInterfacesSWRLVariableElementHandler() {
+        assertTrue(org.coode.owlapi.owlxmlparser.AbstractOWLElementHandler.class.isAssignableFrom(SWRLVariableElementHandler.class));
     }
 
-    public void verifySWRLVariableElementHandler()  {
-        SWRLVariableElementHandler testSubject0 = new SWRLVariableElementHandler(
-                _OWLXMLParserHandler) {};
-        SWRLVariable result0 = testSubject0
-                .getOWLObject();
+    public void verifySWRLVariableElementHandler() throws OWLParserException, UnloadableImportException {
+        SWRLVariableElementHandler testSubject0 = new SWRLVariableElementHandler(_OWLXMLParserHandler) {
+        };
+        SWRLVariable result0 = testSubject0.getOWLObject();
         Object result1 = testSubject0.getOWLObject();
         testSubject0.attribute(_String, _String);
         testSubject0.endElement();
-        OWLOntologyLoaderConfiguration result2 = testSubject0
-                .getConfiguration();
+        OWLOntologyLoaderConfiguration result2 = testSubject0.getConfiguration();
         testSubject0.startElement(_String);
         boolean result3 = testSubject0.isTextContentPossible();
         String result4 = testSubject0.getText();
@@ -5702,26 +4730,20 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         testSubject0.handleChild(_AbstractOWLObjectPropertyElementHandler);
         testSubject0.handleChild(_OWLDataPropertyElementHandler);
         testSubject0.handleChild(_OWLIndividualElementHandler);
-        IRI result5 = testSubject0
-                .getIRIFromAttribute(_String, _String);
-        IRI result6 = testSubject0
-                .getIRIFromElement(_String, _String);
+        IRI result5 = testSubject0.getIRIFromAttribute(_String, _String);
+        IRI result6 = testSubject0.getIRIFromElement(_String, _String);
         testSubject0.setParentHandler(_OWLElementHandler);
         testSubject0.handleChars(_char_array, _int, _int);
     }
 
     @Test
-    public void enforceInterfacesTranslatedOWLOntologyChangeException()
-             {
-        assertTrue(org.xml.sax.SAXException.class
-                .isAssignableFrom(TranslatedOWLOntologyChangeException.class));
+    public void enforceInterfacesTranslatedOWLOntologyChangeException() {
+        assertTrue(org.xml.sax.SAXException.class.isAssignableFrom(TranslatedOWLOntologyChangeException.class));
     }
 
-    public void verifyTranslatedOWLOntologyChangeException()  {
-        TranslatedOWLOntologyChangeException testSubject0 = new TranslatedOWLOntologyChangeException(
-                _OWLOntologyChangeException);
-        OWLOntologyChangeException result0 = testSubject0
-                .getCause();
+    public void verifyTranslatedOWLOntologyChangeException() {
+        TranslatedOWLOntologyChangeException testSubject0 = new TranslatedOWLOntologyChangeException(_OWLOntologyChangeException);
+        OWLOntologyChangeException result0 = testSubject0.getCause();
         Throwable result1 = testSubject0.getCause();
         String result2 = testSubject0.getMessage();
         Exception result3 = testSubject0.getException();
@@ -5738,17 +4760,13 @@ public class Gen_org_coode_owlapi_owlxmlparser {
     }
 
     @Test
-    public void enforceInterfacesTranslatedOWLParserException()
-             {
-        assertTrue(org.xml.sax.SAXException.class
-                .isAssignableFrom(TranslatedOWLParserException.class));
+    public void enforceInterfacesTranslatedOWLParserException() {
+        assertTrue(org.xml.sax.SAXException.class.isAssignableFrom(TranslatedOWLParserException.class));
     }
 
-    public void verifyTranslatedOWLParserException()  {
-        TranslatedOWLParserException testSubject0 = new TranslatedOWLParserException(
-                _OWLParserException);
-        org.semanticweb.owlapi.io.OWLParserException result0 = testSubject0
-                .getParserException();
+    public void verifyTranslatedOWLParserException() {
+        TranslatedOWLParserException testSubject0 = new TranslatedOWLParserException(_OWLParserException);
+        org.semanticweb.owlapi.io.OWLParserException result0 = testSubject0.getParserException();
         Throwable result1 = testSubject0.getCause();
         String result2 = testSubject0.getMessage();
         Exception result3 = testSubject0.getException();
@@ -5765,17 +4783,13 @@ public class Gen_org_coode_owlapi_owlxmlparser {
     }
 
     @Test
-    public void enforceInterfacesTranslatedUnloadableImportException()
-             {
-        assertTrue(org.xml.sax.SAXException.class
-                .isAssignableFrom(TranslatedUnloadableImportException.class));
+    public void enforceInterfacesTranslatedUnloadableImportException() {
+        assertTrue(org.xml.sax.SAXException.class.isAssignableFrom(TranslatedUnloadableImportException.class));
     }
 
-    public void verifyTranslatedUnloadableImportException()  {
-        TranslatedUnloadableImportException testSubject0 = new TranslatedUnloadableImportException(
-                _UnloadableImportException);
-        UnloadableImportException result0 = testSubject0
-                .getUnloadableImportException();
+    public void verifyTranslatedUnloadableImportException() {
+        TranslatedUnloadableImportException testSubject0 = new TranslatedUnloadableImportException(_UnloadableImportException);
+        UnloadableImportException result0 = testSubject0.getUnloadableImportException();
         Throwable result1 = testSubject0.getCause();
         String result2 = testSubject0.getMessage();
         Exception result3 = testSubject0.getException();
@@ -5791,7 +4805,8 @@ public class Gen_org_coode_owlapi_owlxmlparser {
         Throwable[] result8 = testSubject0.getSuppressed();
     }
 
-    private static class P {}
+    private static class P {
+    }
 
     private OWLObject _OWLObject;
     private OWLLiteral _OWLLiteral;

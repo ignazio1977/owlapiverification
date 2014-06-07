@@ -1,4 +1,4 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 
@@ -8,39 +8,33 @@ import org.coode.owlapi.functionalrenderer.OWLObjectRenderer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.semanticweb.owlapi.io.OWLRendererException;
+import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_functionalrenderer {
-
     @Test
-    public void enforceInterfacesOWLFunctionalSyntaxOntologyStorer()
-             {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(OWLFunctionalSyntaxOntologyStorer.class));
+    public void enforceInterfacesOWLFunctionalSyntaxOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(OWLFunctionalSyntaxOntologyStorer.class));
     }
 
-    public void verifyOWLFunctionalSyntaxOntologyStorer()  {
+    public void verifyOWLFunctionalSyntaxOntologyStorer() throws OWLOntologyStorageException {
         OWLFunctionalSyntaxOntologyStorer testSubject0 = new OWLFunctionalSyntaxOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesOWLFunctionalSyntaxRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(OWLFunctionalSyntaxRenderer.class));
+    public void enforceInterfacesOWLFunctionalSyntaxRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(OWLFunctionalSyntaxRenderer.class));
     }
 
-    public void verifyOWLFunctionalSyntaxRenderer()  {
-        OWLFunctionalSyntaxRenderer testSubject0 = new OWLFunctionalSyntaxRenderer(
-                _OWLOntologyManager);
+    public void verifyOWLFunctionalSyntaxRenderer() throws OWLRendererException {
+        OWLFunctionalSyntaxRenderer testSubject0 = new OWLFunctionalSyntaxRenderer(_OWLOntologyManager);
         OWLFunctionalSyntaxRenderer testSubject1 = new OWLFunctionalSyntaxRenderer();
         testSubject0.render(_OWLOntology, _Writer);
         testSubject0.setOWLOntologyManager(_OWLOntologyManager);
@@ -48,16 +42,13 @@ public class Gen_org_coode_owlapi_functionalrenderer {
     }
 
     @Test
-    public void enforceInterfacesOWLObjectRenderer()  {
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(OWLObjectRenderer.class));
+    public void enforceInterfacesOWLObjectRenderer() {
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(OWLObjectRenderer.class));
     }
 
-    public void verifyOWLObjectRenderer()  {
-        OWLObjectRenderer testSubject0 = new OWLObjectRenderer(
-                _OWLOntologyManager, _OWLOntology, _Writer);
-        OWLObjectRenderer testSubject1 = new OWLObjectRenderer(_OWLOntology,
-                _Writer);
+    public void verifyOWLObjectRenderer() {
+        OWLObjectRenderer testSubject0 = new OWLObjectRenderer(_OWLOntologyManager, _OWLOntology, _Writer);
+        OWLObjectRenderer testSubject1 = new OWLObjectRenderer(_OWLOntology, _Writer);
         testSubject0.write(_OWLXMLVocabulary, _OWLObject);
         testSubject0.write(_OWLAnnotation);
         testSubject0.setPrefixManager(_DefaultPrefixManager);
@@ -148,20 +139,16 @@ public class Gen_org_coode_owlapi_functionalrenderer {
         testSubject0.visit(_OWLSubObjectPropertyOfAxiom);
         testSubject0.visit(_OWLSubPropertyChainOfAxiom);
         testSubject0.visit(_OWLObjectPropertyDomainAxiom);
-        java.util.Set<OWLAxiom> result0 = testSubject0
-                .writeAnnotations(_OWLEntity);
+        java.util.Set<OWLAxiom> result0 = testSubject0.writeAnnotations(_OWLEntity);
         testSubject0.writeAnnotations(_OWLAxiom);
         testSubject0.setFocusedObject(_OWLObject);
         testSubject0.writePrefix(_String, _String);
         testSubject0.writePrefixes();
-        java.util.Set<OWLAxiom> result1 = testSubject0
-                .writeDeclarations(_OWLEntity);
-        java.util.Set<OWLAxiom> result2 = testSubject0
-                .writeAxioms(_OWLEntity);
+        java.util.Set<OWLAxiom> result1 = testSubject0.writeDeclarations(_OWLEntity);
+        java.util.Set<OWLAxiom> result2 = testSubject0.writeAxioms(_OWLEntity);
         testSubject0.writeAxiomStart(_OWLXMLVocabulary, _OWLAxiom);
         testSubject0.writeAxiomEnd();
-        testSubject0.writePropertyCharacteristic(_OWLXMLVocabulary, _OWLAxiom,
-                _OWLPropertyExpression);
+        testSubject0.writePropertyCharacteristic(_OWLXMLVocabulary, _OWLAxiom, _OWLPropertyExpression);
     }
 
     private java.io.OutputStream _OutputStream;

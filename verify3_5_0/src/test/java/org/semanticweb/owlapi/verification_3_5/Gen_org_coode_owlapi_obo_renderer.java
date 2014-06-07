@@ -1,97 +1,77 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
-import org.coode.owlapi.obo.renderer.OBOExceptionHandler;
-import org.coode.owlapi.obo.renderer.OBOFlatFileOntologyStorer;
-import org.coode.owlapi.obo.renderer.OBOFlatFileRenderer;
-import org.coode.owlapi.obo.renderer.OBORelationship;
-import org.coode.owlapi.obo.renderer.OBORelationshipGenerator;
-import org.coode.owlapi.obo.renderer.OBOStorageException;
-import org.coode.owlapi.obo.renderer.OBOStorageIncompleteException;
-import org.coode.owlapi.obo.renderer.OBOTagValuePairList;
+import org.coode.owlapi.obo.renderer.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.semanticweb.owlapi.io.OWLRendererException;
+import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_obo_renderer {
-
-    public void verifyInterfaceOBOExceptionHandler()  {
+    public void verifyInterfaceOBOExceptionHandler() {
         OBOExceptionHandler testSubject0 = mock(OBOExceptionHandler.class);
         testSubject0.addException(_OBOStorageException);
-        java.util.List<org.coode.owlapi.obo.renderer.OBOStorageException> result0 = testSubject0
-                .getExceptions();
+        java.util.List<org.coode.owlapi.obo.renderer.OBOStorageException> result0 = testSubject0.getExceptions();
     }
 
     @Test
-    public void enforceInterfacesOBOFlatFileOntologyStorer()  {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(OBOFlatFileOntologyStorer.class));
+    public void enforceInterfacesOBOFlatFileOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(OBOFlatFileOntologyStorer.class));
     }
 
-    public void verifyOBOFlatFileOntologyStorer()  {
+    public void verifyOBOFlatFileOntologyStorer() throws OWLOntologyStorageException {
         OBOFlatFileOntologyStorer testSubject0 = new OBOFlatFileOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesOBOFlatFileRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(OBOFlatFileRenderer.class));
-        assertTrue(org.coode.owlapi.obo.renderer.OBOExceptionHandler.class
-                .isAssignableFrom(OBOFlatFileRenderer.class));
+    public void enforceInterfacesOBOFlatFileRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(OBOFlatFileRenderer.class));
+        assertTrue(org.coode.owlapi.obo.renderer.OBOExceptionHandler.class.isAssignableFrom(OBOFlatFileRenderer.class));
     }
 
-    public void verifyOBOFlatFileRenderer()  {
-        OBOFlatFileRenderer testSubject0 = new OBOFlatFileRenderer() {};
+    public void verifyOBOFlatFileRenderer() throws OWLRendererException {
+        OBOFlatFileRenderer testSubject0 = new OBOFlatFileRenderer() {
+        };
         testSubject0.render(_OWLOntology, _Writer);
         testSubject0.addException(_OBOStorageException);
-        java.util.List<org.coode.owlapi.obo.renderer.OBOStorageException> result0 = testSubject0
-                .getExceptions();
+        java.util.List<org.coode.owlapi.obo.renderer.OBOStorageException> result0 = testSubject0.getExceptions();
         testSubject0.setOWLOntologyManager(_OWLOntologyManager);
         testSubject0.render(_OWLOntology, _OutputStream);
     }
 
-    public void verifyOBORelationship()  {
-        OBORelationship testSubject0 = new OBORelationship(_OWLObjectProperty,
-                _OWLNamedIndividual);
-        OBORelationship testSubject1 = new OBORelationship(_OWLObjectProperty,
-                _OWLClass);
-        OWLObjectProperty result0 = testSubject0
-                .getProperty();
+    public void verifyOBORelationship() {
+        OBORelationship testSubject0 = new OBORelationship(_OWLObjectProperty, _OWLNamedIndividual);
+        OBORelationship testSubject1 = new OBORelationship(_OWLObjectProperty, _OWLClass);
+        OWLObjectProperty result0 = testSubject0.getProperty();
         int result1 = testSubject0.getMaxCardinality();
         int result2 = testSubject0.getMinCardinality();
         testSubject0.setMaxCardinality(_int);
         testSubject0.setMinCardinality(_int);
         testSubject0.setCardinality(_int);
         int result3 = testSubject0.getCardinality();
-        OWLEntity result4 = testSubject0
-                .getFiller();
+        OWLEntity result4 = testSubject0.getFiller();
     }
 
     @Test
-    public void enforceInterfacesOBORelationshipGenerator()  {
-        assertTrue(org.semanticweb.owlapi.util.OWLClassExpressionVisitorAdapter.class
-                .isAssignableFrom(OBORelationshipGenerator.class));
+    public void enforceInterfacesOBORelationshipGenerator() {
+        assertTrue(org.semanticweb.owlapi.util.OWLClassExpressionVisitorAdapter.class.isAssignableFrom(OBORelationshipGenerator.class));
     }
 
-    public void verifyOBORelationshipGenerator()  {
-        OBORelationshipGenerator testSubject0 = new OBORelationshipGenerator(
-                _OBOExceptionHandler);
+    public void verifyOBORelationshipGenerator() {
+        OBORelationshipGenerator testSubject0 = new OBORelationshipGenerator(_OBOExceptionHandler);
         testSubject0.clear();
         testSubject0.setClass(_OWLClass);
-        java.util.Set<org.coode.owlapi.obo.renderer.OBORelationship> result0 = testSubject0
-                .getOBORelationships();
+        java.util.Set<org.coode.owlapi.obo.renderer.OBORelationship> result0 = testSubject0.getOBORelationships();
         testSubject0.visit(_OWLObjectMinCardinality);
         testSubject0.visit(_OWLObjectSomeValuesFrom);
         testSubject0.visit(_OWLObjectMaxCardinality);
@@ -113,14 +93,12 @@ public class Gen_org_coode_owlapi_obo_renderer {
     }
 
     @Test
-    public void enforceInterfacesOBOStorageException()  {
-        assertTrue(OWLOntologyStorageException.class
-                .isAssignableFrom(OBOStorageException.class));
+    public void enforceInterfacesOBOStorageException() {
+        assertTrue(OWLOntologyStorageException.class.isAssignableFrom(OBOStorageException.class));
     }
 
-    public void verifyOBOStorageException()  {
-        OBOStorageException testSubject0 = new OBOStorageException(_OWLObject,
-                _OWLObject, _String);
+    public void verifyOBOStorageException() {
+        OBOStorageException testSubject0 = new OBOStorageException(_OWLObject, _OWLObject, _String);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -136,18 +114,14 @@ public class Gen_org_coode_owlapi_obo_renderer {
     }
 
     @Test
-    public void enforceInterfacesOBOStorageIncompleteException()
-             {
-        assertTrue(org.semanticweb.owlapi.io.OWLRendererException.class
-                .isAssignableFrom(OBOStorageIncompleteException.class));
+    public void enforceInterfacesOBOStorageIncompleteException() {
+        assertTrue(org.semanticweb.owlapi.io.OWLRendererException.class.isAssignableFrom(OBOStorageIncompleteException.class));
     }
 
-    public void verifyOBOStorageIncompleteException()  {
-        OBOStorageIncompleteException testSubject0 = new OBOStorageIncompleteException(
-                _List);
+    public void verifyOBOStorageIncompleteException() {
+        OBOStorageIncompleteException testSubject0 = new OBOStorageIncompleteException(_List);
         String result0 = testSubject0.getMessage();
-        java.util.List<org.coode.owlapi.obo.renderer.OBOStorageException> result1 = testSubject0
-                .getCauses();
+        java.util.List<org.coode.owlapi.obo.renderer.OBOStorageException> result1 = testSubject0.getCauses();
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -161,7 +135,7 @@ public class Gen_org_coode_owlapi_obo_renderer {
         Throwable[] result7 = testSubject0.getSuppressed();
     }
 
-    public void verifyOBOTagValuePairList()  {
+    public void verifyOBOTagValuePairList() {
         OBOTagValuePairList testSubject0 = new OBOTagValuePairList(_List37);
         testSubject0.write(_Writer);
         testSubject0.setDefault(_IRI, _String);

@@ -1,24 +1,16 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.obolibrary.oboformat.model.Clause;
-import org.obolibrary.oboformat.model.DocumentStructureException;
-import org.obolibrary.oboformat.model.Frame;
-import org.obolibrary.oboformat.model.FrameMergeException;
-import org.obolibrary.oboformat.model.FrameStructureException;
-import org.obolibrary.oboformat.model.OBODoc;
-import org.obolibrary.oboformat.model.QualifierValue;
-import org.obolibrary.oboformat.model.Xref;
+import org.obolibrary.oboformat.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_oboformat_model {
-
-    public void verifyClause()  {
+    public void verifyClause() {
         Clause testSubject0 = new Clause();
         Clause testSubject1 = new Clause(_OboFormatTag, _String);
         Clause testSubject2 = new Clause(_String, _String);
@@ -30,10 +22,8 @@ public class Gen_org_obolibrary_oboformat_model {
         String result2 = testSubject0.getTag();
         Object result3 = testSubject0.getValue2();
         Object result4 = testSubject0.getValue2(_Class);
-        java.util.Collection<org.obolibrary.oboformat.model.QualifierValue> result5 = testSubject0
-                .getQualifierValues();
-        java.util.Collection<org.obolibrary.oboformat.model.Xref> result6 = testSubject0
-                .getXrefs();
+        java.util.Collection<org.obolibrary.oboformat.model.QualifierValue> result5 = testSubject0.getQualifierValues();
+        java.util.Collection<org.obolibrary.oboformat.model.Xref> result6 = testSubject0.getXrefs();
         testSubject0.setTag(_String);
         testSubject0.setValues(_Collection);
         testSubject0.addValue(_Object);
@@ -45,14 +35,12 @@ public class Gen_org_obolibrary_oboformat_model {
     }
 
     @Test
-    public void enforceInterfacesDocumentStructureException()  {
-        assertTrue(java.io.IOException.class
-                .isAssignableFrom(DocumentStructureException.class));
+    public void enforceInterfacesDocumentStructureException() {
+        assertTrue(java.io.IOException.class.isAssignableFrom(DocumentStructureException.class));
     }
 
-    public void verifyDocumentStructureException()  {
-        DocumentStructureException testSubject0 = new DocumentStructureException(
-                _String);
+    public void verifyDocumentStructureException() {
+        DocumentStructureException testSubject0 = new DocumentStructureException(_String);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -67,33 +55,23 @@ public class Gen_org_obolibrary_oboformat_model {
         Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    public void verifyFrame()  {
+    public void verifyFrame() throws FrameStructureException, FrameMergeException {
         Frame testSubject0 = new Frame();
         Frame testSubject1 = new Frame(_FrameType);
         String result0 = testSubject0.getId();
-        org.obolibrary.oboformat.model.Frame.FrameType result1 = testSubject0
-                .getType();
+        org.obolibrary.oboformat.model.Frame.FrameType result1 = testSubject0.getType();
         testSubject0.check();
         testSubject0.merge(_Frame);
-        org.obolibrary.oboformat.model.Clause result2 = testSubject0
-                .getClause(_OboFormatTag);
-        org.obolibrary.oboformat.model.Clause result3 = testSubject0
-                .getClause(_String);
-        java.util.Collection<org.obolibrary.oboformat.model.Clause> result4 = testSubject0
-                .getClauses();
-        java.util.Collection<org.obolibrary.oboformat.model.Clause> result5 = testSubject0
-                .getClauses(_String);
-        java.util.Collection<org.obolibrary.oboformat.model.Clause> result6 = testSubject0
-                .getClauses(_OboFormatTag);
+        org.obolibrary.oboformat.model.Clause result2 = testSubject0.getClause(_OboFormatTag);
+        org.obolibrary.oboformat.model.Clause result3 = testSubject0.getClause(_String);
+        java.util.Collection<org.obolibrary.oboformat.model.Clause> result4 = testSubject0.getClauses();
+        java.util.Collection<org.obolibrary.oboformat.model.Clause> result5 = testSubject0.getClauses(_String);
+        java.util.Collection<org.obolibrary.oboformat.model.Clause> result6 = testSubject0.getClauses(_OboFormatTag);
         java.util.Set<String> result7 = testSubject0.getTags();
-        java.util.Collection<Object> result8 = testSubject0
-                .getTagValues(_OboFormatTag);
-        java.util.Collection<Object> result9 = testSubject0
-                .getTagValues(_String);
-        java.util.Collection<?> result10 = testSubject0.getTagValues(
-                _OboFormatTag, _Class);
-        java.util.Collection<?> result11 = testSubject0.getTagValues(_String,
-                _Class);
+        java.util.Collection<Object> result8 = testSubject0.getTagValues(_OboFormatTag);
+        java.util.Collection<Object> result9 = testSubject0.getTagValues(_String);
+        java.util.Collection<?> result10 = testSubject0.getTagValues(_OboFormatTag, _Class);
+        java.util.Collection<?> result11 = testSubject0.getTagValues(_String, _Class);
         Object result12 = testSubject0.getTagValue(_OboFormatTag, _Class);
         Object result13 = testSubject0.getTagValue(_String);
         Object result14 = testSubject0.getTagValue(_OboFormatTag);
@@ -102,16 +80,15 @@ public class Gen_org_obolibrary_oboformat_model {
         testSubject0.setId(_String);
         testSubject0.setType(_FrameType);
         testSubject0.setClauses(_Collection16);
-        java.util.Collection<org.obolibrary.oboformat.model.Xref> result16 = testSubject0
-                .getTagXrefs(_String);
+        java.util.Collection<org.obolibrary.oboformat.model.Xref> result16 = testSubject0.getTagXrefs(_String);
     }
 
     @Test
-    public void enforceInterfacesFrameMergeException()  {
+    public void enforceInterfacesFrameMergeException() {
         assertTrue(Exception.class.isAssignableFrom(FrameMergeException.class));
     }
 
-    public void verifyFrameMergeException()  {
+    public void verifyFrameMergeException() {
         FrameMergeException testSubject0 = new FrameMergeException(_String);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
@@ -128,16 +105,13 @@ public class Gen_org_obolibrary_oboformat_model {
     }
 
     @Test
-    public void enforceInterfacesFrameStructureException()  {
-        assertTrue(org.obolibrary.oboformat.model.DocumentStructureException.class
-                .isAssignableFrom(FrameStructureException.class));
+    public void enforceInterfacesFrameStructureException() {
+        assertTrue(org.obolibrary.oboformat.model.DocumentStructureException.class.isAssignableFrom(FrameStructureException.class));
     }
 
-    public void verifyFrameStructureException()  {
-        FrameStructureException testSubject0 = new FrameStructureException(
-                _String);
-        FrameStructureException testSubject1 = new FrameStructureException(
-                _Frame, _String);
+    public void verifyFrameStructureException() {
+        FrameStructureException testSubject0 = new FrameStructureException(_String);
+        FrameStructureException testSubject1 = new FrameStructureException(_Frame, _String);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -152,30 +126,21 @@ public class Gen_org_obolibrary_oboformat_model {
         Throwable[] result6 = testSubject0.getSuppressed();
     }
 
-    public void verifyOBODoc()  {
+    public void verifyOBODoc() throws FrameMergeException, FrameStructureException {
         OBODoc testSubject0 = new OBODoc();
         testSubject0.check();
         testSubject0.addDefaultOntologyHeader(_String);
-        java.util.Collection<org.obolibrary.oboformat.model.Frame> result0 = testSubject0
-                .getTypedefFrames();
-        java.util.Collection<org.obolibrary.oboformat.model.Frame> result1 = testSubject0
-                .getTermFrames();
-        org.obolibrary.oboformat.model.Frame result2 = testSubject0
-                .getTypedefFrame(_String);
-        org.obolibrary.oboformat.model.Frame result3 = testSubject0
-                .getTypedefFrame(_String, _boolean);
+        java.util.Collection<org.obolibrary.oboformat.model.Frame> result0 = testSubject0.getTypedefFrames();
+        java.util.Collection<org.obolibrary.oboformat.model.Frame> result1 = testSubject0.getTermFrames();
+        org.obolibrary.oboformat.model.Frame result2 = testSubject0.getTypedefFrame(_String);
+        org.obolibrary.oboformat.model.Frame result3 = testSubject0.getTypedefFrame(_String, _boolean);
         boolean result4 = testSubject0.isTreatXrefsAsEquivalent(_String);
         testSubject0.setHeaderFrame(_Frame);
-        java.util.Collection<org.obolibrary.oboformat.model.Frame> result5 = testSubject0
-                .getInstanceFrames();
-        org.obolibrary.oboformat.model.Frame result6 = testSubject0
-                .getTermFrame(_String, _boolean);
-        org.obolibrary.oboformat.model.Frame result7 = testSubject0
-                .getTermFrame(_String);
-        org.obolibrary.oboformat.model.Frame result8 = testSubject0
-                .getInstanceFrame(_String);
-        java.util.Collection<org.obolibrary.oboformat.model.OBODoc> result9 = testSubject0
-                .getImportedOBODocs();
+        java.util.Collection<org.obolibrary.oboformat.model.Frame> result5 = testSubject0.getInstanceFrames();
+        org.obolibrary.oboformat.model.Frame result6 = testSubject0.getTermFrame(_String, _boolean);
+        org.obolibrary.oboformat.model.Frame result7 = testSubject0.getTermFrame(_String);
+        org.obolibrary.oboformat.model.Frame result8 = testSubject0.getInstanceFrame(_String);
+        java.util.Collection<org.obolibrary.oboformat.model.OBODoc> result9 = testSubject0.getImportedOBODocs();
         testSubject0.setImportedOBODocs(_Collection18);
         testSubject0.addImportedOBODoc(_OBODoc);
         testSubject0.addFrame(_Frame);
@@ -184,11 +149,10 @@ public class Gen_org_obolibrary_oboformat_model {
         testSubject0.addInstanceFrame(_Frame);
         String result10 = testSubject0.getIDSpace(_String);
         testSubject0.mergeContents(_OBODoc);
-        org.obolibrary.oboformat.model.Frame result11 = testSubject0
-                .getHeaderFrame();
+        org.obolibrary.oboformat.model.Frame result11 = testSubject0.getHeaderFrame();
     }
 
-    public void verifyQualifierValue()  {
+    public void verifyQualifierValue() {
         QualifierValue testSubject0 = new QualifierValue(_String, _String);
         Object result0 = testSubject0.getValue();
         testSubject0.setValue(_Object);
@@ -196,7 +160,7 @@ public class Gen_org_obolibrary_oboformat_model {
         testSubject0.setQualifier(_String);
     }
 
-    public void verifyXref()  {
+    public void verifyXref() {
         Xref testSubject0 = new Xref(_String);
         String result0 = testSubject0.getAnnotation();
         String result1 = testSubject0.getIdref();

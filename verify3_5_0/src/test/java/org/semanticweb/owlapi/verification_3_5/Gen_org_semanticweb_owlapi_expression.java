@@ -1,4 +1,4 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -6,68 +6,51 @@ import static org.mockito.Mockito.mock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.semanticweb.owlapi.expression.OWLClassExpressionParser;
-import org.semanticweb.owlapi.expression.OWLEntityChecker;
-import org.semanticweb.owlapi.expression.OWLExpressionParser;
-import org.semanticweb.owlapi.expression.OWLOntologyChecker;
-import org.semanticweb.owlapi.expression.ParserException;
-import org.semanticweb.owlapi.expression.ShortFormEntityChecker;
-import OWLObject;
+import org.semanticweb.owlapi.expression.*;
+import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "unchecked" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_expression {
-
     @Test
-    public void enforceInterfacesOWLClassExpressionParser()  {
-        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class
-                .isAssignableFrom(OWLClassExpressionParser.class));
+    public void enforceInterfacesOWLClassExpressionParser() {
+        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class.isAssignableFrom(OWLClassExpressionParser.class));
     }
 
-    public void verifyInterfaceOWLClassExpressionParser()  {
+    public void verifyInterfaceOWLClassExpressionParser() {
         OWLClassExpressionParser testSubject0 = mock(OWLClassExpressionParser.class);
         OWLObject result0 = testSubject0.parse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
     }
 
-    public void verifyInterfaceOWLEntityChecker()  {
+    public void verifyInterfaceOWLEntityChecker() {
         OWLEntityChecker testSubject0 = mock(OWLEntityChecker.class);
-        OWLClass result0 = testSubject0
-                .getOWLClass(_String);
-        OWLObjectProperty result1 = testSubject0
-                .getOWLObjectProperty(_String);
-        OWLDataProperty result2 = testSubject0
-                .getOWLDataProperty(_String);
-        OWLAnnotationProperty result3 = testSubject0
-                .getOWLAnnotationProperty(_String);
-        OWLDatatype result4 = testSubject0
-                .getOWLDatatype(_String);
-        OWLNamedIndividual result5 = testSubject0
-                .getOWLIndividual(_String);
+        OWLClass result0 = testSubject0.getOWLClass(_String);
+        OWLObjectProperty result1 = testSubject0.getOWLObjectProperty(_String);
+        OWLDataProperty result2 = testSubject0.getOWLDataProperty(_String);
+        OWLAnnotationProperty result3 = testSubject0.getOWLAnnotationProperty(_String);
+        OWLDatatype result4 = testSubject0.getOWLDatatype(_String);
+        OWLNamedIndividual result5 = testSubject0.getOWLIndividual(_String);
     }
 
-    public void verifyInterfaceOWLExpressionParser()  {
+    public void verifyInterfaceOWLExpressionParser() {
         OWLExpressionParser<OWLObject> testSubject0 = mock(OWLExpressionParser.class);
         OWLObject result0 = testSubject0.parse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
     }
 
-    public void verifyInterfaceOWLOntologyChecker()  {
+    public void verifyInterfaceOWLOntologyChecker() {
         OWLOntologyChecker testSubject0 = mock(OWLOntologyChecker.class);
-        OWLOntology result0 = testSubject0
-                .getOntology(_String);
+        OWLOntology result0 = testSubject0.getOntology(_String);
     }
 
     @Test
-    public void enforceInterfacesParserException()  {
-        assertTrue(org.semanticweb.owlapi.io.OWLParserException.class
-                .isAssignableFrom(ParserException.class));
+    public void enforceInterfacesParserException() {
+        assertTrue(org.semanticweb.owlapi.io.OWLParserException.class.isAssignableFrom(ParserException.class));
     }
 
-    public void verifyParserException()  {
-        ParserException testSubject0 = new ParserException(_List, _int, _int,
-                _int, _boolean, _boolean, _boolean, _boolean, _boolean,
-                _boolean, _boolean, _boolean, _Set);
+    public void verifyParserException() {
+        ParserException testSubject0 = new ParserException(_List, _int, _int, _int, _boolean, _boolean, _boolean, _boolean, _boolean, _boolean, _boolean, _boolean, _Set);
         String result0 = testSubject0.getMessage();
         int result1 = testSubject0.getLineNumber();
         int result2 = testSubject0.getColumnNumber();
@@ -97,26 +80,18 @@ public class Gen_org_semanticweb_owlapi_expression {
     }
 
     @Test
-    public void enforceInterfacesShortFormEntityChecker()  {
-        assertTrue(org.semanticweb.owlapi.expression.OWLEntityChecker.class
-                .isAssignableFrom(ShortFormEntityChecker.class));
+    public void enforceInterfacesShortFormEntityChecker() {
+        assertTrue(org.semanticweb.owlapi.expression.OWLEntityChecker.class.isAssignableFrom(ShortFormEntityChecker.class));
     }
 
-    public void verifyShortFormEntityChecker()  {
-        ShortFormEntityChecker testSubject0 = new ShortFormEntityChecker(
-                _BidirectionalShortFormProvider);
-        OWLClass result0 = testSubject0
-                .getOWLClass(_String);
-        OWLObjectProperty result1 = testSubject0
-                .getOWLObjectProperty(_String);
-        OWLDataProperty result2 = testSubject0
-                .getOWLDataProperty(_String);
-        OWLAnnotationProperty result3 = testSubject0
-                .getOWLAnnotationProperty(_String);
-        OWLDatatype result4 = testSubject0
-                .getOWLDatatype(_String);
-        OWLNamedIndividual result5 = testSubject0
-                .getOWLIndividual(_String);
+    public void verifyShortFormEntityChecker() {
+        ShortFormEntityChecker testSubject0 = new ShortFormEntityChecker(_BidirectionalShortFormProvider);
+        OWLClass result0 = testSubject0.getOWLClass(_String);
+        OWLObjectProperty result1 = testSubject0.getOWLObjectProperty(_String);
+        OWLDataProperty result2 = testSubject0.getOWLDataProperty(_String);
+        OWLAnnotationProperty result3 = testSubject0.getOWLAnnotationProperty(_String);
+        OWLDatatype result4 = testSubject0.getOWLDatatype(_String);
+        OWLNamedIndividual result5 = testSubject0.getOWLIndividual(_String);
     }
 
     private boolean _boolean;

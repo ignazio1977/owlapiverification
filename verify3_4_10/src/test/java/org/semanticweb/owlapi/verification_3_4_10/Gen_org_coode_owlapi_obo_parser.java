@@ -18,7 +18,6 @@ import org.coode.owlapi.obo.parser.IntersectionOfHandler;
 import org.coode.owlapi.obo.parser.InverseHandler;
 import org.coode.owlapi.obo.parser.IsATagValueHandler;
 import org.coode.owlapi.obo.parser.IsObsoleteTagValueHandler;
-import org.coode.owlapi.obo.parser.JavaCharStream;
 import org.coode.owlapi.obo.parser.Modifiers;
 import org.coode.owlapi.obo.parser.NameTagValueHandler;
 import org.coode.owlapi.obo.parser.OBOConsumer;
@@ -455,28 +454,6 @@ public class Gen_org_coode_owlapi_obo_parser {
         testSubject0.applyChange(_OWLOntologyChange);
     }
 
-    @Test
-    public void enforceInterfacesJavaCharStream() throws Exception {
-        assertTrue(uk.ac.manchester.cs.BOMSafeJavaCharStream.class
-                .isAssignableFrom(JavaCharStream.class));
-    }
-
-    public void verifyJavaCharStream() throws Exception {
-        JavaCharStream testSubject0 = new JavaCharStream(_Reader, _int, _int);
-        JavaCharStream testSubject1 = new JavaCharStream(_InputStream, _String, _int,
-                _int);
-        char result0 = testSubject0.readChar();
-        testSubject0.backup(_int);
-        char result1 = testSubject0.BeginToken();
-        int result2 = testSubject0.getEndColumn();
-        int result3 = testSubject0.getEndLine();
-        int result4 = testSubject0.getBeginColumn();
-        int result5 = testSubject0.getBeginLine();
-        testSubject0.ReInit(_InputStream, _String, _int, _int);
-        testSubject0.ReInit(_Reader, _int, _int);
-        java.lang.String result6 = testSubject0.GetImage();
-    }
-
     public void verifyModifiers() throws Exception {
         Modifiers testSubject0 = new Modifiers();
         org.coode.owlapi.obo.parser.Modifiers result0 = Modifiers.parseModifiers(_String);
@@ -711,18 +688,6 @@ public class Gen_org_coode_owlapi_obo_parser {
     public void enforceInterfacesOBOParserTokenManager() throws Exception {
         assertTrue(org.coode.owlapi.obo.parser.OBOParserConstants.class
                 .isAssignableFrom(OBOParserTokenManager.class));
-    }
-
-    public void verifyOBOParserTokenManager() throws Exception {
-        OBOParserTokenManager testSubject0 = new OBOParserTokenManager(
-                _BOMSafeJavaCharStream, _int);
-        OBOParserTokenManager testSubject1 = new OBOParserTokenManager(
-                _BOMSafeJavaCharStream);
-        testSubject0.ReInit(_BOMSafeJavaCharStream);
-        testSubject0.ReInit(_BOMSafeJavaCharStream, _int);
-        org.coode.owlapi.obo.parser.Token result0 = testSubject0.getNextToken();
-        testSubject0.setDebugStream(_PrintStream);
-        testSubject0.SwitchTo(_int);
     }
 
     @Test
@@ -1282,5 +1247,4 @@ public class Gen_org_coode_owlapi_obo_parser {
     private org.semanticweb.owlapi.model.OWLOntologyID _OWLOntologyID;
     private org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
     private org.semanticweb.owlapi.model.OWLOntologyManager _OWLOntologyManager;
-    private uk.ac.manchester.cs.BOMSafeJavaCharStream _BOMSafeJavaCharStream;
 }

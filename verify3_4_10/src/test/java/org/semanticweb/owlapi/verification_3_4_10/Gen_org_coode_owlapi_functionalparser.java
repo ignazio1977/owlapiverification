@@ -4,7 +4,6 @@ import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
 import org.coode.owlapi.functionalparser.JJTOWLFunctionalSyntaxParserState;
-import org.coode.owlapi.functionalparser.JavaCharStream;
 import org.coode.owlapi.functionalparser.Node;
 import org.coode.owlapi.functionalparser.OWLFunctionalSyntaxOWLParser;
 import org.coode.owlapi.functionalparser.OWLFunctionalSyntaxParser;
@@ -23,27 +22,6 @@ import org.mockito.runners.MockitoJUnitRunner;
 @SuppressWarnings({ "javadoc", "unused", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_functionalparser {
-    @Test
-    public void enforceInterfacesJavaCharStream() throws Exception {
-        assertTrue(uk.ac.manchester.cs.BOMSafeJavaCharStream.class
-                .isAssignableFrom(JavaCharStream.class));
-    }
-
-    public void verifyJavaCharStream() throws Exception {
-        JavaCharStream testSubject0 = new JavaCharStream(_Reader, _int, _int);
-        JavaCharStream testSubject1 = new JavaCharStream(_InputStream, _String, _int,
-                _int);
-        char result0 = testSubject0.readChar();
-        testSubject0.backup(_int);
-        char result1 = testSubject0.BeginToken();
-        int result2 = testSubject0.getEndColumn();
-        int result3 = testSubject0.getEndLine();
-        int result4 = testSubject0.getBeginColumn();
-        int result5 = testSubject0.getBeginLine();
-        testSubject0.ReInit(_InputStream, _String, _int, _int);
-        testSubject0.ReInit(_Reader, _int, _int);
-        java.lang.String result6 = testSubject0.GetImage();
-    }
 
     public void verifyJJTOWLFunctionalSyntaxParserState() throws Exception {
         JJTOWLFunctionalSyntaxParserState testSubject0 = new JJTOWLFunctionalSyntaxParserState();
@@ -353,18 +331,6 @@ public class Gen_org_coode_owlapi_functionalparser {
                 .isAssignableFrom(OWLFunctionalSyntaxParserTokenManager.class));
     }
 
-    public void verifyOWLFunctionalSyntaxParserTokenManager() throws Exception {
-        OWLFunctionalSyntaxParserTokenManager testSubject0 = new OWLFunctionalSyntaxParserTokenManager(
-                _JavaCharStream, _int);
-        OWLFunctionalSyntaxParserTokenManager testSubject1 = new OWLFunctionalSyntaxParserTokenManager(
-                _JavaCharStream);
-        testSubject0.ReInit(_JavaCharStream);
-        testSubject0.ReInit(_JavaCharStream, _int);
-        org.coode.owlapi.functionalparser.Token result0 = testSubject0.getNextToken();
-        testSubject0.setDebugStream(_PrintStream);
-        testSubject0.SwitchTo(_int);
-    }
-
     @Test
     public void enforceInterfacesOWLFunctionalSyntaxParserTreeConstants()
             throws Exception {}
@@ -470,7 +436,6 @@ public class Gen_org_coode_owlapi_functionalparser {
     private java.lang.String _String;
     private java.lang.String[] _String_array;
     private java.lang.Throwable _Throwable;
-    private org.coode.owlapi.functionalparser.JavaCharStream _JavaCharStream;
     private org.coode.owlapi.functionalparser.Node _Node;
     private org.coode.owlapi.functionalparser.OWLFunctionalSyntaxParser _OWLFunctionalSyntaxParser;
     private org.coode.owlapi.functionalparser.OWLFunctionalSyntaxParserTokenManager _OWLFunctionalSyntaxParserTokenManager;

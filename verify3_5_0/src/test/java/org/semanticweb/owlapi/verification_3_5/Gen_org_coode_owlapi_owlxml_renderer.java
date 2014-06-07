@@ -1,29 +1,26 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 
-import org.coode.owlapi.owlxml.renderer.OWLXMLObjectRenderer;
-import org.coode.owlapi.owlxml.renderer.OWLXMLOntologyStorageException;
-import org.coode.owlapi.owlxml.renderer.OWLXMLOntologyStorer;
-import org.coode.owlapi.owlxml.renderer.OWLXMLRenderer;
-import org.coode.owlapi.owlxml.renderer.OWLXMLWriter;
+import java.io.IOException;
+
+import org.coode.owlapi.owlxml.renderer.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.semanticweb.owlapi.io.OWLRendererException;
+import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_owlxml_renderer {
-
     @Test
-    public void enforceInterfacesOWLXMLObjectRenderer()  {
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(OWLXMLObjectRenderer.class));
+    public void enforceInterfacesOWLXMLObjectRenderer() {
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(OWLXMLObjectRenderer.class));
     }
 
-    public void verifyOWLXMLObjectRenderer()  {
-        OWLXMLObjectRenderer testSubject0 = new OWLXMLObjectRenderer(
-                _OWLXMLWriter);
+    public void verifyOWLXMLObjectRenderer() {
+        OWLXMLObjectRenderer testSubject0 = new OWLXMLObjectRenderer(_OWLXMLWriter);
         testSubject0.visit(_OWLFacetRestriction);
         testSubject0.visit(_OWLDatatypeRestriction);
         testSubject0.visit(_OWLDatatype);
@@ -111,19 +108,14 @@ public class Gen_org_coode_owlapi_owlxml_renderer {
     }
 
     @Test
-    public void enforceInterfacesOWLXMLOntologyStorageException()
-             {
-        assertTrue(OWLOntologyStorageException.class
-                .isAssignableFrom(OWLXMLOntologyStorageException.class));
+    public void enforceInterfacesOWLXMLOntologyStorageException() {
+        assertTrue(OWLOntologyStorageException.class.isAssignableFrom(OWLXMLOntologyStorageException.class));
     }
 
-    public void verifyOWLXMLOntologyStorageException()  {
-        OWLXMLOntologyStorageException testSubject0 = new OWLXMLOntologyStorageException(
-                _String);
-        OWLXMLOntologyStorageException testSubject1 = new OWLXMLOntologyStorageException(
-                _String, _Throwable);
-        OWLXMLOntologyStorageException testSubject2 = new OWLXMLOntologyStorageException(
-                _Throwable);
+    public void verifyOWLXMLOntologyStorageException() {
+        OWLXMLOntologyStorageException testSubject0 = new OWLXMLOntologyStorageException(_String);
+        OWLXMLOntologyStorageException testSubject1 = new OWLXMLOntologyStorageException(_String, _Throwable);
+        OWLXMLOntologyStorageException testSubject2 = new OWLXMLOntologyStorageException(_Throwable);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -139,30 +131,25 @@ public class Gen_org_coode_owlapi_owlxml_renderer {
     }
 
     @Test
-    public void enforceInterfacesOWLXMLOntologyStorer()  {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(OWLXMLOntologyStorer.class));
+    public void enforceInterfacesOWLXMLOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(OWLXMLOntologyStorer.class));
     }
 
-    public void verifyOWLXMLOntologyStorer()  {
+    public void verifyOWLXMLOntologyStorer() throws OWLOntologyStorageException {
         OWLXMLOntologyStorer testSubject0 = new OWLXMLOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesOWLXMLRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(OWLXMLRenderer.class));
+    public void enforceInterfacesOWLXMLRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(OWLXMLRenderer.class));
     }
 
-    public void verifyOWLXMLRenderer()  {
+    public void verifyOWLXMLRenderer() throws OWLRendererException {
         OWLXMLRenderer testSubject0 = new OWLXMLRenderer(_OWLOntologyManager);
         OWLXMLRenderer testSubject1 = new OWLXMLRenderer();
         testSubject0.render(_OWLOntology, _Writer);
@@ -171,7 +158,7 @@ public class Gen_org_coode_owlapi_owlxml_renderer {
         testSubject0.render(_OWLOntology, _OutputStream);
     }
 
-    public void verifyOWLXMLWriter()  {
+    public void verifyOWLXMLWriter() throws IOException, OWLRendererException {
         OWLXMLWriter testSubject0 = new OWLXMLWriter(_Writer, _OWLOntology);
         testSubject0.writeStartElement(_OWLXMLVocabulary);
         testSubject0.writeTextContent(_String);
@@ -184,8 +171,7 @@ public class Gen_org_coode_owlapi_owlxml_renderer {
         testSubject0.writeLangAttribute(_String);
         testSubject0.writeDatatypeAttribute(_OWLDatatype);
         java.util.Map<String, String> result0 = testSubject0.getIRIPrefixMap();
-        org.coode.xml.XMLWriterNamespaceManager result1 = testSubject0
-                .getNamespaceManager();
+        org.coode.xml.XMLWriterNamespaceManager result1 = testSubject0.getNamespaceManager();
         String result2 = testSubject0.getIRIString(_IRI);
         testSubject0.writeAnnotationURIAttribute(_URI);
         testSubject0.writePrefix(_String, _String);

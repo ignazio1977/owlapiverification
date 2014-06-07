@@ -8,7 +8,6 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import uk.ac.manchester.cs.owl.owlapi.turtle.parser.ConsoleTripleHandler;
-import uk.ac.manchester.cs.owl.owlapi.turtle.parser.JavaCharStream;
 import uk.ac.manchester.cs.owl.owlapi.turtle.parser.NullTripleHandler;
 import uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter;
 import uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException;
@@ -41,28 +40,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
         testSubject0.handleTriple(_IRI, _IRI, _IRI);
         testSubject0.handleTriple(_IRI, _IRI, _String);
         testSubject0.handleTriple(_IRI, _IRI, _String, _String);
-    }
-
-    @Test
-    public void enforceInterfacesJavaCharStream() throws Exception {
-        assertTrue(uk.ac.manchester.cs.BOMSafeJavaCharStream.class
-                .isAssignableFrom(JavaCharStream.class));
-    }
-
-    public void verifyJavaCharStream() throws Exception {
-        JavaCharStream testSubject0 = new JavaCharStream(_Reader, _int, _int);
-        JavaCharStream testSubject1 = new JavaCharStream(_InputStream, _String, _int,
-                _int);
-        char result0 = testSubject0.readChar();
-        testSubject0.backup(_int);
-        char result1 = testSubject0.BeginToken();
-        int result2 = testSubject0.getEndColumn();
-        int result3 = testSubject0.getEndLine();
-        int result4 = testSubject0.getBeginColumn();
-        int result5 = testSubject0.getBeginLine();
-        testSubject0.ReInit(_InputStream, _String, _int, _int);
-        testSubject0.ReInit(_Reader, _int, _int);
-        java.lang.String result6 = testSubject0.GetImage();
     }
 
     @Test
@@ -328,13 +305,8 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
         TurtleParser testSubject1 = new TurtleParser(_Reader);
         TurtleParser testSubject2 = new TurtleParser(_TurtleParserTokenManager);
         TurtleParser testSubject3 = new TurtleParser(_InputStream);
-        TurtleParser testSubject4 = new TurtleParser(_Reader, _TripleHandler, _String);
-        TurtleParser testSubject5 = new TurtleParser(_InputStream, _TripleHandler,
-                _String);
         java.lang.String result0 = testSubject0.parseBoolean();
         java.lang.String result1 = testSubject0.parseDouble();
-        org.semanticweb.owlapi.util.DefaultPrefixManager result2 = testSubject0
-                .getPrefixManager();
         testSubject0.setTripleHandler(_TripleHandler);
         testSubject0.parseDocument();
         testSubject0.parseDirective();
@@ -370,9 +342,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
                 .getToken(_int);
         testSubject0.enable_tracing();
         testSubject0.disable_tracing();
-        boolean result20 = testSubject0.isAnonymousNode(_IRI);
-        boolean result21 = testSubject0.isAnonymousNode(_String);
-        boolean result22 = testSubject0.isAnonymousSharedNode(_String);
         org.semanticweb.owlapi.model.IRI result23 = testSubject0.getIRI(_String);
         testSubject0.parseLiteral(_IRI, _IRI);
         org.semanticweb.owlapi.model.IRI result24 = testSubject0.parseIRI();
@@ -416,19 +385,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
                 .isAssignableFrom(TurtleParserTokenManager.class));
     }
 
-    public void verifyTurtleParserTokenManager() throws Exception {
-        TurtleParserTokenManager testSubject0 = new TurtleParserTokenManager(
-                _JavaCharStream);
-        TurtleParserTokenManager testSubject1 = new TurtleParserTokenManager(
-                _JavaCharStream, _int);
-        testSubject0.ReInit(_JavaCharStream);
-        testSubject0.ReInit(_JavaCharStream, _int);
-        uk.ac.manchester.cs.owl.owlapi.turtle.parser.Token result0 = testSubject0
-                .getNextToken();
-        testSubject0.setDebugStream(_PrintStream);
-        testSubject0.SwitchTo(_int);
-    }
-
     private boolean _boolean;
     private char _char;
     private int _int;
@@ -452,7 +408,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
     private org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
     private org.semanticweb.owlapi.model.OWLOntologyManager _OWLOntologyManager;
     private org.semanticweb.owlapi.vocab.OWLRDFVocabulary _OWLRDFVocabulary;
-    private uk.ac.manchester.cs.owl.owlapi.turtle.parser.JavaCharStream _JavaCharStream;
     private uk.ac.manchester.cs.owl.owlapi.turtle.parser.Token _Token;
     private uk.ac.manchester.cs.owl.owlapi.turtle.parser.TripleHandler _TripleHandler;
     private uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParserTokenManager _TurtleParserTokenManager;

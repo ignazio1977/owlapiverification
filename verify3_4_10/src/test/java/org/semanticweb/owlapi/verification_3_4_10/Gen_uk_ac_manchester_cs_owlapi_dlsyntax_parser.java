@@ -10,7 +10,6 @@ import org.mockito.runners.MockitoJUnitRunner;
 import uk.ac.manchester.cs.owlapi.dlsyntax.parser.DLSyntaxParser;
 import uk.ac.manchester.cs.owlapi.dlsyntax.parser.DLSyntaxParserConstants;
 import uk.ac.manchester.cs.owlapi.dlsyntax.parser.DLSyntaxParserTokenManager;
-import uk.ac.manchester.cs.owlapi.dlsyntax.parser.JavaCharStream;
 import uk.ac.manchester.cs.owlapi.dlsyntax.parser.ParseException;
 import uk.ac.manchester.cs.owlapi.dlsyntax.parser.Token;
 import uk.ac.manchester.cs.owlapi.dlsyntax.parser.TokenMgrError;
@@ -114,41 +113,6 @@ public class Gen_uk_ac_manchester_cs_owlapi_dlsyntax_parser {
                 .isAssignableFrom(DLSyntaxParserTokenManager.class));
     }
 
-    public void verifyDLSyntaxParserTokenManager() throws Exception {
-        DLSyntaxParserTokenManager testSubject0 = new DLSyntaxParserTokenManager(
-                _BOMSafeJavaCharStream);
-        DLSyntaxParserTokenManager testSubject1 = new DLSyntaxParserTokenManager(
-                _BOMSafeJavaCharStream, _int);
-        testSubject0.ReInit(_BOMSafeJavaCharStream, _int);
-        testSubject0.ReInit(_BOMSafeJavaCharStream);
-        uk.ac.manchester.cs.owlapi.dlsyntax.parser.Token result0 = testSubject0
-                .getNextToken();
-        testSubject0.setDebugStream(_PrintStream);
-        testSubject0.SwitchTo(_int);
-    }
-
-    @Test
-    public void enforceInterfacesJavaCharStream() throws Exception {
-        assertTrue(uk.ac.manchester.cs.BOMSafeJavaCharStream.class
-                .isAssignableFrom(JavaCharStream.class));
-    }
-
-    public void verifyJavaCharStream() throws Exception {
-        JavaCharStream testSubject0 = new JavaCharStream(_Reader, _int, _int);
-        JavaCharStream testSubject1 = new JavaCharStream(_InputStream, _String, _int,
-                _int);
-        char result0 = testSubject0.readChar();
-        testSubject0.backup(_int);
-        char result1 = testSubject0.BeginToken();
-        int result2 = testSubject0.getEndColumn();
-        int result3 = testSubject0.getEndLine();
-        int result4 = testSubject0.getBeginColumn();
-        int result5 = testSubject0.getBeginLine();
-        testSubject0.ReInit(_InputStream, _String, _int, _int);
-        testSubject0.ReInit(_Reader, _int, _int);
-        java.lang.String result6 = testSubject0.GetImage();
-    }
-
     @Test
     public void enforceInterfacesParseException() throws Exception {
         assertTrue(java.lang.Exception.class.isAssignableFrom(ParseException.class));
@@ -226,7 +190,6 @@ public class Gen_uk_ac_manchester_cs_owlapi_dlsyntax_parser {
     private java.lang.String[] _String_array;
     private java.lang.Throwable _Throwable;
     private org.semanticweb.owlapi.model.OWLDataFactory _OWLDataFactory;
-    private uk.ac.manchester.cs.BOMSafeJavaCharStream _BOMSafeJavaCharStream;
     private uk.ac.manchester.cs.owlapi.dlsyntax.parser.DLSyntaxParserTokenManager _DLSyntaxParserTokenManager;
     private uk.ac.manchester.cs.owlapi.dlsyntax.parser.Token _Token;
 }

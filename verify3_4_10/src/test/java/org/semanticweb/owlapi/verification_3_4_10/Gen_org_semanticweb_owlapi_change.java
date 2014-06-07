@@ -162,18 +162,7 @@ public class Gen_org_semanticweb_owlapi_change {
     }
 
     public void verifyOWLOntologyChangeData() throws Exception {
-        OWLOntologyChangeData testSubject0 = new OWLOntologyChangeData() {
-            @Override
-            public <R, E extends Exception> R accept(
-                    OWLOntologyChangeDataVisitor<R, E> visitor) throws E {
-                return null;
-            }
-
-            @Override
-            public OWLOntologyChange createOntologyChange(OWLOntology ontology) {
-                return null;
-            }
-        };
+        OWLOntologyChangeData testSubject0 = mock( OWLOntologyChangeData.class);
         OWLObject result0 = testSubject0.accept(_OWLOntologyChangeDataVisitor5);
         org.semanticweb.owlapi.model.OWLOntologyChange result1 = testSubject0
                 .createOntologyChange(_OWLOntology);

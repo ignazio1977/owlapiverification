@@ -5606,8 +5606,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
 
     public void verifyOWLLiteralImplNoCompression() throws Exception {
         OWLLiteralImplNoCompression testSubject0 = new OWLLiteralImplNoCompression(
-                _byte_array, _String, _OWLDatatype);
-        OWLLiteralImplNoCompression testSubject1 = new OWLLiteralImplNoCompression(
                 _String, _String, _OWLDatatype);
         boolean result0 = testSubject0.parseBoolean();
         float result1 = testSubject0.parseFloat();

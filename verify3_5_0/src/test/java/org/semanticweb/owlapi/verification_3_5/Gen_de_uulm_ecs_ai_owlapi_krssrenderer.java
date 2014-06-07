@@ -1,38 +1,26 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.semanticweb.owlapi.io.OWLRendererException;
+import org.semanticweb.owlapi.model.*;
 
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2OWLObjectRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2OWLSyntaxOntologyStorer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2OWLSyntaxRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2ObjectRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2SyntaxOntologyStorer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2SyntaxRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2Vocabulary;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSObjectRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSSyntaxOntologyStorer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSSyntaxRenderer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSSVocabulary;
+import de.uulm.ecs.ai.owlapi.krssrenderer.*;
 
 @SuppressWarnings({ "javadoc", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
-
     @Test
-    public void enforceInterfacesKRSS2ObjectRenderer()  {
-        assertTrue(de.uulm.ecs.ai.owlapi.krssrenderer.KRSSObjectRenderer.class
-                .isAssignableFrom(KRSS2ObjectRenderer.class));
+    public void enforceInterfacesKRSS2ObjectRenderer() {
+        assertTrue(de.uulm.ecs.ai.owlapi.krssrenderer.KRSSObjectRenderer.class.isAssignableFrom(KRSS2ObjectRenderer.class));
     }
 
-    public void verifyKRSS2ObjectRenderer()  {
-        KRSS2ObjectRenderer testSubject0 = new KRSS2ObjectRenderer(
-                _OWLOntologyManager, _OWLOntology, _Writer);
-        KRSS2ObjectRenderer testSubject1 = new KRSS2ObjectRenderer(
-                _OWLOntology, _Writer);
+    public void verifyKRSS2ObjectRenderer() {
+        KRSS2ObjectRenderer testSubject0 = new KRSS2ObjectRenderer(_OWLOntologyManager, _OWLOntology, _Writer);
+        KRSS2ObjectRenderer testSubject1 = new KRSS2ObjectRenderer(_OWLOntology, _Writer);
         testSubject0.setIgnoreDeclarations(_boolean);
         testSubject0.visit(_OWLTransitiveObjectPropertyAxiom);
         testSubject0.visit(_OWLDataPropertyAssertionAxiom);
@@ -126,14 +114,12 @@ public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     }
 
     @Test
-    public void enforceInterfacesKRSS2OWLObjectRenderer()  {
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(KRSS2OWLObjectRenderer.class));
+    public void enforceInterfacesKRSS2OWLObjectRenderer() {
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(KRSS2OWLObjectRenderer.class));
     }
 
-    public void verifyKRSS2OWLObjectRenderer()  {
-        KRSS2OWLObjectRenderer testSubject0 = new KRSS2OWLObjectRenderer(
-                _OWLOntology, _Writer);
+    public void verifyKRSS2OWLObjectRenderer() {
+        KRSS2OWLObjectRenderer testSubject0 = new KRSS2OWLObjectRenderer(_OWLOntology, _Writer);
         testSubject0.write(_OWLIndividual);
         testSubject0.write(_OWLClassExpression);
         testSubject0.write(_OWLPropertyExpression);
@@ -226,33 +212,26 @@ public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     }
 
     @Test
-    public void enforceInterfacesKRSS2OWLSyntaxOntologyStorer()
-             {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(KRSS2OWLSyntaxOntologyStorer.class));
+    public void enforceInterfacesKRSS2OWLSyntaxOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(KRSS2OWLSyntaxOntologyStorer.class));
     }
 
-    public void verifyKRSS2OWLSyntaxOntologyStorer()  {
+    public void verifyKRSS2OWLSyntaxOntologyStorer() throws OWLOntologyStorageException {
         KRSS2OWLSyntaxOntologyStorer testSubject0 = new KRSS2OWLSyntaxOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesKRSS2OWLSyntaxRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(KRSS2OWLSyntaxRenderer.class));
+    public void enforceInterfacesKRSS2OWLSyntaxRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(KRSS2OWLSyntaxRenderer.class));
     }
 
-    public void verifyKRSS2OWLSyntaxRenderer()  {
-        KRSS2OWLSyntaxRenderer testSubject0 = new KRSS2OWLSyntaxRenderer(
-                _OWLOntologyManager);
+    public void verifyKRSS2OWLSyntaxRenderer() throws OWLRendererException {
+        KRSS2OWLSyntaxRenderer testSubject0 = new KRSS2OWLSyntaxRenderer(_OWLOntologyManager);
         KRSS2OWLSyntaxRenderer testSubject1 = new KRSS2OWLSyntaxRenderer();
         testSubject0.render(_OWLOntology, _Writer);
         testSubject0.setOWLOntologyManager(_OWLOntologyManager);
@@ -260,32 +239,26 @@ public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     }
 
     @Test
-    public void enforceInterfacesKRSS2SyntaxOntologyStorer()  {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(KRSS2SyntaxOntologyStorer.class));
+    public void enforceInterfacesKRSS2SyntaxOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(KRSS2SyntaxOntologyStorer.class));
     }
 
-    public void verifyKRSS2SyntaxOntologyStorer()  {
+    public void verifyKRSS2SyntaxOntologyStorer() throws OWLOntologyStorageException {
         KRSS2SyntaxOntologyStorer testSubject0 = new KRSS2SyntaxOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesKRSS2SyntaxRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(KRSS2SyntaxRenderer.class));
+    public void enforceInterfacesKRSS2SyntaxRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(KRSS2SyntaxRenderer.class));
     }
 
-    public void verifyKRSS2SyntaxRenderer()  {
-        KRSS2SyntaxRenderer testSubject0 = new KRSS2SyntaxRenderer(
-                _OWLOntologyManager);
+    public void verifyKRSS2SyntaxRenderer() throws OWLRendererException {
+        KRSS2SyntaxRenderer testSubject0 = new KRSS2SyntaxRenderer(_OWLOntologyManager);
         KRSS2SyntaxRenderer testSubject1 = new KRSS2SyntaxRenderer();
         testSubject0.render(_OWLOntology, _Writer);
         testSubject0.setOWLOntologyManager(_OWLOntologyManager);
@@ -293,11 +266,11 @@ public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     }
 
     @Test
-    public void enforceInterfacesKRSS2Vocabulary()  {
+    public void enforceInterfacesKRSS2Vocabulary() {
         assertTrue(Enum.class.isAssignableFrom(KRSS2Vocabulary.class));
     }
 
-    public void verifyEnumKRSS2Vocabulary()  {
+    public void verifyEnumKRSS2Vocabulary() {
         KRSS2Vocabulary testSubject0 = KRSS2Vocabulary.ALL;
         KRSS2Vocabulary testSubject1 = KRSS2Vocabulary.AND;
         KRSS2Vocabulary testSubject2 = KRSS2Vocabulary.AT_LEAST;
@@ -343,16 +316,13 @@ public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     }
 
     @Test
-    public void enforceInterfacesKRSSObjectRenderer()  {
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(KRSSObjectRenderer.class));
+    public void enforceInterfacesKRSSObjectRenderer() {
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(KRSSObjectRenderer.class));
     }
 
-    public void verifyKRSSObjectRenderer()  {
-        KRSSObjectRenderer testSubject0 = new KRSSObjectRenderer(
-                _OWLOntologyManager, _OWLOntology, _Writer);
-        KRSSObjectRenderer testSubject1 = new KRSSObjectRenderer(_OWLOntology,
-                _Writer);
+    public void verifyKRSSObjectRenderer() {
+        KRSSObjectRenderer testSubject0 = new KRSSObjectRenderer(_OWLOntologyManager, _OWLOntology, _Writer);
+        KRSSObjectRenderer testSubject1 = new KRSSObjectRenderer(_OWLOntology, _Writer);
         testSubject0.write(_OWLClassExpression);
         testSubject0.write(_OWLIndividual);
         testSubject0.write(_OWLPropertyExpression);
@@ -445,32 +415,26 @@ public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     }
 
     @Test
-    public void enforceInterfacesKRSSSyntaxOntologyStorer()  {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class
-                .isAssignableFrom(KRSSSyntaxOntologyStorer.class));
+    public void enforceInterfacesKRSSSyntaxOntologyStorer() {
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(KRSSSyntaxOntologyStorer.class));
     }
 
-    public void verifyKRSSSyntaxOntologyStorer()  {
+    public void verifyKRSSSyntaxOntologyStorer() throws OWLOntologyStorageException {
         KRSSSyntaxOntologyStorer testSubject0 = new KRSSSyntaxOntologyStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology,
-                _OWLOntologyDocumentTarget, _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget,
-                _OWLOntologyFormat);
-        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI,
-                _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
+        testSubject0.storeOntology(_OWLOntologyManager, _OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
     }
 
     @Test
-    public void enforceInterfacesKRSSSyntaxRenderer()  {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class
-                .isAssignableFrom(KRSSSyntaxRenderer.class));
+    public void enforceInterfacesKRSSSyntaxRenderer() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLRenderer.class.isAssignableFrom(KRSSSyntaxRenderer.class));
     }
 
-    public void verifyKRSSSyntaxRenderer()  {
-        KRSSSyntaxRenderer testSubject0 = new KRSSSyntaxRenderer(
-                _OWLOntologyManager);
+    public void verifyKRSSSyntaxRenderer() throws OWLRendererException {
+        KRSSSyntaxRenderer testSubject0 = new KRSSSyntaxRenderer(_OWLOntologyManager);
         KRSSSyntaxRenderer testSubject1 = new KRSSSyntaxRenderer();
         testSubject0.render(_OWLOntology, _Writer);
         testSubject0.setOWLOntologyManager(_OWLOntologyManager);
@@ -478,11 +442,11 @@ public class Gen_de_uulm_ecs_ai_owlapi_krssrenderer {
     }
 
     @Test
-    public void enforceInterfacesKRSSVocabulary()  {
+    public void enforceInterfacesKRSSVocabulary() {
         assertTrue(Enum.class.isAssignableFrom(KRSSVocabulary.class));
     }
 
-    public void verifyEnumKRSSVocabulary()  {
+    public void verifyEnumKRSSVocabulary() {
         KRSSVocabulary testSubject0 = KRSSVocabulary.ALL;
         KRSSVocabulary testSubject1 = KRSSVocabulary.AND;
         KRSSVocabulary testSubject2 = KRSSVocabulary.AT_LEAST;

@@ -1,16 +1,16 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.obolibrary.obo2owl.IdTranslator;
+import org.semanticweb.owlapi.model.IRI;
 
 @SuppressWarnings({ "javadoc" })
 @RunWith(MockitoJUnitRunner.class)
 @Ignore
 public class Gen_obo_obolibrary_idrules {
-
-    public void verifyIdTranslator()  {
+    public void verifyIdTranslator() {
         IdTranslator testSubject0 = new IdTranslator();
         String result0 = testSubject0.translateIRI(_IRI);
         String result1 = testSubject0.translateIdToIRIString(_String);

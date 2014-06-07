@@ -1,78 +1,57 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntax;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxClassExpressionParser;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxClassFrameParser;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxEditorParser;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxFramesParser;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxInlineAxiomParser;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxOntologyFormat;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxOntologyHeader;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxOntologyParser;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxParser;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxParserException;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxParserFactory;
-import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxTokenizer;
-import org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair;
+import org.coode.owlapi.manchesterowlsyntax.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.expression.OWLEntityChecker;
 import org.semanticweb.owlapi.expression.OWLOntologyChecker;
 import org.semanticweb.owlapi.expression.ParserException;
+import org.semanticweb.owlapi.io.OWLParserException;
 import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_manchesterowlsyntax {
-
     @Test
     public void enforceInterfacesManchesterOWLSyntaxEditorParser() {
-        assertTrue(ManchesterOWLSyntaxParser.class
-                .isAssignableFrom(ManchesterOWLSyntaxEditorParser.class));
+        assertTrue(ManchesterOWLSyntaxParser.class.isAssignableFrom(ManchesterOWLSyntaxEditorParser.class));
     }
 
-    public void verifyInterfaceManchesterOWLSyntaxParser()
-            throws ParserException, UnloadableImportException {
+    public void verifyInterfaceManchesterOWLSyntaxParser() throws ParserException, UnloadableImportException {
         ManchesterOWLSyntaxParser testSubject0 = mock(ManchesterOWLSyntaxParser.class);
         OWLAxiom testSubject1 = testSubject0.parseAxiom();
         OWLClassExpression testSubject2 = testSubject0.parseClassExpression();
         Set<OntologyAxiomPair> testSubject3 = testSubject0.parseClassFrameEOF();
-        OWLLiteral testSubject4 = testSubject0
-                .parseLiteral(mock(OWLDatatype.class));
+        OWLLiteral testSubject4 = testSubject0.parseLiteral(mock(OWLDatatype.class));
         OWLLiteral testSubject15 = testSubject0.parseConstant();
         testSubject0.setOWLEntityChecker(mock(OWLEntityChecker.class));
         testSubject0.setOWLOntologyChecker(mock(OWLOntologyChecker.class));
-        List<OWLObjectPropertyExpression> testSubject5 = testSubject0
-                .parseObjectPropertyChain();
-        ManchesterOWLSyntaxOntologyFormat testSubject6 = testSubject0
-                .parseOntology(mock(OWLOntology.class));
-        Set<OWLClassExpression> testSubject7 = testSubject0
-                .parseClassExpressionList();
-        Set<OWLObjectPropertyExpression> testSubject8 = testSubject0
-                .parseObjectPropertyList();
-        Set<OWLClassExpression> testSubject9 = testSubject0
-                .parseClassExpressionList(false);
+        List<OWLObjectPropertyExpression> testSubject5 = testSubject0.parseObjectPropertyChain();
+        ManchesterOWLSyntaxOntologyFormat testSubject6 = testSubject0.parseOntology(mock(OWLOntology.class));
+        Set<OWLClassExpression> testSubject7 = testSubject0.parseClassExpressionList();
+        Set<OWLObjectPropertyExpression> testSubject8 = testSubject0.parseObjectPropertyList();
+        Set<OWLClassExpression> testSubject9 = testSubject0.parseClassExpressionList(false);
         OWLClassAxiom testSubject10 = testSubject0.parseClassAxiom();
         OWLDataRange testSubject11 = testSubject0.parseDataRange();
-        Set<OWLPropertyExpression<?, ?>> testSubject12 = testSubject0
-                .parsePropertyList();
+        Set<OWLPropertyExpression<?, ?>> testSubject12 = testSubject0.parsePropertyList();
         List<OntologyAxiomPair> testSubject13 = testSubject0.parseRuleFrame();
         IRI testSubject14 = testSubject0.parseVariable();
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntax()  {
+    public void enforceInterfacesManchesterOWLSyntax() {
         assertTrue(Enum.class.isAssignableFrom(ManchesterOWLSyntax.class));
     }
 
-    public void verifyEnumManchesterOWLSyntax()  {
+    public void verifyEnumManchesterOWLSyntax() {
         ManchesterOWLSyntax testSubject0 = ManchesterOWLSyntax.VALUE_PARTITION;
         ManchesterOWLSyntax testSubject1 = ManchesterOWLSyntax.DASH;
         ManchesterOWLSyntax testSubject2 = ManchesterOWLSyntax.OPEN;
@@ -159,8 +138,7 @@ public class Gen_org_coode_owlapi_manchesterowlsyntax {
         ManchesterOWLSyntax testSubject83 = ManchesterOWLSyntax.RULE;
         boolean result0 = testSubject0.matches(_String);
         boolean result1 = testSubject0.matches(_String, _String);
-        org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntax result2 = ManchesterOWLSyntax
-                .parse(_String);
+        org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntax result2 = ManchesterOWLSyntax.parse(_String);
         String result3 = testSubject0.keyword();
         boolean result4 = testSubject0.isFrameKeyword();
         boolean result5 = testSubject0.isSectionKeyword();
@@ -171,96 +149,68 @@ public class Gen_org_coode_owlapi_manchesterowlsyntax {
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxClassExpressionParser()
-             {
-        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class
-                .isAssignableFrom(ManchesterOWLSyntaxClassExpressionParser.class));
+    public void enforceInterfacesManchesterOWLSyntaxClassExpressionParser() {
+        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class.isAssignableFrom(ManchesterOWLSyntaxClassExpressionParser.class));
     }
 
-    public void verifyManchesterOWLSyntaxClassExpressionParser()
-             {
-        ManchesterOWLSyntaxClassExpressionParser testSubject0 = new ManchesterOWLSyntaxClassExpressionParser(
-                _OWLDataFactory, _OWLEntityChecker);
+    public void verifyManchesterOWLSyntaxClassExpressionParser() {
+        ManchesterOWLSyntaxClassExpressionParser testSubject0 = new ManchesterOWLSyntaxClassExpressionParser(_OWLDataFactory, _OWLEntityChecker);
         Object result0 = testSubject0.parse(_String);
-        OWLClassExpression result1 = testSubject0
-                .parse(_String);
+        OWLClassExpression result1 = testSubject0.parse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxClassFrameParser()
-             {
-        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class
-                .isAssignableFrom(ManchesterOWLSyntaxClassFrameParser.class));
+    public void enforceInterfacesManchesterOWLSyntaxClassFrameParser() {
+        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class.isAssignableFrom(ManchesterOWLSyntaxClassFrameParser.class));
     }
 
-    public void verifyManchesterOWLSyntaxClassFrameParser()  {
-        ManchesterOWLSyntaxClassFrameParser testSubject0 = new ManchesterOWLSyntaxClassFrameParser(
-                _OWLDataFactory, _OWLEntityChecker);
+    public void verifyManchesterOWLSyntaxClassFrameParser() {
+        ManchesterOWLSyntaxClassFrameParser testSubject0 = new ManchesterOWLSyntaxClassFrameParser(_OWLDataFactory, _OWLEntityChecker);
         Object result0 = testSubject0.parse(_String);
-        java.util.Set<org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair> result1 = testSubject0
-                .parse(_String);
+        java.util.Set<org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair> result1 = testSubject0.parse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
     }
 
-    public void verifyManchesterOWLSyntaxEditorParser()  {
-        ManchesterOWLSyntaxEditorParser testSubject0 = new ManchesterOWLSyntaxEditorParser(
-                _OWLDataFactory, _String);
-        ManchesterOWLSyntaxEditorParser testSubject1 = new ManchesterOWLSyntaxEditorParser(
-                _OWLOntologyLoaderConfiguration, _OWLDataFactory, _String);
+    public void verifyManchesterOWLSyntaxEditorParser() throws ParserException, UnloadableImportException {
+        ManchesterOWLSyntaxEditorParser testSubject0 = new ManchesterOWLSyntaxEditorParser(_OWLDataFactory, _String);
+        ManchesterOWLSyntaxEditorParser testSubject1 = new ManchesterOWLSyntaxEditorParser(_OWLOntologyLoaderConfiguration, _OWLDataFactory, _String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
-        OWLClassExpression result0 = testSubject0
-                .parseClassExpression();
-        java.util.Set<org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair> result1 = testSubject0
-                .parseClassFrameEOF();
+        OWLClassExpression result0 = testSubject0.parseClassExpression();
+        java.util.Set<org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair> result1 = testSubject0.parseClassFrameEOF();
         testSubject0.setOWLOntologyChecker(_OWLOntologyChecker);
-        OWLLiteral result2 = testSubject0
-                .parseConstant();
-        java.util.Set<org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair> result3 = testSubject0
-                .parseFrames();
+        OWLLiteral result2 = testSubject0.parseConstant();
+        java.util.Set<org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair> result3 = testSubject0.parseFrames();
         testSubject0.setDefaultOntology(_OWLOntology);
-        org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxOntologyFormat result4 = testSubject0
-                .parseOntology(_OWLOntology);
-        OWLAxiom result5 = testSubject0
-                .parseAxiom();
+        org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxOntologyFormat result4 = testSubject0.parseOntology(_OWLOntology);
+        OWLAxiom result5 = testSubject0.parseAxiom();
         OWLAxiom testSubject16 = testSubject0.parseAxiom();
         OWLClassExpression testSubject2 = testSubject0.parseClassExpression();
         Set<OntologyAxiomPair> testSubject3 = testSubject0.parseClassFrameEOF();
-        OWLLiteral testSubject4 = testSubject0
-                .parseLiteral(mock(OWLDatatype.class));
+        OWLLiteral testSubject4 = testSubject0.parseLiteral(mock(OWLDatatype.class));
         OWLLiteral testSubject15 = testSubject0.parseConstant();
         testSubject0.setOWLEntityChecker(mock(OWLEntityChecker.class));
         testSubject0.setOWLOntologyChecker(mock(OWLOntologyChecker.class));
-        List<OWLObjectPropertyExpression> testSubject5 = testSubject0
-                .parseObjectPropertyChain();
-        ManchesterOWLSyntaxOntologyFormat testSubject6 = testSubject0
-                .parseOntology(mock(OWLOntology.class));
-        Set<OWLClassExpression> testSubject7 = testSubject0
-                .parseClassExpressionList();
-        Set<OWLObjectPropertyExpression> testSubject8 = testSubject0
-                .parseObjectPropertyList();
-        Set<OWLClassExpression> testSubject9 = testSubject0
-                .parseClassExpressionList(false);
+        List<OWLObjectPropertyExpression> testSubject5 = testSubject0.parseObjectPropertyChain();
+        ManchesterOWLSyntaxOntologyFormat testSubject6 = testSubject0.parseOntology(mock(OWLOntology.class));
+        Set<OWLClassExpression> testSubject7 = testSubject0.parseClassExpressionList();
+        Set<OWLObjectPropertyExpression> testSubject8 = testSubject0.parseObjectPropertyList();
+        Set<OWLClassExpression> testSubject9 = testSubject0.parseClassExpressionList(false);
         OWLClassAxiom testSubject10 = testSubject0.parseClassAxiom();
         OWLDataRange testSubject11 = testSubject0.parseDataRange();
-        Set<OWLPropertyExpression<?, ?>> testSubject12 = testSubject0
-                .parsePropertyList();
+        Set<OWLPropertyExpression<?, ?>> testSubject12 = testSubject0.parsePropertyList();
         List<OntologyAxiomPair> testSubject13 = testSubject0.parseRuleFrame();
         IRI testSubject14 = testSubject0.parseVariable();
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxFramesParser()
-             {
-        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class
-                .isAssignableFrom(ManchesterOWLSyntaxFramesParser.class));
+    public void enforceInterfacesManchesterOWLSyntaxFramesParser() {
+        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class.isAssignableFrom(ManchesterOWLSyntaxFramesParser.class));
     }
 
-    public void verifyManchesterOWLSyntaxFramesParser()  {
-        ManchesterOWLSyntaxFramesParser testSubject0 = new ManchesterOWLSyntaxFramesParser(
-                _OWLDataFactory, _OWLEntityChecker);
-        java.util.Set<org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair> result0 = testSubject0
-                .parse(_String);
+    public void verifyManchesterOWLSyntaxFramesParser() {
+        ManchesterOWLSyntaxFramesParser testSubject0 = new ManchesterOWLSyntaxFramesParser(_OWLDataFactory, _OWLEntityChecker);
+        java.util.Set<org.coode.owlapi.manchesterowlsyntax.OntologyAxiomPair> result0 = testSubject0.parse(_String);
         Object result1 = testSubject0.parse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
         testSubject0.setOWLOntologyChecker(_OWLOntologyChecker);
@@ -268,37 +218,30 @@ public class Gen_org_coode_owlapi_manchesterowlsyntax {
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxInlineAxiomParser()
-             {
-        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class
-                .isAssignableFrom(ManchesterOWLSyntaxInlineAxiomParser.class));
+    public void enforceInterfacesManchesterOWLSyntaxInlineAxiomParser() {
+        assertTrue(org.semanticweb.owlapi.expression.OWLExpressionParser.class.isAssignableFrom(ManchesterOWLSyntaxInlineAxiomParser.class));
     }
 
-    public void verifyManchesterOWLSyntaxInlineAxiomParser()  {
-        ManchesterOWLSyntaxInlineAxiomParser testSubject0 = new ManchesterOWLSyntaxInlineAxiomParser(
-                _OWLDataFactory, _OWLEntityChecker);
+    public void verifyManchesterOWLSyntaxInlineAxiomParser() {
+        ManchesterOWLSyntaxInlineAxiomParser testSubject0 = new ManchesterOWLSyntaxInlineAxiomParser(_OWLDataFactory, _OWLEntityChecker);
         Object result0 = testSubject0.parse(_String);
-        OWLAxiom result1 = testSubject0
-                .parse(_String);
+        OWLAxiom result1 = testSubject0.parse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxOntologyFormat()
-             {
-        assertTrue(org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat.class
-                .isAssignableFrom(ManchesterOWLSyntaxOntologyFormat.class));
+    public void enforceInterfacesManchesterOWLSyntaxOntologyFormat() {
+        assertTrue(org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat.class.isAssignableFrom(ManchesterOWLSyntaxOntologyFormat.class));
     }
 
-    public void verifyManchesterOWLSyntaxOntologyFormat()  {
+    public void verifyManchesterOWLSyntaxOntologyFormat() {
         ManchesterOWLSyntaxOntologyFormat testSubject0 = new ManchesterOWLSyntaxOntologyFormat();
         testSubject0.setPrefixManager(_DefaultPrefixManager);
         testSubject0.setPrefix(_String, _String);
         testSubject0.clearPrefixes();
         testSubject0.copyPrefixesFrom(_PrefixOWLOntologyFormat);
         testSubject0.copyPrefixesFrom(_PrefixManager);
-        java.util.Map<String, String> result0 = testSubject0
-                .getPrefixName2PrefixMap();
+        java.util.Map<String, String> result0 = testSubject0.getPrefixName2PrefixMap();
         java.util.Set<String> result1 = testSubject0.getPrefixNames();
         String result2 = testSubject0.getPrefix(_String);
         testSubject0.setDefaultPrefix(_String);
@@ -309,57 +252,40 @@ public class Gen_org_coode_owlapi_manchesterowlsyntax {
         testSubject0.setParameter(_Object, _Object);
         Object result7 = testSubject0.getParameter(_Object, _Object);
         boolean result8 = testSubject0.isPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result9 = testSubject0
-                .asPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result10 = testSubject0
-                .getOntologyLoaderMetaData();
+        org.semanticweb.owlapi.vocab.PrefixOWLOntologyFormat result9 = testSubject0.asPrefixOWLOntologyFormat();
+        org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result10 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
-    public void verifyManchesterOWLSyntaxOntologyHeader()  {
-        ManchesterOWLSyntaxOntologyHeader testSubject0 = new ManchesterOWLSyntaxOntologyHeader(
-                _IRI, _IRI, _Set, _Set13);
-        java.util.Collection<OWLAnnotation> result0 = testSubject0
-                .getAnnotations();
-        OWLOntologyID result1 = testSubject0
-                .getOntologyID();
-        java.util.Collection<OWLImportsDeclaration> result2 = testSubject0
-                .getImportsDeclarations();
+    public void verifyManchesterOWLSyntaxOntologyHeader() {
+        ManchesterOWLSyntaxOntologyHeader testSubject0 = new ManchesterOWLSyntaxOntologyHeader(_IRI, _IRI, _Set, _Set13);
+        java.util.Collection<OWLAnnotation> result0 = testSubject0.getAnnotations();
+        OWLOntologyID result1 = testSubject0.getOntologyID();
+        java.util.Collection<OWLImportsDeclaration> result2 = testSubject0.getImportsDeclarations();
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxOntologyParser()
-             {
-        assertTrue(org.semanticweb.owlapi.io.AbstractOWLParser.class
-                .isAssignableFrom(ManchesterOWLSyntaxOntologyParser.class));
+    public void enforceInterfacesManchesterOWLSyntaxOntologyParser() {
+        assertTrue(org.semanticweb.owlapi.io.AbstractOWLParser.class.isAssignableFrom(ManchesterOWLSyntaxOntologyParser.class));
     }
 
-    public void verifyManchesterOWLSyntaxOntologyParser()  {
+    public void verifyManchesterOWLSyntaxOntologyParser() throws OWLParserException, UnloadableImportException, IOException {
         ManchesterOWLSyntaxOntologyParser testSubject0 = new ManchesterOWLSyntaxOntologyParser();
-        OWLOntologyFormat result0 = testSubject0
-                .parse(_OWLOntologyDocumentSource, _OWLOntology);
-        OWLOntologyFormat result1 = testSubject0
-                .parse(_OWLOntologyDocumentSource, _OWLOntology,
-                        _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result2 = testSubject0
-                .parse(_IRI, _OWLOntology);
+        OWLOntologyFormat result0 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology);
+        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLOntologyFormat result2 = testSubject0.parse(_IRI, _OWLOntology);
         testSubject0.setOWLOntologyManager(_OWLOntologyManager);
-        OWLOntologyManager result3 = testSubject0
-                .getOWLOntologyManager();
+        OWLOntologyManager result3 = testSubject0.getOWLOntologyManager();
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxParserException()
-             {
-        assertTrue(org.semanticweb.owlapi.io.OWLParserException.class
-                .isAssignableFrom(ManchesterOWLSyntaxParserException.class));
+    public void enforceInterfacesManchesterOWLSyntaxParserException() {
+        assertTrue(org.semanticweb.owlapi.io.OWLParserException.class.isAssignableFrom(ManchesterOWLSyntaxParserException.class));
     }
 
-    public void verifyManchesterOWLSyntaxParserException()  {
-        ManchesterOWLSyntaxParserException testSubject0 = new ManchesterOWLSyntaxParserException(
-                _String, _int, _int);
-        ManchesterOWLSyntaxParserException testSubject1 = new ManchesterOWLSyntaxParserException(
-                _String, _Throwable, _int, _int);
+    public void verifyManchesterOWLSyntaxParserException() {
+        ManchesterOWLSyntaxParserException testSubject0 = new ManchesterOWLSyntaxParserException(_String, _int, _int);
+        ManchesterOWLSyntaxParserException testSubject1 = new ManchesterOWLSyntaxParserException(_String, _Throwable, _int, _int);
         String result0 = testSubject0.getMessage();
         int result1 = testSubject0.getLineNumber();
         int result2 = testSubject0.getColumnNumber();
@@ -377,31 +303,24 @@ public class Gen_org_coode_owlapi_manchesterowlsyntax {
     }
 
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxParserFactory()
-             {
-        assertTrue(org.semanticweb.owlapi.io.OWLParserFactory.class
-                .isAssignableFrom(ManchesterOWLSyntaxParserFactory.class));
+    public void enforceInterfacesManchesterOWLSyntaxParserFactory() {
+        assertTrue(org.semanticweb.owlapi.io.OWLParserFactory.class.isAssignableFrom(ManchesterOWLSyntaxParserFactory.class));
     }
 
-    public void verifyManchesterOWLSyntaxParserFactory()  {
+    public void verifyManchesterOWLSyntaxParserFactory() {
         ManchesterOWLSyntaxParserFactory testSubject0 = new ManchesterOWLSyntaxParserFactory();
-        org.semanticweb.owlapi.io.OWLParser result0 = testSubject0
-                .createParser(_OWLOntologyManager);
+        org.semanticweb.owlapi.io.OWLParser result0 = testSubject0.createParser(_OWLOntologyManager);
     }
 
-    public void verifyManchesterOWLSyntaxTokenizer()  {
-        ManchesterOWLSyntaxTokenizer testSubject0 = new ManchesterOWLSyntaxTokenizer(
-                _String);
-        java.util.List<org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxTokenizer.Token> result0 = testSubject0
-                .tokenize();
+    public void verifyManchesterOWLSyntaxTokenizer() {
+        ManchesterOWLSyntaxTokenizer testSubject0 = new ManchesterOWLSyntaxTokenizer(_String);
+        java.util.List<org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxTokenizer.Token> result0 = testSubject0.tokenize();
         boolean result1 = ManchesterOWLSyntaxTokenizer.EOF(_String);
     }
 
-    public void verifyOntologyAxiomPair()  {
-        OntologyAxiomPair testSubject0 = new OntologyAxiomPair(_OWLOntology,
-                _OWLAxiom);
-        OWLOntology result0 = testSubject0
-                .getOntology();
+    public void verifyOntologyAxiomPair() {
+        OntologyAxiomPair testSubject0 = new OntologyAxiomPair(_OWLOntology, _OWLAxiom);
+        OWLOntology result0 = testSubject0.getOntology();
         OWLAxiom result1 = testSubject0.getAxiom();
     }
 

@@ -1,14 +1,10 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 
-import org.coode.owlapi.rdf.model.AbstractTranslator;
-import org.coode.owlapi.rdf.model.RDFGraph;
-import org.coode.owlapi.rdf.model.RDFLiteralNode;
-import org.coode.owlapi.rdf.model.RDFNode;
-import org.coode.owlapi.rdf.model.RDFResourceNode;
-import org.coode.owlapi.rdf.model.RDFTranslator;
-import org.coode.owlapi.rdf.model.RDFTriple;
+import java.io.IOException;
+
+import org.coode.owlapi.rdf.model.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
@@ -17,19 +13,14 @@ import org.semanticweb.owlapi.model.*;
 @SuppressWarnings({ "javadoc", "deprecation", "rawtypes" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_owlapi_rdf_model {
-
     @Test
-    public void enforceInterfacesAbstractTranslator()  {
-        assertTrue(OWLObjectVisitor.class
-                .isAssignableFrom(AbstractTranslator.class));
-        assertTrue(SWRLObjectVisitor.class
-                .isAssignableFrom(AbstractTranslator.class));
+    public void enforceInterfacesAbstractTranslator() {
+        assertTrue(OWLObjectVisitor.class.isAssignableFrom(AbstractTranslator.class));
+        assertTrue(SWRLObjectVisitor.class.isAssignableFrom(AbstractTranslator.class));
     }
 
-    public void verifyAbstractTranslator()  {
-        AbstractTranslator testSubject0 = new AbstractTranslator(
-                _OWLOntologyManager, _OWLOntology, _boolean) {
-
+    public void verifyAbstractTranslator() {
+        AbstractTranslator testSubject0 = new AbstractTranslator(_OWLOntologyManager, _OWLOntology, _boolean) {
             @Override
             protected Object getResourceNode(IRI IRI) {
                 return null;
@@ -51,8 +42,8 @@ public class Gen_org_coode_owlapi_rdf_model {
             }
 
             @Override
-            protected void
-                    addTriple(Object subject, Object pred, Object object) {}
+            protected void addTriple(Object subject, Object pred, Object object) {
+            }
         };
         testSubject0.visit(_SWRLDifferentIndividualsAtom);
         testSubject0.visit(_SWRLSameIndividualAtom);
@@ -140,31 +131,25 @@ public class Gen_org_coode_owlapi_rdf_model {
         testSubject0.visit(_OWLSameIndividualAxiom);
     }
 
-    public void verifyRDFGraph()  {
+    public void verifyRDFGraph() throws IOException {
         RDFGraph testSubject0 = new RDFGraph();
         boolean result0 = testSubject0.isEmpty();
         testSubject0.addTriple(_RDFTriple);
-        java.util.Set<org.coode.owlapi.rdf.model.RDFTriple> result1 = testSubject0
-                .getTriplesForSubject(_RDFNode);
-        java.util.List<org.coode.owlapi.rdf.model.RDFTriple> result2 = testSubject0
-                .getSortedTriplesForSubject(_RDFNode, _boolean);
-        java.util.Collection<org.coode.owlapi.rdf.model.RDFTriple> result3 = testSubject0
-                .getTriplesForSubject(_RDFNode, _boolean);
-        boolean result4 = testSubject0
-                .isAnonymousNodeSharedSubject(_RDFResourceNode);
-        java.util.Set<org.coode.owlapi.rdf.model.RDFResourceNode> result5 = testSubject0
-                .getRootAnonymousNodes();
+        java.util.Set<org.coode.owlapi.rdf.model.RDFTriple> result1 = testSubject0.getTriplesForSubject(_RDFNode);
+        java.util.List<org.coode.owlapi.rdf.model.RDFTriple> result2 = testSubject0.getSortedTriplesForSubject(_RDFNode, _boolean);
+        java.util.Collection<org.coode.owlapi.rdf.model.RDFTriple> result3 = testSubject0.getTriplesForSubject(_RDFNode, _boolean);
+        boolean result4 = testSubject0.isAnonymousNodeSharedSubject(_RDFResourceNode);
+        java.util.Set<org.coode.owlapi.rdf.model.RDFResourceNode> result5 = testSubject0.getRootAnonymousNodes();
         testSubject0.dumpTriples(_Writer);
     }
 
     @Test
-    public void enforceInterfacesRDFLiteralNode()  {
-        assertTrue(org.coode.owlapi.rdf.model.RDFNode.class
-                .isAssignableFrom(RDFLiteralNode.class));
+    public void enforceInterfacesRDFLiteralNode() {
+        assertTrue(org.coode.owlapi.rdf.model.RDFNode.class.isAssignableFrom(RDFLiteralNode.class));
         assertTrue(Comparable.class.isAssignableFrom(RDFLiteralNode.class));
     }
 
-    public void verifyRDFLiteralNode()  {
+    public void verifyRDFLiteralNode() {
         RDFLiteralNode testSubject0 = new RDFLiteralNode(_String, _String);
         RDFLiteralNode testSubject1 = new RDFLiteralNode(_String, _IRI);
         int result0 = testSubject0.compareTo(_RDFNode);
@@ -178,13 +163,12 @@ public class Gen_org_coode_owlapi_rdf_model {
     }
 
     @Test
-    public void enforceInterfacesRDFNode()  {
+    public void enforceInterfacesRDFNode() {
         assertTrue(Comparable.class.isAssignableFrom(RDFNode.class));
     }
 
-    public void verifyRDFNode()  {
+    public void verifyRDFNode() {
         RDFNode testSubject0 = new RDFNode() {
-
             @Override
             public int compareTo(RDFNode o) {
                 return 0;
@@ -212,13 +196,12 @@ public class Gen_org_coode_owlapi_rdf_model {
     }
 
     @Test
-    public void enforceInterfacesRDFResourceNode()  {
-        assertTrue(org.coode.owlapi.rdf.model.RDFNode.class
-                .isAssignableFrom(RDFResourceNode.class));
+    public void enforceInterfacesRDFResourceNode() {
+        assertTrue(org.coode.owlapi.rdf.model.RDFNode.class.isAssignableFrom(RDFResourceNode.class));
         assertTrue(Comparable.class.isAssignableFrom(RDFResourceNode.class));
     }
 
-    public void verifyRDFResourceNode()  {
+    public void verifyRDFResourceNode() {
         RDFResourceNode testSubject0 = new RDFResourceNode(_IRI);
         RDFResourceNode testSubject1 = new RDFResourceNode(_int);
         int result0 = testSubject0.compareTo(_RDFNode);
@@ -229,18 +212,15 @@ public class Gen_org_coode_owlapi_rdf_model {
     }
 
     @Test
-    public void enforceInterfacesRDFTranslator()  {
-        assertTrue(org.coode.owlapi.rdf.model.AbstractTranslator.class
-                .isAssignableFrom(RDFTranslator.class));
+    public void enforceInterfacesRDFTranslator() {
+        assertTrue(org.coode.owlapi.rdf.model.AbstractTranslator.class.isAssignableFrom(RDFTranslator.class));
     }
 
-    public void verifyRDFTranslator()  {
-        RDFTranslator testSubject0 = new RDFTranslator(_OWLOntologyManager,
-                _OWLOntology, _boolean);
+    public void verifyRDFTranslator() {
+        RDFTranslator testSubject0 = new RDFTranslator(_OWLOntologyManager, _OWLOntology, _boolean);
         testSubject0.reset();
         org.coode.owlapi.rdf.model.RDFGraph result0 = testSubject0.getGraph();
-        org.coode.owlapi.rdf.model.RDFLiteralNode result1 = RDFTranslator
-                .translateLiteralNode(_OWLLiteral);
+        org.coode.owlapi.rdf.model.RDFLiteralNode result1 = RDFTranslator.translateLiteralNode(_OWLLiteral);
         testSubject0.visit(_SWRLDifferentIndividualsAtom);
         testSubject0.visit(_SWRLSameIndividualAtom);
         testSubject0.visit(_OWLObjectExactCardinality);
@@ -328,22 +308,20 @@ public class Gen_org_coode_owlapi_rdf_model {
     }
 
     @Test
-    public void enforceInterfacesRDFTriple()  {
+    public void enforceInterfacesRDFTriple() {
         assertTrue(Comparable.class.isAssignableFrom(RDFTriple.class));
     }
 
-    public void verifyRDFTriple()  {
-        RDFTriple testSubject0 = new RDFTriple(_RDFResourceNode,
-                _RDFResourceNode, _RDFNode);
-        org.coode.owlapi.rdf.model.RDFResourceNode result0 = testSubject0
-                .getProperty();
+    public void verifyRDFTriple() {
+        RDFTriple testSubject0 = new RDFTriple(_RDFResourceNode, _RDFResourceNode, _RDFNode);
+        org.coode.owlapi.rdf.model.RDFResourceNode result0 = testSubject0.getProperty();
         int result1 = testSubject0.compareTo(_RDFTriple);
         org.coode.owlapi.rdf.model.RDFNode result3 = testSubject0.getObject();
-        org.coode.owlapi.rdf.model.RDFResourceNode result4 = testSubject0
-                .getSubject();
+        org.coode.owlapi.rdf.model.RDFResourceNode result4 = testSubject0.getSubject();
     }
 
-    private static class T {}
+    private static class T {
+    }
 
     private RDFNode _Object92;
     private boolean _boolean;

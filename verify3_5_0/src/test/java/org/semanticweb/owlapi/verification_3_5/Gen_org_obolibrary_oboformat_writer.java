@@ -1,4 +1,6 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
+
+import java.io.IOException;
 
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
@@ -9,8 +11,7 @@ import org.obolibrary.oboformat.writer.OBOFormatWriter;
 @RunWith(MockitoJUnitRunner.class)
 @Ignore
 public class Gen_org_obolibrary_oboformat_writer {
-
-    public void verifyOBOFormatWriter()  {
+    public void verifyOBOFormatWriter() throws IOException {
         OBOFormatWriter testSubject0 = new OBOFormatWriter();
         testSubject0.write(_OBODoc, _String);
         testSubject0.write(_OBODoc, _BufferedWriter);

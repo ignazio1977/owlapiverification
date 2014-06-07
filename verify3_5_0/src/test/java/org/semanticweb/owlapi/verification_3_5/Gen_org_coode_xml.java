@@ -1,15 +1,11 @@
-package org.semanticweb.owlapi.verification_3_4_10;
+package org.semanticweb.owlapi.verification_3_5;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
-import org.coode.xml.IllegalElementNameException;
-import org.coode.xml.OWLOntologyXMLNamespaceManager;
-import org.coode.xml.XMLWriter;
-import org.coode.xml.XMLWriterFactory;
-import org.coode.xml.XMLWriterImpl;
-import org.coode.xml.XMLWriterNamespaceManager;
-import org.coode.xml.XMLWriterPreferences;
+import java.io.IOException;
+
+import org.coode.xml.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
@@ -18,16 +14,13 @@ import org.semanticweb.owlapi.model.*;
 @SuppressWarnings({ "javadoc", "deprecation" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_coode_xml {
-
     @Test
-    public void enforceInterfacesIllegalElementNameException()  {
-        assertTrue(OWLRuntimeException.class
-                .isAssignableFrom(IllegalElementNameException.class));
+    public void enforceInterfacesIllegalElementNameException() {
+        assertTrue(OWLRuntimeException.class.isAssignableFrom(IllegalElementNameException.class));
     }
 
-    public void verifyIllegalElementNameException()  {
-        IllegalElementNameException testSubject0 = new IllegalElementNameException(
-                _String);
+    public void verifyIllegalElementNameException() {
+        IllegalElementNameException testSubject0 = new IllegalElementNameException(_String);
         String result0 = testSubject0.getElementName();
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
@@ -44,17 +37,13 @@ public class Gen_org_coode_xml {
     }
 
     @Test
-    public void enforceInterfacesOWLOntologyXMLNamespaceManager()
-             {
-        assertTrue(org.coode.xml.XMLWriterNamespaceManager.class
-                .isAssignableFrom(OWLOntologyXMLNamespaceManager.class));
+    public void enforceInterfacesOWLOntologyXMLNamespaceManager() {
+        assertTrue(org.coode.xml.XMLWriterNamespaceManager.class.isAssignableFrom(OWLOntologyXMLNamespaceManager.class));
     }
 
-    public void verifyOWLOntologyXMLNamespaceManager()  {
-        OWLOntologyXMLNamespaceManager testSubject0 = new OWLOntologyXMLNamespaceManager(
-                _OWLOntologyManager, _OWLOntology);
-        OWLOntologyXMLNamespaceManager testSubject1 = new OWLOntologyXMLNamespaceManager(
-                _OWLOntology, _OWLOntologyFormat);
+    public void verifyOWLOntologyXMLNamespaceManager() {
+        OWLOntologyXMLNamespaceManager testSubject0 = new OWLOntologyXMLNamespaceManager(_OWLOntologyManager, _OWLOntology);
+        OWLOntologyXMLNamespaceManager testSubject1 = new OWLOntologyXMLNamespaceManager(_OWLOntology, _OWLOntologyFormat);
         String result0 = testSubject0.getQName(_String);
         testSubject0.setPrefix(_String, _String);
         String result1 = testSubject0.getDefaultPrefix();
@@ -66,11 +55,10 @@ public class Gen_org_coode_xml {
         String result4 = testSubject0.getDefaultNamespace();
         java.util.Set<String> result5 = testSubject0.getPrefixes();
         java.util.Set<String> result6 = testSubject0.getNamespaces();
-        java.util.Map<String, String> result7 = testSubject0
-                .getPrefixNamespaceMap();
+        java.util.Map<String, String> result7 = testSubject0.getPrefixNamespaceMap();
     }
 
-    public void verifyInterfaceXMLWriter()  {
+    public void verifyInterfaceXMLWriter() throws IllegalElementNameException, IOException {
         XMLWriter testSubject0 = mock(XMLWriter.class);
         testSubject0.setWrapAttributes(_boolean);
         testSubject0.writeAttribute(_String, _String);
@@ -79,8 +67,7 @@ public class Gen_org_coode_xml {
         testSubject0.writeStartElement(_iri);
         testSubject0.writeTextContent(_String);
         testSubject0.writeEndElement();
-        org.coode.xml.XMLWriterNamespaceManager result0 = testSubject0
-                .getNamespacePrefixes();
+        org.coode.xml.XMLWriterNamespaceManager result0 = testSubject0.getNamespacePrefixes();
         testSubject0.writeComment(_String);
         String result1 = testSubject0.getXMLBase();
         testSubject0.setEncoding(_String);
@@ -89,21 +76,18 @@ public class Gen_org_coode_xml {
         testSubject0.endDocument();
     }
 
-    public void verifyXMLWriterFactory()  {
+    public void verifyXMLWriterFactory() {
         XMLWriterFactory testSubject0 = XMLWriterFactory.getInstance();
-        org.coode.xml.XMLWriter result1 = testSubject0.createXMLWriter(_Writer,
-                _XMLWriterNamespaceManager, _String);
+        org.coode.xml.XMLWriter result1 = testSubject0.createXMLWriter(_Writer, _XMLWriterNamespaceManager, _String);
     }
 
     @Test
-    public void enforceInterfacesXMLWriterImpl()  {
-        assertTrue(org.coode.xml.XMLWriter.class
-                .isAssignableFrom(XMLWriterImpl.class));
+    public void enforceInterfacesXMLWriterImpl() {
+        assertTrue(org.coode.xml.XMLWriter.class.isAssignableFrom(XMLWriterImpl.class));
     }
 
-    public void verifyXMLWriterImpl()  {
-        XMLWriterImpl testSubject0 = new XMLWriterImpl(_Writer,
-                _XMLWriterNamespaceManager, _String);
+    public void verifyXMLWriterImpl() throws IOException {
+        XMLWriterImpl testSubject0 = new XMLWriterImpl(_Writer, _XMLWriterNamespaceManager, _String);
         testSubject0.setWrapAttributes(_boolean);
         java.net.URI result0 = testSubject0.getXMLBaseAsURI();
         testSubject0.writeAttribute(_String, _String);
@@ -112,8 +96,7 @@ public class Gen_org_coode_xml {
         testSubject0.writeStartElement(_iri);
         testSubject0.writeTextContent(_String);
         testSubject0.writeEndElement();
-        org.coode.xml.XMLWriterNamespaceManager result1 = testSubject0
-                .getNamespacePrefixes();
+        org.coode.xml.XMLWriterNamespaceManager result1 = testSubject0.getNamespacePrefixes();
         testSubject0.writeComment(_String);
         String result2 = testSubject0.getXMLBase();
         String result3 = testSubject0.getDefaultNamespace();
@@ -123,9 +106,8 @@ public class Gen_org_coode_xml {
         testSubject0.endDocument();
     }
 
-    public void verifyXMLWriterNamespaceManager()  {
-        XMLWriterNamespaceManager testSubject0 = new XMLWriterNamespaceManager(
-                _String);
+    public void verifyXMLWriterNamespaceManager() {
+        XMLWriterNamespaceManager testSubject0 = new XMLWriterNamespaceManager(_String);
         testSubject0.setPrefix(_String, _String);
         String result0 = testSubject0.getDefaultPrefix();
         testSubject0.addWellKnownNamespace(_String, _String);
@@ -136,13 +118,12 @@ public class Gen_org_coode_xml {
         String result3 = testSubject0.getDefaultNamespace();
         java.util.Set<String> result4 = testSubject0.getPrefixes();
         java.util.Set<String> result5 = testSubject0.getNamespaces();
-        java.util.Map<String, String> result6 = testSubject0
-                .getPrefixNamespaceMap();
+        java.util.Map<String, String> result6 = testSubject0.getPrefixNamespaceMap();
         String result7 = testSubject0.getQName(_String);
         String result8 = testSubject0.getQName(_iri);
     }
 
-    public void verifyXMLWriterPreferences()  {
+    public void verifyXMLWriterPreferences() {
         XMLWriterPreferences testSubject0 = XMLWriterPreferences.getInstance();
         boolean result1 = testSubject0.isUseNamespaceEntities();
         testSubject0.setUseNamespaceEntities(_boolean);
