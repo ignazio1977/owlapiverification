@@ -44,21 +44,6 @@ public class Gen_org_semanticweb_owlapi_functional_renderer {
 
     public void verifyFunctionalSyntaxObjectRenderer() {
         FunctionalSyntaxObjectRenderer testSubject0 = new FunctionalSyntaxObjectRenderer(_OWLOntology, _Writer);
-        testSubject0.write(_OWLXMLVocabulary, _OWLObject);
-        testSubject0.write(_OWLAnnotation);
-        testSubject0.writePrefix(_String, _String);
-        testSubject0.writeOpenBracket();
-        testSubject0.writeCloseBracket();
-        testSubject0.writePrefixes();
-        java.util.Set<OWLAxiom> result0 = testSubject0.writeDeclarations(_OWLEntity);
-        java.util.Set<OWLAxiom> result1 = testSubject0.writeAxioms(_OWLEntity);
-        testSubject0.writeAxiomStart(_OWLXMLVocabulary, _OWLAxiom);
-        testSubject0.writeAxiomEnd();
-        testSubject0.writePropertyCharacteristic(_OWLXMLVocabulary, _OWLAxiom, _OWLPropertyExpression);
-        java.util.Set<OWLAxiom> result2 = testSubject0.writeAnnotations(_OWLEntity);
-        testSubject0.writeAnnotations(_OWLAxiom);
-        testSubject0.setFocusedObject(_OWLObject);
-        testSubject0.writeSpace();
         testSubject0.setPrefixManager(_PrefixManager);
     }
 

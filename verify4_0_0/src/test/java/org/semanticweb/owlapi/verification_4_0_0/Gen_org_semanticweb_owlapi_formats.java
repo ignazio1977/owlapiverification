@@ -265,7 +265,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result0 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result1 = testSubject0.getOntologyLoaderMetaData();
         boolean result2 = testSubject0.isAddMissingTypes();
-        boolean result3 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result3 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -301,7 +301,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result1 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         boolean result3 = testSubject0.isAddMissingTypes();
-        boolean result4 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result4 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -336,7 +336,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result1 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         boolean result3 = testSubject0.isAddMissingTypes();
-        boolean result4 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result4 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -426,7 +426,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -482,7 +482,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -538,7 +538,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -594,7 +594,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -650,7 +650,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -727,7 +727,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -793,7 +793,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -829,7 +829,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -865,7 +865,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();
@@ -921,7 +921,7 @@ public class Gen_org_semanticweb_owlapi_formats {
         org.semanticweb.owlapi.io.RDFParserMetaData result2 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         boolean result4 = testSubject0.isAddMissingTypes();
-        boolean result5 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result5 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.clear();

@@ -2,18 +2,20 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 
 import static org.junit.Assert.assertTrue;
 
-import org.semanticweb.owlapi.functional.renderer.*;
-import org.semanticweb.owlapi.io.OWLRendererException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.semanticweb.owlapi.functional.renderer.FunctionalSyntaxObjectRenderer;
+import org.semanticweb.owlapi.functional.renderer.OWLFunctionalSyntaxOntologyStorer;
+import org.semanticweb.owlapi.functional.renderer.OWLFunctionalSyntaxRenderer;
+import org.semanticweb.owlapi.io.OWLRendererException;
 import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 @Migration({ "Package change: from org.coode.owlapi.functionalrenderer to org.semanticweb.owlapi.functional.renderer",
         "method change: OWLFunctionalSyntaxRenderer<init>: dropped manager", "method deleted: OWLFunctionalSyntaxRenderer::setOWLOntologyManager()",
-        "class refactored: OWLObjectRenderer to FunctionalSyntaxObjectRenderer", })
+        "class refactored: OWLObjectRenderer to FunctionalSyntaxObjectRenderer", "method visibility: varios write methods in FunctionalSyntaxObjectRenderer are now protected." })
 public class Gen_org_coode_owlapi_functionalrenderer {
     @Test
     public void enforceInterfacesOWLFunctionalSyntaxOntologyStorer() {
@@ -46,22 +48,7 @@ public class Gen_org_coode_owlapi_functionalrenderer {
 
     public void verifyOWLObjectRenderer() {
         FunctionalSyntaxObjectRenderer testSubject0 = new FunctionalSyntaxObjectRenderer(_OWLOntology, _Writer);
-        testSubject0.write(_OWLXMLVocabulary, _OWLObject);
-        testSubject0.write(_OWLAnnotation);
         testSubject0.setPrefixManager(_DefaultPrefixManager);
-        testSubject0.writeOpenBracket();
-        testSubject0.writeSpace();
-        testSubject0.writeCloseBracket();
-        java.util.Set<OWLAxiom> result0 = testSubject0.writeAnnotations(_OWLEntity);
-        testSubject0.writeAnnotations(_OWLAxiom);
-        testSubject0.setFocusedObject(_OWLObject);
-        testSubject0.writePrefix(_String, _String);
-        testSubject0.writePrefixes();
-        java.util.Set<OWLAxiom> result1 = testSubject0.writeDeclarations(_OWLEntity);
-        java.util.Set<OWLAxiom> result2 = testSubject0.writeAxioms(_OWLEntity);
-        testSubject0.writeAxiomStart(_OWLXMLVocabulary, _OWLAxiom);
-        testSubject0.writeAxiomEnd();
-        testSubject0.writePropertyCharacteristic(_OWLXMLVocabulary, _OWLAxiom, _OWLPropertyExpression);
     }
 
     private java.io.OutputStream _OutputStream;
