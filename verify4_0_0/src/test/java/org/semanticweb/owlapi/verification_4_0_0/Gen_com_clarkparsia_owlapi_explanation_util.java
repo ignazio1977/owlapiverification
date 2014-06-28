@@ -53,7 +53,7 @@ public class Gen_com_clarkparsia_owlapi_explanation_util {
         boolean result0 = testSubject0.isCancelled();
     }
 
-    private java.util.List<? extends OWLOntologyChange<?>> _List;
+    private java.util.List<? extends OWLOntologyChange> _List;
     private java.util.Set<OWLAxiom> _Set;
     private java.util.Set<OWLOntology> _Set6;
     private OWLAxiom _OWLAxiom;

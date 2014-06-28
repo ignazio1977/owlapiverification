@@ -133,7 +133,7 @@ public class Gen_org_semanticweb_owlapi_profiles {
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
         java.lang.Object result1 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result2 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result2 = testSubject0.repair();
         OWLAxiom result3 = testSubject0.getAxiom();
         OWLOntology result4 = testSubject0.getOntology();
         OWLOntologyID result5 = testSubject0.getOntologyID();

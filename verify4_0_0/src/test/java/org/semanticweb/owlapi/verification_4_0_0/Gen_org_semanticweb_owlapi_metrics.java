@@ -447,7 +447,7 @@ public class Gen_org_semanticweb_owlapi_metrics {
     }
 
     private boolean _boolean;
-    private java.util.List<? extends OWLOntologyChange<?>> _List;
+    private java.util.List<? extends OWLOntologyChange> _List;
     private java.util.List<org.semanticweb.owlapi.metrics.OWLMetric<?>> _List4;
     private AxiomType<?> _AxiomType;
     private OWLOntology _OWLOntology;

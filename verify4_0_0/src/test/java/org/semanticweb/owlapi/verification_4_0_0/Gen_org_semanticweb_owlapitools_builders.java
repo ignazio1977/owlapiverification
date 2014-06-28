@@ -23,7 +23,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
     public void verifyBaseAnnotationPropertyBuilder() {
         BaseAnnotationPropertyBuilder<OWLObject, BuilderAnnotation> testSubject0 = mock(BaseAnnotationPropertyBuilder.class);
         BuilderAnnotation result0 = testSubject0.withProperty(_OWLAnnotationProperty);
-        List<OWLOntologyChange<?>> result1 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result1 = testSubject0.applyChanges(_OWLOntology);
         BuilderAnnotation result2 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderAnnotation result3 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result4 = testSubject0.buildObject();
@@ -37,7 +37,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
 
     public void verifyBaseBuilder() {
         BaseBuilder<OWLObject, BuilderAnnotation> testSubject0 = mock(BaseBuilder.class);
-        List<OWLOntologyChange<?>> result0 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result0 = testSubject0.applyChanges(_OWLOntology);
         BuilderAnnotation result1 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderAnnotation result2 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result3 = testSubject0.buildObject();
@@ -53,7 +53,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BaseDataBuilder<OWLObject, BuilderDataAllValuesFrom> testSubject0 = mock(BaseDataBuilder.class);
         BuilderDataAllValuesFrom result0 = testSubject0.withRange(_OWLDataRange);
         BuilderDataAllValuesFrom result1 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result2 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result2 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataAllValuesFrom result3 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataAllValuesFrom result4 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result5 = testSubject0.buildObject();
@@ -68,7 +68,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
     public void verifyBaseDataPropertyBuilder() {
         BaseDataPropertyBuilder<OWLObject, BuilderDataAllValuesFrom> testSubject0 = mock(BaseDataPropertyBuilder.class);
         BuilderDataAllValuesFrom result0 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result1 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result1 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataAllValuesFrom result2 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataAllValuesFrom result3 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result4 = testSubject0.buildObject();
@@ -84,7 +84,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BaseDomainBuilder<OWLObject, BuilderDataPropertyDomain, OWLObject> testSubject0 = mock(BaseDomainBuilder.class);
         BuilderDataPropertyDomain result0 = testSubject0.withProperty(_Object);
         BuilderDataPropertyDomain result1 = testSubject0.withDomain(_OWLClassExpression);
-        List<OWLOntologyChange<?>> result2 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result2 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataPropertyDomain result3 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataPropertyDomain result4 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result5 = testSubject0.buildObject();
@@ -101,7 +101,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderClass result0 = testSubject0.withIRI(_IRI);
         BuilderClass result1 = testSubject0.withPrefixManager(_PrefixManager);
         BuilderClass result2 = testSubject0.withPrefixedIRI(_String);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderClass result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderClass result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -117,7 +117,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BaseObjectBuilder<OWLObject, BuilderObjectPropertyRange> testSubject0 = mock(BaseObjectBuilder.class);
         BuilderObjectPropertyRange result0 = testSubject0.withRange(_OWLClassExpression);
         BuilderObjectPropertyRange result1 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result2 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result2 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectPropertyRange result3 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectPropertyRange result4 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result5 = testSubject0.buildObject();
@@ -132,7 +132,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
     public void verifyBaseObjectPropertyBuilder() {
         BaseObjectPropertyBuilder<OWLObject, BuilderFunctionalObjectProperty> testSubject0 = mock(BaseObjectPropertyBuilder.class);
         BuilderFunctionalObjectProperty result0 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result1 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result1 = testSubject0.applyChanges(_OWLOntology);
         BuilderFunctionalObjectProperty result2 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderFunctionalObjectProperty result3 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result4 = testSubject0.buildObject();
@@ -149,7 +149,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderOneOf result0 = testSubject0.withItem(_Object13);
         BuilderOneOf result1 = testSubject0.withItems(_Object_array);
         BuilderOneOf result2 = testSubject0.withItems(_Collection15);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderOneOf result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderOneOf result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -165,7 +165,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BaseSubBuilder<OWLObject, BuilderSubClass, OWLClassExpression> testSubject0 = mock(BaseSubBuilder.class);
         BuilderSubClass result0 = testSubject0.withSub(_Object13);
         BuilderSubClass result1 = testSubject0.withSup(_Object13);
-        List<OWLOntologyChange<?>> result2 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result2 = testSubject0.applyChanges(_OWLOntology);
         BuilderSubClass result3 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSubClass result4 = testSubject0.withAnnotations(_Collection);
         OWLObject result5 = testSubject0.buildObject();
@@ -174,7 +174,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
 
     public void verifyInterfaceBuilder() {
         Builder<OWLObject> testSubject0 = mock(Builder.class);
-        List<OWLOntologyChange<?>> result0 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result0 = testSubject0.applyChanges(_OWLOntology);
         java.lang.Object result1 = testSubject0.buildObject();
     }
 
@@ -190,7 +190,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result1 = testSubject0.buildObject();
         BuilderAnnotation result2 = testSubject0.withValue(_OWLAnnotationValue);
         BuilderAnnotation result3 = testSubject0.withProperty(_OWLAnnotationProperty);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderAnnotation result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderAnnotation result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -209,7 +209,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderAnnotationAssertion result2 = testSubject0.withValue(_OWLAnnotationValue);
         BuilderAnnotationAssertion result3 = testSubject0.withSubject(_OWLAnnotationSubject);
         BuilderAnnotationAssertion result4 = testSubject0.withProperty(_OWLAnnotationProperty);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderAnnotationAssertion result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderAnnotationAssertion result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -228,7 +228,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderAnnotationProperty result2 = testSubject0.withIRI(_IRI);
         BuilderAnnotationProperty result3 = testSubject0.withPrefixManager(_PrefixManager);
         BuilderAnnotationProperty result4 = testSubject0.withPrefixedIRI(_String);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderAnnotationProperty result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderAnnotationProperty result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -246,7 +246,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result1 = testSubject0.buildObject();
         BuilderAnnotationPropertyDomain result2 = testSubject0.withDomain(_IRI);
         BuilderAnnotationPropertyDomain result3 = testSubject0.withProperty(_OWLAnnotationProperty);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderAnnotationPropertyDomain result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderAnnotationPropertyDomain result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -264,7 +264,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result1 = testSubject0.buildObject();
         BuilderAnnotationPropertyRange result2 = testSubject0.withRange(_IRI);
         BuilderAnnotationPropertyRange result3 = testSubject0.withProperty(_OWLAnnotationProperty);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderAnnotationPropertyRange result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderAnnotationPropertyRange result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -281,7 +281,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLAnonymousIndividual result0 = testSubject0.buildObject();
         OWLObject result1 = testSubject0.buildObject();
         BuilderAnonymousIndividual result2 = testSubject0.withId(_String);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderAnonymousIndividual result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderAnonymousIndividual result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -298,7 +298,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLAsymmetricObjectPropertyAxiom result1 = testSubject0.buildObject();
         BuilderAsymmetricObjectProperty result2 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderAsymmetricObjectProperty result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderAsymmetricObjectProperty result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -317,7 +317,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderClass result2 = testSubject0.withIRI(_IRI);
         BuilderClass result3 = testSubject0.withPrefixManager(_PrefixManager);
         BuilderClass result4 = testSubject0.withPrefixedIRI(_String);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderClass result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderClass result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -335,7 +335,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLClassAssertionAxiom result1 = testSubject0.buildObject();
         BuilderClassAssertion result2 = testSubject0.withClass(_OWLClassExpression);
         BuilderClassAssertion result3 = testSubject0.withIndividual(_OWLIndividual);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderClassAssertion result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderClassAssertion result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -352,7 +352,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObjectComplementOf result0 = testSubject0.buildObject();
         OWLObject result1 = testSubject0.buildObject();
         BuilderComplementOf result2 = testSubject0.withClass(_OWLClassExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderComplementOf result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderComplementOf result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -370,7 +370,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLDataAllValuesFrom result1 = testSubject0.buildObject();
         BuilderDataAllValuesFrom result2 = testSubject0.withRange(_OWLDataRange);
         BuilderDataAllValuesFrom result3 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataAllValuesFrom result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataAllValuesFrom result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -387,7 +387,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLDataComplementOf result0 = testSubject0.buildObject();
         OWLObject result1 = testSubject0.buildObject();
         BuilderDataComplementOf result2 = testSubject0.withRange(_OWLDataRange);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataComplementOf result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataComplementOf result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -406,7 +406,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDataExactCardinality result2 = testSubject0.withCardinality(_int);
         BuilderDataExactCardinality result3 = testSubject0.withRange(_OWLDataRange);
         BuilderDataExactCardinality result4 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataExactCardinality result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataExactCardinality result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -424,7 +424,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result1 = testSubject0.buildObject();
         BuilderDataHasValue result2 = testSubject0.withLiteral(_OWLLiteral);
         BuilderDataHasValue result3 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataHasValue result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataHasValue result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -443,7 +443,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDataIntersectionOf result2 = testSubject0.withItem(_OWLDataRange);
         BuilderDataIntersectionOf result3 = testSubject0.withItems(Arrays.asList(_OWLDataRange));
         BuilderDataIntersectionOf result4 = testSubject0.withItems(_OWLDataRange, _OWLDataRange);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataIntersectionOf result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataIntersectionOf result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -462,7 +462,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDataMaxCardinality result2 = testSubject0.withCardinality(_int);
         BuilderDataMaxCardinality result3 = testSubject0.withRange(_OWLDataRange);
         BuilderDataMaxCardinality result4 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataMaxCardinality result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataMaxCardinality result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -481,7 +481,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDataMinCardinality result2 = testSubject0.withCardinality(_int);
         BuilderDataMinCardinality result3 = testSubject0.withRange(_OWLDataRange);
         BuilderDataMinCardinality result4 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataMinCardinality result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataMinCardinality result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -500,7 +500,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDataOneOf result2 = testSubject0.withItem(_OWLLiteral);
         BuilderDataOneOf result3 = testSubject0.withItems(_OWLLiteral, _OWLLiteral);
         BuilderDataOneOf result4 = testSubject0.withItems(Arrays.asList(_OWLLiteral));
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataOneOf result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataOneOf result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -519,7 +519,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDataProperty result2 = testSubject0.withIRI(_IRI);
         BuilderDataProperty result3 = testSubject0.withPrefixManager(_PrefixManager);
         BuilderDataProperty result4 = testSubject0.withPrefixedIRI(_String);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataProperty result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataProperty result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -538,7 +538,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDataPropertyAssertion result2 = testSubject0.withValue(_OWLLiteral);
         BuilderDataPropertyAssertion result3 = testSubject0.withSubject(_OWLIndividual);
         BuilderDataPropertyAssertion result4 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataPropertyAssertion result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataPropertyAssertion result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -556,7 +556,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLDataPropertyDomainAxiom result1 = testSubject0.buildObject();
         BuilderDataPropertyDomain result2 = testSubject0.withProperty(_OWLDataProperty);
         BuilderDataPropertyDomain result3 = testSubject0.withDomain(_OWLClassExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataPropertyDomain result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataPropertyDomain result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -574,7 +574,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLDataPropertyRangeAxiom result1 = testSubject0.buildObject();
         BuilderDataPropertyRange result2 = testSubject0.withRange(_OWLDataRange);
         BuilderDataPropertyRange result3 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataPropertyRange result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataPropertyRange result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -592,7 +592,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLDataSomeValuesFrom result1 = testSubject0.buildObject();
         BuilderDataSomeValuesFrom result2 = testSubject0.withRange(_OWLDataRange);
         BuilderDataSomeValuesFrom result3 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataSomeValuesFrom result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataSomeValuesFrom result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -611,7 +611,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDatatype result2 = testSubject0.withIRI(_IRI);
         BuilderDatatype result3 = testSubject0.withPrefixManager(_PrefixManager);
         BuilderDatatype result4 = testSubject0.withPrefixedIRI(_String);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDatatype result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDatatype result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -629,7 +629,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLDatatypeDefinitionAxiom result1 = testSubject0.buildObject();
         BuilderDatatypeDefinition result2 = testSubject0.withType(_OWLDataRange);
         BuilderDatatypeDefinition result3 = testSubject0.with(_OWLDatatype);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderDatatypeDefinition result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDatatypeDefinition result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -649,7 +649,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDatatypeRestriction result3 = testSubject0.withItem(_OWLFacetRestriction);
         BuilderDatatypeRestriction result4 = testSubject0.withItems(_OWLFacetRestriction, _OWLFacetRestriction);
         BuilderDatatypeRestriction result5 = testSubject0.withItems(Arrays.asList(_OWLFacetRestriction));
-        List<OWLOntologyChange<?>> result6 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result6 = testSubject0.applyChanges(_OWLOntology);
         BuilderDatatypeRestriction result7 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDatatypeRestriction result8 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result9 = testSubject0.buildObject();
@@ -668,7 +668,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDataUnionOf result2 = testSubject0.withItem(_OWLDataRange);
         BuilderDataUnionOf result3 = testSubject0.withItems(_OWLDataRange, _OWLDataRange);
         BuilderDataUnionOf result4 = testSubject0.withItems(Arrays.asList(_OWLDataRange));
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDataUnionOf result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDataUnionOf result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -685,7 +685,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLDeclarationAxiom result0 = testSubject0.buildObject();
         OWLObject result1 = testSubject0.buildObject();
         BuilderDeclaration result2 = testSubject0.withEntity(_OWLEntity);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderDeclaration result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDeclaration result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -704,7 +704,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDifferentIndividuals result2 = testSubject0.withItem(_OWLIndividual);
         BuilderDifferentIndividuals result3 = testSubject0.withItems(_OWLIndividual, _OWLIndividual);
         BuilderDifferentIndividuals result4 = testSubject0.withItems(Arrays.asList(_OWLIndividual));
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDifferentIndividuals result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDifferentIndividuals result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -723,7 +723,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDisjointClasses result2 = testSubject0.withItem(_Object13);
         BuilderDisjointClasses result3 = testSubject0.withItems(_Object_array);
         BuilderDisjointClasses result4 = testSubject0.withItems(_Collection15);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDisjointClasses result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDisjointClasses result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -742,7 +742,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDisjointDataProperties result2 = testSubject0.withItem(_OWLDataProperty);
         BuilderDisjointDataProperties result3 = testSubject0.withItems(_OWLDataProperty, _OWLDataProperty);
         BuilderDisjointDataProperties result4 = testSubject0.withItems(Arrays.asList(_OWLDataProperty));
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDisjointDataProperties result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDisjointDataProperties result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -761,7 +761,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDisjointObjectProperties result2 = testSubject0.withItem(_Object);
         BuilderDisjointObjectProperties result3 = testSubject0.withItems(_Object, _Object);
         BuilderDisjointObjectProperties result4 = testSubject0.withItems(Arrays.asList(_Object));
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderDisjointObjectProperties result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDisjointObjectProperties result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -781,7 +781,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderDisjointUnion result3 = testSubject0.withItem(_Object13);
         BuilderDisjointUnion result4 = testSubject0.withItems(_Object_array);
         BuilderDisjointUnion result5 = testSubject0.withItems(_Collection15);
-        List<OWLOntologyChange<?>> result6 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result6 = testSubject0.applyChanges(_OWLOntology);
         BuilderDisjointUnion result7 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderDisjointUnion result8 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result9 = testSubject0.buildObject();
@@ -801,7 +801,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderEntity result3 = testSubject0.withIRI(_IRI);
         BuilderEntity result4 = testSubject0.withPrefixManager(_PrefixManager);
         BuilderEntity result5 = testSubject0.withPrefixedIRI(_String);
-        List<OWLOntologyChange<?>> result6 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result6 = testSubject0.applyChanges(_OWLOntology);
         BuilderEntity result7 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderEntity result8 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result9 = testSubject0.buildObject();
@@ -820,7 +820,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderEquivalentClasses result2 = testSubject0.withItem(_Object13);
         BuilderEquivalentClasses result3 = testSubject0.withItems(_Object_array);
         BuilderEquivalentClasses result4 = testSubject0.withItems(_Collection15);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderEquivalentClasses result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderEquivalentClasses result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -839,7 +839,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderEquivalentDataProperties result2 = testSubject0.withItem(_OWLDataProperty);
         BuilderEquivalentDataProperties result3 = testSubject0.withItems(_OWLDataProperty, _OWLDataProperty);
         BuilderEquivalentDataProperties result4 = testSubject0.withItems(Arrays.asList(_OWLDataProperty));
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderEquivalentDataProperties result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderEquivalentDataProperties result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -858,7 +858,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderEquivalentObjectProperties result2 = testSubject0.withItem(_Object);
         BuilderEquivalentObjectProperties result3 = testSubject0.withItems(_Object, _Object);
         BuilderEquivalentObjectProperties result4 = testSubject0.withItems(Arrays.asList(_Object));
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderEquivalentObjectProperties result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderEquivalentObjectProperties result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -879,7 +879,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderFacetRestriction result4 = testSubject0.withLiteral(_float);
         BuilderFacetRestriction result5 = testSubject0.withLiteral(_OWLLiteral);
         BuilderFacetRestriction result6 = testSubject0.withFacet(_OWLFacet);
-        List<OWLOntologyChange<?>> result7 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result7 = testSubject0.applyChanges(_OWLOntology);
         BuilderFacetRestriction result8 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderFacetRestriction result9 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result10 = testSubject0.buildObject();
@@ -896,7 +896,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLFunctionalDataPropertyAxiom result1 = testSubject0.buildObject();
         BuilderFunctionalDataProperty result2 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderFunctionalDataProperty result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderFunctionalDataProperty result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -913,7 +913,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLFunctionalObjectPropertyAxiom result1 = testSubject0.buildObject();
         BuilderFunctionalObjectProperty result2 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderFunctionalObjectProperty result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderFunctionalObjectProperty result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -933,7 +933,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderHasKey result3 = testSubject0.withItem(_Object);
         BuilderHasKey result4 = testSubject0.withItems(_Object, _OWLDataProperty);
         BuilderHasKey result5 = testSubject0.withItems(Arrays.asList(_Object, _OWLDataProperty));
-        List<OWLOntologyChange<?>> result6 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result6 = testSubject0.applyChanges(_OWLOntology);
         BuilderHasKey result7 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderHasKey result8 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result9 = testSubject0.buildObject();
@@ -947,7 +947,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
     public void verifyBuilderImportsDeclaration() {
         BuilderImportsDeclaration testSubject0 = new BuilderImportsDeclaration(_OWLImportsDeclaration, _OWLDataFactory);
         BuilderImportsDeclaration testSubject1 = new BuilderImportsDeclaration(_OWLDataFactory);
-        List<OWLOntologyChange<?>> result0 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result0 = testSubject0.applyChanges(_OWLOntology);
         java.lang.Object result1 = testSubject0.buildObject();
         OWLImportsDeclaration result2 = testSubject0.buildObject();
         BuilderImportsDeclaration result3 = testSubject0.withImportedOntology(_IRI);
@@ -964,7 +964,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLInverseFunctionalObjectPropertyAxiom result1 = testSubject0.buildObject();
         BuilderInverseFunctionalObjectProperty result2 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderInverseFunctionalObjectProperty result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderInverseFunctionalObjectProperty result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -982,7 +982,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result1 = testSubject0.buildObject();
         BuilderInverseObjectProperties result2 = testSubject0.withInverseProperty(_OWLObjectPropertyExpression);
         BuilderInverseObjectProperties result3 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderInverseObjectProperties result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderInverseObjectProperties result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -999,7 +999,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLIrreflexiveObjectPropertyAxiom result1 = testSubject0.buildObject();
         BuilderIrreflexiveObjectProperty result2 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderIrreflexiveObjectProperty result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderIrreflexiveObjectProperty result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -1023,7 +1023,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderLiteral result7 = testSubject0.withValue(_double);
         BuilderLiteral result8 = testSubject0.withDatatype(_OWLDatatype);
         BuilderLiteral result9 = testSubject0.withDatatype(_OWL2Datatype);
-        List<OWLOntologyChange<?>> result10 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result10 = testSubject0.applyChanges(_OWLOntology);
         BuilderLiteral result11 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderLiteral result12 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result13 = testSubject0.buildObject();
@@ -1042,7 +1042,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderNamedIndividual result2 = testSubject0.withIRI(_IRI);
         BuilderNamedIndividual result3 = testSubject0.withPrefixManager(_PrefixManager);
         BuilderNamedIndividual result4 = testSubject0.withPrefixedIRI(_String);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderNamedIndividual result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderNamedIndividual result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1061,7 +1061,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderNegativeDataPropertyAssertion result2 = testSubject0.withValue(_OWLLiteral);
         BuilderNegativeDataPropertyAssertion result3 = testSubject0.withSubject(_OWLIndividual);
         BuilderNegativeDataPropertyAssertion result4 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderNegativeDataPropertyAssertion result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderNegativeDataPropertyAssertion result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1080,7 +1080,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderNegativeObjectPropertyAssertion result2 = testSubject0.withValue(_OWLIndividual);
         BuilderNegativeObjectPropertyAssertion result3 = testSubject0.withSubject(_OWLIndividual);
         BuilderNegativeObjectPropertyAssertion result4 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderNegativeObjectPropertyAssertion result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderNegativeObjectPropertyAssertion result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1098,7 +1098,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObjectAllValuesFrom result1 = testSubject0.buildObject();
         BuilderObjectAllValuesFrom result2 = testSubject0.withRange(_OWLClassExpression);
         BuilderObjectAllValuesFrom result3 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectAllValuesFrom result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectAllValuesFrom result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1117,7 +1117,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderObjectExactCardinality result2 = testSubject0.withCardinality(_int);
         BuilderObjectExactCardinality result3 = testSubject0.withRange(_OWLClassExpression);
         BuilderObjectExactCardinality result4 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectExactCardinality result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectExactCardinality result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1134,7 +1134,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLObjectHasSelf result1 = testSubject0.buildObject();
         BuilderObjectHasSelf result2 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectHasSelf result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectHasSelf result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -1152,7 +1152,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result1 = testSubject0.buildObject();
         BuilderObjectHasValue result2 = testSubject0.withValue(_OWLIndividual);
         BuilderObjectHasValue result3 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectHasValue result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectHasValue result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1171,7 +1171,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderObjectIntersectionOf result2 = testSubject0.withItem(_Object13);
         BuilderObjectIntersectionOf result3 = testSubject0.withItems(_Object_array);
         BuilderObjectIntersectionOf result4 = testSubject0.withItems(_Collection15);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectIntersectionOf result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectIntersectionOf result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1188,7 +1188,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLObjectInverseOf result1 = testSubject0.buildObject();
         BuilderObjectInverseOf result2 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectInverseOf result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectInverseOf result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -1207,7 +1207,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderObjectMaxCardinality result2 = testSubject0.withCardinality(_int);
         BuilderObjectMaxCardinality result3 = testSubject0.withRange(_OWLClassExpression);
         BuilderObjectMaxCardinality result4 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectMaxCardinality result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectMaxCardinality result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1226,7 +1226,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderObjectMinCardinality result2 = testSubject0.withCardinality(_int);
         BuilderObjectMinCardinality result3 = testSubject0.withRange(_OWLClassExpression);
         BuilderObjectMinCardinality result4 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectMinCardinality result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectMinCardinality result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1245,7 +1245,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderObjectProperty result2 = testSubject0.withIRI(_IRI);
         BuilderObjectProperty result3 = testSubject0.withPrefixManager(_PrefixManager);
         BuilderObjectProperty result4 = testSubject0.withPrefixedIRI(_String);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectProperty result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectProperty result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1264,7 +1264,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderObjectPropertyAssertion result2 = testSubject0.withValue(_OWLIndividual);
         BuilderObjectPropertyAssertion result3 = testSubject0.withSubject(_OWLIndividual);
         BuilderObjectPropertyAssertion result4 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectPropertyAssertion result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectPropertyAssertion result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1282,7 +1282,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObjectPropertyDomainAxiom result1 = testSubject0.buildObject();
         BuilderObjectPropertyDomain result2 = testSubject0.withProperty(_Object);
         BuilderObjectPropertyDomain result3 = testSubject0.withDomain(_OWLClassExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectPropertyDomain result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectPropertyDomain result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1300,7 +1300,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObjectPropertyRangeAxiom result1 = testSubject0.buildObject();
         BuilderObjectPropertyRange result2 = testSubject0.withRange(_OWLClassExpression);
         BuilderObjectPropertyRange result3 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectPropertyRange result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectPropertyRange result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1318,7 +1318,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObjectSomeValuesFrom result1 = testSubject0.buildObject();
         BuilderObjectSomeValuesFrom result2 = testSubject0.withRange(_OWLClassExpression);
         BuilderObjectSomeValuesFrom result3 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderObjectSomeValuesFrom result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderObjectSomeValuesFrom result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1337,7 +1337,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderOneOf result2 = testSubject0.withItem(_OWLIndividual);
         BuilderOneOf result3 = testSubject0.withItems(_OWLIndividual, _OWLIndividual);
         BuilderOneOf result4 = testSubject0.withItems(Arrays.asList(_OWLIndividual));
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderOneOf result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderOneOf result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1356,7 +1356,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderPropertyChain result2 = testSubject0.withPropertiesInChain(_Collection88);
         BuilderPropertyChain result3 = testSubject0.withPropertyInChain(_OWLObjectPropertyExpression);
         BuilderPropertyChain result4 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderPropertyChain result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderPropertyChain result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1373,7 +1373,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLReflexiveObjectPropertyAxiom result1 = testSubject0.buildObject();
         BuilderReflexiveObjectProperty result2 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderReflexiveObjectProperty result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderReflexiveObjectProperty result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -1392,7 +1392,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderSameIndividual result2 = testSubject0.withItem(_OWLIndividual);
         BuilderSameIndividual result3 = testSubject0.withItems(_OWLIndividual, _OWLIndividual);
         BuilderSameIndividual result4 = testSubject0.withItems(Arrays.asList(_OWLIndividual));
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderSameIndividual result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSameIndividual result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1410,7 +1410,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLSubAnnotationPropertyOfAxiom result1 = testSubject0.buildObject();
         BuilderSubAnnotationPropertyOf result2 = testSubject0.withSub(_OWLAnnotationProperty);
         BuilderSubAnnotationPropertyOf result3 = testSubject0.withSup(_OWLAnnotationProperty);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderSubAnnotationPropertyOf result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSubAnnotationPropertyOf result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1428,7 +1428,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLSubClassOfAxiom result1 = testSubject0.buildObject();
         BuilderSubClass result2 = testSubject0.withSub(_Object13);
         BuilderSubClass result3 = testSubject0.withSup(_Object13);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderSubClass result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSubClass result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1446,7 +1446,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLSubDataPropertyOfAxiom result1 = testSubject0.buildObject();
         BuilderSubDataProperty result2 = testSubject0.withSub(_OWLDataProperty);
         BuilderSubDataProperty result3 = testSubject0.withSup(_OWLDataProperty);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderSubDataProperty result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSubDataProperty result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1464,7 +1464,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLSubObjectPropertyOfAxiom result1 = testSubject0.buildObject();
         BuilderSubObjectProperty result2 = testSubject0.withSub(_Object);
         BuilderSubObjectProperty result3 = testSubject0.withSup(_Object);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderSubObjectProperty result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSubObjectProperty result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1483,7 +1483,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderSWRLBuiltInAtom result2 = testSubject0.with(_Collection96);
         BuilderSWRLBuiltInAtom result3 = testSubject0.with(_IRI);
         BuilderSWRLBuiltInAtom result4 = testSubject0.with(_SWRLDArgument);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLBuiltInAtom result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLBuiltInAtom result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1501,7 +1501,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         SWRLClassAtom result1 = testSubject0.buildObject();
         BuilderSWRLClassAtom result2 = testSubject0.with(_SWRLIArgument);
         BuilderSWRLClassAtom result3 = testSubject0.with(_OWLClassExpression);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLClassAtom result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLClassAtom result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1520,7 +1520,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderSWRLDataPropertyAtom result2 = testSubject0.with(_SWRLDArgument);
         BuilderSWRLDataPropertyAtom result3 = testSubject0.with(_SWRLIArgument);
         BuilderSWRLDataPropertyAtom result4 = testSubject0.withProperty(_OWLDataPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLDataPropertyAtom result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLDataPropertyAtom result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1538,7 +1538,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         SWRLDataRangeAtom result1 = testSubject0.buildObject();
         BuilderSWRLDataRangeAtom result2 = testSubject0.with(_SWRLDArgument);
         BuilderSWRLDataRangeAtom result3 = testSubject0.with(_OWLDataRange);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLDataRangeAtom result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLDataRangeAtom result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1556,7 +1556,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         SWRLDifferentIndividualsAtom result1 = testSubject0.buildObject();
         BuilderSWRLDifferentIndividualsAtom result2 = testSubject0.withArg0(_SWRLIArgument);
         BuilderSWRLDifferentIndividualsAtom result3 = testSubject0.withArg1(_SWRLIArgument);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLDifferentIndividualsAtom result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLDifferentIndividualsAtom result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1573,7 +1573,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         SWRLIndividualArgument result0 = testSubject0.buildObject();
         OWLObject result1 = testSubject0.buildObject();
         BuilderSWRLIndividualArgument result2 = testSubject0.with(_OWLIndividual);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLIndividualArgument result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLIndividualArgument result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -1590,7 +1590,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         SWRLLiteralArgument result0 = testSubject0.buildObject();
         OWLObject result1 = testSubject0.buildObject();
         BuilderSWRLLiteralArgument result2 = testSubject0.with(_OWLLiteral);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLLiteralArgument result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLLiteralArgument result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -1609,7 +1609,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderSWRLObjectPropertyAtom result2 = testSubject0.withArg0(_SWRLIArgument);
         BuilderSWRLObjectPropertyAtom result3 = testSubject0.withArg1(_SWRLIArgument);
         BuilderSWRLObjectPropertyAtom result4 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLObjectPropertyAtom result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLObjectPropertyAtom result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();
@@ -1629,7 +1629,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderSWRLRule result3 = testSubject0.withBody(_SWRLAtom);
         BuilderSWRLRule result4 = testSubject0.withHead(_Collection107);
         BuilderSWRLRule result5 = testSubject0.withHead(_SWRLAtom);
-        List<OWLOntologyChange<?>> result6 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result6 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLRule result7 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLRule result8 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result9 = testSubject0.buildObject();
@@ -1647,7 +1647,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         SWRLSameIndividualAtom result1 = testSubject0.buildObject();
         BuilderSWRLSameIndividualAtom result2 = testSubject0.withArg0(_SWRLIArgument);
         BuilderSWRLSameIndividualAtom result3 = testSubject0.withArg1(_SWRLIArgument);
-        List<OWLOntologyChange<?>> result4 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result4 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLSameIndividualAtom result5 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLSameIndividualAtom result6 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result7 = testSubject0.buildObject();
@@ -1664,7 +1664,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         SWRLVariable result0 = testSubject0.buildObject();
         OWLObject result1 = testSubject0.buildObject();
         BuilderSWRLVariable result2 = testSubject0.with(_IRI);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderSWRLVariable result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSWRLVariable result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -1681,7 +1681,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLSymmetricObjectPropertyAxiom result1 = testSubject0.buildObject();
         BuilderSymmetricObjectProperty result2 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderSymmetricObjectProperty result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderSymmetricObjectProperty result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -1698,7 +1698,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         OWLObject result0 = testSubject0.buildObject();
         OWLTransitiveObjectPropertyAxiom result1 = testSubject0.buildObject();
         BuilderTransitiveObjectProperty result2 = testSubject0.withProperty(_OWLObjectPropertyExpression);
-        List<OWLOntologyChange<?>> result3 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result3 = testSubject0.applyChanges(_OWLOntology);
         BuilderTransitiveObjectProperty result4 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderTransitiveObjectProperty result5 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result6 = testSubject0.buildObject();
@@ -1717,7 +1717,7 @@ public class Gen_org_semanticweb_owlapitools_builders {
         BuilderUnionOf result2 = testSubject0.withItem(_Object13);
         BuilderUnionOf result3 = testSubject0.withItems(_Object_array);
         BuilderUnionOf result4 = testSubject0.withItems(_Collection15);
-        List<OWLOntologyChange<?>> result5 = testSubject0.applyChanges(_OWLOntology);
+        List<OWLOntologyChange> result5 = testSubject0.applyChanges(_OWLOntology);
         BuilderUnionOf result6 = testSubject0.withAnnotation(_OWLAnnotation);
         BuilderUnionOf result7 = testSubject0.withAnnotations(_Collection);
         java.lang.Object result8 = testSubject0.buildObject();

@@ -269,7 +269,7 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         java.lang.String result0 = testSubject0.getReasonerName();
         org.semanticweb.owlapi.util.Version result1 = testSubject0.getReasonerVersion();
         org.semanticweb.owlapi.reasoner.BufferingMode result2 = testSubject0.getBufferingMode();
-        java.util.List<OWLOntologyChange<?>> result3 = testSubject0.getPendingChanges();
+        java.util.List<OWLOntologyChange> result3 = testSubject0.getPendingChanges();
         java.util.Set<OWLAxiom> result4 = testSubject0.getPendingAxiomAdditions();
         java.util.Set<OWLAxiom> result5 = testSubject0.getPendingAxiomRemovals();
         OWLOntology result6 = testSubject0.getRootOntology();

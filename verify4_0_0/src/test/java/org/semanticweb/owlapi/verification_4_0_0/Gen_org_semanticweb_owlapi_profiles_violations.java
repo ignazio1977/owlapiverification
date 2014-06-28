@@ -25,7 +25,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -37,7 +37,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         DatatypeIRIAlsoUsedAsClassIRI testSubject0 = new DatatypeIRIAlsoUsedAsClassIRI(_OWLOntology, _OWLAxiom, _IRI);
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
-        java.util.List<OWLOntologyChange<?>> result1 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result1 = testSubject0.repair();
         OWLAxiom result2 = testSubject0.getAxiom();
         OWLOntology result3 = testSubject0.getOntology();
         OWLOntologyID result4 = testSubject0.getOntologyID();
@@ -57,7 +57,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -73,7 +73,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -89,7 +89,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -105,7 +105,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -121,7 +121,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -137,7 +137,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -153,7 +153,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -165,7 +165,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OntologyIRINotAbsolute testSubject0 = new OntologyIRINotAbsolute(_OWLOntology);
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
-        java.util.List<OWLOntologyChange<?>> result1 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result1 = testSubject0.repair();
         OWLAxiom result2 = testSubject0.getAxiom();
         OWLOntology result3 = testSubject0.getOntology();
         OWLOntologyID result4 = testSubject0.getOntologyID();
@@ -181,7 +181,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OntologyVersionIRINotAbsolute testSubject0 = new OntologyVersionIRINotAbsolute(_OWLOntology);
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
-        java.util.List<OWLOntologyChange<?>> result1 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result1 = testSubject0.repair();
         OWLAxiom result2 = testSubject0.getAxiom();
         OWLOntology result3 = testSubject0.getOntology();
         OWLOntologyID result4 = testSubject0.getOntologyID();
@@ -207,7 +207,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -223,7 +223,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -239,7 +239,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -255,7 +255,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -271,7 +271,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -287,7 +287,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -303,7 +303,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -319,7 +319,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -335,7 +335,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -351,7 +351,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -367,7 +367,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -384,7 +384,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -400,7 +400,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -417,7 +417,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -433,7 +433,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -450,7 +450,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -466,7 +466,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -482,7 +482,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -498,7 +498,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -514,7 +514,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -530,7 +530,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -546,7 +546,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -562,7 +562,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -578,7 +578,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -594,7 +594,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -610,7 +610,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -626,7 +626,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -642,7 +642,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -654,7 +654,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         UseOfReservedVocabularyForOntologyIRI testSubject0 = new UseOfReservedVocabularyForOntologyIRI(_OWLOntology);
         testSubject0.accept(_OWLProfileViolationVisitor);
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
-        java.util.List<OWLOntologyChange<?>> result1 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result1 = testSubject0.repair();
         OWLAxiom result2 = testSubject0.getAxiom();
         OWLOntology result3 = testSubject0.getOntology();
         OWLOntologyID result4 = testSubject0.getOntologyID();
@@ -670,7 +670,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         UseOfReservedVocabularyForVersionIRI testSubject0 = new UseOfReservedVocabularyForVersionIRI(_OWLOntology);
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
-        java.util.List<OWLOntologyChange<?>> result1 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result1 = testSubject0.repair();
         OWLAxiom result2 = testSubject0.getAxiom();
         OWLOntology result3 = testSubject0.getOntology();
         OWLOntologyID result4 = testSubject0.getOntologyID();
@@ -690,7 +690,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     @Test
@@ -704,7 +704,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
         OWLEntity result1 = testSubject0.getEntity();
-        java.util.List<OWLOntologyChange<?>> result2 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result2 = testSubject0.repair();
         OWLAxiom result3 = testSubject0.getAxiom();
         OWLOntology result4 = testSubject0.getOntology();
         OWLOntologyID result5 = testSubject0.getOntologyID();
@@ -722,7 +722,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
         OWLEntity result1 = testSubject0.getEntity();
-        java.util.List<OWLOntologyChange<?>> result2 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result2 = testSubject0.repair();
         OWLAxiom result3 = testSubject0.getAxiom();
         OWLOntology result4 = testSubject0.getOntology();
         OWLOntologyID result5 = testSubject0.getOntologyID();
@@ -740,7 +740,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
         OWLEntity result1 = testSubject0.getEntity();
-        java.util.List<OWLOntologyChange<?>> result2 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result2 = testSubject0.repair();
         OWLAxiom result3 = testSubject0.getAxiom();
         OWLOntology result4 = testSubject0.getOntology();
         OWLOntologyID result5 = testSubject0.getOntologyID();
@@ -758,7 +758,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
         OWLEntity result1 = testSubject0.getEntity();
-        java.util.List<OWLOntologyChange<?>> result2 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result2 = testSubject0.repair();
         OWLAxiom result3 = testSubject0.getAxiom();
         OWLOntology result4 = testSubject0.getOntology();
         OWLOntologyID result5 = testSubject0.getOntologyID();
@@ -776,7 +776,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
         OWLEntity result1 = testSubject0.getEntity();
-        java.util.List<OWLOntologyChange<?>> result2 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result2 = testSubject0.repair();
         OWLAxiom result3 = testSubject0.getAxiom();
         OWLOntology result4 = testSubject0.getOntology();
         OWLOntologyID result5 = testSubject0.getOntologyID();
@@ -796,7 +796,7 @@ public class Gen_org_semanticweb_owlapi_profiles_violations {
         OWLOntology result2 = testSubject0.getOntology();
         OWLOntologyID result3 = testSubject0.getOntologyID();
         Object result4 = testSubject0.getExpression();
-        java.util.List<OWLOntologyChange<?>> result5 = testSubject0.repair();
+        java.util.List<OWLOntologyChange> result5 = testSubject0.repair();
     }
 
     private IRI _IRI;

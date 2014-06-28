@@ -35,7 +35,7 @@ public class Gen_org_semanticweb_owlapi_reasoner_knowledgeexploration {
         org.semanticweb.owlapi.reasoner.FreshEntityPolicy result9 = testSubject0.getFreshEntityPolicy();
         org.semanticweb.owlapi.reasoner.IndividualNodeSetPolicy result10 = testSubject0.getIndividualNodeSetPolicy();
         org.semanticweb.owlapi.reasoner.BufferingMode result11 = testSubject0.getBufferingMode();
-        java.util.List<OWLOntologyChange<?>> result12 = testSubject0.getPendingChanges();
+        java.util.List<OWLOntologyChange> result12 = testSubject0.getPendingChanges();
         org.semanticweb.owlapi.util.Version result13 = testSubject0.getReasonerVersion();
         java.util.Set<OWLAxiom> result14 = testSubject0.getPendingAxiomAdditions();
         java.util.Set<OWLAxiom> result15 = testSubject0.getPendingAxiomRemovals();

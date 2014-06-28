@@ -335,7 +335,7 @@ public class Gen_org_semanticweb_owlapi_reasoner_impl {
         testSubject0.flush();
         OWLDataFactory result0 = testSubject0.getOWLDataFactory();
         org.semanticweb.owlapi.reasoner.BufferingMode result1 = testSubject0.getBufferingMode();
-        java.util.List<OWLOntologyChange<?>> result2 = testSubject0.getPendingChanges();
+        java.util.List<OWLOntologyChange> result2 = testSubject0.getPendingChanges();
         java.util.Set<OWLAxiom> result3 = testSubject0.getPendingAxiomAdditions();
         java.util.Set<OWLAxiom> result4 = testSubject0.getPendingAxiomRemovals();
         OWLOntology result5 = testSubject0.getRootOntology();

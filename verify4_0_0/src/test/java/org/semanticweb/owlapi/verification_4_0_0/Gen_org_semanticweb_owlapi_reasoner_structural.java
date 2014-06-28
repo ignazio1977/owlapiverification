@@ -68,7 +68,7 @@ public class Gen_org_semanticweb_owlapi_reasoner_structural {
         testSubject0.flush();
         long result40 = testSubject0.getTimeOut();
         org.semanticweb.owlapi.reasoner.BufferingMode result41 = testSubject0.getBufferingMode();
-        java.util.List<OWLOntologyChange<?>> result42 = testSubject0.getPendingChanges();
+        java.util.List<OWLOntologyChange> result42 = testSubject0.getPendingChanges();
         java.util.Set<OWLAxiom> result43 = testSubject0.getPendingAxiomAdditions();
         java.util.Set<OWLAxiom> result44 = testSubject0.getPendingAxiomRemovals();
         OWLOntology result45 = testSubject0.getRootOntology();

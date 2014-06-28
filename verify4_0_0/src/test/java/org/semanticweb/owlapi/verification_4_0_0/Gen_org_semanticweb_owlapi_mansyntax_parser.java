@@ -10,6 +10,8 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.mansyntax.parser.*;
 import org.semanticweb.owlapi.model.*;
 
+import com.google.inject.Provider;
+
 @SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_mansyntax_parser {
@@ -141,12 +143,12 @@ public class Gen_org_semanticweb_owlapi_mansyntax_parser {
 
     @Test
     public void enforceInterfacesManchesterOWLSyntaxEditorParser() {
-        assertTrue(org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser.class.isAssignableFrom(ManchesterOWLSyntaxEditorParser.class));
+        assertTrue(org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser.class.isAssignableFrom(ManchesterOWLSyntaxParserImpl.class));
     }
 
     public void verifyManchesterOWLSyntaxEditorParser() {
-        ManchesterOWLSyntaxEditorParser testSubject0 = new ManchesterOWLSyntaxEditorParser(_OWLDataFactory, _String);
-        ManchesterOWLSyntaxEditorParser testSubject1 = new ManchesterOWLSyntaxEditorParser(_OWLOntologyLoaderConfiguration, _OWLDataFactory, _String);
+        ManchesterOWLSyntaxParserImpl testSubject0 = new ManchesterOWLSyntaxParserImpl(_OWLOntologyLoaderConfigurationProvider, _OWLDataFactory);
+        testSubject0.setStringToParse(_String);
         testSubject0.setOWLEntityChecker(_OWLEntityChecker);
         java.util.Set<org.semanticweb.owlapi.util.OntologyAxiomPair> result0 = testSubject0.parseFrames();
         testSubject0.setDefaultOntology(_OWLOntology);
@@ -257,5 +259,6 @@ public class Gen_org_semanticweb_owlapi_mansyntax_parser {
     private OWLDataFactory _OWLDataFactory;
     private OWLDatatype _OWLDatatype;
     private OWLOntology _OWLOntology;
+    private Provider<OWLOntologyLoaderConfiguration> _OWLOntologyLoaderConfigurationProvider;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
 }
