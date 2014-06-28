@@ -1,5 +1,7 @@
 /bin
+.DS_Store
 .classpath
 .pmd
 .project
 .settings
+/owlapi-distribution-3.5.0-sources
