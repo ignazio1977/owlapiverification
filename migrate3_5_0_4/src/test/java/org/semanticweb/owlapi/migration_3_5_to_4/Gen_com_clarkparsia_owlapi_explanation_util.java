@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
+
 import com.clarkparsia.owlapi.explanation.util.DefinitionTracker;
 import com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor;
 import com.clarkparsia.owlapi.explanation.util.OntologyUtils;
@@ -52,7 +53,7 @@ public class Gen_com_clarkparsia_owlapi_explanation_util {
         testSubject0.foundExplanation(_Set);
     }
 
-    private java.util.List<? extends OWLOntologyChange<?>> _List;
+    private java.util.List<? extends OWLOntologyChange> _List;
     private java.util.Set<OWLAxiom> _Set;
     private java.util.Set<OWLOntology> _Set6;
     private OWLAxiom _OWLAxiom;

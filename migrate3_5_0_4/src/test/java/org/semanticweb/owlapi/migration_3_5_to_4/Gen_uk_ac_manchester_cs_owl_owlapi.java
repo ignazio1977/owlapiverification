@@ -4704,7 +4704,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         Set<OWLSameIndividualAxiom> result111 = testSubject0.getSameIndividualAxioms(_OWLIndividual);
         Set<OWLDifferentIndividualsAxiom> result112 = testSubject0.getDifferentIndividualAxioms(_OWLIndividual);
         Set<OWLDatatypeDefinitionAxiom> result113 = testSubject0.getDatatypeDefinitions(_OWLDatatype);
-        List<OWLOntologyChange<?>> result114 = testSubject0.applyChanges(_List182);
+        List<OWLOntologyChange> result114 = testSubject0.applyChanges(_List182);
         ChangeApplied result115 = testSubject0.applyChange(_OWLOntologyChange);
         boolean result116 = testSubject0.containsReference(_OWLDatatype, Imports.INCLUDED);
         boolean result117 = testSubject0.containsReference(_OWLAnnotationProperty, Imports.INCLUDED);
@@ -4755,12 +4755,12 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         Set<OWLOntologyID> result14 = testSubject0.getOntologyIDsByVersion(_IRI);
         OWLOntology result15 = testSubject0.getImportedOntology(_OWLImportsDeclaration);
         List<OWLOntology> result16 = testSubject0.getSortedImportsClosure(_OWLOntology);
-        List<OWLOntologyChange<?>> result17 = testSubject0.applyChanges(_List185);
-        List<OWLOntologyChange<?>> result18 = testSubject0.addAxioms(_OWLOntology, _Set186);
-        List<OWLOntologyChange<?>> result19 = testSubject0.addAxiom(_OWLOntology, _OWLAxiom96);
-        List<OWLOntologyChange<?>> result20 = testSubject0.removeAxiom(_OWLOntology, _OWLAxiom96);
-        List<OWLOntologyChange<?>> result21 = testSubject0.removeAxioms(_OWLOntology, _Set186);
-        List<OWLOntologyChange<?>> result22 = testSubject0.applyChange(_OWLOntologyChange);
+        List<OWLOntologyChange> result17 = testSubject0.applyChanges(_List185);
+        List<OWLOntologyChange> result18 = testSubject0.addAxioms(_OWLOntology, _Set186);
+        List<OWLOntologyChange> result19 = testSubject0.addAxiom(_OWLOntology, _OWLAxiom96);
+        List<OWLOntologyChange> result20 = testSubject0.removeAxiom(_OWLOntology, _OWLAxiom96);
+        List<OWLOntologyChange> result21 = testSubject0.removeAxioms(_OWLOntology, _Set186);
+        List<OWLOntologyChange> result22 = testSubject0.applyChange(_OWLOntologyChange);
         OWLOntology result24 = testSubject0.createOntology(_IRI);
         OWLOntology result25 = testSubject0.createOntology(_OWLOntologyID);
         OWLOntology result26 = testSubject0.createOntology();
@@ -6251,8 +6251,8 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     private Collection<? extends OWLAnnotation> _Collection;
     private Collection<OWLAnonymousIndividual> _Collection178;
     private List<? extends OWLObjectPropertyExpression> _List;
-    private List<? extends OWLOntologyChange<?>> _List185;
-    private List<OWLOntologyChange<?>> _List182;
+    private List<? extends OWLOntologyChange> _List185;
+    private List<OWLOntologyChange> _List182;
     private List<SWRLDArgument> _List173;
     private Set<OWLAnnotation> _Set130;
     private Set<OWLObjectPropertyExpression> _Set181;

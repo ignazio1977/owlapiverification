@@ -717,9 +717,9 @@ public class Gen_org_semanticweb_owlapi_util {
 
     public void verifyOWLEntityRenamer() {
         OWLEntityRenamer testSubject0 = new OWLEntityRenamer(_OWLOntologyManager, _Set61);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.changeIRI(_Map138);
-        java.util.List<OWLOntologyChange<?>> result1 = testSubject0.changeIRI(_OWLEntity, _IRI);
-        java.util.List<OWLOntologyChange<?>> result2 = testSubject0.changeIRI(_IRI, _IRI);
+        java.util.List<OWLOntologyChange> result0 = testSubject0.changeIRI(_Map138);
+        java.util.List<OWLOntologyChange> result1 = testSubject0.changeIRI(_OWLEntity, _IRI);
+        java.util.List<OWLOntologyChange> result2 = testSubject0.changeIRI(_IRI, _IRI);
     }
 
     public void verifyInterfaceOWLEntitySetProvider() {
@@ -740,7 +740,7 @@ public class Gen_org_semanticweb_owlapi_util {
 
     public void verifyOWLEntityURIConverter() {
         OWLEntityURIConverter testSubject0 = new OWLEntityURIConverter(_OWLOntologyManager, _Set61, _OWLEntityURIConverterStrategy);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     public void verifyInterfaceOWLEntityURIConverterStrategy() {
@@ -917,7 +917,7 @@ public class Gen_org_semanticweb_owlapi_util {
 
     public void verifyOWLOntologyURIChanger() {
         OWLOntologyIRIChanger testSubject0 = new OWLOntologyIRIChanger(_OWLOntologyManager);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges(_OWLOntology, _IRI);
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges(_OWLOntology, _IRI);
     }
 
     @Test
@@ -1153,7 +1153,7 @@ public class Gen_org_semanticweb_owlapi_util {
     private String _String;
     private java.util.Collection<Object> _Collection;
     private StringComparator _Comparator;
-    private java.util.List<? extends OWLOntologyChange<?>> _List112;
+    private java.util.List<? extends OWLOntologyChange> _List112;
     private java.util.List<OWLAnnotationProperty> _List;
     private java.util.List<OWLPropertyExpression> _List156;
     private java.util.List<org.semanticweb.owlapi.util.InferredAxiomGenerator<? extends OWLAxiom>> _List115;

@@ -9,31 +9,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
-import org.semanticweb.owlapi.reasoner.AxiomNotInProfileException;
-import org.semanticweb.owlapi.reasoner.BufferingMode;
-import org.semanticweb.owlapi.reasoner.ClassExpressionNotInProfileException;
-import org.semanticweb.owlapi.reasoner.ConsoleProgressMonitor;
-import org.semanticweb.owlapi.reasoner.FreshEntitiesException;
-import org.semanticweb.owlapi.reasoner.FreshEntityPolicy;
-import org.semanticweb.owlapi.reasoner.IllegalConfigurationException;
-import org.semanticweb.owlapi.reasoner.ImportsClosureNotInProfileException;
-import org.semanticweb.owlapi.reasoner.InconsistentOntologyException;
-import org.semanticweb.owlapi.reasoner.IndividualNodeSetPolicy;
-import org.semanticweb.owlapi.reasoner.InferenceType;
-import org.semanticweb.owlapi.reasoner.Node;
-import org.semanticweb.owlapi.reasoner.NodeSet;
-import org.semanticweb.owlapi.reasoner.NullReasonerProgressMonitor;
-import org.semanticweb.owlapi.reasoner.OWLReasoner;
-import org.semanticweb.owlapi.reasoner.OWLReasonerConfiguration;
-import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
-import org.semanticweb.owlapi.reasoner.OWLReasonerRuntimeException;
-import org.semanticweb.owlapi.reasoner.ReasonerInternalException;
-import org.semanticweb.owlapi.reasoner.ReasonerInterruptedException;
-import org.semanticweb.owlapi.reasoner.ReasonerProgressMonitor;
-import org.semanticweb.owlapi.reasoner.SimpleConfiguration;
-import org.semanticweb.owlapi.reasoner.TimeOutException;
-import org.semanticweb.owlapi.reasoner.TimedConsoleProgressMonitor;
-import org.semanticweb.owlapi.reasoner.UnsupportedEntailmentTypeException;
+import org.semanticweb.owlapi.reasoner.*;
 
 @SuppressWarnings({ "javadoc", "unchecked", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
@@ -307,7 +283,7 @@ public class Gen_org_semanticweb_owlapi_reasoner {
         org.semanticweb.owlapi.util.Version result12 = testSubject0.getReasonerVersion();
         String result13 = testSubject0.getReasonerName();
         org.semanticweb.owlapi.reasoner.BufferingMode result14 = testSubject0.getBufferingMode();
-        java.util.List<OWLOntologyChange<?>> result15 = testSubject0.getPendingChanges();
+        java.util.List<OWLOntologyChange> result15 = testSubject0.getPendingChanges();
         java.util.Set<OWLAxiom> result16 = testSubject0.getPendingAxiomAdditions();
         java.util.Set<OWLAxiom> result17 = testSubject0.getPendingAxiomRemovals();
         OWLOntology result18 = testSubject0.getRootOntology();

@@ -231,7 +231,7 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyImmutableOWLOntologyChangeException() {
         ImmutableOWLOntologyChangeException testSubject0 = new ImmutableOWLOntologyChangeException(_OWLOntologyChangeData, "");
-        OWLOntologyChangeData<?> result0 = testSubject0.getChange();
+        OWLOntologyChangeData result0 = testSubject0.getChange();
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -3269,7 +3269,7 @@ public class Gen_org_semanticweb_owlapi_model {
 
     public void verifyInterfaceOWLMutableOntology() {
         OWLMutableOntology testSubject0 = mock(OWLMutableOntology.class);
-        List<OWLOntologyChange<?>> result0 = testSubject0.applyChanges(_List163);
+        List<OWLOntologyChange> result0 = testSubject0.applyChanges(_List163);
         ChangeApplied result1 = testSubject0.applyChange(_OWLOntologyChange);
         boolean result2 = testSubject0.isEmpty();
         Set<OWLAnnotation> result3 = testSubject0.getAnnotations();
@@ -4776,7 +4776,7 @@ public class Gen_org_semanticweb_owlapi_model {
     }
 
     public void verifyOWLOntologyChange() {
-        OWLOntologyChange<OWLObject> testSubject0 = mock(OWLOntologyChange.class);
+        OWLOntologyChange testSubject0 = mock(OWLOntologyChange.class);
         Set<OWLEntity> result0 = testSubject0.getSignature();
         testSubject0.accept(_OWLOntologyChangeVisitor);
         OWLObject result1 = testSubject0.accept(_OWLOntologyChangeVisitorEx);
@@ -4831,7 +4831,7 @@ public class Gen_org_semanticweb_owlapi_model {
         OWLOntologyChangeVetoException testSubject0 = new OWLOntologyChangeVetoException(_OWLOntologyChangeData, _String);
         OWLOntologyChangeVetoException testSubject1 = new OWLOntologyChangeVetoException(_OWLOntologyChangeData, _String, _Throwable);
         OWLOntologyChangeVetoException testSubject2 = new OWLOntologyChangeVetoException(_OWLOntologyChangeData, _Throwable);
-        OWLOntologyChangeData<?> result0 = testSubject0.getChange();
+        OWLOntologyChangeData result0 = testSubject0.getChange();
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -5037,12 +5037,12 @@ public class Gen_org_semanticweb_owlapi_model {
         Set<OWLOntologyID> result12 = testSubject0.getOntologyIDsByVersion(_IRI);
         OWLOntology result13 = testSubject0.getImportedOntology(_OWLImportsDeclaration);
         List<OWLOntology> result14 = testSubject0.getSortedImportsClosure(_OWLOntology);
-        List<OWLOntologyChange<?>> result15 = testSubject0.applyChanges(_List);
-        List<OWLOntologyChange<?>> result16 = testSubject0.addAxioms(_OWLOntology, _Set194);
-        List<OWLOntologyChange<?>> result17 = testSubject0.addAxiom(_OWLOntology, _OWLAxiom);
-        List<OWLOntologyChange<?>> result18 = testSubject0.removeAxiom(_OWLOntology, _OWLAxiom);
-        List<OWLOntologyChange<?>> result19 = testSubject0.removeAxioms(_OWLOntology, _Set194);
-        List<OWLOntologyChange<?>> result20 = testSubject0.applyChange(_OWLOntologyChange);
+        List<OWLOntologyChange> result15 = testSubject0.applyChanges(_List);
+        List<OWLOntologyChange> result16 = testSubject0.addAxioms(_OWLOntology, _Set194);
+        List<OWLOntologyChange> result17 = testSubject0.addAxiom(_OWLOntology, _OWLAxiom);
+        List<OWLOntologyChange> result18 = testSubject0.removeAxiom(_OWLOntology, _OWLAxiom);
+        List<OWLOntologyChange> result19 = testSubject0.removeAxioms(_OWLOntology, _Set194);
+        List<OWLOntologyChange> result20 = testSubject0.applyChange(_OWLOntologyChange);
         OWLOntology result21 = testSubject0.createOntology(_IRI);
         OWLOntology result22 = testSubject0.createOntology(_OWLOntologyID);
         OWLOntology result23 = testSubject0.createOntology(_IRI, _Set48, _boolean);
@@ -5099,7 +5099,7 @@ public class Gen_org_semanticweb_owlapi_model {
     public void verifyOWLOntologyRenameException() {
         OWLOntologyRenameException testSubject0 = new OWLOntologyRenameException(_OWLOntologyChangeData, _OWLOntologyID);
         OWLOntologyID result0 = testSubject0.getOntologyID();
-        OWLOntologyChangeData<?> result1 = testSubject0.getChange();
+        OWLOntologyChangeData result1 = testSubject0.getChange();
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -6826,8 +6826,8 @@ public class Gen_org_semanticweb_owlapi_model {
     private java.net.URI _URI;
     private java.net.URL _URL;
     private List<? extends OWLObjectPropertyExpression> _List138;
-    private List<? extends OWLOntologyChange<?>> _List;
-    private List<OWLOntologyChange<?>> _List163;
+    private List<? extends OWLOntologyChange> _List;
+    private List<OWLOntologyChange> _List163;
     private List<SWRLDArgument> _List150;
     private Set<? extends OWLAnnotation> _Set119;
     private Set<? extends OWLAxiom> _Set194;
@@ -6963,8 +6963,8 @@ public class Gen_org_semanticweb_owlapi_model {
     private OWLObjectVisitor _OWLObjectVisitor;
     private OWLObjectVisitorEx<OWLObject> _OWLObjectVisitorEx;
     private OWLOntology _OWLOntology;
-    private OWLOntologyChangeData<Object> _OWLOntologyChangeData;
-    private OWLOntologyChange<Object> _OWLOntologyChange;
+    private OWLOntologyChangeData _OWLOntologyChangeData;
+    private OWLOntologyChange _OWLOntologyChange;
     private OWLOntologyChangeBroadcastStrategy _OWLOntologyChangeBroadcastStrategy;
     private OWLOntologyChangeListener _OWLOntologyChangeListener;
     private OWLOntologyChangeProgressListener _OWLOntologyChangeProgressListener;

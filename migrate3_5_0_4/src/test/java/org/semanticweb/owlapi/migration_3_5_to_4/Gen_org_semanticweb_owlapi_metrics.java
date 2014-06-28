@@ -10,29 +10,7 @@ import java.util.Set;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.semanticweb.owlapi.metrics.AbstractOWLMetric;
-import org.semanticweb.owlapi.metrics.AverageAssertedNamedSuperclassCount;
-import org.semanticweb.owlapi.metrics.AxiomCount;
-import org.semanticweb.owlapi.metrics.AxiomCountMetric;
-import org.semanticweb.owlapi.metrics.AxiomTypeCountMetricFactory;
-import org.semanticweb.owlapi.metrics.AxiomTypeMetric;
-import org.semanticweb.owlapi.metrics.DLExpressivity;
-import org.semanticweb.owlapi.metrics.DoubleValuedMetric;
-import org.semanticweb.owlapi.metrics.GCICount;
-import org.semanticweb.owlapi.metrics.HiddenGCICount;
-import org.semanticweb.owlapi.metrics.ImportClosureSize;
-import org.semanticweb.owlapi.metrics.IntegerValuedMetric;
-import org.semanticweb.owlapi.metrics.LogicalAxiomCount;
-import org.semanticweb.owlapi.metrics.MaximumNumberOfNamedSuperclasses;
-import org.semanticweb.owlapi.metrics.NumberOfClassesWithMultipleInheritance;
-import org.semanticweb.owlapi.metrics.OWLMetric;
-import org.semanticweb.owlapi.metrics.OWLMetricManager;
-import org.semanticweb.owlapi.metrics.ObjectCountMetric;
-import org.semanticweb.owlapi.metrics.ReferencedClassCount;
-import org.semanticweb.owlapi.metrics.ReferencedDataPropertyCount;
-import org.semanticweb.owlapi.metrics.ReferencedIndividualCount;
-import org.semanticweb.owlapi.metrics.ReferencedObjectPropertyCount;
-import org.semanticweb.owlapi.metrics.UnsatisfiableClassCountMetric;
+import org.semanticweb.owlapi.metrics.*;
 import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "unchecked", "rawtypes", "null", "unused" })
@@ -71,7 +49,7 @@ public class Gen_org_semanticweb_owlapi_metrics {
             }
 
             @Override
-            protected boolean isMetricInvalidated(List<? extends OWLOntologyChange<?>> changes) {
+            protected boolean isMetricInvalidated(List<? extends OWLOntologyChange> changes) {
                 return false;
             }
 
@@ -229,7 +207,7 @@ public class Gen_org_semanticweb_owlapi_metrics {
             }
 
             @Override
-            protected boolean isMetricInvalidated(List<? extends OWLOntologyChange<?>> changes) {
+            protected boolean isMetricInvalidated(List<? extends OWLOntologyChange> changes) {
                 return false;
             }
 
@@ -327,7 +305,7 @@ public class Gen_org_semanticweb_owlapi_metrics {
             }
 
             @Override
-            protected boolean isMetricInvalidated(List<? extends OWLOntologyChange<?>> changes) {
+            protected boolean isMetricInvalidated(List<? extends OWLOntologyChange> changes) {
                 return false;
             }
 
@@ -429,7 +407,7 @@ public class Gen_org_semanticweb_owlapi_metrics {
             }
 
             @Override
-            protected boolean isMetricInvalidated(List<? extends OWLOntologyChange<?>> changes) {
+            protected boolean isMetricInvalidated(List<? extends OWLOntologyChange> changes) {
                 return false;
             }
         };
@@ -569,7 +547,7 @@ public class Gen_org_semanticweb_owlapi_metrics {
     }
 
     private boolean _boolean;
-    private java.util.List<? extends OWLOntologyChange<?>> _List;
+    private java.util.List<? extends OWLOntologyChange> _List;
     private java.util.List<org.semanticweb.owlapi.metrics.OWLMetric<?>> _List5;
     private AxiomType<?> _AxiomType;
     private OWLOntology _OWLOntology;

@@ -6,8 +6,8 @@ import static org.mockito.Mockito.mock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.semanticweb.owlapi.reasoner.knowledgeexploration.OWLKnowledgeExplorerReasoner;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.reasoner.knowledgeexploration.OWLKnowledgeExplorerReasoner;
 
 @SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
@@ -46,7 +46,7 @@ public class Gen_org_semanticweb_owlapi_reasoner_knowledgeexploration {
         org.semanticweb.owlapi.util.Version result20 = testSubject0.getReasonerVersion();
         String result21 = testSubject0.getReasonerName();
         org.semanticweb.owlapi.reasoner.BufferingMode result22 = testSubject0.getBufferingMode();
-        java.util.List<OWLOntologyChange<?>> result23 = testSubject0.getPendingChanges();
+        java.util.List<OWLOntologyChange> result23 = testSubject0.getPendingChanges();
         java.util.Set<OWLAxiom> result24 = testSubject0.getPendingAxiomAdditions();
         java.util.Set<OWLAxiom> result25 = testSubject0.getPendingAxiomRemovals();
         OWLOntology result26 = testSubject0.getRootOntology();

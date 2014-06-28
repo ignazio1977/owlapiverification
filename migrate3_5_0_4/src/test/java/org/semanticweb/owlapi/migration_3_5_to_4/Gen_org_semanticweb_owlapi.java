@@ -3,8 +3,6 @@ package org.semanticweb.owlapi.migration_3_5_to_4;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
-import java.util.List;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
@@ -28,7 +26,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifyAddClassExpressionClosureAxiom() {
         AddClassExpressionClosureAxiom testSubject0 = new AddClassExpressionClosureAxiom(_OWLDataFactory, _OWLClass, _OWLObjectPropertyExpression, _Set, _OWLOntology);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -38,7 +36,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifyAmalgamateSubClassAxioms() {
         AmalgamateSubClassAxioms testSubject0 = new AmalgamateSubClassAxioms(_OWLDataFactory, _Set);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -48,7 +46,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifyCoerceConstantsIntoDataPropertyRange() {
         CoerceConstantsIntoDataPropertyRange testSubject0 = new CoerceConstantsIntoDataPropertyRange(_OWLDataFactory, _Set);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -58,7 +56,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifyConvertEquivalentClassesToSuperClasses() {
         ConvertEquivalentClassesToSuperClasses testSubject0 = new ConvertEquivalentClassesToSuperClasses(_OWLDataFactory, _OWLClass, _Set, _OWLOntology, _boolean);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -68,7 +66,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifyConvertPropertyAssertionsToAnnotations() {
         ConvertPropertyAssertionsToAnnotations testSubject0 = new ConvertPropertyAssertionsToAnnotations(_OWLDataFactory, _Set);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -78,7 +76,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifyConvertSuperClassesToEquivalentClass() {
         ConvertSuperClassesToEquivalentClass testSubject0 = new ConvertSuperClassesToEquivalentClass(_OWLDataFactory, _OWLClass, _Set, _OWLOntology);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -88,7 +86,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifyCreateValuePartition() {
         CreateValuePartition testSubject0 = new CreateValuePartition(_OWLDataFactory, _OWLClass, _Set6, _OWLObjectProperty, _OWLOntology);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -98,7 +96,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifyMakeClassesMutuallyDisjoint() {
         MakeClassesMutuallyDisjoint testSubject0 = new MakeClassesMutuallyDisjoint(_OWLDataFactory, _Set8, _boolean, _OWLOntology);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -109,12 +107,12 @@ public class Gen_org_semanticweb_owlapi {
     public void verifyMakePrimitiveSubClassesMutuallyDisjoint() {
         MakePrimitiveSubClassesMutuallyDisjoint testSubject0 = new MakePrimitiveSubClassesMutuallyDisjoint(_OWLDataFactory, _OWLClass, _OWLOntology);
         MakePrimitiveSubClassesMutuallyDisjoint testSubject1 = new MakePrimitiveSubClassesMutuallyDisjoint(_OWLDataFactory, _OWLClass, _OWLOntology, _boolean);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     public void verifyInterfaceOWLCompositeOntologyChange() {
         OWLCompositeOntologyChange testSubject0 = mock(OWLCompositeOntologyChange.class);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -124,7 +122,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifyRemoveAllDisjointAxioms() {
         RemoveAllDisjointAxioms testSubject0 = new RemoveAllDisjointAxioms(_OWLDataFactory, _Set);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -135,7 +133,7 @@ public class Gen_org_semanticweb_owlapi {
     public void verifyShortForm2AnnotationGenerator() {
         ShortForm2AnnotationGenerator testSubject0 = new ShortForm2AnnotationGenerator(_OWLDataFactory, _OWLOntologyManager, _OWLOntology, _ShortFormProvider, _IRI, _String);
         ShortForm2AnnotationGenerator testSubject1 = new ShortForm2AnnotationGenerator(_OWLDataFactory, _OWLOntologyManager, _OWLOntology, _ShortFormProvider, _IRI);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     @Test
@@ -145,7 +143,7 @@ public class Gen_org_semanticweb_owlapi {
 
     public void verifySplitSubClassAxioms() {
         SplitSubClassAxioms testSubject0 = new SplitSubClassAxioms(_Set, _OWLDataFactory);
-        java.util.List<OWLOntologyChange<?>> result0 = testSubject0.getChanges();
+        java.util.List<OWLOntologyChange> result0 = testSubject0.getChanges();
     }
 
     private boolean _boolean;

@@ -22,7 +22,7 @@ public class Gen_org_semanticweb_owlapi_change {
         AddAxiomData testSubject0 = new AddAxiomData(_OWLAxiom);
         OWLObject result0 = testSubject0.accept(_OWLOntologyChangeDataVisitor);
         AddAxiom result1 = testSubject0.createOntologyChange(_OWLOntology);
-        OWLOntologyChange<?> result2 = testSubject0.createOntologyChange(_OWLOntology);
+        OWLOntologyChange result2 = testSubject0.createOntologyChange(_OWLOntology);
         OWLAxiom result3 = testSubject0.getAxiom();
     }
 
@@ -35,7 +35,7 @@ public class Gen_org_semanticweb_owlapi_change {
         AddImportData testSubject0 = new AddImportData(_OWLImportsDeclaration);
         OWLObject result0 = testSubject0.accept(_OWLOntologyChangeDataVisitor);
         AddImport result1 = testSubject0.createOntologyChange(_OWLOntology);
-        OWLOntologyChange<?> result2 = testSubject0.createOntologyChange(_OWLOntology);
+        OWLOntologyChange result2 = testSubject0.createOntologyChange(_OWLOntology);
         OWLImportsDeclaration result3 = testSubject0.getDeclaration();
     }
 
@@ -48,7 +48,7 @@ public class Gen_org_semanticweb_owlapi_change {
         AddOntologyAnnotationData testSubject0 = new AddOntologyAnnotationData(_OWLAnnotation);
         OWLObject result0 = testSubject0.accept(_OWLOntologyChangeDataVisitor);
         AddOntologyAnnotation result1 = testSubject0.createOntologyChange(_OWLOntology);
-        OWLOntologyChange<?> result2 = testSubject0.createOntologyChange(_OWLOntology);
+        OWLOntologyChange result2 = testSubject0.createOntologyChange(_OWLOntology);
         OWLAnnotation result3 = testSubject0.getAnnotation();
     }
 
@@ -82,11 +82,11 @@ public class Gen_org_semanticweb_owlapi_change {
     }
 
     public void verifyOWLOntologyChangeRecord() {
-        OWLOntologyChangeRecord<Object> testSubject0 = new OWLOntologyChangeRecord<Object>(_OWLOntologyID, _OWLOntologyChangeData);
+        OWLOntologyChangeRecord testSubject0 = new OWLOntologyChangeRecord(_OWLOntologyID, _OWLOntologyChangeData);
         OWLOntologyID result0 = testSubject0.getOntologyID();
-        OWLOntologyChange<?> result1 = testSubject0.createOntologyChange(_OWLOntologyManager);
-        OWLOntologyChangeRecord<?> result2 = OWLOntologyChangeRecord.createFromOWLOntologyChange(_OWLOntologyChange);
-        OWLOntologyChangeData<?> result3 = testSubject0.getData();
+        OWLOntologyChange result1 = testSubject0.createOntologyChange(_OWLOntologyManager);
+        OWLOntologyChangeRecord result2 = OWLOntologyChangeRecord.createFromOWLOntologyChange(_OWLOntologyChange);
+        OWLOntologyChangeData result3 = testSubject0.getData();
     }
 
     @Test
@@ -98,7 +98,7 @@ public class Gen_org_semanticweb_owlapi_change {
         RemoveAxiomData testSubject0 = new RemoveAxiomData(_OWLAxiom);
         OWLObject result0 = testSubject0.accept(_OWLOntologyChangeDataVisitor);
         RemoveAxiom result1 = testSubject0.createOntologyChange(_OWLOntology);
-        OWLOntologyChange<?> result2 = testSubject0.createOntologyChange(_OWLOntology);
+        OWLOntologyChange result2 = testSubject0.createOntologyChange(_OWLOntology);
         OWLAxiom result3 = testSubject0.getAxiom();
     }
 
@@ -111,7 +111,7 @@ public class Gen_org_semanticweb_owlapi_change {
         RemoveImportData testSubject0 = new RemoveImportData(_OWLImportsDeclaration);
         OWLObject result0 = testSubject0.accept(_OWLOntologyChangeDataVisitor);
         RemoveImport result1 = testSubject0.createOntologyChange(_OWLOntology);
-        OWLOntologyChange<?> result2 = testSubject0.createOntologyChange(_OWLOntology);
+        OWLOntologyChange result2 = testSubject0.createOntologyChange(_OWLOntology);
         OWLImportsDeclaration result3 = testSubject0.getDeclaration();
     }
 
@@ -124,7 +124,7 @@ public class Gen_org_semanticweb_owlapi_change {
         RemoveOntologyAnnotationData testSubject0 = new RemoveOntologyAnnotationData(_OWLAnnotation);
         OWLObject result0 = testSubject0.accept(_OWLOntologyChangeDataVisitor);
         RemoveOntologyAnnotation result1 = testSubject0.createOntologyChange(_OWLOntology);
-        OWLOntologyChange<?> result2 = testSubject0.createOntologyChange(_OWLOntology);
+        OWLOntologyChange result2 = testSubject0.createOntologyChange(_OWLOntology);
         OWLAnnotation result3 = testSubject0.getAnnotation();
     }
 
@@ -136,7 +136,7 @@ public class Gen_org_semanticweb_owlapi_change {
     public void verifySetOntologyIDData() throws Exception {
         SetOntologyIDData testSubject0 = new SetOntologyIDData(_OWLOntologyID);
         OWLObject result0 = testSubject0.accept(_OWLOntologyChangeDataVisitor);
-        OWLOntologyChange<?> result1 = testSubject0.createOntologyChange(_OWLOntology);
+        OWLOntologyChange result1 = testSubject0.createOntologyChange(_OWLOntology);
         SetOntologyID result2 = testSubject0.createOntologyChange(_OWLOntology);
         OWLOntologyID result3 = testSubject0.getNewId();
     }
@@ -144,7 +144,7 @@ public class Gen_org_semanticweb_owlapi_change {
     private org.semanticweb.owlapi.change.AddAxiomData _AddAxiomData;
     private org.semanticweb.owlapi.change.AddImportData _AddImportData;
     private org.semanticweb.owlapi.change.AddOntologyAnnotationData _AddOntologyAnnotationData;
-    private org.semanticweb.owlapi.change.OWLOntologyChangeData<Object> _OWLOntologyChangeData;
+    private org.semanticweb.owlapi.change.OWLOntologyChangeData _OWLOntologyChangeData;
     private org.semanticweb.owlapi.change.OWLOntologyChangeDataVisitor<OWLObject, Exception> _OWLOntologyChangeDataVisitor;
     private org.semanticweb.owlapi.change.RemoveAxiomData _RemoveAxiomData;
     private org.semanticweb.owlapi.change.RemoveImportData _RemoveImportData;
@@ -154,7 +154,7 @@ public class Gen_org_semanticweb_owlapi_change {
     private OWLAxiom _OWLAxiom;
     private OWLImportsDeclaration _OWLImportsDeclaration;
     private OWLOntology _OWLOntology;
-    private OWLOntologyChange<?> _OWLOntologyChange;
+    private OWLOntologyChange _OWLOntologyChange;
     private OWLOntologyID _OWLOntologyID;
     private OWLOntologyManager _OWLOntologyManager;
 }

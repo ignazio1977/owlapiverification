@@ -10,6 +10,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.formats.*;
+import org.semanticweb.owlapi.formats.OWLFunctionalSyntaxOntologyFormat;
+import org.semanticweb.owlapi.formats.OWLXMLOntologyFormat;
+import org.semanticweb.owlapi.formats.RDFXMLOntologyFormat;
 import org.semanticweb.owlapi.io.*;
 import org.semanticweb.owlapi.model.*;
 
@@ -444,7 +447,7 @@ public class Gen_org_semanticweb_owlapi_io {
         org.semanticweb.owlapi.io.RDFParserMetaData result0 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result1 = testSubject0.getOntologyLoaderMetaData();
         boolean result2 = testSubject0.isAddMissingTypes();
-        boolean result3 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result3 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.setPrefixManager(_DefaultPrefixManager);
@@ -532,7 +535,7 @@ public class Gen_org_semanticweb_owlapi_io {
         org.semanticweb.owlapi.io.RDFParserMetaData result0 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result1 = testSubject0.getOntologyLoaderMetaData();
         boolean result2 = testSubject0.isAddMissingTypes();
-        boolean result3 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result3 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.setPrefixManager(_DefaultPrefixManager);

@@ -13,11 +13,10 @@ import org.semanticweb.owlapi.expression.OWLEntityChecker;
 import org.semanticweb.owlapi.expression.OWLOntologyChecker;
 import org.semanticweb.owlapi.formats.ManchesterOWLSyntaxOntologyFormat;
 import org.semanticweb.owlapi.io.OWLParser;
-import org.semanticweb.owlapi.model.*;
-import org.semanticweb.owlapi.util.mansyntax.*;
 import org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxClassFrameParser;
-import org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxEditorParser;
-import org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxOntologyParser;
+import org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxParserImpl;
+import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
 
 @SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
@@ -29,8 +28,8 @@ import org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxOntologyParser
         "method removed: ManchesterOWLSyntaxParser::parseClassAxiom() : use parseAxiom()", })
 public class Gen_org_coode_owlapi_manchesterowlsyntax {
     @Test
-    public void enforceInterfacesManchesterOWLSyntaxEditorParser() {
-        assertTrue(ManchesterOWLSyntaxParser.class.isAssignableFrom(ManchesterOWLSyntaxEditorParser.class));
+    public void enforceInterfacesManchesterOWLSyntaxParserImpl() {
+        assertTrue(ManchesterOWLSyntaxParser.class.isAssignableFrom(ManchesterOWLSyntaxParserImpl.class));
     }
 
     public void verifyInterfaceManchesterOWLSyntaxParser() throws UnloadableImportException {
