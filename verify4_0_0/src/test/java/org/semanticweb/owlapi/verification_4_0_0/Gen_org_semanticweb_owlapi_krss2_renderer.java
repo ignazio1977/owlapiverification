@@ -28,16 +28,16 @@ public class Gen_org_semanticweb_owlapi_krss2_renderer {
     }
 
     public void verifyKRSS2OWLObjectRenderer() {
-        KRSS2OWLObjectRenderer testSubject0 = new KRSS2OWLObjectRenderer(_OWLOntology, _Writer);
+        KRSS2OWLObjectRenderer testSubject0 = new KRSS2OWLObjectRenderer(_Writer);
     }
 
     @Test
     public void enforceInterfacesKRSS2OWLSyntaxOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(KRSS2OWLSyntaxOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(KRSS2OWLSyntaxStorer.class));
     }
 
     public void verifyKRSS2OWLSyntaxOntologyStorer() throws OWLOntologyStorageException {
-        KRSS2OWLSyntaxOntologyStorer testSubject0 = new KRSS2OWLSyntaxOntologyStorer();
+        KRSS2OWLSyntaxStorer testSubject0 = new KRSS2OWLSyntaxStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -56,11 +56,11 @@ public class Gen_org_semanticweb_owlapi_krss2_renderer {
 
     @Test
     public void enforceInterfacesKRSS2SyntaxOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(KRSS2SyntaxOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(KRSS2SyntaxStorer.class));
     }
 
     public void verifyKRSS2SyntaxOntologyStorer() throws OWLOntologyStorageException {
-        KRSS2SyntaxOntologyStorer testSubject0 = new KRSS2SyntaxOntologyStorer();
+        KRSS2SyntaxStorer testSubject0 = new KRSS2SyntaxStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -138,11 +138,11 @@ public class Gen_org_semanticweb_owlapi_krss2_renderer {
 
     @Test
     public void enforceInterfacesKRSSSyntaxOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(KRSSSyntaxOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(KRSSSyntaxStorer.class));
     }
 
     public void verifyKRSSSyntaxOntologyStorer() throws OWLOntologyStorageException {
-        KRSSSyntaxOntologyStorer testSubject0 = new KRSSSyntaxOntologyStorer();
+        KRSSSyntaxStorer testSubject0 = new KRSSSyntaxStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -262,7 +262,7 @@ public class Gen_org_semanticweb_owlapi_krss2_renderer {
     private OWLObjectSomeValuesFrom _OWLObjectSomeValuesFrom;
     private OWLObjectUnionOf _OWLObjectUnionOf;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLReflexiveObjectPropertyAxiom _OWLReflexiveObjectPropertyAxiom;
     private OWLSameIndividualAxiom _OWLSameIndividualAxiom;
     private OWLSubAnnotationPropertyOfAxiom _OWLSubAnnotationPropertyOfAxiom;

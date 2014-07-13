@@ -38,11 +38,11 @@ public class Gen_org_semanticweb_owlapi_latex_renderer {
 
     @Test
     public void enforceInterfacesLatexOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(LatexOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(LatexStorer.class));
     }
 
     public void verifyLatexOntologyStorer() throws OWLOntologyStorageException {
-        LatexOntologyStorer testSubject0 = new LatexOntologyStorer();
+        LatexStorer testSubject0 = new LatexStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -207,7 +207,7 @@ public class Gen_org_semanticweb_owlapi_latex_renderer {
     private OWLObjectSomeValuesFrom _OWLObjectSomeValuesFrom;
     private OWLObjectUnionOf _OWLObjectUnionOf;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLReflexiveObjectPropertyAxiom _OWLReflexiveObjectPropertyAxiom;
     private OWLSameIndividualAxiom _OWLSameIndividualAxiom;
     private OWLSubAnnotationPropertyOfAxiom _OWLSubAnnotationPropertyOfAxiom;

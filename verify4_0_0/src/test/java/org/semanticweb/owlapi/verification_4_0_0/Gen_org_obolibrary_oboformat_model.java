@@ -156,7 +156,7 @@ public class Gen_org_obolibrary_oboformat_model {
     public void verifyQualifierValue() {
         QualifierValue testSubject0 = new QualifierValue(_String, _String);
         java.lang.Object result0 = testSubject0.getValue();
-        testSubject0.setValue(_Object);
+        testSubject0.setValue(_String);
         java.lang.String result1 = testSubject0.getQualifier();
         testSubject0.setQualifier(_String);
     }

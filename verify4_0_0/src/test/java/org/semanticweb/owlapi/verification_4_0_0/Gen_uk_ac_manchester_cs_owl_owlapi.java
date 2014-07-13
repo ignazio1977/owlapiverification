@@ -149,11 +149,6 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         OWLClass result18 = testSubject0.getOWLClass(_IRI);
     }
 
-    @Test
-    public void enforceInterfacesMapPointer() {
-        assertTrue(java.io.Serializable.class.isAssignableFrom(MapPointer.class));
-    }
-
     public void verifyMapPointer() {
         MapPointer<Object, OWLAxiom> testSubject0 = new MapPointer<Object, OWLAxiom>(_AxiomType, _OWLAxiomVisitorEx, _boolean, _Internals);
         boolean result0 = testSubject0.remove(_Object, _OWLAxiom);
@@ -4677,10 +4672,10 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         java.util.List<OWLOntology> result15 = testSubject0.getSortedImportsClosure(_OWLOntology);
         java.util.List<OWLOntologyChange> result16 = testSubject0.applyChanges(_List188);
         java.util.List<OWLOntologyChange> result17 = testSubject0.addAxioms(_OWLOntology, _Set191);
-        java.util.List<OWLOntologyChange> result18 = testSubject0.addAxiom(_OWLOntology, _OWLAxiom101);
+        ChangeApplied result18 = testSubject0.addAxiom(_OWLOntology, _OWLAxiom101);
         java.util.List<OWLOntologyChange> result19 = testSubject0.removeAxiom(_OWLOntology, _OWLAxiom101);
         java.util.List<OWLOntologyChange> result20 = testSubject0.removeAxioms(_OWLOntology, _Set191);
-        java.util.List<OWLOntologyChange> result21 = testSubject0.applyChange(_OWLOntologyChange192);
+        ChangeApplied result21 = testSubject0.applyChange(_OWLOntologyChange192);
         OWLOntology result22 = testSubject0.createOntology(_Set193);
         OWLOntology result23 = testSubject0.createOntology(_Set193, _IRI);
         OWLOntology result24 = testSubject0.createOntology(_IRI);
@@ -4698,7 +4693,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         testSubject0.removeOntology(_OWLOntologyID);
         IRI result35 = testSubject0.getOntologyDocumentIRI(_OWLOntology);
         testSubject0.setOntologyDocumentIRI(_OWLOntology, _IRI);
-        OWLOntologyFormat result36 = testSubject0.getOntologyFormat(_OWLOntology);
+        OWLDocumentFormat result36 = testSubject0.getOntologyFormat(_OWLOntology);
         testSubject0.setOntologyFormat(_OWLOntology, _OWLOntologyFormat);
         testSubject0.saveOntology(_OWLOntology, _OWLOntologyDocumentTarget);
         testSubject0.saveOntology(_OWLOntology, _OWLOntologyFormat, _OutputStream);
@@ -4711,11 +4706,11 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         testSubject0.setIRIMappers(_Set200);
         org.semanticweb.owlapi.util.PriorityCollection<OWLOntologyIRIMapper> result37 = testSubject0.getIRIMappers();
         testSubject0.setOntologyParsers(_Set201);
-        org.semanticweb.owlapi.util.PriorityCollection<org.semanticweb.owlapi.io.OWLParser> result38 = testSubject0.getOntologyParsers();
+        org.semanticweb.owlapi.util.PriorityCollection<org.semanticweb.owlapi.io.OWLParserFactory> result38 = testSubject0.getOntologyParsers();
         testSubject0.setOntologyFactories(_Set202);
         org.semanticweb.owlapi.util.PriorityCollection<OWLOntologyFactory> result39 = testSubject0.getOntologyFactories();
         testSubject0.setOntologyStorers(_Set203);
-        org.semanticweb.owlapi.util.PriorityCollection<OWLOntologyStorer> result40 = testSubject0.getOntologyStorers();
+        org.semanticweb.owlapi.util.PriorityCollection<OWLStorerFactory> result40 = testSubject0.getOntologyStorers();
         testSubject0.addOntologyChangeListener(_OWLOntologyChangeListener, _OWLOntologyChangeBroadcastStrategy);
         testSubject0.addOntologyChangeListener(_OWLOntologyChangeListener);
         testSubject0.addImpendingOntologyChangeListener(_ImpendingOWLOntologyChangeListener);
@@ -6059,7 +6054,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     private java.util.Set<? extends OWLObjectPropertyExpression> _Set166;
     private java.util.Set<? extends OWLPropertyExpression> _Set171;
     private java.util.Set<? extends SWRLAtom> _Set172;
-    private java.util.Set<org.semanticweb.owlapi.io.OWLParser> _Set201;
+    private java.util.Set<org.semanticweb.owlapi.io.OWLParserFactory> _Set201;
     private java.util.Set<AxiomType<?>> _Set129;
     private java.util.Set<OWLAnnotation> _Set;
     private java.util.Set<OWLAxiom> _Set193;
@@ -6068,7 +6063,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     private java.util.Set<OWLOntology> _Set194;
     private java.util.Set<OWLOntologyFactory> _Set202;
     private java.util.Set<OWLOntologyIRIMapper> _Set200;
-    private java.util.Set<OWLOntologyStorer> _Set203;
+    private java.util.Set<OWLStorerFactory> _Set203;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentSource _OWLOntologyDocumentSource;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentTarget _OWLOntologyDocumentTarget;
     private AxiomType<?> _AxiomType;
@@ -6192,7 +6187,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     private OWLOntologyChangeProgressListener _OWLOntologyChangeProgressListener;
     private OWLOntologyChangesVetoedListener _OWLOntologyChangesVetoedListener;
     private OWLOntologyFactory.OWLOntologyCreationHandler _OWLOntologyCreationHandler;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntologyID _OWLOntologyID;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
     private OWLOntologyLoaderListener _OWLOntologyLoaderListener;

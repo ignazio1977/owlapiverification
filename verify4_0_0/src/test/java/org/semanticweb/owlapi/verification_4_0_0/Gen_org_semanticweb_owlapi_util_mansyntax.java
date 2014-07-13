@@ -16,7 +16,7 @@ public class Gen_org_semanticweb_owlapi_util_mansyntax {
         java.util.Set<org.semanticweb.owlapi.util.OntologyAxiomPair> result3 = testSubject0.parseClassFrameEOF();
         OWLLiteral result4 = testSubject0.parseLiteral(_OWLDatatype);
         testSubject0.setOWLOntologyChecker(_OWLOntologyChecker);
-        org.semanticweb.owlapi.formats.ManchesterOWLSyntaxOntologyFormat result5 = testSubject0.parseOntology(_OWLOntology);
+        org.semanticweb.owlapi.formats.ManchesterSyntaxDocumentFormat result5 = testSubject0.parseOntology(_OWLOntology);
         java.util.Set<OWLClassExpression> result6 = testSubject0.parseClassExpressionList();
         java.util.Set<OWLObjectPropertyExpression> result7 = testSubject0.parseObjectPropertyList();
         OWLDataRange result8 = testSubject0.parseDataRange();

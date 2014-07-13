@@ -39,7 +39,7 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
     public void verifyOWLRDFConsumer() {
         OWLRDFConsumer testSubject0 = new OWLRDFConsumer(_OWLOntology, _AnonymousNodeChecker, _OWLOntologyLoaderConfiguration);
         OWLRDFConsumer testSubject1 = new OWLRDFConsumer(_OWLOntology, _OWLOntologyLoaderConfiguration);
-        org.semanticweb.owlapi.formats.RDFOntologyFormat result0 = testSubject0.getOntologyFormat();
+        org.semanticweb.owlapi.formats.AbstractRDFDocumentFormat result0 = testSubject0.getOntologyFormat();
         testSubject0.setOntologyFormat(_RDFOntologyFormat);
         OWLOntology result1 = testSubject0.getOntology();
         boolean result2 = testSubject0.isAnonymousNode(_String);
@@ -206,10 +206,9 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
     public void verifyRDFXMLParser() throws OWLOntologyChangeException, UnloadableImportException, IOException {
         RDFXMLParser testSubject0 = new RDFXMLParser();
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
-        java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
-        java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();
+        OWLDocumentFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormatFactory result4 = testSubject0.getSupportedFormat();
     }
 
     public void verifyInterfaceState() throws SAXException {
@@ -291,7 +290,7 @@ public class Gen_org_semanticweb_owlapi_rdf_rdfxml_parser {
     private java.lang.StackTraceElement[] _StackTraceElement_array;
     private java.lang.String _String;
     private java.lang.Throwable _Throwable;
-    private org.semanticweb.owlapi.formats.RDFOntologyFormat _RDFOntologyFormat;
+    private org.semanticweb.owlapi.formats.AbstractRDFDocumentFormat _RDFOntologyFormat;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentSource _OWLOntologyDocumentSource;
     private EntityType<OWLEntity> _EntityType;
     private IRI _IRI;

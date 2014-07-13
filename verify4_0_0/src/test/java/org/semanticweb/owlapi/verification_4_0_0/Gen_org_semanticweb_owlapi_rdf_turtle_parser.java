@@ -50,7 +50,7 @@ public class Gen_org_semanticweb_owlapi_rdf_turtle_parser {
         testSubject0.handleBaseDirective(_IRI);
         testSubject0.handleComment(_String);
         testSubject0.handleEnd();
-        org.semanticweb.owlapi.formats.RDFOntologyFormat result0 = testSubject0.getOntologyFormat();
+        org.semanticweb.owlapi.formats.AbstractRDFDocumentFormat result0 = testSubject0.getOntologyFormat();
         testSubject0.setOntologyFormat(_RDFOntologyFormat);
         OWLOntology result1 = testSubject0.getOntology();
         boolean result2 = testSubject0.isAnonymousNode(_String);
@@ -101,16 +101,15 @@ public class Gen_org_semanticweb_owlapi_rdf_turtle_parser {
     public void verifyTurtleOntologyParser() throws UnloadableImportException, IOException {
         TurtleOntologyParser testSubject0 = new TurtleOntologyParser();
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
-        java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
-        java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();
+        OWLDocumentFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormatFactory result4 = testSubject0.getSupportedFormat();
     }
 
     private boolean _boolean;
     private int _int;
     private java.lang.String _String;
-    private org.semanticweb.owlapi.formats.RDFOntologyFormat _RDFOntologyFormat;
+    private org.semanticweb.owlapi.formats.AbstractRDFDocumentFormat _RDFOntologyFormat;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentSource _OWLOntologyDocumentSource;
     private EntityType<OWLEntity> _EntityType;
     private IRI _IRI;

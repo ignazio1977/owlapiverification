@@ -43,11 +43,11 @@ public class Gen_org_semanticweb_owlapi_dlsyntax_renderer {
 
     @Test
     public void enforceInterfacesDLSyntaxHTMLOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.dlsyntax.renderer.DLSyntaxOntologyStorerBase.class.isAssignableFrom(DLSyntaxHTMLOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.dlsyntax.renderer.DLSyntaxStorerBase.class.isAssignableFrom(DLSyntaxHTMLStorer.class));
     }
 
     public void verifyDLSyntaxHTMLOntologyStorer() throws OWLOntologyStorageException {
-        DLSyntaxHTMLOntologyStorer testSubject0 = new DLSyntaxHTMLOntologyStorer();
+        DLSyntaxHTMLStorer testSubject0 = new DLSyntaxHTMLStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -70,11 +70,11 @@ public class Gen_org_semanticweb_owlapi_dlsyntax_renderer {
 
     @Test
     public void enforceInterfacesDLSyntaxOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.dlsyntax.renderer.DLSyntaxOntologyStorerBase.class.isAssignableFrom(DLSyntaxOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.dlsyntax.renderer.DLSyntaxStorerBase.class.isAssignableFrom(DLSyntaxStorer.class));
     }
 
     public void verifyDLSyntaxOntologyStorer() throws OWLOntologyStorageException {
-        DLSyntaxOntologyStorer testSubject0 = new DLSyntaxOntologyStorer();
+        DLSyntaxStorer testSubject0 = new DLSyntaxStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -82,11 +82,11 @@ public class Gen_org_semanticweb_owlapi_dlsyntax_renderer {
 
     @Test
     public void enforceInterfacesDLSyntaxOntologyStorerBase() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(DLSyntaxOntologyStorerBase.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(DLSyntaxStorerBase.class));
     }
 
     public void verifyDLSyntaxOntologyStorerBase() throws OWLOntologyStorageException {
-        DLSyntaxOntologyStorerBase testSubject0 = mock(DLSyntaxOntologyStorerBase.class);
+        DLSyntaxStorerBase testSubject0 = mock(DLSyntaxStorerBase.class);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
@@ -158,7 +158,7 @@ public class Gen_org_semanticweb_owlapi_dlsyntax_renderer {
     private OWLObjectSomeValuesFrom _OWLObjectSomeValuesFrom;
     private OWLObjectUnionOf _OWLObjectUnionOf;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLReflexiveObjectPropertyAxiom _OWLReflexiveObjectPropertyAxiom;
     private OWLSameIndividualAxiom _OWLSameIndividualAxiom;
     private OWLSubAnnotationPropertyOfAxiom _OWLSubAnnotationPropertyOfAxiom;

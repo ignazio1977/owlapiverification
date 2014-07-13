@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.functional.renderer.FunctionalSyntaxObjectRenderer;
-import org.semanticweb.owlapi.functional.renderer.OWLFunctionalSyntaxOntologyStorer;
+import org.semanticweb.owlapi.functional.renderer.FunctionalSyntaxStorer;
 import org.semanticweb.owlapi.functional.renderer.OWLFunctionalSyntaxRenderer;
 import org.semanticweb.owlapi.io.OWLRendererException;
 import org.semanticweb.owlapi.model.*;
@@ -16,11 +16,11 @@ import org.semanticweb.owlapi.model.*;
 public class Gen_org_semanticweb_owlapi_functional_renderer {
     @Test
     public void enforceInterfacesOWLFunctionalSyntaxOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(OWLFunctionalSyntaxOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(FunctionalSyntaxStorer.class));
     }
 
     public void verifyOWLFunctionalSyntaxOntologyStorer() throws OWLOntologyStorageException {
-        OWLFunctionalSyntaxOntologyStorer testSubject0 = new OWLFunctionalSyntaxOntologyStorer();
+        FunctionalSyntaxStorer testSubject0 = new FunctionalSyntaxStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -118,7 +118,7 @@ public class Gen_org_semanticweb_owlapi_functional_renderer {
     private OWLObjectSomeValuesFrom _OWLObjectSomeValuesFrom;
     private OWLObjectUnionOf _OWLObjectUnionOf;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLPropertyExpression _OWLPropertyExpression;
     private OWLReflexiveObjectPropertyAxiom _OWLReflexiveObjectPropertyAxiom;
     private OWLSameIndividualAxiom _OWLSameIndividualAxiom;

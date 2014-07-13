@@ -67,11 +67,11 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
 
     @Test
     public void enforceInterfacesManchesterOWLSyntaxOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(ManchesterOWLSyntaxOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(ManchesterSyntaxStorer.class));
     }
 
     public void verifyManchesterOWLSyntaxOntologyStorer() throws OWLOntologyStorageException {
-        ManchesterOWLSyntaxOntologyStorer testSubject0 = new ManchesterOWLSyntaxOntologyStorer();
+        ManchesterSyntaxStorer testSubject0 = new ManchesterSyntaxStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -79,13 +79,13 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
 
     @Test
     public void enforceInterfacesManchesterOWLSyntaxOntologyStorerException() {
-        assertTrue(OWLOntologyStorageException.class.isAssignableFrom(ManchesterOWLSyntaxOntologyStorerException.class));
+        assertTrue(OWLOntologyStorageException.class.isAssignableFrom(ManchesterSyntaxStorerException.class));
     }
 
     public void verifyManchesterOWLSyntaxOntologyStorerException() {
-        ManchesterOWLSyntaxOntologyStorerException testSubject0 = new ManchesterOWLSyntaxOntologyStorerException(_String);
-        ManchesterOWLSyntaxOntologyStorerException testSubject1 = new ManchesterOWLSyntaxOntologyStorerException(_String, _Throwable);
-        ManchesterOWLSyntaxOntologyStorerException testSubject2 = new ManchesterOWLSyntaxOntologyStorerException(_Throwable);
+        ManchesterSyntaxStorerException testSubject0 = new ManchesterSyntaxStorerException(_String);
+        ManchesterSyntaxStorerException testSubject1 = new ManchesterSyntaxStorerException(_String, _Throwable);
+        ManchesterSyntaxStorerException testSubject2 = new ManchesterSyntaxStorerException(_Throwable);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -292,7 +292,7 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
     private OWLObjectSomeValuesFrom _OWLObjectSomeValuesFrom;
     private OWLObjectUnionOf _OWLObjectUnionOf;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntology[] _OWLOntology_array;
     private OWLReflexiveObjectPropertyAxiom _OWLReflexiveObjectPropertyAxiom;
     private OWLSameIndividualAxiom _OWLSameIndividualAxiom;

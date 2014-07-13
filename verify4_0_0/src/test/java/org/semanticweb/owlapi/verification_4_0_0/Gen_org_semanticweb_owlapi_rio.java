@@ -27,11 +27,11 @@ public class Gen_org_semanticweb_owlapi_rio {
         java.lang.Object result0 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.createParser();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result3 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result3 = testSubject0.getRioFormatFactory();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     @Test
@@ -48,15 +48,15 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     @Test
     public void enforceInterfacesRioBinaryRdfOntologyStorerFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyStorerFactory.class.isAssignableFrom(RioBinaryRdfOntologyStorerFactory.class));
+        assertTrue(OWLStorerFactory.class.isAssignableFrom(RioBinaryRdfStorerFactory.class));
     }
 
     public void verifyRioBinaryRdfOntologyStorerFactory() {
-        RioBinaryRdfOntologyStorerFactory testSubject0 = new RioBinaryRdfOntologyStorerFactory();
-        OWLOntologyStorer result0 = testSubject0.get();
+        RioBinaryRdfStorerFactory testSubject0 = new RioBinaryRdfStorerFactory();
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -67,27 +67,27 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioBinaryRdfParserFactory() {
         RioBinaryRdfParserFactory testSubject0 = new RioBinaryRdfParserFactory();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result0 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result0 = testSubject0.getRioFormatFactory();
         java.lang.Object result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result3 = testSubject0.createParser();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     @Test
     public void enforceInterfacesRioJsonOntologyStorerFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyStorerFactory.class.isAssignableFrom(RioJsonOntologyStorerFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFStorerFactory.class.isAssignableFrom(RioJsonStorerFactory.class));
     }
 
     public void verifyRioJsonOntologyStorerFactory() {
-        RioJsonOntologyStorerFactory testSubject0 = new RioJsonOntologyStorerFactory();
-        OWLOntologyStorer result0 = testSubject0.get();
+        RioJsonStorerFactory testSubject0 = new RioJsonStorerFactory();
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -98,14 +98,14 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioJsonParserFactory() {
         RioJsonParserFactory testSubject0 = new RioJsonParserFactory();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result0 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result0 = testSubject0.getRioFormatFactory();
         java.lang.Object result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result3 = testSubject0.createParser();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     @Test
@@ -127,7 +127,7 @@ public class Gen_org_semanticweb_owlapi_rio {
         java.io.Reader result4 = testSubject0.getReader();
         boolean result5 = testSubject0.isInputStreamAvailable();
         IRI result6 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result7 = testSubject0.getFormat();
+        OWLDocumentFormat result7 = testSubject0.getFormat();
         boolean result8 = testSubject0.isFormatKnown();
         java.lang.String result9 = testSubject0.getMIMEType();
         boolean result10 = testSubject0.isMIMETypeKnown();
@@ -137,15 +137,15 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     @Test
     public void enforceInterfacesRioN3OntologyStorerFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyStorerFactory.class.isAssignableFrom(RioN3OntologyStorerFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFStorerFactory.class.isAssignableFrom(RioN3StorerFactory.class));
     }
 
     public void verifyRioN3OntologyStorerFactory() {
-        RioN3OntologyStorerFactory testSubject0 = new RioN3OntologyStorerFactory();
-        OWLOntologyStorer result0 = testSubject0.get();
+        RioN3StorerFactory testSubject0 = new RioN3StorerFactory();
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -156,27 +156,27 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioN3ParserFactory() {
         RioN3ParserFactory testSubject0 = new RioN3ParserFactory();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result0 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result0 = testSubject0.getRioFormatFactory();
         java.lang.Object result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result3 = testSubject0.createParser();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     @Test
     public void enforceInterfacesRioNQuadsOntologyStorerFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyStorerFactory.class.isAssignableFrom(RioNQuadsOntologyStorerFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFStorerFactory.class.isAssignableFrom(RioNQuadsStorerFactory.class));
     }
 
     public void verifyRioNQuadsOntologyStorerFactory() {
-        RioNQuadsOntologyStorerFactory testSubject0 = new RioNQuadsOntologyStorerFactory();
-        OWLOntologyStorer result0 = testSubject0.get();
+        RioNQuadsStorerFactory testSubject0 = new RioNQuadsStorerFactory();
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -187,27 +187,27 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioNQuadsParserFactory() {
         RioNQuadsParserFactory testSubject0 = new RioNQuadsParserFactory();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result0 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result0 = testSubject0.getRioFormatFactory();
         java.lang.Object result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result3 = testSubject0.createParser();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     @Test
     public void enforceInterfacesRioNTriplesOntologyStorerFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyStorerFactory.class.isAssignableFrom(RioNTriplesOntologyStorerFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFStorerFactory.class.isAssignableFrom(RioNTriplesStorerFactory.class));
     }
 
     public void verifyRioNTriplesOntologyStorerFactory() {
-        RioNTriplesOntologyStorerFactory testSubject0 = new RioNTriplesOntologyStorerFactory();
-        OWLOntologyStorer result0 = testSubject0.get();
+        RioNTriplesStorerFactory testSubject0 = new RioNTriplesStorerFactory();
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -218,24 +218,24 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioNTriplesParserFactory() {
         RioNTriplesParserFactory testSubject0 = new RioNTriplesParserFactory();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result0 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result0 = testSubject0.getRioFormatFactory();
         java.lang.Object result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result3 = testSubject0.createParser();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     @Test
     public void enforceInterfacesRioOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(RioOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(RioStorer.class));
     }
 
     public void verifyRioOntologyStorer() throws OWLOntologyStorageException {
-        RioOntologyStorer testSubject0 = new RioOntologyStorer(_RioRDFOntologyFormatFactory, _RDFHandler, _Resource_array);
-        RioOntologyStorer testSubject1 = new RioOntologyStorer(_RioRDFOntologyFormatFactory, _Resource_array);
+        RioStorer testSubject0 = new RioStorer(_RioRDFOntologyFormatFactory, _RDFHandler, _Resource_array);
+        RioStorer testSubject1 = new RioStorer(_RioRDFOntologyFormatFactory, _Resource_array);
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         org.openrdf.rio.RDFHandler result1 = testSubject0.getRioHandler();
         testSubject0.setRioHandler(_RDFHandler);
@@ -256,7 +256,7 @@ public class Gen_org_semanticweb_owlapi_rio {
         testSubject0.handleNamespace(_String, _String);
         testSubject0.handleStatement(_Statement);
         testSubject0.handleComment(_String);
-        org.semanticweb.owlapi.formats.RDFOntologyFormat result0 = testSubject0.getOntologyFormat();
+        org.semanticweb.owlapi.formats.AbstractRDFDocumentFormat result0 = testSubject0.getOntologyFormat();
         testSubject0.setOntologyFormat(_RDFOntologyFormat);
         OWLOntology result1 = testSubject0.getOntology();
         boolean result2 = testSubject0.isAnonymousNode(_String);
@@ -294,12 +294,10 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyInterfaceRioParser() throws OWLParserException, OWLOntologyChangeException, UnloadableImportException, IOException {
         RioParser testSubject0 = mock(RioParser.class);
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormat result0 = testSubject0.getParserFormat();
         java.lang.String result1 = testSubject0.getName();
-        OWLOntologyFormat result2 = testSubject0.parse(_IRI, _OWLOntology);
-        OWLOntologyFormat result3 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        java.util.Set<java.lang.Class<OWLOntologyFormat>> result5 = testSubject0.getSupportedFormatClasses();
-        java.util.Set<OWLOntologyFormatFactory> result6 = testSubject0.getSupportedFormats();
+        OWLDocumentFormat result2 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormat result3 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormatFactory result4 = testSubject0.getSupportedFormat();
     }
 
     @Test
@@ -310,25 +308,23 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioParserImpl() throws OWLParserException, OWLOntologyChangeException, UnloadableImportException, IOException {
         RioParserImpl testSubject0 = new RioParserImpl(_RioRDFOntologyFormatFactory);
-        OWLOntologyFormat result0 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormat result2 = testSubject0.getParserFormat();
-        java.util.Set<java.lang.Class<OWLOntologyFormat>> result3 = testSubject0.getSupportedFormatClasses();
-        java.util.Set<OWLOntologyFormatFactory> result4 = testSubject0.getSupportedFormats();
+        OWLDocumentFormat result0 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormatFactory result4 = testSubject0.getSupportedFormat();
         java.lang.String result5 = testSubject0.getName();
-        OWLOntologyFormat result6 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormat result6 = testSubject0.parse(_IRI, _OWLOntology);
     }
 
     @Test
     public void enforceInterfacesRioRDFXMLOntologyStorerFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyStorerFactory.class.isAssignableFrom(RioRDFXMLOntologyStorerFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFStorerFactory.class.isAssignableFrom(RioRDFXMLStorerFactory.class));
     }
 
     public void verifyRioRDFXMLOntologyStorerFactory() {
-        RioRDFXMLOntologyStorerFactory testSubject0 = new RioRDFXMLOntologyStorerFactory();
-        OWLOntologyStorer result0 = testSubject0.get();
+        RioRDFXMLStorerFactory testSubject0 = new RioRDFXMLStorerFactory();
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -339,14 +335,14 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioRDFXMLParserFactory() {
         RioRDFXMLParserFactory testSubject0 = new RioRDFXMLParserFactory();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result0 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result0 = testSubject0.getRioFormatFactory();
         java.lang.Object result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result3 = testSubject0.createParser();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     @Test
@@ -363,15 +359,15 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     @Test
     public void enforceInterfacesRioTrigOntologyStorerFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyStorerFactory.class.isAssignableFrom(RioTrigOntologyStorerFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFStorerFactory.class.isAssignableFrom(RioTrigStorerFactory.class));
     }
 
     public void verifyRioTrigOntologyStorerFactory() {
-        RioTrigOntologyStorerFactory testSubject0 = new RioTrigOntologyStorerFactory();
-        OWLOntologyStorer result0 = testSubject0.get();
+        RioTrigStorerFactory testSubject0 = new RioTrigStorerFactory();
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -382,27 +378,27 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioTrigParserFactory() {
         RioTrigParserFactory testSubject0 = new RioTrigParserFactory();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result0 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result0 = testSubject0.getRioFormatFactory();
         java.lang.Object result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result3 = testSubject0.createParser();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     @Test
     public void enforceInterfacesRioTrixOntologyStorerFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyStorerFactory.class.isAssignableFrom(RioTrixOntologyStorerFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFStorerFactory.class.isAssignableFrom(RioTrixStorerFactory.class));
     }
 
     public void verifyRioTrixOntologyStorerFactory() {
-        RioTrixOntologyStorerFactory testSubject0 = new RioTrixOntologyStorerFactory();
-        OWLOntologyStorer result0 = testSubject0.get();
+        RioTrixStorerFactory testSubject0 = new RioTrixStorerFactory();
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -413,27 +409,27 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioTrixParserFactory() {
         RioTrixParserFactory testSubject0 = new RioTrixParserFactory();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result0 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result0 = testSubject0.getRioFormatFactory();
         java.lang.Object result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result3 = testSubject0.createParser();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     @Test
     public void enforceInterfacesRioTurtleOntologyStorerFactory() {
-        assertTrue(org.semanticweb.owlapi.formats.RioRDFOntologyStorerFactory.class.isAssignableFrom(RioTurtleOntologyStorerFactory.class));
+        assertTrue(org.semanticweb.owlapi.formats.RioRDFStorerFactory.class.isAssignableFrom(RioTurtleStorerFactory.class));
     }
 
     public void verifyRioTurtleOntologyStorerFactory() {
-        RioTurtleOntologyStorerFactory testSubject0 = new RioTurtleOntologyStorerFactory();
-        OWLOntologyStorer result0 = testSubject0.get();
+        RioTurtleStorerFactory testSubject0 = new RioTurtleStorerFactory();
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -444,14 +440,14 @@ public class Gen_org_semanticweb_owlapi_rio {
 
     public void verifyRioTurtleParserFactory() {
         RioTurtleParserFactory testSubject0 = new RioTurtleParserFactory();
-        org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory result0 = testSubject0.getRioFormatFactory();
+        org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory result0 = testSubject0.getRioFormatFactory();
         java.lang.Object result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result3 = testSubject0.createParser();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
         boolean result6 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result7 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result7 = testSubject0.getSupportedFormat();
     }
 
     private boolean _boolean;
@@ -466,15 +462,15 @@ public class Gen_org_semanticweb_owlapi_rio {
     private org.openrdf.model.Statement _Statement;
     private org.openrdf.repository.RepositoryResult<org.openrdf.model.Namespace> _RepositoryResult;
     private org.openrdf.rio.RDFHandler _RDFHandler;
-    private org.semanticweb.owlapi.formats.RDFOntologyFormat _RDFOntologyFormat;
-    private org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory _RioRDFOntologyFormatFactory;
+    private org.semanticweb.owlapi.formats.AbstractRDFDocumentFormat _RDFOntologyFormat;
+    private org.semanticweb.owlapi.formats.RioRDFDocumentFormatFactory _RioRDFOntologyFormatFactory;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentSource _OWLOntologyDocumentSource;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentTarget _OWLOntologyDocumentTarget;
     private org.semanticweb.owlapi.io.RDFResource _RDFResource;
     private EntityType<OWLEntity> _EntityType;
     private IRI _IRI;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
     private org.semanticweb.owlapi.util.AnonymousNodeChecker _AnonymousNodeChecker;
 }

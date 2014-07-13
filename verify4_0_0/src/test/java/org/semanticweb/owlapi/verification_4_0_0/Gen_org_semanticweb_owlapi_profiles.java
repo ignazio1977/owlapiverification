@@ -58,7 +58,7 @@ public class Gen_org_semanticweb_owlapi_profiles {
         java.util.Set<OWLObjectPropertyExpression> result0 = testSubject0.getNonSimpleRoles();
         java.util.Set<OWLObjectPropertyExpression> result1 = testSubject0.getSimpleRoles();
         boolean result2 = testSubject0.isInProfile();
-        java.util.List<org.semanticweb.owlapi.profiles.OWLProfileViolation<?>> result3 = testSubject0.getViolations();
+        java.util.List<org.semanticweb.owlapi.profiles.OWLProfileViolation> result3 = testSubject0.getViolations();
         org.semanticweb.owlapi.profiles.OWLProfile result4 = testSubject0.getProfile();
     }
 
@@ -124,12 +124,12 @@ public class Gen_org_semanticweb_owlapi_profiles {
     public void verifyOWLProfileReport() {
         OWLProfileReport testSubject0 = new OWLProfileReport(_OWLProfile, _Set);
         boolean result0 = testSubject0.isInProfile();
-        java.util.List<org.semanticweb.owlapi.profiles.OWLProfileViolation<?>> result1 = testSubject0.getViolations();
+        java.util.List<org.semanticweb.owlapi.profiles.OWLProfileViolation> result1 = testSubject0.getViolations();
         org.semanticweb.owlapi.profiles.OWLProfile result2 = testSubject0.getProfile();
     }
 
     public void verifyOWLProfileViolation() {
-        OWLProfileViolation<OWLObject> testSubject0 = mock(OWLProfileViolation.class);
+        OWLProfileViolation testSubject0 = mock(OWLProfileViolation.class);
         OWLObject result0 = testSubject0.accept(_OWLProfileViolationVisitorEx);
         testSubject0.accept(_OWLProfileViolationVisitor);
         java.lang.Object result1 = testSubject0.getExpression();
@@ -375,7 +375,7 @@ public class Gen_org_semanticweb_owlapi_profiles {
     private java.lang.String _String;
     private java.util.Set<OWLObjectPropertyExpression> _Set3;
     private java.util.Set<OWLOntology> _Set5;
-    private java.util.Set<org.semanticweb.owlapi.profiles.OWLProfileViolation<?>> _Set;
+    private java.util.Set<org.semanticweb.owlapi.profiles.OWLProfileViolation> _Set;
     private IRI _IRI;
     private OWLAnnotation _OWLAnnotation;
     private OWLAxiom _OWLAxiom;

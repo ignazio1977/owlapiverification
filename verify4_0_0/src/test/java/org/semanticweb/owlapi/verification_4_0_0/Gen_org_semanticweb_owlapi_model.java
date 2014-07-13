@@ -6163,16 +6163,16 @@ public class Gen_org_semanticweb_owlapi_model {
 
     @Test
     public void enforceInterfacesOWLOntologyFormat() {
-        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLOntologyFormat.class));
+        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLDocumentFormat.class));
     }
 
     public void verifyOWLOntologyFormat() {
-        OWLOntologyFormat testSubject0 = mock(OWLOntologyFormat.class);
+        OWLDocumentFormat testSubject0 = mock(OWLDocumentFormat.class);
         java.lang.String result0 = testSubject0.getKey();
         testSubject0.setParameter(_Object, _Object);
         java.lang.Object result1 = testSubject0.getParameter(_Object, _Object);
         boolean result2 = testSubject0.isPrefixOWLOntologyFormat();
-        org.semanticweb.owlapi.formats.PrefixOWLOntologyFormat result3 = testSubject0.asPrefixOWLOntologyFormat();
+        org.semanticweb.owlapi.formats.PrefixDocumentFormat result3 = testSubject0.asPrefixOWLOntologyFormat();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result4 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
         boolean result5 = testSubject0.isTextual();
@@ -6180,16 +6180,16 @@ public class Gen_org_semanticweb_owlapi_model {
 
     @Test
     public void enforceInterfacesOWLOntologyFormatFactory() {
-        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLOntologyFormatFactory.class));
-        assertTrue(javax.inject.Provider.class.isAssignableFrom(OWLOntologyFormatFactory.class));
-        assertTrue(MIMETypeAware.class.isAssignableFrom(OWLOntologyFormatFactory.class));
+        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLDocumentFormatFactory.class));
+        assertTrue(javax.inject.Provider.class.isAssignableFrom(OWLDocumentFormatFactory.class));
+        assertTrue(MIMETypeAware.class.isAssignableFrom(OWLDocumentFormatFactory.class));
     }
 
     public void verifyInterfaceOWLOntologyFormatFactory() {
-        OWLOntologyFormatFactory testSubject0 = mock(OWLOntologyFormatFactory.class);
+        OWLDocumentFormatFactory testSubject0 = mock(OWLDocumentFormatFactory.class);
         java.lang.String result0 = testSubject0.getKey();
         boolean result1 = testSubject0.isTextual();
-        OWLOntologyFormat result2 = testSubject0.createFormat();
+        OWLDocumentFormat result2 = testSubject0.createFormat();
         java.lang.Object result3 = testSubject0.get();
         java.lang.String result4 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result5 = testSubject0.getMIMETypes();
@@ -6298,10 +6298,10 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.List<OWLOntology> result10 = testSubject0.getSortedImportsClosure(_OWLOntology);
         java.util.List<OWLOntologyChange> result11 = testSubject0.applyChanges(_List);
         java.util.List<OWLOntologyChange> result12 = testSubject0.addAxioms(_OWLOntology, _Set12);
-        java.util.List<OWLOntologyChange> result13 = testSubject0.addAxiom(_OWLOntology, _OWLAxiom);
+        ChangeApplied result13 = testSubject0.addAxiom(_OWLOntology, _OWLAxiom);
         java.util.List<OWLOntologyChange> result14 = testSubject0.removeAxiom(_OWLOntology, _OWLAxiom);
         java.util.List<OWLOntologyChange> result15 = testSubject0.removeAxioms(_OWLOntology, _Set12);
-        java.util.List<OWLOntologyChange> result16 = testSubject0.applyChange(_OWLOntologyChange);
+        ChangeApplied result16 = testSubject0.applyChange(_OWLOntologyChange);
         OWLOntology result17 = testSubject0.createOntology(_Set, _IRI);
         OWLOntology result18 = testSubject0.createOntology(_IRI, _Set199, _boolean);
         OWLOntology result19 = testSubject0.createOntology(_OWLOntologyID);
@@ -6319,7 +6319,7 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.removeOntology(_OWLOntology);
         IRI result30 = testSubject0.getOntologyDocumentIRI(_OWLOntology);
         testSubject0.setOntologyDocumentIRI(_OWLOntology, _IRI);
-        OWLOntologyFormat result31 = testSubject0.getOntologyFormat(_OWLOntology);
+        OWLDocumentFormat result31 = testSubject0.getOntologyFormat(_OWLOntology);
         testSubject0.setOntologyFormat(_OWLOntology, _OWLOntologyFormat);
         testSubject0.saveOntology(_OWLOntology);
         testSubject0.saveOntology(_OWLOntology, _IRI);
@@ -6332,11 +6332,11 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.setIRIMappers(_Set204);
         org.semanticweb.owlapi.util.PriorityCollection<OWLOntologyIRIMapper> result32 = testSubject0.getIRIMappers();
         testSubject0.setOntologyParsers(_Set205);
-        org.semanticweb.owlapi.util.PriorityCollection<org.semanticweb.owlapi.io.OWLParser> result33 = testSubject0.getOntologyParsers();
+        org.semanticweb.owlapi.util.PriorityCollection<org.semanticweb.owlapi.io.OWLParserFactory> result33 = testSubject0.getOntologyParsers();
         testSubject0.setOntologyFactories(_Set206);
         org.semanticweb.owlapi.util.PriorityCollection<OWLOntologyFactory> result34 = testSubject0.getOntologyFactories();
         testSubject0.setOntologyStorers(_Set207);
-        org.semanticweb.owlapi.util.PriorityCollection<OWLOntologyStorer> result35 = testSubject0.getOntologyStorers();
+        org.semanticweb.owlapi.util.PriorityCollection<OWLStorerFactory> result35 = testSubject0.getOntologyStorers();
         testSubject0.addOntologyChangeListener(_OWLOntologyChangeListener, _OWLOntologyChangeBroadcastStrategy);
         testSubject0.addOntologyChangeListener(_OWLOntologyChangeListener);
         testSubject0.addImpendingOntologyChangeListener(_ImpendingOWLOntologyChangeListener);
@@ -6440,11 +6440,11 @@ public class Gen_org_semanticweb_owlapi_model {
 
     @Test
     public void enforceInterfacesOWLOntologyStorer() {
-        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLOntologyStorer.class));
+        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLStorer.class));
     }
 
     public void verifyInterfaceOWLOntologyStorer() throws OWLOntologyStorageException, IOException {
-        OWLOntologyStorer testSubject0 = mock(OWLOntologyStorer.class);
+        OWLStorer testSubject0 = mock(OWLStorer.class);
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
@@ -6452,24 +6452,24 @@ public class Gen_org_semanticweb_owlapi_model {
 
     @Test
     public void enforceInterfacesOWLOntologyStorerFactory() {
-        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLOntologyStorerFactory.class));
-        assertTrue(javax.inject.Provider.class.isAssignableFrom(OWLOntologyStorerFactory.class));
+        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLStorerFactory.class));
+        assertTrue(javax.inject.Provider.class.isAssignableFrom(OWLStorerFactory.class));
     }
 
     public void verifyInterfaceOWLOntologyStorerFactory() {
-        OWLOntologyStorerFactory testSubject0 = mock(OWLOntologyStorerFactory.class);
-        OWLOntologyStorer result0 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result1 = testSubject0.getFormatFactory();
+        OWLStorerFactory testSubject0 = mock(OWLStorerFactory.class);
+        OWLStorer result0 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result1 = testSubject0.getFormatFactory();
         java.lang.Object result2 = testSubject0.get();
     }
 
     @Test
     public void enforceInterfacesOWLOntologyStorerNotFoundException() {
-        assertTrue(OWLOntologyStorageException.class.isAssignableFrom(OWLOntologyStorerNotFoundException.class));
+        assertTrue(OWLOntologyStorageException.class.isAssignableFrom(OWLStorerNotFoundException.class));
     }
 
     public void verifyOWLOntologyStorerNotFoundException() {
-        OWLOntologyStorerNotFoundException testSubject0 = new OWLOntologyStorerNotFoundException(_OWLOntologyFormat);
+        OWLStorerNotFoundException testSubject0 = new OWLStorerNotFoundException(_OWLOntologyFormat);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -8332,7 +8332,7 @@ public class Gen_org_semanticweb_owlapi_model {
     private java.util.Set<? extends OWLObjectPropertyExpression> _Set148;
     private java.util.Set<? extends OWLPropertyExpression> _Set152;
     private java.util.Set<? extends SWRLAtom> _Set155;
-    private java.util.Set<org.semanticweb.owlapi.io.OWLParser> _Set205;
+    private java.util.Set<org.semanticweb.owlapi.io.OWLParserFactory> _Set205;
     private java.util.Set<AxiomType<?>> _Set43;
     private java.util.Set<OWLAnnotation> _Set39;
     private java.util.Set<OWLAxiom> _Set;
@@ -8340,7 +8340,7 @@ public class Gen_org_semanticweb_owlapi_model {
     private java.util.Set<OWLOntology> _Set199;
     private java.util.Set<OWLOntologyFactory> _Set206;
     private java.util.Set<OWLOntologyIRIMapper> _Set204;
-    private java.util.Set<OWLOntologyStorer> _Set207;
+    private java.util.Set<OWLStorerFactory> _Set207;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentSource _OWLOntologyDocumentSource;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentTarget _OWLOntologyDocumentTarget;
     private org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData _OWLOntologyLoaderMetaData;
@@ -8472,7 +8472,7 @@ public class Gen_org_semanticweb_owlapi_model {
     private OWLOntologyChangesVetoedListener _OWLOntologyChangesVetoedListener;
     private OWLOntologyCreationException _OWLOntologyCreationException;
     private OWLOntologyFactory.OWLOntologyCreationHandler _OWLOntologyCreationHandler;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntologyID _OWLOntologyID;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
     private MissingOntologyHeaderStrategy _MissingOntologyHeaderStrategy;

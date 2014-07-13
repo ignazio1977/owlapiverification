@@ -19,11 +19,11 @@ import org.xml.sax.SAXException;
 public class Gen_org_semanticweb_owlapi_util {
     @Test
     public void enforceInterfacesAbstractOWLOntologyStorer() {
-        assertTrue(OWLOntologyStorer.class.isAssignableFrom(AbstractOWLOntologyStorer.class));
+        assertTrue(OWLStorer.class.isAssignableFrom(AbstractOWLStorer.class));
     }
 
     public void verifyAbstractOWLOntologyStorer() throws OWLOntologyStorageException {
-        AbstractOWLOntologyStorer testSubject0 = mock(AbstractOWLOntologyStorer.class);
+        AbstractOWLStorer testSubject0 = mock(AbstractOWLStorer.class);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
@@ -802,7 +802,6 @@ public class Gen_org_semanticweb_owlapi_util {
     @Test
     public void enforceInterfacesOWLAxiomVisitorExAdapter() {
         assertTrue(OWLAxiomVisitorEx.class.isAssignableFrom(OWLAxiomVisitorExAdapter.class));
-        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLAxiomVisitorExAdapter.class));
     }
 
     public void verifyOWLAxiomVisitorExAdapter() {
@@ -960,7 +959,6 @@ public class Gen_org_semanticweb_owlapi_util {
     public void enforceInterfacesOWLEntityComparator() {
         assertTrue(java.util.Comparator.class.isAssignableFrom(OWLEntityComparator.class));
         assertTrue(OWLEntityVisitor.class.isAssignableFrom(OWLEntityComparator.class));
-        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLEntityComparator.class));
     }
 
     public void verifyOWLEntityComparator() {
@@ -1181,16 +1179,16 @@ public class Gen_org_semanticweb_owlapi_util {
 
     @Test
     public void enforceInterfacesOWLOntologyFormatFactoryImpl() {
-        assertTrue(OWLOntologyFormatFactory.class.isAssignableFrom(OWLOntologyFormatFactoryImpl.class));
+        assertTrue(OWLDocumentFormatFactory.class.isAssignableFrom(OWLDocumentFormatFactoryImpl.class));
     }
 
     public void verifyOWLOntologyFormatFactoryImpl() {
-        OWLOntologyFormatFactoryImpl<OWLOntologyFormat> testSubject0 = new OWLOntologyFormatFactoryImpl<OWLOntologyFormat>(OWLOntologyFormat.class);
-        OWLOntologyFormat result0 = testSubject0.get();
+        OWLDocumentFormatFactoryImpl testSubject0 = mock(OWLDocumentFormatFactoryImpl.class);
+        OWLDocumentFormat result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
         java.lang.String result2 = testSubject0.getKey();
         boolean result3 = testSubject0.isTextual();
-        OWLOntologyFormat result4 = testSubject0.createFormat();
+        OWLDocumentFormat result4 = testSubject0.createFormat();
         java.lang.String result5 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result6 = testSubject0.getMIMETypes();
         boolean result7 = testSubject0.handlesMimeType(_String);
@@ -1236,15 +1234,15 @@ public class Gen_org_semanticweb_owlapi_util {
 
     @Test
     public void enforceInterfacesOWLOntologyStorerFactoryImpl() {
-        assertTrue(OWLOntologyStorerFactory.class.isAssignableFrom(OWLOntologyStorerFactoryImpl.class));
+        assertTrue(OWLStorerFactory.class.isAssignableFrom(OWLStorerFactoryImpl.class));
     }
 
     public void verifyOWLOntologyStorerFactoryImpl() {
-        OWLOntologyStorerFactoryImpl<OWLOntologyStorer> testSubject0 = new OWLOntologyStorerFactoryImpl<OWLOntologyStorer>(OWLOntologyStorer.class);
-        OWLOntologyStorer result0 = testSubject0.get();
+        OWLStorerFactoryImpl testSubject0 = mock(OWLStorerFactoryImpl.class);
+        OWLStorer result0 = testSubject0.get();
         java.lang.Object result1 = testSubject0.get();
-        OWLOntologyStorer result2 = testSubject0.createStorer();
-        OWLOntologyFormatFactory result3 = testSubject0.getFormatFactory();
+        OWLStorer result2 = testSubject0.createStorer();
+        OWLDocumentFormatFactory result3 = testSubject0.getFormatFactory();
     }
 
     @Test
@@ -1623,7 +1621,7 @@ public class Gen_org_semanticweb_owlapi_util {
     private OWLObjectVisitorEx<?> _OWLObjectVisitorEx136;
     private OWLObjectVisitorEx<OWLObject> _OWLObjectVisitorEx;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntologyManager _OWLOntologyManager;
     private OWLOntologySetProvider _OWLOntologySetProvider;
     private OWLReflexiveObjectPropertyAxiom _OWLReflexiveObjectPropertyAxiom;

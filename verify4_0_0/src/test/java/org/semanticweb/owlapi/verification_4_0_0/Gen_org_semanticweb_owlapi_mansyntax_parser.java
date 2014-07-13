@@ -158,7 +158,7 @@ public class Gen_org_semanticweb_owlapi_mansyntax_parser {
         java.util.Set<org.semanticweb.owlapi.util.OntologyAxiomPair> result4 = testSubject0.parseClassFrameEOF();
         OWLLiteral result5 = testSubject0.parseLiteral(_OWLDatatype);
         testSubject0.setOWLOntologyChecker(_OWLOntologyChecker);
-        org.semanticweb.owlapi.formats.ManchesterOWLSyntaxOntologyFormat result6 = testSubject0.parseOntology(_OWLOntology);
+        org.semanticweb.owlapi.formats.ManchesterSyntaxDocumentFormat result6 = testSubject0.parseOntology(_OWLOntology);
         java.util.Set<OWLClassExpression> result7 = testSubject0.parseClassExpressionList();
         java.util.Set<OWLObjectPropertyExpression> result8 = testSubject0.parseObjectPropertyList();
         OWLDataRange result9 = testSubject0.parseDataRange();
@@ -208,10 +208,9 @@ public class Gen_org_semanticweb_owlapi_mansyntax_parser {
     public void verifyManchesterOWLSyntaxOntologyParser() throws OWLOntologyChangeException, UnloadableImportException, IOException {
         ManchesterOWLSyntaxOntologyParser testSubject0 = new ManchesterOWLSyntaxOntologyParser();
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
-        java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
-        java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();
+        OWLDocumentFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormatFactory result4 = testSubject0.getSupportedFormat();
     }
 
     @Test

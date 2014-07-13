@@ -21,10 +21,9 @@ public class Gen_org_semanticweb_owlapi_krss2_parser {
     public void verifyKRSS2OWLParser() throws UnloadableImportException, IOException {
         KRSS2OWLParser testSubject0 = new KRSS2OWLParser();
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
-        java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
-        java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();
+        OWLDocumentFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormatFactory result4 = testSubject0.getSupportedFormat();
     }
 
     private org.semanticweb.owlapi.io.OWLOntologyDocumentSource _OWLOntologyDocumentSource;

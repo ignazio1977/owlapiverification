@@ -25,10 +25,9 @@ public class Gen_org_semanticweb_owlapi_io {
     public void verifyAbstractOWLParser() throws OWLParserException, UnloadableImportException, IOException {
         AbstractOWLParser testSubject0 = mock(AbstractOWLParser.class);
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result1 = testSubject0.parse(_IRI, _OWLOntology);
-        java.util.Set<java.lang.Class<OWLOntologyFormat>> result2 = testSubject0.getSupportedFormatClasses();
-        java.util.Set<OWLOntologyFormatFactory> result3 = testSubject0.getSupportedFormats();
-        OWLOntologyFormat result4 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result1 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormatFactory result2 = testSubject0.getSupportedFormat();
+        OWLDocumentFormat result4 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
     }
 
     @Test
@@ -56,7 +55,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result2 = testSubject0.getReader();
         boolean result3 = testSubject0.isInputStreamAvailable();
         IRI result4 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result5 = testSubject0.getFormat();
+        OWLDocumentFormat result5 = testSubject0.getFormat();
         boolean result6 = testSubject0.isFormatKnown();
         java.lang.String result7 = testSubject0.getMIMEType();
         boolean result8 = testSubject0.isMIMETypeKnown();
@@ -90,7 +89,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result3 = testSubject0.getReader();
         boolean result4 = testSubject0.isInputStreamAvailable();
         IRI result5 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result6 = testSubject0.getFormat();
+        OWLDocumentFormat result6 = testSubject0.getFormat();
         boolean result7 = testSubject0.isFormatKnown();
         java.lang.String result8 = testSubject0.getMIMEType();
         boolean result9 = testSubject0.isMIMETypeKnown();
@@ -124,7 +123,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result3 = testSubject0.getReader();
         boolean result4 = testSubject0.isInputStreamAvailable();
         IRI result5 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result6 = testSubject0.getFormat();
+        OWLDocumentFormat result6 = testSubject0.getFormat();
         boolean result7 = testSubject0.isFormatKnown();
         java.lang.String result8 = testSubject0.getMIMEType();
         boolean result9 = testSubject0.isMIMETypeKnown();
@@ -157,7 +156,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result2 = testSubject0.getReader();
         boolean result3 = testSubject0.isInputStreamAvailable();
         IRI result4 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result5 = testSubject0.getFormat();
+        OWLDocumentFormat result5 = testSubject0.getFormat();
         boolean result6 = testSubject0.isFormatKnown();
         java.lang.String result7 = testSubject0.getMIMEType();
         boolean result8 = testSubject0.isMIMETypeKnown();
@@ -219,7 +218,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result2 = testSubject0.getReader();
         boolean result3 = testSubject0.isInputStreamAvailable();
         IRI result4 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result5 = testSubject0.getFormat();
+        OWLDocumentFormat result5 = testSubject0.getFormat();
         boolean result6 = testSubject0.isFormatKnown();
         java.lang.String result7 = testSubject0.getMIMEType();
         boolean result8 = testSubject0.isMIMETypeKnown();
@@ -232,7 +231,7 @@ public class Gen_org_semanticweb_owlapi_io {
 
     public void verifyOWLOntologyDocumentSourceBase() {
         OWLOntologyDocumentSourceBase testSubject0 = mock(OWLOntologyDocumentSourceBase.class);
-        OWLOntologyFormat result0 = testSubject0.getFormat();
+        OWLDocumentFormat result0 = testSubject0.getFormat();
         boolean result1 = testSubject0.isFormatKnown();
         java.lang.String result2 = testSubject0.getMIMEType();
         boolean result3 = testSubject0.isMIMETypeKnown();
@@ -307,10 +306,9 @@ public class Gen_org_semanticweb_owlapi_io {
     public void verifyInterfaceOWLParser() throws OWLParserException, OWLOntologyChangeException, UnloadableImportException, IOException {
         OWLParser testSubject0 = mock(OWLParser.class);
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result1 = testSubject0.parse(_IRI, _OWLOntology);
-        OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
-        java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();
+        OWLDocumentFormat result1 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormatFactory result4 = testSubject0.getSupportedFormat();
     }
 
     @Test
@@ -352,7 +350,7 @@ public class Gen_org_semanticweb_owlapi_io {
     public void verifyInterfaceOWLParserFactory() {
         OWLParserFactory testSubject0 = mock(OWLParserFactory.class);
         org.semanticweb.owlapi.io.OWLParser result0 = testSubject0.createParser();
-        java.util.Set<OWLOntologyFormatFactory> result1 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result1 = testSubject0.getSupportedFormat();
         java.lang.Object result2 = testSubject0.get();
         java.lang.String result3 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result4 = testSubject0.getMIMETypes();
@@ -365,14 +363,14 @@ public class Gen_org_semanticweb_owlapi_io {
     }
 
     public void verifyOWLParserFactoryImpl() {
-        OWLParserFactoryImpl<OWLParser> testSubject0 = new OWLParserFactoryImpl<OWLParser>(OWLParser.class);
+        OWLParserFactoryImpl testSubject0 = mock(OWLParserFactoryImpl.class);
         java.lang.Object result0 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result1 = testSubject0.get();
         org.semanticweb.owlapi.io.OWLParser result2 = testSubject0.createParser();
         java.lang.String result3 = testSubject0.getDefaultMIMEType();
         java.util.List<java.lang.String> result4 = testSubject0.getMIMETypes();
         boolean result5 = testSubject0.handlesMimeType(_String);
-        java.util.Set<OWLOntologyFormatFactory> result6 = testSubject0.getSupportedFormats();
+        OWLDocumentFormatFactory result6 = testSubject0.getSupportedFormat();
     }
 
     public void verifyInterfaceOWLRenderer() throws OWLException {
@@ -561,7 +559,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result2 = testSubject0.getReader();
         boolean result3 = testSubject0.isInputStreamAvailable();
         IRI result4 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result5 = testSubject0.getFormat();
+        OWLDocumentFormat result5 = testSubject0.getFormat();
         boolean result6 = testSubject0.isFormatKnown();
         java.lang.String result7 = testSubject0.getMIMEType();
         boolean result8 = testSubject0.isMIMETypeKnown();
@@ -580,7 +578,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result2 = testSubject0.getReader();
         boolean result3 = testSubject0.isInputStreamAvailable();
         IRI result4 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result5 = testSubject0.getFormat();
+        OWLDocumentFormat result5 = testSubject0.getFormat();
         boolean result6 = testSubject0.isFormatKnown();
         java.lang.String result7 = testSubject0.getMIMEType();
         boolean result8 = testSubject0.isMIMETypeKnown();
@@ -598,7 +596,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result2 = testSubject0.getReader();
         boolean result3 = testSubject0.isInputStreamAvailable();
         IRI result4 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result5 = testSubject0.getFormat();
+        OWLDocumentFormat result5 = testSubject0.getFormat();
         boolean result6 = testSubject0.isFormatKnown();
         java.lang.String result7 = testSubject0.getMIMEType();
         boolean result8 = testSubject0.isMIMETypeKnown();
@@ -633,7 +631,7 @@ public class Gen_org_semanticweb_owlapi_io {
         java.io.Reader result3 = testSubject0.getReader();
         boolean result4 = testSubject0.isInputStreamAvailable();
         IRI result5 = testSubject0.getDocumentIRI();
-        OWLOntologyFormat result6 = testSubject0.getFormat();
+        OWLDocumentFormat result6 = testSubject0.getFormat();
         boolean result7 = testSubject0.isFormatKnown();
         java.lang.String result8 = testSubject0.getMIMEType();
         boolean result9 = testSubject0.isMIMETypeKnown();
@@ -774,7 +772,7 @@ public class Gen_org_semanticweb_owlapi_io {
     private OWLLiteral _OWLLiteral;
     private OWLObject _OWLObject;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
     private org.semanticweb.owlapi.util.ShortFormProvider _ShortFormProvider;
 }

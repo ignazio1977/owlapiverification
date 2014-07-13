@@ -3,6 +3,7 @@ package org.semanticweb.owlapi.verification_4_0_0;
 import static org.mockito.Mockito.mock;
 
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.search.EntitySearcher;
 import org.semanticweb.owlapi.search.Searcher;
 
 @SuppressWarnings({ "javadoc", "unused", "null" })
@@ -18,7 +19,7 @@ public class Gen_org_semanticweb_owlapi_search {
         java.util.Collection<OWLObject> result7 = Searcher.domain(_Collection, _Class);
         OWLObject result8 = Searcher.domain(_OWLAxiom);
         java.util.Collection<OWLObject> result9 = Searcher.domain(_Collection);
-        boolean result10 = Searcher.isDefined(_OWLOntology, _OWLClass);
+        boolean result10 = EntitySearcher.isDefined(_OWLClass, _OWLOntology);
         java.util.Collection<OWLObjectPropertyExpression> result11 = Searcher.inverse(_Collection51, mock(OWLObjectPropertyExpression.class));
         java.util.Collection<OWLObject> result12 = Searcher.sub(_Collection);
         OWLObject result13 = Searcher.sub(_OWLAxiom);
@@ -32,14 +33,14 @@ public class Gen_org_semanticweb_owlapi_search {
         java.util.Collection<OWLObject> result21 = Searcher.different(_Collection);
         java.util.Collection<OWLObject> result22 = Searcher.different(_Collection, _Class);
         java.util.Set<OWLObject> result23 = Searcher.different(_OWLAxiom);
-        boolean result24 = Searcher.isTransitive(_OWLOntology, _OWLObjectProperty);
-        boolean result25 = Searcher.isSymmetric(_OWLOntology, _OWLObjectProperty);
-        boolean result26 = Searcher.isAsymmetric(_OWLOntology, _OWLObjectProperty);
-        boolean result27 = Searcher.isReflexive(_OWLOntology, _OWLObjectProperty);
-        boolean result28 = Searcher.isIrreflexive(_OWLOntology, _OWLObjectProperty);
-        boolean result29 = Searcher.isInverseFunctional(_OWLOntology, _OWLObjectProperty);
-        boolean result30 = Searcher.isFunctional(_OWLOntology, _OWLObjectProperty);
-        boolean result31 = Searcher.isFunctional(_OWLOntology, _OWLDataProperty);
+        boolean result24 = EntitySearcher.isTransitive(_OWLObjectProperty, _OWLOntology);
+        boolean result25 = EntitySearcher.isSymmetric(_OWLObjectProperty, _OWLOntology);
+        boolean result26 = EntitySearcher.isAsymmetric(_OWLObjectProperty, _OWLOntology);
+        boolean result27 = EntitySearcher.isReflexive(_OWLObjectProperty, _OWLOntology);
+        boolean result28 = EntitySearcher.isIrreflexive(_OWLObjectProperty, _OWLOntology);
+        boolean result29 = EntitySearcher.isInverseFunctional(_OWLObjectProperty, _OWLOntology);
+        boolean result30 = EntitySearcher.isFunctional(_OWLObjectProperty, _OWLOntology);
+        boolean result31 = EntitySearcher.isFunctional(_OWLDataProperty, _OWLOntology);
         java.util.Collection<OWLObject> result32 = Searcher.sup(_Collection, _Class);
         OWLObject result33 = Searcher.sup(_OWLAxiom);
         java.util.Collection<OWLObject> result34 = Searcher.sup(_Collection);

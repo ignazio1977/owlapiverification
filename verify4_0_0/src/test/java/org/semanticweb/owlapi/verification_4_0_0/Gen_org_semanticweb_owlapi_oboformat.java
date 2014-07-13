@@ -26,10 +26,9 @@ public class Gen_org_semanticweb_owlapi_oboformat {
     public void verifyOBOFormatOWLAPIParser() throws OWLParserException, OWLOntologyChangeException, UnloadableImportException, IOException {
         OBOFormatOWLAPIParser testSubject0 = new OBOFormatOWLAPIParser();
         java.lang.String result0 = testSubject0.getName();
-        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
-        java.util.Set<java.lang.Class<OWLOntologyFormat>> result4 = testSubject0.getSupportedFormatClasses();
-        java.util.Set<OWLOntologyFormatFactory> result5 = testSubject0.getSupportedFormats();
+        OWLDocumentFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result3 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormatFactory result4 = testSubject0.getSupportedFormat();
     }
 
     @Test
@@ -45,7 +44,7 @@ public class Gen_org_semanticweb_owlapi_oboformat {
 
     @Test
     public void enforceInterfacesOBOFormatStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(OBOFormatStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(OBOFormatStorer.class));
     }
 
     public void verifyOBOFormatStorer() throws OWLOntologyStorageException {
@@ -72,6 +71,6 @@ public class Gen_org_semanticweb_owlapi_oboformat {
     private org.semanticweb.owlapi.io.OWLOntologyDocumentTarget _OWLOntologyDocumentTarget;
     private IRI _IRI;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
 }
