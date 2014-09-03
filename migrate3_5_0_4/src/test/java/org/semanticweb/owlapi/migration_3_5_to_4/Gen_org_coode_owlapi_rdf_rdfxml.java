@@ -43,11 +43,11 @@ public class Gen_org_coode_owlapi_rdf_rdfxml {
 
     @Test
     public void enforceInterfacesRDFXMLOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(RDFXMLOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(RDFXMLStorer.class));
     }
 
     public void verifyRDFXMLOntologyStorer() throws OWLOntologyStorageException {
-        RDFXMLOntologyStorer testSubject0 = new RDFXMLOntologyStorer();
+        RDFXMLStorer testSubject0 = new RDFXMLStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -92,5 +92,5 @@ public class Gen_org_coode_owlapi_rdf_rdfxml {
     private IRI _IRI;
     private OWLObject _OWLObject;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
 }

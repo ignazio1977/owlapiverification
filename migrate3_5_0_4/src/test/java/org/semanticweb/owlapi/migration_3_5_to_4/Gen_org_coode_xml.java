@@ -141,5 +141,5 @@ public class Gen_org_coode_xml {
     private Throwable _Throwable;
     private XMLWriterNamespaceManager _XMLWriterNamespaceManager;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
 }

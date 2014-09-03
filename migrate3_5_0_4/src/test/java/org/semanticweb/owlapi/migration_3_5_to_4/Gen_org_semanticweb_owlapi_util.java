@@ -32,18 +32,18 @@ import org.xml.sax.SAXException;
 public class Gen_org_semanticweb_owlapi_util {
     @Test
     public void enforceInterfacesAbstractOWLOntologyStorer() {
-        assertTrue(OWLOntologyStorer.class.isAssignableFrom(AbstractOWLOntologyStorer.class));
+        assertTrue(OWLStorer.class.isAssignableFrom(AbstractOWLStorer.class));
     }
 
     public void verifyAbstractOWLOntologyStorer() throws OWLOntologyStorageException {
-        AbstractOWLOntologyStorer testSubject0 = new AbstractOWLOntologyStorer() {
+        AbstractOWLStorer testSubject0 = new AbstractOWLStorer() {
             @Override
-            public boolean canStoreOntology(OWLOntologyFormat ontologyFormat) {
+            public boolean canStoreOntology(OWLDocumentFormat ontologyFormat) {
                 return false;
             }
 
             @Override
-            protected void storeOntology(OWLOntology ontology, Writer writer, OWLOntologyFormat format) throws OWLOntologyStorageException {
+            protected void storeOntology(OWLOntology ontology, Writer writer, OWLDocumentFormat format) throws OWLOntologyStorageException {
             }
         };
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
@@ -1185,7 +1185,7 @@ public class Gen_org_semanticweb_owlapi_util {
     private OWLObjectVisitorEx<?> _OWLObjectVisitorEx132;
     private OWLObjectVisitorEx<OWLObject> _OWLObjectVisitorEx;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntologyManager _OWLOntologyManager;
     private OWLOntologySetProvider _OWLOntologySetProvider;
     private PrefixManager _PrefixManager;

@@ -4778,7 +4778,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         testSubject0.removeOntology(_OWLOntologyID);
         IRI result37 = testSubject0.getOntologyDocumentIRI(_OWLOntology);
         testSubject0.setOntologyDocumentIRI(_OWLOntology, _IRI);
-        OWLOntologyFormat result38 = testSubject0.getOntologyFormat(_OWLOntology);
+        OWLDocumentFormat result38 = testSubject0.getOntologyFormat(_OWLOntology);
         testSubject0.setOntologyFormat(_OWLOntology, _OWLOntologyFormat);
         testSubject0.saveOntology(_OWLOntology, _OutputStream);
         testSubject0.saveOntology(_OWLOntology, _IRI);
@@ -6395,13 +6395,13 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     private OWLOntologyChangesVetoedListener _OWLOntologyChangesVetoedListener;
     private OWLOntologyFactory _OWLOntologyFactory;
     private OWLOntologyFactory.OWLOntologyCreationHandler _OWLOntologyCreationHandler;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntologyID _OWLOntologyID;
     private OWLOntologyIRIMapper _OWLOntologyIRIMapper;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
     private OWLOntologyLoaderListener _OWLOntologyLoaderListener;
     private OWLOntologyManager _OWLOntologyManager;
-    private OWLOntologyStorer _OWLOntologyStorer;
+    private OWLStorer _OWLOntologyStorer;
     private OWLPropertyExpression[] _OWLPropertyExpression_array;
     private OWLPropertyExpressionVisitor _OWLPropertyExpressionVisitor;
     private OWLPropertyExpressionVisitorEx<OWLObject> _OWLPropertyExpressionVisitorEx;

@@ -5,9 +5,9 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.obolibrary.owl.LabelFunctionalSyntaxOntologyStorer;
-import org.semanticweb.owlapi.formats.LabelFunctionalFormat;
-import org.semanticweb.owlapi.formats.PrefixOWLOntologyFormat;
+import org.obolibrary.owl.LabelFunctionalSyntaxStorer;
+import org.semanticweb.owlapi.formats.LabelFunctionalDocumentFormat;
+import org.semanticweb.owlapi.formats.PrefixDocumentFormat;
 import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "null", "unused" })
@@ -15,24 +15,24 @@ import org.semanticweb.owlapi.model.*;
 public class Gen_org_obolibrary_owl {
     @Test
     public void enforceInterfacesLabelFunctionalFormat() {
-        assertTrue(OWLOntologyFormat.class.isAssignableFrom(LabelFunctionalFormat.class));
+        assertTrue(OWLDocumentFormat.class.isAssignableFrom(LabelFunctionalDocumentFormat.class));
     }
 
     public void verifyLabelFunctionalFormat() {
-        LabelFunctionalFormat testSubject0 = new LabelFunctionalFormat();
+        LabelFunctionalDocumentFormat testSubject0 = new LabelFunctionalDocumentFormat();
         boolean result1 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
     @Test
     public void enforceInterfacesLabelFunctionalSyntaxOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(LabelFunctionalSyntaxOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(LabelFunctionalSyntaxStorer.class));
     }
 
     public void verifyLabelFunctionalSyntaxOntologyStorer() throws OWLOntologyStorageException {
-        LabelFunctionalSyntaxOntologyStorer testSubject0 = new LabelFunctionalSyntaxOntologyStorer();
+        LabelFunctionalSyntaxStorer testSubject0 = new LabelFunctionalSyntaxStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -42,5 +42,5 @@ public class Gen_org_obolibrary_owl {
     private org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData _OWLOntologyLoaderMetaData;
     private IRI _IRI;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
 }

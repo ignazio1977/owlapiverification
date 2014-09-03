@@ -10,9 +10,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.formats.*;
-import org.semanticweb.owlapi.formats.OWLFunctionalSyntaxOntologyFormat;
-import org.semanticweb.owlapi.formats.OWLXMLOntologyFormat;
-import org.semanticweb.owlapi.formats.RDFXMLOntologyFormat;
+import org.semanticweb.owlapi.formats.FunctionalSyntaxDocumentFormat;
+import org.semanticweb.owlapi.formats.OWLXMLDocumentFormat;
+import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
 import org.semanticweb.owlapi.io.*;
 import org.semanticweb.owlapi.model.*;
 
@@ -37,8 +37,8 @@ public class Gen_org_semanticweb_owlapi_io {
 
     public void verifyAbstractOWLParser() throws IOException {
         AbstractOWLParser testSubject0 = mock(AbstractOWLParser.class);
-        OWLOntologyFormat result0 = testSubject0.parse(_IRI, _OWLOntology);
-        OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result0 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
     }
 
     @Test
@@ -92,7 +92,7 @@ public class Gen_org_semanticweb_owlapi_io {
 
     public void verifyGZipFileDocumentSource() {
         GZipFileDocumentSource testSubject0 = new GZipFileDocumentSource(_File);
-        GZipFileDocumentSource testSubject1 = new GZipFileDocumentSource(_File, _IRI, (OWLOntologyFormat) null, (String) null);
+        GZipFileDocumentSource testSubject1 = new GZipFileDocumentSource(_File, _IRI, (OWLDocumentFormat) null, (String) null);
         java.io.InputStream result0 = testSubject0.getInputStream();
         boolean result1 = testSubject0.isReaderAvailable();
         java.io.Reader result2 = testSubject0.getReader();
@@ -123,7 +123,7 @@ public class Gen_org_semanticweb_owlapi_io {
 
     public void verifyGZipStreamDocumentSource() {
         GZipStreamDocumentSource testSubject0 = new GZipStreamDocumentSource(_InputStream);
-        GZipStreamDocumentSource testSubject1 = new GZipStreamDocumentSource(_InputStream, _IRI, (OWLOntologyFormat) null, (String) null);
+        GZipStreamDocumentSource testSubject1 = new GZipStreamDocumentSource(_InputStream, _IRI, (OWLDocumentFormat) null, (String) null);
         java.io.InputStream result0 = testSubject0.getInputStream();
         boolean result1 = testSubject0.isReaderAvailable();
         java.io.Reader result2 = testSubject0.getReader();
@@ -153,7 +153,7 @@ public class Gen_org_semanticweb_owlapi_io {
     }
 
     public void verifyIRIDocumentSource() {
-        IRIDocumentSource testSubject0 = new IRIDocumentSource(_IRI, (OWLOntologyFormat) null, (String) null);
+        IRIDocumentSource testSubject0 = new IRIDocumentSource(_IRI, (OWLDocumentFormat) null, (String) null);
         java.io.InputStream result0 = testSubject0.getInputStream();
         boolean result1 = testSubject0.isReaderAvailable();
         java.io.Reader result2 = testSubject0.getReader();
@@ -185,11 +185,11 @@ public class Gen_org_semanticweb_owlapi_io {
 
     @Test
     public void enforceInterfacesOWLFunctionalSyntaxOntologyFormat() {
-        assertTrue(PrefixOWLOntologyFormat.class.isAssignableFrom(OWLFunctionalSyntaxOntologyFormat.class));
+        assertTrue(PrefixDocumentFormat.class.isAssignableFrom(FunctionalSyntaxDocumentFormat.class));
     }
 
     public void verifyOWLFunctionalSyntaxOntologyFormat() {
-        OWLFunctionalSyntaxOntologyFormat testSubject0 = new OWLFunctionalSyntaxOntologyFormat();
+        FunctionalSyntaxDocumentFormat testSubject0 = new FunctionalSyntaxDocumentFormat();
         testSubject0.setPrefixManager(_DefaultPrefixManager);
         testSubject0.setPrefix(_String, _String);
         testSubject0.copyPrefixesFrom(_PrefixOWLOntologyFormat);
@@ -203,7 +203,7 @@ public class Gen_org_semanticweb_owlapi_io {
         String result5 = testSubject0.getPrefixIRI(_IRI);
         IRI result6 = testSubject0.getIRI(_String);
         boolean result8 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result9 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result9 = testSubject0.asPrefixOWLOntologyFormat();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result10 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
@@ -306,9 +306,9 @@ public class Gen_org_semanticweb_owlapi_io {
 
     public void verifyInterfaceOWLParser() throws IOException {
         OWLParser testSubject0 = mock(OWLParser.class);
-        OWLOntologyFormat result0 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result1 = testSubject0.parse(_IRI, _OWLOntology);
-        OWLOntologyFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result0 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result1 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormat result2 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
     }
 
     @Test
@@ -396,11 +396,11 @@ public class Gen_org_semanticweb_owlapi_io {
 
     @Test
     public void enforceInterfacesOWLXMLOntologyFormat() {
-        assertTrue(PrefixOWLOntologyFormat.class.isAssignableFrom(OWLXMLOntologyFormat.class));
+        assertTrue(PrefixDocumentFormat.class.isAssignableFrom(OWLXMLDocumentFormat.class));
     }
 
     public void verifyOWLXMLOntologyFormat() {
-        OWLXMLOntologyFormat testSubject0 = new OWLXMLOntologyFormat();
+        OWLXMLDocumentFormat testSubject0 = new OWLXMLDocumentFormat();
         testSubject0.setPrefixManager(_DefaultPrefixManager);
         testSubject0.setPrefix(_String, _String);
         testSubject0.copyPrefixesFrom(_PrefixOWLOntologyFormat);
@@ -414,7 +414,7 @@ public class Gen_org_semanticweb_owlapi_io {
         String result5 = testSubject0.getPrefixIRI(_IRI);
         IRI result6 = testSubject0.getIRI(_String);
         boolean result8 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result9 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result9 = testSubject0.asPrefixOWLOntologyFormat();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result10 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
@@ -438,16 +438,16 @@ public class Gen_org_semanticweb_owlapi_io {
 
     @Test
     public void enforceInterfacesRDFOntologyFormat() {
-        assertTrue(PrefixOWLOntologyFormat.class.isAssignableFrom(RDFOntologyFormat.class));
+        assertTrue(PrefixDocumentFormat.class.isAssignableFrom(AbstractRDFDocumentFormat.class));
     }
 
     public void verifyRDFOntologyFormat() {
-        RDFOntologyFormat testSubject0 = new RDFOntologyFormat() {
+        AbstractRDFDocumentFormat testSubject0 = new AbstractRDFDocumentFormat() {
         };
         org.semanticweb.owlapi.io.RDFParserMetaData result0 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result1 = testSubject0.getOntologyLoaderMetaData();
         boolean result2 = testSubject0.isAddMissingTypes();
-        boolean result3 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result3 = OWLDocumentFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.setPrefixManager(_DefaultPrefixManager);
@@ -463,7 +463,7 @@ public class Gen_org_semanticweb_owlapi_io {
         String result9 = testSubject0.getPrefixIRI(_IRI);
         IRI result10 = testSubject0.getIRI(_String);
         boolean result12 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result13 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result13 = testSubject0.asPrefixOWLOntologyFormat();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
@@ -527,15 +527,15 @@ public class Gen_org_semanticweb_owlapi_io {
 
     @Test
     public void enforceInterfacesRDFXMLOntologyFormat() {
-        assertTrue(RDFOntologyFormat.class.isAssignableFrom(RDFXMLOntologyFormat.class));
+        assertTrue(AbstractRDFDocumentFormat.class.isAssignableFrom(RDFXMLDocumentFormat.class));
     }
 
     public void verifyRDFXMLOntologyFormat() {
-        RDFXMLOntologyFormat testSubject0 = new RDFXMLOntologyFormat();
+        RDFXMLDocumentFormat testSubject0 = new RDFXMLDocumentFormat();
         org.semanticweb.owlapi.io.RDFParserMetaData result0 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result1 = testSubject0.getOntologyLoaderMetaData();
         boolean result2 = testSubject0.isAddMissingTypes();
-        boolean result3 = OWLOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result3 = OWLDocumentFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.setPrefixManager(_DefaultPrefixManager);
@@ -551,7 +551,7 @@ public class Gen_org_semanticweb_owlapi_io {
         String result9 = testSubject0.getPrefixIRI(_IRI);
         IRI result10 = testSubject0.getIRI(_String);
         boolean result12 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result13 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result13 = testSubject0.asPrefixOWLOntologyFormat();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
@@ -561,7 +561,7 @@ public class Gen_org_semanticweb_owlapi_io {
     }
 
     public void verifyReaderDocumentSource() {
-        ReaderDocumentSource testSubject0 = new ReaderDocumentSource(_Reader, _IRI, (OWLOntologyFormat) null, (String) null);
+        ReaderDocumentSource testSubject0 = new ReaderDocumentSource(_Reader, _IRI, (OWLDocumentFormat) null, (String) null);
         ReaderDocumentSource testSubject1 = new ReaderDocumentSource(_Reader);
         java.io.InputStream result0 = testSubject0.getInputStream();
         boolean result1 = testSubject0.isReaderAvailable();
@@ -578,7 +578,7 @@ public class Gen_org_semanticweb_owlapi_io {
 
     public void verifyStreamDocumentSource() {
         StreamDocumentSource testSubject0 = new StreamDocumentSource(_InputStream);
-        StreamDocumentSource testSubject1 = new StreamDocumentSource(_InputStream, _IRI, (OWLOntologyFormat) null, (String) null);
+        StreamDocumentSource testSubject1 = new StreamDocumentSource(_InputStream, _IRI, (OWLDocumentFormat) null, (String) null);
         java.io.InputStream result0 = testSubject0.getInputStream();
         boolean result1 = testSubject0.isReaderAvailable();
         java.io.Reader result2 = testSubject0.getReader();
@@ -609,7 +609,7 @@ public class Gen_org_semanticweb_owlapi_io {
 
     public void verifyStringDocumentSource() {
         StringDocumentSource testSubject0 = new StringDocumentSource(_String);
-        StringDocumentSource testSubject1 = new StringDocumentSource(_String, _IRI, (OWLOntologyFormat) null, (String) null);
+        StringDocumentSource testSubject1 = new StringDocumentSource(_String, _IRI, (OWLDocumentFormat) null, (String) null);
         java.io.InputStream result0 = testSubject0.getInputStream();
         boolean result1 = testSubject0.isReaderAvailable();
         java.io.Reader result2 = testSubject0.getReader();
@@ -754,5 +754,5 @@ public class Gen_org_semanticweb_owlapi_io {
     private PrefixManager _PrefixManager;
     private org.semanticweb.owlapi.util.DefaultPrefixManager _DefaultPrefixManager;
     private org.semanticweb.owlapi.util.ShortFormProvider _ShortFormProvider;
-    private PrefixOWLOntologyFormat _PrefixOWLOntologyFormat;
+    private PrefixDocumentFormat _PrefixOWLOntologyFormat;
 }

@@ -13,7 +13,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.change.OWLOntologyChangeData;
-import org.semanticweb.owlapi.formats.PrefixOWLOntologyFormat;
+import org.semanticweb.owlapi.formats.PrefixDocumentFormat;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.model.parameters.*;
 
@@ -4933,13 +4933,13 @@ public class Gen_org_semanticweb_owlapi_model {
 
     @Test
     public void enforceInterfacesOWLOntologyFormat() {
-        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLOntologyFormat.class));
+        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLDocumentFormat.class));
     }
 
     public void verifyOWLOntologyFormat() {
-        OWLOntologyFormat testSubject0 = mock(OWLOntologyFormat.class);
+        OWLDocumentFormat testSubject0 = mock(OWLDocumentFormat.class);
         boolean result1 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
@@ -5060,7 +5060,7 @@ public class Gen_org_semanticweb_owlapi_model {
         testSubject0.removeOntology(_OWLOntology);
         IRI result34 = testSubject0.getOntologyDocumentIRI(_OWLOntology);
         testSubject0.setOntologyDocumentIRI(_OWLOntology, _IRI);
-        OWLOntologyFormat result35 = testSubject0.getOntologyFormat(_OWLOntology);
+        OWLDocumentFormat result35 = testSubject0.getOntologyFormat(_OWLOntology);
         testSubject0.setOntologyFormat(_OWLOntology, _OWLOntologyFormat);
         testSubject0.saveOntology(_OWLOntology, _OWLOntologyFormat, _OutputStream);
         testSubject0.saveOntology(_OWLOntology, _OWLOntologyFormat, _IRI);
@@ -5167,11 +5167,11 @@ public class Gen_org_semanticweb_owlapi_model {
 
     @Test
     public void enforceInterfacesOWLOntologyStorer() {
-        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLOntologyStorer.class));
+        assertTrue(java.io.Serializable.class.isAssignableFrom(OWLStorer.class));
     }
 
     public void verifyInterfaceOWLOntologyStorer() throws OWLOntologyStorageException, IOException {
-        OWLOntologyStorer testSubject0 = mock(OWLOntologyStorer.class);
+        OWLStorer testSubject0 = mock(OWLStorer.class);
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -5179,11 +5179,11 @@ public class Gen_org_semanticweb_owlapi_model {
 
     @Test
     public void enforceInterfacesOWLOntologyStorerNotFoundException() {
-        assertTrue(OWLOntologyStorageException.class.isAssignableFrom(OWLOntologyStorerNotFoundException.class));
+        assertTrue(OWLOntologyStorageException.class.isAssignableFrom(OWLStorerNotFoundException.class));
     }
 
     public void verifyOWLOntologyStorerNotFoundException() {
-        OWLOntologyStorerNotFoundException testSubject0 = new OWLOntologyStorerNotFoundException(_OWLOntologyFormat);
+        OWLStorerNotFoundException testSubject0 = new OWLStorerNotFoundException(_OWLOntologyFormat);
         testSubject0.printStackTrace();
         testSubject0.printStackTrace(_PrintWriter);
         testSubject0.printStackTrace(_PrintStream);
@@ -6975,7 +6975,7 @@ public class Gen_org_semanticweb_owlapi_model {
     private OWLOntologyCreationException _OWLOntologyCreationException;
     private OWLOntologyFactory _OWLOntologyFactory;
     private OWLOntologyFactory.OWLOntologyCreationHandler _OWLOntologyCreationHandler;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private OWLOntologyID _OWLOntologyID;
     private OWLOntologyIRIMapper _OWLOntologyIRIMapper;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;
@@ -6984,7 +6984,7 @@ public class Gen_org_semanticweb_owlapi_model {
     private OWLOntologyLoaderListener.LoadingFinishedEvent _LoadingFinishedEvent;
     private OWLOntologyLoaderListener.LoadingStartedEvent _LoadingStartedEvent;
     private OWLOntologyManager _OWLOntologyManager;
-    private OWLOntologyStorer _OWLOntologyStorer;
+    private OWLStorer _OWLOntologyStorer;
     private OWLPropertyExpression[] _OWLPropertyExpression_array;
     private OWLPropertyExpressionVisitor _OWLPropertyExpressionVisitor;
     private OWLPropertyExpressionVisitorEx<OWLObject> _OWLPropertyExpressionVisitorEx;

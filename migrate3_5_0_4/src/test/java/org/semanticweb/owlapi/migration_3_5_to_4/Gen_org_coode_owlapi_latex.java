@@ -6,9 +6,9 @@ import static org.mockito.Mockito.mock;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.semanticweb.owlapi.formats.LatexAxiomsListOntologyFormat;
-import org.semanticweb.owlapi.formats.LatexOntologyFormat;
-import org.semanticweb.owlapi.formats.PrefixOWLOntologyFormat;
+import org.semanticweb.owlapi.formats.LatexAxiomsListDocumentFormat;
+import org.semanticweb.owlapi.formats.LatexDocumentFormat;
+import org.semanticweb.owlapi.formats.PrefixDocumentFormat;
 import org.semanticweb.owlapi.io.OWLRendererException;
 import org.semanticweb.owlapi.latex.renderer.*;
 import org.semanticweb.owlapi.model.*;
@@ -20,13 +20,13 @@ import org.semanticweb.owlapi.model.*;
 public class Gen_org_coode_owlapi_latex {
     @Test
     public void enforceInterfacesLatexAxiomsListOntologyFormat() {
-        assertTrue(OWLOntologyFormat.class.isAssignableFrom(LatexAxiomsListOntologyFormat.class));
+        assertTrue(OWLDocumentFormat.class.isAssignableFrom(LatexAxiomsListDocumentFormat.class));
     }
 
     public void verifyLatexAxiomsListOntologyFormat() {
-        LatexAxiomsListOntologyFormat testSubject0 = new LatexAxiomsListOntologyFormat();
+        LatexAxiomsListDocumentFormat testSubject0 = new LatexAxiomsListDocumentFormat();
         boolean result1 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
@@ -56,24 +56,24 @@ public class Gen_org_coode_owlapi_latex {
 
     @Test
     public void enforceInterfacesLatexOntologyFormat() {
-        assertTrue(OWLOntologyFormat.class.isAssignableFrom(LatexOntologyFormat.class));
+        assertTrue(OWLDocumentFormat.class.isAssignableFrom(LatexDocumentFormat.class));
     }
 
     public void verifyLatexOntologyFormat() {
-        LatexOntologyFormat testSubject0 = new LatexOntologyFormat();
+        LatexDocumentFormat testSubject0 = new LatexDocumentFormat();
         boolean result1 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result2 = testSubject0.asPrefixOWLOntologyFormat();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result3 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
     @Test
     public void enforceInterfacesLatexOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(LatexOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(LatexStorer.class));
     }
 
     public void verifyLatexOntologyStorer() throws OWLOntologyStorageException {
-        LatexOntologyStorer testSubject0 = new LatexOntologyStorer();
+        LatexStorer testSubject0 = new LatexStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -194,6 +194,6 @@ public class Gen_org_coode_owlapi_latex {
     private OWLObjectSomeValuesFrom _OWLObjectSomeValuesFrom;
     private OWLObjectUnionOf _OWLObjectUnionOf;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private org.semanticweb.owlapi.util.ShortFormProvider _ShortFormProvider;
 }

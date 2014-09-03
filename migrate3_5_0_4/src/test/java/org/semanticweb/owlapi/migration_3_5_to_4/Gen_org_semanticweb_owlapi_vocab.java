@@ -12,7 +12,7 @@ import org.semanticweb.owlapi.vocab.OWL2Datatype;
 import org.semanticweb.owlapi.vocab.OWLFacet;
 import org.semanticweb.owlapi.vocab.OWLRDFVocabulary;
 import org.semanticweb.owlapi.vocab.OWLXMLVocabulary;
-import org.semanticweb.owlapi.formats.PrefixOWLOntologyFormat;
+import org.semanticweb.owlapi.formats.PrefixDocumentFormat;
 import org.semanticweb.owlapi.vocab.SKOSVocabulary;
 import org.semanticweb.owlapi.vocab.SWRLBuiltInsVocabulary;
 import org.semanticweb.owlapi.vocab.SWRLVocabulary;
@@ -463,13 +463,13 @@ public class Gen_org_semanticweb_owlapi_vocab {
 
     @Test
     public void enforceInterfacesPrefixOWLOntologyFormat() {
-        assertTrue(OWLOntologyFormat.class.isAssignableFrom(PrefixOWLOntologyFormat.class));
-        assertTrue(PrefixManager.class.isAssignableFrom(PrefixOWLOntologyFormat.class));
+        assertTrue(OWLDocumentFormat.class.isAssignableFrom(PrefixDocumentFormat.class));
+        assertTrue(PrefixManager.class.isAssignableFrom(PrefixDocumentFormat.class));
     }
 
     public void verifyPrefixOWLOntologyFormat() {
-        PrefixOWLOntologyFormat testSubject0 = new PrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat testSubject1 = new PrefixOWLOntologyFormat(_DefaultPrefixManager);
+        PrefixDocumentFormat testSubject0 = new PrefixDocumentFormat();
+        PrefixDocumentFormat testSubject1 = new PrefixDocumentFormat(_DefaultPrefixManager);
         testSubject0.setPrefixManager(_DefaultPrefixManager);
         testSubject0.setPrefix(_String, _String);
         testSubject0.clear();
@@ -484,7 +484,7 @@ public class Gen_org_semanticweb_owlapi_vocab {
         String result5 = testSubject0.getPrefixIRI(_IRI);
         IRI result6 = testSubject0.getIRI(_String);
         boolean result8 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result9 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result9 = testSubject0.asPrefixOWLOntologyFormat();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result10 = testSubject0.getOntologyLoaderMetaData();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
@@ -717,5 +717,5 @@ public class Gen_org_semanticweb_owlapi_vocab {
     private OWLDataFactory _OWLDataFactory;
     private PrefixManager _PrefixManager;
     private org.semanticweb.owlapi.util.DefaultPrefixManager _DefaultPrefixManager;
-    private PrefixOWLOntologyFormat _PrefixOWLOntologyFormat;
+    private PrefixDocumentFormat _PrefixOWLOntologyFormat;
 }

@@ -22,15 +22,15 @@ import org.semanticweb.owlapi.model.*;
 public class Gen_org_coode_owlapi_turtle {
     @Test
     public void enforceInterfacesTurtleOntologyFormat() {
-        assertTrue(RDFOntologyFormat.class.isAssignableFrom(TurtleOntologyFormat.class));
+        assertTrue(AbstractRDFDocumentFormat.class.isAssignableFrom(TurtleDocumentFormat.class));
     }
 
     public void verifyTurtleOntologyFormat() {
-        TurtleOntologyFormat testSubject0 = new TurtleOntologyFormat();
+        TurtleDocumentFormat testSubject0 = new TurtleDocumentFormat();
         org.semanticweb.owlapi.io.RDFParserMetaData result0 = testSubject0.getOntologyLoaderMetaData();
         org.semanticweb.owlapi.io.OWLOntologyLoaderMetaData result1 = testSubject0.getOntologyLoaderMetaData();
         boolean result2 = testSubject0.isAddMissingTypes();
-        boolean result3 = RDFOntologyFormat.isMissingType(_OWLEntity, _OWLOntology);
+        boolean result3 = AbstractRDFDocumentFormat.isMissingType(_OWLEntity, _OWLOntology);
         testSubject0.setAddMissingTypes(_boolean);
         testSubject0.addError(_RDFResourceParseError);
         testSubject0.setPrefixManager(_DefaultPrefixManager);
@@ -46,17 +46,17 @@ public class Gen_org_coode_owlapi_turtle {
         String result9 = testSubject0.getPrefixIRI(_IRI);
         IRI result10 = testSubject0.getIRI(_String);
         boolean result12 = testSubject0.isPrefixOWLOntologyFormat();
-        PrefixOWLOntologyFormat result13 = testSubject0.asPrefixOWLOntologyFormat();
+        PrefixDocumentFormat result13 = testSubject0.asPrefixOWLOntologyFormat();
         testSubject0.setOntologyLoaderMetaData(_OWLOntologyLoaderMetaData);
     }
 
     @Test
     public void enforceInterfacesTurtleOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(TurtleOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(TurtleStorer.class));
     }
 
     public void verifyTurtleOntologyStorer() throws OWLOntologyStorageException {
-        TurtleOntologyStorer testSubject0 = new TurtleOntologyStorer();
+        TurtleStorer testSubject0 = new TurtleStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -84,8 +84,8 @@ public class Gen_org_coode_owlapi_turtle {
     private IRI _IRI;
     private OWLEntity _OWLEntity;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private PrefixManager _PrefixManager;
     private org.semanticweb.owlapi.util.DefaultPrefixManager _DefaultPrefixManager;
-    private PrefixOWLOntologyFormat _PrefixOWLOntologyFormat;
+    private PrefixDocumentFormat _PrefixOWLOntologyFormat;
 }

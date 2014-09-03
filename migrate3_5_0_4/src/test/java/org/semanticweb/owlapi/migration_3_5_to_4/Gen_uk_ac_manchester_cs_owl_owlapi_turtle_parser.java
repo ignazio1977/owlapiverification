@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import org.semanticweb.owlapi.formats.RDFOntologyFormat;
+import org.semanticweb.owlapi.formats.AbstractRDFDocumentFormat;
 import org.semanticweb.owlapi.model.*;
 
 import org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer;
@@ -101,7 +101,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
         testSubject0.logicalURI(_IRI);
         testSubject0.statementWithLiteralValue(_String, _String, _String, _String, _String);
         testSubject0.statementWithResourceValue(_String, _String, _String);
-        RDFOntologyFormat result41 = testSubject0.getOntologyFormat();
+        AbstractRDFDocumentFormat result41 = testSubject0.getOntologyFormat();
         testSubject0.setOntologyFormat(_RDFOntologyFormat);
     }
 
@@ -124,15 +124,15 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi_turtle_parser {
 
     public void verifyTurtleOntologyParser() throws IOException {
         TurtleOntologyParser testSubject0 = new TurtleOntologyParser();
-        OWLOntologyFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
-        OWLOntologyFormat result2 = testSubject0.parse(_IRI, _OWLOntology);
+        OWLDocumentFormat result1 = testSubject0.parse(_OWLOntologyDocumentSource, _OWLOntology, _OWLOntologyLoaderConfiguration);
+        OWLDocumentFormat result2 = testSubject0.parse(_IRI, _OWLOntology);
     }
 
     private boolean _boolean;
     private int _int;
     private String _String;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentSource _OWLOntologyDocumentSource;
-    private org.semanticweb.owlapi.formats.RDFOntologyFormat _RDFOntologyFormat;
+    private org.semanticweb.owlapi.formats.AbstractRDFDocumentFormat _RDFOntologyFormat;
     private IRI _IRI;
     private OWLOntology _OWLOntology;
     private OWLOntologyLoaderConfiguration _OWLOntologyLoaderConfiguration;

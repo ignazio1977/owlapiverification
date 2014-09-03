@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.expression.OWLEntityChecker;
 import org.semanticweb.owlapi.expression.OWLOntologyChecker;
-import org.semanticweb.owlapi.formats.ManchesterOWLSyntaxOntologyFormat;
+import org.semanticweb.owlapi.formats.ManchesterSyntaxDocumentFormat;
 import org.semanticweb.owlapi.io.OWLParser;
 import org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxClassFrameParser;
 import org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxParserImpl;
@@ -40,7 +40,7 @@ public class Gen_org_coode_owlapi_manchesterowlsyntax {
         testSubject0.setOWLEntityChecker(mock(OWLEntityChecker.class));
         testSubject0.setOWLOntologyChecker(mock(OWLOntologyChecker.class));
         List<OWLObjectPropertyExpression> testSubject5 = testSubject0.parseObjectPropertyChain();
-        ManchesterOWLSyntaxOntologyFormat testSubject6 = testSubject0.parseOntology(mock(OWLOntology.class));
+        ManchesterSyntaxDocumentFormat testSubject6 = testSubject0.parseOntology(mock(OWLOntology.class));
         Set<OWLClassExpression> testSubject7 = testSubject0.parseClassExpressionList();
         Set<OWLObjectPropertyExpression> testSubject8 = testSubject0.parseObjectPropertyList();
         Set<OWLClassExpression> testSubject9 = testSubject0.parseClassExpressionList();

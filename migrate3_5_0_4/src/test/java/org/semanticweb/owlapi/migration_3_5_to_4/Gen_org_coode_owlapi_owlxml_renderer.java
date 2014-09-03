@@ -51,11 +51,11 @@ public class Gen_org_coode_owlapi_owlxml_renderer {
 
     @Test
     public void enforceInterfacesOWLXMLOntologyStorer() {
-        assertTrue(org.semanticweb.owlapi.util.AbstractOWLOntologyStorer.class.isAssignableFrom(OWLXMLOntologyStorer.class));
+        assertTrue(org.semanticweb.owlapi.util.AbstractOWLStorer.class.isAssignableFrom(OWLXMLStorer.class));
     }
 
     public void verifyOWLXMLOntologyStorer() throws OWLOntologyStorageException {
-        OWLXMLOntologyStorer testSubject0 = new OWLXMLOntologyStorer();
+        OWLXMLStorer testSubject0 = new OWLXMLStorer();
         boolean result0 = testSubject0.canStoreOntology(_OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _OWLOntologyDocumentTarget, _OWLOntologyFormat);
         testSubject0.storeOntology(_OWLOntology, _IRI, _OWLOntologyFormat);
@@ -110,7 +110,7 @@ public class Gen_org_coode_owlapi_owlxml_renderer {
     private NodeID _NodeID;
     private OWLDatatype _OWLDatatype;
     private OWLOntology _OWLOntology;
-    private OWLOntologyFormat _OWLOntologyFormat;
+    private OWLDocumentFormat _OWLOntologyFormat;
     private org.semanticweb.owlapi.vocab.OWLFacet _OWLFacet;
     private org.semanticweb.owlapi.vocab.OWLXMLVocabulary _OWLXMLVocabulary;
 }
