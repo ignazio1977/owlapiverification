@@ -13,8 +13,8 @@ import java.util.*;
 public class TestCreator_4 {
     private static class Container {
         PrintStream out;
-        TreeSet<String> mocks = new TreeSet<String>();
-        LinkedHashSet<String> mockNames = new LinkedHashSet<String>();
+        TreeSet<String> mocks = new TreeSet<>();
+        LinkedHashSet<String> mockNames = new LinkedHashSet<>();
 
         public Container() {
         }
@@ -55,7 +55,7 @@ public class TestCreator_4 {
         }
 
         void addClasses() {
-            Set<String> classesToAdd = new HashSet<String>();
+            Set<String> classesToAdd = new HashSet<>();
             for (String m : mocks) {
                 classesToAdd.add(addClass(m));
             }
@@ -80,7 +80,7 @@ public class TestCreator_4 {
     }
 
     public static void main(String[] args) throws ClassNotFoundException, FileNotFoundException {
-        Map<String, Container> streams = new HashMap<String, Container>();
+        Map<String, Container> streams = new HashMap<>();
         File[] roots = new File[] { new File("../owlapi/api/src/main/java"), new File("../owlapi/apibinding/src/main/java"), new File("../owlapi/impl/src/main/java"),
                 new File("../owlapi/tools/src/main/java"), new File("../owlapi/parsers/src/main/java"), new File("../owlapi/oboformat/src/main/java"),
                 new File("../owlapi/fixers/src/main/java"), new File("../owlapi/rio/src/main/java") };
@@ -194,7 +194,7 @@ public class TestCreator_4 {
                 visit(root, f, outMap);
             }
         } else if (current.getName().endsWith(".java") && !current.getName().equals("package-info.java")) {
-            Set<String> skip = new HashSet<String>(methodNamesToSkip);
+            Set<String> skip = new HashSet<>(methodNamesToSkip);
             String id = current.getParentFile().getAbsolutePath().replace(root.getAbsolutePath(), "");
             Container out = outMap.get(id);
             if (out == null) {
@@ -334,5 +334,5 @@ public class TestCreator_4 {
         return s;
     }
 
-    private static Set<String> methodNamesToSkip = new HashSet<String>(Arrays.asList("wait", "equals", "toString", "hashCode", "getClass", "notify", "notifyAll"));
+    private static Set<String> methodNamesToSkip = new HashSet<>(Arrays.asList("wait", "equals", "toString", "hashCode", "getClass", "notify", "notifyAll"));
 }

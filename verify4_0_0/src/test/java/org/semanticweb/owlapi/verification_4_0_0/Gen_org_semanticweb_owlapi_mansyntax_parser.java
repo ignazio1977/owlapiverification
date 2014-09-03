@@ -7,7 +7,7 @@ import java.io.IOException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.semanticweb.owlapi.mansyntax.parser.*;
+import org.semanticweb.owlapi.manchestersyntax.parser.*;
 import org.semanticweb.owlapi.model.*;
 
 import com.google.inject.Provider;
@@ -107,7 +107,7 @@ public class Gen_org_semanticweb_owlapi_mansyntax_parser {
         ManchesterOWLSyntax testSubject83 = ManchesterOWLSyntax.RULE;
         boolean result0 = testSubject0.matches(_String);
         boolean result1 = testSubject0.matches(_String, _String);
-        org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntax result2 = ManchesterOWLSyntax.parse(_String);
+        ManchesterOWLSyntax result2 = ManchesterOWLSyntax.parse(_String);
         java.lang.String result3 = testSubject0.keyword();
         boolean result4 = testSubject0.isFrameKeyword();
         boolean result5 = testSubject0.isSectionKeyword();
@@ -240,7 +240,7 @@ public class Gen_org_semanticweb_owlapi_mansyntax_parser {
     public void verifyManchesterOWLSyntaxTokenizer() {
         ManchesterOWLSyntaxTokenizer testSubject0 = new ManchesterOWLSyntaxTokenizer(_String);
         boolean result0 = ManchesterOWLSyntaxTokenizer.eof(_String);
-        java.util.List<org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntaxTokenizer.Token> result1 = testSubject0.tokenize();
+        java.util.List<ManchesterOWLSyntaxTokenizer.Token> result1 = testSubject0.tokenize();
     }
 
     private int _int;

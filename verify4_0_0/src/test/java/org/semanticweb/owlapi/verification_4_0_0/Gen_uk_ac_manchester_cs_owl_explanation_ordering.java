@@ -11,7 +11,7 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 
 import uk.ac.manchester.cs.owl.explanation.ordering.*;
 
-@SuppressWarnings({ "javadoc", "unchecked", "unused", "null" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owl_explanation_ordering {
     @Test

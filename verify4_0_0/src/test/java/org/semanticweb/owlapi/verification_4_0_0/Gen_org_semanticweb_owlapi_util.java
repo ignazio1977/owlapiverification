@@ -14,7 +14,7 @@ import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.*;
 import org.xml.sax.SAXException;
 
-@SuppressWarnings({ "javadoc", "unchecked", "unused", "null" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_util {
     @Test

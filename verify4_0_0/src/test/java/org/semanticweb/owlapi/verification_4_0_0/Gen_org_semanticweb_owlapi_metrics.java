@@ -9,7 +9,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.metrics.*;
 import org.semanticweb.owlapi.model.*;
 
-@SuppressWarnings({ "javadoc", "unused", "unchecked", "null" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_metrics {
     @Test

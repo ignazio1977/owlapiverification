@@ -12,7 +12,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.impl.*;
 
-@SuppressWarnings({ "javadoc", "unchecked", "unused", "null" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_reasoner_impl {
     @Test

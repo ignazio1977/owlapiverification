@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.io.OWLRendererException;
-import org.semanticweb.owlapi.mansyntax.renderer.*;
+import org.semanticweb.owlapi.manchestersyntax.renderer.*;
 import org.semanticweb.owlapi.model.*;
 
 @SuppressWarnings({ "javadoc", "null", "unused" })
@@ -19,7 +19,7 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
 
     @Test
     public void enforceInterfacesManchesterOWLSyntaxFrameRenderer() {
-        assertTrue(org.semanticweb.owlapi.mansyntax.renderer.ManchesterOWLSyntaxObjectRenderer.class.isAssignableFrom(ManchesterOWLSyntaxFrameRenderer.class));
+        assertTrue(org.semanticweb.owlapi.manchestersyntax.renderer.ManchesterOWLSyntaxObjectRenderer.class.isAssignableFrom(ManchesterOWLSyntaxFrameRenderer.class));
         assertTrue(OWLEntityVisitor.class.isAssignableFrom(ManchesterOWLSyntaxFrameRenderer.class));
     }
 
@@ -57,7 +57,7 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
 
     @Test
     public void enforceInterfacesManchesterOWLSyntaxObjectRenderer() {
-        assertTrue(org.semanticweb.owlapi.mansyntax.renderer.AbstractRenderer.class.isAssignableFrom(ManchesterOWLSyntaxObjectRenderer.class));
+        assertTrue(org.semanticweb.owlapi.manchestersyntax.renderer.AbstractRenderer.class.isAssignableFrom(ManchesterOWLSyntaxObjectRenderer.class));
         assertTrue(OWLObjectVisitor.class.isAssignableFrom(ManchesterOWLSyntaxObjectRenderer.class));
     }
 
@@ -179,7 +179,7 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
     public void verifyRendererEvent() {
         RendererEvent testSubject0 = new RendererEvent(_ManchesterOWLSyntaxFrameRenderer, _OWLObject);
         testSubject0.writeComment(_String);
-        org.semanticweb.owlapi.mansyntax.renderer.ManchesterOWLSyntaxFrameRenderer result0 = testSubject0.getFrameRenderer();
+        org.semanticweb.owlapi.manchestersyntax.renderer.ManchesterOWLSyntaxFrameRenderer result0 = testSubject0.getFrameRenderer();
         testSubject0.writeCommentOnNewLine(_String);
         OWLObject result1 = testSubject0.getFrameSubject();
     }
@@ -216,11 +216,11 @@ public class Gen_org_semanticweb_owlapi_mansyntax_renderer {
     private java.util.Set<java.lang.String> _Set115;
     private java.util.Set<OWLOntology> _Set;
     private org.semanticweb.owlapi.io.OWLOntologyDocumentTarget _OWLOntologyDocumentTarget;
-    private org.semanticweb.owlapi.mansyntax.parser.ManchesterOWLSyntax _ManchesterOWLSyntax;
-    private org.semanticweb.owlapi.mansyntax.renderer.ManchesterOWLSyntaxFrameRenderer _ManchesterOWLSyntaxFrameRenderer;
-    private org.semanticweb.owlapi.mansyntax.renderer.RendererEvent _RendererEvent;
-    private org.semanticweb.owlapi.mansyntax.renderer.RendererListener _RendererListener;
-    private org.semanticweb.owlapi.mansyntax.renderer.RenderingDirector _RenderingDirector;
+    private org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntax _ManchesterOWLSyntax;
+    private org.semanticweb.owlapi.manchestersyntax.renderer.ManchesterOWLSyntaxFrameRenderer _ManchesterOWLSyntaxFrameRenderer;
+    private org.semanticweb.owlapi.manchestersyntax.renderer.RendererEvent _RendererEvent;
+    private org.semanticweb.owlapi.manchestersyntax.renderer.RendererListener _RendererListener;
+    private org.semanticweb.owlapi.manchestersyntax.renderer.RenderingDirector _RenderingDirector;
     private AxiomType<?> _AxiomType;
     private IRI _IRI;
     private OWLAnnotation _OWLAnnotation;

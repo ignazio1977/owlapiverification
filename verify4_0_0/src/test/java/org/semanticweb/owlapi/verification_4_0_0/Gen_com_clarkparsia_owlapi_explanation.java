@@ -3,14 +3,17 @@ package org.semanticweb.owlapi.verification_4_0_0;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
+import javax.annotation.Nonnull;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
 
 import com.clarkparsia.owlapi.explanation.*;
 
-@SuppressWarnings({ "javadoc", "null", "unused" })
+@SuppressWarnings({ "javadoc", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation {
     @Test
@@ -145,14 +148,41 @@ public class Gen_com_clarkparsia_owlapi_explanation {
         testSubject0.dispose();
     }
 
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private com.clarkparsia.owlapi.explanation.TransactionAwareSingleExpGen _TransactionAwareSingleExpGen;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor _ExplanationProgressMonitor;
     private int _int;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private OWLAxiom _OWLAxiom;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private OWLClassExpression _OWLClassExpression;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private OWLDataFactory _OWLDataFactory;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private OWLOntology _OWLOntology;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private OWLOntologyManager _OWLOntologyManager;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private org.semanticweb.owlapi.reasoner.OWLReasoner _OWLReasoner;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private org.semanticweb.owlapi.reasoner.OWLReasonerFactory _OWLReasonerFactory;
 }

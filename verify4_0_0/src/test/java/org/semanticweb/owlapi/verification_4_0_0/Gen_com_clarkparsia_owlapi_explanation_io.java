@@ -5,8 +5,11 @@ import static org.mockito.Mockito.mock;
 
 import java.io.IOException;
 
+import javax.annotation.Nonnull;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLException;
@@ -15,7 +18,7 @@ import com.clarkparsia.owlapi.explanation.io.ConciseExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.io.ExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.io.SilentExplanationRenderer;
 
-@SuppressWarnings({ "javadoc", "null" })
+@SuppressWarnings({ "javadoc" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_com_clarkparsia_owlapi_explanation_io {
     @Test
@@ -49,7 +52,16 @@ public class Gen_com_clarkparsia_owlapi_explanation_io {
         testSubject0.endRendering();
     }
 
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private java.io.Writer _Writer;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private java.util.Set<java.util.Set<OWLAxiom>> _Set;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private OWLAxiom _OWLAxiom;
 }

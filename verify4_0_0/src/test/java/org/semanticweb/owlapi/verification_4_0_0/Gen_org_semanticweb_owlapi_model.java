@@ -12,11 +12,12 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.change.*;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration.MissingOntologyHeaderStrategy;
 import org.semanticweb.owlapi.model.parameters.*;
 
 import com.google.common.base.Optional;
 
-@SuppressWarnings({ "javadoc", "unchecked", "unused", "null" })
+@SuppressWarnings({ "javadoc", "unused", "null" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_semanticweb_owlapi_model {
     @Test
@@ -1194,12 +1195,10 @@ public class Gen_org_semanticweb_owlapi_model {
         boolean result10 = testSubject0.containsAxiom(_OWLAxiom, _imports, _ignore);
         boolean result11 = testSubject0.containsAxiom(_OWLAxiom);
         int result12 = testSubject0.getAxiomCount(_imports);
-        int result13 = testSubject0.getAxiomCount();
-        int result14 = testSubject0.getAxiomCount(_AxiomType);
+        int result14 = testSubject0.getAxiomCount(_AxiomType, _imports);
         int result15 = testSubject0.getAxiomCount(_AxiomType, _imports);
         java.util.Set<OWLLogicalAxiom> result16 = testSubject0.getLogicalAxioms(_imports);
         java.util.Set<OWLLogicalAxiom> result17 = testSubject0.getLogicalAxioms();
-        int result18 = testSubject0.getLogicalAxiomCount();
         int result19 = testSubject0.getLogicalAxiomCount(_imports);
         java.util.Set<OWLAxiom> result20 = testSubject0.getAxiomsIgnoreAnnotations(_OWLAxiom, _imports);
         java.util.Set<OWLAxiom> result21 = testSubject0.getReferencingAxioms(_OWLPrimitive, _imports);
@@ -1208,8 +1207,8 @@ public class Gen_org_semanticweb_owlapi_model {
     public void verifyInterfaceOWLAxiomIndex() {
         OWLAxiomIndex testSubject0 = mock(OWLAxiomIndex.class);
         boolean result0 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _imports);
-        java.util.Set<OWLAxiom> result1 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _imports, _ignore);
-        java.util.Set<OWLAxiom> result2 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _imports, _ignore);
+        java.util.Set<OWLAxiom> result1 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _imports, _nav);
+        java.util.Set<OWLAxiom> result2 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _imports, _nav);
         java.util.Collection<OWLAxiom> result3 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _imports);
         java.util.Set<OWLSubAnnotationPropertyOfAxiom> result4 = testSubject0.getSubAnnotationPropertyOfAxioms(_OWLAnnotationProperty);
         java.util.Set<OWLAnnotationPropertyDomainAxiom> result5 = testSubject0.getAnnotationPropertyDomainAxioms(_OWLAnnotationProperty);
@@ -4118,8 +4117,8 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLDatatype> result79 = testSubject0.getDatatypesInSignature();
         java.util.Set<OWLNamedIndividual> result80 = testSubject0.getIndividualsInSignature();
         boolean result81 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _imports);
-        java.util.Set<OWLAxiom> result82 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _imports, _ignore);
-        java.util.Set<OWLAxiom> result83 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _imports, _ignore);
+        java.util.Set<OWLAxiom> result82 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _imports, _nav);
+        java.util.Set<OWLAxiom> result83 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _imports, _nav);
         java.util.Collection<OWLAxiom> result84 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _imports);
         java.util.Set<OWLSubAnnotationPropertyOfAxiom> result85 = testSubject0.getSubAnnotationPropertyOfAxioms(_OWLAnnotationProperty);
         java.util.Set<OWLAnnotationPropertyDomainAxiom> result86 = testSubject0.getAnnotationPropertyDomainAxioms(_OWLAnnotationProperty);
@@ -5883,8 +5882,8 @@ public class Gen_org_semanticweb_owlapi_model {
         java.util.Set<OWLDatatype> result77 = testSubject0.getDatatypesInSignature();
         java.util.Set<OWLNamedIndividual> result78 = testSubject0.getIndividualsInSignature();
         boolean result79 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _imports);
-        java.util.Set<OWLAxiom> result80 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _imports, _ignore);
-        java.util.Set<OWLAxiom> result81 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _imports, _ignore);
+        java.util.Set<OWLAxiom> result80 = testSubject0.getAxioms(OWLAxiom.class, _Class71, _OWLObject, _imports, _nav);
+        java.util.Set<OWLAxiom> result81 = testSubject0.getAxioms(OWLAxiom.class, _OWLObject, _imports, _nav);
         java.util.Collection<OWLAxiom> result82 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _imports);
         java.util.Set<OWLSubAnnotationPropertyOfAxiom> result83 = testSubject0.getSubAnnotationPropertyOfAxioms(_OWLAnnotationProperty);
         java.util.Set<OWLAnnotationPropertyDomainAxiom> result84 = testSubject0.getAnnotationPropertyDomainAxioms(_OWLAnnotationProperty);
@@ -8301,7 +8300,8 @@ public class Gen_org_semanticweb_owlapi_model {
     private OWLObject _Object213;
     private boolean _boolean;
     private Imports _imports;
-    private Search _ignore;
+    private AxiomAnnotations _ignore;
+    private Navigation _nav;
     private double _double;
     private float _float;
     private int _int;
@@ -8468,7 +8468,7 @@ public class Gen_org_semanticweb_owlapi_model {
     private OWLOntologyChangeProgressListener _OWLOntologyChangeProgressListener;
     private OWLOntologyChangeVetoException _OWLOntologyChangeVetoException;
     private OWLOntologyChangeVisitor _OWLOntologyChangeVisitor;
-    private OWLOntologyChangeVisitorEx _OWLOntologyChangeVisitorEx;
+    private OWLOntologyChangeVisitorEx<OWLObject> _OWLOntologyChangeVisitorEx;
     private OWLOntologyChangesVetoedListener _OWLOntologyChangesVetoedListener;
     private OWLOntologyCreationException _OWLOntologyCreationException;
     private OWLOntologyFactory.OWLOntologyCreationHandler _OWLOntologyCreationHandler;

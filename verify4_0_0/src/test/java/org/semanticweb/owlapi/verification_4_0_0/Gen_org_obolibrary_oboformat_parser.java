@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.obolibrary.oboformat.parser.*;
 
-@SuppressWarnings({ "javadoc", "unused", "null" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_org_obolibrary_oboformat_parser {
     @Test

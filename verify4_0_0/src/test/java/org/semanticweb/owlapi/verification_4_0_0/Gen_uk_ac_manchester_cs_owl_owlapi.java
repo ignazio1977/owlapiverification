@@ -9,13 +9,14 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.model.parameters.AxiomAnnotations;
 import org.semanticweb.owlapi.model.parameters.ChangeApplied;
 import org.semanticweb.owlapi.model.parameters.Imports;
-import org.semanticweb.owlapi.model.parameters.Search;
+import org.semanticweb.owlapi.model.parameters.Navigation;
 
 import uk.ac.manchester.cs.owl.owlapi.*;
 
-@SuppressWarnings({ "javadoc", "unchecked", "null", "unused" })
+@SuppressWarnings({ "javadoc", "null", "unused" })
 @RunWith(MockitoJUnitRunner.class)
 public class Gen_uk_ac_manchester_cs_owl_owlapi {
     @Test
@@ -54,12 +55,12 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         boolean result4 = testSubject0.isEmpty();
         boolean result5 = testSubject0.contains(_OWLClass, _OWLClassAxiom);
         int result6 = testSubject0.size();
-        Set<OWLClass> result7 = testSubject0.keySet();
+        Iterable<OWLClass> result7 = testSubject0.keySet();
         boolean result8 = testSubject0.containsKey(_OWLClass);
         boolean result9 = testSubject0.isInitialized();
         boolean result11 = testSubject0.hasValues(_OWLClass);
-        Set<OWLClassAxiom> result12 = testSubject0.getAllValues();
-        Set<OWLClassAxiom> result13 = testSubject0.getValues(_OWLClass);
+        Iterable<OWLClassAxiom> result12 = testSubject0.getAllValues();
+        Iterable<OWLClassAxiom> result13 = testSubject0.getValues(_OWLClass);
     }
 
     public void verifyInterfaceCollectionContainer() {
@@ -98,7 +99,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         java.lang.Iterable<OWLImportsDeclaration> result3 = testSubject0.getImportsDeclarations(_boolean);
         java.util.Set<OWLClassAxiom> result4 = testSubject0.getGeneralClassAxioms();
         boolean result5 = testSubject0.isDeclared(_OWLEntity);
-        java.util.Set<OWLAxiom> result6 = testSubject0.getAxioms();
+        Iterable<OWLAxiom> result6 = testSubject0.getAxioms();
         java.util.Set<OWLLogicalAxiom> result7 = testSubject0.getLogicalAxioms();
         boolean result8 = testSubject0.addAxiom(_OWLAxiom101);
         boolean result9 = testSubject0.removeAxiom(_OWLAxiom101);
@@ -114,7 +115,7 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         int result19 = testSubject0.getAxiomCount();
         int result20 = testSubject0.getAxiomCount(_AxiomType104);
         int result21 = testSubject0.getLogicalAxiomCount();
-        java.util.Set<OWLAxiom> result22 = testSubject0.getReferencingAxioms(_OWLEntity);
+        Iterable<OWLAxiom> result22 = testSubject0.getReferencingAxioms(_OWLEntity);
         boolean result23 = testSubject0.containsReference(_OWLEntity);
         java.util.Collection<OWLAxiom> result24 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object);
     }
@@ -157,12 +158,12 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         boolean result3 = testSubject0.contains(_Object, _OWLAxiom);
         int result4 = testSubject0.size();
         uk.ac.manchester.cs.owl.owlapi.MapPointer<Object, OWLAxiom> result5 = testSubject0.init();
-        java.util.Set<java.lang.Object> result6 = testSubject0.keySet();
+        Iterable<java.lang.Object> result6 = testSubject0.keySet();
         boolean result7 = testSubject0.containsKey(_Object);
         boolean result8 = testSubject0.isInitialized();
         boolean result10 = testSubject0.hasValues(_Object);
-        Set<OWLAxiom> result11 = testSubject0.getAllValues();
-        Set<OWLAxiom> result12 = testSubject0.getValues(_Object);
+        Iterable<OWLAxiom> result11 = testSubject0.getAllValues();
+        Iterable<OWLAxiom> result12 = testSubject0.getValues(_Object);
     }
 
     @Test
@@ -679,8 +680,8 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         OWLObject result54 = testSubject0.accept(_OWLObjectVisitorEx);
         testSubject0.accept(_OWLObjectVisitor);
         boolean result55 = testSubject0.contains(_OWLAxiomSearchFilter, _Object, _import);
-        Set<OWLAxiom> result56 = testSubject0.getAxioms(_Class, _Class151, _OWLObject, _import, _ignore);
-        Set<OWLAxiom> result57 = testSubject0.getAxioms(_Class, _OWLObject, _import, _ignore);
+        Set<OWLAxiom> result56 = testSubject0.getAxioms(_Class, _Class151, _OWLObject, _import, _nav);
+        Set<OWLAxiom> result57 = testSubject0.getAxioms(_Class, _OWLObject, _import, _nav);
         java.util.Collection<OWLAxiom> result58 = testSubject0.filterAxioms(_OWLAxiomSearchFilter, _Object, _import);
     }
 
@@ -2629,11 +2630,11 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         boolean result19 = testSubject0.isDeclared(_OWLEntity, _import);
         java.util.Set<OWLObjectPropertyAxiom> result20 = testSubject0.getAxioms(_OWLObjectPropertyExpression, _import);
         java.util.Set<OWLClassAxiom> result21 = testSubject0.getAxioms(_OWLClass, _import);
-        Set<OWLAxiom> result22 = testSubject0.getAxioms(_Class, _Class151, _OWLObject, _import, _ignore);
+        Set<OWLAxiom> result22 = testSubject0.getAxioms(_Class, _Class151, _OWLObject, _import, _nav);
         java.util.Set<OWLAxiom> result23 = testSubject0.getAxioms();
         java.util.Set<OWLAxiom> result24 = testSubject0.getAxioms(_import);
         Set<?> result25 = testSubject0.getAxioms(_AxiomType104);
-        Set<OWLAxiom> result26 = testSubject0.getAxioms(_Class, _OWLObject, _import, _ignore);
+        Set<OWLAxiom> result26 = testSubject0.getAxioms(_Class, _OWLObject, _import, _nav);
         Set<?> result27 = testSubject0.getAxioms(_AxiomType104, _import);
         java.util.Set<OWLDataPropertyAxiom> result28 = testSubject0.getAxioms(_OWLDataProperty, _import);
         java.util.Set<OWLAnnotationAxiom> result29 = testSubject0.getAxioms(_OWLAnnotationProperty, _import);
@@ -4538,11 +4539,11 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
         boolean result21 = testSubject0.isDeclared(_OWLEntity, _import);
         java.util.Set<OWLObjectPropertyAxiom> result22 = testSubject0.getAxioms(_OWLObjectPropertyExpression, _import);
         java.util.Set<OWLClassAxiom> result23 = testSubject0.getAxioms(_OWLClass, _import);
-        Set<OWLAxiom> result24 = testSubject0.getAxioms(_Class, _Class151, _OWLObject, _import, _ignore);
+        Set<OWLAxiom> result24 = testSubject0.getAxioms(_Class, _Class151, _OWLObject, _import, _nav);
         java.util.Set<OWLAxiom> result25 = testSubject0.getAxioms();
         java.util.Set<OWLAxiom> result26 = testSubject0.getAxioms(_import);
         Set<?> result27 = testSubject0.getAxioms(_AxiomType104);
-        Set<OWLAxiom> result28 = testSubject0.getAxioms(_Class, _OWLObject, _import, _ignore);
+        Set<OWLAxiom> result28 = testSubject0.getAxioms(_Class, _OWLObject, _import, _nav);
         Set<?> result29 = testSubject0.getAxioms(_AxiomType104, _import);
         java.util.Set<OWLDataPropertyAxiom> result30 = testSubject0.getAxioms(_OWLDataProperty, _import);
         java.util.Set<OWLAnnotationAxiom> result31 = testSubject0.getAxioms(_OWLAnnotationProperty, _import);
@@ -6023,7 +6024,8 @@ public class Gen_uk_ac_manchester_cs_owl_owlapi {
     }
 
     private Imports _import;
-    private Search _ignore;
+    private AxiomAnnotations _ignore;
+    private Navigation _nav;
     private boolean _boolean;
     private byte[] _byte_array;
     private com.google.inject.Binder _Binder;

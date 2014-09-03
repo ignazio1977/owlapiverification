@@ -1,9 +1,12 @@
 package org.semanticweb.owlapi.verification_4_0_0;
 
+import javax.annotation.Nonnull;
+
+import org.mockito.Mock;
 import org.obolibrary.oboformat.diff.Diff;
 import org.obolibrary.oboformat.diff.OBODocDiffer;
 
-@SuppressWarnings({ "javadoc", "null", "unused" })
+@SuppressWarnings({ "javadoc", "unused" })
 public class Gen_org_obolibrary_oboformat_diff {
     public void verifyDiff() {
         Diff testSubject0 = new Diff(_String, _String, _Frame, _int);
@@ -21,8 +24,6 @@ public class Gen_org_obolibrary_oboformat_diff {
     }
 
     public void verifyOBODocDiffer() throws Exception {
-        OBODocDiffer testSubject0 = new OBODocDiffer();
-        OBODocDiffer.main(_String_array);
         java.util.List<org.obolibrary.oboformat.diff.Diff> result0 = OBODocDiffer.getDiffs(_OBODoc, _OBODoc);
     }
 
@@ -31,5 +32,8 @@ public class Gen_org_obolibrary_oboformat_diff {
     private java.lang.String[] _String_array;
     private org.obolibrary.oboformat.model.Clause _Clause;
     private org.obolibrary.oboformat.model.Frame _Frame;
+    @SuppressWarnings("null")
+    @Nonnull
+    @Mock
     private org.obolibrary.oboformat.model.OBODoc _OBODoc;
 }
